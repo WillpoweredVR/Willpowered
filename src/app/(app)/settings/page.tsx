@@ -14,7 +14,7 @@ export default function SettingsPage() {
   const [isSaving, setIsSaving] = useState(false);
   const [fullName, setFullName] = useState("");
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
-  const { subscription, isPro, isTrialing, manageSubscription, isLoading: subLoading } = useSubscription();
+  const { status, isPro, isTrialing, periodEndsAt, openPortal, isLoading: subLoading } = useSubscription();
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -153,16 +153,16 @@ export default function SettingsPage() {
                       <Shield className="w-3.5 h-3.5" />
                       {isTrialing ? "Pro Trial" : "Pro Plan"}
                     </span>
-                    {subscription?.subscription_period_end && (
+                    {periodEndsAt && (
                       <p className="text-sm text-muted-foreground mt-2">
                         {isTrialing ? "Trial ends" : "Next billing date"}:{" "}
-                        {new Date(subscription.subscription_period_end).toLocaleDateString()}
+                        {periodEndsAt.toLocaleDateString()}
                       </p>
                     )}
                   </div>
                   <Button 
                     variant="outline" 
-                    onClick={manageSubscription}
+                    onClick={openPortal}
                     className="gap-2"
                   >
                     Manage
