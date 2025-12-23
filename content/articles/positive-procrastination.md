@@ -1,0 +1,30 @@
+---
+title: "How To Resist Temptation Through Positive Procrastination"
+slug: "positive-procrastination"
+date: "2014-10-30"
+author: "Colin Robertson"
+excerpt: "As humans, we all have our vices – mine is blueberry muffins. The delicious blend of sweet pastry and fruit is enough to make my mouth water even as I write this. While at a local..."
+categories: []
+featuredImage: ""
+---
+
+As humans, we all have our vices – **mine is blueberry muffins.** The delicious blend of sweet pastry and fruit is enough to make my mouth water even as I write this. While at a local coffee shop, I was staring one of these freshly baked muffins down with intense passion. But I knew I should not indulge. I have been following a diet plan called [“The Paleo Diet for Athletes”](http://home.trainingpeaks.com/blog/article/a-quick-guide-to-the-paleo-diet-for-athletes) for over [9 months now](http://www.willpowered.co/learn/the-seinfeld-method) and the last thing I wanted to do was break it.
+However, the aroma of the baked good was enough that my mind was making up every reason possible to say, “[go on, you deserve it](http://www.willpowered.co/learn/moral-licensing)!!” My heart was pounding as I got closer to the register. With every step it felt more and more like the **world was going to end if I didn’t get this muffin now**!! All of my willpower and self-control was gone, and I was about to give in. Until I remembered one last line of defense that we have – **procrastination.**
+**That’s right, procrastination!** Procrastination can actually be used as a line of defense in the epic battle between your present desires and future goals. \[[1](http://halley.exp.sis.pitt.edu/comet/presentColloquium.do?col_id=2840)\]
+## **HOW TO USE PROCRASTINATION TO YOUR ADVANTAGE**
+When I approached the register to order, it felt like if I didn’t order that muffin right then and there, I would never get a chance to eat a muffin ever again. This is the type of rationality that we have when we’re in a [“hot state of mind”.](http://www.willpowered.co/learn/the-hot-cold-empathy-gap) So I **reminded myself that this wasn’t the case by simply putting the muffin decision off until later.** I was going sit down to enjoy the coffee I ordered. Then if I still wanted to eat the muffin after that, I could order it on the way out.
+**When I made that decision, a rush of relief came over me**. My heart stopped pounding, my body calmed down and it felt like I wasn’t denying myself what I really wanted. I was merely procrastinating the decision. Then when I was done with the coffee, I decided that the muffin wasn’t really necessary, and I walked out.
+## **WHY DOES THIS WORK?**
+When your [body gets a craving,](http://www.willpowered.co/learn/2014/9/18/why-we-believe-our-cravings-will-bring-us-happiness) it produces a rush of a chemical called dopamine \[[2](http://www.ncbi.nlm.nih.gov/pubmed/17072591)\]. This chemical motivates you to act on your impulses. It does this because thousands of years ago, if you saw a deer, your brain wanted to give you as much motivation to hunt that deer down as possible so that you didn’t starve.
+Now, of course, the threat of starvation isn’t as much of an issue. We don’t _need_ to indulge in muffins in order to survive. **So when you procrastinate the decision of whether or not to indulge, you’re sending a message to the brain that this is not a life-and-death situation**. When this message is received, your brain will stop releasing dopamine, lowering your craving for the temptation. This is why I felt that huge sense of relief as the dopamine rush stopped, and why it was much easier to walk away from the coffee shop without a muffin in hand.
+## **SO WHAT CAN WE DO?**
+The next time you’re faced with a similar temptation when it feels like you can't summon the willpower to say no, just **put the decision off for 10 minutes.** Research shows that putting something off for just 10 minutes is enough to clear the mind of dopamine and lower your craving. So after the 10 minutes is up, the temptation won't be nearly as strong. \[[1](http://halley.exp.sis.pitt.edu/comet/presentColloquium.do?col_id=2840)\]
+**However, you do have to give yourself permission to indulge after those 10 minutes are up.** If after 10 minutes you still _really want to give in,_ let yourself. Otherwise your brain will recognize the “empty promise” of the procrastination and it won’t lower your dopamine level.
+## **HOW TO USE PROCRASTINATION TO PERSEVERE**
+This positive procrastination doesn’t just apply to [denying temptations](http://www.willpowered.co/learn/?category=Resisting+Temptations) either. Further research suggests that you can apply it to increasing your perseverance as well \[[3](http://www.tandfonline.com/doi/abs/10.3200/SOCP.145.3.245-264#.VGJ1fvTF_88)\]. I**f you’re tired and tempted to quit exercising, give yourself permission to quit if you last just 10 minutes longer** (or less depending on the exercise). This same practice can be applied to continue studying, cleaning or anything else that’s on your to-do list!
+## **CONCLUSION**
+We all have a constant battle between immediate gratification and future greatness. In this fight, our future selves need as much help as they can get to overcome the many temptations in our lives. Following the 10 minute rule by procrastinating these decisions is one more way we can win this mental battle. **The next time you’re staring temptation in the face, just wait 10 minutes. You may just find that you don’t want that thing as badly as you thought!**
+**Sources**
+1.  Mead, Nicole L. "In Praise of Putting Things Off: Postponing Consumption Pleasures Facilitates Self-Control." Center for Behavioral Decision Research (2012)
+2.  Berridge, K.C. "The Debate over Dopamine's Role in Reward: The Case for Incentive Salience." Psychopharmacology 191.3 (2007): 391-431.
+3.  Chu, Angela Hsin Chun, and Jin Nam Choi. "Rethinking Procrastination: Positive Effects of "Active" Procrastination Behavior on Attitudes and Performance." The Journal of Social Psychology 145.3 (2005): 245-64

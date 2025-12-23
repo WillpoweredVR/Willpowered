@@ -1,0 +1,25 @@
+---
+title: "How To Use Sports Psychology To Handle Your Own Pressure"
+slug: "sports-psychology-in-life"
+date: "2014-09-30"
+author: "Colin Robertson"
+excerpt: "It’s Tuesday at 7am. Susan, an account manager for a brokerage firm, takes a look at her calendar for the day. She sees that huge presentation for one of her firm’s top clients at..."
+categories: ["Acquiring Skills","Skills & Knowledge"]
+featuredImage: ""
+---
+
+It’s Tuesday at 7am. Susan, an account manager for a brokerage firm, takes a look at her calendar for the day. She sees that huge presentation for one of her firm’s top clients at 10. She’s been dreading this presentation for some time, as the client is becoming impatient with a lack of results, and there’s rumors that they’re exploring other firms to invest with. This presentation is crucial, and could be the difference between her getting a promotion, or getting a box to pack her things
+As the 10am presentation approaches, her heart is beating fast, her palms are becoming sweaty and she’s a little shaky going over her notes. The pressure is on. The anxiety is overwhelming and at this point she’s just praying that she pulls through in one piece.
+This same pressure, this same anxiety and these same consequences are exactly what professional athletes deal with on the morning of a top competition. One bad drive could mean the difference between becoming a Masters champion, and “that guy who used to play golf.” One wild pitch could cost a baseball game, and one miss kick could [cost a team a shot at the Premier League Title.](http://www.independent.co.uk/sport/football/premier-league/steven-gerrard-slipup-mistake-against-chelsea-is-not-the-first-costly-error-made-by-the-liverpool-captain-9296570.html) The difference for these athletes is the use of Sports Psychology.
+## **WHAT IS SPORTS PSYCHOLOGY, REALLY?**
+Sports Psychology has many disciplines - some sports psychologists deal with the clinical aspects - focusing on how athletes deal with setbacks, injuries and the spotlight - while others focus on strengthening the mind as a natural extension of strengthening the body.
+The field of Sports Psychology continues to grow with more teams, coaches and athletes understanding the [competitive value of building mental strength](http://espn.go.com/nfl/story/_/id/9581925/seattle-seahawks-use-unusual-techniques-practice-espn-magazine), as well as coping mechanisms to deal with stress, anxiety and setbacks.
+## **HOW DOES IT APPLY TO OUR EVERYDAY LIVES?**
+We all have those moments in our lives where we’re put under pressure. This could be a big presentation like Susan’s, a job interview, a sales call, or simply a first date. In any situation where we are put under pressure to perform at our best, or we put ourselves in a vulnerable position, our natural response is anxiety. But, just like athletes, we can use the principles of Sports Psychology to cope with that pressure and vulnerability to ensure that we meet the challenge correctly.
+## **SO WHAT CAN WE DO?**
+The main tactic that athletes work to improve through sports psychology is performing with a “quieted mind”. This mind is clear of all negative thoughts and is focused on the task at hand. This idea was first made popular by Timothy Gallwey in his book [The Inner Game of Tennis](http://www.amazon.com/The-Inner-Game-Tennis-Performance/dp/0679778314). Gallwey explains that many athletes fail through negative self-talk and anxiety that leads up to performances. \[[1](http://www.amazon.com/gp/product/B003T0G9E4?btkr=1)\]
+There are several methods to achieve this quieted mind, but the simplest one is to begin to [focus on your breathing.](http://breathmeditation.org/the-breath-of-life-the-practice-of-breath-meditation) \[[2](http://www.ncbi.nlm.nih.gov/pubmed/21071182)\] Doing this will help bring your attention to the present and quiet your self-talking conscious mind. At this point, your powerful [subconscious mind](http://www.willpowered.co/learn/how-to-influence-the-subconscious-mind) can take over. When it does, you go into what the sports world calls ["the zone"](http://en.wikipedia.org/wiki/Flow_\(psychology\)) - that mental state where you’re completely focused, energized and performing at your highest level.
+The next time you are faced with a situation in which you must be at your best, focus your attention on the present. Pay attention to your breathing, tune out any self-talk and your anxiety will begin to fade away. This may sound simple, but if you can truly bring yourself to the present, you will gain the focus to perform at your best - whether doing a client presentation, or playing in the World Cup.
+**Sources:**
+1.  Gallwey, W. Timothy. The Inner Game of Tennis. New York: Random House, 1974.
+2.  Hölzel, Britta K., James Carmody, Mark Vangel, Christina Congleton, Sita M. Yerramsetti, Tim Gard, and Sara W. Lazar. "Mindfulness Practice Leads to Increases in Regional Brain Gray Matter Density." Psychiatry Research: Neuroimaging 191.1 (2011): 36-43.
