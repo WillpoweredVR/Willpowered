@@ -174,7 +174,8 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
 }
 
 async function handlePaymentSucceeded(invoice: Stripe.Invoice) {
-  if (!invoice.subscription) return;
+  const subscriptionId = (invoice as unknown as { subscription?: string | null }).subscription;
+  if (!subscriptionId) return;
   
   const customerId = invoice.customer as string;
 
@@ -196,7 +197,8 @@ async function handlePaymentSucceeded(invoice: Stripe.Invoice) {
 }
 
 async function handlePaymentFailed(invoice: Stripe.Invoice) {
-  if (!invoice.subscription) return;
+  const subscriptionId = (invoice as unknown as { subscription?: string | null }).subscription;
+  if (!subscriptionId) return;
   
   const customerId = invoice.customer as string;
 
