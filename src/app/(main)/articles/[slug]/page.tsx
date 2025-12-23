@@ -329,7 +329,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   img: ({ src, alt }) => (
                     <span className="block my-8">
                       <Image
-                        src={src || ""}
+                        src={typeof src === 'string' ? src : ""}
                         alt={alt || ""}
                         width={800}
                         height={450}
