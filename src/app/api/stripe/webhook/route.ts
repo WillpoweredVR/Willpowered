@@ -124,9 +124,12 @@ async function handleSubscriptionChange(subscription: Stripe.Subscription) {
   };
 
   const status = statusMap[subscription.status] || subscription.status;
-  const currentPeriodEnd = new Date(subscription.current_period_end * 1000).toISOString();
-  const trialEnd = subscription.trial_end 
-    ? new Date(subscription.trial_end * 1000).toISOString() 
+  // Access period end from the subscription object (property exists but types may vary by API version)
+  const periodEnd = (subscription as unknown as { current_period_end?: number }).current_period_end;
+  const currentPeriodEnd = periodEnd ? new Date(periodEnd * 1000).toISOString() : null;
+  const trialEndTimestamp = (subscription as unknown as { trial_end?: number | null }).trial_end;
+  const trialEnd = trialEndTimestamp 
+    ? new Date(trialEndTimestamp * 1000).toISOString() 
     : null;
 
   // Find user by customer ID
