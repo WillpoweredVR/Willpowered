@@ -176,8 +176,11 @@ IMPORTANT: When the user shares a new purpose statement, confirm it and let them
   },
 };
 
-function buildPrompt(template: string, context: Record<string, string>): string {
-  return template.replace(/{(\w+)}/g, (match, key) => context[key] || match);
+function buildPrompt(template: string, context: Record<string, unknown>): string {
+  return template.replace(/{(\w+)}/g, (match, key) => {
+    const value = context[key];
+    return typeof value === 'string' ? value : match;
+  });
 }
 
 export async function POST(request: NextRequest) {
