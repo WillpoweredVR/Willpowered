@@ -80,11 +80,12 @@ function LoginContent() {
   const handleGoogleLogin = async () => {
     setIsLoading(true);
     const supabase = createClient();
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://willpowered.com";
 
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback?redirect=${redirectTo}`,
+        redirectTo: `${baseUrl}/auth/callback?redirect=${redirectTo}`,
       },
     });
 

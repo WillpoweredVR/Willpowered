@@ -29,6 +29,9 @@ export default function SignupPage() {
 
     const supabase = createClient();
 
+    // Use production URL for email redirects (not localhost)
+    const redirectUrl = process.env.NEXT_PUBLIC_APP_URL || "https://willpowered.com";
+    
     const { error, data } = await supabase.auth.signUp({
       email,
       password,
@@ -36,7 +39,7 @@ export default function SignupPage() {
         data: {
           full_name: fullName,
         },
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
+        emailRedirectTo: `${redirectUrl}/auth/callback`,
       },
     });
 
@@ -62,11 +65,12 @@ export default function SignupPage() {
   const handleGoogleSignup = async () => {
     setIsLoading(true);
     const supabase = createClient();
+    const redirectUrl = process.env.NEXT_PUBLIC_APP_URL || "https://willpowered.com";
 
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: `${redirectUrl}/auth/callback`,
       },
     });
 
