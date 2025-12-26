@@ -13,16 +13,16 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface VerificationEmailProps {
+interface PasswordResetEmailProps {
   userName?: string;
-  verificationLink: string;
+  resetLink: string;
 }
 
-export const VerificationEmail = ({
+export const PasswordResetEmail = ({
   userName = "there",
-  verificationLink,
-}: VerificationEmailProps) => {
-  const previewText = "Verify your email to start your Willpowered journey";
+  resetLink,
+}: PasswordResetEmailProps) => {
+  const previewText = "Reset your Willpowered password";
 
   return (
     <Html>
@@ -38,26 +38,26 @@ export const VerificationEmail = ({
 
           {/* Main Content */}
           <Section style={content}>
-            <Heading style={heading}>Verify your email</Heading>
+            <Heading style={heading}>Reset your password</Heading>
             
             <Text style={paragraph}>
-              Hey {userName}! 👋
+              Hey {userName},
             </Text>
 
             <Text style={paragraph}>
-              You're one click away from starting your journey with Willson, 
-              your AI willpower coach. Just verify your email and we'll get started.
+              We received a request to reset your password. Click the button 
+              below to create a new one.
             </Text>
 
             <Section style={buttonContainer}>
-              <Button style={button} href={verificationLink}>
-                Verify Email Address
+              <Button style={button} href={resetLink}>
+                Reset Password
               </Button>
             </Section>
 
             <Text style={smallText}>
-              This link will expire in 24 hours. If you didn't create an account 
-              with Willpowered, you can safely ignore this email.
+              This link will expire in 1 hour. If you didn't request a password 
+              reset, you can safely ignore this email—your password won't change.
             </Text>
 
             <Hr style={divider} />
@@ -66,7 +66,7 @@ export const VerificationEmail = ({
               Button not working? Copy and paste this link into your browser:
             </Text>
             <Text style={linkText}>
-              {verificationLink}
+              {resetLink}
             </Text>
           </Section>
 
@@ -88,7 +88,7 @@ export const VerificationEmail = ({
   );
 };
 
-export default VerificationEmail;
+export default PasswordResetEmail;
 
 // Styles
 const main = {
@@ -214,5 +214,4 @@ const footerLink = {
   color: "#94a3b8",
   textDecoration: "underline",
 };
-
 

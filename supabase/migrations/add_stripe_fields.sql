@@ -17,3 +17,4 @@ COMMENT ON COLUMN profiles.subscription_status IS
 'Subscription status: free, trialing, active, past_due, canceled, unpaid, incomplete, expired, paused';
 
 
+

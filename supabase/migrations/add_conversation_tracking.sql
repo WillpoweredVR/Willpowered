@@ -13,3 +13,4 @@ COMMENT ON COLUMN profiles.conversation_reset_date IS
 'Date when monthly_conversations was last reset. Used to determine when to reset the count.';
 
 
+
