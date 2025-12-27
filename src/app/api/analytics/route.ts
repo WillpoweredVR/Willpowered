@@ -100,6 +100,73 @@ async function getUniqueUsers(eventName: string, dateFrom: string): Promise<numb
   }
 }
 
+async function getFeatureFlagVariants(dateFrom: string) {
+  // Get feature flag exposures with their variants
+  const query = `
+    SELECT 
+      properties.$feature_flag as flag_name,
+      properties.$feature_flag_response as variant,
+      count() as exposures,
+      count(distinct person_id) as unique_users
+    FROM events
+    WHERE event = '$feature_flag_called'
+    AND timestamp >= toDateTime('${dateFrom}')
+    GROUP BY flag_name, variant
+    ORDER BY flag_name, exposures DESC
+  `;
+
+  try {
+    const result = await fetchPostHogQuery(query);
+    return (result.results || []).map((row: [string, string, number, number]) => ({
+      flag: row[0],
+      variant: row[1],
+      exposures: row[2],
+      uniqueUsers: row[3],
+    }));
+  } catch (error) {
+    console.error("Error fetching feature flag variants:", error);
+    return [];
+  }
+}
+
+async function getVariantConversions(flagName: string, conversionEvent: string, dateFrom: string) {
+  // Get conversion rates per variant
+  const query = `
+    SELECT 
+      flag_variant,
+      count(distinct person_id) as converted_users
+    FROM (
+      SELECT 
+        person_id,
+        argMax(properties.$feature_flag_response, timestamp) as flag_variant
+      FROM events
+      WHERE event = '$feature_flag_called'
+      AND properties.$feature_flag = '${flagName}'
+      AND timestamp >= toDateTime('${dateFrom}')
+      GROUP BY person_id
+    ) as flag_exposures
+    INNER JOIN (
+      SELECT distinct person_id
+      FROM events
+      WHERE event = '${conversionEvent}'
+      AND timestamp >= toDateTime('${dateFrom}')
+    ) as conversions
+    ON flag_exposures.person_id = conversions.person_id
+    GROUP BY flag_variant
+  `;
+
+  try {
+    const result = await fetchPostHogQuery(query);
+    return (result.results || []).map((row: [string, number]) => ({
+      variant: row[0],
+      conversions: row[1],
+    }));
+  } catch (error) {
+    console.error(`Error fetching variant conversions for ${flagName}:`, error);
+    return [];
+  }
+}
+
 export async function GET(request: NextRequest) {
   // Check authentication - only allow logged-in users
   const supabase = await createClient();
@@ -144,8 +211,11 @@ export async function GET(request: NextRequest) {
   const dateFromStr = dateFrom.toISOString().replace('T', ' ').split('.')[0];
 
   try {
-    // Fetch event counts first
-    const eventCounts = await getEventCounts(dateFromStr);
+    // Fetch event counts and experiment data in parallel
+    const [eventCounts, featureFlagVariants] = await Promise.all([
+      getEventCounts(dateFromStr),
+      getFeatureFlagVariants(dateFromStr),
+    ]);
     
     // Helper to get count from eventCounts
     const getCount = (eventName: string): number => {
@@ -229,12 +299,40 @@ export async function GET(request: NextRequest) {
         count: e.count,
         users: e.unique_persons,
       })),
+      experiments: groupExperiments(featureFlagVariants),
       dateRange: {
         from: dateFromStr,
         to: now.toISOString(),
         range,
       },
     };
+    
+    // Helper function to group experiments by flag name
+    function groupExperiments(variants: { flag: string; variant: string; exposures: number; uniqueUsers: number }[]) {
+      const grouped: Record<string, { 
+        name: string; 
+        variants: { name: string; users: number; exposures: number }[] 
+      }> = {};
+      
+      for (const v of variants) {
+        if (!v.flag) continue;
+        
+        if (!grouped[v.flag]) {
+          grouped[v.flag] = {
+            name: v.flag,
+            variants: [],
+          };
+        }
+        
+        grouped[v.flag].variants.push({
+          name: v.variant || 'control',
+          users: v.uniqueUsers,
+          exposures: v.exposures,
+        });
+      }
+      
+      return Object.values(grouped);
+    }
 
     return NextResponse.json(analytics);
   } catch (error) {

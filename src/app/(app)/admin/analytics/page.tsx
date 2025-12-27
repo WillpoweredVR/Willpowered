@@ -46,6 +46,17 @@ interface EventData {
   users: number;
 }
 
+interface ExperimentVariant {
+  name: string;
+  users: number;
+  exposures: number;
+}
+
+interface Experiment {
+  name: string;
+  variants: ExperimentVariant[];
+}
+
 interface AnalyticsData {
   metrics: {
     visitors: Metric;
@@ -60,6 +71,7 @@ interface AnalyticsData {
     monetization: Funnel;
   };
   events: EventData[];
+  experiments: Experiment[];
   dateRange: {
     from: string;
     to: string;
@@ -293,6 +305,20 @@ export default function AnalyticsDashboard() {
           <FunnelCard funnel={funnels.engagement} />
           <FunnelCard funnel={funnels.monetization} />
         </div>
+
+        {/* A/B Test Experiments */}
+        {data?.experiments && data.experiments.length > 0 && (
+          <div className="mb-8">
+            <h3 className="font-serif text-xl font-bold text-foreground mb-4">
+              A/B Test Results
+            </h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {data.experiments.map((experiment) => (
+                <ExperimentCard key={experiment.name} experiment={experiment} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Top Events Table */}
         <div className="bg-white rounded-2xl border border-border p-6">
@@ -603,5 +629,82 @@ function QuickLink({
         <div className="text-xs text-muted-foreground">{description}</div>
       </div>
     </Link>
+  );
+}
+
+// Component: Experiment Card
+function ExperimentCard({ experiment }: { experiment: Experiment }) {
+  const totalUsers = experiment.variants.reduce((sum, v) => sum + v.users, 0);
+  
+  // Sort variants by users (highest first)
+  const sortedVariants = [...experiment.variants].sort((a, b) => b.users - a.users);
+  const winningVariant = sortedVariants[0];
+
+  // Color palette for variants
+  const variantColors = [
+    "bg-emerald-500",
+    "bg-blue-500", 
+    "bg-amber-500",
+    "bg-purple-500",
+    "bg-rose-500",
+  ];
+
+  return (
+    <div className="bg-white rounded-2xl border border-border p-6">
+      <div className="flex items-center justify-between mb-4">
+        <h4 className="font-serif text-lg font-bold text-foreground">
+          {experiment.name.replace(/_/g, " ").replace(/-/g, " ")}
+        </h4>
+        <span className="text-xs px-2 py-1 rounded-full bg-emerald-100 text-emerald-700">
+          {experiment.variants.length} variants
+        </span>
+      </div>
+
+      {/* Variant bars */}
+      <div className="space-y-3 mb-4">
+        {sortedVariants.map((variant, index) => {
+          const percentage = totalUsers > 0 ? (variant.users / totalUsers) * 100 : 0;
+          const isWinner = variant.name === winningVariant?.name && totalUsers > 10;
+          
+          return (
+            <div key={variant.name}>
+              <div className="flex items-center justify-between text-sm mb-1">
+                <div className="flex items-center gap-2">
+                  <span className="font-medium text-foreground">
+                    {variant.name || "control"}
+                  </span>
+                  {isWinner && totalUsers > 10 && (
+                    <span className="text-xs px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700">
+                      Leading
+                    </span>
+                  )}
+                </div>
+                <span className="text-muted-foreground">
+                  {variant.users.toLocaleString()} users ({percentage.toFixed(1)}%)
+                </span>
+              </div>
+              <div className="h-3 bg-slate-100 rounded-full overflow-hidden">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: `${percentage}%` }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className={`h-full rounded-full ${variantColors[index % variantColors.length]}`}
+                />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Summary */}
+      <div className="pt-4 border-t border-border">
+        <div className="flex justify-between text-sm">
+          <span className="text-muted-foreground">Total Exposures</span>
+          <span className="font-medium text-foreground">
+            {totalUsers.toLocaleString()} users
+          </span>
+        </div>
+      </div>
+    </div>
   );
 }
