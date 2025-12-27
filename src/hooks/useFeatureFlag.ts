@@ -64,3 +64,4 @@ export function useOnboardingVariant(): 'full' | 'minimal' | undefined {
   return value as 'full' | 'minimal' | undefined
 }
 
+
