@@ -1277,9 +1277,6 @@ export default function DashboardPage() {
           setCoachContext(null);
         }}
         initialMessage={coachContext?.message}
-        conversationTitle={coachContext?.title}
-        startFresh={!!coachContext}
-        onScorecardUpdates={handleScorecardUpdates}
       />
 
       <EditModal
