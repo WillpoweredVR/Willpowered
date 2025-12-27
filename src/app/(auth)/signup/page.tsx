@@ -1,11 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, Mail, Lock, User, ArrowRight, Loader2, Check, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
+import { 
+  trackSignupStarted, 
+  trackSignupFormEngaged, 
+  trackSignupMethodSelected, 
+  trackSignupCompleted,
+  trackSignupError 
+} from "@/lib/posthog";
 
 const benefits = [
   "Know exactly what you're working toward (finally)",
@@ -22,10 +29,16 @@ export default function SignupPage() {
   const [error, setError] = useState<string | null>(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
 
+  // Track page view on mount
+  useEffect(() => {
+    trackSignupStarted('signup_page');
+  }, []);
+
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
+    trackSignupMethodSelected('email');
 
     const supabase = createClient();
 
@@ -45,6 +58,7 @@ export default function SignupPage() {
 
     if (error) {
       setError(error.message);
+      trackSignupError(error.message, 'email');
       setIsLoading(false);
       return;
     }
@@ -53,17 +67,20 @@ export default function SignupPage() {
     // If identities array is empty, email confirmation is needed
     if (data.user && data.user.identities && data.user.identities.length === 0) {
       setError("An account with this email already exists. Please sign in instead.");
+      trackSignupError('account_exists', 'email');
       setIsLoading(false);
       return;
     }
 
     // Show confirmation screen
+    trackSignupCompleted('email');
     setIsLoading(false);
     setShowConfirmation(true);
   };
 
   const handleGoogleSignup = async () => {
     setIsLoading(true);
+    trackSignupMethodSelected('google');
     const supabase = createClient();
     const redirectUrl = process.env.NEXT_PUBLIC_APP_URL || "https://willpowered.com";
 
@@ -76,8 +93,14 @@ export default function SignupPage() {
 
     if (error) {
       setError(error.message);
+      trackSignupError(error.message, 'google');
       setIsLoading(false);
     }
+  };
+
+  // Track form field engagement
+  const handleFieldFocus = (field: string) => {
+    trackSignupFormEngaged(field);
   };
 
   // Email confirmation screen
@@ -309,6 +332,7 @@ export default function SignupPage() {
                   type="text"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
+                  onFocus={() => handleFieldFocus('name')}
                   placeholder="What should Willson call you?"
                   required
                   className="w-full h-12 pl-10 pr-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember transition-all bg-white"
@@ -326,6 +350,7 @@ export default function SignupPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  onFocus={() => handleFieldFocus('email')}
                   placeholder="you@example.com"
                   required
                   className="w-full h-12 pl-10 pr-4 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember transition-all bg-white"
@@ -343,6 +368,7 @@ export default function SignupPage() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  onFocus={() => handleFieldFocus('password')}
                   placeholder="At least 8 characters"
                   required
                   minLength={8}

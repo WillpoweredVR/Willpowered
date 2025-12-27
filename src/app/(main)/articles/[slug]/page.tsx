@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getArticleBySlug, getAllArticles, getJourneyStep, getRelatedArticles } from "@/lib/articles";
 import { Calendar, Clock, ArrowLeft, ArrowRight, Sparkles, User } from "lucide-react";
 import ReactMarkdown from "react-markdown";
+import { ArticleTracker } from "@/components/ArticleTracker";
 
 const journeyStepColors: Record<string, string> = {
   "Finding Your Purpose": "bg-amber-100 text-amber-800",
@@ -59,6 +60,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const relatedArticles = getRelatedArticles(article, 3);
 
   return (
+    <ArticleTracker slug={slug} title={article.title} category={journeyStep}>
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative pt-8 pb-16">
@@ -302,6 +304,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
     </div>
+    </ArticleTracker>
   );
 }
 

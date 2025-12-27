@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, Mail, Lock, ArrowRight, Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
+import { trackLoginStarted, trackLoginCompleted, trackLoginError, trackEmailVerified } from "@/lib/posthog";
 
 function LoginContent() {
   const router = useRouter();
@@ -28,8 +29,14 @@ function LoginContent() {
     }
     if (verifiedParam === "true") {
       setSuccessMessage("Email verified! You can now sign in.");
+      trackEmailVerified();
     }
   }, [errorParam, verifiedParam]);
+
+  // Track page view
+  useEffect(() => {
+    trackLoginStarted('login_page');
+  }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,14 +55,19 @@ function LoginContent() {
       // Provide more helpful error messages
       if (error.message === "Invalid login credentials") {
         setError("Invalid email or password. Please check your credentials and try again.");
+        trackLoginError('invalid_credentials');
       } else if (error.message.includes("Email not confirmed")) {
         setError("Please verify your email before signing in. Check your inbox for the verification link.");
+        trackLoginError('email_not_confirmed');
       } else {
         setError(error.message);
+        trackLoginError(error.message);
       }
       setIsLoading(false);
       return;
     }
+
+    trackLoginCompleted('email');
 
     // Check if user has completed onboarding
     const { data: { user } } = await supabase.auth.getUser();
@@ -91,8 +103,10 @@ function LoginContent() {
 
     if (error) {
       setError(error.message);
+      trackLoginError(error.message);
       setIsLoading(false);
     }
+    // Note: trackLoginCompleted('google') will be called in auth callback
   };
 
   return (
