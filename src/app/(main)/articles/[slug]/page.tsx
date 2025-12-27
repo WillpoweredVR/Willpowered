@@ -60,7 +60,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const relatedArticles = getRelatedArticles(article, 3);
 
   return (
-    <ArticleTracker slug={slug} title={article.title} category={journeyStep}>
+    <ArticleTracker slug={slug} title={article.title} category={journeyStep ?? undefined}>
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative pt-8 pb-16">
