@@ -1,21 +1,17 @@
 import Link from "next/link";
 import { Mail, BookOpen, PenLine } from "lucide-react";
 
-const journeySteps = [
-  { name: "Finding Your Purpose", href: "/articles/finding-your-purpose" },
-  { name: "Acquiring Skills", href: "/articles/acquiring-skills" },
-  { name: "Establishing Habits", href: "/articles/establishing-habits" },
-  { name: "Becoming Gritty", href: "/articles/becoming-gritty" },
-  { name: "Handling Setbacks", href: "/articles/handling-setbacks" },
-  { name: "Overcoming Limits", href: "/articles/overcoming-limits" },
-  { name: "Persevering", href: "/articles/persevering" },
-];
-
 const resources = [
   { name: "Articles", href: "/articles" },
   { name: "Books", href: "/books" },
-  { name: "Knowledge Maps", href: "/maps" },
-  { name: "Tools", href: "/tools" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "About", href: "/about" },
+];
+
+const account = [
+  { name: "Sign Up", href: "/signup" },
+  { name: "Log In", href: "/login" },
+  { name: "Dashboard", href: "/dashboard" },
 ];
 
 const socialLinks = [
@@ -71,20 +67,19 @@ export function Footer() {
             </div>
           </div>
 
-          {/* The Journey */}
+          {/* Account */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-ember-light mb-4">
-              The Journey
+              Account
             </h3>
             <ul className="space-y-3">
-              {journeySteps.map((step, index) => (
-                <li key={step.href}>
+              {account.map((link) => (
+                <li key={link.href}>
                   <Link
-                    href={step.href}
-                    className="text-sm text-cream/70 hover:text-cream transition-colors flex items-center gap-2"
+                    href={link.href}
+                    className="text-sm text-cream/70 hover:text-cream transition-colors"
                   >
-                    <span className="text-ember text-xs">{index + 1}.</span>
-                    {step.name}
+                    {link.name}
                   </Link>
                 </li>
               ))}

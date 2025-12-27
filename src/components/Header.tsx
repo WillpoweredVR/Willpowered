@@ -5,26 +5,15 @@ import { useState } from "react";
 import { Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const journeySteps = [
-  { name: "Finding Your Purpose", href: "/articles/finding-your-purpose" },
-  { name: "Acquiring Skills", href: "/articles/acquiring-skills" },
-  { name: "Establishing Habits", href: "/articles/establishing-habits" },
-  { name: "Becoming Gritty", href: "/articles/becoming-gritty" },
-  { name: "Handling Setbacks", href: "/articles/handling-setbacks" },
-  { name: "Overcoming Limits", href: "/articles/overcoming-limits" },
-  { name: "Persevering", href: "/articles/persevering" },
-];
-
 const navLinks = [
   { name: "Articles", href: "/articles" },
   { name: "Books", href: "/books" },
-  { name: "Maps", href: "/maps" },
+  { name: "Pricing", href: "/pricing" },
   { name: "About", href: "/about" },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [journeyOpen, setJourneyOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -42,33 +31,6 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-1">
-            {/* Journey Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => setJourneyOpen(true)}
-              onMouseLeave={() => setJourneyOpen(false)}
-            >
-              <button className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                The Journey
-              </button>
-              {journeyOpen && (
-                <div className="absolute top-full left-0 w-64 mt-1 py-2 bg-card border border-border rounded-xl shadow-lg">
-                  {journeySteps.map((step, index) => (
-                    <Link
-                      key={step.href}
-                      href={step.href}
-                      className="flex items-center gap-3 px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
-                    >
-                      <span className="w-6 h-6 rounded-full bg-ember/10 text-ember text-xs font-medium flex items-center justify-center">
-                        {index + 1}
-                      </span>
-                      {step.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -80,11 +42,19 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:flex lg:items-center lg:gap-4">
-            <Button className="gradient-ember text-white hover:opacity-90 transition-opacity gap-2">
-              <Sparkles className="w-4 h-4" />
-              Talk to AI Coach
+          {/* CTA Buttons */}
+          <div className="hidden lg:flex lg:items-center lg:gap-3">
+            <Link 
+              href="/login"
+              className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Log in
+            </Link>
+            <Button className="gradient-ember text-white hover:opacity-90 transition-opacity gap-2" asChild>
+              <Link href="/signup">
+                <Sparkles className="w-4 h-4" />
+                Get Started Free
+              </Link>
             </Button>
           </div>
 
@@ -106,23 +76,6 @@ export function Header() {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border/50">
             <div className="space-y-1">
-              <p className="px-4 py-2 text-xs font-medium text-muted-foreground uppercase tracking-wider">
-                The Journey
-              </p>
-              {journeySteps.map((step, index) => (
-                <Link
-                  key={step.href}
-                  href={step.href}
-                  className="flex items-center gap-3 px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <span className="w-6 h-6 rounded-full bg-ember/10 text-ember text-xs font-medium flex items-center justify-center">
-                    {index + 1}
-                  </span>
-                  {step.name}
-                </Link>
-              ))}
-              <div className="h-px bg-border my-2" />
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -133,10 +86,20 @@ export function Header() {
                   {link.name}
                 </Link>
               ))}
+              <div className="h-px bg-border my-2" />
+              <Link
+                href="/login"
+                className="block px-4 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Log in
+              </Link>
               <div className="px-4 pt-4">
-                <Button className="w-full gradient-ember text-white gap-2">
-                  <Sparkles className="w-4 h-4" />
-                  Talk to AI Coach
+                <Button className="w-full gradient-ember text-white gap-2" asChild>
+                  <Link href="/signup">
+                    <Sparkles className="w-4 h-4" />
+                    Get Started Free
+                  </Link>
                 </Button>
               </div>
             </div>
