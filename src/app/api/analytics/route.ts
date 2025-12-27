@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 
-const POSTHOG_API_URL = "https://us.i.posthog.com";
-const POSTHOG_PROJECT_ID = process.env.NEXT_PUBLIC_POSTHOG_KEY?.split("_")[1] || "";
+// PostHog API - use the app host, not the ingestion host
+const POSTHOG_API_URL = process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://us.posthog.com";
 
 interface PostHogEvent {
   event: string;
@@ -10,115 +10,98 @@ interface PostHogEvent {
   unique_persons: number;
 }
 
-interface PostHogTrendResult {
-  data: number[];
-  labels: string[];
-  count: number;
-}
+async function fetchPostHogQuery(hogqlQuery: string) {
+  const apiKey = process.env.POSTHOG_PERSONAL_API_KEY;
+  
+  if (!apiKey) {
+    throw new Error("POSTHOG_PERSONAL_API_KEY is not configured");
+  }
 
-async function fetchPostHogInsight(query: object) {
   const response = await fetch(`${POSTHOG_API_URL}/api/projects/@current/query/`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.POSTHOG_PERSONAL_API_KEY}`,
+      Authorization: `Bearer ${apiKey}`,
     },
-    body: JSON.stringify(query),
+    body: JSON.stringify({
+      query: {
+        kind: "HogQLQuery",
+        query: hogqlQuery,
+      },
+    }),
   });
 
   if (!response.ok) {
-    const error = await response.text();
-    console.error("PostHog API error:", error);
-    throw new Error(`PostHog API error: ${response.status}`);
+    const errorText = await response.text();
+    console.error("PostHog API error:", response.status, errorText);
+    throw new Error(`PostHog API error: ${response.status} - ${errorText.substring(0, 200)}`);
   }
 
   return response.json();
 }
 
-async function getEventCounts(dateFrom: string, dateTo: string) {
-  const query = {
-    query: {
-      kind: "EventsQuery",
-      select: ["event", "count()", "count(distinct person_id)"],
-      after: dateFrom,
-      before: dateTo,
-      orderBy: ["count() DESC"],
-      limit: 20,
-    },
-  };
+async function getEventCounts(dateFrom: string) {
+  const query = `
+    SELECT 
+      event,
+      count() as count,
+      count(distinct person_id) as unique_persons
+    FROM events
+    WHERE timestamp >= toDateTime('${dateFrom}')
+    GROUP BY event
+    ORDER BY count DESC
+    LIMIT 20
+  `;
 
-  const result = await fetchPostHogInsight(query);
-  
-  return (result.results || []).map((row: [string, number, number]) => ({
-    event: row[0],
-    count: row[1],
-    unique_persons: row[2],
-  }));
-}
-
-async function getTrendData(event: string, dateFrom: string, dateTo: string) {
-  const query = {
-    query: {
-      kind: "TrendsQuery", 
-      series: [
-        {
-          kind: "EventsNode",
-          event: event,
-          math: "total",
-        },
-      ],
-      dateRange: {
-        date_from: dateFrom,
-        date_to: dateTo,
-      },
-      interval: "day",
-    },
-  };
-
-  const result = await fetchPostHogInsight(query);
-  
-  if (result.results && result.results[0]) {
-    return {
-      data: result.results[0].data || [],
-      labels: result.results[0].labels || [],
-      count: result.results[0].count || 0,
-    };
-  }
-  
-  return { data: [], labels: [], count: 0 };
-}
-
-async function getFunnelData(steps: string[], dateFrom: string, dateTo: string) {
-  const query = {
-    query: {
-      kind: "FunnelsQuery",
-      series: steps.map((event) => ({
-        kind: "EventsNode",
-        event: event,
-      })),
-      dateRange: {
-        date_from: dateFrom,
-        date_to: dateTo,
-      },
-      funnelVizType: "steps",
-    },
-  };
-
-  const result = await fetchPostHogInsight(query);
-  
-  if (result.results && result.results[0]) {
-    return result.results[0].map((step: { name: string; count: number; conversionRates: { total: number } }) => ({
-      name: step.name,
-      count: step.count,
-      rate: Math.round((step.conversionRates?.total || 0) * 100),
+  try {
+    const result = await fetchPostHogQuery(query);
+    return (result.results || []).map((row: [string, number, number]) => ({
+      event: row[0],
+      count: row[1],
+      unique_persons: row[2],
     }));
+  } catch (error) {
+    console.error("Error fetching event counts:", error);
+    return [];
   }
-  
-  return [];
+}
+
+async function getEventCount(eventName: string, dateFrom: string): Promise<number> {
+  const query = `
+    SELECT count() as count
+    FROM events
+    WHERE event = '${eventName}'
+    AND timestamp >= toDateTime('${dateFrom}')
+  `;
+
+  try {
+    const result = await fetchPostHogQuery(query);
+    return result.results?.[0]?.[0] || 0;
+  } catch (error) {
+    console.error(`Error fetching count for ${eventName}:`, error);
+    return 0;
+  }
+}
+
+async function getUniqueUsers(eventName: string, dateFrom: string): Promise<number> {
+  const query = `
+    SELECT count(distinct person_id) as unique_users
+    FROM events
+    WHERE event = '${eventName}'
+    AND timestamp >= toDateTime('${dateFrom}')
+  `;
+
+  try {
+    const result = await fetchPostHogQuery(query);
+    return result.results?.[0]?.[0] || 0;
+  } catch (error) {
+    console.error(`Error fetching unique users for ${eventName}:`, error);
+    return 0;
+  }
 }
 
 export async function GET(request: NextRequest) {
-  // Check authentication - only allow admin users
+  // Check authentication - only allow logged-in users
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   
@@ -126,124 +109,118 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  // Check if PostHog API key is configured
+  if (!process.env.POSTHOG_PERSONAL_API_KEY) {
+    return NextResponse.json(
+      { error: "PostHog API key not configured. Add POSTHOG_PERSONAL_API_KEY to environment variables." },
+      { status: 500 }
+    );
+  }
+
   // Get date range from query params
   const searchParams = request.nextUrl.searchParams;
   const range = searchParams.get("range") || "7d";
   
   const now = new Date();
-  let dateFrom: string;
+  let dateFrom: Date;
   
   switch (range) {
     case "24h":
-      dateFrom = new Date(now.getTime() - 24 * 60 * 60 * 1000).toISOString();
+      dateFrom = new Date(now.getTime() - 24 * 60 * 60 * 1000);
       break;
     case "7d":
-      dateFrom = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString();
+      dateFrom = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
       break;
     case "30d":
-      dateFrom = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString();
+      dateFrom = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
       break;
     case "90d":
-      dateFrom = new Date(now.getTime() - 90 * 24 * 60 * 60 * 1000).toISOString();
+      dateFrom = new Date(now.getTime() - 90 * 24 * 60 * 60 * 1000);
       break;
     default:
-      dateFrom = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString();
+      dateFrom = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
   }
   
-  const dateTo = now.toISOString();
+  const dateFromStr = dateFrom.toISOString().replace('T', ' ').split('.')[0];
 
   try {
-    // Fetch all data in parallel
-    const [
-      pageviewTrend,
-      signupTrend,
-      eventCounts,
-      acquisitionFunnel,
-      activationFunnel,
-    ] = await Promise.all([
-      getTrendData("$pageview", dateFrom, dateTo),
-      getTrendData("signup_completed", dateFrom, dateTo),
-      getEventCounts(dateFrom, dateTo),
-      getFunnelData(
-        ["$pageview", "pricing_viewed", "signup_started", "signup_completed"],
-        dateFrom,
-        dateTo
-      ),
-      getFunnelData(
-        ["signup_completed", "onboarding_started", "goal_created", "checkin_completed"],
-        dateFrom,
-        dateTo
-      ),
-    ]);
-
-    // Calculate metrics from event counts
-    const getEventCount = (eventName: string) => {
+    // Fetch event counts first
+    const eventCounts = await getEventCounts(dateFromStr);
+    
+    // Helper to get count from eventCounts
+    const getCount = (eventName: string): number => {
       const event = eventCounts.find((e: PostHogEvent) => e.event === eventName);
-      return event ? event.count : 0;
+      return event?.count || 0;
     };
 
-    const getUniqueUsers = (eventName: string) => {
+    const getUnique = (eventName: string): number => {
       const event = eventCounts.find((e: PostHogEvent) => e.event === eventName);
-      return event ? event.unique_persons : 0;
+      return event?.unique_persons || 0;
     };
+
+    // Build metrics
+    const pageviews = getCount("$pageview");
+    const signups = getCount("signup_completed");
+    const checkins = getCount("checkin_completed");
+    const subscriptions = getCount("subscription_started");
 
     // Build response
     const analytics = {
       metrics: {
         visitors: {
-          value: pageviewTrend.count,
-          trend: "up", // Would need previous period to calculate
+          value: pageviews,
+          trend: "up" as const,
           change: 0,
         },
         signups: {
-          value: getEventCount("signup_completed"),
-          trend: "up",
+          value: signups,
+          trend: "up" as const,
           change: 0,
         },
         activated: {
-          value: getEventCount("checkin_completed"),
-          trend: "up", 
+          value: checkins,
+          trend: "up" as const,
           change: 0,
         },
         proSubscribers: {
-          value: getEventCount("subscription_started"),
-          trend: "up",
+          value: subscriptions,
+          trend: "up" as const,
           change: 0,
         },
       },
       funnels: {
         acquisition: {
           name: "Acquisition Funnel",
-          steps: acquisitionFunnel.length > 0 ? acquisitionFunnel : [
-            { name: "Visited Site", count: pageviewTrend.count, rate: 100 },
-            { name: "Viewed Pricing", count: getEventCount("pricing_viewed"), rate: 0 },
-            { name: "Started Signup", count: getEventCount("signup_started"), rate: 0 },
-            { name: "Completed Signup", count: getEventCount("signup_completed"), rate: 0 },
+          steps: [
+            { name: "Page Views", count: pageviews, rate: 100 },
+            { name: "Pricing Viewed", count: getCount("pricing_viewed"), rate: 0 },
+            { name: "Signup Started", count: getCount("signup_started"), rate: 0 },
+            { name: "Signup Completed", count: signups, rate: 0 },
           ],
         },
         activation: {
-          name: "Activation Funnel", 
-          steps: activationFunnel.length > 0 ? activationFunnel : [
-            { name: "Signed Up", count: getEventCount("signup_completed"), rate: 100 },
-            { name: "Started Onboarding", count: getEventCount("onboarding_started"), rate: 0 },
-            { name: "Set Purpose", count: getEventCount("goal_created"), rate: 0 },
-            { name: "First Check-in", count: getEventCount("checkin_completed"), rate: 0 },
+          name: "Activation Funnel",
+          steps: [
+            { name: "Signed Up", count: signups, rate: 100 },
+            { name: "Onboarding Started", count: getCount("onboarding_started"), rate: 0 },
+            { name: "Goal Created", count: getCount("goal_created"), rate: 0 },
+            { name: "First Check-in", count: checkins, rate: 0 },
           ],
         },
         engagement: {
           name: "Engagement Funnel",
           steps: [
-            { name: "Chat Started", count: getEventCount("chat_started"), rate: 100 },
-            { name: "Chat Message Sent", count: getEventCount("chat_message_sent"), rate: 0 },
-            { name: "Article Viewed", count: getEventCount("article_viewed"), rate: 0 },
+            { name: "Dashboard Viewed", count: getCount("dashboard_viewed"), rate: 100 },
+            { name: "Chat Started", count: getCount("chat_started"), rate: 0 },
+            { name: "Article Viewed", count: getCount("article_viewed"), rate: 0 },
           ],
         },
         monetization: {
           name: "Monetization Funnel",
           steps: [
-            { name: "Pricing Viewed", count: getEventCount("pricing_viewed"), rate: 100 },
-            { name: "Checkout Started", count: getEventCount("checkout_started"), rate: 0 },
-            { name: "Subscription Started", count: getEventCount("subscription_started"), rate: 0 },
+            { name: "Pricing Viewed", count: getCount("pricing_viewed"), rate: 100 },
+            { name: "Checkout Started", count: getCount("checkout_started"), rate: 0 },
+            { name: "Subscription Started", count: subscriptions, rate: 0 },
           ],
         },
       },
@@ -252,13 +229,9 @@ export async function GET(request: NextRequest) {
         count: e.count,
         users: e.unique_persons,
       })),
-      trends: {
-        pageviews: pageviewTrend,
-        signups: signupTrend,
-      },
       dateRange: {
-        from: dateFrom,
-        to: dateTo,
+        from: dateFromStr,
+        to: now.toISOString(),
         range,
       },
     };
@@ -267,9 +240,11 @@ export async function GET(request: NextRequest) {
   } catch (error) {
     console.error("Analytics API error:", error);
     return NextResponse.json(
-      { error: "Failed to fetch analytics", details: String(error) },
+      { 
+        error: "Failed to fetch analytics", 
+        details: error instanceof Error ? error.message : String(error) 
+      },
       { status: 500 }
     );
   }
 }
-
