@@ -219,7 +219,7 @@ export default function BooksPage() {
             Ready to Strengthen Your Willpower?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get personalized guidance from Willson based on the principles from The Will of Heroes.
+            Get personalized guidance from our AI coach based on the principles from The Will of Heroes.
           </p>
           <Button 
             size="lg" 
@@ -227,7 +227,7 @@ export default function BooksPage() {
             onClick={() => setIsChatOpen(true)}
           >
             <Sparkles className="w-4 h-4 mr-2" />
-            Talk to Willson
+            Talk to AI Coach
           </Button>
         </div>
       </section>

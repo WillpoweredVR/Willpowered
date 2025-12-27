@@ -238,7 +238,7 @@ export default function AboutPage() {
               <div>
                 <Brain className="w-12 h-12 text-ember mb-6" />
                 <h2 className="font-serif text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  Why I&apos;m Building Willson
+                  Why I&apos;m Building an AI Coach
                 </h2>
                 <div className="prose prose-lg text-muted-foreground">
                   <p>
@@ -253,7 +253,7 @@ export default function AboutPage() {
                     and get personalized guidance—without the trial and error that cost me my hands?
                   </p>
                   <p>
-                    That&apos;s why I&apos;m building Willson. He contains everything I&apos;ve learned 
+                    That&apos;s why I&apos;m building the Willpowered AI Coach. It contains everything I&apos;ve learned 
                     from a decade of research, the stories of twelve extraordinary achievers, and the hard-won 
                     wisdom from my own journey.
                   </p>
@@ -272,7 +272,7 @@ export default function AboutPage() {
                   onClick={() => setIsChatOpen(true)}
                 >
                   <Sparkles className="w-4 h-4 mr-2" />
-                  Meet Willson
+                  Talk to the AI Coach
                 </Button>
               </div>
             </div>
@@ -344,7 +344,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               Whether you&apos;re looking to build better habits, find your purpose, or push through a challenge, 
-              Willson is here to guide you—drawing from the same research and stories that changed my life.
+              the AI Coach is here to guide you—drawing from the same research and stories that changed my life.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button 
@@ -353,11 +353,11 @@ export default function AboutPage() {
                 onClick={() => setIsChatOpen(true)}
               >
                 <Sparkles className="w-4 h-4 mr-2" />
-                Talk to Willson
+                Talk to AI Coach
               </Button>
-              <Link href="/signup">
+              <Link href="/journey/finding-your-purpose">
                 <Button size="lg" variant="outline">
-                  Get Started Free <ArrowRight className="w-4 h-4 ml-2" />
+                  Start the 7-Step Journey <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
             </div>

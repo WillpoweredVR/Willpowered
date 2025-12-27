@@ -1,42 +1,30 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { Menu, X, Sparkles, User, LogIn } from "lucide-react";
+import { useState } from "react";
+import { Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ChatModal } from "@/components/ChatModal";
-import { createClient } from "@/lib/supabase/client";
-import type { User as SupabaseUser } from "@supabase/supabase-js";
+
+const journeySteps = [
+  { name: "Finding Your Purpose", href: "/articles/finding-your-purpose" },
+  { name: "Acquiring Skills", href: "/articles/acquiring-skills" },
+  { name: "Establishing Habits", href: "/articles/establishing-habits" },
+  { name: "Becoming Gritty", href: "/articles/becoming-gritty" },
+  { name: "Handling Setbacks", href: "/articles/handling-setbacks" },
+  { name: "Overcoming Limits", href: "/articles/overcoming-limits" },
+  { name: "Persevering", href: "/articles/persevering" },
+];
 
 const navLinks = [
-  { name: "Pricing", href: "/pricing" },
   { name: "Articles", href: "/articles" },
   { name: "Books", href: "/books" },
+  { name: "Maps", href: "/maps" },
   { name: "About", href: "/about" },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
-  const [user, setUser] = useState<SupabaseUser | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const supabase = createClient();
-    
-    // Check current session
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      setUser(user);
-      setLoading(false);
-    });
-
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
-    });
-
-    return () => subscription.unsubscribe();
-  }, []);
+  const [journeyOpen, setJourneyOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -54,6 +42,33 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-1">
+            {/* Journey Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setJourneyOpen(true)}
+              onMouseLeave={() => setJourneyOpen(false)}
+            >
+              <button className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+                The Journey
+              </button>
+              {journeyOpen && (
+                <div className="absolute top-full left-0 w-64 mt-1 py-2 bg-card border border-border rounded-xl shadow-lg">
+                  {journeySteps.map((step, index) => (
+                    <Link
+                      key={step.href}
+                      href={step.href}
+                      className="flex items-center gap-3 px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors"
+                    >
+                      <span className="w-6 h-6 rounded-full bg-ember/10 text-ember text-xs font-medium flex items-center justify-center">
+                        {index + 1}
+                      </span>
+                      {step.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -65,46 +80,12 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="hidden lg:flex lg:items-center lg:gap-3">
-            {loading ? (
-              <div className="w-24 h-9 bg-muted/50 rounded-lg animate-pulse" />
-            ) : user ? (
-              <>
-                <Link
-                  href="/dashboard"
-                  className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-                >
-                  <User className="w-4 h-4" />
-                  Dashboard
-                </Link>
-                <Button 
-                  className="gradient-ember text-white hover:opacity-90 transition-opacity gap-2"
-                  onClick={() => setIsChatOpen(true)}
-                >
-                  <Sparkles className="w-4 h-4" />
-                  Willson
-                </Button>
-              </>
-            ) : (
-              <>
-                <Link
-                  href="/login"
-                  className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
-                >
-                  <LogIn className="w-4 h-4" />
-                  Sign In
-                </Link>
-                <Button 
-                  asChild
-                  className="gradient-ember text-white hover:opacity-90 transition-opacity"
-                >
-                  <Link href="/signup">
-                    Get Started Free
-                  </Link>
-                </Button>
-              </>
-            )}
+          {/* CTA Button */}
+          <div className="hidden lg:flex lg:items-center lg:gap-4">
+            <Button className="gradient-ember text-white hover:opacity-90 transition-opacity gap-2">
+              <Sparkles className="w-4 h-4" />
+              Talk to AI Coach
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -125,6 +106,23 @@ export function Header() {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border/50">
             <div className="space-y-1">
+              <p className="px-4 py-2 text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                The Journey
+              </p>
+              {journeySteps.map((step, index) => (
+                <Link
+                  key={step.href}
+                  href={step.href}
+                  className="flex items-center gap-3 px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span className="w-6 h-6 rounded-full bg-ember/10 text-ember text-xs font-medium flex items-center justify-center">
+                    {index + 1}
+                  </span>
+                  {step.name}
+                </Link>
+              ))}
+              <div className="h-px bg-border my-2" />
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -135,62 +133,17 @@ export function Header() {
                   {link.name}
                 </Link>
               ))}
-              <div className="px-4 pt-4 space-y-3">
-                {user ? (
-                  <>
-                    <Button 
-                      asChild
-                      variant="outline"
-                      className="w-full gap-2"
-                    >
-                      <Link href="/dashboard" onClick={() => setMobileMenuOpen(false)}>
-                        <User className="w-4 h-4" />
-                        Dashboard
-                      </Link>
-                    </Button>
-                    <Button 
-                      className="w-full gradient-ember text-white gap-2"
-                      onClick={() => {
-                        setMobileMenuOpen(false);
-                        setIsChatOpen(true);
-                      }}
-                    >
-                      <Sparkles className="w-4 h-4" />
-                      Talk to Willson
-                    </Button>
-                  </>
-                ) : (
-                  <>
-                    <Button 
-                      asChild
-                      variant="outline"
-                      className="w-full gap-2"
-                    >
-                      <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
-                        <LogIn className="w-4 h-4" />
-                        Sign In
-                      </Link>
-                    </Button>
-                    <Button 
-                      asChild
-                      className="w-full gradient-ember text-white"
-                    >
-                      <Link href="/signup" onClick={() => setMobileMenuOpen(false)}>
-                        Get Started Free
-                      </Link>
-                    </Button>
-                  </>
-                )}
+              <div className="px-4 pt-4">
+                <Button className="w-full gradient-ember text-white gap-2">
+                  <Sparkles className="w-4 h-4" />
+                  Talk to AI Coach
+                </Button>
               </div>
             </div>
           </div>
         )}
       </nav>
-
-      <ChatModal 
-        isOpen={isChatOpen} 
-        onClose={() => setIsChatOpen(false)} 
-      />
     </header>
   );
 }
+

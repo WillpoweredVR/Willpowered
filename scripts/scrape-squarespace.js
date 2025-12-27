@@ -1,7 +1,13 @@
 /**
- * Willpowered Squarespace Content Scraper (v2)
+ * Willpowered Squarespace Content Scraper
  * 
- * Improved to preserve formatting and structure
+ * This script extracts all content from willpowered.com including:
+ * - Articles (title, content, metadata, categories)
+ * - Images (downloads them locally)
+ * - Maps page content
+ * - Books recommendations
+ * 
+ * Run with: node scripts/scrape-squarespace.js
  */
 
 const fetch = require('node-fetch');
@@ -9,34 +15,28 @@ const cheerio = require('cheerio');
 const fs = require('fs').promises;
 const path = require('path');
 const https = require('https');
-const TurndownService = require('turndown');
 
-// Create an agent that bypasses SSL verification
+// Create an agent that bypasses SSL verification (for scraping only)
 const httpsAgent = new https.Agent({
   rejectUnauthorized: false
 });
 
-// Initialize Turndown for HTML to Markdown conversion
-const turndownService = new TurndownService({
-  headingStyle: 'atx',
-  bulletListMarker: '-',
-  codeBlockStyle: 'fenced',
-});
-
-// Customize turndown rules for better output
-turndownService.addRule('removeEmptyParagraphs', {
-  filter: function (node) {
-    return node.nodeName === 'P' && node.textContent.trim() === '';
-  },
-  replacement: function () {
-    return '';
-  }
-});
-
 const BASE_URL = 'https://willpowered.com';
 const OUTPUT_DIR = path.join(__dirname, '../content');
+const IMAGES_DIR = path.join(OUTPUT_DIR, 'images');
 
-// Utility to pause between requests
+// Category mapping for the 7-step journey
+const CATEGORY_MAP = {
+  'finding-your-purpose': 'Step 1: Finding Your Purpose',
+  'acquiring-skills': 'Step 2: Acquiring Skills & Knowledge',
+  'establishing-habits': 'Step 3: Establishing Great Habits',
+  'becoming-gritty': 'Step 4: Becoming Gritty',
+  'handling-setbacks': 'Step 5: Handling Setbacks',
+  'overcoming-limits': 'Step 6: Overcoming Limits',
+  'persevering': 'Step 7: Persevering to the Finish',
+};
+
+// Utility to pause between requests (be nice to the server)
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Fetch HTML from a URL
@@ -59,75 +59,36 @@ async function fetchPage(url) {
   }
 }
 
-// Convert HTML content to clean Markdown
-function htmlToMarkdown($, contentEl) {
-  // Clone the element to avoid modifying the original
-  const $content = contentEl.clone();
-  
-  // Remove unwanted elements
-  $content.find('script, style, nav, footer, .share-buttons, .social-icons, .newsletter-signup').remove();
-  
-  // Get the HTML
-  let html = $content.html();
-  
-  if (!html) return '';
-  
-  // Convert to Markdown
-  let markdown = turndownService.turndown(html);
-  
-  // Clean up extra whitespace while preserving paragraph breaks
-  markdown = markdown
-    .replace(/\n{3,}/g, '\n\n')  // Max 2 newlines
-    .replace(/^\s+/gm, '')  // Remove leading whitespace from lines
-    .trim();
-  
-  return markdown;
+// Download an image and save it locally
+async function downloadImage(imageUrl, filename) {
+  try {
+    // Handle relative URLs
+    const fullUrl = imageUrl.startsWith('http') ? imageUrl : `${BASE_URL}${imageUrl}`;
+    
+    const response = await fetch(fullUrl, { agent: httpsAgent });
+    if (!response.ok) return null;
+    
+    const buffer = await response.buffer();
+    const filepath = path.join(IMAGES_DIR, filename);
+    await fs.writeFile(filepath, buffer);
+    
+    return filename;
+  } catch (error) {
+    console.error(`  Error downloading image: ${error.message}`);
+    return null;
+  }
 }
 
-// Extract the real title from the page
-function extractTitle($, url) {
-  // Try multiple selectors for the title
-  const selectors = [
-    'h1.Blog-title',
-    'article h1',
-    '.entry-title',
-    'h1.post-title',
-    '.BlogItem-title',
-    'h1'
-  ];
-  
-  for (const selector of selectors) {
-    const title = $(selector).first().text().trim();
-    if (title && title !== 'Willpowered' && title.length > 3) {
-      return title;
-    }
-  }
-  
-  // Try meta title
-  const metaTitle = $('meta[property="og:title"]').attr('content');
-  if (metaTitle && metaTitle !== 'Willpowered') {
-    return metaTitle.split('|')[0].trim();
-  }
-  
-  // Generate from slug as last resort
-  const slug = url.split('/').pop() || 'untitled';
-  return slug
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-}
-
-// Get article URLs
+// Extract article URLs from the articles listing page
 async function getArticleUrls() {
   console.log('\n📚 Getting article URLs...');
-  const articles = new Set();
+  const articles = [];
   
-  // Try to find all learn/ articles 
+  // Pages to scan for article links
   const pagesToScan = [
     `${BASE_URL}`,
     `${BASE_URL}/articles`,
     `${BASE_URL}/blog`,
-    `${BASE_URL}/learn`,
   ];
   
   for (const pageUrl of pagesToScan) {
@@ -136,193 +97,332 @@ async function getArticleUrls() {
     
     const $ = cheerio.load(html);
     
-    // Look for all internal links that could be articles
-    $('a[href]').each((i, el) => {
+    // Look for article/blog links - specifically ones on willpowered.com
+    $('a').each((i, el) => {
       const href = $(el).attr('href');
       if (!href) return;
       
-      // Build full URL
-      let fullUrl = href;
-      if (!href.startsWith('http')) {
-        fullUrl = `${BASE_URL}${href.startsWith('/') ? '' : '/'}${href}`;
+      // Skip external links, tags, and categories
+      if (href.includes('://') && !href.includes('willpowered.com')) return;
+      if (href.includes('/tag/') || href.includes('/category/')) return;
+      if (href.includes('#') && !href.includes('/')) return;
+      
+      // Look for blog-style URLs
+      const isBlogPost = 
+        href.includes('/blog/') ||
+        (href.match(/\/\d{4}\/\d{1,2}\/\d{1,2}\//) !== null) || // date-based URLs
+        (href.match(/\/[a-z0-9-]+$/) !== null && href.split('/').length >= 2);
+      
+      if (isBlogPost) {
+        const fullUrl = href.startsWith('http') ? href : `${BASE_URL}${href}`;
+        
+        // Only include willpowered.com URLs
+        if (fullUrl.includes('willpowered.com') && !articles.includes(fullUrl)) {
+          articles.push(fullUrl);
+        }
       }
-      
-      // Only include willpowered.com articles
-      if (!fullUrl.includes('willpowered.com')) return;
-      
-      // Check if it's a learn/ article URL
-      if (fullUrl.includes('/learn/')) {
-        articles.add(fullUrl);
+    });
+    
+    // Also look for article elements
+    $('article').each((i, el) => {
+      const $article = $(el);
+      const link = $article.find('a').first().attr('href');
+      if (link && link.includes('willpowered.com') || (link && !link.includes('://'))) {
+        const fullUrl = link.startsWith('http') ? link : `${BASE_URL}${link}`;
+        if (fullUrl.includes('willpowered.com') && !articles.includes(fullUrl)) {
+          articles.push(fullUrl);
+        }
       }
     });
     
     await delay(300);
   }
   
-  console.log(`  Found ${articles.size} article URLs`);
-  return Array.from(articles);
+  // Filter out non-article pages
+  const filteredArticles = articles.filter(url => {
+    const path = url.replace(BASE_URL, '');
+    // Skip top-level navigation pages
+    const skipPaths = ['/articles', '/books', '/maps', '/videos', '/tools', '/self-evaluation', '/about', '/'];
+    return !skipPaths.includes(path) && path.length > 1;
+  });
+  
+  console.log(`  Found ${filteredArticles.length} potential article URLs`);
+  return [...new Set(filteredArticles)]; // Remove duplicates
 }
 
-// Scrape a single article with proper formatting
+// Scrape a single article
 async function scrapeArticle(url) {
   const html = await fetchPage(url);
   if (!html) return null;
   
   const $ = cheerio.load(html);
   
+  // Extract article data
   const article = {
     url,
     slug: url.split('/').pop() || 'untitled',
     title: '',
     excerpt: '',
     content: '',
+    contentHtml: '',
     date: '',
     author: 'Colin Robertson',
     categories: [],
     tags: [],
+    images: [],
     featuredImage: null,
   };
   
-  // Get the real title
-  article.title = extractTitle($, url);
+  // Title - try multiple selectors
+  article.title = $('h1.Blog-title, article h1, .entry-title, h1').first().text().trim() ||
+                  $('meta[property="og:title"]').attr('content') ||
+                  $('title').text().split('|')[0].trim();
   
   // Date
   const dateEl = $('time, .Blog-date, .entry-date, [datetime]').first();
-  article.date = dateEl.attr('datetime') || '';
+  article.date = dateEl.attr('datetime') || dateEl.text().trim() || '';
   
+  // Try to parse date from text if needed
   if (!article.date) {
-    // Try to find date in meta or text
-    const dateMatch = html.match(/(\d{4}-\d{2}-\d{2})|(\w+\s+\d{1,2},?\s+\d{4})/);
-    if (dateMatch) {
-      const parsed = new Date(dateMatch[0]);
-      if (!isNaN(parsed.getTime())) {
-        article.date = parsed.toISOString().split('T')[0];
-      }
-    }
+    const dateMatch = html.match(/(\w+ \d{1,2}, \d{4})/);
+    if (dateMatch) article.date = dateMatch[1];
   }
   
-  // Find the main content area
+  // Content - try multiple selectors for Squarespace
   const contentSelectors = [
     '.Blog-content',
     '.entry-content', 
+    'article .sqs-block-content',
     '.blog-item-content',
-    '.BlogItem-content',
-    'article .sqs-layout',
-    '.Main-content article',
     'article',
   ];
   
   let contentEl = null;
   for (const selector of contentSelectors) {
     const el = $(selector).first();
-    if (el.length && el.text().trim().length > 200) {
+    if (el.length && el.text().trim().length > 100) {
       contentEl = el;
       break;
     }
   }
   
   if (contentEl) {
-    // Convert HTML to Markdown preserving structure
-    article.content = htmlToMarkdown($, contentEl);
+    // Store HTML content
+    article.contentHtml = contentEl.html();
     
-    // Extract first paragraph as excerpt
-    const firstPara = article.content.split('\n\n')[0];
-    article.excerpt = firstPara.substring(0, 200).trim();
-    if (article.excerpt.length === 200) {
-      article.excerpt += '...';
-    }
+    // Convert to clean text (for AI training and display)
+    article.content = contentEl.text()
+      .replace(/\s+/g, ' ')
+      .trim();
+    
+    // Extract excerpt (first 200 chars)
+    article.excerpt = article.content.substring(0, 250).trim() + '...';
   }
   
-  // Get description from meta if excerpt is weak
+  // Meta description as fallback excerpt
   if (!article.excerpt || article.excerpt.length < 50) {
     article.excerpt = $('meta[name="description"]').attr('content') ||
-                      $('meta[property="og:description"]').attr('content') || 
-                      article.excerpt;
+                      $('meta[property="og:description"]').attr('content') || '';
   }
   
   // Categories and tags
   $('.Blog-categories a, .entry-categories a, a[href*="/tag/"], a[href*="/category/"]').each((i, el) => {
     const tag = $(el).text().trim();
-    if (tag && tag.length > 1 && !article.tags.includes(tag)) {
+    if (tag && !article.tags.includes(tag)) {
       article.tags.push(tag);
     }
   });
   
-  // Detect journey step from URL, tags, or content
-  const journeyKeywords = {
-    'Finding Your Purpose': ['purpose', 'why', 'passion', 'meaning', 'motivation'],
-    'Acquiring Skills': ['skill', 'learn', 'practice', 'deliberate', 'knowledge'],
-    'Establishing Habits': ['habit', 'routine', 'consistency', 'automation', 'system'],
-    'Becoming Gritty': ['grit', 'perseverance', 'persistence', 'determination', 'resilience'],
-    'Handling Setbacks': ['setback', 'failure', 'obstacle', 'challenge', 'defeat', 'mistake'],
-    'Overcoming Limits': ['limit', 'comfort zone', 'impossible', 'barrier', 'breakthrough'],
-    'Persevering': ['persevere', 'finish', 'long-term', 'patience', 'endurance'],
-  };
-  
-  const contentLower = (article.content + ' ' + article.tags.join(' ')).toLowerCase();
-  for (const [category, keywords] of Object.entries(journeyKeywords)) {
-    if (keywords.some(kw => contentLower.includes(kw))) {
-      if (!article.categories.includes(category)) {
-        article.categories.push(category);
-      }
+  // Try to determine journey step category based on tags/content
+  for (const [slug, name] of Object.entries(CATEGORY_MAP)) {
+    const keywords = slug.replace(/-/g, ' ');
+    if (article.tags.some(t => t.toLowerCase().includes(keywords)) ||
+        article.content.toLowerCase().includes(keywords)) {
+      article.categories.push(name);
     }
   }
   
   // Featured image
-  article.featuredImage = $('meta[property="og:image"]').attr('content') || '';
+  const ogImage = $('meta[property="og:image"]').attr('content');
+  if (ogImage) {
+    article.featuredImage = ogImage;
+  }
+  
+  // Find all images in content
+  $('article img, .Blog-content img, .entry-content img').each((i, el) => {
+    const src = $(el).attr('src') || $(el).attr('data-src');
+    const alt = $(el).attr('alt') || '';
+    if (src) {
+      article.images.push({ src, alt });
+    }
+  });
   
   return article;
 }
 
-// Main function
+// Scrape the maps page
+async function scrapeMaps() {
+  console.log('\n🗺️  Scraping maps page...');
+  const html = await fetchPage(`${BASE_URL}/maps`);
+  if (!html) return [];
+  
+  const $ = cheerio.load(html);
+  const maps = [];
+  
+  // Find embedded maps (usually iframes from Coggle or similar)
+  $('iframe').each((i, el) => {
+    const src = $(el).attr('src');
+    const title = $(el).attr('title') || `Map ${i + 1}`;
+    if (src) {
+      maps.push({
+        title,
+        embedUrl: src,
+        type: src.includes('coggle') ? 'coggle' : 'embed',
+      });
+    }
+  });
+  
+  // Also look for links to maps
+  $('a[href*="coggle"], a[href*="mindmap"]').each((i, el) => {
+    const href = $(el).attr('href');
+    const title = $(el).text().trim() || `Map ${maps.length + 1}`;
+    if (href && !maps.find(m => m.embedUrl === href)) {
+      maps.push({
+        title,
+        embedUrl: href,
+        type: 'link',
+      });
+    }
+  });
+  
+  console.log(`  Found ${maps.length} maps`);
+  return maps;
+}
+
+// Scrape books page
+async function scrapeBooks() {
+  console.log('\n📖 Scraping books page...');
+  const html = await fetchPage(`${BASE_URL}/books`);
+  if (!html) return [];
+  
+  const $ = cheerio.load(html);
+  const books = [];
+  
+  // Look for book entries (adjust selectors based on actual structure)
+  $('.sqs-block-content, .book-item, article').each((i, el) => {
+    const $el = $(el);
+    const title = $el.find('h2, h3, .book-title').first().text().trim();
+    const description = $el.find('p').first().text().trim();
+    const image = $el.find('img').first().attr('src');
+    const link = $el.find('a[href*="amazon"], a[href*="goodreads"]').first().attr('href');
+    
+    if (title && title.length > 3) {
+      books.push({
+        title,
+        description: description.substring(0, 500),
+        image,
+        purchaseLink: link,
+      });
+    }
+  });
+  
+  console.log(`  Found ${books.length} book entries`);
+  return books;
+}
+
+// Scrape tools page
+async function scrapeTools() {
+  console.log('\n🔧 Scraping tools page...');
+  const html = await fetchPage(`${BASE_URL}/tools`);
+  if (!html) return [];
+  
+  const $ = cheerio.load(html);
+  const tools = [];
+  
+  // Find tool recommendations
+  $('a[href*="zapier"], a[href*="convertkit"], a[href*="trello"], a[href*="airtable"], a[href*="sumo"], a[href*="jotform"]').each((i, el) => {
+    const $parent = $(el).closest('.sqs-block-content, p, div');
+    const name = $(el).text().trim();
+    const description = $parent.text().replace(name, '').trim().substring(0, 300);
+    const link = $(el).attr('href');
+    
+    if (name && !tools.find(t => t.name === name)) {
+      tools.push({
+        name,
+        description,
+        link,
+      });
+    }
+  });
+  
+  console.log(`  Found ${tools.length} tools`);
+  return tools;
+}
+
+// Main scraping function
 async function main() {
-  console.log('🚀 Willpowered Content Scraper v2');
+  console.log('🚀 Willpowered Content Scraper');
   console.log('================================');
   console.log(`Scraping from: ${BASE_URL}`);
-  console.log('This version preserves formatting!\n');
   
-  // Create output directory
-  const articlesDir = path.join(OUTPUT_DIR, 'articles');
-  await fs.mkdir(articlesDir, { recursive: true });
-  
-  // Get article URLs
-  const articleUrls = await getArticleUrls();
+  // Create output directories
+  await fs.mkdir(OUTPUT_DIR, { recursive: true });
+  await fs.mkdir(IMAGES_DIR, { recursive: true });
   
   const results = {
     scrapedAt: new Date().toISOString(),
+    source: BASE_URL,
     articles: [],
+    maps: [],
+    books: [],
+    tools: [],
   };
   
+  // Get all article URLs
+  const articleUrls = await getArticleUrls();
+  
   // Scrape each article
-  console.log('\n📝 Scraping articles with formatting...');
+  console.log('\n📝 Scraping articles...');
   for (let i = 0; i < articleUrls.length; i++) {
     const url = articleUrls[i];
     console.log(`\n[${i + 1}/${articleUrls.length}] ${url}`);
     
     const article = await scrapeArticle(url);
-    if (article && article.title && article.content.length > 200) {
+    if (article && article.title && article.content.length > 100) {
       results.articles.push(article);
-      
-      // Save as Markdown file
-      // Clean excerpt for YAML (remove markdown, limit length, escape)
-      const cleanExcerpt = article.excerpt
-        .replace(/[*_#`\[\]]/g, '')  // Remove markdown chars
-        .replace(/\\/g, '')  // Remove backslashes
-        .replace(/"/g, "'")  // Replace quotes
-        .replace(/\n/g, ' ')  // Remove newlines
-        .substring(0, 180)
-        .trim();
-      
-      const cleanTitle = article.title
-        .replace(/"/g, "'")
-        .replace(/\\/g, '');
-      
-      const mdContent = `---
-title: "${cleanTitle}"
+      console.log(`  ✓ "${article.title}" (${article.content.length} chars)`);
+    } else {
+      console.log(`  ✗ Skipped (insufficient content)`);
+    }
+    
+    // Be nice to the server
+    await delay(500);
+  }
+  
+  // Scrape other sections
+  results.maps = await scrapeMaps();
+  await delay(300);
+  
+  results.books = await scrapeBooks();
+  await delay(300);
+  
+  results.tools = await scrapeTools();
+  
+  // Save results
+  const outputPath = path.join(OUTPUT_DIR, 'squarespace-export.json');
+  await fs.writeFile(outputPath, JSON.stringify(results, null, 2));
+  
+  // Also save articles as individual markdown files
+  const articlesDir = path.join(OUTPUT_DIR, 'articles');
+  await fs.mkdir(articlesDir, { recursive: true });
+  
+  for (const article of results.articles) {
+    const mdContent = `---
+title: "${article.title.replace(/"/g, '\\"')}"
 slug: "${article.slug}"
 date: "${article.date}"
 author: "${article.author}"
-excerpt: "${cleanExcerpt}..."
+excerpt: "${article.excerpt.replace(/"/g, '\\"').substring(0, 200)}"
 categories: ${JSON.stringify(article.categories)}
 tags: ${JSON.stringify(article.tags)}
 featuredImage: "${article.featuredImage || ''}"
@@ -330,28 +430,23 @@ featuredImage: "${article.featuredImage || ''}"
 
 ${article.content}
 `;
-      
-      const filename = `${article.slug}.md`;
-      await fs.writeFile(path.join(articlesDir, filename), mdContent);
-      
-      console.log(`  ✓ "${article.title}" (${article.content.length} chars)`);
-    } else {
-      console.log(`  ✗ Skipped (insufficient content)`);
-    }
     
-    await delay(500);
+    const filename = `${article.slug}.md`;
+    await fs.writeFile(path.join(articlesDir, filename), mdContent);
   }
   
-  // Save JSON export
-  await fs.writeFile(
-    path.join(OUTPUT_DIR, 'squarespace-export.json'),
-    JSON.stringify(results, null, 2)
-  );
-  
+  // Summary
   console.log('\n================================');
   console.log('✅ Scraping complete!');
-  console.log(`   Articles scraped: ${results.articles.length}`);
-  console.log(`   Output: ${articlesDir}`);
+  console.log(`   Articles: ${results.articles.length}`);
+  console.log(`   Maps: ${results.maps.length}`);
+  console.log(`   Books: ${results.books.length}`);
+  console.log(`   Tools: ${results.tools.length}`);
+  console.log(`\n📁 Output saved to: ${OUTPUT_DIR}`);
+  console.log('   - squarespace-export.json (all data)');
+  console.log('   - articles/*.md (individual articles)');
 }
 
+// Run the scraper
 main().catch(console.error);
+

@@ -27,19 +27,19 @@ export function StorySection() {
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
                 <span className="font-serif text-2xl text-foreground font-medium leading-none">
-                  Six years ago, I lost the ability to use my hands
+                  Six years ago, I started to lose the ability to use my hands
                 </span>
-                —to type, drive, or do most of what I thought made me &quot;me.&quot;
+                {" "}to navigate a phone, drive a car, or type the words you are reading right now.
               </p>
               
               <p>
-                What I built to survive became &quot;The Will of Heroes&quot;—a methodology 
-                for finding purpose when everything falls apart. Now that methodology 
-                lives in Willson, available to guide you through your own challenges.
+                Since then, I have learned how to use voice technology to write a book, 
+                create web applications, and even build this website without ever 
+                touching a keyboard.
               </p>
 
               <p className="font-semibold text-foreground">
-                You don&apos;t need to hit rock bottom to use it. You just need to want something better.
+                Now, I want to teach you as well.
               </p>
             </div>
 

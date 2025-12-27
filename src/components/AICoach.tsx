@@ -42,7 +42,7 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
     {
       id: "welcome",
       role: "assistant",
-      content: "Hi! I'm Willson, your AI coach - yes, the name is a nod to Wilson from Castaway! 🏐 Just like Wilson was Tom Hanks' companion through his impossible journey, I'm here to be yours. I'm trained on Colin's book \"The Will of Heroes\" and his methodology for building extraordinary willpower. I can help you with finding your purpose, building habits, handling setbacks, and persevering through challenges. What's on your mind?",
+      content: "Hi! I'm your Willpower Coach, trained on Colin's book \"The Will of Heroes\" and his methodology for building extraordinary willpower. I can help you with finding your purpose, building habits, handling setbacks, and persevering through challenges. What's on your mind?",
       timestamp: new Date(),
     },
   ]);
@@ -158,7 +158,7 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
             <Sparkles className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h3 className="font-semibold text-foreground">Willson</h3>
+            <h3 className="font-semibold text-foreground">Willpower Coach</h3>
             <p className="text-xs text-muted-foreground">Powered by The Will of Heroes</p>
           </div>
         </div>

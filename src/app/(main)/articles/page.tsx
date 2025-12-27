@@ -130,14 +130,14 @@ export default function ArticlesPage() {
             Get Personalized Guidance
           </h2>
           <p className="text-muted-foreground mb-8">
-            Talk to Willson for personalized advice based on the principles in these articles.
+            Talk to our AI coach for personalized advice based on the principles in these articles.
           </p>
           <Link
             href="/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl gradient-ember text-white font-medium hover:opacity-90 transition-opacity"
           >
             <Sparkles className="w-5 h-5" />
-            Talk to Willson
+            Talk to AI Coach
           </Link>
         </div>
       </section>

@@ -2,8 +2,8 @@ import { Header } from "@/components/Header";
 import { AICoach } from "@/components/AICoach";
 
 export const metadata = {
-  title: "Meet Willson | Your AI Willpower Coach | Willpowered",
-  description: "Meet Willson, your AI coach trained on 'The Will of Heroes' methodology. Get personalized guidance on building willpower.",
+  title: "AI Willpower Coach | Willpowered",
+  description: "Get personalized guidance on building willpower from an AI trained on 'The Will of Heroes' methodology.",
 };
 
 export default function CoachPage() {
@@ -15,11 +15,11 @@ export default function CoachPage() {
           {/* Page header */}
           <div className="text-center mb-8">
             <h1 className="font-serif text-4xl sm:text-5xl font-semibold tracking-tight text-foreground mb-4">
-              Meet Willson 🏐
+              Your Willpower Coach
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Your AI companion on the journey to extraordinary willpower, 
-              trained on "The Will of Heroes" methodology.
+              Get personalized guidance based on the science of perseverance and 
+              the wisdom from "The Will of Heroes."
             </p>
           </div>
 

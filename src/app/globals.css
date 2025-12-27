@@ -194,18 +194,6 @@
   .bg-ember {
     background-color: var(--ember);
   }
-  .text-ember-light {
-    color: var(--ember-light);
-  }
-  .bg-slate-warm {
-    background-color: var(--slate-warm);
-  }
-  .text-cream {
-    color: var(--cream);
-  }
-  .bg-cream {
-    background-color: var(--cream);
-  }
   .text-balance {
     text-wrap: balance;
   }

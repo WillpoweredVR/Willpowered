@@ -154,40 +154,6 @@ export function getArticlesByJourneyStep(step: string): Article[] {
   });
 }
 
-// Get articles by multiple category names (for journey steps with variant names)
-export function getArticlesByCategories(categories: string[]): Article[] {
-  const allArticles = getAllArticles();
-  const lowerCategories = categories.map(c => c.toLowerCase());
-  
-  return allArticles.filter((article) => {
-    // Check if any article category matches any of the target categories
-    return article.categories.some(cat => 
-      lowerCategories.includes(cat.toLowerCase()) ||
-      lowerCategories.some(lc => cat.toLowerCase().includes(lc) || lc.includes(cat.toLowerCase()))
-    );
-  });
-}
-
-// Get hero stories (articles with "The Will of" in title or "Stories" category)
-export function getHeroStories(): Article[] {
-  const allArticles = getAllArticles();
-  return allArticles.filter((article) => {
-    return article.title.toLowerCase().includes("the will of") ||
-           article.categories.some(cat => cat.toLowerCase().includes("stories")) ||
-           article.categories.some(cat => cat.toLowerCase().includes("the will of heroes"));
-  });
-}
-
-// Get hero stories for a specific journey step
-export function getHeroStoriesForStep(categories: string[]): Article[] {
-  const heroStories = getHeroStories();
-  const stepArticles = getArticlesByCategories(categories);
-  
-  // Find intersection - hero stories that are also in this step's categories
-  const stepSlugs = new Set(stepArticles.map(a => a.slug));
-  return heroStories.filter(story => stepSlugs.has(story.slug));
-}
-
 export function getFeaturedArticles(count: number = 4): Article[] {
   const allArticles = getAllArticles();
   // Prioritize recent articles with images

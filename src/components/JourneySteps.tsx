@@ -19,7 +19,7 @@ const steps = [
     title: "Finding Your Purpose",
     description: "Discover the 'why' that will fuel your journey through every challenge.",
     icon: Compass,
-    href: "/journey/finding-your-purpose",
+    href: "/articles/finding-your-purpose",
     color: "from-amber-500 to-orange-600",
   },
   {
@@ -27,7 +27,7 @@ const steps = [
     title: "Acquiring Skills",
     description: "Build the competencies and knowledge you need to succeed.",
     icon: BookOpen,
-    href: "/journey/acquiring-skills",
+    href: "/articles/acquiring-skills",
     color: "from-emerald-500 to-teal-600",
   },
   {
@@ -35,7 +35,7 @@ const steps = [
     title: "Establishing Habits",
     description: "Create systems that make success automatic and sustainable.",
     icon: Repeat,
-    href: "/journey/establishing-habits",
+    href: "/articles/establishing-habits",
     color: "from-blue-500 to-indigo-600",
   },
   {
@@ -43,7 +43,7 @@ const steps = [
     title: "Becoming Gritty",
     description: "Develop the passion and perseverance for long-term goals.",
     icon: Flame,
-    href: "/journey/becoming-gritty",
+    href: "/articles/becoming-gritty",
     color: "from-rose-500 to-pink-600",
   },
   {
@@ -51,7 +51,7 @@ const steps = [
     title: "Handling Setbacks",
     description: "Learn to bounce back stronger when things don't go as planned.",
     icon: Shield,
-    href: "/journey/handling-setbacks",
+    href: "/articles/handling-setbacks",
     color: "from-violet-500 to-purple-600",
   },
   {
@@ -59,7 +59,7 @@ const steps = [
     title: "Overcoming Limits",
     description: "Break through the barriers that seem impossible to cross.",
     icon: Unlock,
-    href: "/journey/overcoming-limits",
+    href: "/articles/overcoming-limits",
     color: "from-cyan-500 to-blue-600",
   },
   {
@@ -67,7 +67,7 @@ const steps = [
     title: "Persevering to the Finish",
     description: "Push through the final stretch to achieve your ultimate goals.",
     icon: Trophy,
-    href: "/journey/persevering",
+    href: "/articles/persevering",
     color: "from-yellow-500 to-amber-600",
   },
 ];

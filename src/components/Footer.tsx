@@ -1,11 +1,21 @@
 import Link from "next/link";
 import { Mail, BookOpen, PenLine } from "lucide-react";
 
+const journeySteps = [
+  { name: "Finding Your Purpose", href: "/articles/finding-your-purpose" },
+  { name: "Acquiring Skills", href: "/articles/acquiring-skills" },
+  { name: "Establishing Habits", href: "/articles/establishing-habits" },
+  { name: "Becoming Gritty", href: "/articles/becoming-gritty" },
+  { name: "Handling Setbacks", href: "/articles/handling-setbacks" },
+  { name: "Overcoming Limits", href: "/articles/overcoming-limits" },
+  { name: "Persevering", href: "/articles/persevering" },
+];
+
 const resources = [
   { name: "Articles", href: "/articles" },
   { name: "Books", href: "/books" },
-  { name: "About Colin", href: "/about" },
-  { name: "Pricing", href: "/pricing" },
+  { name: "Knowledge Maps", href: "/maps" },
+  { name: "Tools", href: "/tools" },
 ];
 
 const socialLinks = [
@@ -30,7 +40,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-warm text-cream/90">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
@@ -42,8 +52,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-cream/70 leading-relaxed">
-              Build a system for becoming who you want to be. 
-              Purpose → Principles → Scorecard.
+              Strengthening willpower through the science of perseverance 
+              and the stories of extraordinary heroes.
             </p>
             <div className="mt-6 flex gap-4">
               {socialLinks.map((link) => (
@@ -59,6 +69,26 @@ export function Footer() {
                 </a>
               ))}
             </div>
+          </div>
+
+          {/* The Journey */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-ember-light mb-4">
+              The Journey
+            </h3>
+            <ul className="space-y-3">
+              {journeySteps.map((step, index) => (
+                <li key={step.href}>
+                  <Link
+                    href={step.href}
+                    className="text-sm text-cream/70 hover:text-cream transition-colors flex items-center gap-2"
+                  >
+                    <span className="text-ember text-xs">{index + 1}.</span>
+                    {step.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Resources */}
@@ -123,3 +153,4 @@ export function Footer() {
     </footer>
   );
 }
+
