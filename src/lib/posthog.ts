@@ -421,7 +421,11 @@ export const setUserProperties = (properties: Record<string, unknown>) => {
 }
 
 export const incrementUserProperty = (property: string, value: number = 1) => {
-  posthog.people.increment(property, value)
+  // Note: posthog.people.increment is not available in posthog-js
+  // Use capture with $set to track incremental values
+  posthog.capture('$set', {
+    $set: { [property]: value }
+  })
 }
 
 export const resetUser = () => {
