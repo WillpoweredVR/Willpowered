@@ -50,6 +50,7 @@ export default function AboutPage() {
               From Burning Out to <br />
               <span className="text-ember">Building Up</span>
             </h1>
+            <p className="text-2xl text-white font-medium mb-4">Colin Robertson</p>
             <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
               I spent years researching the science of willpower and pushing myself to the breaking point. 
               Now I&apos;m using AI to help others achieve greatness—without paying the price I did.
@@ -164,7 +165,7 @@ export default function AboutPage() {
             <div className="bg-slate-900 text-white rounded-2xl p-8 lg:p-12 mb-12">
               <Quote className="w-12 h-12 text-ember/50 mb-6" />
               <blockquote className="font-serif text-2xl lg:text-3xl italic leading-relaxed mb-6">
-                &ldquo;I&apos;m only 31 years young and I can no longer use my hands to navigate my phone, 
+                &ldquo;I&apos;m in my 30s and I can no longer use my hands to navigate my phone, 
                 drive a car, or type the words you are reading now.&rdquo;
               </blockquote>
               <p className="text-slate-400">
@@ -355,9 +356,9 @@ export default function AboutPage() {
                 <Sparkles className="w-4 h-4 mr-2" />
                 Talk to AI Coach
               </Button>
-              <Link href="/journey/finding-your-purpose">
+              <Link href="/signup">
                 <Button size="lg" variant="outline">
-                  Start the 7-Step Journey <ArrowRight className="w-4 h-4 ml-2" />
+                  Get Started Free <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
             </div>
