@@ -27,18 +27,7 @@ export async function GET(request: NextRequest) {
     // Get pending emails that are due
     const { data: pendingEmails, error: fetchError } = await supabase
       .from("scheduled_emails")
-      .select(`
-        id,
-        user_id,
-        email_type,
-        metadata,
-        profiles!scheduled_emails_user_id_fkey (
-          full_name,
-          email_preferences,
-          goal,
-          subscription_status
-        )
-      `)
+      .select("id, user_id, email_type, metadata")
       .eq("status", "pending")
       .lte("scheduled_for", new Date().toISOString())
       .order("scheduled_for", { ascending: true })
@@ -57,7 +46,6 @@ export async function GET(request: NextRequest) {
     }
 
     // Get user emails from auth.users
-    const userIds = pendingEmails.map((e) => e.user_id);
     const { data: users, error: usersError } = await supabase.auth.admin.listUsers();
     
     if (usersError) {
@@ -72,16 +60,27 @@ export async function GET(request: NextRequest) {
       users.users.map((u) => [u.id, u.email])
     );
 
+    // Get profiles for all users in this batch
+    const userIds = pendingEmails.map((e) => e.user_id);
+    const { data: profiles } = await supabase
+      .from("profiles")
+      .select("id, full_name, email_preferences, goal, subscription_status")
+      .in("id", userIds);
+
+    const profileMap = new Map(
+      (profiles || []).map((p) => [p.id, p])
+    );
+
     // Process each email
     const results = await Promise.allSettled(
       pendingEmails.map(async (scheduledEmail) => {
         const userEmail = userEmailMap.get(scheduledEmail.user_id);
-        const profile = scheduledEmail.profiles as {
+        const profile = profileMap.get(scheduledEmail.user_id) as {
           full_name: string | null;
           email_preferences: Record<string, boolean> | null;
           goal: { purpose?: string } | null;
           subscription_status: string | null;
-        } | null;
+        } | undefined;
 
         if (!userEmail) {
           throw new Error(`No email found for user ${scheduledEmail.user_id}`);
