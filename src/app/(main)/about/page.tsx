@@ -7,12 +7,17 @@ import {
   Sparkles, 
   BookOpen, 
   Flame, 
-  Heart, 
   Lightbulb,
   ArrowRight,
   Quote,
   Mic,
-  Brain
+  Brain,
+  GraduationCap,
+  FlaskConical,
+  Map,
+  Cpu,
+  Scale,
+  Users
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ChatModal } from "@/components/ChatModal";
@@ -67,7 +72,7 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl lg:text-4xl font-bold text-foreground mb-6">
                   The Obsession That Changed Everything
                 </h2>
-                <div className="prose prose-lg text-muted-foreground">
+                <div className="prose prose-lg text-muted-foreground space-y-6">
                   <p>
                     I&apos;ve always believed that <strong className="text-foreground">the human brain is the most marvelous tool in the known universe</strong>. 
                     There&apos;s greatness at the center of every human mind, just waiting to be unlocked.
@@ -123,7 +128,7 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl lg:text-4xl font-bold text-foreground mb-6">
                   The Will of Heroes
                 </h2>
-                <div className="prose prose-lg text-muted-foreground">
+                <div className="prose prose-lg text-muted-foreground space-y-6">
                   <p>
                     In 2015, I ran a Kickstarter campaign to publish my first book. With only 10 days left and less than 
                     half my goal raised, I refused to give up. More time at the keyboard. Less sleep. Repeat.
@@ -133,7 +138,7 @@ export default function AboutPage() {
                     eliminated all distractions, and wrote 140,000 words in three months.
                   </p>
                   <p>
-                    The book shares the stories of twelve extraordinary individuals—from Arnold Schwarzenegger to 
+                    The book shares the stories of 12 extraordinary individuals—from Arnold Schwarzenegger to 
                     Temple Grandin—and the science behind how they willed themselves to greatness.
                   </p>
                 </div>
@@ -163,17 +168,13 @@ export default function AboutPage() {
 
             <div className="bg-slate-900 text-white rounded-2xl p-8 lg:p-12 mb-12">
               <Quote className="w-12 h-12 text-ember/50 mb-6" />
-              <blockquote className="font-serif text-2xl lg:text-3xl italic leading-relaxed mb-6">
+              <blockquote className="font-serif text-2xl lg:text-3xl italic leading-relaxed">
                 &ldquo;I&apos;m in my 30s and I can no longer use my hands to navigate my phone, 
                 drive a car, or type the words you are reading now.&rdquo;
               </blockquote>
-              <p className="text-slate-400">
-                This is not due to any medical condition or genetic disability. It&apos;s the result of 
-                pushing myself too hard for too long.
-              </p>
             </div>
 
-            <div className="prose prose-lg text-muted-foreground max-w-none">
+            <div className="prose prose-lg text-muted-foreground max-w-none space-y-6">
               <p>
                 I applied the science of willpower to push through fatigue, pain, and every signal my body 
                 sent me to slow down. I told myself that the discomfort was just my brain being conservative—that 
@@ -206,7 +207,7 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="prose prose-lg prose-invert max-w-none mb-12">
+            <div className="prose prose-lg prose-invert max-w-none mb-12 space-y-6">
               <p>
                 As I looked at braces on both my hands, a thought occurred to me: 
                 <em className="text-ember"> I am truly lucky to be living in this time.</em>
@@ -240,7 +241,7 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl lg:text-4xl font-bold text-foreground mb-6">
                   Why I&apos;m Building an AI Coach
                 </h2>
-                <div className="prose prose-lg text-muted-foreground">
+                <div className="prose prose-lg text-muted-foreground space-y-6">
                   <p>
                     I spent years learning the hard way. I pushed myself to the breaking point, 
                     made countless mistakes, and paid a permanent physical price.
@@ -254,7 +255,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     That&apos;s why I&apos;m building the Willpowered AI Coach. It contains everything I&apos;ve learned 
-                    from a decade of research, the stories of twelve extraordinary achievers, and the hard-won 
+                    from a decade of research, the stories of 12 extraordinary achievers, and the hard-won 
                     wisdom from my own journey.
                   </p>
                 </div>
@@ -296,38 +297,47 @@ export default function AboutPage() {
             {[
               {
                 title: "Greatness is learnable",
-                description: "The heroes I studied weren't born exceptional. They became exceptional through deliberate effort and the right methodology."
+                description: "The heroes I studied weren't born exceptional. They became exceptional through deliberate effort and the right methodology.",
+                icon: GraduationCap
               },
               {
                 title: "Science beats motivation",
-                description: "Motivation fades. Understanding how your brain works and building systems based on science creates lasting change."
+                description: "Motivation fades. Understanding how your brain works and building systems based on science creates lasting change.",
+                icon: FlaskConical
               },
               {
                 title: "Wisdom prevents suffering",
-                description: "You don't have to learn every lesson the hard way. The stories of those who came before can light your path."
+                description: "You don't have to learn every lesson the hard way. The stories of those who came before can light your path.",
+                icon: Map
               },
               {
                 title: "Technology amplifies humanity",
-                description: "AI and voice technology don't replace human potential—they remove barriers to achieving it."
+                description: "AI and voice technology don't replace human potential—they remove barriers to achieving it.",
+                icon: Cpu
               },
               {
                 title: "Balance enables endurance",
-                description: "Sustainable success requires knowing when to push and when to rest. I learned this the hard way."
+                description: "Sustainable success requires knowing when to push and when to rest. I learned this the hard way.",
+                icon: Scale
               },
               {
                 title: "Everyone deserves a coach",
-                description: "Personalized guidance shouldn't be a luxury. AI can democratize access to world-class mentorship."
+                description: "Personalized guidance shouldn't be a luxury. AI can democratize access to world-class mentorship.",
+                icon: Users
               },
-            ].map((belief, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-xl p-6"
-              >
-                <Heart className="w-8 h-8 text-ember mb-4" />
-                <h3 className="font-serif text-xl font-semibold mb-2">{belief.title}</h3>
-                <p className="text-muted-foreground text-sm">{belief.description}</p>
-              </div>
-            ))}
+            ].map((belief, index) => {
+              const IconComponent = belief.icon;
+              return (
+                <div 
+                  key={index}
+                  className="bg-card border border-border rounded-xl p-6"
+                >
+                  <IconComponent className="w-8 h-8 text-ember mb-4" />
+                  <h3 className="font-serif text-xl font-semibold mb-2">{belief.title}</h3>
+                  <p className="text-muted-foreground text-sm">{belief.description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

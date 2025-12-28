@@ -105,18 +105,20 @@ export default function BooksPage() {
               {/* Email Signup Form */}
               <div className="bg-slate-800/50 rounded-xl p-6 mb-8 border border-slate-700">
                 <h3 className="text-xl font-semibold mb-4">Get a free sample of The Will of Heroes!</h3>
-                <form className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    className="flex-1 px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-ember"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="flex-1 px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-ember"
-                  />
-                  <Button className="gradient-ember text-white px-6 py-3 rounded-lg font-semibold">
+                <form className="flex flex-col gap-3">
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      className="flex-1 px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-ember"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      className="flex-1 px-4 py-3 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-ember"
+                    />
+                  </div>
+                  <Button className="gradient-ember text-white w-full sm:w-auto px-6 py-3 rounded-lg font-semibold">
                     SEND ME A SAMPLE
                   </Button>
                 </form>
