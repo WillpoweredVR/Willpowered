@@ -13,10 +13,33 @@ interface Message {
   content: string;
 }
 
+// User context for authenticated users
+export interface UserContext {
+  userName?: string;
+  goal?: {
+    title: string;
+    why?: string;
+    purpose?: string;
+  };
+  principles?: Array<{
+    id: string;
+    text: string;
+    context?: string;
+  }>;
+  metrics?: Array<{
+    name: string;
+    target: number;
+    todayValue?: number | null;
+    weekAverage?: number;
+  }>;
+}
+
 interface ChatModalProps {
   isOpen: boolean;
   onClose: () => void;
   initialMessage?: string;
+  userContext?: UserContext; // Pass user data for authenticated users
+  isAuthenticated?: boolean; // Skip gate for logged-in users
 }
 
 // Soft gate thresholds
@@ -30,7 +53,7 @@ const BRIDGE_SUFFIX = `
 
 *I'm really enjoying our conversation! If you'd like me to remember what we've discussed and build a personalized plan for you, you can [create a free account](/signup?from=chat). I'll keep track of your progress and check in with you daily.*`;
 
-export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
+export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuthenticated = false }: ChatModalProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -39,6 +62,9 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
   const [hasShownNudge, setHasShownNudge] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  
+  // Skip gate for authenticated users
+  const shouldGate = !isAuthenticated;
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -72,9 +98,9 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
     const text = messageText || input;
     if (!text.trim() || isLoading) return;
 
-    // Check if we've hit the hard gate
+    // Check if we've hit the hard gate (only for unauthenticated users)
     const newUserMessageCount = userMessageCount + 1;
-    if (newUserMessageCount > HARD_GATE_THRESHOLD) {
+    if (shouldGate && newUserMessageCount > HARD_GATE_THRESHOLD) {
       setShowSignupGate(true);
       trackCTAClicked("chat-gate-triggered", "Signup Gate Shown", "chat");
       return;
@@ -92,6 +118,7 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: [...messages, userMessage],
+          userContext, // Pass user context to API
         }),
       });
 
@@ -100,8 +127,8 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
       const data = await response.json();
       let responseContent = data.message;
 
-      // Add the gentle nudge after threshold (but only once)
-      if (newUserMessageCount === GENTLE_NUDGE_THRESHOLD && !hasShownNudge) {
+      // Add the gentle nudge after threshold (but only once, and only for unauthenticated)
+      if (shouldGate && newUserMessageCount === GENTLE_NUDGE_THRESHOLD && !hasShownNudge) {
         responseContent += BRIDGE_SUFFIX;
         setHasShownNudge(true);
       }
@@ -373,8 +400,8 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Message counter hint */}
-            {!showSignupGate && userMessageCount >= 3 && userMessageCount < HARD_GATE_THRESHOLD && (
+            {/* Message counter hint - only for unauthenticated users */}
+            {shouldGate && !showSignupGate && userMessageCount >= 3 && userMessageCount < HARD_GATE_THRESHOLD && (
               <div className="px-6 py-2 bg-amber-50 border-t border-amber-100">
                 <p className="text-xs text-amber-700 text-center">
                   {HARD_GATE_THRESHOLD - userMessageCount} message{HARD_GATE_THRESHOLD - userMessageCount !== 1 ? 's' : ''} remaining •{" "}

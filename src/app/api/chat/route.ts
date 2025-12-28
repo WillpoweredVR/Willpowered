@@ -10,6 +10,26 @@ interface Message {
   content: string;
 }
 
+interface UserContext {
+  userName?: string;
+  goal?: {
+    title: string;
+    why?: string;
+    purpose?: string;
+  };
+  principles?: Array<{
+    id: string;
+    text: string;
+    context?: string;
+  }>;
+  metrics?: Array<{
+    name: string;
+    target: number;
+    todayValue?: number | null;
+    weekAverage?: number;
+  }>;
+}
+
 // Willson's personality and knowledge base
 const WILLSON_SYSTEM_PROMPT = `You are Willson, the AI coach for Willpowered. Your name is a playful nod to Wilson from Castaway - you're a supportive companion on the user's journey.
 
@@ -80,7 +100,7 @@ Colin lost the use of his hands to navigate a phone, drive, or type. Building Wi
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { messages, userName } = body as { messages: Message[]; userName?: string };
+    const { messages, userContext } = body as { messages: Message[]; userContext?: UserContext };
 
     if (!messages || !Array.isArray(messages)) {
       return NextResponse.json(
@@ -99,8 +119,47 @@ export async function POST(request: NextRequest) {
 
     // Build system prompt with user context
     let systemPrompt = WILLSON_SYSTEM_PROMPT;
-    if (userName) {
-      systemPrompt += `\n\nThe user's name is ${userName}. Use it naturally in conversation.`;
+    
+    // Add user-specific context if available (for authenticated users)
+    if (userContext) {
+      systemPrompt += `\n\n## THIS USER'S CONTEXT (use this in your responses!)`;
+      
+      if (userContext.userName) {
+        systemPrompt += `\n\n**User's Name**: ${userContext.userName}`;
+      }
+      
+      if (userContext.goal) {
+        systemPrompt += `\n\n**Their Goal**: ${userContext.goal.title}`;
+        if (userContext.goal.why) {
+          systemPrompt += `\n**Why it matters to them**: ${userContext.goal.why}`;
+        }
+        if (userContext.goal.purpose) {
+          systemPrompt += `\n**Their deeper purpose**: ${userContext.goal.purpose}`;
+        }
+      }
+      
+      if (userContext.principles && userContext.principles.length > 0) {
+        systemPrompt += `\n\n**Their Personal Principles**:`;
+        userContext.principles.forEach((p, i) => {
+          systemPrompt += `\n${i + 1}. "${p.text}"${p.context ? ` (context: ${p.context})` : ''}`;
+        });
+      }
+      
+      if (userContext.metrics && userContext.metrics.length > 0) {
+        systemPrompt += `\n\n**Their Scorecard Metrics** (what they're tracking):`;
+        userContext.metrics.forEach(m => {
+          let status = '';
+          if (m.todayValue !== null && m.todayValue !== undefined) {
+            status = ` - Today: ${m.todayValue}`;
+          }
+          if (m.weekAverage !== undefined) {
+            status += ` (Week avg: ${m.weekAverage})`;
+          }
+          systemPrompt += `\n- ${m.name}: target ${m.target}${status}`;
+        });
+      }
+      
+      systemPrompt += `\n\nUse this context to personalize your responses. Reference their specific goal, principles, or metrics when relevant. You KNOW this user - act like it!`;
     }
 
     // Convert messages to Anthropic format

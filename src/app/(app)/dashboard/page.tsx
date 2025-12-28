@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
-import { ChatModal } from "@/components/ChatModal";
+import { ChatModal, UserContext } from "@/components/ChatModal";
 import { EditModal } from "@/components/EditModal";
 import { MetricEditModal } from "@/components/MetricEditModal";
 import { DailyCheckinModal } from "@/components/DailyCheckinModal";
@@ -1277,6 +1277,28 @@ export default function DashboardPage() {
           setCoachContext(null);
         }}
         initialMessage={coachContext?.message}
+        isAuthenticated={true}
+        userContext={{
+          userName: profile?.full_name || undefined,
+          goal: goal ? {
+            title: goal.title,
+            why: goal.why || undefined,
+            purpose: goal.purpose || undefined,
+          } : undefined,
+          principles: principles.length > 0 ? principles.map(p => ({
+            id: p.id,
+            text: p.text,
+            context: p.context || undefined,
+          })) : undefined,
+          metrics: scorecard?.categories?.flatMap(cat => 
+            cat.metrics.map(m => ({
+              name: m.name,
+              target: m.target,
+              todayValue: getDailyValue(m.id, today),
+              weekAverage: getAggregatedValue(m).value,
+            }))
+          ),
+        }}
       />
 
       <EditModal
