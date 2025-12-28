@@ -173,10 +173,10 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
   }
   h1, h2, h3, h4 {
-    font-family: 'Crimson Pro', Georgia, serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     @apply tracking-tight;
   }
 }
@@ -184,10 +184,10 @@
 /* Custom utility classes */
 @layer utilities {
   .font-serif {
-    font-family: 'Crimson Pro', Georgia, serif;
+    font-family: 'Poppins', system-ui, sans-serif;
   }
   .font-sans {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
   }
   .text-ember {
     color: var(--ember);
