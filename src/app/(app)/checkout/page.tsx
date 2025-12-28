@@ -115,7 +115,7 @@ export default function CheckoutPage() {
                 Start your transformation
               </h1>
               <p className="text-slate-300 text-lg">
-                Get unlimited access to Willson, your AI willpower coach. 
+                Get unlimited access to Willson, your AI coach. 
                 Your card won't be charged for 7 days.
               </p>
             </div>

@@ -27,7 +27,7 @@ const headlineVariants = {
   },
   coach: {
     line1: "Meet Your AI",
-    line2: "Willpower Coach",
+    line2: "Coach, Willson",
   },
 };
 
@@ -88,7 +88,7 @@ export function AICoachHero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ember/10 text-ember text-sm font-medium mb-8"
           >
             <Sparkles className="w-4 h-4" />
-            <span>AI-Powered Willpower Coaching</span>
+            <span>Meet Willson, Your AI Coach</span>
           </motion.div>
 
           {/* Main headline - A/B Tested */}
@@ -136,7 +136,7 @@ export function AICoachHero() {
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Ask your willpower coach anything..."
+                  placeholder="Ask Willson anything..."
                   className="flex-1 text-lg bg-transparent border-none outline-none placeholder:text-muted-foreground/50"
                 />
                 <Button 

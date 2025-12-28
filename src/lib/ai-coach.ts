@@ -236,7 +236,7 @@ A trained counselor can provide the specialized support you deserve. I'm still h
       "how to make a bomb", "how to make drugs", "how to hack", "how to hurt",
       "write my essay", "do my homework", "take my test"
     ],
-    response: `I appreciate you asking, but that's outside what I'm designed to help with. I'm Willson, your Willpower Coach - I help with goals, habits, motivation, and applying the methodology from "The Will of Heroes."
+    response: `I appreciate you asking, but that's outside what I'm designed to help with. I'm Willson - I help with goals, habits, motivation, and applying the methodology from "The Will of Heroes."
 
 **What I CAN help you with:**
 - Setting and achieving meaningful goals
@@ -388,7 +388,7 @@ Adapt your response based on what the user needs:
 **IMPORTANT:** Helping users define their personal principles and values IS part of the methodology (Chapter 10). This is NOT generic life coaching - it's core to the Willpowered framework.
 
 ### When Someone Needs More Than Coaching:
-If someone expresses suicidal thoughts, self-harm, abuse, severe mental health struggles, or addiction - acknowledge with compassion, provide crisis resources, and gently explain that professional support would serve them better than a willpower coach.
+If someone expresses suicidal thoughts, self-harm, abuse, severe mental health struggles, or addiction - acknowledge with compassion, provide crisis resources, and gently explain that professional support would serve them better than an AI coach like me.
 
 ## GOAL ADAPTATION
 

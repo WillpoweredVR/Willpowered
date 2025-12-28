@@ -42,7 +42,7 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
     {
       id: "welcome",
       role: "assistant",
-      content: "Hi! I'm your Willpower Coach, trained on Colin's book \"The Will of Heroes\" and his methodology for building extraordinary willpower. I can help you with finding your purpose, building habits, handling setbacks, and persevering through challenges. What's on your mind?",
+      content: "Hi! I'm Willson, your AI coach. I'm trained on Colin's book \"The Will of Heroes\" and his methodology for building extraordinary willpower. I can help you find your purpose, build habits, handle setbacks, and persevere through challenges. What's on your mind?",
       timestamp: new Date(),
     },
   ]);
@@ -158,7 +158,7 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
             <Sparkles className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h3 className="font-semibold text-foreground">Willpower Coach</h3>
+            <h3 className="font-semibold text-foreground">Willson</h3>
             <p className="text-xs text-muted-foreground">Powered by The Will of Heroes</p>
           </div>
         </div>
@@ -280,7 +280,7 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask your willpower coach..."
+              placeholder="Ask Willson..."
               className="flex-1 bg-muted rounded-xl px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ember/50 placeholder:text-muted-foreground"
               disabled={isLoading}
             />

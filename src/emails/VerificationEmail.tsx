@@ -46,7 +46,7 @@ export const VerificationEmail = ({
 
             <Text style={paragraph}>
               You're one click away from starting your journey with Willson, 
-              your AI willpower coach. Just verify your email and we'll get started.
+              Willson, your AI coach. Just verify your email and we'll get started.
             </Text>
 
             <Section style={buttonContainer}>

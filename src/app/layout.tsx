@@ -6,7 +6,7 @@ import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistratio
 
 export const metadata: Metadata = {
   title: "Willpowered | Strengthen Your Willpower",
-  description: "Your AI willpower coach. Build discipline through purpose, principles, and daily action.",
+  description: "Meet Willson, your AI coach for building discipline through purpose, principles, and daily action.",
   keywords: ["willpower", "self-improvement", "habits", "grit", "perseverance", "personal development", "AI coach"],
   authors: [{ name: "Colin Robertson" }],
   manifest: "/manifest.json",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Willpowered | Strengthen Your Willpower",
-    description: "Your AI willpower coach. Build discipline through purpose, principles, and daily action.",
+    description: "Meet Willson, your AI coach for building discipline through purpose, principles, and daily action.",
     type: "website",
     locale: "en_US",
     siteName: "Willpowered",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Willpowered | Strengthen Your Willpower",
-    description: "Your AI willpower coach. Build discipline through purpose, principles, and daily action.",
+    description: "Meet Willson, your AI coach for building discipline through purpose, principles, and daily action.",
   },
 };
 

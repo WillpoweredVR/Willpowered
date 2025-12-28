@@ -38,7 +38,7 @@ export const WelcomeEmail = ({ userName = "there" }: WelcomeEmailProps) => {
             <Heading style={heading}>Welcome, {userName}! 👋</Heading>
             
             <Text style={paragraph}>
-              I'm Willson, your AI willpower coach. I'm here to help you build 
+              I'm Willson, your AI coach. I'm here to help you build 
               a system that turns your aspirations into action.
             </Text>
 

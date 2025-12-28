@@ -45,7 +45,7 @@ export function CTASection() {
             </h2>
             
             <p className="text-white/80 text-lg max-w-xl mx-auto mb-10">
-              Start a conversation with your AI willpower coach. Get personalized 
+              Start a conversation with Willson. Get personalized 
               guidance based on the science of perseverance and the wisdom of heroes.
             </p>
 

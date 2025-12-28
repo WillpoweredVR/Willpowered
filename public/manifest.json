@@ -1,7 +1,7 @@
 {
   "name": "Willpowered",
   "short_name": "Willpowered",
-  "description": "Your AI willpower coach. Build discipline through purpose, principles, and daily action.",
+  "description": "Meet Willson, your AI coach for building discipline through purpose, principles, and daily action.",
   "start_url": "/dashboard",
   "display": "standalone",
   "background_color": "#F5F0E8",

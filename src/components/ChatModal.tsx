@@ -127,7 +127,7 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
                 </div>
                 <div>
                   <h2 className="font-serif text-lg font-semibold">
-                    Willpower Coach
+                    Willson
                   </h2>
                   <p className="text-sm text-muted-foreground">
                     Based on The Will of Heroes methodology
@@ -152,7 +152,7 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
                     <Sparkles className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="font-serif text-xl font-semibold mb-2">
-                    Welcome to Your Willpower Coach
+                    Hi, I'm Willson
                   </h3>
                   <p className="text-muted-foreground max-w-md">
                     I'm here to guide you through the principles of "The Will of
