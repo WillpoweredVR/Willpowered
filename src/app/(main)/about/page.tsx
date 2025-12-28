@@ -50,7 +50,6 @@ export default function AboutPage() {
               From Burning Out to <br />
               <span className="text-ember">Building Up</span>
             </h1>
-            <p className="text-2xl text-white font-medium mb-4">Colin Robertson</p>
             <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
               I spent years researching the science of willpower and pushing myself to the breaking point. 
               Now I&apos;m using AI to help others achieve greatness—without paying the price I did.
