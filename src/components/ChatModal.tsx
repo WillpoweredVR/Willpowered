@@ -2,9 +2,11 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Send, Sparkles, Loader2 } from "lucide-react";
+import { X, Send, Sparkles, Loader2, ArrowRight, Check, MessageSquare, Target, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ReactMarkdown from "react-markdown";
+import Link from "next/link";
+import { trackCTAClicked } from "@/lib/posthog";
 
 interface Message {
   role: "user" | "assistant";
@@ -17,10 +19,24 @@ interface ChatModalProps {
   initialMessage?: string;
 }
 
+// Soft gate thresholds
+const GENTLE_NUDGE_THRESHOLD = 3; // After 3 user messages, add a nudge
+const HARD_GATE_THRESHOLD = 5; // After 5 user messages, require signup
+
+// The gentle bridge message Willson adds after the threshold
+const BRIDGE_SUFFIX = `
+
+---
+
+*I'm really enjoying our conversation! If you'd like me to remember what we've discussed and build a personalized plan for you, you can [create a free account](/signup?from=chat). I'll keep track of your progress and check in with you daily.*`;
+
 export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [userMessageCount, setUserMessageCount] = useState(0);
+  const [showSignupGate, setShowSignupGate] = useState(false);
+  const [hasShownNudge, setHasShownNudge] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -33,10 +49,10 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
   }, [messages]);
 
   useEffect(() => {
-    if (isOpen && inputRef.current) {
+    if (isOpen && inputRef.current && !showSignupGate) {
       inputRef.current.focus();
     }
-  }, [isOpen]);
+  }, [isOpen, showSignupGate]);
 
   // Send initial message when modal opens with one
   useEffect(() => {
@@ -45,10 +61,26 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
     }
   }, [isOpen, initialMessage]);
 
+  // Save conversation to localStorage when it changes
+  useEffect(() => {
+    if (messages.length > 0) {
+      localStorage.setItem("willson_conversation", JSON.stringify(messages));
+    }
+  }, [messages]);
+
   const handleSend = async (messageText?: string) => {
     const text = messageText || input;
     if (!text.trim() || isLoading) return;
 
+    // Check if we've hit the hard gate
+    const newUserMessageCount = userMessageCount + 1;
+    if (newUserMessageCount > HARD_GATE_THRESHOLD) {
+      setShowSignupGate(true);
+      trackCTAClicked("chat-gate-triggered", "Signup Gate Shown", "chat");
+      return;
+    }
+
+    setUserMessageCount(newUserMessageCount);
     const userMessage: Message = { role: "user", content: text };
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
@@ -66,9 +98,17 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
       if (!response.ok) throw new Error("Failed to get response");
 
       const data = await response.json();
+      let responseContent = data.message;
+
+      // Add the gentle nudge after threshold (but only once)
+      if (newUserMessageCount === GENTLE_NUDGE_THRESHOLD && !hasShownNudge) {
+        responseContent += BRIDGE_SUFFIX;
+        setHasShownNudge(true);
+      }
+
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: data.message },
+        { role: "assistant", content: responseContent },
       ]);
     } catch (error) {
       console.error("Chat error:", error);
@@ -93,9 +133,13 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
   };
 
   const handleClose = () => {
-    setMessages([]);
+    // Don't clear messages - keep them for if user comes back
     setInput("");
     onClose();
+  };
+
+  const handleSignupClick = () => {
+    trackCTAClicked("chat-signup-cta", "Continue Free", "chat-gate");
   };
 
   return (
@@ -144,6 +188,80 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
               </Button>
             </div>
 
+            {/* Signup Gate Overlay */}
+            <AnimatePresence>
+              {showSignupGate && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="absolute inset-0 z-10 bg-white/95 backdrop-blur-sm flex items-center justify-center p-6"
+                >
+                  <motion.div
+                    initial={{ scale: 0.9, y: 20 }}
+                    animate={{ scale: 1, y: 0 }}
+                    className="max-w-md text-center"
+                  >
+                    {/* Willson avatar */}
+                    <div className="w-20 h-20 rounded-2xl gradient-ember flex items-center justify-center mx-auto mb-6">
+                      <Sparkles className="w-10 h-10 text-white" />
+                    </div>
+
+                    <h3 className="font-serif text-2xl font-semibold mb-3">
+                      I'm loving this conversation!
+                    </h3>
+                    
+                    <p className="text-muted-foreground mb-6">
+                      Create your free account to continue chatting, and I'll build you 
+                      a personalized plan based on everything we've discussed.
+                    </p>
+
+                    {/* Value props */}
+                    <div className="bg-slate-50 rounded-xl p-4 mb-6 text-left space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                          <MessageSquare className="w-4 h-4 text-emerald-600" />
+                        </div>
+                        <span className="text-sm">Continue this conversation</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                          <Target className="w-4 h-4 text-blue-600" />
+                        </div>
+                        <span className="text-sm">Get your personalized willpower plan</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                          <Calendar className="w-4 h-4 text-purple-600" />
+                        </div>
+                        <span className="text-sm">Track progress with daily check-ins</span>
+                      </div>
+                    </div>
+
+                    {/* CTA */}
+                    <Button 
+                      asChild 
+                      size="lg" 
+                      className="w-full gradient-ember text-white mb-3"
+                      onClick={handleSignupClick}
+                    >
+                      <Link href="/signup?from=chat">
+                        Continue Free
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+
+                    <p className="text-xs text-muted-foreground">
+                      Already have an account?{" "}
+                      <Link href="/login" className="text-ember hover:underline">
+                        Sign in
+                      </Link>
+                    </p>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
             {/* Messages */}
             <div className="flex-1 overflow-y-auto p-6 space-y-6">
               {messages.length === 0 && !isLoading && (
@@ -188,6 +306,9 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
                                 {children}
                               </strong>
                             ),
+                            em: ({ children }) => (
+                              <em className="text-muted-foreground">{children}</em>
+                            ),
                             ul: ({ children }) => (
                               <ul className="list-disc list-inside mb-3 space-y-1">
                                 {children}
@@ -216,6 +337,18 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
                                 {children}
                               </h5>
                             ),
+                            a: ({ href, children }) => (
+                              <Link 
+                                href={href || "#"} 
+                                className="text-ember hover:underline font-medium"
+                                onClick={() => trackCTAClicked("chat-inline-link", String(children), "chat")}
+                              >
+                                {children}
+                              </Link>
+                            ),
+                            hr: () => (
+                              <hr className="my-4 border-border" />
+                            ),
                           }}
                         >
                           {message.content}
@@ -240,6 +373,19 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
               <div ref={messagesEndRef} />
             </div>
 
+            {/* Message counter hint */}
+            {!showSignupGate && userMessageCount >= 3 && userMessageCount < HARD_GATE_THRESHOLD && (
+              <div className="px-6 py-2 bg-amber-50 border-t border-amber-100">
+                <p className="text-xs text-amber-700 text-center">
+                  {HARD_GATE_THRESHOLD - userMessageCount} message{HARD_GATE_THRESHOLD - userMessageCount !== 1 ? 's' : ''} remaining •{" "}
+                  <Link href="/signup?from=chat" className="font-medium hover:underline">
+                    Sign up free
+                  </Link>{" "}
+                  to continue unlimited
+                </p>
+              </div>
+            )}
+
             {/* Input */}
             <div className="p-4 border-t bg-secondary/30">
               <div className="flex items-center gap-3 bg-white rounded-xl border p-2">
@@ -251,11 +397,11 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
                   onKeyDown={handleKeyDown}
                   placeholder="Ask about willpower, habits, purpose..."
                   className="flex-1 px-3 py-2 bg-transparent border-none outline-none"
-                  disabled={isLoading}
+                  disabled={isLoading || showSignupGate}
                 />
                 <Button
                   onClick={() => handleSend()}
-                  disabled={!input.trim() || isLoading}
+                  disabled={!input.trim() || isLoading || showSignupGate}
                   className="gradient-ember text-white rounded-lg"
                 >
                   {isLoading ? (
@@ -272,4 +418,3 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
     </AnimatePresence>
   );
 }
-

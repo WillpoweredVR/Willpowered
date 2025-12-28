@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, Mail, Lock, User, ArrowRight, Loader2, Check, CheckCircle } from "lucide-react";
+import { Sparkles, Mail, Lock, User, ArrowRight, Loader2, Check, CheckCircle, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
 import { 
@@ -21,18 +22,35 @@ const benefits = [
   "Stay on track even when motivation disappears",
 ];
 
-export default function SignupPage() {
+const chatBenefits = [
+  "Continue your conversation with Willson",
+  "Get a personalized plan based on what you shared",
+  "Track daily with your custom scorecard",
+  "Unlimited coaching whenever you need it",
+];
+
+function SignupContent() {
+  const searchParams = useSearchParams();
+  const fromChat = searchParams.get("from") === "chat";
+  
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [hasConversation, setHasConversation] = useState(false);
 
-  // Track page view on mount
+  // Track page view on mount and check for saved conversation
   useEffect(() => {
-    trackSignupStarted('signup_page');
-  }, []);
+    trackSignupStarted(fromChat ? 'chat_gate' : 'signup_page');
+    
+    // Check if there's a saved conversation
+    const savedConversation = localStorage.getItem("willson_conversation");
+    if (savedConversation) {
+      setHasConversation(true);
+    }
+  }, [fromChat]);
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -178,6 +196,8 @@ export default function SignupPage() {
     );
   }
 
+  const displayBenefits = fromChat ? chatBenefits : benefits;
+
   return (
     <div className="min-h-screen flex">
       {/* Left side - Branding */}
@@ -197,20 +217,38 @@ export default function SignupPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white/80 text-sm font-medium mb-6">
-              <Sparkles className="w-4 h-4" />
-              Why → How → What
-            </span>
-            <h1 className="font-serif text-4xl font-bold mb-6">
-              Your system is 5 minutes away.
-            </h1>
-            <p className="text-xl text-slate-300 mb-8">
-              Not another app to check. Not another habit to track. 
-              A complete system that connects who you want to be with what you do every day.
-            </p>
+            {fromChat ? (
+              <>
+                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-sm font-medium mb-6">
+                  <MessageSquare className="w-4 h-4" />
+                  Conversation saved
+                </span>
+                <h1 className="font-serif text-4xl font-bold mb-6">
+                  Willson is ready to continue.
+                </h1>
+                <p className="text-xl text-slate-300 mb-8">
+                  Your conversation has been saved. Create your free account and Willson will 
+                  pick up right where you left off—with a personalized plan based on what you shared.
+                </p>
+              </>
+            ) : (
+              <>
+                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white/80 text-sm font-medium mb-6">
+                  <Sparkles className="w-4 h-4" />
+                  Why → How → What
+                </span>
+                <h1 className="font-serif text-4xl font-bold mb-6">
+                  Your system is 5 minutes away.
+                </h1>
+                <p className="text-xl text-slate-300 mb-8">
+                  Not another app to check. Not another habit to track. 
+                  A complete system that connects who you want to be with what you do every day.
+                </p>
+              </>
+            )}
 
             <div className="space-y-4">
-              {benefits.map((benefit, index) => (
+              {displayBenefits.map((benefit, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
@@ -251,16 +289,33 @@ export default function SignupPage() {
           </div>
 
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-ember/10 text-ember rounded-full text-sm font-medium mb-4">
-              <Sparkles className="w-4 h-4" />
-              Free to start • No credit card
-            </div>
-            <h2 className="font-serif text-3xl font-bold text-foreground mb-2">
-              Create your account
-            </h2>
-            <p className="text-muted-foreground">
-              Takes less than 60 seconds
-            </p>
+            {fromChat ? (
+              <>
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">
+                  <MessageSquare className="w-4 h-4" />
+                  Continue with Willson
+                </div>
+                <h2 className="font-serif text-3xl font-bold text-foreground mb-2">
+                  Save your conversation
+                </h2>
+                <p className="text-muted-foreground">
+                  Free forever • Pick up where you left off
+                </p>
+              </>
+            ) : (
+              <>
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-ember/10 text-ember rounded-full text-sm font-medium mb-4">
+                  <Sparkles className="w-4 h-4" />
+                  Free to start • No credit card
+                </div>
+                <h2 className="font-serif text-3xl font-bold text-foreground mb-2">
+                  Create your account
+                </h2>
+                <p className="text-muted-foreground">
+                  Takes less than 60 seconds
+                </p>
+              </>
+            )}
           </div>
 
           {/* Google signup */}
@@ -416,5 +471,17 @@ export default function SignupPage() {
         </motion.div>
       </div>
     </div>
+  );
+}
+
+export default function SignupPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-ember" />
+      </div>
+    }>
+      <SignupContent />
+    </Suspense>
   );
 }
