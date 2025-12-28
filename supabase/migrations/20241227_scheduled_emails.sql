@@ -113,3 +113,5 @@ BEFORE UPDATE ON scheduled_emails
 FOR EACH ROW
 EXECUTE FUNCTION update_scheduled_emails_updated_at();
 
+
+

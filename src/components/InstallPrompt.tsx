@@ -25,19 +25,30 @@ export function InstallPrompt() {
     
     setIsStandalone(isInStandaloneMode);
 
-    // Check if iOS
-    const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    // Check if iOS (including newer iOS Safari)
+    const isIOSDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+      (navigator.userAgent.includes("Mac") && "ontouchend" in document);
     setIsIOS(isIOSDevice);
 
-    // Check if previously dismissed
-    const wasDismissed = localStorage.getItem("pwa-prompt-dismissed");
-    if (wasDismissed) {
-      const dismissedTime = parseInt(wasDismissed, 10);
-      // Show again after 7 days
+    // Check if previously dismissed (within last 7 days)
+    const dismissedTimestamp = localStorage.getItem("pwa-prompt-dismissed");
+    let recentlyDismissed = false;
+    
+    if (dismissedTimestamp) {
+      const dismissedTime = parseInt(dismissedTimestamp, 10);
+      // Only count as dismissed if within 7 days
       if (Date.now() - dismissedTime < 7 * 24 * 60 * 60 * 1000) {
+        recentlyDismissed = true;
         setDismissed(true);
-        return;
+      } else {
+        // Clear old dismissal
+        localStorage.removeItem("pwa-prompt-dismissed");
       }
+    }
+
+    // Don't show prompt if already installed or recently dismissed
+    if (isInStandaloneMode || recentlyDismissed) {
+      return;
     }
 
     // Listen for beforeinstallprompt (Android/Desktop Chrome)
@@ -50,8 +61,8 @@ export function InstallPrompt() {
 
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
-    // For iOS, show custom prompt after delay
-    if (isIOSDevice && !isInStandaloneMode && !wasDismissed) {
+    // For iOS, show custom prompt after delay (iOS doesn't fire beforeinstallprompt)
+    if (isIOSDevice) {
       setTimeout(() => setShowPrompt(true), 5000);
     }
 
@@ -188,4 +199,6 @@ export function InstallPrompt() {
     </AnimatePresence>
   );
 }
+
+
 

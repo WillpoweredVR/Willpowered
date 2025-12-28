@@ -353,11 +353,11 @@ export function DailyCheckinModal({
           initial={{ scale: 0.95, opacity: 0, y: 20 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.95, opacity: 0, y: 20 }}
-          className="bg-white rounded-2xl shadow-xl w-full max-w-lg overflow-hidden"
+          className="bg-white rounded-2xl shadow-xl w-full max-w-lg max-h-[90vh] flex flex-col overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Header */}
-          <div className="relative bg-gradient-to-r from-emerald-500 to-teal-500 p-4 text-white">
+          {/* Header - Fixed */}
+          <div className="relative bg-gradient-to-r from-emerald-500 to-teal-500 p-4 text-white flex-shrink-0">
             <button
               onClick={onClose}
               className="absolute right-4 top-4 p-1 hover:bg-white/20 rounded-lg transition-colors"
@@ -393,8 +393,8 @@ export function DailyCheckinModal({
             )}
           </div>
 
-          {/* Content */}
-          <div className="p-6">
+          {/* Content - Scrollable */}
+          <div className="p-6 overflow-y-auto flex-1">
             {showSummary ? (
               // Rich Summary View - Variable Reward!
               <motion.div
