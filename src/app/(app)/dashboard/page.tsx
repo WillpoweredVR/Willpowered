@@ -1282,8 +1282,8 @@ export default function DashboardPage() {
           userName: profile?.full_name || undefined,
           goal: goal ? {
             title: goal.title,
-            why: goal.why || undefined,
-            purpose: goal.purpose || undefined,
+            why: goal.why_statement || undefined,
+            purpose: profile?.purpose_statement || undefined,
           } : undefined,
           principles: principles.length > 0 ? principles.map(p => ({
             id: p.id,
