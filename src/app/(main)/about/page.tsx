@@ -45,7 +45,7 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <p className="text-ember font-medium mb-4 uppercase tracking-wider">My Story</p>
+            <p className="text-ember font-medium mb-4 uppercase tracking-wider">Colin Robertson</p>
             <h1 className="font-serif text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               From Burning Out to <br />
               <span className="text-ember">Building Up</span>
