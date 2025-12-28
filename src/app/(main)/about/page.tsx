@@ -135,7 +135,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     The book shares the stories of twelve extraordinary individuals—from Arnold Schwarzenegger to 
-                    Helen Keller—and the science behind how they willed themselves to greatness.
+                    Temple Grandin—and the science behind how they willed themselves to greatness.
                   </p>
                 </div>
                 <Link href="/books">
