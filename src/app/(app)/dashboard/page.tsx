@@ -1288,7 +1288,7 @@ export default function DashboardPage() {
           principles: principles.length > 0 ? principles.map(p => ({
             id: p.id,
             text: p.text,
-            context: p.context || undefined,
+            context: p.description || undefined,
           })) : undefined,
           metrics: scorecard?.categories?.flatMap(cat => 
             cat.metrics.map(m => ({
