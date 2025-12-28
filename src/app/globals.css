@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -7,8 +7,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-dm-sans);
-  --font-serif: var(--font-crimson-pro);
+  --font-sans: 'Poppins', sans-serif;
+  --font-serif: 'Poppins', sans-serif;
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -53,11 +53,12 @@
   
   Theme: Warm determination, quiet strength
   Palette: Deep warm slate + Ember accent (warm coral-amber)
-  Typography: Crimson Pro (serif headlines) + DM Sans (body)
+  Typography: Poppins (all text)
 */
 
 :root {
   --radius: 0.75rem;
+  font-family: 'Poppins', sans-serif;
   
   /* Core palette - warm, grounded, powerful */
   --background: oklch(0.98 0.005 60);

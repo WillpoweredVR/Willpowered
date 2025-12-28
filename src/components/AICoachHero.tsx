@@ -96,10 +96,10 @@ export function AICoachHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-6"
+            className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-6 leading-tight"
           >
             {headline.line1}
-            <span className="block text-ember">{headline.line2}</span>
+            <span className="block text-ember mt-2">{headline.line2}</span>
           </motion.h1>
 
           {/* Subheadline */}

@@ -61,7 +61,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#E85A3C" />
         <meta name="msapplication-tap-highlight" content="no" />
       </head>
-      <body className="min-h-screen">
+      <body className="min-h-screen font-sans">
         <PostHogWrapper>
           <ServiceWorkerRegistration />
           {children}
