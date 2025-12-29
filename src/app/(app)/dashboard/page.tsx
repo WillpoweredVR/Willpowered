@@ -26,6 +26,7 @@ import {
   Calendar,
   Zap,
   Crosshair,
+  ClipboardCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
@@ -34,6 +35,7 @@ import { EditModal } from "@/components/EditModal";
 import { MetricEditModal } from "@/components/MetricEditModal";
 import { DailyCheckinModal } from "@/components/DailyCheckinModal";
 import { UsageIndicator } from "@/components/UsageIndicator";
+import { WeeklyPrinciplesReview, PrincipleStrengthBadge } from "@/components/WeeklyPrinciplesReview";
 import type { 
   Profile, 
   Goal, 
@@ -42,6 +44,8 @@ import type {
   ScorecardCategory,
   ScorecardMetric,
   ScorecardData,
+  WeeklyPrincipleReview,
+  PrincipleStrength,
 } from "@/lib/supabase/types";
 
 // Helper to get today's date in ISO format
@@ -99,6 +103,10 @@ export default function DashboardPage() {
   
   // Daily check-in modal
   const [isCheckinOpen, setIsCheckinOpen] = useState(false);
+  
+  // Weekly principles review
+  const [isPrincipleReviewOpen, setIsPrincipleReviewOpen] = useState(false);
+  const [principleReviews, setPrincipleReviews] = useState<WeeklyPrincipleReview[]>([]);
 
   const today = getToday();
   const last7Days = useMemo(() => getLast7Days(), []);
@@ -129,6 +137,9 @@ export default function DashboardPage() {
       setProfile(profileData);
       if (profileData.principles) {
         setPrinciples(profileData.principles as Principle[]);
+      }
+      if (profileData.principle_reviews) {
+        setPrincipleReviews(profileData.principle_reviews as WeeklyPrincipleReview[]);
       }
       if (profileData.scorecard) {
         setScorecard(profileData.scorecard as Scorecard);
@@ -527,6 +538,49 @@ export default function DashboardPage() {
     window.location.href = "/";
   };
 
+  // Check if weekly principle review is due (not done this week)
+  const isReviewDue = useMemo(() => {
+    if (principles.length === 0) return false;
+    const now = new Date();
+    const day = now.getDay();
+    const diff = now.getDate() - day + (day === 0 ? -6 : 1);
+    const monday = new Date(now.setDate(diff)).toISOString().split("T")[0];
+    return !principleReviews.some(r => r.weekOf === monday);
+  }, [principles, principleReviews]);
+
+  // Calculate strength for a principle
+  const getPrincipleStrength = (principleId: string): PrincipleStrength => {
+    let timesTested = 0;
+    let timesHeld = 0;
+    let timesStruggled = 0;
+    let timesBroke = 0;
+    
+    const recentReviews = principleReviews.slice(-8);
+    recentReviews.forEach(review => {
+      const entry = review.entries.find(e => e.principleId === principleId);
+      if (entry?.wasTested && entry.response) {
+        timesTested++;
+        if (entry.response === 'held') timesHeld++;
+        else if (entry.response === 'struggled') timesStruggled++;
+        else if (entry.response === 'broke') timesBroke++;
+      }
+    });
+    
+    const strengthScore = timesTested > 0 
+      ? Math.round(((timesHeld + timesStruggled * 0.5) / timesTested) * 100)
+      : -1;
+    
+    return {
+      principleId,
+      timesTested,
+      timesHeld,
+      timesStruggled,
+      timesBroke,
+      strengthScore,
+      trend: 'stable' as const,
+    };
+  };
+
   const firstName = profile?.full_name?.split(" ")[0] || "Hero";
   const daysOnJourney = goal
     ? Math.floor((Date.now() - new Date(goal.started_at).getTime()) / (1000 * 60 * 60 * 24))
@@ -803,9 +857,20 @@ export default function DashboardPage() {
             </div>
             <div className="flex items-center gap-2">
               {principles.length > 0 && (
-                <span className="text-sm text-muted-foreground">
-                  {principles.length} principle{principles.length !== 1 ? "s" : ""}
-                </span>
+                <>
+                  {isReviewDue && (
+                    <button
+                      onClick={() => setIsPrincipleReviewOpen(true)}
+                      className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition-colors"
+                    >
+                      <ClipboardCheck className="w-3.5 h-3.5" />
+                      Weekly Review
+                    </button>
+                  )}
+                  <span className="text-sm text-muted-foreground">
+                    {principles.length} principle{principles.length !== 1 ? "s" : ""}
+                  </span>
+                </>
               )}
               <button
                 onClick={() => setIsAddingPrinciple(true)}
@@ -825,6 +890,7 @@ export default function DashboardPage() {
               {principles.map((principle, index) => {
                 const isExpanded = expandedPrinciple === principle.id;
                 const hasContext = principle.whenTested || principle.howToHold;
+                const strength = getPrincipleStrength(principle.id);
                 
                 return (
                   <div
@@ -856,7 +922,12 @@ export default function DashboardPage() {
                             />
                           ) : (
                             <>
-                              <p className="font-medium text-foreground">{principle.text}</p>
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <p className="font-medium text-foreground">{principle.text}</p>
+                                {strength.strengthScore >= 0 && (
+                                  <PrincipleStrengthBadge strength={strength} />
+                                )}
+                              </div>
                               {principle.description && (
                                 <p className="text-sm text-muted-foreground mt-1">{principle.description}</p>
                               )}
@@ -1453,6 +1524,16 @@ export default function DashboardPage() {
         getWeekAverage={getAggregatedValue}
         savedSummary={getTodaySummary()}
         onSaveSummary={saveTodaySummary}
+      />
+
+      <WeeklyPrinciplesReview
+        isOpen={isPrincipleReviewOpen}
+        onClose={() => setIsPrincipleReviewOpen(false)}
+        principles={principles}
+        existingReviews={principleReviews}
+        onReviewComplete={(review) => {
+          setPrincipleReviews(prev => [...prev, review]);
+        }}
       />
     </div>
   );

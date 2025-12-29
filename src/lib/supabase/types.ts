@@ -38,6 +38,7 @@ export interface Database {
           focus_step: number | null
           skills_to_learn: Json | null
           principles: Json | null // Principle[]
+          principle_reviews: Json | null // WeeklyPrincipleReview[]
           scorecard: Json | null // Scorecard
           timezone: string
           daily_reminder_time: string
@@ -67,6 +68,7 @@ export interface Database {
           focus_step?: number | null
           skills_to_learn?: Json | null
           principles?: Json | null
+          principle_reviews?: Json | null
           scorecard?: Json | null
           timezone?: string
           daily_reminder_time?: string
@@ -94,6 +96,7 @@ export interface Database {
           focus_step?: number | null
           skills_to_learn?: Json | null
           principles?: Json | null
+          principle_reviews?: Json | null
           scorecard?: Json | null
           timezone?: string
           daily_reminder_time?: string
@@ -524,6 +527,38 @@ export interface Principle {
   whenTested?: string // Situations where this principle will be challenged
   howToHold?: string // What living up to it looks like in practice
   createdAt: string
+}
+
+// How well someone responded when a principle was tested
+export type PrincipleResponse = 'held' | 'struggled' | 'broke'
+
+// A single reflection on one principle
+export interface PrincipleReflectionEntry {
+  principleId: string
+  wasTested: boolean
+  situation?: string // What happened
+  response?: PrincipleResponse // How did they respond
+  learning?: string // What they learned
+}
+
+// Weekly principles review
+export interface WeeklyPrincipleReview {
+  id: string
+  weekOf: string // ISO date of the Monday of that week
+  entries: PrincipleReflectionEntry[]
+  willsonInsight?: string // AI-generated insight on patterns
+  createdAt: string
+}
+
+// Aggregated stats for a principle over time
+export interface PrincipleStrength {
+  principleId: string
+  timesTested: number
+  timesHeld: number
+  timesStruggled: number
+  timesBroke: number
+  strengthScore: number // 0-100 percentage (held + 0.5*struggled) / tested
+  trend: 'improving' | 'stable' | 'declining'
 }
 
 // Scorecard metric - a single thing to track
