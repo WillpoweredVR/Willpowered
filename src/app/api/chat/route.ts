@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
+import { createClient } from "@/lib/supabase/server";
+import { getUsageStatus, shouldResetConversations, getNextResetDate } from "@/lib/subscription-limits";
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || "",
@@ -347,6 +349,67 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ 
         message: "I'm having trouble connecting right now. Please try again in a moment." 
       });
+    }
+
+    // Track conversation usage for authenticated users
+    let userId: string | null = null;
+    if (userContext?.userId) {
+      const supabase = await createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      if (user) {
+        userId = user.id;
+        
+        // Get current usage
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("subscription_status, monthly_conversations, conversation_reset_date")
+          .eq("id", user.id)
+          .single();
+        
+        if (profile) {
+          const usage = getUsageStatus(
+            profile.subscription_status,
+            profile.monthly_conversations || 0,
+            profile.conversation_reset_date
+          );
+          
+          // Check if at limit (free users only)
+          if (usage.isAtLimit) {
+            return NextResponse.json({
+              message: "You've reached your monthly conversation limit. Upgrade to Pro for unlimited conversations, or wait until your limit resets.",
+              isAtLimit: true,
+              usage: {
+                used: usage.conversationsUsed,
+                limit: usage.conversationsLimit,
+                resetDate: usage.resetDate?.toISOString(),
+              }
+            });
+          }
+          
+          // Check if we need to reset the counter (new month)
+          const needsReset = shouldResetConversations(profile.conversation_reset_date);
+          
+          // Increment conversation count (only on first message of conversation)
+          // We count "conversations" not "messages" - so only count when messages array is small
+          if (messages.length <= 2) {
+            const newCount = needsReset ? 1 : (profile.monthly_conversations || 0) + 1;
+            const updateData: Record<string, unknown> = {
+              monthly_conversations: newCount,
+            };
+            
+            // If resetting, update the reset date
+            if (needsReset) {
+              updateData.conversation_reset_date = new Date().toISOString();
+            }
+            
+            await supabase
+              .from("profiles")
+              .update(updateData)
+              .eq("id", user.id);
+          }
+        }
+      }
     }
 
     // Build system prompt with user context
