@@ -122,25 +122,37 @@ export default function SettingsPage() {
     setIsUploadingAvatar(true);
 
     try {
-      // Create unique file path
-      const fileExt = file.name.split(".").pop();
-      const filePath = `${user.id}/avatar.${fileExt}`;
+      // Create unique file path - flat structure with user ID prefix
+      const fileExt = file.name.split(".").pop()?.toLowerCase() || "jpg";
+      const fileName = `avatar-${user.id}.${fileExt}`;
+
+      // Try to remove old avatar first (ignore errors)
+      try {
+        await supabase.storage.from("avatars").remove([fileName]);
+      } catch {
+        // Ignore - file might not exist
+      }
 
       // Upload to Supabase Storage
-      const { error: uploadError } = await supabase.storage
+      const { data: uploadData, error: uploadError } = await supabase.storage
         .from("avatars")
-        .upload(filePath, file, { upsert: true });
+        .upload(fileName, file, { 
+          upsert: true,
+          cacheControl: "3600",
+        });
 
       if (uploadError) {
         console.error("Upload error:", uploadError);
-        alert("Failed to upload image. Please try again.");
+        alert(`Failed to upload: ${uploadError.message}`);
         return;
       }
+
+      console.log("Upload successful:", uploadData);
 
       // Get public URL
       const { data: { publicUrl } } = supabase.storage
         .from("avatars")
-        .getPublicUrl(filePath);
+        .getPublicUrl(fileName);
 
       // Add cache buster to force refresh
       const urlWithCacheBuster = `${publicUrl}?t=${Date.now()}`;
@@ -153,7 +165,7 @@ export default function SettingsPage() {
 
       if (updateError) {
         console.error("Profile update error:", updateError);
-        alert("Failed to save profile picture. Please try again.");
+        alert(`Failed to save: ${updateError.message}`);
         return;
       }
 
