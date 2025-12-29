@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         hostname: 'static.squarespace.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'kxklannprippgfqdxjfe.supabase.co',
+        pathname: '/storage/**',
+      },
     ],
   },
 };
