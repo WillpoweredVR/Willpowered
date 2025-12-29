@@ -54,13 +54,6 @@ export function AICoachHero() {
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      handleSubmit();
-    }
-  };
-
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -122,7 +115,11 @@ export function AICoachHero() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div 
+            <form 
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleSubmit();
+              }}
               className={`relative bg-white rounded-2xl shadow-lg border-2 transition-all duration-300 ${
                 isHovered ? 'border-ember shadow-xl shadow-ember/10' : 'border-border'
               }`}
@@ -135,20 +132,19 @@ export function AICoachHero() {
                   type="text"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
-                  onKeyDown={handleKeyDown}
                   placeholder="Ask Willson anything..."
                   className="flex-1 text-lg bg-transparent border-none outline-none placeholder:text-muted-foreground/50"
                 />
                 <Button 
+                  type="submit"
                   size="lg" 
                   className="gradient-ember text-white hover:opacity-90 rounded-xl gap-2"
-                  onClick={() => handleSubmit()}
                 >
                   <Send className="w-4 h-4" />
                   <span className="hidden sm:inline">Ask</span>
                 </Button>
               </div>
-            </div>
+            </form>
 
             {/* Suggested prompts */}
             <div className="mt-4 flex flex-wrap justify-center gap-2">

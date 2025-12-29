@@ -123,12 +123,6 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
-    }
-  };
 
   if (!isOpen) return null;
 
@@ -277,19 +271,24 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
       {/* Input */}
       {!isMinimized && (
         <div className="p-4 border-t border-border">
-          <div className="flex items-center gap-2">
+          <form 
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSend();
+            }}
+            className="flex items-center gap-2"
+          >
             <input
               ref={inputRef}
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown}
               placeholder="Ask Willson..."
               className="flex-1 bg-muted rounded-xl px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ember/50 placeholder:text-muted-foreground"
               disabled={isLoading}
             />
             <Button
-              onClick={() => handleSend()}
+              type="submit"
               disabled={!input.trim() || isLoading}
               size="icon"
               className="gradient-ember text-white rounded-xl h-11 w-11 hover:opacity-90"
@@ -300,7 +299,7 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
                 <Send className="w-4 h-4" />
               )}
             </Button>
-          </div>
+          </form>
         </div>
       )}
     </motion.div>

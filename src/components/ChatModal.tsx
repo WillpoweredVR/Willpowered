@@ -291,12 +291,6 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
-    }
-  };
 
   const handleClose = () => {
     // Don't clear messages - keep them for if user comes back
@@ -677,19 +671,24 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
 
               {/* Input */}
               <div className="p-4 border-t bg-secondary/30">
-                <div className="flex items-center gap-3 bg-white rounded-xl border p-2">
+                <form 
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleSend();
+                }}
+                className="flex items-center gap-3 bg-white rounded-xl border p-2"
+              >
                   <input
                     ref={inputRef}
                     type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    onKeyDown={handleKeyDown}
                     placeholder="Ask about willpower, habits, purpose..."
                     className="flex-1 px-3 py-2 bg-transparent border-none outline-none"
                     disabled={isLoading || showSignupGate}
                   />
                   <Button
-                    onClick={() => handleSend()}
+                    type="submit"
                     disabled={!input.trim() || isLoading || showSignupGate}
                     className="gradient-ember text-white rounded-lg"
                   >
@@ -699,7 +698,7 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
                       <Send className="w-4 h-4" />
                     )}
                   </Button>
-                </div>
+                </form>
               </div>
             </div>
           </motion.div>
