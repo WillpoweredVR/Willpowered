@@ -2,10 +2,54 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { User, Mail, CreditCard, Bell, Trash2, Loader2, ChevronRight, LogOut, Shield, Download } from "lucide-react";
+import { motion } from "framer-motion";
+import { 
+  User, Mail, CreditCard, Bell, Trash2, Loader2, ChevronRight, LogOut, Shield, Download,
+  Clock, Sun, Moon, Calendar, BarChart3, CalendarDays, Check, Sparkles
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
 import { useSubscription } from "@/hooks/useSubscription";
+
+interface EmailPreferences {
+  marketing: boolean;
+  product_updates: boolean;
+  onboarding_sequence: boolean;
+  weekly_summary: boolean;
+  checkin_reminders: boolean;
+  daily_scorecard: boolean;
+  daily_scorecard_time: string;
+  weekly_principles: boolean;
+  weekly_principles_day: number;
+}
+
+const defaultPreferences: EmailPreferences = {
+  marketing: true,
+  product_updates: true,
+  onboarding_sequence: true,
+  weekly_summary: true,
+  checkin_reminders: true,
+  daily_scorecard: true,
+  daily_scorecard_time: "18:00",
+  weekly_principles: true,
+  weekly_principles_day: 0,
+};
+
+const timeOptions = [
+  { value: "06:00", label: "6 AM", icon: Sun },
+  { value: "08:00", label: "8 AM", icon: Sun },
+  { value: "12:00", label: "12 PM", icon: Sun },
+  { value: "18:00", label: "6 PM", icon: Moon },
+  { value: "20:00", label: "8 PM", icon: Moon },
+  { value: "21:00", label: "9 PM", icon: Moon },
+];
+
+const dayOptions = [
+  { value: 0, label: "Sunday" },
+  { value: 1, label: "Monday" },
+  { value: 5, label: "Friday" },
+  { value: 6, label: "Saturday" },
+];
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -14,11 +58,13 @@ export default function SettingsPage() {
   const [isSaving, setIsSaving] = useState(false);
   const [fullName, setFullName] = useState("");
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [preferences, setPreferences] = useState<EmailPreferences>(defaultPreferences);
+  const [showSaved, setShowSaved] = useState(false);
   const { status, isPro, isTrialing, periodEndsAt, openPortal, isLoading: subLoading } = useSubscription();
+  const supabase = createClient();
 
   useEffect(() => {
     const fetchUser = async () => {
-      const supabase = createClient();
       const { data: { user: authUser } } = await supabase.auth.getUser();
       
       if (!authUser) {
@@ -28,7 +74,7 @@ export default function SettingsPage() {
 
       const { data: profile } = await supabase
         .from("profiles")
-        .select("full_name")
+        .select("full_name, email_preferences")
         .eq("id", authUser.id)
         .single();
 
@@ -37,17 +83,24 @@ export default function SettingsPage() {
         full_name: profile?.full_name || null,
       });
       setFullName(profile?.full_name || "");
+      
+      if (profile?.email_preferences) {
+        setPreferences({
+          ...defaultPreferences,
+          ...profile.email_preferences,
+        });
+      }
+      
       setIsLoading(false);
     };
 
     fetchUser();
-  }, [router]);
+  }, [router, supabase]);
 
   const handleSaveName = async () => {
     if (!user) return;
     
     setIsSaving(true);
-    const supabase = createClient();
     const { data: { user: authUser } } = await supabase.auth.getUser();
     
     if (authUser) {
@@ -62,17 +115,45 @@ export default function SettingsPage() {
   };
 
   const handleSignOut = async () => {
-    const supabase = createClient();
     await supabase.auth.signOut();
     router.push("/");
   };
 
   const handleDeleteAccount = async () => {
-    // In a real implementation, this would trigger account deletion
-    // For now, just sign out
-    const supabase = createClient();
     await supabase.auth.signOut();
     router.push("/");
+  };
+
+  const handleToggle = async (key: keyof EmailPreferences) => {
+    const newPreferences = {
+      ...preferences,
+      [key]: !preferences[key],
+    };
+    setPreferences(newPreferences);
+    await savePreferences(newPreferences);
+  };
+
+  const handleSelectChange = async (key: keyof EmailPreferences, value: string | number) => {
+    const newPreferences = {
+      ...preferences,
+      [key]: value,
+    };
+    setPreferences(newPreferences);
+    await savePreferences(newPreferences);
+  };
+
+  const savePreferences = async (prefs: EmailPreferences) => {
+    const { data: { user: authUser } } = await supabase.auth.getUser();
+
+    if (authUser) {
+      await supabase
+        .from("profiles")
+        .update({ email_preferences: prefs })
+        .eq("id", authUser.id);
+    }
+
+    setShowSaved(true);
+    setTimeout(() => setShowSaved(false), 2000);
   };
 
   if (isLoading) {
@@ -87,6 +168,19 @@ export default function SettingsPage() {
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-2xl px-6 py-12 lg:px-8">
         <h1 className="font-serif text-3xl font-bold text-foreground mb-8">Settings</h1>
+
+        {/* Saved indicator */}
+        {showSaved && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="fixed top-4 right-4 bg-emerald-500 text-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 z-50"
+          >
+            <Check className="w-4 h-4" />
+            Saved
+          </motion.div>
+        )}
 
         {/* Profile Section */}
         <section className="mb-8">
@@ -200,6 +294,213 @@ export default function SettingsPage() {
           </div>
         </section>
 
+        {/* ===== EMAIL PREFERENCES SECTION ===== */}
+        <section className="mb-8">
+          <h2 className="font-serif text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+            <Bell className="w-5 h-5 text-ember" />
+            Email Reminders
+          </h2>
+
+          {/* Daily Scorecard */}
+          <div className="bg-white rounded-xl border border-slate-200 mb-4">
+            <div className="p-5">
+              <div className="flex items-start gap-4">
+                <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
+                  preferences.daily_scorecard ? "bg-ember/10" : "bg-slate-100"
+                }`}>
+                  <BarChart3 className={`w-5 h-5 ${
+                    preferences.daily_scorecard ? "text-ember" : "text-slate-400"
+                  }`} />
+                </div>
+                
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="font-medium text-foreground">Daily Scorecard</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Personalized check-in with your metrics
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => handleToggle("daily_scorecard")}
+                      className={`relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ${
+                        preferences.daily_scorecard ? "bg-ember" : "bg-slate-200"
+                      }`}
+                    >
+                      <span
+                        className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow transition duration-200 ${
+                          preferences.daily_scorecard ? "translate-x-5" : "translate-x-0"
+                        }`}
+                      />
+                    </button>
+                  </div>
+
+                  {preferences.daily_scorecard && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      className="mt-3 pt-3 border-t border-slate-100"
+                    >
+                      <label className="text-xs font-medium text-slate-500 flex items-center gap-1 mb-2">
+                        <Clock className="w-3 h-3" />
+                        SEND AT
+                      </label>
+                      <div className="flex flex-wrap gap-1.5">
+                        {timeOptions.map((option) => {
+                          const isSelected = preferences.daily_scorecard_time === option.value;
+                          return (
+                            <button
+                              key={option.value}
+                              onClick={() => handleSelectChange("daily_scorecard_time", option.value)}
+                              className={`px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
+                                isSelected
+                                  ? "bg-ember text-white"
+                                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                              }`}
+                            >
+                              {option.label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Weekly Principles */}
+          <div className="bg-white rounded-xl border border-slate-200 mb-4">
+            <div className="p-5">
+              <div className="flex items-start gap-4">
+                <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${
+                  preferences.weekly_principles ? "bg-violet-100" : "bg-slate-100"
+                }`}>
+                  <CalendarDays className={`w-5 h-5 ${
+                    preferences.weekly_principles ? "text-violet-600" : "text-slate-400"
+                  }`} />
+                </div>
+                
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="font-medium text-foreground">Weekly Principles Review</h3>
+                      <p className="text-sm text-muted-foreground">
+                        5-minute reflection on your principles
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => handleToggle("weekly_principles")}
+                      className={`relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ${
+                        preferences.weekly_principles ? "bg-violet-600" : "bg-slate-200"
+                      }`}
+                    >
+                      <span
+                        className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow transition duration-200 ${
+                          preferences.weekly_principles ? "translate-x-5" : "translate-x-0"
+                        }`}
+                      />
+                    </button>
+                  </div>
+
+                  {preferences.weekly_principles && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      className="mt-3 pt-3 border-t border-violet-100"
+                    >
+                      <label className="text-xs font-medium text-slate-500 flex items-center gap-1 mb-2">
+                        <Calendar className="w-3 h-3" />
+                        SEND ON
+                      </label>
+                      <div className="flex flex-wrap gap-1.5">
+                        {dayOptions.map((option) => {
+                          const isSelected = preferences.weekly_principles_day === option.value;
+                          return (
+                            <button
+                              key={option.value}
+                              onClick={() => handleSelectChange("weekly_principles_day", option.value)}
+                              className={`px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
+                                isSelected
+                                  ? "bg-violet-600 text-white"
+                                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                              }`}
+                            >
+                              {option.label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Other Email Preferences */}
+          <div className="bg-white rounded-xl border border-slate-200">
+            <div className="p-4 border-b border-slate-100">
+              <h3 className="text-sm font-medium text-slate-600">Other Emails</h3>
+            </div>
+            
+            {/* Welcome Series */}
+            <div className="flex items-center justify-between p-4 border-b border-slate-100">
+              <div className="flex items-center gap-3">
+                <Sparkles className={`w-4 h-4 ${preferences.onboarding_sequence ? "text-ember" : "text-slate-400"}`} />
+                <span className="text-sm text-foreground">Welcome Series</span>
+              </div>
+              <button
+                onClick={() => handleToggle("onboarding_sequence")}
+                className={`relative inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ${
+                  preferences.onboarding_sequence ? "bg-ember" : "bg-slate-200"
+                }`}
+              >
+                <span className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow transition duration-200 ${
+                  preferences.onboarding_sequence ? "translate-x-4" : "translate-x-0"
+                }`} />
+              </button>
+            </div>
+
+            {/* Product Updates */}
+            <div className="flex items-center justify-between p-4 border-b border-slate-100">
+              <div className="flex items-center gap-3">
+                <Bell className={`w-4 h-4 ${preferences.product_updates ? "text-ember" : "text-slate-400"}`} />
+                <span className="text-sm text-foreground">Product Updates</span>
+              </div>
+              <button
+                onClick={() => handleToggle("product_updates")}
+                className={`relative inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ${
+                  preferences.product_updates ? "bg-ember" : "bg-slate-200"
+                }`}
+              >
+                <span className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow transition duration-200 ${
+                  preferences.product_updates ? "translate-x-4" : "translate-x-0"
+                }`} />
+              </button>
+            </div>
+
+            {/* Tips & Inspiration */}
+            <div className="flex items-center justify-between p-4">
+              <div className="flex items-center gap-3">
+                <Mail className={`w-4 h-4 ${preferences.marketing ? "text-ember" : "text-slate-400"}`} />
+                <span className="text-sm text-foreground">Tips & Inspiration</span>
+              </div>
+              <button
+                onClick={() => handleToggle("marketing")}
+                className={`relative inline-flex h-5 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ${
+                  preferences.marketing ? "bg-ember" : "bg-slate-200"
+                }`}
+              >
+                <span className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow transition duration-200 ${
+                  preferences.marketing ? "translate-x-4" : "translate-x-0"
+                }`} />
+              </button>
+            </div>
+          </div>
+        </section>
+
         {/* Export Section */}
         <section className="mb-8">
           <h2 className="font-serif text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
@@ -214,19 +515,6 @@ export default function SettingsPage() {
               <Download className="w-4 h-4 mr-2" />
               {isPro || isTrialing ? "Export My Data" : "Upgrade to Export"}
             </Button>
-          </div>
-        </section>
-
-        {/* Notifications Section */}
-        <section className="mb-8">
-          <h2 className="font-serif text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
-            <Bell className="w-5 h-5 text-ember" />
-            Notifications
-          </h2>
-          <div className="bg-white rounded-xl border border-slate-200 p-6">
-            <p className="text-sm text-muted-foreground">
-              Notification preferences coming soon.
-            </p>
           </div>
         </section>
 
@@ -283,5 +571,3 @@ export default function SettingsPage() {
     </div>
   );
 }
-
-

@@ -159,11 +159,11 @@ export const DailyScorecardEmail = ({
           <Hr style={hr} />
           <Section style={footer}>
             <Text style={footerText}>
-              <Link href="https://willpowered.com/settings/emails" style={footerLink}>
+              <Link href="https://willpowered.com/settings" style={footerLink}>
                 Change reminder time
               </Link>
               {" · "}
-              <Link href="https://willpowered.com/settings/emails" style={footerLink}>
+              <Link href="https://willpowered.com/settings" style={footerLink}>
                 Unsubscribe from daily reminders
               </Link>
             </Text>

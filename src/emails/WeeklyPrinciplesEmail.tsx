@@ -171,11 +171,11 @@ export const WeeklyPrinciplesEmail = ({
           <Hr style={hr} />
           <Section style={footer}>
             <Text style={footerText}>
-              <Link href="https://willpowered.com/settings/emails" style={footerLink}>
+              <Link href="https://willpowered.com/settings" style={footerLink}>
                 Change review day
               </Link>
               {" · "}
-              <Link href="https://willpowered.com/settings/emails" style={footerLink}>
+              <Link href="https://willpowered.com/settings" style={footerLink}>
                 Unsubscribe from weekly reviews
               </Link>
             </Text>
