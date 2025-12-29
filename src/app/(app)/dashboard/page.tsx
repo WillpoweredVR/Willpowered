@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Sparkles,
@@ -715,10 +716,26 @@ export default function DashboardPage() {
               </Button>
 
               <div className="relative group">
-                <Button variant="ghost" size="icon" className="rounded-full">
-                  <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center">
-                    <User className="w-4 h-4 text-slate-600" />
-                  </div>
+                <Button variant="ghost" size="icon" className="rounded-full p-0 overflow-hidden">
+                  {profile?.avatar_url ? (
+                    <Image
+                      src={profile.avatar_url}
+                      alt={profile.full_name || "Profile"}
+                      width={32}
+                      height={32}
+                      className="w-8 h-8 rounded-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center">
+                      {profile?.full_name ? (
+                        <span className="text-sm font-medium text-slate-600">
+                          {profile.full_name.charAt(0).toUpperCase()}
+                        </span>
+                      ) : (
+                        <User className="w-4 h-4 text-slate-600" />
+                      )}
+                    </div>
+                  )}
                 </Button>
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                   <Link
