@@ -791,37 +791,35 @@ export default function DashboardPage() {
           transition={{ delay: 0.1 }}
           className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 mb-6"
         >
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-2">
-              <Target className="w-5 h-5 text-ember-light" />
-              <span className="text-sm text-slate-400 uppercase tracking-wide font-medium">
-                Step 1 · Purpose
-              </span>
-              <span className="text-xs text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded-full font-medium">
-                Your Why
-              </span>
-            </div>
-            {!hasPurpose && (
-              <Button
-                size="sm"
-                variant="outline"
-                className="text-white border-white/30 hover:bg-white/10"
-                onClick={() => {
-                  setCoachContext({
-                    message: "Help me discover my purpose. What questions should I be asking myself?",
-                    title: "Discover Purpose"
-                  });
-                  setIsChatOpen(true);
-                }}
-              >
-                <Sparkles className="w-3 h-3 mr-1" />
-                Define with Willson
-              </Button>
-            )}
-          </div>
-
-          {goal ? (
+          {profile?.purpose_statement ? (
             <>
+              {/* Purpose Statement - Main Header */}
+              <div className="flex items-start gap-2 group mb-3">
+                <h2 className="font-serif text-2xl font-bold leading-tight">{profile.purpose_statement}</h2>
+                <button
+                  onClick={() => setEditModal({ isOpen: true, type: "purpose", value: profile.purpose_statement || "" })}
+                  className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-white p-1 transition-opacity mt-1 flex-shrink-0"
+                >
+                  <Pencil className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Why Statement - Quote underneath */}
+              {goal?.why_statement && (
+                <div className="flex items-start gap-2 group">
+                  <p className="text-slate-400 italic">&ldquo;{goal.why_statement}&rdquo;</p>
+                  <button
+                    onClick={() => setEditModal({ isOpen: true, type: "why", value: goal.why_statement || "" })}
+                    className="opacity-0 group-hover:opacity-100 text-slate-500 hover:text-white p-1 transition-opacity flex-shrink-0"
+                  >
+                    <Pencil className="w-3 h-3" />
+                  </button>
+                </div>
+              )}
+            </>
+          ) : goal ? (
+            <>
+              {/* Fallback: Show goal if no purpose */}
               <div className="flex items-start gap-2 group mb-2">
                 <h2 className="font-serif text-2xl font-bold">{goal.title}</h2>
                 <button
@@ -833,31 +831,13 @@ export default function DashboardPage() {
               </div>
 
               {goal.why_statement && (
-                <div className="flex items-start gap-2 group mb-4">
+                <div className="flex items-start gap-2 group">
                   <p className="text-slate-400 italic">&ldquo;{goal.why_statement}&rdquo;</p>
                   <button
                     onClick={() => setEditModal({ isOpen: true, type: "why", value: goal.why_statement || "" })}
                     className="opacity-0 group-hover:opacity-100 text-slate-500 hover:text-white p-1 transition-opacity flex-shrink-0"
                   >
                     <Pencil className="w-3 h-3" />
-                  </button>
-                </div>
-              )}
-
-              {profile?.purpose_statement && (
-                <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3 group">
-                  <div className="w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Compass className="w-4 h-4 text-amber-400" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-xs text-slate-400">My Purpose</p>
-                    <p className="text-sm text-white">{profile.purpose_statement}</p>
-                  </div>
-                  <button
-                    onClick={() => setEditModal({ isOpen: true, type: "purpose", value: profile.purpose_statement || "" })}
-                    className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-white p-2 transition-opacity"
-                  >
-                    <Pencil className="w-4 h-4" />
                   </button>
                 </div>
               )}
