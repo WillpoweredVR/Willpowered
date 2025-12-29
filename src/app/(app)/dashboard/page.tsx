@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -94,6 +95,9 @@ export default function DashboardPage() {
   const [metricInputValue, setMetricInputValue] = useState("");
   
   // Metric config editing
+  const [subscriptionJustUpgraded, setSubscriptionJustUpgraded] = useState(false);
+  const searchParams = useSearchParams();
+  
   const [metricEditModal, setMetricEditModal] = useState<{
     isOpen: boolean;
     metric: ScorecardMetric | null;
@@ -120,6 +124,30 @@ export default function DashboardPage() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  // Handle subscription success - sync status from Stripe
+  useEffect(() => {
+    const isSubscriptionSuccess = searchParams.get("subscription") === "success";
+    
+    if (isSubscriptionSuccess) {
+      // Sync subscription status from Stripe
+      fetch("/api/stripe/sync-status", { method: "POST" })
+        .then(res => res.json())
+        .then(data => {
+          if (data.synced && (data.status === "active" || data.status === "trialing")) {
+            setSubscriptionJustUpgraded(true);
+            // Refresh profile data to update UI
+            fetchData();
+            // Clear the success message after a few seconds
+            setTimeout(() => setSubscriptionJustUpgraded(false), 5000);
+          }
+        })
+        .catch(console.error);
+      
+      // Clean URL without causing a re-render
+      window.history.replaceState({}, "", "/dashboard");
+    }
+  }, [searchParams]);
 
   const fetchData = async () => {
     const supabase = createClient();
@@ -638,6 +666,24 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      {/* Subscription Success Banner */}
+      <AnimatePresence>
+        {subscriptionJustUpgraded && (
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-3 px-4 text-center shadow-lg"
+          >
+            <p className="font-medium flex items-center justify-center gap-2">
+              <Sparkles className="w-5 h-5" />
+              Welcome to Pro! You now have unlimited conversations with Willson.
+              <Sparkles className="w-5 h-5" />
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      
       {/* Header */}
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
         <div className="container mx-auto px-6 py-4">

@@ -25,11 +25,34 @@ export function UsageIndicator({ variant = "compact", className = "" }: UsageInd
         return;
       }
 
+      // First, get current profile data
       const { data: profile } = await supabase
         .from("profiles")
-        .select("subscription_status, monthly_conversations, conversation_reset_date")
+        .select("subscription_status, monthly_conversations, conversation_reset_date, stripe_customer_id")
         .eq("id", user.id)
         .single();
+
+      // If user has a Stripe customer ID but status is free/null, sync from Stripe
+      if (profile?.stripe_customer_id && 
+          (!profile.subscription_status || profile.subscription_status === "free")) {
+        try {
+          const syncRes = await fetch("/api/stripe/sync-status", { method: "POST" });
+          const syncData = await syncRes.json();
+          if (syncData.synced && syncData.status) {
+            // Use the synced status
+            const usageStatus = getUsageStatus(
+              syncData.status,
+              profile.monthly_conversations || 0,
+              profile.conversation_reset_date
+            );
+            setUsage(usageStatus);
+            setIsLoading(false);
+            return;
+          }
+        } catch (e) {
+          console.error("Failed to sync subscription:", e);
+        }
+      }
 
       if (profile) {
         const usageStatus = getUsageStatus(
