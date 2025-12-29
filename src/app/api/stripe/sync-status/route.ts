@@ -24,10 +24,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Check if force sending email is requested
+    const body = await request.json().catch(() => ({}));
+    const forceSendEmail = body.forceSendEmail === true;
+
     // Get user's profile with Stripe IDs
     const { data: profile } = await supabase
       .from("profiles")
-      .select("stripe_customer_id, stripe_subscription_id, subscription_status, full_name")
+      .select("stripe_customer_id, stripe_subscription_id, subscription_status, full_name, pro_welcome_email_sent")
       .eq("id", user.id)
       .single();
 
@@ -88,10 +92,10 @@ export async function POST(request: NextRequest) {
       ? new Date(trialEndTimestamp * 1000).toISOString() 
       : null;
 
-    // Check if this is a new upgrade (was free/null, now active/trialing)
-    const isNewUpgrade = 
-      (!previousStatus || previousStatus === "free" || previousStatus === "canceled") &&
-      (newStatus === "active" || newStatus === "trialing");
+    // Check if this is a Pro user who hasn't received the welcome email yet
+    const isPro = newStatus === "active" || newStatus === "trialing";
+    const hasReceivedWelcomeEmail = profile.pro_welcome_email_sent === true;
+    const shouldSendEmail = isPro && (!hasReceivedWelcomeEmail || forceSendEmail);
 
     // Update profile if status changed
     if (profile.subscription_status !== newStatus || 
@@ -107,8 +111,8 @@ export async function POST(request: NextRequest) {
         .eq("id", user.id);
     }
 
-    // Send upgrade confirmation email for new upgrades
-    if (isNewUpgrade && user.email) {
+    // Send upgrade confirmation email
+    if (shouldSendEmail && user.email) {
       const userName = profile.full_name || "there";
       const isTrialing = newStatus === "trialing";
       const trialEndDate = trialEnd 
@@ -120,7 +124,7 @@ export async function POST(request: NextRequest) {
         : undefined;
 
       try {
-        await resend.emails.send({
+        const { error: emailError } = await resend.emails.send({
           from: FROM_EMAIL,
           to: user.email,
           subject: isTrialing 
@@ -133,6 +137,16 @@ export async function POST(request: NextRequest) {
           }),
           replyTo: REPLY_TO,
         });
+
+        if (!emailError) {
+          // Mark email as sent so we don't send it again
+          await supabase
+            .from("profiles")
+            .update({ pro_welcome_email_sent: true })
+            .eq("id", user.id);
+        } else {
+          console.error("Failed to send Pro upgrade email:", emailError);
+        }
       } catch (emailError) {
         console.error("Failed to send Pro upgrade email:", emailError);
         // Don't fail the whole request if email fails
@@ -144,7 +158,8 @@ export async function POST(request: NextRequest) {
       status: newStatus,
       periodEnd: currentPeriodEnd,
       trialEnd,
-      isNewUpgrade,
+      emailSent: shouldSendEmail,
+      isPro,
     });
   } catch (error) {
     console.error("Error syncing subscription status:", error);

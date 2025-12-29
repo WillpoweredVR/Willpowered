@@ -54,6 +54,8 @@ export interface Database {
           // Conversation tracking
           monthly_conversations: number
           conversation_reset_date: string | null
+          // Email tracking
+          pro_welcome_email_sent: boolean
         }
         Insert: {
           id: string
@@ -82,6 +84,7 @@ export interface Database {
           subscription_trial_end?: string | null
           monthly_conversations?: number
           conversation_reset_date?: string | null
+          pro_welcome_email_sent?: boolean
         }
         Update: {
           id?: string
@@ -110,6 +113,7 @@ export interface Database {
           subscription_trial_end?: string | null
           monthly_conversations?: number
           conversation_reset_date?: string | null
+          pro_welcome_email_sent?: boolean
         }
       }
       goals: {
