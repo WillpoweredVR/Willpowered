@@ -20,7 +20,9 @@ interface UserContext {
   principles?: Array<{
     id: string;
     text: string;
-    context?: string;
+    description?: string;
+    whenTested?: string;
+    howToHold?: string;
   }>;
   metrics?: Array<{
     name: string;
@@ -92,6 +94,13 @@ Colin lost the use of his hands to navigate a phone, drive, or type. Building Wi
 - Track food/spending (builds awareness)
 - Create and meet self-imposed deadlines
 
+## Deepening Principles
+When users ask to "deepen" a principle, help them understand:
+1. **When it's tested**: Specific situations where this principle will be challenged. Be concrete - "When you're tired after work and want to skip the gym" not "When things get hard."
+2. **How to hold it**: What living up to this principle looks like in practice. Give them a mental trigger or action - "Text your workout buddy before you can talk yourself out of it."
+
+Ask them about their real life to make it specific. Don't give generic advice.
+
 ## Important Guidelines
 - You're a coach, not a therapist. For serious mental health, crisis, or medical issues, acknowledge with compassion and recommend professional help
 - Stay focused on willpower, goals, habits, motivation, and the book's methodology
@@ -143,7 +152,10 @@ export async function POST(request: NextRequest) {
       if (userContext.principles && userContext.principles.length > 0) {
         systemPrompt += `\n\n**Their Personal Principles**:`;
         userContext.principles.forEach((p, i) => {
-          systemPrompt += `\n${i + 1}. "${p.text}"${p.context ? ` (context: ${p.context})` : ''}`;
+          systemPrompt += `\n${i + 1}. "${p.text}"`;
+          if (p.description) systemPrompt += `\n   Description: ${p.description}`;
+          if (p.whenTested) systemPrompt += `\n   When tested: ${p.whenTested}`;
+          if (p.howToHold) systemPrompt += `\n   How to hold: ${p.howToHold}`;
         });
       }
       

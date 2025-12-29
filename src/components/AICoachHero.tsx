@@ -10,7 +10,7 @@ import { trackChatStarted, trackCTAClicked } from "@/lib/posthog";
 
 const suggestedPrompts = [
   "I know what to do, I just can't make myself do it",
-  "How did Kobe Bryant develop his discipline?",
+  "What did Arnold Schwarzenegger do differently?",
   "I start strong but always fade",
   "What's the real secret to habits that stick?",
 ];

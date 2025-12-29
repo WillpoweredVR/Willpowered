@@ -521,6 +521,8 @@ export interface Principle {
   id: string
   text: string // The principle itself
   description?: string // Optional elaboration
+  whenTested?: string // Situations where this principle will be challenged
+  howToHold?: string // What living up to it looks like in practice
   createdAt: string
 }
 

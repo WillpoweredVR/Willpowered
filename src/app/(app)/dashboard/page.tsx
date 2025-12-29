@@ -15,6 +15,7 @@ import {
   Pencil,
   Trash2,
   ChevronRight,
+  ChevronDown,
   MessageCircle,
   Shield,
   BarChart3,
@@ -23,6 +24,8 @@ import {
   Check,
   X,
   Calendar,
+  Zap,
+  Crosshair,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
@@ -75,6 +78,7 @@ export default function DashboardPage() {
   const [newPrincipleInput, setNewPrincipleInput] = useState("");
   const [isAddingPrinciple, setIsAddingPrinciple] = useState(false);
   const [editingPrinciple, setEditingPrinciple] = useState<string | null>(null);
+  const [expandedPrinciple, setExpandedPrinciple] = useState<string | null>(null);
   const [coachContext, setCoachContext] = useState<{ message: string; title: string } | null>(null);
   
   // Metric editing state
@@ -501,6 +505,22 @@ export default function DashboardPage() {
       .eq("id", user.id);
   };
 
+  const updatePrincipleContext = async (id: string, context: { whenTested?: string; howToHold?: string }) => {
+    const supabase = createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return;
+
+    const updatedPrinciples = principles.map(p =>
+      p.id === id ? { ...p, ...context } : p
+    );
+    setPrinciples(updatedPrinciples);
+
+    await supabase
+      .from("profiles")
+      .update({ principles: updatedPrinciples })
+      .eq("id", user.id);
+  };
+
   const handleSignOut = async () => {
     const supabase = createClient();
     await supabase.auth.signOut();
@@ -802,69 +822,172 @@ export default function DashboardPage() {
 
           {principles.length > 0 ? (
             <div className="space-y-3">
-              {principles.map((principle, index) => (
-                <div
-                  key={principle.id}
-                  className="p-4 bg-gradient-to-r from-slate-50 to-indigo-50/30 rounded-xl border border-slate-100 group hover:border-indigo-200 transition-colors"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="w-7 h-7 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
-                      {index + 1}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      {editingPrinciple === principle.id ? (
-                        <input
-                          type="text"
-                          defaultValue={principle.text}
-                          onBlur={(e) => updatePrinciple(principle.id, e.target.value)}
-                          onKeyDown={(e) => {
-                            if (e.key === "Enter") updatePrinciple(principle.id, e.currentTarget.value);
-                            if (e.key === "Escape") setEditingPrinciple(null);
-                          }}
-                          className="w-full bg-white border border-indigo-200 rounded-lg px-3 py-1.5 outline-none focus:border-indigo-400 font-medium"
-                          autoFocus
-                        />
-                      ) : (
-                        <>
-                          <p className="font-medium text-foreground">{principle.text}</p>
-                          {principle.description && (
-                            <p className="text-sm text-muted-foreground mt-1">{principle.description}</p>
+              {principles.map((principle, index) => {
+                const isExpanded = expandedPrinciple === principle.id;
+                const hasContext = principle.whenTested || principle.howToHold;
+                
+                return (
+                  <div
+                    key={principle.id}
+                    className={`rounded-xl border transition-all ${
+                      isExpanded 
+                        ? "bg-white border-indigo-200 shadow-sm" 
+                        : "bg-gradient-to-r from-slate-50 to-indigo-50/30 border-slate-100 hover:border-indigo-200"
+                    }`}
+                  >
+                    {/* Main principle row */}
+                    <div className="p-4 group">
+                      <div className="flex items-start gap-3">
+                        <div className="w-7 h-7 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                          {index + 1}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          {editingPrinciple === principle.id ? (
+                            <input
+                              type="text"
+                              defaultValue={principle.text}
+                              onBlur={(e) => updatePrinciple(principle.id, e.target.value)}
+                              onKeyDown={(e) => {
+                                if (e.key === "Enter") updatePrinciple(principle.id, e.currentTarget.value);
+                                if (e.key === "Escape") setEditingPrinciple(null);
+                              }}
+                              className="w-full bg-white border border-indigo-200 rounded-lg px-3 py-1.5 outline-none focus:border-indigo-400 font-medium"
+                              autoFocus
+                            />
+                          ) : (
+                            <>
+                              <p className="font-medium text-foreground">{principle.text}</p>
+                              {principle.description && (
+                                <p className="text-sm text-muted-foreground mt-1">{principle.description}</p>
+                              )}
+                            </>
                           )}
-                        </>
-                      )}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          {/* Expand/collapse button */}
+                          <button
+                            onClick={() => setExpandedPrinciple(isExpanded ? null : principle.id)}
+                            className={`p-1.5 rounded-lg transition-colors ${
+                              isExpanded 
+                                ? "text-indigo-600 bg-indigo-50" 
+                                : "text-slate-400 hover:text-indigo-600 hover:bg-slate-100"
+                            }`}
+                          >
+                            <ChevronDown className={`w-4 h-4 transition-transform ${isExpanded ? "rotate-180" : ""}`} />
+                          </button>
+                          <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button
+                              onClick={() => setEditingPrinciple(principle.id)}
+                              className="p-1.5 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-white"
+                            >
+                              <Pencil className="w-3.5 h-3.5" />
+                            </button>
+                            <button
+                              onClick={() => removePrinciple(principle.id)}
+                              className="p-1.5 text-slate-400 hover:text-red-500 rounded-lg hover:bg-white"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <button
-                        onClick={() => setEditingPrinciple(principle.id)}
-                        className="p-1.5 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-white"
-                      >
-                        <Pencil className="w-3.5 h-3.5" />
-                      </button>
-                      <button
-                        onClick={() => removePrinciple(principle.id)}
-                        className="p-1.5 text-slate-400 hover:text-red-500 rounded-lg hover:bg-white"
-                      >
-                        <Trash2 className="w-3.5 h-3.5" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
 
-              {/* Refine with Willson button when there are already principles */}
-              <button
-                onClick={() => {
-                  setCoachContext({
-                    message: "Help me refine my principles. I want to make sure each one is actionable and connected to my purpose. Here are my current principles and I'd like to add context to them or refine them.",
-                    title: "Refine Principles"
-                  });
-                  setIsChatOpen(true);
-                }}
-                className="w-full py-2 text-sm text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors flex items-center justify-center gap-2"
-              >
-                <Sparkles className="w-4 h-4" />
-                Refine with Willson
-              </button>
+                    {/* Expanded context section */}
+                    <AnimatePresence>
+                      {isExpanded && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-4 pb-4 pt-2 border-t border-slate-100">
+                            {hasContext ? (
+                              <div className="space-y-3">
+                                {principle.whenTested && (
+                                  <div className="flex gap-3">
+                                    <div className="w-6 h-6 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                      <Zap className="w-3.5 h-3.5 text-amber-600" />
+                                    </div>
+                                    <div>
+                                      <p className="text-xs font-medium text-amber-700 uppercase tracking-wide mb-1">When it&apos;s tested</p>
+                                      <p className="text-sm text-muted-foreground">{principle.whenTested}</p>
+                                    </div>
+                                  </div>
+                                )}
+                                {principle.howToHold && (
+                                  <div className="flex gap-3">
+                                    <div className="w-6 h-6 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                      <Crosshair className="w-3.5 h-3.5 text-emerald-600" />
+                                    </div>
+                                    <div>
+                                      <p className="text-xs font-medium text-emerald-700 uppercase tracking-wide mb-1">How to hold it</p>
+                                      <p className="text-sm text-muted-foreground">{principle.howToHold}</p>
+                                    </div>
+                                  </div>
+                                )}
+                                <button
+                                  onClick={() => {
+                                    setCoachContext({
+                                      message: `I want to go deeper on my principle: "${principle.text}". Help me think through situations where this might be tested and how I can hold myself accountable to it.`,
+                                      title: `Deepen: ${principle.text.slice(0, 30)}...`
+                                    });
+                                    setIsChatOpen(true);
+                                  }}
+                                  className="text-xs text-indigo-600 hover:text-indigo-700 font-medium flex items-center gap-1 mt-2"
+                                >
+                                  <Sparkles className="w-3 h-3" />
+                                  Refine further with Willson
+                                </button>
+                              </div>
+                            ) : (
+                              <div className="text-center py-4 bg-slate-50 rounded-lg">
+                                <p className="text-sm text-muted-foreground mb-3">
+                                  Make this principle actionable. Willson will help you understand when it&apos;ll be tested and how to hold yourself accountable.
+                                </p>
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  onClick={() => {
+                                    setCoachContext({
+                                      message: `I want to deepen my understanding of my principle: "${principle.text}". Help me think through:\n\n1. What situations will test this principle? When will I be tempted to break it?\n2. What does living up to this principle look like in practice? How will I know I'm holding it?\n\nMake it specific to my life.`,
+                                      title: `Deepen: ${principle.text.slice(0, 30)}...`
+                                    });
+                                    setIsChatOpen(true);
+                                  }}
+                                  className="border-indigo-200 text-indigo-600 hover:bg-indigo-50"
+                                >
+                                  <Sparkles className="w-4 h-4 mr-2" />
+                                  Deepen with Willson
+                                </Button>
+                              </div>
+                            )}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              })}
+
+              {/* Overall refine button when principles exist but some lack context */}
+              {principles.some(p => !p.whenTested && !p.howToHold) && (
+                <button
+                  onClick={() => {
+                    setCoachContext({
+                      message: "Help me deepen all my principles. For each one, I want to understand when it will be tested and how I can hold myself accountable to it. Let's go through them one by one.",
+                      title: "Deepen All Principles"
+                    });
+                    setIsChatOpen(true);
+                  }}
+                  className="w-full py-2 text-sm text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors flex items-center justify-center gap-2"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  Deepen all principles with Willson
+                </button>
+              )}
             </div>
           ) : (
             <div className="text-center py-6 bg-gradient-to-r from-slate-50 to-indigo-50/30 rounded-xl border border-dashed border-slate-200">
@@ -1288,7 +1411,9 @@ export default function DashboardPage() {
           principles: principles.length > 0 ? principles.map(p => ({
             id: p.id,
             text: p.text,
-            context: p.description || undefined,
+            description: p.description || undefined,
+            whenTested: p.whenTested || undefined,
+            howToHold: p.howToHold || undefined,
           })) : undefined,
           metrics: scorecard?.categories?.flatMap(cat => 
             cat.metrics.map(m => ({

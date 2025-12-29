@@ -24,7 +24,9 @@ export interface UserContext {
   principles?: Array<{
     id: string;
     text: string;
-    context?: string;
+    description?: string;
+    whenTested?: string;
+    howToHold?: string;
   }>;
   metrics?: Array<{
     name: string;
