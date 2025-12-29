@@ -241,8 +241,12 @@ export function AICoach({ isOpen = true, onClose, isFullPage = false }: AICoachP
                 <div className="w-8 h-8 rounded-lg gradient-ember flex items-center justify-center flex-shrink-0">
                   <Bot className="w-4 h-4 text-white" />
                 </div>
-                <div className="bg-muted rounded-2xl rounded-bl-md px-4 py-3">
-                  <Loader2 className="w-4 h-4 animate-spin text-muted-foreground" />
+                <div className="bg-muted rounded-2xl rounded-bl-md px-5 py-4">
+                  <div className="flex gap-1">
+                    <span className="w-2 h-2 bg-ember rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                    <span className="w-2 h-2 bg-ember rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                    <span className="w-2 h-2 bg-ember rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                  </div>
                 </div>
               </motion.div>
             )}
