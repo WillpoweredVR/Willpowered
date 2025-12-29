@@ -9,10 +9,10 @@ import { useHeroVariant } from "@/hooks/useFeatureFlag";
 import { trackChatStarted, trackCTAClicked } from "@/lib/posthog";
 
 const suggestedPrompts = [
-  "How do I build better habits?",
-  "I keep giving up on my goals...",
-  "What can I learn from Christy Brown?",
-  "Help me find my purpose",
+  "I know what to do, I just can't make myself do it",
+  "How did Kobe Bryant develop his discipline?",
+  "I start strong but always fade",
+  "What's the real secret to habits that stick?",
 ];
 
 // A/B Test Variants for Headlines

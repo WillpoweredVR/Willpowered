@@ -23,12 +23,12 @@ interface Message {
 }
 
 const suggestedPrompts = [
-  "How do I build better habits?",
-  "I keep giving up on my goals...",
-  "What can I learn from Christy Brown?",
-  "Help me find my purpose",
-  "How do I handle setbacks?",
-  "Tell me about the 7 steps to willpower",
+  "I know what to do, I just can't make myself do it",
+  "How did Kobe Bryant develop his discipline?",
+  "I start strong but always fade",
+  "What's the real secret to habits that stick?",
+  "Why does my willpower disappear when I need it most?",
+  "What did Arnold Schwarzenegger do differently?",
 ];
 
 interface AICoachProps {
