@@ -90,7 +90,7 @@ Reference their specific purpose in your transition. Keep it to 3-4 sentences to
 Their purpose is: "${ctx.purpose}"
 
 Acknowledge their goal with enthusiasm (be specific about what they chose).
-Then ask the crucial "why" question: "Why does this goal matter to you? Not the surface reason—the real one. The one that will get you out of bed on the hard days."
+Then ask the crucial "why" question: "Why does this goal matter to you? Not the surface reason, the real one. The one that will get you out of bed on the hard days."
 
 Keep it to 2-3 sentences.`,
 

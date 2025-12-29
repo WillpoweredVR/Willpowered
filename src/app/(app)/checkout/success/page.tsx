@@ -110,7 +110,7 @@ function CheckoutSuccessContent() {
         </Button>
 
         <p className="text-sm text-muted-foreground mt-6">
-          Questions? Chat with Willson anytime—he's got your back.
+          Questions? Chat with Willson anytime. He's got your back.
         </p>
       </motion.div>
     </div>

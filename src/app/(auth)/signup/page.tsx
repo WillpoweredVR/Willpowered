@@ -228,7 +228,7 @@ function SignupContent() {
                 </h1>
                 <p className="text-xl text-slate-300 mb-8">
                   Your conversation has been saved. Create your free account and Willson will 
-                  pick up right where you left off—with a personalized plan based on what you shared.
+                  pick up right where you left off with a personalized plan based on what you shared.
                 </p>
               </>
             ) : (
@@ -348,7 +348,7 @@ function SignupContent() {
           </Button>
 
           <p className="text-xs text-center text-muted-foreground mb-4">
-            Recommended — instant access, no verification needed
+            Recommended: instant access, no verification needed
           </p>
 
           <div className="relative mb-6">

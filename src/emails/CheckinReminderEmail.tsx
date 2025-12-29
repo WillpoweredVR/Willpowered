@@ -76,7 +76,7 @@ export const CheckinReminderEmail = ({
               "We are what we repeatedly do. Excellence, then, is not an act, 
               but a habit."
               <br />
-              <span style={quoteAuthor}>— Aristotle</span>
+              <span style={quoteAuthor}>- Aristotle</span>
             </Text>
 
             <Text style={smallText}>

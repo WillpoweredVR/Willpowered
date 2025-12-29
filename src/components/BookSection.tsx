@@ -177,7 +177,7 @@ export function BookSection() {
               </p>
               
               <p className="text-sm text-cream/60">
-                — {testimonial.author}
+                - {testimonial.author}
               </p>
             </motion.div>
           ))}

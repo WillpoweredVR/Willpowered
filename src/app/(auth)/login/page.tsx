@@ -133,13 +133,13 @@ function LoginContent() {
             </h1>
             <p className="text-xl text-slate-300 mb-8">
               Your journey continues. Every great achievement started with a
-              single step — and you&apos;ve already taken more than most ever will.
+              single step, and you&apos;ve already taken more than most ever will.
             </p>
             <div className="p-6 bg-white/10 backdrop-blur rounded-xl border border-white/20">
               <p className="italic text-lg mb-4">
                 &ldquo;I can&apos;t relate to lazy people. We don&apos;t speak the same language.&rdquo;
               </p>
-              <p className="text-ember-light font-medium">— Kobe Bryant</p>
+              <p className="text-ember-light font-medium">- Kobe Bryant</p>
             </div>
           </motion.div>
         </div>

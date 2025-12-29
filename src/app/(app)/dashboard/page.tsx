@@ -797,7 +797,7 @@ export default function DashboardPage() {
           </div>
 
           <p className="text-muted-foreground text-sm mb-4">
-            These are the rules you live by—the standards that guide your decisions when no one&apos;s watching. They turn your purpose into daily behavior.
+            These are the rules you live by: the standards that guide your decisions when no one&apos;s watching. They turn your purpose into daily behavior.
           </p>
 
           {principles.length > 0 ? (
@@ -876,7 +876,7 @@ export default function DashboardPage() {
                 variant="outline"
                 onClick={() => {
                   setCoachContext({
-                    message: "Help me discover my personal principles. Based on my purpose, what rules should guide my decisions? I want principles that are specific and actionable—not generic values, but standards I can actually live by.",
+                    message: "Help me discover my personal principles. Based on my purpose, what rules should guide my decisions? I want principles that are specific and actionable, not generic values, but standards I can actually live by.",
                     title: "Discover Principles"
                   });
                   setIsChatOpen(true);
@@ -954,7 +954,7 @@ export default function DashboardPage() {
                 Your Scorecard is Empty
               </h4>
               <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                Your scorecard tracks the metrics that matter most to you. Work with Willson to discover which activities—if done consistently—would make the biggest difference in your life.
+                Your scorecard tracks the metrics that matter most to you. Work with Willson to discover which activities, if done consistently, would make the biggest difference in your life.
               </p>
               <Button
                 onClick={() => {
@@ -1122,7 +1122,7 @@ export default function DashboardPage() {
                               daysWithData === 0 ? "text-slate-300" :
                               isOnTrack ? "text-emerald-600" : "text-red-600"
                             }`}>
-                              {daysWithData > 0 ? aggregatedValue : "—"}
+                              {daysWithData > 0 ? aggregatedValue : "-"}
                               {daysWithData > 0 && (
                                 <span className="text-xs font-normal text-muted-foreground ml-1">
                                   {displayLabel}

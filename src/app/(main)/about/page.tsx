@@ -57,7 +57,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
               I spent years researching the science of willpower and pushing myself to the breaking point. 
-              Now I&apos;m using AI to help others achieve greatness—without paying the price I did.
+              Now I&apos;m using AI to help others achieve greatness (without paying the price I did).
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
                     even when you don&apos;t feel like it.
                   </p>
                   <p>
-                    After four years of learning and applying these principles, I launched Willpowered—a blog dedicated to sharing 
+                    After four years of learning and applying these principles, I launched Willpowered: a blog dedicated to sharing 
                     the science of perseverance. I wanted to help others unlock the greatness within their minds.
                   </p>
                 </div>
@@ -138,8 +138,8 @@ export default function AboutPage() {
                     eliminated all distractions, and wrote 140,000 words in three months.
                   </p>
                   <p>
-                    The book shares the stories of 12 extraordinary individuals—from Arnold Schwarzenegger to 
-                    Temple Grandin—and the science behind how they willed themselves to greatness.
+                    The book shares the stories of 12 extraordinary individuals, from Arnold Schwarzenegger to 
+                    Temple Grandin, and the science behind how they willed themselves to greatness.
                   </p>
                 </div>
                 <Link href="/books">
@@ -162,7 +162,7 @@ export default function AboutPage() {
                 The Dark Side of Willpower
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Success came at a terrible cost—one I didn&apos;t see coming until it was too late.
+                Success came at a terrible cost, one I didn&apos;t see coming until it was too late.
               </p>
             </div>
 
@@ -177,7 +177,7 @@ export default function AboutPage() {
             <div className="prose prose-lg text-muted-foreground max-w-none space-y-6">
               <p>
                 I applied the science of willpower to push through fatigue, pain, and every signal my body 
-                sent me to slow down. I told myself that the discomfort was just my brain being conservative—that 
+                sent me to slow down. I told myself that the discomfort was just my brain being conservative, that 
                 I could push through like the heroes I studied.
               </p>
               <p>
@@ -185,7 +185,7 @@ export default function AboutPage() {
               </p>
               <p>
                 The damage accumulated over years of 14-hour days at the keyboard. Writing, editing, promoting, 
-                building online courses—all while ignoring the pain creeping through my wrists and hands.
+                building online courses. All while ignoring the pain creeping through my wrists and hands.
               </p>
               <p>
                 When I finally sought medical help, the specialists delivered devastating news: 
@@ -251,7 +251,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     What if you could learn from all the heroes I studied, apply the proven science of willpower, 
-                    and get personalized guidance—without the trial and error that cost me my hands?
+                    and get personalized guidance without the trial and error that cost me my hands?
                   </p>
                   <p>
                     That&apos;s why I&apos;m building the Willpowered AI Coach. It contains everything I&apos;ve learned 
@@ -265,7 +265,7 @@ export default function AboutPage() {
                 <h3 className="font-serif text-2xl font-semibold mb-4">The Mission Continues</h3>
                 <p className="text-muted-foreground mb-6">
                   My purpose hasn&apos;t changed. I still want to help individuals unlock the greatness within 
-                  their minds. But now, I can do it in a way that&apos;s accessible to everyone—without requiring 
+                  their minds. But now, I can do it in a way that&apos;s accessible to everyone, without requiring 
                   them to sacrifice their health or spend years learning through painful trial and error.
                 </p>
                 <Button 
@@ -312,7 +312,7 @@ export default function AboutPage() {
               },
               {
                 title: "Technology amplifies humanity",
-                description: "AI and voice technology don't replace human potential—they remove barriers to achieving it.",
+                description: "AI and voice technology don't replace human potential. They remove barriers to achieving it.",
                 icon: Cpu
               },
               {
@@ -354,7 +354,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               Whether you&apos;re looking to build better habits, find your purpose, or push through a challenge, 
-              the AI Coach is here to guide you—drawing from the same research and stories that changed my life.
+              the AI Coach is here to guide you, drawing from the same research and stories that changed my life.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button 

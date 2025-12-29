@@ -13,7 +13,7 @@ const steps = [
     label: "Your Why",
     color: "amber",
     description: "Willson asks the questions you've been avoiding. In one conversation, you'll have more clarity than years of vague goal-setting.",
-    example: "\"I want to be the kind of person my kids look up to—present, healthy, and building something meaningful.\"",
+    example: "\"I want to be the kind of person my kids look up to: present, healthy, and building something meaningful.\"",
     time: "5 min",
   },
   {
@@ -23,7 +23,7 @@ const steps = [
     label: "Your How",
     color: "indigo",
     description: "Your personal rulebook. When you know your principles, hard decisions become obvious ones. No more analysis paralysis.",
-    example: "\"Do the hard thing first\" — Stop letting the easy stuff eat your best hours.",
+    example: "\"Do the hard thing first.\" Stop letting the easy stuff eat your best hours.",
     time: "10 min",
   },
   {

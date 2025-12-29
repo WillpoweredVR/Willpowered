@@ -46,7 +46,7 @@ export const Day1ActivationEmail = ({
                 <Heading style={heading}>Great start, {userName}! 🎯</Heading>
                 
                 <Text style={paragraph}>
-                  You've taken the first step—you've defined your purpose. That's huge.
+                  You've taken the first step. You've defined your purpose. That's huge.
                   Most people never get this far.
                 </Text>
 
@@ -61,7 +61,7 @@ export const Day1ActivationEmail = ({
                   <Text style={tipText}>
                     Great principles are specific and actionable. Instead of "Be healthy," 
                     try "Do the hard workout first thing in the morning." When you're tired, 
-                    you won't have to think—you'll just act.
+                    you won't have to think. You'll just act.
                   </Text>
                 </Section>
 
@@ -82,7 +82,7 @@ export const Day1ActivationEmail = ({
 
                 <Text style={paragraph}>
                   I noticed you signed up yesterday but haven't started your journey yet. 
-                  That's okay—starting is the hardest part.
+                  That's okay. Starting is the hardest part.
                 </Text>
 
                 <Text style={paragraph}>
@@ -115,7 +115,7 @@ export const Day1ActivationEmail = ({
             )}
 
             <Text style={signature}>
-              — Willson 🤖✨
+              - Willson 🤖✨
             </Text>
           </Section>
 

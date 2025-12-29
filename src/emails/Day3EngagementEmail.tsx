@@ -101,7 +101,7 @@ export const Day3EngagementEmail = ({
 
                 <Text style={paragraph}>
                   I'll be direct: you signed up 3 days ago, but you haven't used 
-                  your system yet. No judgment—life happens. But I want to share 
+                  your system yet. No judgment. Life happens. But I want to share 
                   something important.
                 </Text>
 
@@ -110,7 +110,7 @@ export const Day3EngagementEmail = ({
                     "People don't fail because they lack motivation. 
                     They fail because they rely on motivation instead of systems."
                   </Text>
-                  <Text style={insightAuthor}>— The Willpowered Philosophy</Text>
+                  <Text style={insightAuthor}>- The Willpowered Philosophy</Text>
                 </Section>
 
                 <Text style={paragraph}>
@@ -138,7 +138,7 @@ export const Day3EngagementEmail = ({
             )}
 
             <Text style={signature}>
-              — Willson 🤖✨
+              - Willson 🤖✨
             </Text>
           </Section>
 

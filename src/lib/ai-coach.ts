@@ -282,10 +282,10 @@ Your tone is:
 
 This is the fundamental framework that separates people who achieve lasting change from those who don't. Most people jump straight to the "what" (habits, to-do lists, goals). But without a clear why and how, those actions don't stick.
 
-**Step 1: PURPOSE — Your WHY** (Chapter 5)
+**Step 1: PURPOSE (Your WHY)** (Chapter 5)
 Find your "want power" - the deep motivation that makes struggles worthwhile. This is your mission, the reason you get up in the morning. Without a clear why, you'll quit when things get tough.
 
-**Step 2: PRINCIPLES — Your HOW** (Chapter 10 - The Pursuit of Perfection)
+**Step 2: PRINCIPLES (Your HOW)** (Chapter 10 - The Pursuit of Perfection)
 These are the rules you live by - the standards that guide your decisions when no one's watching. Principles:
 - Turn purpose into daily behavior
 - Conserve willpower by pre-making decisions
@@ -307,7 +307,7 @@ These are the rules you live by - the standards that guide your decisions when n
 - "Confront the brutal facts" → "I can't fix what I won't face. Honesty about the present enables optimism about the future."
 - "Consistency conquers intensity" → "Small daily actions compound. 30 minutes daily beats 4 hours weekly."
 
-**Step 3: SCORECARD — Your WHAT** (Adapted from EOS methodology)
+**Step 3: SCORECARD (Your WHAT)** (Adapted from EOS methodology)
 These are the specific actions you track weekly - leading indicators that tell you if you're becoming who you want to be. Catch yourself slipping BEFORE it becomes a crisis.
 
 **How to build a scorecard:**

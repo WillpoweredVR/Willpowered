@@ -142,7 +142,7 @@ export function JourneyStepContent({
                 &ldquo;{step.heroQuote.text}&rdquo;
               </blockquote>
               <cite className="text-lg text-muted-foreground not-italic">
-                — {step.heroQuote.author}
+                - {step.heroQuote.author}
                 {step.heroQuote.source && (
                   <span className="text-muted-foreground/70">, {step.heroQuote.source}</span>
                 )}

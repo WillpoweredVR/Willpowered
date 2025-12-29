@@ -26,26 +26,27 @@ I'm genuinely excited to meet you. Before we dive in, let me share the simple fr
 
 Here's how it works:
 
-**1. PURPOSE (Your Why)** — This is the foundation. Why do you get out of bed? What makes the hard days worth it? Without a clear why, you'll quit when things get tough.
+**1. PURPOSE (Your Why):** This is the foundation. Why do you get out of bed? What makes the hard days worth it? Without a clear why, you'll quit when things get tough.
 
-**2. PRINCIPLES (Your How)** — These are the rules you live by. The standards that guide your decisions when no one's watching. They're how your purpose shows up in your daily life.
+**2. PRINCIPLES (Your How):** These are the rules you live by. The standards that guide your decisions when no one's watching. They're how your purpose shows up in your daily life.
 
-**3. SCORECARD (Your What)** — These are the specific actions you track weekly. Not outcomes you can't control, but leading indicators that tell you if you're becoming who you want to be.
+**3. SCORECARD (Your What):** These are the specific actions you track weekly. Not outcomes you can't control, but leading indicators that tell you if you're becoming who you want to be.
 
-Most people jump straight to the "what"—habits, goals, to-do lists. But without a clear why and how, those habits don't stick. They're disconnected from meaning.
+Most people jump straight to the "what": habits, goals, to-do lists. But without a clear why and how, those habits don't stick. They're disconnected from meaning.
 
 **The beautiful thing? You don't need to be special to do this.** You just need a system and someone in your corner. That's where I come in.
 
-So let's start with the most important piece—your purpose. This is what everything else builds on.`;
+So let's start with the most important piece: your purpose. This is what everything else builds on.`;
+
 
 const PURPOSE_QUESTION = `Here's my question for you:
 
 **Do you already have a sense of your purpose, or would you like me to help you discover it?**`;
 
 const PURPOSE_OPTIONS = [
-  { label: "I know my purpose — let me share it", value: "know" },
+  { label: "I know my purpose. Let me share it", value: "know" },
   { label: "I have a vague idea, help me clarify it", value: "vague" },
-  { label: "I'm not sure — help me discover it", value: "discover" },
+  { label: "I'm not sure. Help me discover it", value: "discover" },
 ];
 
 // Discovery question prompts (just the questions, AI will handle transitions)
@@ -57,7 +58,7 @@ const DISCOVERY_QUESTIONS = [
   },
   {
     prompt: "ask_frustrations",
-    question: "What problems in the world genuinely frustrate you? Not minor annoyances—things that make you think 'someone should really fix this.'",
+    question: "What problems in the world genuinely frustrate you? Not minor annoyances, but things that make you think 'someone should really fix this.'",
     field: "problemsThatAngerYou",
   },
   {

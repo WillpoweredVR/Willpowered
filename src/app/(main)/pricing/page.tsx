@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "What happens when I hit the 20 conversation limit?",
-    a: "You can still use all other features—check-ins, scorecard tracking, and reviewing your journey. Your conversations reset at the start of each month, or you can upgrade to Pro for unlimited coaching."
+    a: "You can still use all other features: check-ins, scorecard tracking, and reviewing your journey. Your conversations reset at the start of each month, or you can upgrade to Pro for unlimited coaching."
   },
   {
     q: "Can I cancel Pro anytime?",
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "What's the difference between Willson's free and Pro responses?",
-    a: "Free users get the same quality coaching—Willson doesn't hold back. Pro users get faster response times and can have unlimited conversations to go deeper on any topic."
+    a: "Free users get the same quality coaching. Willson doesn't hold back. Pro users get faster response times and can have unlimited conversations to go deeper on any topic."
   }
 ];
 
@@ -116,7 +116,7 @@ export default function PricingPage() {
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
                 You&apos;ve read the books. Made the lists. Set the goals. Still stuck in the same place? 
-                That&apos;s not a you problem—it&apos;s a <span className="text-foreground font-medium">system</span> problem. 
+                That&apos;s not a you problem. It&apos;s a <span className="text-foreground font-medium">system</span> problem. 
                 Let&apos;s fix it.
               </p>
             </motion.div>
@@ -205,7 +205,7 @@ export default function PricingPage() {
                     {isCheckoutLoading ? (
                       <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                     ) : null}
-                    {isTrialing ? "Currently on Trial — Manage" : "Current Plan — Manage"}
+                    {isTrialing ? "Currently on Trial - Manage" : "Current Plan - Manage"}
                   </Button>
                 ) : (
                   <Button 
@@ -303,13 +303,13 @@ export default function PricingPage() {
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
                 The methodology behind Willson comes from Colin&apos;s journey of rebuilding his life 
-                after losing the use of his hands. It&apos;s battle-tested against real adversity—and 
+                after losing the use of his hands. It&apos;s battle-tested against real adversity, and 
                 now it&apos;s available to help you with yours.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="gradient-ember text-white">
                   <Link href="/signup">
-                    Start Your Journey — Free
+                    Start Your Journey Free
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
@@ -371,7 +371,7 @@ export default function PricingPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="gradient-ember text-white hover:opacity-90">
                   <Link href="/signup">
-                    Start Free — No Credit Card
+                    Start Free - No Credit Card
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>

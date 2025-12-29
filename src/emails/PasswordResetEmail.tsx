@@ -57,7 +57,7 @@ export const PasswordResetEmail = ({
 
             <Text style={smallText}>
               This link will expire in 1 hour. If you didn't request a password 
-              reset, you can safely ignore this email—your password won't change.
+              reset, you can safely ignore this email. Your password won't change.
             </Text>
 
             <Hr style={divider} />

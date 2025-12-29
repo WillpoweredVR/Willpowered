@@ -16,7 +16,7 @@ export default function OfflinePage() {
         </h1>
         
         <p className="text-muted-foreground mb-8">
-          It looks like you've lost your internet connection. Don't worry—your 
+          It looks like you've lost your internet connection. Don't worry, your 
           progress is saved, and we'll sync everything when you're back online.
         </p>
         

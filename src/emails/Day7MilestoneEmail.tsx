@@ -86,7 +86,7 @@ export const Day7MilestoneEmail = ({
 
                 <Text style={paragraph}>
                   <strong>What this means:</strong> You're not relying on motivation 
-                  anymore. You're building something more reliable—a habit. Research 
+                  anymore. You're building something more reliable: a habit. Research 
                   shows it takes 21 days to form, but the first 7 are the hardest.
                 </Text>
 
@@ -103,7 +103,7 @@ export const Day7MilestoneEmail = ({
                       progress over time.
                     </Text>
                     <Button style={proButton} href="https://willpowered.com/pricing">
-                      Explore Pro — 7 Days Free →
+                      Explore Pro - 7 Days Free →
                     </Button>
                   </Section>
                 )}
@@ -127,7 +127,7 @@ export const Day7MilestoneEmail = ({
 
                 <Text style={paragraph}>
                   It's been a week since you joined Willpowered. Let me be real with you: 
-                  you haven't built the habit yet. And that's okay—most people don't.
+                  you haven't built the habit yet. And that's okay. Most people don't.
                 </Text>
 
                 <Text style={paragraph}>
@@ -167,14 +167,14 @@ export const Day7MilestoneEmail = ({
                 </Section>
 
                 <Text style={footnote}>
-                  P.S. — No shame in starting over. Every expert was once a beginner 
+                  P.S. No shame in starting over. Every expert was once a beginner 
                   who didn't quit.
                 </Text>
               </>
             )}
 
             <Text style={signature}>
-              — Willson 🤖✨
+              - Willson 🤖✨
             </Text>
           </Section>
 

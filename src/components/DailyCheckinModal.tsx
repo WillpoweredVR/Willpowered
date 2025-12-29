@@ -517,7 +517,7 @@ export function DailyCheckinModal({
                         <Quote className="w-5 h-5 text-slate-400 flex-shrink-0 mt-1" />
                         <div>
                           <p className="text-sm italic mb-2">&ldquo;{summaryData.heroQuote.quote}&rdquo;</p>
-                          <p className="text-xs text-slate-400">— {summaryData.heroQuote.hero}</p>
+                          <p className="text-xs text-slate-400">- {summaryData.heroQuote.hero}</p>
                         </div>
                       </div>
                     </motion.div>

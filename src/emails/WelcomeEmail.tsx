@@ -49,7 +49,7 @@ export const WelcomeEmail = ({ userName = "there" }: WelcomeEmailProps) => {
             <Section style={stepsContainer}>
               <Text style={step}>
                 <strong style={stepNumber}>1. Your Purpose (Why)</strong><br />
-                Discover what truly drives you—the foundation everything else builds on.
+                Discover what truly drives you: the foundation everything else builds on.
               </Text>
               <Text style={step}>
                 <strong style={stepNumber}>2. Your Principles (How)</strong><br />
@@ -68,7 +68,7 @@ export const WelcomeEmail = ({ userName = "there" }: WelcomeEmailProps) => {
             </Section>
 
             <Text style={paragraph}>
-              The best part? This only takes about 20 minutes to set up—and it'll 
+              The best part? This only takes about 20 minutes to set up, and it'll 
               guide you for years.
             </Text>
 
