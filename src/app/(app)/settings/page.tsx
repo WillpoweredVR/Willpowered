@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   User, Mail, CreditCard, Bell, Trash2, Loader2, ChevronRight, LogOut, Shield, Download,
-  Clock, Sun, Moon, Calendar, BarChart3, CalendarDays, Check, Sparkles
+  Clock, Sun, Moon, Calendar, BarChart3, CalendarDays, Check, Sparkles, ArrowLeft, Camera
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
@@ -54,12 +56,15 @@ const dayOptions = [
 export default function SettingsPage() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
-  const [user, setUser] = useState<{ email: string; full_name: string | null } | null>(null);
+  const [user, setUser] = useState<{ id: string; email: string; full_name: string | null; avatar_url: string | null } | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [fullName, setFullName] = useState("");
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
+  const [isUploadingAvatar, setIsUploadingAvatar] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [preferences, setPreferences] = useState<EmailPreferences>(defaultPreferences);
   const [showSaved, setShowSaved] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const { status, isPro, isTrialing, periodEndsAt, openPortal, isLoading: subLoading } = useSubscription();
   const supabase = createClient();
 
@@ -74,15 +79,18 @@ export default function SettingsPage() {
 
       const { data: profile } = await supabase
         .from("profiles")
-        .select("full_name, email_preferences")
+        .select("full_name, email_preferences, avatar_url")
         .eq("id", authUser.id)
         .single();
 
       setUser({
+        id: authUser.id,
         email: authUser.email || "",
         full_name: profile?.full_name || null,
+        avatar_url: profile?.avatar_url || null,
       });
       setFullName(profile?.full_name || "");
+      setAvatarUrl(profile?.avatar_url || null);
       
       if (profile?.email_preferences) {
         setPreferences({
@@ -96,6 +104,70 @@ export default function SettingsPage() {
 
     fetchUser();
   }, [router, supabase]);
+
+  const handleAvatarUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !user) return;
+
+    // Validate file
+    if (!file.type.startsWith("image/")) {
+      alert("Please select an image file");
+      return;
+    }
+    if (file.size > 5 * 1024 * 1024) {
+      alert("Image must be less than 5MB");
+      return;
+    }
+
+    setIsUploadingAvatar(true);
+
+    try {
+      // Create unique file path
+      const fileExt = file.name.split(".").pop();
+      const filePath = `${user.id}/avatar.${fileExt}`;
+
+      // Upload to Supabase Storage
+      const { error: uploadError } = await supabase.storage
+        .from("avatars")
+        .upload(filePath, file, { upsert: true });
+
+      if (uploadError) {
+        console.error("Upload error:", uploadError);
+        alert("Failed to upload image. Please try again.");
+        return;
+      }
+
+      // Get public URL
+      const { data: { publicUrl } } = supabase.storage
+        .from("avatars")
+        .getPublicUrl(filePath);
+
+      // Add cache buster to force refresh
+      const urlWithCacheBuster = `${publicUrl}?t=${Date.now()}`;
+
+      // Update profile
+      const { error: updateError } = await supabase
+        .from("profiles")
+        .update({ avatar_url: urlWithCacheBuster })
+        .eq("id", user.id);
+
+      if (updateError) {
+        console.error("Profile update error:", updateError);
+        alert("Failed to save profile picture. Please try again.");
+        return;
+      }
+
+      setAvatarUrl(urlWithCacheBuster);
+      setUser({ ...user, avatar_url: urlWithCacheBuster });
+      setShowSaved(true);
+      setTimeout(() => setShowSaved(false), 2000);
+    } catch (error) {
+      console.error("Avatar upload error:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsUploadingAvatar(false);
+    }
+  };
 
   const handleSaveName = async () => {
     if (!user) return;
@@ -112,6 +184,8 @@ export default function SettingsPage() {
     
     setUser({ ...user, full_name: fullName });
     setIsSaving(false);
+    setShowSaved(true);
+    setTimeout(() => setShowSaved(false), 2000);
   };
 
   const handleSignOut = async () => {
@@ -156,6 +230,17 @@ export default function SettingsPage() {
     setTimeout(() => setShowSaved(false), 2000);
   };
 
+  // Get initials for avatar fallback
+  const getInitials = () => {
+    if (fullName) {
+      return fullName.split(" ").map(n => n[0]).join("").toUpperCase().slice(0, 2);
+    }
+    if (user?.email) {
+      return user.email[0].toUpperCase();
+    }
+    return "?";
+  };
+
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -167,6 +252,15 @@ export default function SettingsPage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-2xl px-6 py-12 lg:px-8">
+        {/* Back to Dashboard */}
+        <Link 
+          href="/dashboard" 
+          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to Dashboard
+        </Link>
+
         <h1 className="font-serif text-3xl font-bold text-foreground mb-8">Settings</h1>
 
         {/* Saved indicator */}
@@ -189,15 +283,56 @@ export default function SettingsPage() {
             Profile
           </h2>
           <div className="bg-white rounded-xl border border-slate-200 p-6">
-            <div className="mb-6">
-              <label className="block text-sm font-medium text-muted-foreground mb-2">
-                Email
-              </label>
-              <div className="flex items-center gap-2 text-foreground">
-                <Mail className="w-4 h-4 text-muted-foreground" />
-                {user?.email}
+            {/* Profile Picture */}
+            <div className="flex items-center gap-6 mb-6 pb-6 border-b border-slate-100">
+              <div className="relative">
+                {avatarUrl ? (
+                  <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-slate-200">
+                    <Image
+                      src={avatarUrl}
+                      alt="Profile picture"
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-ember to-amber-500 flex items-center justify-center text-white text-2xl font-bold border-2 border-slate-200">
+                    {getInitials()}
+                  </div>
+                )}
+                <button
+                  onClick={() => fileInputRef.current?.click()}
+                  disabled={isUploadingAvatar}
+                  className="absolute bottom-0 right-0 w-8 h-8 bg-white border-2 border-slate-200 rounded-full flex items-center justify-center hover:bg-slate-50 transition-colors shadow-sm"
+                >
+                  {isUploadingAvatar ? (
+                    <Loader2 className="w-4 h-4 animate-spin text-slate-500" />
+                  ) : (
+                    <Camera className="w-4 h-4 text-slate-500" />
+                  )}
+                </button>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleAvatarUpload}
+                  className="hidden"
+                />
+              </div>
+              <div>
+                <p className="font-medium text-foreground">{fullName || "Add your name"}</p>
+                <p className="text-sm text-muted-foreground">{user?.email}</p>
+                <button
+                  onClick={() => fileInputRef.current?.click()}
+                  className="text-sm text-ember hover:underline mt-1"
+                >
+                  {avatarUrl ? "Change photo" : "Upload photo"}
+                </button>
               </div>
             </div>
+
+            {/* Name input */}
             <div className="mb-4">
               <label className="block text-sm font-medium text-muted-foreground mb-2">
                 Full Name
