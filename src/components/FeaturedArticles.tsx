@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-// This will be replaced with Sanity data later
+// Featured articles with correct slugs matching content/articles/
 const featuredArticles = [
   {
     id: 1,
@@ -14,7 +14,7 @@ const featuredArticles = [
     category: "Overcoming Limits",
     date: "May 10, 2023",
     readTime: "8 min read",
-    slug: "christy-brown-life-lessons",
+    slug: "empowerment-through-adversity-christy-browns-life-lessons-for-navigating-disability",
     featured: true,
     image: "/images/christy-brown.jpg",
   },
@@ -25,29 +25,29 @@ const featuredArticles = [
     category: "Handling Setbacks",
     date: "Apr 8, 2022",
     readTime: "12 min read",
-    slug: "dark-side-of-entrepreneurship",
+    slug: "the-darkside-of-entrepreneurship",
     featured: false,
     image: "/images/dark-side.jpg",
   },
   {
     id: 3,
-    title: "I Left Social Media 2 Years Ago. Here's What Happened.",
+    title: "I Left Social Media 1 Year Ago. Here's What Happened.",
     excerpt: "I was shocked when I saw Cal Newport's talk 'Quit Social Media.' Cal is an author that I deeply respected. His book, Deep Work, was very influential...",
     category: "Establishing Habits",
     date: "Sep 4, 2019",
     readTime: "10 min read",
-    slug: "left-social-media",
+    slug: "i-left-social-media-1-year-ago-heres-what-happened",
     featured: false,
     image: "/images/social-media.jpg",
   },
   {
     id: 4,
-    title: "What I Learned From Over 1,000 Hours Of Meditation",
-    excerpt: "After more than 1,000 hours of practice, I've discovered insights that have fundamentally changed how I approach challenges and build willpower...",
+    title: "What I Learned By Meditating",
+    excerpt: "After years of practice, I've discovered insights that have fundamentally changed how I approach challenges and build willpower...",
     category: "Establishing Habits",
     date: "Jun 12, 2017",
     readTime: "9 min read",
-    slug: "1000-hours-meditation",
+    slug: "what-i-learned-by-meditating",
     featured: false,
     image: "/images/meditation.jpg",
   },
