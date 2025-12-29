@@ -81,6 +81,25 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
   const inputRef = useRef<HTMLInputElement>(null);
   const supabase = createClient();
   
+  // Expose testing helper on window for automation
+  useEffect(() => {
+    if (typeof window !== 'undefined' && isOpen) {
+      (window as unknown as { __willsonTest?: { setInput: (text: string) => void; send: () => void } }).__willsonTest = {
+        setInput: (text: string) => setInput(text),
+        send: () => {
+          if (input.trim()) {
+            handleSend();
+          }
+        }
+      };
+    }
+    return () => {
+      if (typeof window !== 'undefined') {
+        delete (window as unknown as { __willsonTest?: unknown }).__willsonTest;
+      }
+    };
+  }, [isOpen, input]);
+  
   // Skip gate for authenticated users
   const shouldGate = !isAuthenticated;
 
@@ -677,20 +696,31 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
                   handleSend();
                 }}
                 className="flex items-center gap-3 bg-white rounded-xl border p-2"
+                data-testid="chat-form"
               >
                   <input
                     ref={inputRef}
+                    id="chat-input"
                     type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
+                    onInput={(e) => {
+                      // Support for automation tools that dispatch input events
+                      const target = e.target as HTMLInputElement;
+                      if (target.value !== input) {
+                        setInput(target.value);
+                      }
+                    }}
                     placeholder="Ask about willpower, habits, purpose..."
                     className="flex-1 px-3 py-2 bg-transparent border-none outline-none"
                     disabled={isLoading || showSignupGate}
+                    data-testid="chat-input"
                   />
                   <Button
                     type="submit"
                     disabled={!input.trim() || isLoading || showSignupGate}
                     className="gradient-ember text-white rounded-lg"
+                    data-testid="chat-submit"
                   >
                     {isLoading ? (
                       <Loader2 className="w-4 h-4 animate-spin" />
