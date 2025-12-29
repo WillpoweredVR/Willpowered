@@ -68,12 +68,24 @@ The purpose statement should feel like it was written FOR them, using their actu
 Acknowledge what they shared with genuine appreciation. Reflect back what you heard.
 Ask if this feels complete or if they'd like to refine it. Keep it warm and brief (2-3 sentences).`,
 
-  confirm_adjusted_purpose: (ctx) => `The user adjusted their purpose to:
+  confirm_adjusted_purpose: (ctx) => {
+    if (ctx.refinementRequest) {
+      // They want to refine an existing purpose
+      return `The user wants to refine their purpose. Current purpose:
+"${ctx.newPurpose}"
+
+Their feedback: "${ctx.refinementRequest}"
+
+Help them refine it. Ask a specific clarifying question about what they'd like to change or what feels off. Be collaborative and curious. Keep it to 2-3 sentences.`;
+    }
+    // They provided a new/adjusted purpose
+    return `The user adjusted their purpose to:
 "${ctx.newPurpose}"
 
 Affirm this new version warmly in 1 sentence. Note what's powerful about it.
 Then ask ONE clear question: "Does this feel complete, or would you like to adjust anything?"
-Do NOT ask if they're ready - just ask if the purpose statement itself feels right. Keep it to 2 sentences max.`,
+Do NOT ask if they're ready - just ask if the purpose statement itself feels right. Keep it to 2 sentences max.`;
+  },
 
   transition_to_goal: (ctx) => `The user confirmed their purpose:
 "${ctx.purpose}"

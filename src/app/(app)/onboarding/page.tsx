@@ -252,10 +252,22 @@ export default function OnboardingPage() {
       setIsTyping(false);
       addMessage({ role: "coach", content: response });
     } else if (stage === "purpose-confirm") {
-      // Check if they're confirming or ready to move on
-      const isConfirming = /yes|good|right|perfect|love|great|exactly|resonates|works|complete|ready|let'?s|channel|move on|next|go|do it|sounds|that'?s it|nailed|spot on|absolutely|definitely|correct/i.test(userMessage);
+      // Check if they want to refine FIRST (before checking confirmation)
+      const wantsToRefine = /refine|adjust|change|tweak|modify|edit|update|different|not quite|close but|almost|rework|redo|try again|another/i.test(userMessage);
       
-      if (isConfirming) {
+      // Check if they're confirming or ready to move on
+      const isConfirming = !wantsToRefine && /yes|good|right|perfect|love|great|exactly|resonates|works|complete|ready|let'?s|channel|move on|next|go|do it|sounds|that'?s it|nailed|spot on|absolutely|definitely|correct/i.test(userMessage);
+      
+      if (wantsToRefine) {
+        // They want to refine - ask what they'd like to change
+        const response = await getAIResponse("confirm_adjusted_purpose", {
+          newPurpose: purpose,
+          refinementRequest: userMessage,
+        });
+        
+        setIsTyping(false);
+        addMessage({ role: "coach", content: response });
+      } else if (isConfirming) {
         const finalPurpose = purpose || userMessage;
         setPurpose(finalPurpose);
         
