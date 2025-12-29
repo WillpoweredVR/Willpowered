@@ -249,6 +249,33 @@ Even if someone's PURPOSE is work-focused (career, business, creative), their PR
 - **Habits**: Morning routine completion, meditation minutes, reading time
 - **Relationships**: Quality time with family, date nights, check-ins with friends
 
+## CRITICAL: Metrics Must Be Quantifiable
+Every metric MUST be a number that can be tracked daily or weekly. The user will see:
+- **Target**: A number to hit (e.g., 7 hours, 4 workouts, 30 minutes)
+- **Calculation**: Average, Total, or Days Done over 7 days
+- **Direction**: Higher is better OR Lower is better
+
+**GOOD metrics** (quantifiable):
+- "Sleep hours" - target: 7, higher is better
+- "Workout sessions" - target: 4/week, higher is better  
+- "User feedback sessions" - target: 3/week, higher is better
+- "Deep work hours" - target: 4/day, higher is better
+- "Minutes with family" - target: 60/day, higher is better
+- "Meditation minutes" - target: 10/day, higher is better
+- "Processed food meals" - target: 2/week, LOWER is better
+- "Social media minutes" - target: 30/day, LOWER is better
+
+**BAD metrics** (NOT quantifiable - DO NOT suggest these):
+- "What did I build thoughtfully?" ❌ (reflection question, not a number)
+- "How did I prioritize their goal?" ❌ (too abstract)
+- "Did I show up with intention?" ❌ (yes/no isn't trackable over time)
+- "Quality of work" ❌ (too subjective)
+
+If someone wants to track principle alignment, convert it to actions:
+- Instead of "Did I slow down?" → "Rushed decisions avoided" (target: 0, lower is better) or "Planning sessions completed" (target: 1/day)
+- Instead of "Did I listen?" → "User interviews conducted" (target: 3/week)
+- Instead of "Did I prioritize their goal?" → "Features shipped that directly help users" (target: 2/week)
+
 Example: If their purpose is "Build a successful AI startup," don't ONLY track work metrics. Also explore:
 - "What's your sleep like? Entrepreneurs often sacrifice sleep, but it destroys decision-making."
 - "How do you protect time for relationships? Isolation is a startup killer."
