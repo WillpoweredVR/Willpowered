@@ -1498,7 +1498,12 @@ export default function DashboardPage() {
         }}
         initialMessage={coachContext?.message}
         isAuthenticated={true}
+        onDataSaved={() => {
+          // Refresh data when Willson saves something
+          fetchData();
+        }}
         userContext={{
+          userId: profile?.id,
           userName: profile?.full_name || undefined,
           goal: goal ? {
             title: goal.title,

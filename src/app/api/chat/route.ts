@@ -11,6 +11,7 @@ interface Message {
 }
 
 interface UserContext {
+  userId?: string;
   userName?: string;
   goal?: {
     title: string;
@@ -31,6 +32,82 @@ interface UserContext {
     weekAverage?: number;
   }>;
 }
+
+// Tools Willson can use
+const WILLSON_TOOLS: Anthropic.Tool[] = [
+  {
+    name: "save_principles",
+    description: "Save the user's principles to their dashboard. Use this when the user confirms they want to save their principles. Each principle should have text (the principle itself), and optionally description, whenTested (situations where it's challenged), and howToHold (how to live up to it).",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        principles: {
+          type: "array",
+          items: {
+            type: "object",
+            properties: {
+              text: {
+                type: "string",
+                description: "The principle statement itself (e.g., 'Hook them to their goal, not to my app')"
+              },
+              description: {
+                type: "string",
+                description: "A brief explanation of what this principle means"
+              },
+              whenTested: {
+                type: "string",
+                description: "Specific situations when this principle gets challenged"
+              },
+              howToHold: {
+                type: "string",
+                description: "How to live up to this principle in practice"
+              }
+            },
+            required: ["text"]
+          },
+          description: "Array of principles to save"
+        }
+      },
+      required: ["principles"]
+    }
+  },
+  {
+    name: "save_purpose",
+    description: "Save the user's purpose statement to their profile. Use when they've confirmed their purpose.",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        purpose: {
+          type: "string",
+          description: "The user's purpose statement"
+        }
+      },
+      required: ["purpose"]
+    }
+  },
+  {
+    name: "save_goal",
+    description: "Save or update the user's goal. Use when they've defined a clear goal.",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        title: {
+          type: "string",
+          description: "The goal title/name"
+        },
+        description: {
+          type: "string",
+          description: "More details about the goal"
+        },
+        why_statement: {
+          type: "string",
+          description: "Why this goal matters to them"
+        }
+      },
+      required: ["title"]
+    }
+  }
+];
 
 // Willson's personality and knowledge base
 const WILLSON_SYSTEM_PROMPT = `You are Willson, the AI coach for Willpowered. Your name is a playful nod to Wilson from Castaway - you're a supportive companion on the user's journey.
@@ -101,11 +178,19 @@ When users ask to "deepen" a principle, help them understand:
 
 Ask them about their real life to make it specific. Don't give generic advice.
 
+## SAVING DATA - CRITICAL
+You have tools to save principles, purpose, and goals to the user's dashboard. 
+- **ALWAYS use the save_principles tool** when the user confirms they want to save their principles
+- **ALWAYS use the save_purpose tool** when they confirm their purpose statement
+- **ALWAYS use the save_goal tool** when they confirm their goal
+- After calling a save tool, confirm to the user that you've saved it
+- Don't just SAY you saved it - actually USE THE TOOL
+
 ## Knowing When to Wrap Up
-- **Principles**: 3-5 principles is plenty. When they've defined 3+ solid principles, offer to save them rather than asking more questions. Say something like "These three principles are strong. Ready to save them to your dashboard, or would you like to refine any of them?"
-- **Goals/Purpose**: Once they've articulated a clear statement, confirm it and offer to move forward rather than endlessly refining.
-- **General**: If you've had a productive exchange (4-6 back-and-forths), look for a natural conclusion. Summarize what you've discussed and ask if they'd like to wrap up or continue.
-- **Don't over-question**: If they seem satisfied with their answer, don't probe further. Celebrate the progress and offer next steps.
+- **Principles**: 3-5 principles is plenty. When they've defined 3+ solid principles, ask "Ready for me to save these to your dashboard?" Then USE the save_principles tool.
+- **Goals/Purpose**: Once they've articulated a clear statement, confirm and ask to save it.
+- **General**: If you've had a productive exchange (4-6 back-and-forths), look for a natural conclusion.
+- **Don't over-question**: If they seem satisfied, celebrate the progress and save their work.
 
 ## Important Guidelines
 - You're a coach, not a therapist. For serious mental health, crisis, or medical issues, acknowledge with compassion and recommend professional help
@@ -117,7 +202,11 @@ Ask them about their real life to make it specific. Don't give generic advice.
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { messages, userContext } = body as { messages: Message[]; userContext?: UserContext };
+    const { messages, userContext, conversationId } = body as { 
+      messages: Message[]; 
+      userContext?: UserContext;
+      conversationId?: string;
+    };
 
     if (!messages || !Array.isArray(messages)) {
       return NextResponse.json(
@@ -156,7 +245,7 @@ export async function POST(request: NextRequest) {
       }
       
       if (userContext.principles && userContext.principles.length > 0) {
-        systemPrompt += `\n\n**Their Personal Principles**:`;
+        systemPrompt += `\n\n**Their Current Principles** (already saved):`;
         userContext.principles.forEach((p, i) => {
           systemPrompt += `\n${i + 1}. "${p.text}"`;
           if (p.description) systemPrompt += `\n   Description: ${p.description}`;
@@ -188,16 +277,37 @@ export async function POST(request: NextRequest) {
       content: m.content,
     }));
 
+    // Only include tools for authenticated users
+    const includeTools = userContext?.userId ? true : false;
+
     const response = await anthropic.messages.create({
       model: "claude-sonnet-4-20250514",
-      max_tokens: 300,
+      max_tokens: 500, // Increased for tool use responses
       system: systemPrompt,
       messages: anthropicMessages,
+      ...(includeTools && { tools: WILLSON_TOOLS }),
     });
 
-    const textContent = response.content.find((block) => block.type === "text");
-    const message = textContent?.type === "text" 
-      ? textContent.text 
+    // Check if Willson wants to use a tool
+    const toolUseBlock = response.content.find((block) => block.type === "tool_use");
+    const textBlock = response.content.find((block) => block.type === "text");
+    
+    if (toolUseBlock && toolUseBlock.type === "tool_use") {
+      // Return both the message and the tool call info
+      const message = textBlock?.type === "text" ? textBlock.text : "";
+      
+      return NextResponse.json({ 
+        message,
+        toolCall: {
+          name: toolUseBlock.name,
+          input: toolUseBlock.input,
+          id: toolUseBlock.id
+        }
+      });
+    }
+
+    const message = textBlock?.type === "text" 
+      ? textBlock.text 
       : "I'm here to help. What's on your mind?";
 
     return NextResponse.json({ message });
