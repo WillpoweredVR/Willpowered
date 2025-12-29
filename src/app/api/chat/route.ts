@@ -106,6 +106,55 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
       },
       required: ["title"]
     }
+  },
+  {
+    name: "save_scorecard",
+    description: "Save scorecard metrics to the user's dashboard. Use when the user confirms they want to save their metrics. Organize metrics into categories (e.g., 'Health', 'Work', 'Habits', 'Relationships').",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        categories: {
+          type: "array",
+          items: {
+            type: "object",
+            properties: {
+              name: {
+                type: "string",
+                description: "Category name (e.g., 'Health', 'Work', 'Habits')"
+              },
+              metrics: {
+                type: "array",
+                items: {
+                  type: "object",
+                  properties: {
+                    name: {
+                      type: "string",
+                      description: "Metric name (e.g., 'Sleep hours', 'Workout days')"
+                    },
+                    target: {
+                      type: "number",
+                      description: "Target value per period (e.g., 7 for 7 hours sleep, 4 for 4 workouts/week)"
+                    },
+                    unit: {
+                      type: "string",
+                      description: "Unit of measurement (e.g., 'hours', 'days', 'minutes', 'sessions')"
+                    },
+                    frequency: {
+                      type: "string",
+                      description: "How often to track: 'daily' or 'weekly'"
+                    }
+                  },
+                  required: ["name", "target"]
+                }
+              }
+            },
+            required: ["name", "metrics"]
+          },
+          description: "Array of categories, each containing metrics"
+        }
+      },
+      required: ["categories"]
+    }
   }
 ];
 
@@ -208,12 +257,19 @@ Example: If their purpose is "Build a successful AI startup," don't ONLY track w
 The goal is a BALANCED scorecard that supports sustainable high performance, not just hustle metrics.
 
 ## SAVING DATA - CRITICAL
-You have tools to save principles, purpose, and goals to the user's dashboard. 
+You have tools to save data to the user's dashboard. 
 - **ALWAYS use the save_principles tool** when the user confirms they want to save their principles
 - **ALWAYS use the save_purpose tool** when they confirm their purpose statement
 - **ALWAYS use the save_goal tool** when they confirm their goal
+- **ALWAYS use the save_scorecard tool** when they confirm their metrics/scorecard
 - After calling a save tool, confirm to the user that you've saved it
 - Don't just SAY you saved it - actually USE THE TOOL
+
+When using save_scorecard, organize metrics into categories like:
+- "Health" (sleep, exercise, nutrition metrics)
+- "Work" or goal-specific category name
+- "Habits" (routines, meditation, reading)
+- "Relationships" (quality time, check-ins)
 
 ## The Journey Steps (guide users through these)
 The Willpowered journey has three main steps users build in order:

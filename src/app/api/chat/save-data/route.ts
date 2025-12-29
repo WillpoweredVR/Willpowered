@@ -22,6 +22,22 @@ interface SaveGoalInput {
   why_statement?: string;
 }
 
+interface MetricInput {
+  name: string;
+  target: number;
+  unit?: string;
+  frequency?: string;
+}
+
+interface CategoryInput {
+  name: string;
+  metrics: MetricInput[];
+}
+
+interface SaveScorecardInput {
+  categories: CategoryInput[];
+}
+
 export async function POST(request: NextRequest) {
   try {
     const supabase = await createClient();
@@ -37,7 +53,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { toolName, toolInput } = body as { 
       toolName: string; 
-      toolInput: SavePrinciplesInput | SavePurposeInput | SaveGoalInput;
+      toolInput: SavePrinciplesInput | SavePurposeInput | SaveGoalInput | SaveScorecardInput;
     };
 
     switch (toolName) {
@@ -168,6 +184,81 @@ export async function POST(request: NextRequest) {
             message: "Goal created"
           });
         }
+      }
+
+      case "save_scorecard": {
+        const input = toolInput as SaveScorecardInput;
+
+        // Get existing scorecard
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("scorecard")
+          .eq("id", user.id)
+          .single();
+
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const existingScorecard = (profile?.scorecard as any) || { categories: [], data: { history: {} } };
+        
+        // Build new categories with IDs
+        const newCategories = input.categories.map((cat, catIndex) => ({
+          id: `cat-${Date.now()}-${catIndex}`,
+          name: cat.name,
+          metrics: cat.metrics.map((m, metricIndex) => ({
+            id: `metric-${Date.now()}-${catIndex}-${metricIndex}`,
+            name: m.name,
+            target: m.target,
+            unit: m.unit || "",
+            frequency: m.frequency || "daily",
+            createdAt: new Date().toISOString(),
+          })),
+        }));
+
+        // Merge with existing categories (add new ones)
+        const allCategories = [...(existingScorecard.categories || [])];
+        
+        for (const newCat of newCategories) {
+          // Check if category with same name exists
+          const existingCatIndex = allCategories.findIndex(
+            (c: { name: string }) => c.name.toLowerCase() === newCat.name.toLowerCase()
+          );
+          
+          if (existingCatIndex >= 0) {
+            // Add metrics to existing category
+            allCategories[existingCatIndex].metrics = [
+              ...allCategories[existingCatIndex].metrics,
+              ...newCat.metrics,
+            ];
+          } else {
+            // Add new category
+            allCategories.push(newCat);
+          }
+        }
+
+        const updatedScorecard = {
+          ...existingScorecard,
+          categories: allCategories,
+        };
+
+        const { error: updateError } = await supabase
+          .from("profiles")
+          .update({ scorecard: updatedScorecard })
+          .eq("id", user.id);
+
+        if (updateError) {
+          console.error("Error saving scorecard:", updateError);
+          return NextResponse.json(
+            { error: "Failed to save scorecard" },
+            { status: 500 }
+          );
+        }
+
+        const totalMetrics = newCategories.reduce((sum, cat) => sum + cat.metrics.length, 0);
+        return NextResponse.json({ 
+          success: true, 
+          message: `Saved ${totalMetrics} metrics across ${newCategories.length} categories`,
+          categoriesCount: allCategories.length,
+          metricsCount: totalMetrics
+        });
       }
 
       default:
