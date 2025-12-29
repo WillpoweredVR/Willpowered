@@ -23,13 +23,20 @@ interface OnboardingRequest {
 
 const PROMPT_TEMPLATES: Record<string, (ctx: Record<string, string>, name?: string) => string> = {
   clarify_purpose: (ctx) => `The user chose: "${ctx.choice === 'know' ? 'I know my purpose' : 'I have a vague idea'}". 
+
+IMPORTANT: Do NOT introduce yourself - you already did that in the welcome message.
+
 Ask them to share what they know or sense about their purpose. Be warm and encouraging. 
 Keep it to 2-3 sentences. End with a clear question inviting them to share.`,
 
   start_discovery: () => `The user wants help discovering their purpose. 
-Start the discovery process warmly. Tell them you'll ask a few questions and they should go with their gut.
+
+IMPORTANT: Do NOT introduce yourself - you already did that. Just get straight into the discovery.
+
+Say something brief like "Let's discover what truly drives you. I'll ask a few questions - just go with your gut."
 Then ask the first question: "When was the last time you completely lost track of time because you were so absorbed in something? What were you doing? How did it feel?"
-Keep the intro brief (2 sentences) before asking the question.`,
+
+Keep it to 2-3 sentences total before the question. No "Hey there" or "I'm Willson" - skip all that.`,
 
   discovery_transition: (ctx) => `The user answered question about "${ctx.previousQuestion}":
 "${ctx.previousAnswer}"
