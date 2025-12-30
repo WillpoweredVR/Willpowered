@@ -804,6 +804,37 @@
       color: var(--accent);
       flex-shrink: 0;
     }
+
+    /* Screenshot Grid */
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin: 2rem 0;
+      align-items: start;
+    }
+
+    .screenshot-container {
+      text-align: center;
+    }
+
+    .app-screenshot {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .screenshot-label {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    .screenshot-label strong {
+      color: var(--text);
+    }
   </style>
 </head>
 <body>
@@ -928,45 +959,22 @@
         <h3>THE APP</h3>
         <h2>A Complete Implementation System</h2>
         
-        <div class="app-flow">
-          <div class="app-screen">
-            <div class="screen-header">💬 AI Onboarding</div>
-            <div class="screen-body">
-              <div class="chat-bubble ai">"What would success look like for you in 6 months?"</div>
-              <div class="chat-bubble user">"I want to lead my team more effectively..."</div>
-              <div class="chat-bubble ai">"Got it. Let me save that as your purpose. ✅"</div>
+        <div class="screenshot-grid">
+          <div class="screenshot-container">
+            <img src="/app-screenshot-principles.png" alt="Principles Dashboard" class="app-screenshot">
+            <div class="screenshot-label">
+              <strong>Principles</strong> — Personal rules that guide decisions
             </div>
-            <div class="screen-label">AI extracts & saves automatically</div>
           </div>
-          <div class="app-arrow">→</div>
-          <div class="app-screen">
-            <div class="screen-header">📊 Dashboard</div>
-            <div class="screen-body">
-              <div class="dashboard-item">
-                <strong>Purpose:</strong> Lead team effectively
-              </div>
-              <div class="dashboard-item">
-                <strong>Principles:</strong> 3 defined ✓
-              </div>
-              <div class="dashboard-item">
-                <strong>Scorecard:</strong> 6 metrics tracked
-              </div>
+          <div class="screenshot-container">
+            <img src="/app-screenshot-scorecard.png" alt="Scorecard Dashboard" class="app-screenshot">
+            <div class="screenshot-label">
+              <strong>Scorecard</strong> — Daily metrics to track progress
             </div>
-            <div class="screen-label">Everything in one place</div>
-          </div>
-          <div class="app-arrow">→</div>
-          <div class="app-screen">
-            <div class="screen-header">📈 Daily Tracking</div>
-            <div class="screen-body">
-              <div class="metric-row">Sleep: <span class="metric-value">7.2 hrs</span> <span class="trend up">↑</span></div>
-              <div class="metric-row">1:1s held: <span class="metric-value">4/5</span> <span class="trend">→</span></div>
-              <div class="metric-row">Deep work: <span class="metric-value">3.5 hrs</span> <span class="trend down">↓</span></div>
-            </div>
-            <div class="screen-label">Quantified progress</div>
           </div>
         </div>
         
-        <p style="margin-top: 2rem; color: var(--accent-light);">Not just advice—a <strong>system</strong> that turns methodology into daily action.</p>
+        <p style="margin-top: 1.5rem; color: var(--accent-light);">Not just advice—a <strong>system</strong> that turns methodology into daily action.</p>
       </div>
     </div>
 
