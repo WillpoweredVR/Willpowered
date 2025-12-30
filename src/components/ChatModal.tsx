@@ -59,6 +59,39 @@ interface ChatModalProps {
 const GENTLE_NUDGE_THRESHOLD = 3; // After 3 user messages, add a nudge
 const HARD_GATE_THRESHOLD = 5; // After 5 user messages, require signup
 
+// Clean up any JSON artifacts or technical details that leak into messages
+function cleanMessageContent(content: string): string {
+  if (!content) return content;
+  
+  // Remove any JSON-looking strings (e.g., {"message": "...", escaped quotes)
+  let cleaned = content;
+  
+  // Remove escaped JSON structures like "{\"message\":\"...\"}"
+  cleaned = cleaned.replace(/"\{[^}]*\\["'][^}]*\}"/g, '');
+  
+  // Remove standalone JSON objects that might appear
+  cleaned = cleaned.replace(/\{\\?"message\\?":\s*\\?"[^"]*\\?"\}/g, '');
+  
+  // Remove lines that look like technical output
+  cleaned = cleaned.replace(/^.*"target":\d+.*$/gm, '');
+  cleaned = cleaned.replace(/^.*"calculation":.*$/gm, '');
+  cleaned = cleaned.replace(/^.*tool_use.*$/gm, '');
+  cleaned = cleaned.replace(/^.*save_scorecard.*$/gm, '');
+  cleaned = cleaned.replace(/^.*save_principles.*$/gm, '');
+  
+  // Clean up excessive backslashes from escaped content
+  cleaned = cleaned.replace(/\\{2,}/g, '');
+  cleaned = cleaned.replace(/\\n/g, '\n');
+  
+  // Remove empty lines that might result from cleanup
+  cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
+  
+  // Trim whitespace
+  cleaned = cleaned.trim();
+  
+  return cleaned;
+}
+
 // The gentle bridge message Willson adds after the threshold
 const BRIDGE_SUFFIX = `
 
@@ -274,13 +307,17 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
       if (!response.ok) throw new Error("Failed to get response");
 
       const data = await response.json();
-      let responseContent = data.message;
+      let responseContent = data.message || "";
+
+      // Clean up any JSON artifacts that might leak into the message
+      // This handles cases where tool call data appears in the response
+      responseContent = cleanMessageContent(responseContent);
 
       // Handle tool calls from Willson
       if (data.toolCall) {
         await handleToolCall(data.toolCall.name, data.toolCall.input);
         // Add a confirmation to the message if there wasn't already text
-        if (!responseContent) {
+        if (!responseContent.trim()) {
           responseContent = "Done! I've saved that to your dashboard.";
         }
       }
