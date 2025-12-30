@@ -63,33 +63,39 @@ const HARD_GATE_THRESHOLD = 5; // After 5 user messages, require signup
 function cleanMessageContent(content: string): string {
   if (!content) return content;
   
-  // Remove any JSON-looking strings (e.g., {"message": "...", escaped quotes)
   let cleaned = content;
   
-  // Remove escaped JSON structures like "{\"message\":\"...\"}"
-  cleaned = cleaned.replace(/"\{[^}]*\\["'][^}]*\}"/g, '');
+  // Remove tool use references in any format
+  // Matches: *[Using save_principles tool]*, [Using save_scorecard...], etc.
+  cleaned = cleaned.replace(/\*?\[.*?(?:tool|save_|Using|Preparing).*?\]\*?/gi, '');
   
-  // Remove standalone JSON objects that might appear
+  // Remove JSON-looking strings
+  cleaned = cleaned.replace(/"\{[^}]*\\["'][^}]*\}"/g, '');
   cleaned = cleaned.replace(/\{\\?"message\\?":\s*\\?"[^"]*\\?"\}/g, '');
   
-  // Remove lines that look like technical output
+  // Remove lines with technical keywords
   cleaned = cleaned.replace(/^.*"target":\d+.*$/gm, '');
   cleaned = cleaned.replace(/^.*"calculation":.*$/gm, '');
+  cleaned = cleaned.replace(/^.*"categories":.*$/gm, '');
   cleaned = cleaned.replace(/^.*tool_use.*$/gm, '');
   cleaned = cleaned.replace(/^.*save_scorecard.*$/gm, '');
   cleaned = cleaned.replace(/^.*save_principles.*$/gm, '');
+  cleaned = cleaned.replace(/^.*save_purpose.*$/gm, '');
+  cleaned = cleaned.replace(/^.*save_goal.*$/gm, '');
   
-  // Clean up excessive backslashes from escaped content
+  // Remove any remaining JSON-like content
+  cleaned = cleaned.replace(/\{[^{}]*"[^"]+"\s*:\s*[^{}]*\}/g, '');
+  
+  // Clean up escaped characters
   cleaned = cleaned.replace(/\\{2,}/g, '');
   cleaned = cleaned.replace(/\\n/g, '\n');
+  cleaned = cleaned.replace(/\\"/g, '"');
   
-  // Remove empty lines that might result from cleanup
+  // Remove empty lines and excessive whitespace
   cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
+  cleaned = cleaned.replace(/^\s*\n/gm, '');
   
-  // Trim whitespace
-  cleaned = cleaned.trim();
-  
-  return cleaned;
+  return cleaned.trim();
 }
 
 // The gentle bridge message Willson adds after the threshold
