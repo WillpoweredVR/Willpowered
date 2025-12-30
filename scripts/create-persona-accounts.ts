@@ -429,7 +429,7 @@ async function createOrGetAccount(persona: PersonaContext): Promise<{ userId: st
     
     // For API calls, we'll use the service role key as a workaround
     // In production, you'd use the actual user's session
-    return { userId, accessToken: SUPABASE_SERVICE_KEY };
+    return { userId, accessToken: SUPABASE_SERVICE_KEY! };
 
   } catch (error) {
     console.error(`   ❌ Error: ${error}`);
