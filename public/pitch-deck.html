@@ -691,6 +691,119 @@
       left: 0;
       color: var(--accent);
     }
+
+    /* App Flow Visualization */
+    .app-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 2rem 0;
+    }
+
+    .app-screen {
+      background: var(--bg-card);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.15);
+      width: 280px;
+      overflow: hidden;
+    }
+
+    .screen-header {
+      background: rgba(99, 102, 241, 0.2);
+      padding: 12px 16px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .screen-body {
+      padding: 16px;
+      min-height: 160px;
+    }
+
+    .screen-label {
+      padding: 10px 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background: rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .chat-bubble {
+      padding: 10px 14px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    .chat-bubble.ai {
+      background: rgba(99, 102, 241, 0.2);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      margin-right: 20px;
+    }
+
+    .chat-bubble.user {
+      background: rgba(255,255,255,0.1);
+      margin-left: 20px;
+    }
+
+    .dashboard-item {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .dashboard-item:last-child {
+      border-bottom: none;
+    }
+
+    .dashboard-item strong {
+      color: var(--text);
+    }
+
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .metric-row:last-child {
+      border-bottom: none;
+    }
+
+    .metric-value {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .trend {
+      font-size: 0.8rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .trend.up {
+      color: var(--emerald);
+      background: rgba(16, 185, 129, 0.2);
+    }
+
+    .trend.down {
+      color: var(--rose);
+      background: rgba(244, 63, 94, 0.2);
+    }
+
+    .app-arrow {
+      font-size: 2rem;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -775,12 +888,12 @@
             <div class="label">Cost reduction in AI inference over 18 months</div>
           </div>
           <div class="stat-card">
-            <div class="number">$4.5B</div>
-            <div class="label">Personal development app market (growing 11% annually)</div>
+            <div class="number">$250B+</div>
+            <div class="label">Global management consulting market</div>
           </div>
         </div>
         
-        <p style="margin-top: 2rem;">For the first time, we can create AI that truly <em>understands</em> a methodology—<br>not just recites it.</p>
+        <p style="margin-top: 2rem;">For the first time, we can create AI that truly <em>understands</em> a methodology—<br>and an app that helps users <em>act</em> on it.</p>
       </div>
     </div>
 
@@ -794,49 +907,99 @@
           </div>
           <div class="case-study-content">
             <h3>CASE STUDY</h3>
-            <h2>From Book to AI Coach in 4 Weeks</h2>
-            <p>We transformed Colin's methodology from "The Will of Heroes" into Willson—an AI coach that guides users through purpose discovery, principles, and daily scorecards.</p>
+            <h2>From Book to Working App in 4 Weeks</h2>
+            <p>We transformed Colin's methodology into a complete application with an AI coach (Willson) that doesn't just advise—it <strong>implements</strong>.</p>
             
             <ul class="case-study-list">
-              <li>Understands the 7-step framework deeply</li>
-              <li>References 40+ heroes from the book contextually</li>
-              <li>Adapts guidance to each user's specific situation</li>
-              <li>Saves progress and tracks metrics over time</li>
-              <li>Guides users through complete transformation journey</li>
+              <li><strong>Onboarding:</strong> AI guides users through purpose → principles → scorecard setup</li>
+              <li><strong>Dashboard:</strong> Displays purpose, principles, and daily metrics in one view</li>
+              <li><strong>Daily Check-ins:</strong> Users log metrics; AI analyzes patterns</li>
+              <li><strong>Tool Integration:</strong> AI can save directly to user's profile (no manual entry)</li>
+              <li><strong>Email System:</strong> Automated summaries based on actual tracking data</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Slide 6: What Willson Does -->
+    <!-- Slide 5b: App Screenshots/Flow -->
     <div class="slide">
       <div class="slide-content">
-        <h3>THE PRODUCT</h3>
-        <h2>What the AI Coach Actually Does</h2>
+        <h3>THE APP</h3>
+        <h2>A Complete Implementation System</h2>
+        
+        <div class="app-flow">
+          <div class="app-screen">
+            <div class="screen-header">💬 AI Onboarding</div>
+            <div class="screen-body">
+              <div class="chat-bubble ai">"What would success look like for you in 6 months?"</div>
+              <div class="chat-bubble user">"I want to lead my team more effectively..."</div>
+              <div class="chat-bubble ai">"Got it. Let me save that as your purpose. ✅"</div>
+            </div>
+            <div class="screen-label">AI extracts & saves automatically</div>
+          </div>
+          <div class="app-arrow">→</div>
+          <div class="app-screen">
+            <div class="screen-header">📊 Dashboard</div>
+            <div class="screen-body">
+              <div class="dashboard-item">
+                <strong>Purpose:</strong> Lead team effectively
+              </div>
+              <div class="dashboard-item">
+                <strong>Principles:</strong> 3 defined ✓
+              </div>
+              <div class="dashboard-item">
+                <strong>Scorecard:</strong> 6 metrics tracked
+              </div>
+            </div>
+            <div class="screen-label">Everything in one place</div>
+          </div>
+          <div class="app-arrow">→</div>
+          <div class="app-screen">
+            <div class="screen-header">📈 Daily Tracking</div>
+            <div class="screen-body">
+              <div class="metric-row">Sleep: <span class="metric-value">7.2 hrs</span> <span class="trend up">↑</span></div>
+              <div class="metric-row">1:1s held: <span class="metric-value">4/5</span> <span class="trend">→</span></div>
+              <div class="metric-row">Deep work: <span class="metric-value">3.5 hrs</span> <span class="trend down">↓</span></div>
+            </div>
+            <div class="screen-label">Quantified progress</div>
+          </div>
+        </div>
+        
+        <p style="margin-top: 2rem; color: var(--accent-light);">Not just advice—a <strong>system</strong> that turns methodology into daily action.</p>
+      </div>
+    </div>
+
+    <!-- Slide 6: How AI + App Work Together -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>THE INTEGRATION</h3>
+        <h2>AI + App: From Conversation to Action</h2>
         
         <div class="feature-grid">
           <div class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h4>Purpose Discovery</h4>
-            <p>Guides users through finding their "Want Power"—the deep motivation that drives lasting change.</p>
+            <div class="feature-icon">💬 → 📱</div>
+            <h4>AI Discovers, App Captures</h4>
+            <p>Through conversation, the AI extracts key insights and <strong>automatically saves them</strong> to the user's dashboard. No manual entry.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📋</div>
-            <h4>Personal Principles</h4>
-            <p>Helps users articulate 3-5 rules they'll live by, with specific triggers for when they're tested.</p>
+            <div class="feature-icon">📊 → 🔔</div>
+            <h4>App Tracks, AI Coaches</h4>
+            <p>Users log daily metrics in the app. The AI analyzes patterns and <strong>proactively surfaces insights</strong> when behavior drifts.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h4>Daily Scorecard</h4>
-            <p>Creates personalized metrics across work, health, and relationships to track what matters.</p>
+            <div class="feature-icon">📧 → 💡</div>
+            <h4>Automated Check-ins</h4>
+            <p>Daily and weekly email summaries <strong>driven by real data</strong>—not generic reminders. Personalized to what they're actually tracking.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">💬</div>
-            <h4>Ongoing Coaching</h4>
-            <p>Available 24/7 to help navigate challenges, celebrate wins, and stay on track.</p>
+            <div class="feature-icon">🔄 → 📈</div>
+            <h4>Continuous Refinement</h4>
+            <p>The AI learns what works for each user and <strong>adapts recommendations</strong> based on their progress and setbacks.</p>
           </div>
         </div>
+        
+        <p style="margin-top: 1.5rem; color: var(--accent-light);">The AI isn't just a chatbot—it's connected to a system that makes the methodology <strong>actionable</strong>.</p>
       </div>
     </div>
 
@@ -844,14 +1007,30 @@
     <div class="slide">
       <div class="slide-content">
         <h3>THE MAGIC</h3>
-        <h2>Why This Works</h2>
+        <h2>Three Layers of Intelligence</h2>
         
-        <div class="quote-block">
-          <p>The AI doesn't just know the methodology—it thinks in the methodology. When a user says "I'm struggling with motivation," it doesn't give generic advice. It asks: "What's your Want Power? What are you fighting for?"</p>
-          <div class="quote-attribution">— The difference between ChatGPT and a specialized AI coach</div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">🧠</div>
+            <h4>Methodology Layer</h4>
+            <p>AI deeply understands your framework—thinks in your concepts, not just recites them</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">📱</div>
+            <h4>App Layer</h4>
+            <p>Dashboard, metrics, check-ins—the tools that turn insights into trackable actions</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🔗</div>
+            <h4>Integration Layer</h4>
+            <p>AI can read and write to the app—saving goals, updating metrics, triggering emails</p>
+          </div>
         </div>
         
-        <p style="margin-top: 2rem;">Every response is grounded in your framework.<br>Every suggestion references your principles.<br>Every user gets your expertise—personalized.</p>
+        <div class="quote-block" style="margin-top: 2rem;">
+          <p>ChatGPT can discuss your book. Our AI coach can <strong>implement</strong> your book—one user at a time, automatically.</p>
+          <div class="quote-attribution">— The difference that matters</div>
+        </div>
       </div>
     </div>
 
@@ -943,30 +1122,32 @@
     <div class="slide">
       <div class="slide-content">
         <h3>TARGET CLIENTS</h3>
-        <h2>Who This Is For</h2>
+        <h2>B2B Authors & Consultants First</h2>
         
         <div class="feature-grid">
           <div class="feature-card">
-            <div class="feature-icon">📖</div>
-            <h4>Non-Fiction Authors</h4>
-            <p>Business, self-help, leadership, productivity. Anyone with a methodology that can be applied to individual situations.</p>
-          </div>
-          <div class="feature-card">
             <div class="feature-icon">💼</div>
             <h4>Management Consultants</h4>
-            <p>Frameworks for strategy, operations, or transformation that could help more clients at scale.</p>
+            <p>Strategy frameworks, operating models, transformation playbooks. <strong>Scale your IP</strong> beyond the engagement.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📖</div>
+            <h4>Business Book Authors</h4>
+            <p>Leadership, sales, operations, culture. <strong>Turn readers into practitioners</strong> with guided implementation.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎓</div>
             <h4>Executive Coaches</h4>
-            <p>Proven approaches to leadership development, career transitions, or performance optimization.</p>
+            <p>Proven methodologies for leadership development. <strong>Extend your reach</strong> between sessions and after engagements end.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🧠</div>
-            <h4>Subject Matter Experts</h4>
-            <p>Deep expertise in health, finance, relationships, or skills that people need personalized guidance on.</p>
+            <div class="feature-icon">🏢</div>
+            <h4>Training Companies</h4>
+            <p>Workshop content that needs reinforcement. <strong>Drive behavior change</strong> after the training ends.</p>
           </div>
         </div>
+        
+        <p style="margin-top: 1.5rem;">Focus: <strong>B2B methodologies</strong> where the value of implementation is high and measurable.</p>
       </div>
     </div>
 
@@ -1044,7 +1225,7 @@
   </div>
 
   <!-- Navigation -->
-  <div class="slide-counter"><span id="current">1</span> / <span id="total">13</span></div>
+  <div class="slide-counter"><span id="current">1</span> / <span id="total">14</span></div>
   
   <div class="nav" id="nav"></div>
   
