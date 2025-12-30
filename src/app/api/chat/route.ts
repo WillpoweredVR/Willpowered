@@ -7,6 +7,47 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || "",
 });
 
+// Clean tool call artifacts from message text
+function cleanToolArtifacts(text: string): string {
+  if (!text) return text;
+  
+  let cleaned = text;
+  
+  // Remove tool call blocks like <tool_calls>...</tool_calls>
+  cleaned = cleaned.replace(/<tool_calls>[\s\S]*?<\/tool_calls>/gi, '');
+  cleaned = cleaned.replace(/<invoke[\s\S]*?<\/invoke>/gi, '');
+  cleaned = cleaned.replace(/<parameter[\s\S]*?<\/parameter>/gi, '');
+  
+  // Remove function call JSON patterns
+  cleaned = cleaned.replace(/"?tool_calls"?\s*:\s*\[[\s\S]*?\]/g, '');
+  cleaned = cleaned.replace(/"?function"?\s*:\s*\{[\s\S]*?"name"[\s\S]*?\}/g, '');
+  cleaned = cleaned.replace(/"?tools"?\s*:\s*\[[\s\S]*?\]/g, '');
+  
+  // Remove save_* function references
+  cleaned = cleaned.replace(/\{"?function"?:\s*"?save_\w+"?[\s\S]*?\}/g, '');
+  cleaned = cleaned.replace(/"save_(?:principles|purpose|goal|scorecard)"[\s\S]*?(?:\}|\])/g, '');
+  
+  // Remove JSON-like structures with tool names
+  cleaned = cleaned.replace(/\{[^{}]*"(?:tool_name|function|action)"[^{}]*\}/g, '');
+  
+  // Remove escaped JSON
+  cleaned = cleaned.replace(/\\{2,}/g, '');
+  cleaned = cleaned.replace(/\\"/g, '"');
+  cleaned = cleaned.replace(/\\n/g, '\n');
+  
+  // Remove lines that look like raw JSON properties
+  cleaned = cleaned.replace(/^.*"(?:target|direction|frequency|calculation|metrics|categories)".*$/gm, '');
+  
+  // Remove any remaining JSON objects with curly braces containing quotes
+  cleaned = cleaned.replace(/\{[^{}]*"[^"]*"[^{}]*:[^{}]*\}/g, '');
+  
+  // Clean up excessive whitespace
+  cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
+  cleaned = cleaned.replace(/^\s+|\s+$/g, '');
+  
+  return cleaned;
+}
+
 interface Message {
   role: "user" | "assistant" | "system";
   content: string;
@@ -610,7 +651,10 @@ export async function POST(request: NextRequest) {
     
     if (toolUseBlock && toolUseBlock.type === "tool_use") {
       // Return both the message and the tool call info
-      const message = textBlock?.type === "text" ? textBlock.text : "";
+      let message = textBlock?.type === "text" ? textBlock.text : "";
+      
+      // Clean any tool call artifacts from the message
+      message = cleanToolArtifacts(message);
       
       return NextResponse.json({ 
         message,
@@ -622,9 +666,12 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    const message = textBlock?.type === "text" 
+    let message = textBlock?.type === "text" 
       ? textBlock.text 
       : "I'm here to help. What's on your mind?";
+
+    // Clean any tool call artifacts from the message
+    message = cleanToolArtifacts(message);
 
     return NextResponse.json({ message });
   } catch (error) {
