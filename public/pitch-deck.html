@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Coach Platform - Pitch Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-card: #12121a;
+      --accent: #6366f1;
+      --accent-light: #818cf8;
+      --accent-glow: rgba(99, 102, 241, 0.3);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --gold: #f59e0b;
+      --emerald: #10b981;
+      --rose: #f43f5e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .slides {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 80px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+      background: var(--bg-dark);
+    }
+
+    .slide.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 20% 20%, var(--accent-glow) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .slide-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--text) 0%, var(--accent-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: var(--text);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--accent-light);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .subtitle {
+      font-size: 1.8rem;
+      color: var(--accent-light);
+      margin-bottom: 1rem;
+    }
+
+    /* Title Slide */
+    .title-slide h1 {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    .title-slide .tagline {
+      font-size: 2rem;
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+    }
+
+    .title-slide .author {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+
+    /* Matrix */
+    .matrix-container {
+      display: grid;
+      grid-template-columns: 200px repeat(3, 1fr);
+      gap: 2px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+
+    .matrix-header {
+      background: var(--bg-card);
+      padding: 20px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .matrix-row-header {
+      background: var(--bg-card);
+      padding: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .matrix-cell {
+      background: var(--bg-card);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .low { color: var(--rose); }
+    .medium { color: var(--gold); }
+    .high { color: var(--emerald); }
+
+    .matrix-cell.highlight {
+      background: rgba(99, 102, 241, 0.2);
+      border: 2px solid var(--accent);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 40px 30px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .stat-card .number {
+      font-family: 'Fraunces', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--accent-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-card .label {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+    }
+
+    /* Feature Grid */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin: 2rem 0;
+      text-align: left;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .feature-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    .feature-card p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Timeline */
+    .timeline {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 3rem 0;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 10%;
+      right: 10%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--emerald));
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      padding: 0 20px;
+    }
+
+    .timeline-dot {
+      width: 60px;
+      height: 60px;
+      background: var(--bg-card);
+      border: 3px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline-item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .timeline-item p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* Case Study */
+    .case-study {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      text-align: left;
+    }
+
+    .case-study-image {
+      background: linear-gradient(135deg, var(--accent) 0%, #4f46e5 100%);
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+    }
+
+    .case-study-image .logo {
+      font-family: 'Fraunces', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .case-study-image .desc {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      text-align: center;
+    }
+
+    .case-study-content h2 {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+
+    .case-study-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    .case-study-list {
+      list-style: none;
+      margin-top: 1.5rem;
+    }
+
+    .case-study-list li {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    .case-study-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--emerald);
+      font-weight: bold;
+    }
+
+    /* Comparison */
+    .comparison {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin: 2rem 0;
+    }
+
+    .comparison-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .comparison-card.featured {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(99, 102, 241, 0.1) 100%);
+      border: 2px solid var(--accent);
+      transform: scale(1.05);
+    }
+
+    .comparison-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .comparison-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .comparison-card .metric {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .comparison-card .value {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Quote */
+    .quote-block {
+      background: var(--bg-card);
+      border-radius: 20px;
+      padding: 50px;
+      margin: 2rem 0;
+      position: relative;
+      border-left: 4px solid var(--accent);
+    }
+
+    .quote-block::before {
+      content: '"';
+      font-family: 'Fraunces', serif;
+      font-size: 8rem;
+      position: absolute;
+      top: -20px;
+      left: 30px;
+      color: var(--accent);
+      opacity: 0.3;
+    }
+
+    .quote-block p {
+      font-size: 1.5rem;
+      font-style: italic;
+      color: var(--text);
+      position: relative;
+      z-index: 1;
+    }
+
+    .quote-attribution {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-style: normal;
+    }
+
+    /* CTA Slide */
+    .cta-slide h1 {
+      margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .cta-button {
+      padding: 20px 40px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .cta-primary {
+      background: var(--accent);
+      color: white;
+      border: none;
+    }
+
+    .cta-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .nav-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav-dot.active {
+      background: var(--accent);
+      transform: scale(1.3);
+    }
+
+    .nav-arrows {
+      position: fixed;
+      bottom: 30px;
+      right: 40px;
+      display: flex;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .nav-arrow {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--text);
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .nav-arrow:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .slide-counter {
+      position: fixed;
+      bottom: 35px;
+      left: 40px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      z-index: 100;
+    }
+
+    /* Bullet List */
+    .bullet-list {
+      list-style: none;
+      text-align: left;
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+
+    .bullet-list li {
+      font-size: 1.3rem;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+      padding-left: 40px;
+      position: relative;
+    }
+
+    .bullet-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .bullet-list li span {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    /* Process Step */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin: 2rem 0;
+    }
+
+    .process-step {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+      position: relative;
+    }
+
+    .process-step::after {
+      content: '→';
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--accent);
+      font-size: 1.5rem;
+    }
+
+    .process-step:last-child::after {
+      display: none;
+    }
+
+    .process-step .step-number {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-weight: 700;
+    }
+
+    .process-step h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .process-step p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Business model */
+    .business-model {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 2rem 0;
+    }
+
+    .model-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .model-card .price {
+      font-family: 'Fraunces', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .model-card .term {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .model-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .model-card ul {
+      list-style: none;
+      text-align: left;
+    }
+
+    .model-card li {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .model-card li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="slides">
+    
+    <!-- Slide 1: Title -->
+    <div class="slide active title-slide">
+      <div class="slide-content">
+        <h1>AI Coach Platform</h1>
+        <p class="tagline">Turn Your Methodology Into a Scalable AI Product</p>
+        <p class="author">Colin Robertson • December 2024</p>
+      </div>
+    </div>
+
+    <!-- Slide 2: The Problem -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>THE PROBLEM</h3>
+        <h2>Experts Are Stuck in the Time-for-Money Trap</h2>
+        <p>You've spent years developing a methodology that transforms lives. But scaling it means choosing between:</p>
+        
+        <ul class="bullet-list">
+          <li><strong>Writing books</strong> <span>Reaches millions, but can't adapt to individual situations</span></li>
+          <li><strong>Speaking gigs</strong> <span>High-impact but limited to room size and schedule</span></li>
+          <li><strong>1:1 consulting</strong> <span>Highest value, but you can only help so many people</span></li>
+        </ul>
+        
+        <p style="margin-top: 2rem; color: var(--accent-light); font-weight: 500;">What if there was a fourth option?</p>
+      </div>
+    </div>
+
+    <!-- Slide 3: The Matrix -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>THE OPPORTUNITY</h3>
+        <h2>There's a Gap in the Market</h2>
+        
+        <div class="matrix-container">
+          <div class="matrix-header"></div>
+          <div class="matrix-header">💰 Cost</div>
+          <div class="matrix-header">🎯 Customization</div>
+          <div class="matrix-header">📈 Scalability</div>
+          
+          <div class="matrix-row-header">📚 Book</div>
+          <div class="matrix-cell"><span class="low">Low ($20)</span></div>
+          <div class="matrix-cell"><span class="low">Low</span></div>
+          <div class="matrix-cell"><span class="high">High</span></div>
+          
+          <div class="matrix-row-header">🎤 Speaking</div>
+          <div class="matrix-cell"><span class="high">High ($10K+)</span></div>
+          <div class="matrix-cell"><span class="medium">Medium</span></div>
+          <div class="matrix-cell"><span class="low">Low</span></div>
+          
+          <div class="matrix-row-header">🤝 Consulting</div>
+          <div class="matrix-cell"><span class="high">Highest ($500/hr)</span></div>
+          <div class="matrix-cell"><span class="high">Highest</span></div>
+          <div class="matrix-cell"><span class="low">Lowest</span></div>
+          
+          <div class="matrix-row-header">🤖 AI Coach</div>
+          <div class="matrix-cell highlight"><span class="medium">Medium ($10-50/mo)</span></div>
+          <div class="matrix-cell highlight"><span class="high">High</span></div>
+          <div class="matrix-cell highlight"><span class="high">High</span></div>
+        </div>
+        
+        <p style="margin-top: 1.5rem;">AI Coach fills the gap: <strong>personalized guidance at scale</strong></p>
+      </div>
+    </div>
+
+    <!-- Slide 4: Why Now -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>WHY NOW</h3>
+        <h2>The Technology Inflection Point</h2>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="number">2023</div>
+            <div class="label">LLMs became capable of nuanced coaching conversations</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">90%</div>
+            <div class="label">Cost reduction in AI inference over 18 months</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">$4.5B</div>
+            <div class="label">Personal development app market (growing 11% annually)</div>
+          </div>
+        </div>
+        
+        <p style="margin-top: 2rem;">For the first time, we can create AI that truly <em>understands</em> a methodology—<br>not just recites it.</p>
+      </div>
+    </div>
+
+    <!-- Slide 5: Case Study - Willpowered -->
+    <div class="slide">
+      <div class="slide-content">
+        <div class="case-study">
+          <div class="case-study-image">
+            <div class="logo">Willpowered</div>
+            <div class="desc">AI-powered willpower coaching<br>based on "The Will of Heroes"</div>
+          </div>
+          <div class="case-study-content">
+            <h3>CASE STUDY</h3>
+            <h2>From Book to AI Coach in 4 Weeks</h2>
+            <p>We transformed Colin's methodology from "The Will of Heroes" into Willson—an AI coach that guides users through purpose discovery, principles, and daily scorecards.</p>
+            
+            <ul class="case-study-list">
+              <li>Understands the 7-step framework deeply</li>
+              <li>References 40+ heroes from the book contextually</li>
+              <li>Adapts guidance to each user's specific situation</li>
+              <li>Saves progress and tracks metrics over time</li>
+              <li>Guides users through complete transformation journey</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 6: What Willson Does -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>THE PRODUCT</h3>
+        <h2>What the AI Coach Actually Does</h2>
+        
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h4>Purpose Discovery</h4>
+            <p>Guides users through finding their "Want Power"—the deep motivation that drives lasting change.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h4>Personal Principles</h4>
+            <p>Helps users articulate 3-5 rules they'll live by, with specific triggers for when they're tested.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h4>Daily Scorecard</h4>
+            <p>Creates personalized metrics across work, health, and relationships to track what matters.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h4>Ongoing Coaching</h4>
+            <p>Available 24/7 to help navigate challenges, celebrate wins, and stay on track.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 7: The Magic -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>THE MAGIC</h3>
+        <h2>Why This Works</h2>
+        
+        <div class="quote-block">
+          <p>The AI doesn't just know the methodology—it thinks in the methodology. When a user says "I'm struggling with motivation," it doesn't give generic advice. It asks: "What's your Want Power? What are you fighting for?"</p>
+          <div class="quote-attribution">— The difference between ChatGPT and a specialized AI coach</div>
+        </div>
+        
+        <p style="margin-top: 2rem;">Every response is grounded in your framework.<br>Every suggestion references your principles.<br>Every user gets your expertise—personalized.</p>
+      </div>
+    </div>
+
+    <!-- Slide 8: The Process -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>HOW IT WORKS</h3>
+        <h2>From Methodology to AI Coach</h2>
+        
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h4>Extract</h4>
+            <p>We analyze your book, courses, and consulting materials to capture your methodology.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h4>Structure</h4>
+            <p>We organize concepts into a framework the AI can reason about and apply.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h4>Train</h4>
+            <p>We craft prompts and guardrails so the AI thinks and speaks like you.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h4>Launch</h4>
+            <p>Deploy as a web app, mobile app, or integration with your existing products.</p>
+          </div>
+        </div>
+        
+        <p style="margin-top: 2rem;"><strong>Timeline:</strong> 4-8 weeks from kickoff to launch</p>
+      </div>
+    </div>
+
+    <!-- Slide 9: Comparison -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>THE VALUE</h3>
+        <h2>One AI Coach vs. Traditional Scaling</h2>
+        
+        <div class="comparison">
+          <div class="comparison-card">
+            <div class="icon">📚</div>
+            <h4>Sell 10,000 Books</h4>
+            <div class="metric">Revenue</div>
+            <div class="value" style="color: var(--emerald);">~$30,000</div>
+            <div class="metric">Per-user engagement</div>
+            <div class="value" style="color: var(--rose);">One-time read</div>
+            <div class="metric">Customization</div>
+            <div class="value" style="color: var(--rose);">None</div>
+          </div>
+          <div class="comparison-card">
+            <div class="icon">🎤</div>
+            <h4>10 Speaking Gigs</h4>
+            <div class="metric">Revenue</div>
+            <div class="value" style="color: var(--emerald);">~$100,000</div>
+            <div class="metric">People reached</div>
+            <div class="value" style="color: var(--gold);">~5,000</div>
+            <div class="metric">Your time required</div>
+            <div class="value" style="color: var(--rose);">~100 hours</div>
+          </div>
+          <div class="comparison-card">
+            <div class="icon">🤝</div>
+            <h4>100 Consulting Hours</h4>
+            <div class="metric">Revenue</div>
+            <div class="value" style="color: var(--emerald);">~$50,000</div>
+            <div class="metric">Clients helped</div>
+            <div class="value" style="color: var(--rose);">~25</div>
+            <div class="metric">Your time required</div>
+            <div class="value" style="color: var(--rose);">100 hours</div>
+          </div>
+          <div class="comparison-card featured">
+            <div class="icon">🤖</div>
+            <h4>AI Coach (1,000 subs)</h4>
+            <div class="metric">Revenue</div>
+            <div class="value" style="color: var(--emerald);">~$30,000/mo</div>
+            <div class="metric">Unlimited conversations</div>
+            <div class="value" style="color: var(--emerald);">24/7 availability</div>
+            <div class="metric">Your time required</div>
+            <div class="value" style="color: var(--emerald);">~0 hours</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 10: Target Market -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>TARGET CLIENTS</h3>
+        <h2>Who This Is For</h2>
+        
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📖</div>
+            <h4>Non-Fiction Authors</h4>
+            <p>Business, self-help, leadership, productivity. Anyone with a methodology that can be applied to individual situations.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💼</div>
+            <h4>Management Consultants</h4>
+            <p>Frameworks for strategy, operations, or transformation that could help more clients at scale.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎓</div>
+            <h4>Executive Coaches</h4>
+            <p>Proven approaches to leadership development, career transitions, or performance optimization.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h4>Subject Matter Experts</h4>
+            <p>Deep expertise in health, finance, relationships, or skills that people need personalized guidance on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 11: Business Model -->
+    <div class="slide">
+      <div class="slide-content">
+        <h3>BUSINESS MODEL</h3>
+        <h2>How We Make Money Together</h2>
+        
+        <div class="business-model">
+          <div class="model-card">
+            <div class="price">$25K-50K</div>
+            <div class="term">One-time setup</div>
+            <h4>Build Phase</h4>
+            <ul>
+              <li>Methodology extraction</li>
+              <li>AI coach development</li>
+              <li>Web/mobile app</li>
+              <li>User onboarding flow</li>
+              <li>Analytics dashboard</li>
+            </ul>
+          </div>
+          <div class="model-card">
+            <div class="price">15%</div>
+            <div class="term">Revenue share</div>
+            <h4>Ongoing</h4>
+            <ul>
+              <li>AI hosting & inference</li>
+              <li>Platform maintenance</li>
+              <li>Feature updates</li>
+              <li>Performance optimization</li>
+              <li>Customer support</li>
+            </ul>
+          </div>
+          <div class="model-card">
+            <div class="price">You Keep</div>
+            <div class="term">85% of revenue</div>
+            <h4>Your Upside</h4>
+            <ul>
+              <li>Monthly subscription revenue</li>
+              <li>Bundle with book sales</li>
+              <li>Enterprise licensing</li>
+              <li>Upsell to 1:1 coaching</li>
+              <li>Brand equity growth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 12: The Ask -->
+    <div class="slide cta-slide">
+      <div class="slide-content">
+        <h3>THE ASK</h3>
+        <h1>Let's Build the Future of Expertise Delivery</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 2rem;">I'm looking for 3 pilot clients to launch this service.<br>In exchange for early partnership, you get preferred pricing and co-development input.</p>
+        
+        <ul class="bullet-list" style="max-width: 600px;">
+          <li><strong>Do you know an author or consultant</strong> <span>who has a methodology worth scaling?</span></li>
+          <li><strong>Would you want to explore this</strong> <span>for your own expertise?</span></li>
+          <li><strong>What questions do you have</strong> <span>about how this would work?</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Slide 13: Contact -->
+    <div class="slide title-slide">
+      <div class="slide-content">
+        <h1>Thank You</h1>
+        <p class="tagline">Let's turn expertise into impact—at scale.</p>
+        <p class="author" style="margin-top: 3rem; font-size: 1.3rem;">Colin Robertson<br>colin@willpowered.com</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Navigation -->
+  <div class="slide-counter"><span id="current">1</span> / <span id="total">13</span></div>
+  
+  <div class="nav" id="nav"></div>
+  
+  <div class="nav-arrows">
+    <button class="nav-arrow" id="prev">←</button>
+    <button class="nav-arrow" id="next">→</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const nav = document.getElementById('nav');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const currentSpan = document.getElementById('current');
+    const totalSpan = document.getElementById('total');
+    
+    let currentSlide = 0;
+    
+    // Create nav dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => goToSlide(i));
+      nav.appendChild(dot);
+    });
+    
+    totalSpan.textContent = slides.length;
+    
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      nav.children[currentSlide].classList.remove('active');
+      
+      currentSlide = (n + slides.length) % slides.length;
+      
+      slides[currentSlide].classList.add('active');
+      nav.children[currentSlide].classList.add('active');
+      currentSpan.textContent = currentSlide + 1;
+    }
+    
+    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        goToSlide(currentSlide + 1);
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        goToSlide(currentSlide - 1);
+      }
+    });
+    
+    // Touch/swipe navigation
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+    
+    document.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
+      
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          goToSlide(currentSlide + 1);
+        } else {
+          goToSlide(currentSlide - 1);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
