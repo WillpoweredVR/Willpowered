@@ -25,7 +25,6 @@ interface ProfileData {
   purpose_statement: string | null;
   scorecard: Scorecard | null;
   principles: Principle[] | null;
-  principle_reviews: WeeklyPrincipleReview[] | null;
   last_daily_email_at: string | null;
   last_weekly_email_at: string | null;
 }
@@ -214,9 +213,10 @@ export async function GET(request: NextRequest) {
     console.log("[CRON] Starting reminder-emails job at", new Date().toISOString());
     
     // Get all profiles with email preferences set
+    // Note: principle_reviews column may not exist yet, so we exclude it
     const { data: profiles, error: profilesError } = await supabase
       .from("profiles")
-      .select("id, full_name, email_preferences, timezone, purpose_statement, scorecard, principles, principle_reviews, last_daily_email_at, last_weekly_email_at")
+      .select("id, full_name, email_preferences, timezone, purpose_statement, scorecard, principles, last_daily_email_at, last_weekly_email_at")
       .not("email_preferences", "is", null)
       .limit(BATCH_SIZE);
 
@@ -329,7 +329,7 @@ export async function GET(request: NextRequest) {
             console.log(`[CRON] Attempting to send weekly email to ${userEmail}`);
             
             const principles = (profile.principles || []) as Principle[];
-            const reviews = (profile.principle_reviews || []) as WeeklyPrincipleReview[];
+            const reviews: WeeklyPrincipleReview[] = []; // principle_reviews not yet implemented
 
             // Map principles with strength
             const principlesWithStatus = principles.map(p => ({
