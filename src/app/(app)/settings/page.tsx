@@ -232,10 +232,16 @@ export default function SettingsPage() {
     const { data: { user: authUser } } = await supabase.auth.getUser();
 
     if (authUser) {
-      await supabase
+      const { error } = await supabase
         .from("profiles")
         .update({ email_preferences: prefs })
         .eq("id", authUser.id);
+      
+      if (error) {
+        console.error("Failed to save email preferences:", error);
+        alert(`Failed to save preferences: ${error.message}`);
+        return;
+      }
     }
 
     setShowSaved(true);
