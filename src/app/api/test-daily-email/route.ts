@@ -168,12 +168,22 @@ export async function GET(request: NextRequest) {
         hasCronSecret: !!process.env.CRON_SECRET,
         hasResendKey: !!process.env.RESEND_API_KEY,
         fromEmail: FROM_EMAIL,
+        resendKeyPrefix: process.env.RESEND_API_KEY?.substring(0, 10) + "...",
+      },
+      lastEmails: {
+        daily: profile?.last_daily_email_at || "never",
+        weekly: profile?.last_weekly_email_at || "never",
+      },
+      cronInfo: {
+        schedule: "Runs at minute 0 of every hour (e.g., 13:00, 14:00)",
+        nextRun: `${currentHour + 1}:00 ${timezone}`,
+        note: "If your time is 13:43, the cron checks at 13:00 when hour=13 matches preferred hour=13",
       },
       howToFix: [
-        "1. Make sure daily_scorecard is enabled in Settings → Email Reminders",
-        "2. Check if CRON_SECRET is set in Vercel environment variables",
-        "3. Check Vercel dashboard for cron job execution logs",
-        "4. POST to this endpoint to force-send a test email",
+        "1. POST to this endpoint to force-send a test email NOW",
+        "2. Check Vercel dashboard → Functions → Cron jobs for execution logs",
+        "3. Verify CRON_SECRET is set in Vercel environment variables",
+        "4. Check Resend dashboard for email delivery status",
       ],
     });
   } catch (error) {
@@ -247,8 +257,19 @@ export async function POST(request: NextRequest) {
         success: false,
         error: sendError.message,
         details: sendError,
+        possibleCauses: [
+          "1. RESEND_API_KEY may be invalid or expired",
+          "2. Sender domain (willpowered.com) may not be verified in Resend",
+          "3. Rate limiting from Resend",
+        ],
       });
     }
+
+    // Update last_daily_email_at to track this test
+    await supabase
+      .from("profiles")
+      .update({ last_daily_email_at: new Date().toISOString() })
+      .eq("id", user.id);
 
     return NextResponse.json({
       success: true,
@@ -257,6 +278,7 @@ export async function POST(request: NextRequest) {
       subject,
       metricsIncluded: metrics.length,
       checkResend: "Visit resend.com/emails to verify delivery status",
+      note: "If you don't receive the email, check your spam folder",
     });
   } catch (error) {
     console.error("Test daily email error:", error);
