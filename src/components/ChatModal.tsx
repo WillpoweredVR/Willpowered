@@ -163,12 +163,36 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
     }
   }, [isOpen, isAuthenticated, userContext?.userId]);
 
+  // Track the last initialMessage we processed to detect new ones
+  const lastInitialMessageRef = useRef<string | null>(null);
+
   // Send initial message when modal opens with one
+  // If initialMessage changes, start a fresh conversation
   useEffect(() => {
-    if (isOpen && initialMessage && messages.length === 0) {
-      handleSend(initialMessage);
+    if (isOpen && initialMessage) {
+      // Check if this is a new/different initialMessage
+      if (initialMessage !== lastInitialMessageRef.current) {
+        // Start fresh conversation for new context
+        setMessages([]);
+        setCurrentConversationId(null);
+        setUserMessageCount(0);
+        setHasShownNudge(false);
+        lastInitialMessageRef.current = initialMessage;
+        
+        // Small delay to ensure state is cleared before sending
+        setTimeout(() => {
+          handleSend(initialMessage);
+        }, 50);
+      }
     }
   }, [isOpen, initialMessage]);
+
+  // Reset the ref when modal closes
+  useEffect(() => {
+    if (!isOpen) {
+      lastInitialMessageRef.current = null;
+    }
+  }, [isOpen]);
 
   // Auto-save conversation for authenticated users
   const saveConversation = useCallback(async (msgs: Message[]) => {
