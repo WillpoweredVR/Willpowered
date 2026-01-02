@@ -38,6 +38,12 @@ interface SaveScorecardInput {
   categories: CategoryInput[];
 }
 
+interface UpdatePrincipleContextInput {
+  principleText: string;
+  whenTested?: string;
+  howToHold?: string;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const supabase = await createClient();
@@ -53,7 +59,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { toolName, toolInput } = body as { 
       toolName: string; 
-      toolInput: SavePrinciplesInput | SavePurposeInput | SaveGoalInput | SaveScorecardInput;
+      toolInput: SavePrinciplesInput | SavePurposeInput | SaveGoalInput | SaveScorecardInput | UpdatePrincipleContextInput;
     };
 
     switch (toolName) {
@@ -258,6 +264,82 @@ export async function POST(request: NextRequest) {
           message: `Saved ${totalMetrics} metrics across ${newCategories.length} categories`,
           categoriesCount: allCategories.length,
           metricsCount: totalMetrics
+        });
+      }
+
+      case "update_principle_context": {
+        const input = toolInput as UpdatePrincipleContextInput;
+        
+        // Get existing principles
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("principles")
+          .eq("id", user.id)
+          .single();
+
+        interface ExistingPrinciple {
+          id: string;
+          text: string;
+          description?: string;
+          whenTested?: string;
+          howToHold?: string;
+          createdAt: string;
+        }
+
+        const existingPrinciples = (profile?.principles as ExistingPrinciple[] | null) || [];
+        
+        if (existingPrinciples.length === 0) {
+          return NextResponse.json(
+            { error: "No principles found to update" },
+            { status: 404 }
+          );
+        }
+
+        // Find the principle by matching text (case-insensitive, partial match)
+        const searchText = input.principleText.toLowerCase().trim();
+        const principleIndex = existingPrinciples.findIndex(p => {
+          const pText = p.text.toLowerCase().trim();
+          // Match if the texts are similar (either contains the other or starts the same)
+          return pText === searchText || 
+                 pText.includes(searchText) || 
+                 searchText.includes(pText) ||
+                 pText.split(' ').slice(0, 3).join(' ') === searchText.split(' ').slice(0, 3).join(' ');
+        });
+
+        if (principleIndex === -1) {
+          console.error("Could not find principle:", input.principleText);
+          console.error("Available principles:", existingPrinciples.map(p => p.text));
+          return NextResponse.json(
+            { error: `Could not find principle matching: "${input.principleText}"` },
+            { status: 404 }
+          );
+        }
+
+        // Update the principle with new context
+        const updatedPrinciples = [...existingPrinciples];
+        updatedPrinciples[principleIndex] = {
+          ...updatedPrinciples[principleIndex],
+          whenTested: input.whenTested || updatedPrinciples[principleIndex].whenTested,
+          howToHold: input.howToHold || updatedPrinciples[principleIndex].howToHold,
+        };
+
+        const { error: updateError } = await supabase
+          .from("profiles")
+          .update({ principles: updatedPrinciples })
+          .eq("id", user.id);
+
+        if (updateError) {
+          console.error("Error updating principle context:", updateError);
+          return NextResponse.json(
+            { error: "Failed to update principle" },
+            { status: 500 }
+          );
+        }
+
+        return NextResponse.json({ 
+          success: true, 
+          message: `Updated principle: "${updatedPrinciples[principleIndex].text}"`,
+          principle: updatedPrinciples[principleIndex]
         });
       }
 

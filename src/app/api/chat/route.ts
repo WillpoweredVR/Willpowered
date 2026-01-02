@@ -80,7 +80,7 @@ interface UserContext {
 const WILLSON_TOOLS: Anthropic.Tool[] = [
   {
     name: "save_principles",
-    description: "Save the user's principles to their dashboard. Use this when the user confirms they want to save their principles. Each principle should have text (the principle itself), and optionally description, whenTested (situations where it's challenged), and howToHold (how to live up to it).",
+    description: "Save NEW principles to their dashboard. Use this when creating principles during onboarding. Each principle should have text (the principle itself), and optionally description, whenTested (situations where it's challenged), and howToHold (how to live up to it).",
     input_schema: {
       type: "object" as const,
       properties: {
@@ -112,6 +112,28 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
         }
       },
       required: ["principles"]
+    }
+  },
+  {
+    name: "update_principle_context",
+    description: "Update an EXISTING principle with 'when tested' and 'how to hold' context. Use this when deepening a principle the user already has. You MUST provide the exact principle text to match.",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        principleText: {
+          type: "string",
+          description: "The exact text of the existing principle to update (must match exactly or closely)"
+        },
+        whenTested: {
+          type: "string",
+          description: "Specific situations when this principle gets challenged - be concrete and personal to the user"
+        },
+        howToHold: {
+          type: "string",
+          description: "How to live up to this principle in practice - give mental triggers and specific actions"
+        }
+      },
+      required: ["principleText"]
     }
   },
   {
@@ -406,8 +428,18 @@ The goal is a BALANCED scorecard that supports sustainable high performance, not
 
 ### When to Save (use the tools!)
 - **save_purpose**: When they confirm their purpose statement
-- **save_principles**: When they have 3 principles
+- **save_principles**: When creating NEW principles during onboarding
+- **update_principle_context**: When DEEPENING an existing principle with "when tested" and "how to hold" - ALWAYS use this after helping them deepen a principle
 - **save_scorecard**: When metrics are confirmed
+
+### IMPORTANT: Deepening vs Creating Principles
+- User says "deepen my principle" or clicks "Deepen with Willson" → use **update_principle_context**
+- User is in onboarding creating new principles → use **save_principles**
+
+After deepening, you MUST call update_principle_context with:
+- principleText: The exact text of their principle
+- whenTested: The situations you discussed
+- howToHold: The actions/triggers you discussed
 
 ### How to Communicate Saves
 NEVER mention tools, JSON, databases, or technical details.
