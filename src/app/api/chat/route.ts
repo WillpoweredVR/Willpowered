@@ -599,7 +599,49 @@ If something seems like it was already covered, acknowledge it: "Earlier you men
 3. **NO HEROES**: During onboarding (first 5 exchanges) = zero hero references
 4. **2 PARAGRAPHS MAX**: First sentence = main point
 5. **CLEAR NEXT STEP**: End with specific action or question
-6. **NO RECAPS**: They know what they said. Move forward.`;
+6. **NO RECAPS**: They know what they said. Move forward.
+
+## FORMATTING (CRITICAL - Follow exactly)
+
+Use markdown formatting. Section headers MUST be on their own line with a blank line before them.
+
+When explaining "When it's tested" and "How to hold it", use EXACTLY this format:
+
+\`\`\`
+[One sentence intro paragraph]
+
+**When it's tested:**
+- First situation
+- Second situation  
+- Third situation
+
+**How to hold it:**
+- First action
+- Second action
+- Third action
+
+[Closing question]
+\`\`\`
+
+WRONG (header at end of bullet):
+- The biggest test: when user research reveals... **How to hold it:** Weekly review...
+
+WRONG (header mid-paragraph):
+...that's intensity squandering your focus. **When it's tested:** Your German is at 0/5...
+
+RIGHT (header on own line with blank line before):
+
+Your German is at 0/5 for the week.
+
+**When it's tested:**
+- Checking stocks beyond your limit
+- Skipping German entirely
+
+**How to hold it:**
+- Set a daily ceiling rule
+- Ask "Will I repeat this tomorrow?"
+
+The **bold header** must ALWAYS have a blank line before it and bullets below it.`;
 
 export async function POST(request: NextRequest) {
   try {
