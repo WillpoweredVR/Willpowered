@@ -45,6 +45,27 @@ const dayOptions = [
   { value: 6, label: "Saturday" },
 ];
 
+// Hourly time options (cron runs at top of each hour)
+const hourlyTimeOptions = [
+  { value: "06:00", label: "6:00 AM" },
+  { value: "07:00", label: "7:00 AM" },
+  { value: "08:00", label: "8:00 AM" },
+  { value: "09:00", label: "9:00 AM" },
+  { value: "10:00", label: "10:00 AM" },
+  { value: "11:00", label: "11:00 AM" },
+  { value: "12:00", label: "12:00 PM" },
+  { value: "13:00", label: "1:00 PM" },
+  { value: "14:00", label: "2:00 PM" },
+  { value: "15:00", label: "3:00 PM" },
+  { value: "16:00", label: "4:00 PM" },
+  { value: "17:00", label: "5:00 PM" },
+  { value: "18:00", label: "6:00 PM" },
+  { value: "19:00", label: "7:00 PM" },
+  { value: "20:00", label: "8:00 PM" },
+  { value: "21:00", label: "9:00 PM" },
+  { value: "22:00", label: "10:00 PM" },
+];
+
 // Common timezones grouped by region
 const timezoneGroups = [
   {
@@ -670,17 +691,20 @@ export default function SettingsPage() {
                       <div className="flex items-center gap-3">
                         <label className="text-sm text-muted-foreground">Send at</label>
                         <div className="relative">
-                          <input
-                            type="time"
+                          <select
                             value={preferences.daily_scorecard_time}
                             onChange={(e) => handleSelectChange("daily_scorecard_time", e.target.value)}
-                            className="px-3 py-2 pr-2 rounded-lg border border-slate-200 text-sm font-medium text-foreground focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember transition-all appearance-none bg-white cursor-pointer hover:border-slate-300"
-                            style={{ minWidth: '110px' }}
-                          />
+                            className="px-3 py-2 pr-8 rounded-lg border border-slate-200 text-sm font-medium text-foreground focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember transition-all appearance-none bg-white cursor-pointer hover:border-slate-300"
+                            style={{ minWidth: '120px' }}
+                          >
+                            {hourlyTimeOptions.map(option => (
+                              <option key={option.value} value={option.value}>
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                          <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                         </div>
-                        <span className="text-sm text-muted-foreground">
-                          ({formatTimeDisplay(preferences.daily_scorecard_time)})
-                        </span>
                       </div>
                     </motion.div>
                   )}
