@@ -117,7 +117,7 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
   const [currentConversationId, setCurrentConversationId] = useState<string | null>(null);
   const [savingStatus, setSavingStatus] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const supabase = createClient();
   
   // Expose testing helper on window for automation
@@ -297,6 +297,10 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
     const userMessage: Message = { role: "user", content: text };
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
+    // Reset textarea height after sending
+    if (inputRef.current) {
+      inputRef.current.style.height = 'auto';
+    }
     setIsLoading(true);
 
     try {
@@ -738,31 +742,45 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
                   e.preventDefault();
                   handleSend();
                 }}
-                className="flex items-center gap-3 bg-white rounded-xl border p-2"
+                className="flex items-end gap-3 bg-white rounded-xl border p-2"
                 data-testid="chat-form"
               >
-                  <input
+                  <textarea
                     ref={inputRef}
                     id="chat-input"
-                    type="text"
                     value={input}
-                    onChange={(e) => setInput(e.target.value)}
+                    onChange={(e) => {
+                      setInput(e.target.value);
+                      // Auto-resize textarea
+                      e.target.style.height = 'auto';
+                      e.target.style.height = Math.min(e.target.scrollHeight, 150) + 'px';
+                    }}
+                    onKeyDown={(e) => {
+                      // Enter without shift submits, Shift+Enter adds new line
+                      if (e.key === 'Enter' && !e.shiftKey) {
+                        e.preventDefault();
+                        if (input.trim() && !isLoading && !showSignupGate) {
+                          handleSend();
+                        }
+                      }
+                    }}
                     onInput={(e) => {
                       // Support for automation tools that dispatch input events
-                      const target = e.target as HTMLInputElement;
+                      const target = e.target as HTMLTextAreaElement;
                       if (target.value !== input) {
                         setInput(target.value);
                       }
                     }}
                     placeholder="Ask about willpower, habits, purpose..."
-                    className="flex-1 px-3 py-2 bg-transparent border-none outline-none"
+                    className="flex-1 px-3 py-2 bg-transparent border-none outline-none resize-none min-h-[40px] max-h-[150px]"
                     disabled={isLoading || showSignupGate}
                     data-testid="chat-input"
+                    rows={1}
                   />
                   <Button
                     type="submit"
                     disabled={!input.trim() || isLoading || showSignupGate}
-                    className="gradient-ember text-white rounded-lg"
+                    className="gradient-ember text-white rounded-lg flex-shrink-0"
                     data-testid="chat-submit"
                   >
                     {isLoading ? (
