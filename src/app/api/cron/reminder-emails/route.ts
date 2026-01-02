@@ -8,7 +8,7 @@ import type { Scorecard, Principle, WeeklyPrincipleReview } from "@/lib/supabase
 // This route is called by Vercel Cron every hour
 // It checks who should receive daily or weekly emails based on their preferences
 
-const BATCH_SIZE = 20;
+const BATCH_SIZE = 100; // Increased to handle more users
 
 interface EmailPreferences {
   daily_scorecard?: boolean;
@@ -26,6 +26,51 @@ interface ProfileData {
   scorecard: Scorecard | null;
   principles: Principle[] | null;
   principle_reviews: WeeklyPrincipleReview[] | null;
+  last_daily_email_at: string | null;
+  last_weekly_email_at: string | null;
+}
+
+// Check if we already sent daily email today (deduplication)
+function alreadySentDailyToday(lastSentAt: string | null, timezone: string): boolean {
+  if (!lastSentAt) return false;
+  
+  try {
+    const lastSent = new Date(lastSentAt);
+    const now = new Date();
+    
+    // Get today's date in user's timezone
+    const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: timezone });
+    const todayStr = formatter.format(now);
+    const lastSentStr = formatter.format(lastSent);
+    
+    return todayStr === lastSentStr;
+  } catch {
+    return false;
+  }
+}
+
+// Check if we already sent weekly email this week (deduplication)
+function alreadySentWeeklyThisWeek(lastSentAt: string | null, timezone: string): boolean {
+  if (!lastSentAt) return false;
+  
+  try {
+    const lastSent = new Date(lastSentAt);
+    const now = new Date();
+    
+    // Get the week number
+    const getWeekNumber = (d: Date) => {
+      const date = new Date(d);
+      date.setHours(0, 0, 0, 0);
+      date.setDate(date.getDate() + 4 - (date.getDay() || 7));
+      const yearStart = new Date(date.getFullYear(), 0, 1);
+      return Math.ceil((((date.getTime() - yearStart.getTime()) / 86400000) + 1) / 7);
+    };
+    
+    return getWeekNumber(now) === getWeekNumber(lastSent) && 
+           now.getFullYear() === lastSent.getFullYear();
+  } catch {
+    return false;
+  }
 }
 
 // Get the current hour in a user's timezone
@@ -166,21 +211,26 @@ export async function GET(request: NextRequest) {
   );
 
   try {
+    console.log("[CRON] Starting reminder-emails job at", new Date().toISOString());
+    
     // Get all profiles with email preferences set
     const { data: profiles, error: profilesError } = await supabase
       .from("profiles")
-      .select("id, full_name, email_preferences, timezone, purpose_statement, scorecard, principles, principle_reviews")
+      .select("id, full_name, email_preferences, timezone, purpose_statement, scorecard, principles, principle_reviews, last_daily_email_at, last_weekly_email_at")
       .not("email_preferences", "is", null)
       .limit(BATCH_SIZE);
 
     if (profilesError) {
-      console.error("Error fetching profiles:", profilesError);
+      console.error("[CRON] Error fetching profiles:", profilesError);
       return NextResponse.json({ error: "Failed to fetch profiles" }, { status: 500 });
     }
 
     if (!profiles || profiles.length === 0) {
+      console.log("[CRON] No profiles with email preferences found");
       return NextResponse.json({ message: "No profiles with preferences", sent: 0 });
     }
+    
+    console.log(`[CRON] Found ${profiles.length} profiles with email preferences`);
 
     // Get user emails from auth
     const { data: users, error: usersError } = await supabase.auth.admin.listUsers();
@@ -205,124 +255,162 @@ export async function GET(request: NextRequest) {
 
       // Check for daily scorecard email
       if (shouldSendDailyEmail(profile.email_preferences, timezone)) {
-        try {
-          const metrics = calculateMetricProgress(profile.scorecard);
-          
-          // Pick a "focus metric" - rotate based on day of week
-          const dayOfWeek = getCurrentDayInTimezone(timezone);
-          const focusMetric = metrics.length > 0 
-            ? metrics[dayOfWeek % metrics.length]
-            : null;
+        // Deduplication check - don't send if already sent today
+        if (alreadySentDailyToday(profile.last_daily_email_at, timezone)) {
+          console.log(`[CRON] Skipping daily email for ${userEmail} - already sent today`);
+        } else {
+          try {
+            console.log(`[CRON] Attempting to send daily email to ${userEmail}`);
+            
+            const metrics = calculateMetricProgress(profile.scorecard);
+            
+            // Pick a "focus metric" - rotate based on day of week
+            const dayOfWeek = getCurrentDayInTimezone(timezone);
+            const focusMetric = metrics.length > 0 
+              ? metrics[dayOfWeek % metrics.length]
+              : null;
 
-          const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-          // Personalized subject lines
-          const subjects = focusMetric ? [
-            `How did ${focusMetric.name.toLowerCase()} go today?`,
-            `Quick check: ${focusMetric.name}`,
-            `${userName}, ${focusMetric.current}/${focusMetric.target} on ${focusMetric.name}`,
-            `Your daily progress check`,
-          ] : [
-            `Time for your daily check-in, ${userName}`,
-            `How was today?`,
-          ];
-          const subject = subjects[dayOfWeek % subjects.length];
+            // Personalized subject lines
+            const subjects = focusMetric ? [
+              `How did ${focusMetric.name.toLowerCase()} go today?`,
+              `Quick check: ${focusMetric.name}`,
+              `${userName}, ${focusMetric.current}/${focusMetric.target} on ${focusMetric.name}`,
+              `Your daily progress check`,
+            ] : [
+              `Time for your daily check-in, ${userName}`,
+              `How was today?`,
+            ];
+            const subject = subjects[dayOfWeek % subjects.length];
 
-          const { error: sendError } = await resend.emails.send({
-            from: FROM_EMAIL,
-            to: userEmail,
-            subject,
-            react: DailyScorecardEmail({
-              userName,
-              focusMetric,
-              allMetrics: metrics,
-              dayOfWeek: dayNames[dayOfWeek],
-              purposeSnippet: profile.purpose_statement?.slice(0, 50),
-              streak: 0, // Could calculate from checkins
-            }),
-            replyTo: REPLY_TO,
-          });
+            const { error: sendError } = await resend.emails.send({
+              from: FROM_EMAIL,
+              to: userEmail,
+              subject,
+              react: DailyScorecardEmail({
+                userName,
+                focusMetric,
+                allMetrics: metrics,
+                dayOfWeek: dayNames[dayOfWeek],
+                purposeSnippet: profile.purpose_statement?.slice(0, 50),
+                streak: 0,
+              }),
+              replyTo: REPLY_TO,
+            });
 
-          if (sendError) {
-            errors.push(`Daily email to ${userEmail}: ${sendError.message}`);
-          } else {
-            dailySent++;
+            if (sendError) {
+              console.error(`[CRON] Failed to send daily email to ${userEmail}:`, sendError);
+              errors.push(`Daily email to ${userEmail}: ${sendError.message}`);
+            } else {
+              console.log(`[CRON] Successfully sent daily email to ${userEmail}`);
+              dailySent++;
+              
+              // Update last_daily_email_at for deduplication
+              await supabase
+                .from("profiles")
+                .update({ last_daily_email_at: new Date().toISOString() })
+                .eq("id", profile.id);
+            }
+          } catch (e) {
+            console.error(`[CRON] Error sending daily email to ${userEmail}:`, e);
+            errors.push(`Daily email to ${userEmail}: ${e}`);
           }
-        } catch (e) {
-          errors.push(`Daily email to ${userEmail}: ${e}`);
         }
       }
 
       // Check for weekly principles email
       if (shouldSendWeeklyEmail(profile.email_preferences, timezone)) {
-        try {
-          const principles = (profile.principles || []) as Principle[];
-          const reviews = (profile.principle_reviews || []) as WeeklyPrincipleReview[];
+        // Deduplication check - don't send if already sent this week
+        if (alreadySentWeeklyThisWeek(profile.last_weekly_email_at, timezone)) {
+          console.log(`[CRON] Skipping weekly email for ${userEmail} - already sent this week`);
+        } else {
+          try {
+            console.log(`[CRON] Attempting to send weekly email to ${userEmail}`);
+            
+            const principles = (profile.principles || []) as Principle[];
+            const reviews = (profile.principle_reviews || []) as WeeklyPrincipleReview[];
 
-          // Map principles with strength
-          const principlesWithStatus = principles.map(p => ({
-            text: p.text,
-            strength: calculatePrincipleStrength(p, reviews),
-            whenTested: p.whenTested,
-            testedThisWeek: false,
-          }));
+            // Map principles with strength
+            const principlesWithStatus = principles.map(p => ({
+              text: p.text,
+              strength: calculatePrincipleStrength(p, reviews),
+              whenTested: p.whenTested,
+              testedThisWeek: false,
+            }));
 
-          // Pick a focus principle - prioritize ones needing attention or building
-          const focusPrinciple = principlesWithStatus.find(p => 
-            p.strength === 'needs_attention' || p.strength === 'building'
-          ) || principlesWithStatus[0] || null;
+            // Pick a focus principle - prioritize ones needing attention or building
+            const focusPrinciple = principlesWithStatus.find(p => 
+              p.strength === 'needs_attention' || p.strength === 'building'
+            ) || principlesWithStatus[0] || null;
 
-          const strongCount = principlesWithStatus.filter(p => p.strength === 'strong').length;
+            const strongCount = principlesWithStatus.filter(p => p.strength === 'strong').length;
 
-          // Find last review date
-          const lastReview = reviews.sort((a, b) => 
-            new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-          )[0];
+            // Find last review date
+            const lastReview = reviews.sort((a, b) => 
+              new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+            )[0];
 
-          const subjects = focusPrinciple ? [
-            `This week: Was "${focusPrinciple.text.slice(0, 25)}..." tested?`,
-            `Time for your principles review, ${userName}`,
-            `5 minutes to reflect on your week`,
-          ] : [
-            `Weekly principles check, ${userName}`,
-          ];
-          const subject = subjects[Math.floor(Math.random() * subjects.length)];
+            const subjects = focusPrinciple ? [
+              `This week: Was "${focusPrinciple.text.slice(0, 25)}..." tested?`,
+              `Time for your principles review, ${userName}`,
+              `5 minutes to reflect on your week`,
+            ] : [
+              `Weekly principles check, ${userName}`,
+            ];
+            const subject = subjects[Math.floor(Math.random() * subjects.length)];
 
-          const { error: sendError } = await resend.emails.send({
-            from: FROM_EMAIL,
-            to: userEmail,
-            subject,
-            react: WeeklyPrinciplesEmail({
-              userName,
-              focusPrinciple,
-              allPrinciples: principlesWithStatus,
-              lastReviewDate: lastReview?.createdAt,
-              totalPrinciplesStrong: strongCount,
-            }),
-            replyTo: REPLY_TO,
-          });
+            const { error: sendError } = await resend.emails.send({
+              from: FROM_EMAIL,
+              to: userEmail,
+              subject,
+              react: WeeklyPrinciplesEmail({
+                userName,
+                focusPrinciple,
+                allPrinciples: principlesWithStatus,
+                lastReviewDate: lastReview?.createdAt,
+                totalPrinciplesStrong: strongCount,
+              }),
+              replyTo: REPLY_TO,
+            });
 
-          if (sendError) {
-            errors.push(`Weekly email to ${userEmail}: ${sendError.message}`);
-          } else {
-            weeklySent++;
+            if (sendError) {
+              console.error(`[CRON] Failed to send weekly email to ${userEmail}:`, sendError);
+              errors.push(`Weekly email to ${userEmail}: ${sendError.message}`);
+            } else {
+              console.log(`[CRON] Successfully sent weekly email to ${userEmail}`);
+              weeklySent++;
+              
+              // Update last_weekly_email_at for deduplication
+              await supabase
+                .from("profiles")
+                .update({ last_weekly_email_at: new Date().toISOString() })
+                .eq("id", profile.id);
+            }
+          } catch (e) {
+            console.error(`[CRON] Error sending weekly email to ${userEmail}:`, e);
+            errors.push(`Weekly email to ${userEmail}: ${e}`);
           }
-        } catch (e) {
-          errors.push(`Weekly email to ${userEmail}: ${e}`);
         }
       }
     }
 
+    console.log(`[CRON] Completed: ${dailySent} daily, ${weeklySent} weekly emails sent`);
+    
     return NextResponse.json({
       message: "Reminder emails processed",
       dailySent,
       weeklySent,
       errors: errors.length > 0 ? errors : undefined,
       profilesChecked: profiles.length,
+      timestamp: new Date().toISOString(),
     });
   } catch (error) {
-    console.error("Error in reminder email cron:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    console.error("[CRON] Error in reminder email cron:", error);
+    return NextResponse.json({ 
+      error: "Internal server error",
+      details: error instanceof Error ? error.message : "Unknown error",
+    }, { status: 500 });
   }
 }
 
