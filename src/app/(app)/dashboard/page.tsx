@@ -689,7 +689,7 @@ export default function DashboardPage() {
       
       {/* Header */}
       <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg gradient-ember flex items-center justify-center">
@@ -700,21 +700,21 @@ export default function DashboardPage() {
               </span>
             </Link>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               {/* Usage Indicator */}
               <UsageIndicator variant="compact" />
               
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-muted-foreground"
+                className="text-muted-foreground px-2 sm:px-3"
                 onClick={() => {
                   setCoachContext(null);
                   setIsChatOpen(true);
                 }}
               >
-                <Sparkles className="w-4 h-4 mr-2 text-ember" />
-                Willson
+                <Sparkles className="w-4 h-4 sm:mr-2 text-ember" />
+                <span className="hidden sm:inline">Willson</span>
               </Button>
 
               <div className="relative group">
@@ -761,45 +761,47 @@ export default function DashboardPage() {
         </div>
       </header>
 
-      <main className="container mx-auto px-6 py-8 max-w-3xl">
+      <main className="container mx-auto px-4 sm:px-6 py-6 sm:py-8 max-w-3xl">
         {/* Greeting & Journey Progress */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
+          className="mb-6 sm:mb-8"
         >
-          <h1 className="font-serif text-3xl font-bold text-foreground mb-1">
+          <h1 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-1">
             {dayOfWeek}, {formattedDate}
           </h1>
-          <p className="text-muted-foreground mb-4">
+          <p className="text-muted-foreground text-sm sm:text-base mb-4">
             Day {daysOnJourney + 1} of your journey, {firstName}
           </p>
 
-          {/* Journey Steps Progress */}
-          <div className="flex items-center gap-2 p-3 bg-white border border-slate-200 rounded-xl">
-            {journeySteps.map((step, i) => (
-              <div key={step.key} className="flex items-center">
-                <div className={`flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors ${
-                  step.complete 
-                    ? "bg-emerald-100 text-emerald-700" 
-                    : i === completedSteps
-                    ? "bg-amber-100 text-amber-700"
-                    : "bg-slate-100 text-slate-500"
-                }`}>
-                  {step.complete ? (
-                    <Check className="w-4 h-4" />
-                  ) : (
-                    <span className="w-4 h-4 flex items-center justify-center text-xs font-medium">
-                      {i + 1}
-                    </span>
+          {/* Journey Steps Progress - horizontally scrollable on mobile */}
+          <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide">
+            <div className="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-3 bg-white border border-slate-200 rounded-xl min-w-max">
+              {journeySteps.map((step, i) => (
+                <div key={step.key} className="flex items-center">
+                  <div className={`flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 rounded-lg transition-colors ${
+                    step.complete 
+                      ? "bg-emerald-100 text-emerald-700" 
+                      : i === completedSteps
+                      ? "bg-amber-100 text-amber-700"
+                      : "bg-slate-100 text-slate-500"
+                  }`}>
+                    {step.complete ? (
+                      <Check className="w-4 h-4" />
+                    ) : (
+                      <span className="w-4 h-4 flex items-center justify-center text-xs font-medium">
+                        {i + 1}
+                      </span>
+                    )}
+                    <span className="text-xs sm:text-sm font-medium whitespace-nowrap">{step.label}</span>
+                  </div>
+                  {i < journeySteps.length - 1 && (
+                    <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-slate-300 mx-0.5 sm:mx-1 flex-shrink-0" />
                   )}
-                  <span className="text-sm font-medium">{step.label}</span>
                 </div>
-                {i < journeySteps.length - 1 && (
-                  <ChevronRight className="w-4 h-4 text-slate-300 mx-1" />
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </motion.div>
 
@@ -808,13 +810,13 @@ export default function DashboardPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 mb-6"
+          className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-4 sm:p-6 mb-4 sm:mb-6"
         >
           {profile?.purpose_statement ? (
             <>
               {/* Purpose Statement - Main Header */}
               <div className="flex items-start gap-2 group mb-3">
-                <h2 className="font-serif text-2xl font-bold leading-tight">{profile.purpose_statement}</h2>
+                <h2 className="font-serif text-xl sm:text-2xl font-bold leading-tight">{profile.purpose_statement}</h2>
                 <button
                   onClick={() => setEditModal({ isOpen: true, type: "purpose", value: profile.purpose_statement || "" })}
                   className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-white p-1 transition-opacity mt-1 flex-shrink-0"
@@ -888,12 +890,12 @@ export default function DashboardPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-white border border-slate-200 rounded-2xl p-6 mb-6"
+          className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-6 mb-4 sm:mb-6"
         >
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-4">
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-indigo-600" />
-              <span className="text-sm text-muted-foreground uppercase tracking-wide font-medium">
+              <span className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wide font-medium">
                 Step 2 · Principles
               </span>
               <span className="text-xs text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded-full font-medium">
@@ -906,13 +908,13 @@ export default function DashboardPage() {
                   {isReviewDue && (
                     <button
                       onClick={() => setIsPrincipleReviewOpen(true)}
-                      className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition-colors"
+                      className="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 text-xs font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition-colors"
                     >
                       <ClipboardCheck className="w-3.5 h-3.5" />
-                      Weekly Review
+                      <span className="hidden sm:inline">Weekly</span> Review
                     </button>
                   )}
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-xs sm:text-sm text-muted-foreground">
                     {principles.length} principle{principles.length !== 1 ? "s" : ""}
                   </span>
                 </>
@@ -1342,12 +1344,12 @@ export default function DashboardPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="bg-white border border-slate-200 rounded-2xl p-6 mb-6"
+          className="bg-white border border-slate-200 rounded-2xl p-4 sm:p-6 mb-4 sm:mb-6"
         >
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-4">
             <div className="flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-emerald-600" />
-              <span className="text-sm text-muted-foreground uppercase tracking-wide font-medium">
+              <span className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wide font-medium">
                 Step 3 · Scorecard
               </span>
               <span className="text-xs text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-medium">
@@ -1356,9 +1358,9 @@ export default function DashboardPage() {
             </div>
             {weekProgress.total > 0 && (
               <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">Last 7 days</span>
-                <span className={`text-sm font-medium ml-2 ${
+                <Calendar className="w-4 h-4 text-muted-foreground hidden sm:block" />
+                <span className="text-xs sm:text-sm text-muted-foreground">Last 7 days</span>
+                <span className={`text-xs sm:text-sm font-medium ml-1 sm:ml-2 ${
                   weekProgress.percentage >= 70 ? "text-emerald-600" : 
                   weekProgress.percentage >= 40 ? "text-amber-600" : "text-red-600"
                 }`}>
@@ -1410,15 +1412,15 @@ export default function DashboardPage() {
             else if (someLogged) buttonText = "Continue Check-in";
             
             return (
-              <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl p-4 mb-6 text-white">
-                <div className="flex items-center justify-between">
+              <div className="bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 text-white">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-                      <Sparkles className="w-5 h-5" />
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <div>
-                      <h4 className="font-semibold">Daily Check-in</h4>
-                      <p className="text-sm text-white/80">
+                      <h4 className="font-semibold text-sm sm:text-base">Daily Check-in</h4>
+                      <p className="text-xs sm:text-sm text-white/80">
                         {allLogged 
                           ? "✓ All logged for today!" 
                           : `${logged}/${total} metrics logged today`}
@@ -1427,7 +1429,8 @@ export default function DashboardPage() {
                   </div>
                   <Button 
                     onClick={() => setIsCheckinOpen(true)}
-                    className="bg-white text-emerald-600 hover:bg-white/90"
+                    className="bg-white text-emerald-600 hover:bg-white/90 w-full sm:w-auto"
+                    size="sm"
                   >
                     <Sparkles className="w-4 h-4 mr-2" />
                     {buttonText}

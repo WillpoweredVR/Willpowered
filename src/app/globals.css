@@ -203,6 +203,15 @@
   .gradient-warm {
     background: linear-gradient(180deg, var(--cream) 0%, oklch(0.95 0.01 55) 100%);
   }
+  
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Smooth scrolling */
