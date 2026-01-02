@@ -7,7 +7,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   User, Mail, CreditCard, Bell, Trash2, Loader2, ChevronRight, LogOut, Shield, Download,
-  Clock, Sun, Moon, Calendar, BarChart3, CalendarDays, Check, Sparkles, ArrowLeft, Camera
+  Clock, Calendar, BarChart3, CalendarDays, Check, Sparkles, ArrowLeft, Camera,
+  Globe, ChevronDown
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
@@ -37,21 +38,87 @@ const defaultPreferences: EmailPreferences = {
   weekly_principles_day: 0,
 };
 
-const timeOptions = [
-  { value: "06:00", label: "6 AM", icon: Sun },
-  { value: "08:00", label: "8 AM", icon: Sun },
-  { value: "12:00", label: "12 PM", icon: Sun },
-  { value: "18:00", label: "6 PM", icon: Moon },
-  { value: "20:00", label: "8 PM", icon: Moon },
-  { value: "21:00", label: "9 PM", icon: Moon },
-];
-
 const dayOptions = [
   { value: 0, label: "Sunday" },
   { value: 1, label: "Monday" },
   { value: 5, label: "Friday" },
   { value: 6, label: "Saturday" },
 ];
+
+// Common timezones grouped by region
+const timezoneGroups = [
+  {
+    label: "Americas",
+    zones: [
+      { value: "America/New_York", label: "Eastern Time (ET)", city: "New York" },
+      { value: "America/Chicago", label: "Central Time (CT)", city: "Chicago" },
+      { value: "America/Denver", label: "Mountain Time (MT)", city: "Denver" },
+      { value: "America/Los_Angeles", label: "Pacific Time (PT)", city: "Los Angeles" },
+      { value: "America/Anchorage", label: "Alaska Time", city: "Anchorage" },
+      { value: "Pacific/Honolulu", label: "Hawaii Time", city: "Honolulu" },
+      { value: "America/Toronto", label: "Eastern Time (ET)", city: "Toronto" },
+      { value: "America/Vancouver", label: "Pacific Time (PT)", city: "Vancouver" },
+      { value: "America/Sao_Paulo", label: "Brasília Time", city: "São Paulo" },
+      { value: "America/Mexico_City", label: "Central Time", city: "Mexico City" },
+    ]
+  },
+  {
+    label: "Europe & Africa",
+    zones: [
+      { value: "Europe/London", label: "Greenwich Mean Time (GMT)", city: "London" },
+      { value: "Europe/Paris", label: "Central European (CET)", city: "Paris" },
+      { value: "Europe/Berlin", label: "Central European (CET)", city: "Berlin" },
+      { value: "Europe/Amsterdam", label: "Central European (CET)", city: "Amsterdam" },
+      { value: "Europe/Rome", label: "Central European (CET)", city: "Rome" },
+      { value: "Europe/Madrid", label: "Central European (CET)", city: "Madrid" },
+      { value: "Europe/Zurich", label: "Central European (CET)", city: "Zurich" },
+      { value: "Europe/Stockholm", label: "Central European (CET)", city: "Stockholm" },
+      { value: "Europe/Helsinki", label: "Eastern European (EET)", city: "Helsinki" },
+      { value: "Europe/Moscow", label: "Moscow Time", city: "Moscow" },
+      { value: "Africa/Johannesburg", label: "South Africa Time", city: "Johannesburg" },
+      { value: "Africa/Cairo", label: "Eastern European (EET)", city: "Cairo" },
+    ]
+  },
+  {
+    label: "Asia & Pacific",
+    zones: [
+      { value: "Asia/Dubai", label: "Gulf Standard Time", city: "Dubai" },
+      { value: "Asia/Kolkata", label: "India Standard Time", city: "Mumbai" },
+      { value: "Asia/Bangkok", label: "Indochina Time", city: "Bangkok" },
+      { value: "Asia/Singapore", label: "Singapore Time", city: "Singapore" },
+      { value: "Asia/Hong_Kong", label: "Hong Kong Time", city: "Hong Kong" },
+      { value: "Asia/Shanghai", label: "China Standard Time", city: "Shanghai" },
+      { value: "Asia/Tokyo", label: "Japan Standard Time", city: "Tokyo" },
+      { value: "Asia/Seoul", label: "Korea Standard Time", city: "Seoul" },
+      { value: "Australia/Sydney", label: "Australian Eastern", city: "Sydney" },
+      { value: "Australia/Melbourne", label: "Australian Eastern", city: "Melbourne" },
+      { value: "Australia/Perth", label: "Australian Western", city: "Perth" },
+      { value: "Pacific/Auckland", label: "New Zealand Time", city: "Auckland" },
+    ]
+  }
+];
+
+// Helper to format time for display
+const formatTimeDisplay = (time24: string): string => {
+  const [hours, minutes] = time24.split(':').map(Number);
+  const period = hours >= 12 ? 'PM' : 'AM';
+  const hours12 = hours % 12 || 12;
+  return `${hours12}:${minutes.toString().padStart(2, '0')} ${period}`;
+};
+
+// Helper to get current time in timezone
+const getCurrentTimeInTimezone = (timezone: string): string => {
+  try {
+    return new Date().toLocaleTimeString('en-US', { 
+      timeZone: timezone,
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    });
+  } catch {
+    return '';
+  }
+};
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -63,8 +130,11 @@ export default function SettingsPage() {
   const [isUploadingAvatar, setIsUploadingAvatar] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [preferences, setPreferences] = useState<EmailPreferences>(defaultPreferences);
+  const [timezone, setTimezone] = useState("America/New_York");
+  const [showTimezoneDropdown, setShowTimezoneDropdown] = useState(false);
   const [showSaved, setShowSaved] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const timezoneRef = useRef<HTMLDivElement>(null);
   const { status, isPro, isTrialing, periodEndsAt, openPortal, isLoading: subLoading } = useSubscription();
   const supabase = createClient();
 
@@ -79,7 +149,7 @@ export default function SettingsPage() {
 
       const { data: profile } = await supabase
         .from("profiles")
-        .select("full_name, email_preferences, avatar_url")
+        .select("full_name, email_preferences, avatar_url, timezone")
         .eq("id", authUser.id)
         .single();
 
@@ -91,6 +161,7 @@ export default function SettingsPage() {
       });
       setFullName(profile?.full_name || "");
       setAvatarUrl(profile?.avatar_url || null);
+      setTimezone(profile?.timezone || "America/New_York");
       
       if (profile?.email_preferences) {
         setPreferences({
@@ -104,6 +175,17 @@ export default function SettingsPage() {
 
     fetchUser();
   }, [router, supabase]);
+
+  // Close timezone dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (timezoneRef.current && !timezoneRef.current.contains(event.target as Node)) {
+        setShowTimezoneDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleAvatarUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -246,6 +328,37 @@ export default function SettingsPage() {
 
     setShowSaved(true);
     setTimeout(() => setShowSaved(false), 2000);
+  };
+
+  const saveTimezone = async (newTimezone: string) => {
+    const { data: { user: authUser } } = await supabase.auth.getUser();
+
+    if (authUser) {
+      const { error } = await supabase
+        .from("profiles")
+        .update({ timezone: newTimezone })
+        .eq("id", authUser.id);
+      
+      if (error) {
+        console.error("Failed to save timezone:", error);
+        alert(`Failed to save timezone: ${error.message}`);
+        return;
+      }
+    }
+
+    setTimezone(newTimezone);
+    setShowTimezoneDropdown(false);
+    setShowSaved(true);
+    setTimeout(() => setShowSaved(false), 2000);
+  };
+
+  // Get the display label for current timezone
+  const getTimezoneLabel = (tz: string): string => {
+    for (const group of timezoneGroups) {
+      const zone = group.zones.find(z => z.value === tz);
+      if (zone) return `${zone.city} (${zone.label})`;
+    }
+    return tz;
   };
 
   // Get initials for avatar fallback
@@ -454,6 +567,66 @@ export default function SettingsPage() {
             Email Reminders
           </h2>
 
+          {/* Timezone Selector */}
+          <div className="bg-white rounded-xl border border-slate-200 mb-4" ref={timezoneRef}>
+            <div className="p-5">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-5 h-5 text-slate-500" />
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-foreground">Time Zone</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Currently {getCurrentTimeInTimezone(timezone)}
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setShowTimezoneDropdown(!showTimezoneDropdown)}
+                  className="flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all text-sm text-foreground"
+                >
+                  <span className="max-w-[180px] truncate">{getTimezoneLabel(timezone).split(' (')[0]}</span>
+                  <ChevronDown className={`w-4 h-4 text-slate-400 transition-transform ${showTimezoneDropdown ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+              
+              {showTimezoneDropdown && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-4 pt-4 border-t border-slate-100"
+                >
+                  <div className="max-h-64 overflow-y-auto space-y-4">
+                    {timezoneGroups.map((group) => (
+                      <div key={group.label}>
+                        <div className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">
+                          {group.label}
+                        </div>
+                        <div className="space-y-1">
+                          {group.zones.map((zone) => (
+                            <button
+                              key={zone.value}
+                              onClick={() => saveTimezone(zone.value)}
+                              className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-all ${
+                                timezone === zone.value
+                                  ? "bg-ember/10 text-ember font-medium"
+                                  : "hover:bg-slate-50 text-foreground"
+                              }`}
+                            >
+                              <span className="font-medium">{zone.city}</span>
+                              <span className="text-muted-foreground ml-2 text-xs">{zone.label}</span>
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </div>
+          </div>
+
           {/* Daily Scorecard */}
           <div className="bg-white rounded-xl border border-slate-200 mb-4">
             <div className="p-5">
@@ -492,29 +665,22 @@ export default function SettingsPage() {
                     <motion.div 
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
-                      className="mt-3 pt-3 border-t border-slate-100"
+                      className="mt-4 pt-4 border-t border-slate-100"
                     >
-                      <label className="text-xs font-medium text-slate-500 flex items-center gap-1 mb-2">
-                        <Clock className="w-3 h-3" />
-                        SEND AT
-                      </label>
-                      <div className="flex flex-wrap gap-1.5">
-                        {timeOptions.map((option) => {
-                          const isSelected = preferences.daily_scorecard_time === option.value;
-                          return (
-                            <button
-                              key={option.value}
-                              onClick={() => handleSelectChange("daily_scorecard_time", option.value)}
-                              className={`px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
-                                isSelected
-                                  ? "bg-ember text-white"
-                                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                              }`}
-                            >
-                              {option.label}
-                            </button>
-                          );
-                        })}
+                      <div className="flex items-center gap-3">
+                        <label className="text-sm text-muted-foreground">Send at</label>
+                        <div className="relative">
+                          <input
+                            type="time"
+                            value={preferences.daily_scorecard_time}
+                            onChange={(e) => handleSelectChange("daily_scorecard_time", e.target.value)}
+                            className="px-3 py-2 pr-2 rounded-lg border border-slate-200 text-sm font-medium text-foreground focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember transition-all appearance-none bg-white cursor-pointer hover:border-slate-300"
+                            style={{ minWidth: '110px' }}
+                          />
+                        </div>
+                        <span className="text-sm text-muted-foreground">
+                          ({formatTimeDisplay(preferences.daily_scorecard_time)})
+                        </span>
                       </div>
                     </motion.div>
                   )}
@@ -561,29 +727,29 @@ export default function SettingsPage() {
                     <motion.div 
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
-                      className="mt-3 pt-3 border-t border-violet-100"
+                      className="mt-4 pt-4 border-t border-violet-100"
                     >
-                      <label className="text-xs font-medium text-slate-500 flex items-center gap-1 mb-2">
-                        <Calendar className="w-3 h-3" />
-                        SEND ON
-                      </label>
-                      <div className="flex flex-wrap gap-1.5">
-                        {dayOptions.map((option) => {
-                          const isSelected = preferences.weekly_principles_day === option.value;
-                          return (
-                            <button
-                              key={option.value}
-                              onClick={() => handleSelectChange("weekly_principles_day", option.value)}
-                              className={`px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
-                                isSelected
-                                  ? "bg-violet-600 text-white"
-                                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                              }`}
-                            >
-                              {option.label}
-                            </button>
-                          );
-                        })}
+                      <div className="flex items-center gap-3">
+                        <label className="text-sm text-muted-foreground">Send on</label>
+                        <div className="flex gap-1.5">
+                          {dayOptions.map((option) => {
+                            const isSelected = preferences.weekly_principles_day === option.value;
+                            return (
+                              <button
+                                key={option.value}
+                                onClick={() => handleSelectChange("weekly_principles_day", option.value)}
+                                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
+                                  isSelected
+                                    ? "bg-violet-600 text-white"
+                                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                                }`}
+                              >
+                                {option.label}
+                              </button>
+                            );
+                          })}
+                        </div>
+                        <span className="text-sm text-muted-foreground">at 9 AM</span>
                       </div>
                     </motion.div>
                   )}
