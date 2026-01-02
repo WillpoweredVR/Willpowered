@@ -93,7 +93,11 @@ export async function GET(request: NextRequest) {
 
     if (authError || !user) {
       return NextResponse.json(
-        { error: "Unauthorized - please login first" },
+        { 
+          error: "Unauthorized - please login first",
+          authError: authError?.message,
+          hint: "Make sure you're logged in and cookies are being sent"
+        },
         { status: 401 }
       );
     }
@@ -101,9 +105,18 @@ export async function GET(request: NextRequest) {
     // Get profile with email preferences
     const { data: profile, error: profileError } = await supabase
       .from("profiles")
-      .select("full_name, email_preferences, timezone, purpose_statement, scorecard")
+      .select("*")
       .eq("id", user.id)
       .single();
+    
+    // Debug: Check if profile exists and what data it has
+    const profileDebug = {
+      profileExists: !!profile,
+      profileError: profileError?.message,
+      profileErrorCode: profileError?.code,
+      columnsReturned: profile ? Object.keys(profile) : [],
+      rawProfileData: profile,
+    };
 
     const timezone = profile?.timezone || "America/New_York";
     const currentHour = getCurrentHourInTimezone(timezone);
@@ -119,6 +132,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({
       status: "diagnostic",
       user: {
+        id: user.id,
         email: user.email,
         name: profile?.full_name || "Not set",
         timezone,
@@ -146,8 +160,10 @@ export async function GET(request: NextRequest) {
       },
       scorecard: {
         hasScorecard: !!profile?.scorecard,
+        hasScorecardCategories: !!(profile?.scorecard as Scorecard)?.categories?.length,
         metrics: calculateMetricProgress(profile?.scorecard || null),
       },
+      profileDebug,
       environment: {
         hasCronSecret: !!process.env.CRON_SECRET,
         hasResendKey: !!process.env.RESEND_API_KEY,
