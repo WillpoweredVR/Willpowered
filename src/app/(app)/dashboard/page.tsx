@@ -114,6 +114,9 @@ export default function DashboardPage() {
   // Weekly principles review
   const [isPrincipleReviewOpen, setIsPrincipleReviewOpen] = useState(false);
   const [principleReviews, setPrincipleReviews] = useState<WeeklyPrincipleReview[]>([]);
+  
+  // Admin status
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const today = getToday();
   const last7Days = useMemo(() => getLast7Days(), []);
@@ -182,6 +185,12 @@ export default function DashboardPage() {
         };
         setScorecard(emptyScorecard);
       }
+      
+      // Check admin status
+      const adminEmails = ["colin.robertson3@gmail.com", "colin@willpowered.com"];
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const isAdminUser = (profileData as any).is_admin === true || adminEmails.includes(user?.email || "");
+      setIsAdmin(isAdminUser);
     }
 
     const { data: goalData } = await supabase
@@ -740,6 +749,15 @@ export default function DashboardPage() {
                   )}
                 </Button>
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                  {isAdmin && (
+                    <Link
+                      href="/admin"
+                      className="flex items-center gap-2 px-4 py-2 text-sm text-ember hover:bg-ember/5 font-medium"
+                    >
+                      <Shield className="w-4 h-4" />
+                      Admin
+                    </Link>
+                  )}
                   <Link
                     href="/settings"
                     className="flex items-center gap-2 px-4 py-2 text-sm text-foreground hover:bg-slate-50"
