@@ -10,10 +10,12 @@ import {
   Shield,
   Loader2,
   ArrowRight,
-  Sparkles,
   Mail,
   CreditCard,
   MessageSquare,
+  TrendingUp,
+  Crown,
+  Calendar,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -25,66 +27,23 @@ const ADMIN_EMAILS = [
   "colin@willpowered.com",
 ];
 
-interface AdminSection {
-  title: string;
-  description: string;
-  href: string;
-  icon: React.ElementType;
-  color: string;
+interface Stats {
+  totalUsers: number;
+  proUsers: number;
+  totalConversations: number;
+  conversationsToday: number;
+  activeTrials: number;
 }
-
-const adminSections: AdminSection[] = [
-  {
-    title: "Analytics",
-    description: "View metrics, funnels, and conversion rates from PostHog",
-    href: "/admin/analytics",
-    icon: BarChart3,
-    color: "bg-blue-500",
-  },
-  {
-    title: "Users",
-    description: "View and manage user accounts",
-    href: "/admin/users",
-    icon: Users,
-    color: "bg-emerald-500",
-  },
-  {
-    title: "Conversations",
-    description: "Review AI coach conversations",
-    href: "/admin/conversations",
-    icon: MessageSquare,
-    color: "bg-purple-500",
-  },
-  {
-    title: "Subscriptions",
-    description: "Manage Stripe subscriptions and billing",
-    href: "/admin/subscriptions",
-    icon: CreditCard,
-    color: "bg-amber-500",
-  },
-  {
-    title: "Email Logs",
-    description: "View sent emails and delivery status",
-    href: "/admin/emails",
-    icon: Mail,
-    color: "bg-rose-500",
-  },
-  {
-    title: "Settings",
-    description: "Configure app settings and feature flags",
-    href: "/admin/settings",
-    icon: Settings,
-    color: "bg-slate-500",
-  },
-];
 
 export default function AdminDashboard() {
   const router = useRouter();
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
   const [userEmail, setUserEmail] = useState<string | null>(null);
+  const [stats, setStats] = useState<Stats | null>(null);
+  const [isLoadingStats, setIsLoadingStats] = useState(true);
 
   useEffect(() => {
-    async function checkAdmin() {
+    async function checkAdminAndLoadStats() {
       const supabase = createClient();
       const { data: { user } } = await supabase.auth.getUser();
 
@@ -111,10 +70,41 @@ export default function AdminDashboard() {
 
       if (!hasAdminAccess) {
         router.push("/dashboard");
+        return;
       }
+
+      // Load stats
+      const [profilesResult, conversationsResult] = await Promise.all([
+        supabase.from("profiles").select("id, subscription_status, subscription_trial_end"),
+        supabase.from("conversations").select("id, updated_at"),
+      ]);
+
+      const profiles = profilesResult.data || [];
+      const conversations = conversationsResult.data || [];
+
+      const today = new Date().toDateString();
+      const conversationsToday = conversations.filter(c => 
+        new Date(c.updated_at).toDateString() === today
+      ).length;
+
+      const activeTrials = profiles.filter(p => 
+        p.subscription_status === "trialing" && 
+        p.subscription_trial_end && 
+        new Date(p.subscription_trial_end) > new Date()
+      ).length;
+
+      setStats({
+        totalUsers: profiles.length,
+        proUsers: profiles.filter(p => p.subscription_status === "active").length,
+        totalConversations: conversations.length,
+        conversationsToday,
+        activeTrials,
+      });
+
+      setIsLoadingStats(false);
     }
 
-    checkAdmin();
+    checkAdminAndLoadStats();
   }, [router]);
 
   if (isAdmin === null) {
@@ -147,6 +137,54 @@ export default function AdminDashboard() {
     );
   }
 
+  const adminSections = [
+    {
+      title: "Users",
+      description: "View and manage user accounts",
+      href: "/admin/users",
+      icon: Users,
+      color: "bg-emerald-500",
+      stat: stats ? `${stats.totalUsers} users` : undefined,
+    },
+    {
+      title: "Conversations",
+      description: "Review AI coach conversations",
+      href: "/admin/conversations",
+      icon: MessageSquare,
+      color: "bg-purple-500",
+      stat: stats ? `${stats.totalConversations} total` : undefined,
+    },
+    {
+      title: "Subscriptions",
+      description: "Manage Stripe subscriptions and billing",
+      href: "/admin/subscriptions",
+      icon: CreditCard,
+      color: "bg-amber-500",
+      stat: stats ? `${stats.proUsers} pro` : undefined,
+    },
+    {
+      title: "Analytics",
+      description: "View metrics, funnels, and conversion rates",
+      href: "/admin/analytics",
+      icon: BarChart3,
+      color: "bg-blue-500",
+    },
+    {
+      title: "Email Logs",
+      description: "View sent emails and delivery status",
+      href: "/admin/emails",
+      icon: Mail,
+      color: "bg-rose-500",
+    },
+    {
+      title: "Settings",
+      description: "Configure app settings and feature flags",
+      href: "/admin/settings",
+      icon: Settings,
+      color: "bg-slate-500",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-cream">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -176,40 +214,62 @@ export default function AdminDashboard() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8"
+          className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-8"
         >
-          <div className="bg-white rounded-2xl border border-slate-200 p-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-emerald-600" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">Pro</p>
-                <p className="text-sm text-muted-foreground">Account Status</p>
-              </div>
+          <div className="bg-white rounded-2xl border border-slate-200 p-5">
+            <div className="flex items-center gap-2 text-muted-foreground text-sm mb-1">
+              <Users className="w-4 h-4" />
+              Total Users
             </div>
+            {isLoadingStats ? (
+              <Loader2 className="w-5 h-5 animate-spin text-slate-300 mt-1" />
+            ) : (
+              <p className="text-3xl font-bold text-foreground">{stats?.totalUsers || 0}</p>
+            )}
           </div>
-          <div className="bg-white rounded-2xl border border-slate-200 p-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center">
-                <Shield className="w-5 h-5 text-blue-600" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">Admin</p>
-                <p className="text-sm text-muted-foreground">Access Level</p>
-              </div>
+          <div className="bg-white rounded-2xl border border-slate-200 p-5">
+            <div className="flex items-center gap-2 text-muted-foreground text-sm mb-1">
+              <Crown className="w-4 h-4 text-amber-500" />
+              Pro Users
             </div>
+            {isLoadingStats ? (
+              <Loader2 className="w-5 h-5 animate-spin text-slate-300 mt-1" />
+            ) : (
+              <p className="text-3xl font-bold text-emerald-600">{stats?.proUsers || 0}</p>
+            )}
           </div>
-          <div className="bg-white rounded-2xl border border-slate-200 p-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center">
-                <Settings className="w-5 h-5 text-amber-600" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-foreground">Full</p>
-                <p className="text-sm text-muted-foreground">Customization</p>
-              </div>
+          <div className="bg-white rounded-2xl border border-slate-200 p-5">
+            <div className="flex items-center gap-2 text-muted-foreground text-sm mb-1">
+              <Calendar className="w-4 h-4 text-blue-500" />
+              Active Trials
             </div>
+            {isLoadingStats ? (
+              <Loader2 className="w-5 h-5 animate-spin text-slate-300 mt-1" />
+            ) : (
+              <p className="text-3xl font-bold text-blue-600">{stats?.activeTrials || 0}</p>
+            )}
+          </div>
+          <div className="bg-white rounded-2xl border border-slate-200 p-5">
+            <div className="flex items-center gap-2 text-muted-foreground text-sm mb-1">
+              <MessageSquare className="w-4 h-4 text-purple-500" />
+              Conversations
+            </div>
+            {isLoadingStats ? (
+              <Loader2 className="w-5 h-5 animate-spin text-slate-300 mt-1" />
+            ) : (
+              <p className="text-3xl font-bold text-foreground">{stats?.totalConversations || 0}</p>
+            )}
+          </div>
+          <div className="bg-white rounded-2xl border border-slate-200 p-5">
+            <div className="flex items-center gap-2 text-muted-foreground text-sm mb-1">
+              <TrendingUp className="w-4 h-4 text-emerald-500" />
+              Today
+            </div>
+            {isLoadingStats ? (
+              <Loader2 className="w-5 h-5 animate-spin text-slate-300 mt-1" />
+            ) : (
+              <p className="text-3xl font-bold text-emerald-600">{stats?.conversationsToday || 0}</p>
+            )}
           </div>
         </motion.div>
 
@@ -223,7 +283,7 @@ export default function AdminDashboard() {
             Admin Tools
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {adminSections.map((section, index) => (
+            {adminSections.map((section) => (
               <Link
                 key={section.href}
                 href={section.href}
@@ -234,9 +294,16 @@ export default function AdminDashboard() {
                     <section.icon className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-foreground group-hover:text-ember transition-colors">
-                      {section.title}
-                    </h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-semibold text-foreground group-hover:text-ember transition-colors">
+                        {section.title}
+                      </h3>
+                      {section.stat && (
+                        <span className="text-xs text-muted-foreground bg-slate-100 px-2 py-0.5 rounded-full">
+                          {section.stat}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-sm text-muted-foreground mt-1">
                       {section.description}
                     </p>
