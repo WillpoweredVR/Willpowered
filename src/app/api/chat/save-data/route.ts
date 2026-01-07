@@ -44,6 +44,38 @@ interface UpdatePrincipleContextInput {
   howToHold?: string;
 }
 
+interface Task {
+  id: string;
+  title: string;
+  description?: string;
+  metricId?: string;
+  metricName?: string;
+  status: "pending" | "in_progress" | "completed";
+  priority: "low" | "medium" | "high";
+  dueDate?: string;
+  createdAt: string;
+  completedAt?: string;
+  suggestedBy: "user" | "willson";
+}
+
+interface CreateTaskInput {
+  title: string;
+  description?: string;
+  metricId?: string;
+  metricName?: string;
+  priority?: "low" | "medium" | "high";
+  dueDate?: string;
+}
+
+interface CompleteTaskInput {
+  taskTitle: string;
+}
+
+interface GetTasksInput {
+  status?: "all" | "pending" | "in_progress" | "completed";
+  metricId?: string;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const supabase = await createClient();
@@ -340,6 +372,139 @@ export async function POST(request: NextRequest) {
           success: true, 
           message: `Updated principle: "${updatedPrinciples[principleIndex].text}"`,
           principle: updatedPrinciples[principleIndex]
+        });
+      }
+
+      case "create_task": {
+        const input = toolInput as CreateTaskInput;
+        
+        // Get existing tasks
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("tasks")
+          .eq("id", user.id)
+          .single();
+
+        const existingTasks = (profile?.tasks as Task[] | null) || [];
+        
+        // Create new task
+        const newTask: Task = {
+          id: `task-${Date.now()}`,
+          title: input.title,
+          description: input.description,
+          metricId: input.metricId,
+          metricName: input.metricName,
+          status: "pending",
+          priority: input.priority || "medium",
+          dueDate: input.dueDate,
+          createdAt: new Date().toISOString(),
+          suggestedBy: "willson",
+        };
+
+        const updatedTasks = [...existingTasks, newTask];
+
+        const { error: updateError } = await supabase
+          .from("profiles")
+          .update({ tasks: updatedTasks })
+          .eq("id", user.id);
+
+        if (updateError) {
+          console.error("Error creating task:", updateError);
+          return NextResponse.json(
+            { error: "Failed to create task" },
+            { status: 500 }
+          );
+        }
+
+        return NextResponse.json({ 
+          success: true, 
+          message: `Created task: "${newTask.title}"`,
+          task: newTask
+        });
+      }
+
+      case "complete_task": {
+        const input = toolInput as CompleteTaskInput;
+        
+        // Get existing tasks
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("tasks")
+          .eq("id", user.id)
+          .single();
+
+        const existingTasks = (profile?.tasks as Task[] | null) || [];
+        
+        // Find task by title (fuzzy match)
+        const searchTitle = input.taskTitle.toLowerCase().trim();
+        const taskIndex = existingTasks.findIndex(t => {
+          const tTitle = t.title.toLowerCase().trim();
+          return tTitle === searchTitle || 
+                 tTitle.includes(searchTitle) || 
+                 searchTitle.includes(tTitle);
+        });
+
+        if (taskIndex === -1) {
+          return NextResponse.json(
+            { error: `Could not find task matching: "${input.taskTitle}"` },
+            { status: 404 }
+          );
+        }
+
+        // Mark as completed
+        const updatedTasks = [...existingTasks];
+        updatedTasks[taskIndex] = {
+          ...updatedTasks[taskIndex],
+          status: "completed",
+          completedAt: new Date().toISOString(),
+        };
+
+        const { error: updateError } = await supabase
+          .from("profiles")
+          .update({ tasks: updatedTasks })
+          .eq("id", user.id);
+
+        if (updateError) {
+          console.error("Error completing task:", updateError);
+          return NextResponse.json(
+            { error: "Failed to complete task" },
+            { status: 500 }
+          );
+        }
+
+        return NextResponse.json({ 
+          success: true, 
+          message: `Completed task: "${updatedTasks[taskIndex].title}"`,
+          task: updatedTasks[taskIndex]
+        });
+      }
+
+      case "get_tasks": {
+        const input = toolInput as GetTasksInput;
+        
+        // Get tasks
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("tasks")
+          .eq("id", user.id)
+          .single();
+
+        let tasks = (profile?.tasks as Task[] | null) || [];
+        
+        // Filter by status
+        if (input.status && input.status !== "all") {
+          tasks = tasks.filter(t => t.status === input.status);
+        }
+        
+        // Filter by metric
+        if (input.metricId) {
+          tasks = tasks.filter(t => t.metricId === input.metricId);
+        }
+
+        return NextResponse.json({ 
+          success: true, 
+          tasks,
+          count: tasks.length
         });
       }
 

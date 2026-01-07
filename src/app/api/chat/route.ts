@@ -220,6 +220,74 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
       },
       required: ["categories"]
     }
+  },
+  {
+    name: "create_task",
+    description: "Create a task linked to a scorecard metric. Use when the user asks for help with a specific metric or needs actionable steps to improve their performance. Tasks should be concrete, time-bound, and directly help improve the linked metric.",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        title: {
+          type: "string",
+          description: "Clear, actionable task title (e.g., 'Morning workout before checking email')"
+        },
+        description: {
+          type: "string",
+          description: "Optional details about how to complete the task"
+        },
+        metricId: {
+          type: "string",
+          description: "The ID of the scorecard metric this task helps improve (e.g., 'workout', 'sleep', 'deep-work')"
+        },
+        metricName: {
+          type: "string",
+          description: "The name of the metric for display purposes"
+        },
+        priority: {
+          type: "string",
+          enum: ["low", "medium", "high"],
+          description: "Task priority level"
+        },
+        dueDate: {
+          type: "string",
+          description: "Optional due date in YYYY-MM-DD format"
+        }
+      },
+      required: ["title"]
+    }
+  },
+  {
+    name: "complete_task",
+    description: "Mark a task as completed. Use when the user reports they've finished a task.",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        taskTitle: {
+          type: "string",
+          description: "The title of the task to mark as completed (must match closely)"
+        }
+      },
+      required: ["taskTitle"]
+    }
+  },
+  {
+    name: "get_tasks",
+    description: "Retrieve the user's current tasks. Use to see what tasks are pending or in progress before suggesting new ones.",
+    input_schema: {
+      type: "object" as const,
+      properties: {
+        status: {
+          type: "string",
+          enum: ["all", "pending", "in_progress", "completed"],
+          description: "Filter by task status"
+        },
+        metricId: {
+          type: "string",
+          description: "Optional: filter by specific metric"
+        }
+      },
+      required: []
+    }
   }
 ];
 
