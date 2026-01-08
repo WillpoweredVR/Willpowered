@@ -57,12 +57,27 @@ interface Task {
   description?: string;
   metricId?: string;
   metricName?: string;
-  status: "pending" | "in_progress" | "completed";
-  priority: "low" | "medium" | "high";
+  status: "in_progress" | "completed";
   dueDate?: string;
+  recurrence?: "once" | "daily" | "weekly" | "monthly";
   createdAt: string;
   completedAt?: string;
   suggestedBy?: "user" | "willson";
+}
+
+// Helper to get urgency based on due date
+function getTaskUrgency(dueDate?: string): "overdue" | "today" | "soon" | "later" | "none" {
+  if (!dueDate) return "none";
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const due = new Date(dueDate);
+  due.setHours(0, 0, 0, 0);
+  const diffDays = Math.floor((due.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+  
+  if (diffDays < 0) return "overdue";
+  if (diffDays === 0) return "today";
+  if (diffDays <= 7) return "soon";
+  return "later";
 }
 
 // Helper to get today's date in ISO format
@@ -623,19 +638,17 @@ export default function DashboardPage() {
     return tasks.filter(t => t.metricId === metricId && t.status !== "completed");
   };
 
-  // Get top priority tasks for "Today's Focus"
+  // Get top priority tasks for "Today's Focus" - sorted by urgency (due date)
   const focusTasks = useMemo(() => {
-    const today = new Date().toISOString().split('T')[0];
+    const urgencyOrder = { overdue: 0, today: 1, soon: 2, later: 3, none: 4 };
     return tasks
       .filter(t => t.status !== "completed")
       .sort((a, b) => {
-        // High priority first
-        const priorityOrder = { high: 0, medium: 1, low: 2 };
-        const priorityDiff = priorityOrder[a.priority] - priorityOrder[b.priority];
-        if (priorityDiff !== 0) return priorityDiff;
-        // Then by due date (today's tasks first)
-        if (a.dueDate === today && b.dueDate !== today) return -1;
-        if (b.dueDate === today && a.dueDate !== today) return 1;
+        // Sort by urgency (due date based)
+        const aUrgency = getTaskUrgency(a.dueDate);
+        const bUrgency = getTaskUrgency(b.dueDate);
+        const urgencyDiff = urgencyOrder[aUrgency] - urgencyOrder[bUrgency];
+        if (urgencyDiff !== 0) return urgencyDiff;
         // Then by creation date (newest first)
         return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
       })
@@ -1036,8 +1049,14 @@ export default function DashboardPage() {
                       </p>
                     )}
                   </div>
-                  {task.priority === "high" && (
-                    <span className="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0" />
+                  {getTaskUrgency(task.dueDate) === "overdue" && (
+                    <span className="text-xs px-1.5 py-0.5 rounded-full bg-rose-100 text-rose-700 flex-shrink-0">Overdue</span>
+                  )}
+                  {getTaskUrgency(task.dueDate) === "today" && (
+                    <span className="text-xs px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 flex-shrink-0">Today</span>
+                  )}
+                  {task.recurrence && task.recurrence !== "once" && (
+                    <span className="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0" title="Recurring" />
                   )}
                   {task.suggestedBy === "willson" && (
                     <Sparkles className="w-3 h-3 text-purple-500 flex-shrink-0" />
@@ -1690,16 +1709,27 @@ export default function DashboardPage() {
                               ) : (
                                 <TrendingUp className="w-3 h-3 text-emerald-500" />
                               )}
-                              {/* Task badge for admin - show if metric has linked tasks */}
-                              {isAdmin && getTasksForMetric(metric.id).length > 0 && (
-                                <Link
-                                  href={`/tasks?metric=${metric.id}`}
-                                  className="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-medium hover:bg-amber-200 transition-colors"
-                                  onClick={(e) => e.stopPropagation()}
-                                >
-                                  <Target className="w-2.5 h-2.5" />
-                                  {getTasksForMetric(metric.id).length}
-                                </Link>
+                              {/* Task badge or add task button for admin */}
+                              {isAdmin && (
+                                getTasksForMetric(metric.id).length > 0 ? (
+                                  <Link
+                                    href={`/tasks?metric=${metric.id}`}
+                                    className="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-medium hover:bg-amber-200 transition-colors"
+                                    onClick={(e) => e.stopPropagation()}
+                                  >
+                                    <Target className="w-2.5 h-2.5" />
+                                    {getTasksForMetric(metric.id).length}
+                                  </Link>
+                                ) : (
+                                  <Link
+                                    href={`/tasks?newTask=true&metric=${metric.id}`}
+                                    className="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-500 text-xs font-medium hover:bg-amber-100 hover:text-amber-700 transition-colors opacity-0 group-hover:opacity-100"
+                                    onClick={(e) => e.stopPropagation()}
+                                  >
+                                    <Plus className="w-2.5 h-2.5" />
+                                    Task
+                                  </Link>
+                                )
                               )}
                               <button
                                 onClick={() => setMetricEditModal({

@@ -6,7 +6,6 @@ import { motion, AnimatePresence, Reorder } from "framer-motion";
 import {
   Plus,
   Check,
-  Circle,
   Clock,
   Target,
   Trash2,
@@ -14,7 +13,6 @@ import {
   ChevronRight,
   Sparkles,
   ArrowLeft,
-  Filter,
   LayoutGrid,
   List,
   Calendar,
@@ -24,7 +22,7 @@ import {
   AlertTriangle,
   Star,
   X,
-  GripVertical,
+  Repeat,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -40,12 +38,46 @@ interface Task {
   metricId?: string;
   metricName?: string;
   categoryId?: string;
-  status: "pending" | "in_progress" | "completed";
-  priority: "low" | "medium" | "high";
+  status: "in_progress" | "completed";
   dueDate?: string;
+  recurrence?: "once" | "daily" | "weekly" | "monthly";
   createdAt: string;
   completedAt?: string;
   suggestedBy?: "user" | "willson";
+}
+
+// Helper to get urgency based on due date
+function getUrgency(dueDate?: string): "overdue" | "today" | "soon" | "later" | "none" {
+  if (!dueDate) return "none";
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const due = new Date(dueDate);
+  due.setHours(0, 0, 0, 0);
+  const diffDays = Math.floor((due.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+  
+  if (diffDays < 0) return "overdue";
+  if (diffDays === 0) return "today";
+  if (diffDays <= 7) return "soon";
+  return "later";
+}
+
+// Helper to get next occurrence date for recurring tasks
+function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
+  const date = new Date(currentDate);
+  switch (recurrence) {
+    case "daily":
+      date.setDate(date.getDate() + 1);
+      break;
+    case "weekly":
+      date.setDate(date.getDate() + 7);
+      break;
+    case "monthly":
+      date.setMonth(date.getMonth() + 1);
+      break;
+    default:
+      return currentDate;
+  }
+  return date.toISOString().split('T')[0];
 }
 
 interface Metric {
@@ -85,6 +117,7 @@ export default function TasksPage() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [scorecard, setScorecard] = useState<Scorecard | null>(null);
   const [showNewTaskModal, setShowNewTaskModal] = useState(false);
+  const [preSelectedMetricId, setPreSelectedMetricId] = useState<string | null>(null);
   const [editingTask, setEditingTask] = useState<Task | null>(null);
   const [filterMetric, setFilterMetric] = useState<string | null>(null);
   const [filterStatus, setFilterStatus] = useState<"all" | "active" | "completed">("active");
@@ -92,6 +125,24 @@ export default function TasksPage() {
   const [showChatModal, setShowChatModal] = useState(false);
   const [chatInitialMessage, setChatInitialMessage] = useState("");
   const supabase = createClient();
+
+  // Check URL params for metric filter and auto-open modal
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const metricParam = params.get("metric");
+    const newTaskParam = params.get("newTask");
+    
+    if (metricParam) {
+      setFilterMetric(metricParam);
+      // If newTask=true, open modal with metric pre-selected
+      if (newTaskParam === "true") {
+        setPreSelectedMetricId(metricParam);
+        setShowNewTaskModal(true);
+        // Clean up URL
+        window.history.replaceState({}, "", "/tasks");
+      }
+    }
+  }, []);
 
   const loadData = useCallback(async () => {
     const { data: { user } } = await supabase.auth.getUser();
@@ -141,14 +192,16 @@ export default function TasksPage() {
     setTasks(newTasks);
   };
 
-  const addTask = async (task: Omit<Task, "id" | "createdAt">) => {
+  const addTask = async (task: Omit<Task, "id" | "createdAt" | "status">) => {
     const newTask: Task = {
       ...task,
       id: `task-${Date.now()}`,
+      status: "in_progress", // All new tasks start as in_progress
       createdAt: new Date().toISOString(),
     };
     await saveTasks([...tasks, newTask]);
     setShowNewTaskModal(false);
+    setPreSelectedMetricId(null);
   };
 
   const updateTask = async (taskId: string, updates: Partial<Task>) => {
@@ -163,11 +216,38 @@ export default function TasksPage() {
     const task = tasks.find(t => t.id === taskId);
     if (!task) return;
 
-    const newStatus = task.status === "completed" ? "pending" : "completed";
-    await updateTask(taskId, {
-      status: newStatus,
-      completedAt: newStatus === "completed" ? new Date().toISOString() : undefined,
-    });
+    const isCompleting = task.status !== "completed";
+    
+    if (isCompleting) {
+      // Mark as completed
+      let newTasks = tasks.map(t =>
+        t.id === taskId
+          ? { ...t, status: "completed" as const, completedAt: new Date().toISOString() }
+          : t
+      );
+
+      // If recurring, create next occurrence
+      if (task.recurrence && task.recurrence !== "once" && task.dueDate) {
+        const nextDueDate = getNextOccurrence(task.dueDate, task.recurrence);
+        const nextTask: Task = {
+          ...task,
+          id: `task-${Date.now()}`,
+          status: "in_progress",
+          dueDate: nextDueDate,
+          createdAt: new Date().toISOString(),
+          completedAt: undefined,
+        };
+        newTasks = [...newTasks, nextTask];
+      }
+
+      await saveTasks(newTasks);
+    } else {
+      // Reopen task
+      await updateTask(taskId, {
+        status: "in_progress",
+        completedAt: undefined,
+      });
+    }
   };
 
   const deleteTask = async (taskId: string) => {
@@ -239,11 +319,27 @@ export default function TasksPage() {
     return true;
   });
 
-  // Group tasks by status for kanban view
+  // Sort by urgency (due date based priority)
+  const sortedTasks = [...filteredTasks].sort((a, b) => {
+    // Completed tasks go to the bottom
+    if (a.status === "completed" && b.status !== "completed") return 1;
+    if (b.status === "completed" && a.status !== "completed") return -1;
+    
+    // Sort by urgency
+    const urgencyOrder = { overdue: 0, today: 1, soon: 2, later: 3, none: 4 };
+    const aUrgency = getUrgency(a.dueDate);
+    const bUrgency = getUrgency(b.dueDate);
+    const urgencyDiff = urgencyOrder[aUrgency] - urgencyOrder[bUrgency];
+    if (urgencyDiff !== 0) return urgencyDiff;
+    
+    // Then by creation date (newest first)
+    return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+  });
+
+  // Group tasks for kanban view (now just active and completed)
   const tasksByStatus = {
-    pending: filteredTasks.filter(t => t.status === "pending"),
-    in_progress: filteredTasks.filter(t => t.status === "in_progress"),
-    completed: filteredTasks.filter(t => t.status === "completed"),
+    in_progress: sortedTasks.filter(t => t.status === "in_progress"),
+    completed: sortedTasks.filter(t => t.status === "completed"),
   };
 
   if (isAdmin === null || isLoading) {
@@ -386,7 +482,7 @@ export default function TasksPage() {
               </div>
             ) : (
               <div className="divide-y divide-slate-100">
-                {filteredTasks.map((task, index) => (
+                {sortedTasks.map((task, index) => (
                   <TaskRow
                     key={task.id}
                     task={task}
@@ -396,15 +492,14 @@ export default function TasksPage() {
                     onToggle={() => toggleTaskComplete(task.id)}
                     onEdit={() => setEditingTask(task)}
                     onDelete={() => deleteTask(task.id)}
-                    onStatusChange={(status) => updateTask(task.id, { status })}
                   />
                 ))}
               </div>
             )}
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {(["pending", "in_progress", "completed"] as const).map((status) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {(["in_progress", "completed"] as const).map((status) => (
               <KanbanColumn
                 key={status}
                 status={status}
@@ -414,7 +509,6 @@ export default function TasksPage() {
                 onToggle={toggleTaskComplete}
                 onEdit={setEditingTask}
                 onDelete={deleteTask}
-                onStatusChange={(taskId, newStatus) => updateTask(taskId, { status: newStatus })}
               />
             ))}
           </div>
@@ -427,16 +521,16 @@ export default function TasksPage() {
             <p className="text-sm text-muted-foreground">Active Tasks</p>
           </div>
           <div className="bg-white rounded-xl border border-slate-200 p-4">
+            <p className="text-2xl font-bold text-rose-600">{tasks.filter(t => t.status !== "completed" && (getUrgency(t.dueDate) === "overdue" || getUrgency(t.dueDate) === "today")).length}</p>
+            <p className="text-sm text-muted-foreground">Due Today/Overdue</p>
+          </div>
+          <div className="bg-white rounded-xl border border-slate-200 p-4">
+            <p className="text-2xl font-bold text-blue-600">{tasks.filter(t => t.recurrence && t.recurrence !== "once").length}</p>
+            <p className="text-sm text-muted-foreground">Recurring</p>
+          </div>
+          <div className="bg-white rounded-xl border border-slate-200 p-4">
             <p className="text-2xl font-bold text-emerald-600">{tasks.filter(t => t.status === "completed").length}</p>
             <p className="text-sm text-muted-foreground">Completed</p>
-          </div>
-          <div className="bg-white rounded-xl border border-slate-200 p-4">
-            <p className="text-2xl font-bold text-amber-600">{tasks.filter(t => t.priority === "high" && t.status !== "completed").length}</p>
-            <p className="text-sm text-muted-foreground">High Priority</p>
-          </div>
-          <div className="bg-white rounded-xl border border-slate-200 p-4">
-            <p className="text-2xl font-bold text-purple-600">{tasks.filter(t => t.suggestedBy === "willson").length}</p>
-            <p className="text-sm text-muted-foreground">From Willson</p>
           </div>
         </div>
       </div>
@@ -447,10 +541,12 @@ export default function TasksPage() {
           <TaskModal
             task={editingTask}
             scorecard={scorecard}
+            preSelectedMetricId={preSelectedMetricId}
             onSave={(task) => editingTask ? updateTask(editingTask.id, task) : addTask(task)}
             onClose={() => {
               setShowNewTaskModal(false);
               setEditingTask(null);
+              setPreSelectedMetricId(null);
             }}
           />
         )}
@@ -475,7 +571,6 @@ function TaskRow({
   onToggle,
   onEdit,
   onDelete,
-  onStatusChange,
 }: {
   task: Task;
   index: number;
@@ -484,13 +579,15 @@ function TaskRow({
   onToggle: () => void;
   onEdit: () => void;
   onDelete: () => void;
-  onStatusChange: (status: Task["status"]) => void;
 }) {
   const CategoryIcon = category?.icon ? categoryIcons[category.icon] || Target : Target;
-  const priorityColors = {
-    low: "bg-slate-100 text-slate-600",
-    medium: "bg-blue-100 text-blue-700",
-    high: "bg-rose-100 text-rose-700",
+  const urgency = getUrgency(task.dueDate);
+  const urgencyConfig = {
+    overdue: { label: "Overdue", color: "bg-rose-100 text-rose-700", dot: "bg-rose-500" },
+    today: { label: "Today", color: "bg-amber-100 text-amber-700", dot: "bg-amber-500" },
+    soon: { label: "This week", color: "bg-blue-100 text-blue-700", dot: "bg-blue-500" },
+    later: { label: "", color: "bg-slate-100 text-slate-600", dot: "bg-slate-400" },
+    none: { label: "", color: "", dot: "" },
   };
 
   return (
@@ -518,6 +615,9 @@ function TaskRow({
           <p className={`font-medium ${task.status === "completed" ? "line-through text-muted-foreground" : "text-foreground"}`}>
             {task.title}
           </p>
+          {task.recurrence && task.recurrence !== "once" && (
+            <Repeat className="w-3 h-3 text-blue-500" />
+          )}
           {task.suggestedBy === "willson" && (
             <Sparkles className="w-3 h-3 text-purple-500" />
           )}
@@ -533,7 +633,7 @@ function TaskRow({
             </span>
           )}
           {task.dueDate && (
-            <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+            <span className={`inline-flex items-center gap-1 text-xs ${urgency === "overdue" || urgency === "today" ? urgencyConfig[urgency].color.split(' ')[1] : "text-muted-foreground"}`}>
               <Calendar className="w-3 h-3" />
               {new Date(task.dueDate).toLocaleDateString()}
             </span>
@@ -541,20 +641,12 @@ function TaskRow({
         </div>
       </div>
 
-      <span className={`text-xs px-2 py-1 rounded-full ${priorityColors[task.priority]}`}>
-        {task.priority}
-      </span>
-
-      <select
-        value={task.status}
-        onChange={(e) => onStatusChange(e.target.value as Task["status"])}
-        className="text-xs px-2 py-1 border border-slate-200 rounded-lg bg-white"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <option value="pending">Pending</option>
-        <option value="in_progress">In Progress</option>
-        <option value="completed">Completed</option>
-      </select>
+      {/* Urgency indicator */}
+      {task.status !== "completed" && urgency !== "none" && urgency !== "later" && (
+        <span className={`text-xs px-2 py-1 rounded-full ${urgencyConfig[urgency].color}`}>
+          {urgencyConfig[urgency].label}
+        </span>
+      )}
 
       <div className="flex items-center gap-1">
         <button
@@ -583,7 +675,6 @@ function KanbanColumn({
   onToggle,
   onEdit,
   onDelete,
-  onStatusChange,
 }: {
   status: Task["status"];
   tasks: Task[];
@@ -592,11 +683,9 @@ function KanbanColumn({
   onToggle: (id: string) => void;
   onEdit: (task: Task) => void;
   onDelete: (id: string) => void;
-  onStatusChange: (taskId: string, status: Task["status"]) => void;
 }) {
   const statusConfig = {
-    pending: { label: "To Do", color: "bg-slate-100", dot: "bg-slate-400" },
-    in_progress: { label: "In Progress", color: "bg-blue-50", dot: "bg-blue-500" },
+    in_progress: { label: "Active", color: "bg-blue-50", dot: "bg-blue-500" },
     completed: { label: "Done", color: "bg-emerald-50", dot: "bg-emerald-500" },
   };
 
@@ -615,6 +704,7 @@ function KanbanColumn({
           const metric = task.metricId ? getMetricById(task.metricId) : undefined;
           const category = task.metricId ? getCategoryByMetricId(task.metricId) : undefined;
           const CategoryIcon = category?.icon ? categoryIcons[category.icon] || Target : Target;
+          const urgency = getUrgency(task.dueDate);
 
           return (
             <motion.div
@@ -650,11 +740,17 @@ function KanbanColumn({
 
               <div className="flex items-center justify-between mt-2 pt-2 border-t border-slate-100">
                 <div className="flex items-center gap-1">
+                  {task.recurrence && task.recurrence !== "once" && (
+                    <Repeat className="w-3 h-3 text-blue-500" />
+                  )}
                   {task.suggestedBy === "willson" && (
                     <Sparkles className="w-3 h-3 text-purple-500" />
                   )}
-                  {task.priority === "high" && (
+                  {urgency === "overdue" && (
                     <span className="w-2 h-2 rounded-full bg-rose-500" />
+                  )}
+                  {urgency === "today" && (
+                    <span className="w-2 h-2 rounded-full bg-amber-500" />
                   )}
                 </div>
                 <div className="flex items-center gap-1">
@@ -684,39 +780,50 @@ function KanbanColumn({
 function TaskModal({
   task,
   scorecard,
+  preSelectedMetricId,
   onSave,
   onClose,
 }: {
   task: Task | null;
   scorecard: Scorecard | null;
-  onSave: (task: Omit<Task, "id" | "createdAt">) => void;
+  preSelectedMetricId?: string | null;
+  onSave: (task: Omit<Task, "id" | "createdAt" | "status">) => void;
   onClose: () => void;
 }) {
   const [title, setTitle] = useState(task?.title || "");
   const [description, setDescription] = useState(task?.description || "");
-  const [metricId, setMetricId] = useState(task?.metricId || "");
-  const [priority, setPriority] = useState<Task["priority"]>(task?.priority || "medium");
-  const [status, setStatus] = useState<Task["status"]>(task?.status || "pending");
+  const [metricId, setMetricId] = useState(task?.metricId || preSelectedMetricId || "");
   const [dueDate, setDueDate] = useState(task?.dueDate || "");
+  const [recurrence, setRecurrence] = useState<Task["recurrence"]>(task?.recurrence || "once");
+
+  // Get metric name for display
+  const selectedMetric = scorecard?.categories
+    .flatMap(c => c.metrics)
+    .find(m => m.id === metricId);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!title.trim()) return;
 
-    const metric = scorecard?.categories
-      .flatMap(c => c.metrics)
-      .find(m => m.id === metricId);
-
     onSave({
       title: title.trim(),
       description: description.trim() || undefined,
       metricId: metricId || undefined,
-      metricName: metric?.name,
-      priority,
-      status,
+      metricName: selectedMetric?.name,
       dueDate: dueDate || undefined,
+      recurrence: recurrence || "once",
       suggestedBy: task?.suggestedBy || "user",
     });
+  };
+
+  // Get urgency for due date preview
+  const urgency = getUrgency(dueDate);
+  const urgencyConfig = {
+    overdue: { label: "Overdue", color: "text-rose-600 bg-rose-50" },
+    today: { label: "Due today", color: "text-amber-600 bg-amber-50" },
+    soon: { label: "This week", color: "text-blue-600 bg-blue-50" },
+    later: { label: "Later", color: "text-slate-600 bg-slate-50" },
+    none: { label: "", color: "" },
   };
 
   return (
@@ -771,61 +878,29 @@ function TaskModal({
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-foreground mb-1">
-                Related Metric
-              </label>
-              <select
-                value={metricId}
-                onChange={(e) => setMetricId(e.target.value)}
-                className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember"
-              >
-                <option value="">None</option>
-                {scorecard?.categories.map(category => (
-                  <optgroup key={category.id} label={category.name}>
-                    {category.metrics.map(metric => (
-                      <option key={metric.id} value={metric.id}>
-                        {metric.name}
-                      </option>
-                    ))}
-                  </optgroup>
-                ))}
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-foreground mb-1">
-                Priority
-              </label>
-              <select
-                value={priority}
-                onChange={(e) => setPriority(e.target.value as Task["priority"])}
-                className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember"
-              >
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-              </select>
-            </div>
+          <div>
+            <label className="block text-sm font-medium text-foreground mb-1">
+              Related Metric
+            </label>
+            <select
+              value={metricId}
+              onChange={(e) => setMetricId(e.target.value)}
+              className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember"
+            >
+              <option value="">None</option>
+              {scorecard?.categories.map(category => (
+                <optgroup key={category.id} label={category.name}>
+                  {category.metrics.map(metric => (
+                    <option key={metric.id} value={metric.id}>
+                      {metric.name}
+                    </option>
+                  ))}
+                </optgroup>
+              ))}
+            </select>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-foreground mb-1">
-                Status
-              </label>
-              <select
-                value={status}
-                onChange={(e) => setStatus(e.target.value as Task["status"])}
-                className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember"
-              >
-                <option value="pending">Pending</option>
-                <option value="in_progress">In Progress</option>
-                <option value="completed">Completed</option>
-              </select>
-            </div>
-
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
                 Due Date
@@ -836,6 +911,32 @@ function TaskModal({
                 onChange={(e) => setDueDate(e.target.value)}
                 className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember"
               />
+              {dueDate && urgency !== "none" && (
+                <span className={`inline-block mt-1 text-xs px-2 py-0.5 rounded-full ${urgencyConfig[urgency].color}`}>
+                  {urgencyConfig[urgency].label}
+                </span>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-foreground mb-1">
+                Repeat
+              </label>
+              <select
+                value={recurrence}
+                onChange={(e) => setRecurrence(e.target.value as Task["recurrence"])}
+                className="w-full px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ember/20 focus:border-ember"
+              >
+                <option value="once">Once</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+              </select>
+              {recurrence && recurrence !== "once" && (
+                <p className="text-xs text-muted-foreground mt-1">
+                  Creates a new task when completed
+                </p>
+              )}
             </div>
           </div>
 

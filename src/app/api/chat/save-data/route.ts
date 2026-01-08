@@ -50,9 +50,9 @@ interface Task {
   description?: string;
   metricId?: string;
   metricName?: string;
-  status: "pending" | "in_progress" | "completed";
-  priority: "low" | "medium" | "high";
+  status: "in_progress" | "completed";
   dueDate?: string;
+  recurrence?: "once" | "daily" | "weekly" | "monthly";
   createdAt: string;
   completedAt?: string;
   suggestedBy: "user" | "willson";
@@ -63,8 +63,8 @@ interface CreateTaskInput {
   description?: string;
   metricId?: string;
   metricName?: string;
-  priority?: "low" | "medium" | "high";
   dueDate?: string;
+  recurrence?: "once" | "daily" | "weekly" | "monthly";
 }
 
 interface CompleteTaskInput {
@@ -387,16 +387,16 @@ export async function POST(request: NextRequest) {
 
         const existingTasks = (profile?.tasks as Task[] | null) || [];
         
-        // Create new task
+        // Create new task - all new tasks start as in_progress
         const newTask: Task = {
           id: `task-${Date.now()}`,
           title: input.title,
           description: input.description,
           metricId: input.metricId,
           metricName: input.metricName,
-          status: "pending",
-          priority: input.priority || "medium",
+          status: "in_progress",
           dueDate: input.dueDate,
+          recurrence: input.recurrence || "once",
           createdAt: new Date().toISOString(),
           suggestedBy: "willson",
         };
@@ -451,13 +451,46 @@ export async function POST(request: NextRequest) {
           );
         }
 
+        const taskToComplete = existingTasks[taskIndex];
+        
         // Mark as completed
-        const updatedTasks = [...existingTasks];
+        let updatedTasks = [...existingTasks];
         updatedTasks[taskIndex] = {
           ...updatedTasks[taskIndex],
           status: "completed",
           completedAt: new Date().toISOString(),
         };
+
+        // If recurring, create next occurrence
+        if (taskToComplete.recurrence && taskToComplete.recurrence !== "once" && taskToComplete.dueDate) {
+          const getNextOccurrence = (currentDate: string, recurrence: string): string => {
+            const date = new Date(currentDate);
+            switch (recurrence) {
+              case "daily":
+                date.setDate(date.getDate() + 1);
+                break;
+              case "weekly":
+                date.setDate(date.getDate() + 7);
+                break;
+              case "monthly":
+                date.setMonth(date.getMonth() + 1);
+                break;
+              default:
+                return currentDate;
+            }
+            return date.toISOString().split('T')[0];
+          };
+
+          const nextTask: Task = {
+            ...taskToComplete,
+            id: `task-${Date.now()}`,
+            status: "in_progress",
+            dueDate: getNextOccurrence(taskToComplete.dueDate, taskToComplete.recurrence),
+            createdAt: new Date().toISOString(),
+            completedAt: undefined,
+          };
+          updatedTasks = [...updatedTasks, nextTask];
+        }
 
         const { error: updateError } = await supabase
           .from("profiles")

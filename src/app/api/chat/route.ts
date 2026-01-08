@@ -223,7 +223,7 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
   },
   {
     name: "create_task",
-    description: "Create a task linked to a scorecard metric. Use when the user asks for help with a specific metric or needs actionable steps to improve their performance. Tasks should be concrete, time-bound, and directly help improve the linked metric.",
+    description: "Create a task linked to a scorecard metric. Use when the user asks for help with a specific metric or needs actionable steps to improve their performance. Tasks should be concrete, time-bound, and directly help improve the linked metric. Priority is determined by due date.",
     input_schema: {
       type: "object" as const,
       properties: {
@@ -243,14 +243,14 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
           type: "string",
           description: "The name of the metric for display purposes"
         },
-        priority: {
-          type: "string",
-          enum: ["low", "medium", "high"],
-          description: "Task priority level"
-        },
         dueDate: {
           type: "string",
-          description: "Optional due date in YYYY-MM-DD format"
+          description: "Due date in YYYY-MM-DD format. Tasks due sooner are prioritized higher."
+        },
+        recurrence: {
+          type: "string",
+          enum: ["once", "daily", "weekly", "monthly"],
+          description: "How often this task repeats. When completed, a new occurrence is auto-created."
         }
       },
       required: ["title"]
