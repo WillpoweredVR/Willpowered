@@ -495,7 +495,7 @@ export default function DashboardPage() {
     return scorecard?.data?.savedSummaries?.[today] || null;
   };
 
-  // Save summary for today
+  // Save summary for today and create task from tomorrow's tip
   const saveTodaySummary = async (summary: {
     commentary: { dayHighlight: string; weekInsight: string; encouragement: string; tomorrowTip: string };
     achievement: { id: string; name: string; emoji: string } | null;
@@ -522,6 +522,48 @@ export default function DashboardPage() {
     };
     
     setScorecard(updatedScorecard);
+
+    // Calculate tomorrow's date
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowStr = tomorrow.toISOString().split('T')[0];
+
+    // Create a task from Willson's tomorrow tip
+    const tomorrowTip = summary.commentary.tomorrowTip;
+    if (tomorrowTip && tomorrowTip.length > 0) {
+      // Check if we already have a Willson focus task for tomorrow
+      const existingFocusTask = tasks.find(t => 
+        t.dueDate === tomorrowStr && 
+        t.suggestedBy === "willson" && 
+        t.status !== "completed"
+      );
+
+      // Only create if we don't already have one
+      if (!existingFocusTask) {
+        const focusTask: Task = {
+          id: `task-focus-${Date.now()}`,
+          title: tomorrowTip,
+          status: "in_progress",
+          dueDate: tomorrowStr,
+          createdAt: new Date().toISOString(),
+          suggestedBy: "willson",
+        };
+
+        const updatedTasks = [...tasks, focusTask];
+        setTasks(updatedTasks);
+
+        // Save tasks to database
+        await supabase
+          .from("profiles")
+          .update({ 
+            scorecard: updatedScorecard,
+            tasks: updatedTasks 
+          })
+          .eq("id", user.id);
+        
+        return; // Already saved both, skip the scorecard-only update
+      }
+    }
 
     await supabase
       .from("profiles")
