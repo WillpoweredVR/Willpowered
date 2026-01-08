@@ -23,6 +23,9 @@ import {
   Star,
   X,
   Repeat,
+  Lightbulb,
+  RefreshCw,
+  Loader2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -102,6 +105,16 @@ interface Scorecard {
   };
 }
 
+interface SuggestedTask {
+  title: string;
+  description?: string;
+  metricId?: string;
+  metricName?: string;
+  dueDate?: string;
+  recurrence?: "once" | "daily" | "weekly" | "monthly";
+  reasoning: string;
+}
+
 const categoryIcons: Record<string, React.ElementType> = {
   heart: Heart,
   zap: Zap,
@@ -124,6 +137,9 @@ export default function TasksPage() {
   const [viewMode, setViewMode] = useState<"list" | "kanban">("list");
   const [showChatModal, setShowChatModal] = useState(false);
   const [chatInitialMessage, setChatInitialMessage] = useState("");
+  const [suggestions, setSuggestions] = useState<SuggestedTask[]>([]);
+  const [isLoadingSuggestions, setIsLoadingSuggestions] = useState(false);
+  const [dismissedSuggestions, setDismissedSuggestions] = useState<Set<string>>(new Set());
   const supabase = createClient();
 
   // Check URL params for metric filter and auto-open modal
@@ -296,6 +312,63 @@ export default function TasksPage() {
     
     return offTrack;
   };
+
+  // Load AI-generated task suggestions
+  const loadSuggestions = useCallback(async () => {
+    if (isLoadingSuggestions) return;
+    
+    setIsLoadingSuggestions(true);
+    setDismissedSuggestions(new Set());
+    
+    try {
+      const response = await fetch("/api/suggest-tasks", {
+        method: "POST",
+      });
+      
+      if (!response.ok) throw new Error("Failed to load suggestions");
+      
+      const data = await response.json();
+      setSuggestions(data.suggestions || []);
+    } catch (error) {
+      console.error("Error loading suggestions:", error);
+      setSuggestions([]);
+    } finally {
+      setIsLoadingSuggestions(false);
+    }
+  }, [isLoadingSuggestions]);
+
+  // Add a suggested task to the task list
+  const addSuggestion = async (suggestion: SuggestedTask) => {
+    const newTask: Task = {
+      id: `task-${Date.now()}`,
+      title: suggestion.title,
+      description: suggestion.description,
+      metricId: suggestion.metricId,
+      metricName: suggestion.metricName,
+      status: "in_progress",
+      dueDate: suggestion.dueDate,
+      recurrence: suggestion.recurrence || "once",
+      createdAt: new Date().toISOString(),
+      suggestedBy: "willson",
+    };
+    
+    await saveTasks([...tasks, newTask]);
+    
+    // Remove from suggestions
+    setSuggestions(prev => prev.filter(s => s.title !== suggestion.title));
+  };
+
+  // Dismiss a suggestion
+  const dismissSuggestion = (title: string) => {
+    setDismissedSuggestions(prev => new Set([...prev, title]));
+  };
+
+  // Load suggestions when scorecard is available and no suggestions yet
+  useEffect(() => {
+    if (scorecard && suggestions.length === 0 && !isLoadingSuggestions && isAdmin) {
+      loadSuggestions();
+    }
+  }, [scorecard, isAdmin]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const getMetricById = (metricId: string): Metric | undefined => {
     if (!scorecard) return undefined;
@@ -512,6 +585,127 @@ export default function TasksPage() {
               />
             ))}
           </div>
+        )}
+
+        {/* Willson Suggests Section */}
+        {isAdmin && (suggestions.length > 0 || isLoadingSuggestions) && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-8"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
+                  <Lightbulb className="w-4 h-4 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">Willson Suggests</h3>
+                  <p className="text-xs text-muted-foreground">Based on your scorecard</p>
+                </div>
+              </div>
+              <button
+                onClick={loadSuggestions}
+                disabled={isLoadingSuggestions}
+                className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors disabled:opacity-50"
+              >
+                <RefreshCw className={`w-4 h-4 ${isLoadingSuggestions ? "animate-spin" : ""}`} />
+                {isLoadingSuggestions ? "Thinking..." : "Refresh"}
+              </button>
+            </div>
+
+            {isLoadingSuggestions ? (
+              <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100 p-6">
+                <div className="flex items-center justify-center gap-3">
+                  <Loader2 className="w-5 h-5 animate-spin text-purple-500" />
+                  <p className="text-sm text-purple-700">Analyzing your scorecard...</p>
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <AnimatePresence mode="popLayout">
+                  {suggestions
+                    .filter(s => !dismissedSuggestions.has(s.title))
+                    .map((suggestion, index) => (
+                      <motion.div
+                        key={suggestion.title}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 20, height: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                        className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100 p-4 group"
+                      >
+                        <div className="flex items-start gap-3">
+                          <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Sparkles className="w-3 h-3 text-purple-600" />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <p className="font-medium text-foreground">{suggestion.title}</p>
+                            {suggestion.description && (
+                              <p className="text-sm text-muted-foreground mt-1">{suggestion.description}</p>
+                            )}
+                            <div className="flex items-center gap-3 mt-2 flex-wrap">
+                              {suggestion.metricName && (
+                                <span className="inline-flex items-center gap-1 text-xs text-purple-600 bg-purple-100 px-2 py-0.5 rounded-full">
+                                  <Target className="w-3 h-3" />
+                                  {suggestion.metricName}
+                                </span>
+                              )}
+                              {suggestion.dueDate && (
+                                <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+                                  <Calendar className="w-3 h-3" />
+                                  {new Date(suggestion.dueDate).toLocaleDateString()}
+                                </span>
+                              )}
+                              {suggestion.recurrence && suggestion.recurrence !== "once" && (
+                                <span className="inline-flex items-center gap-1 text-xs text-blue-600">
+                                  <Repeat className="w-3 h-3" />
+                                  {suggestion.recurrence}
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-purple-600 mt-2 italic">
+                              💡 {suggestion.reasoning}
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-2 flex-shrink-0">
+                            <Button
+                              size="sm"
+                              onClick={() => addSuggestion(suggestion)}
+                              className="bg-purple-600 hover:bg-purple-700 text-white gap-1"
+                            >
+                              <Plus className="w-3 h-3" />
+                              Add
+                            </Button>
+                            <button
+                              onClick={() => dismissSuggestion(suggestion.title)}
+                              className="p-1.5 text-slate-400 hover:text-slate-600 hover:bg-white rounded-lg transition-colors"
+                              title="Dismiss"
+                            >
+                              <X className="w-4 h-4" />
+                            </button>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                </AnimatePresence>
+                
+                {suggestions.filter(s => !dismissedSuggestions.has(s.title)).length === 0 && (
+                  <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100 p-6 text-center">
+                    <p className="text-sm text-muted-foreground">
+                      All suggestions added or dismissed.
+                    </p>
+                    <button
+                      onClick={loadSuggestions}
+                      className="text-sm text-purple-600 hover:text-purple-700 mt-2 font-medium"
+                    >
+                      Get new suggestions
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+          </motion.div>
         )}
 
         {/* Quick Stats */}
