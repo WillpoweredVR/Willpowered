@@ -277,7 +277,7 @@ export default function AdminUsersPage() {
                         {Array.isArray(user.principles) && user.principles.length > 0 && (
                           <span className="text-indigo-600">{user.principles.length} principles</span>
                         )}
-                        {user.scorecard && <span className="text-blue-600">Scorecard</span>}
+                        {user.scorecard !== null && user.scorecard !== undefined && <span className="text-blue-600">Scorecard</span>}
                       </div>
                     </td>
                     <td className="px-4 py-3 text-sm text-muted-foreground">
