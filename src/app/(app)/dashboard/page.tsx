@@ -50,6 +50,21 @@ import type {
   PrincipleStrength,
 } from "@/lib/supabase/types";
 
+// Task interface for dashboard
+interface Task {
+  id: string;
+  title: string;
+  description?: string;
+  metricId?: string;
+  metricName?: string;
+  status: "pending" | "in_progress" | "completed";
+  priority: "low" | "medium" | "high";
+  dueDate?: string;
+  createdAt: string;
+  completedAt?: string;
+  suggestedBy?: "user" | "willson";
+}
+
 // Helper to get today's date in ISO format
 function getToday(): string {
   return new Date().toISOString().split('T')[0];
@@ -74,6 +89,7 @@ export default function DashboardPage() {
   const [goal, setGoal] = useState<Goal | null>(null);
   const [principles, setPrinciples] = useState<Principle[]>([]);
   const [scorecard, setScorecard] = useState<Scorecard | null>(null);
+  const [tasks, setTasks] = useState<Task[]>([]);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [editModal, setEditModal] = useState<{
@@ -184,6 +200,13 @@ export default function DashboardPage() {
           data: { history: {} }
         };
         setScorecard(emptyScorecard);
+      }
+      
+      // Load tasks (admin feature)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      if ((profileData as any).tasks) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        setTasks((profileData as any).tasks as Task[]);
       }
       
       // Check admin status
@@ -572,6 +595,53 @@ export default function DashboardPage() {
       .eq("id", user.id);
   };
 
+  // Task functions (admin feature)
+  const toggleTaskComplete = async (taskId: string) => {
+    const supabase = createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return;
+
+    const task = tasks.find(t => t.id === taskId);
+    if (!task) return;
+
+    const newStatus = task.status === "completed" ? "pending" : "completed";
+    const updatedTasks = tasks.map(t =>
+      t.id === taskId
+        ? { ...t, status: newStatus as Task["status"], completedAt: newStatus === "completed" ? new Date().toISOString() : undefined }
+        : t
+    );
+
+    setTasks(updatedTasks);
+
+    await supabase
+      .from("profiles")
+      .update({ tasks: updatedTasks })
+      .eq("id", user.id);
+  };
+
+  const getTasksForMetric = (metricId: string): Task[] => {
+    return tasks.filter(t => t.metricId === metricId && t.status !== "completed");
+  };
+
+  // Get top priority tasks for "Today's Focus"
+  const focusTasks = useMemo(() => {
+    const today = new Date().toISOString().split('T')[0];
+    return tasks
+      .filter(t => t.status !== "completed")
+      .sort((a, b) => {
+        // High priority first
+        const priorityOrder = { high: 0, medium: 1, low: 2 };
+        const priorityDiff = priorityOrder[a.priority] - priorityOrder[b.priority];
+        if (priorityDiff !== 0) return priorityDiff;
+        // Then by due date (today's tasks first)
+        if (a.dueDate === today && b.dueDate !== today) return -1;
+        if (b.dueDate === today && a.dueDate !== today) return 1;
+        // Then by creation date (newest first)
+        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+      })
+      .slice(0, 3);
+  }, [tasks]);
+
   const handleSignOut = async () => {
     const supabase = createClient();
     await supabase.auth.signOut();
@@ -911,6 +981,72 @@ export default function DashboardPage() {
             </div>
           )}
         </motion.div>
+
+        {/* === TODAY'S FOCUS (Admin Only) === */}
+        {isAdmin && focusTasks.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15 }}
+            className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-4 sm:p-5 mb-4 sm:mb-6"
+          >
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center">
+                  <Target className="w-4 h-4 text-amber-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground text-sm">Today&apos;s Focus</h3>
+                  <p className="text-xs text-muted-foreground">{tasks.filter(t => t.status !== "completed").length} active tasks</p>
+                </div>
+              </div>
+              <Link
+                href="/tasks"
+                className="text-xs text-amber-700 hover:text-amber-800 font-medium flex items-center gap-1"
+              >
+                View all
+                <ChevronRight className="w-3 h-3" />
+              </Link>
+            </div>
+
+            <div className="space-y-2">
+              {focusTasks.map((task) => (
+                <div
+                  key={task.id}
+                  className="flex items-center gap-3 bg-white rounded-lg p-3 border border-amber-100"
+                >
+                  <button
+                    onClick={() => toggleTaskComplete(task.id)}
+                    className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center transition-colors ${
+                      task.status === "completed"
+                        ? "bg-emerald-500 border-emerald-500 text-white"
+                        : "border-amber-300 hover:border-amber-500"
+                    }`}
+                  >
+                    {task.status === "completed" && <Check className="w-3 h-3" />}
+                  </button>
+                  <div className="flex-1 min-w-0">
+                    <p className={`text-sm font-medium ${task.status === "completed" ? "line-through text-muted-foreground" : "text-foreground"}`}>
+                      {task.title}
+                    </p>
+                    {task.metricName && (
+                      <p className="text-xs text-muted-foreground flex items-center gap-1">
+                        <BarChart3 className="w-3 h-3" />
+                        {task.metricName}
+                      </p>
+                    )}
+                  </div>
+                  {task.priority === "high" && (
+                    <span className="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0" />
+                  )}
+                  {task.suggestedBy === "willson" && (
+                    <Sparkles className="w-3 h-3 text-purple-500 flex-shrink-0" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
 
         {/* === STEP 2: PRINCIPLES === */}
         <motion.div
@@ -1553,6 +1689,17 @@ export default function DashboardPage() {
                                 <TrendingDown className="w-3 h-3 text-blue-500" />
                               ) : (
                                 <TrendingUp className="w-3 h-3 text-emerald-500" />
+                              )}
+                              {/* Task badge for admin - show if metric has linked tasks */}
+                              {isAdmin && getTasksForMetric(metric.id).length > 0 && (
+                                <Link
+                                  href={`/tasks?metric=${metric.id}`}
+                                  className="flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 text-xs font-medium hover:bg-amber-200 transition-colors"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  <Target className="w-2.5 h-2.5" />
+                                  {getTasksForMetric(metric.id).length}
+                                </Link>
                               )}
                               <button
                                 onClick={() => setMetricEditModal({
