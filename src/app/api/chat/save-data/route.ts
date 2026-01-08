@@ -91,7 +91,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { toolName, toolInput } = body as { 
       toolName: string; 
-      toolInput: SavePrinciplesInput | SavePurposeInput | SaveGoalInput | SaveScorecardInput | UpdatePrincipleContextInput;
+      toolInput: SavePrinciplesInput | SavePurposeInput | SaveGoalInput | SaveScorecardInput | UpdatePrincipleContextInput | CreateTaskInput | CompleteTaskInput | GetTasksInput;
     };
 
     switch (toolName) {
