@@ -229,8 +229,20 @@ export async function POST(request: NextRequest) {
 
       case "save_scorecard": {
         console.log("[SAVE SCORECARD] Starting save_scorecard");
+        console.log("[SAVE SCORECARD] Raw toolInput:", JSON.stringify(toolInput));
+        
         const input = toolInput as SaveScorecardInput;
-        console.log("[SAVE SCORECARD] Input categories:", JSON.stringify(input.categories));
+        
+        // Validate input
+        if (!input || !input.categories || !Array.isArray(input.categories)) {
+          console.error("[SAVE SCORECARD] Invalid input - categories missing or not an array");
+          return NextResponse.json(
+            { error: "Invalid scorecard data - categories required" },
+            { status: 400 }
+          );
+        }
+        
+        console.log("[SAVE SCORECARD] Input categories count:", input.categories.length);
 
         // Get existing scorecard
         const { data: profile, error: fetchError } = await supabase
@@ -247,20 +259,27 @@ export async function POST(request: NextRequest) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const existingScorecard = (profile?.scorecard as any) || { categories: [], data: { history: {} } };
         
-        // Build new categories with IDs
-        const newCategories = input.categories.map((cat, catIndex) => ({
-          id: `cat-${Date.now()}-${catIndex}`,
-          name: cat.name,
-          metrics: cat.metrics.map((m, metricIndex) => ({
-            id: `metric-${Date.now()}-${catIndex}-${metricIndex}`,
-            name: m.name,
-            target: m.target,
-            direction: m.direction || "higher",
-            unit: m.unit || "",
-            frequency: m.frequency || "daily",
-            createdAt: new Date().toISOString(),
-          })),
-        }));
+        // Build new categories with IDs - with validation
+        const newCategories = input.categories.map((cat, catIndex) => {
+          if (!cat || !cat.name) {
+            console.error("[SAVE SCORECARD] Invalid category at index", catIndex, cat);
+            throw new Error(`Invalid category at index ${catIndex}`);
+          }
+          const metrics = cat.metrics || [];
+          return {
+            id: `cat-${Date.now()}-${catIndex}`,
+            name: cat.name,
+            metrics: metrics.map((m, metricIndex) => ({
+              id: `metric-${Date.now()}-${catIndex}-${metricIndex}`,
+              name: m?.name || "Unnamed metric",
+              target: m?.target ?? 1,
+              direction: m?.direction || "higher",
+              unit: m?.unit || "",
+              frequency: m?.frequency || "daily",
+              createdAt: new Date().toISOString(),
+            })),
+          };
+        });
 
         // Merge with existing categories (add new ones)
         const allCategories = [...(existingScorecard.categories || [])];
@@ -602,9 +621,11 @@ export async function POST(request: NextRequest) {
         );
     }
   } catch (error) {
-    console.error("Save data API error:", error);
+    console.error("[SAVE DATA API] Caught error:", error);
+    console.error("[SAVE DATA API] Error message:", error instanceof Error ? error.message : "Unknown");
+    console.error("[SAVE DATA API] Error stack:", error instanceof Error ? error.stack : "No stack");
     return NextResponse.json(
-      { error: "Internal server error" },
+      { error: "Internal server error", details: error instanceof Error ? error.message : "Unknown error" },
       { status: 500 }
     );
   }
