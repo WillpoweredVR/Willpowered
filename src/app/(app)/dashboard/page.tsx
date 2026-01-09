@@ -85,14 +85,28 @@ function getToday(): string {
   return new Date().toISOString().split('T')[0];
 }
 
+// Helper to format date as YYYY-MM-DD using LOCAL time (not UTC)
+function formatDateLocal(date: Date): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+// Helper to parse date string as LOCAL midnight (not UTC)
+function parseDateLocal(dateStr: string): Date {
+  const [year, month, day] = dateStr.split('-').map(Number);
+  return new Date(year, month - 1, day, 0, 0, 0, 0);
+}
+
 // Helper to get next occurrence date for recurring tasks
 // Ensures next date is always in the future (tomorrow or later)
 function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   
-  let date = new Date(currentDate);
-  date.setHours(0, 0, 0, 0);
+  // Parse the date as LOCAL time to avoid timezone issues
+  let date = parseDateLocal(currentDate);
   
   // Keep adding intervals until we get a future date (after today)
   while (date <= today) {
@@ -109,11 +123,12 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
       default:
         const tomorrow = new Date(today);
         tomorrow.setDate(tomorrow.getDate() + 1);
-        return tomorrow.toISOString().split('T')[0];
+        return formatDateLocal(tomorrow);
     }
   }
   
-  return date.toISOString().split('T')[0];
+  // Return formatted LOCAL date (not UTC)
+  return formatDateLocal(date);
 }
 
 // Helper to get the last 7 days including today

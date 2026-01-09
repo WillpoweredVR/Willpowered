@@ -463,13 +463,27 @@ export async function POST(request: NextRequest) {
 
         // If recurring, create next occurrence
         if (taskToComplete.recurrence && taskToComplete.recurrence !== "once" && taskToComplete.dueDate) {
+          // Helper to format date as YYYY-MM-DD using LOCAL time (not UTC)
+          const formatDateLocal = (date: Date): string => {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+          };
+          
+          // Helper to parse date string as LOCAL midnight (not UTC)
+          const parseDateLocal = (dateStr: string): Date => {
+            const [year, month, day] = dateStr.split('-').map(Number);
+            return new Date(year, month - 1, day, 0, 0, 0, 0);
+          };
+          
           // Calculate next occurrence - ensures it's always in the future
           const getNextOccurrence = (currentDate: string, recurrence: string): string => {
             const today = new Date();
             today.setHours(0, 0, 0, 0);
             
-            let date = new Date(currentDate);
-            date.setHours(0, 0, 0, 0);
+            // Parse the date as LOCAL time to avoid timezone issues
+            let date = parseDateLocal(currentDate);
             
             // Keep adding intervals until we get a future date (after today)
             while (date <= today) {
@@ -486,11 +500,12 @@ export async function POST(request: NextRequest) {
                 default:
                   const tomorrow = new Date(today);
                   tomorrow.setDate(tomorrow.getDate() + 1);
-                  return tomorrow.toISOString().split('T')[0];
+                  return formatDateLocal(tomorrow);
               }
             }
             
-            return date.toISOString().split('T')[0];
+            // Return formatted LOCAL date (not UTC)
+            return formatDateLocal(date);
           };
 
           const nextTask: Task = {
