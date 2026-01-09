@@ -889,6 +889,8 @@ export async function POST(request: NextRequest) {
       // Clean any tool call artifacts from the message
       message = cleanToolArtifacts(message);
       
+      console.log("[CHAT API] Tool call detected:", toolUseBlock.name, JSON.stringify(toolUseBlock.input).slice(0, 200));
+      
       return NextResponse.json({ 
         message,
         toolCall: {

@@ -278,7 +278,15 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
   };
 
   const handleToolCall = async (toolName: string, toolInput: unknown) => {
-    setSavingStatus(`Saving ${toolName === "save_principles" ? "principles" : toolName === "save_purpose" ? "purpose" : "goal"}...`);
+    console.log("[HANDLE TOOL CALL] Starting:", toolName);
+    
+    const statusText = toolName === "save_principles" ? "principles" 
+      : toolName === "save_purpose" ? "purpose" 
+      : toolName === "save_scorecard" ? "metrics"
+      : toolName === "save_goal" ? "goal"
+      : toolName === "create_task" ? "task"
+      : "data";
+    setSavingStatus(`Saving ${statusText}...`);
     
     try {
       const response = await fetch("/api/chat/save-data", {
@@ -288,6 +296,7 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
       });
 
       const data = await response.json();
+      console.log("[HANDLE TOOL CALL] Response:", data);
       
       if (data.success) {
         setSavingStatus("✓ Saved successfully!");
@@ -295,11 +304,12 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
         onDataSaved?.();
         setTimeout(() => setSavingStatus(null), 3000);
       } else {
+        console.error("[HANDLE TOOL CALL] Save failed:", data.error);
         setSavingStatus("Failed to save. Please try again.");
         setTimeout(() => setSavingStatus(null), 3000);
       }
     } catch (error) {
-      console.error("Tool call error:", error);
+      console.error("[HANDLE TOOL CALL] Error:", error);
       setSavingStatus("Failed to save. Please try again.");
       setTimeout(() => setSavingStatus(null), 3000);
     }
@@ -349,11 +359,14 @@ export function ChatModal({ isOpen, onClose, initialMessage, userContext, isAuth
 
       // Handle tool calls from Willson
       if (data.toolCall) {
+        console.log("[CHAT MODAL] Tool call received:", data.toolCall.name, data.toolCall.input);
         await handleToolCall(data.toolCall.name, data.toolCall.input);
         // Add a confirmation to the message if there wasn't already text
         if (!responseContent.trim()) {
           responseContent = "Done! I've saved that to your dashboard.";
         }
+      } else {
+        console.log("[CHAT MODAL] No tool call in response");
       }
 
       // Add the gentle nudge after threshold (but only once, and only for unauthenticated)

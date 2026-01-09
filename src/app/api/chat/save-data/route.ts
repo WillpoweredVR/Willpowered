@@ -95,6 +95,8 @@ export async function POST(request: NextRequest) {
       toolInput: SavePrinciplesInput | SavePurposeInput | SaveGoalInput | SaveScorecardInput | UpdatePrincipleContextInput | CreateTaskInput | CompleteTaskInput | GetTasksInput;
     };
 
+    console.log("[SAVE-DATA] Received tool call:", toolName, JSON.stringify(toolInput).slice(0, 500));
+
     switch (toolName) {
       case "save_principles": {
         const input = toolInput as SavePrinciplesInput;
@@ -226,14 +228,21 @@ export async function POST(request: NextRequest) {
       }
 
       case "save_scorecard": {
+        console.log("[SAVE SCORECARD] Starting save_scorecard");
         const input = toolInput as SaveScorecardInput;
+        console.log("[SAVE SCORECARD] Input categories:", JSON.stringify(input.categories));
 
         // Get existing scorecard
-        const { data: profile } = await supabase
+        const { data: profile, error: fetchError } = await supabase
           .from("profiles")
           .select("scorecard")
           .eq("id", user.id)
           .single();
+        
+        if (fetchError) {
+          console.error("[SAVE SCORECARD] Error fetching profile:", fetchError);
+        }
+        console.log("[SAVE SCORECARD] Existing scorecard:", profile?.scorecard ? "exists" : "none");
 
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const existingScorecard = (profile?.scorecard as any) || { categories: [], data: { history: {} } };
@@ -279,13 +288,15 @@ export async function POST(request: NextRequest) {
           categories: allCategories,
         };
 
+        console.log("[SAVE SCORECARD] About to save updated scorecard with", allCategories.length, "categories");
+        
         const { error: updateError } = await supabase
           .from("profiles")
           .update({ scorecard: updatedScorecard })
           .eq("id", user.id);
 
         if (updateError) {
-          console.error("Error saving scorecard:", updateError);
+          console.error("[SAVE SCORECARD] Error saving scorecard:", updateError);
           return NextResponse.json(
             { error: "Failed to save scorecard" },
             { status: 500 }
@@ -293,6 +304,7 @@ export async function POST(request: NextRequest) {
         }
 
         const totalMetrics = newCategories.reduce((sum, cat) => sum + cat.metrics.length, 0);
+        console.log("[SAVE SCORECARD] Successfully saved", totalMetrics, "metrics");
         return NextResponse.json({ 
           success: true, 
           message: `Saved ${totalMetrics} metrics across ${newCategories.length} categories`,
