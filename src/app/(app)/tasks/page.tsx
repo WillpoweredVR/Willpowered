@@ -74,21 +74,34 @@ function formatDateLocal(date: Date): string {
 
 // Helper to parse date string as LOCAL midnight (not UTC)
 function parseDateLocal(dateStr: string): Date {
-  const [year, month, day] = dateStr.split('-').map(Number);
-  return new Date(year, month - 1, day, 0, 0, 0, 0);
+  console.log("[parseDateLocal] Input:", dateStr);
+  const parts = dateStr.split('-');
+  console.log("[parseDateLocal] Split parts:", parts);
+  const [year, month, day] = parts.map(Number);
+  console.log("[parseDateLocal] Parsed:", { year, month, day });
+  const result = new Date(year, month - 1, day, 0, 0, 0, 0);
+  console.log("[parseDateLocal] Result:", result.toString());
+  return result;
 }
 
 // Helper to get next occurrence date for recurring tasks
 // Ensures next date is always in the future (tomorrow or later)
 function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
+  console.log("[getNextOccurrence] Input:", { currentDate, recurrence });
+  
   const today = new Date();
   today.setHours(0, 0, 0, 0);
+  console.log("[getNextOccurrence] Today (midnight):", today.toString());
   
   // Parse the date as LOCAL time to avoid timezone issues
   let date = parseDateLocal(currentDate);
+  console.log("[getNextOccurrence] Parsed date:", date.toString());
   
+  let iterations = 0;
   // Keep adding intervals until we get a future date (after today)
-  while (date <= today) {
+  while (date <= today && iterations < 100) {
+    iterations++;
+    console.log(`[getNextOccurrence] Iteration ${iterations}: date=${date.toString()}, adding ${recurrence}`);
     switch (recurrence) {
       case "daily":
         date.setDate(date.getDate() + 1);
@@ -103,12 +116,16 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
         // For "once" or undefined, just return tomorrow
         const tomorrow = new Date(today);
         tomorrow.setDate(tomorrow.getDate() + 1);
+        console.log("[getNextOccurrence] Non-recurring, returning tomorrow:", formatDateLocal(tomorrow));
         return formatDateLocal(tomorrow);
     }
   }
   
+  const result = formatDateLocal(date);
+  console.log("[getNextOccurrence] Result:", result, "after", iterations, "iterations");
+  
   // Return formatted LOCAL date (not UTC)
-  return formatDateLocal(date);
+  return result;
 }
 
 interface Metric {
@@ -261,6 +278,14 @@ export default function TasksPage() {
     const task = tasks.find(t => t.id === taskId);
     if (!task) return;
 
+    console.log("[toggleTaskComplete] Task:", { 
+      id: task.id, 
+      title: task.title, 
+      dueDate: task.dueDate, 
+      recurrence: task.recurrence,
+      status: task.status 
+    });
+
     const isCompleting = task.status !== "completed";
     
     if (isCompleting) {
@@ -273,7 +298,9 @@ export default function TasksPage() {
 
       // If recurring, create next occurrence
       if (task.recurrence && task.recurrence !== "once" && task.dueDate) {
+        console.log("[toggleTaskComplete] Creating next occurrence for recurring task");
         const nextDueDate = getNextOccurrence(task.dueDate, task.recurrence);
+        console.log("[toggleTaskComplete] Next due date:", nextDueDate);
         const nextTask: Task = {
           ...task,
           id: `task-${Date.now()}`,
@@ -282,6 +309,7 @@ export default function TasksPage() {
           createdAt: new Date().toISOString(),
           completedAt: undefined,
         };
+        console.log("[toggleTaskComplete] New task:", nextTask);
         newTasks = [...newTasks, nextTask];
       }
 
