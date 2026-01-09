@@ -1070,10 +1070,13 @@ function TaskModal({
   onSave: (task: Omit<Task, "id" | "createdAt" | "status">) => void;
   onClose: () => void;
 }) {
+  // Default to today's date for new tasks
+  const todayStr = formatDateLocal(new Date());
+  
   const [title, setTitle] = useState(task?.title || "");
   const [description, setDescription] = useState(task?.description || "");
   const [metricId, setMetricId] = useState(task?.metricId || preSelectedMetricId || "");
-  const [dueDate, setDueDate] = useState(task?.dueDate || "");
+  const [dueDate, setDueDate] = useState(task?.dueDate || todayStr);
   const [recurrence, setRecurrence] = useState<Task["recurrence"]>(task?.recurrence || "once");
 
   // Get metric name for display
