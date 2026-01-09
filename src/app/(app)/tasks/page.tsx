@@ -73,11 +73,33 @@ function formatDateLocal(date: Date): string {
 }
 
 // Helper to parse date string as LOCAL midnight (not UTC)
+// Handles both "YYYY-MM-DD" and "M/D/YYYY" formats
 function parseDateLocal(dateStr: string): Date {
   console.log("[parseDateLocal] Input:", dateStr);
-  const parts = dateStr.split('-');
-  console.log("[parseDateLocal] Split parts:", parts);
-  const [year, month, day] = parts.map(Number);
+  
+  let year: number, month: number, day: number;
+  
+  if (dateStr.includes('-')) {
+    // ISO format: YYYY-MM-DD
+    const parts = dateStr.split('-');
+    console.log("[parseDateLocal] ISO format, parts:", parts);
+    [year, month, day] = parts.map(Number);
+  } else if (dateStr.includes('/')) {
+    // US format: M/D/YYYY
+    const parts = dateStr.split('/');
+    console.log("[parseDateLocal] US format, parts:", parts);
+    month = Number(parts[0]);
+    day = Number(parts[1]);
+    year = Number(parts[2]);
+  } else {
+    // Fallback: try to parse as Date
+    console.log("[parseDateLocal] Unknown format, using Date constructor");
+    const d = new Date(dateStr);
+    year = d.getFullYear();
+    month = d.getMonth() + 1;
+    day = d.getDate();
+  }
+  
   console.log("[parseDateLocal] Parsed:", { year, month, day });
   const result = new Date(year, month - 1, day, 0, 0, 0, 0);
   console.log("[parseDateLocal] Result:", result.toString());
