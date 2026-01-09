@@ -174,44 +174,64 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
   },
   {
     name: "save_scorecard",
-    description: "Save scorecard metrics to the user's dashboard. Use when the user confirms they want to save their metrics. Organize metrics into categories (e.g., 'Health', 'Work', 'Habits', 'Relationships').",
+    description: `Save scorecard metrics to the user's dashboard. IMPORTANT: You MUST include the full categories array with all metric details. If the user is adding to an existing category, use that category name. If it's a new area, create an appropriate category name (e.g., 'Health', 'Work', 'Learning', 'Habits').
+
+Example usage - when user says "add AI coding sessions metric":
+{
+  "categories": [
+    {
+      "name": "Work",
+      "metrics": [
+        {
+          "name": "AI coding sessions",
+          "target": 5,
+          "direction": "higher",
+          "unit": "sessions",
+          "frequency": "weekly"
+        }
+      ]
+    }
+  ]
+}`,
     input_schema: {
       type: "object" as const,
       properties: {
         categories: {
           type: "array",
+          description: "Array of categories, each containing metrics. You MUST provide this array with at least one category and one metric.",
           items: {
             type: "object",
             properties: {
               name: {
                 type: "string",
-                description: "Category name (e.g., 'Health', 'Work', 'Habits')"
+                description: "Category name - use an existing category if the metric fits, or create a new one (e.g., 'Health', 'Work', 'Learning', 'Habits', 'Relationships')"
               },
               metrics: {
                 type: "array",
+                description: "Array of metrics to add to this category",
                 items: {
                   type: "object",
                   properties: {
                     name: {
                       type: "string",
-                      description: "Metric name (e.g., 'Sleep hours', 'Workout days')"
+                      description: "The metric name exactly as discussed with the user"
                     },
                     target: {
                       type: "number",
-                      description: "Target value per period (e.g., 7 for 7 hours sleep, 4 for 4 workouts/week)"
+                      description: "Target value per period (e.g., 5 for 5 sessions/week)"
                     },
                     direction: {
                       type: "string",
                       enum: ["higher", "lower"],
-                      description: "Whether higher or lower values are better. 'higher' for things like workouts, sleep. 'lower' for things like distractions, missed days."
+                      description: "'higher' if more is better (workouts, sessions), 'lower' if less is better (distractions, missed days)"
                     },
                     unit: {
                       type: "string",
-                      description: "Unit of measurement (e.g., 'hours', 'days', 'minutes', 'sessions')"
+                      description: "Unit of measurement (e.g., 'sessions', 'hours', 'times')"
                     },
                     frequency: {
                       type: "string",
-                      description: "How often to track: 'daily' or 'weekly'"
+                      description: "'daily' or 'weekly'"
                     }
                   },
                   required: ["name", "target", "direction"]
@@ -545,7 +565,7 @@ The goal is a BALANCED scorecard that supports sustainable high performance, not
 - **save_purpose**: When they confirm their purpose statement
 - **save_principles**: When creating NEW principles during onboarding
 - **update_principle_context**: When DEEPENING an existing principle with "when tested" and "how to hold" - ALWAYS use this after helping them deepen a principle
-- **save_scorecard**: When metrics are confirmed
+- **save_scorecard**: When metrics are confirmed - YOU MUST include the full categories array with metric name, target, and direction. Pick an appropriate category name if not specified.
 
 ### IMPORTANT: Deepening vs Creating Principles
 - User says "deepen my principle" or clicks "Deepen with Willson" → use **update_principle_context**
