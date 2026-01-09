@@ -463,21 +463,33 @@ export async function POST(request: NextRequest) {
 
         // If recurring, create next occurrence
         if (taskToComplete.recurrence && taskToComplete.recurrence !== "once" && taskToComplete.dueDate) {
+          // Calculate next occurrence - ensures it's always in the future
           const getNextOccurrence = (currentDate: string, recurrence: string): string => {
-            const date = new Date(currentDate);
-            switch (recurrence) {
-              case "daily":
-                date.setDate(date.getDate() + 1);
-                break;
-              case "weekly":
-                date.setDate(date.getDate() + 7);
-                break;
-              case "monthly":
-                date.setMonth(date.getMonth() + 1);
-                break;
-              default:
-                return currentDate;
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            let date = new Date(currentDate);
+            date.setHours(0, 0, 0, 0);
+            
+            // Keep adding intervals until we get a future date (after today)
+            while (date <= today) {
+              switch (recurrence) {
+                case "daily":
+                  date.setDate(date.getDate() + 1);
+                  break;
+                case "weekly":
+                  date.setDate(date.getDate() + 7);
+                  break;
+                case "monthly":
+                  date.setMonth(date.getMonth() + 1);
+                  break;
+                default:
+                  const tomorrow = new Date(today);
+                  tomorrow.setDate(tomorrow.getDate() + 1);
+                  return tomorrow.toISOString().split('T')[0];
+              }
             }
+            
             return date.toISOString().split('T')[0];
           };
 

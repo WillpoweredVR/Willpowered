@@ -85,6 +85,37 @@ function getToday(): string {
   return new Date().toISOString().split('T')[0];
 }
 
+// Helper to get next occurrence date for recurring tasks
+// Ensures next date is always in the future (tomorrow or later)
+function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  let date = new Date(currentDate);
+  date.setHours(0, 0, 0, 0);
+  
+  // Keep adding intervals until we get a future date (after today)
+  while (date <= today) {
+    switch (recurrence) {
+      case "daily":
+        date.setDate(date.getDate() + 1);
+        break;
+      case "weekly":
+        date.setDate(date.getDate() + 7);
+        break;
+      case "monthly":
+        date.setMonth(date.getMonth() + 1);
+        break;
+      default:
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        return tomorrow.toISOString().split('T')[0];
+    }
+  }
+  
+  return date.toISOString().split('T')[0];
+}
+
 // Helper to get the last 7 days including today
 function getLast7Days(): string[] {
   const days: string[] = [];
@@ -661,19 +692,51 @@ export default function DashboardPage() {
     const task = tasks.find(t => t.id === taskId);
     if (!task) return;
 
-    const newStatus = task.status === "completed" ? "pending" : "completed";
-    const updatedTasks = tasks.map(t =>
-      t.id === taskId
-        ? { ...t, status: newStatus as Task["status"], completedAt: newStatus === "completed" ? new Date().toISOString() : undefined }
-        : t
-    );
+    const isCompleting = task.status !== "completed";
+    
+    if (isCompleting) {
+      // Mark as completed
+      let newTasks = tasks.map(t =>
+        t.id === taskId
+          ? { ...t, status: "completed" as const, completedAt: new Date().toISOString() }
+          : t
+      );
 
-    setTasks(updatedTasks);
+      // If recurring, create next occurrence
+      if (task.recurrence && task.recurrence !== "once" && task.dueDate) {
+        const nextDueDate = getNextOccurrence(task.dueDate, task.recurrence);
+        const nextTask: Task = {
+          ...task,
+          id: `task-${Date.now()}`,
+          status: "in_progress",
+          dueDate: nextDueDate,
+          createdAt: new Date().toISOString(),
+          completedAt: undefined,
+        };
+        newTasks = [...newTasks, nextTask];
+      }
 
-    await supabase
-      .from("profiles")
-      .update({ tasks: updatedTasks })
-      .eq("id", user.id);
+      setTasks(newTasks);
+
+      await supabase
+        .from("profiles")
+        .update({ tasks: newTasks })
+        .eq("id", user.id);
+    } else {
+      // Reopen task
+      const updatedTasks = tasks.map(t =>
+        t.id === taskId
+          ? { ...t, status: "in_progress" as const, completedAt: undefined }
+          : t
+      );
+
+      setTasks(updatedTasks);
+
+      await supabase
+        .from("profiles")
+        .update({ tasks: updatedTasks })
+        .eq("id", user.id);
+    }
   };
 
   const getTasksForMetric = (metricId: string): Task[] => {

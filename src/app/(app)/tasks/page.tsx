@@ -65,21 +65,35 @@ function getUrgency(dueDate?: string): "overdue" | "today" | "soon" | "later" | 
 }
 
 // Helper to get next occurrence date for recurring tasks
+// Ensures next date is always in the future (tomorrow or later)
 function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
-  const date = new Date(currentDate);
-  switch (recurrence) {
-    case "daily":
-      date.setDate(date.getDate() + 1);
-      break;
-    case "weekly":
-      date.setDate(date.getDate() + 7);
-      break;
-    case "monthly":
-      date.setMonth(date.getMonth() + 1);
-      break;
-    default:
-      return currentDate;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  // Start from the original due date
+  let date = new Date(currentDate);
+  date.setHours(0, 0, 0, 0);
+  
+  // Keep adding intervals until we get a future date (after today)
+  while (date <= today) {
+    switch (recurrence) {
+      case "daily":
+        date.setDate(date.getDate() + 1);
+        break;
+      case "weekly":
+        date.setDate(date.getDate() + 7);
+        break;
+      case "monthly":
+        date.setMonth(date.getMonth() + 1);
+        break;
+      default:
+        // For "once" or undefined, just return tomorrow
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        return tomorrow.toISOString().split('T')[0];
+    }
   }
+  
   return date.toISOString().split('T')[0];
 }
 
