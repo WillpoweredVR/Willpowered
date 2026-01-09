@@ -25,6 +25,7 @@ interface SaveGoalInput {
 interface MetricInput {
   name: string;
   target: number;
+  direction?: "higher" | "lower";
   unit?: string;
   frequency?: string;
 }
@@ -245,6 +246,7 @@ export async function POST(request: NextRequest) {
             id: `metric-${Date.now()}-${catIndex}-${metricIndex}`,
             name: m.name,
             target: m.target,
+            direction: m.direction || "higher",
             unit: m.unit || "",
             frequency: m.frequency || "daily",
             createdAt: new Date().toISOString(),

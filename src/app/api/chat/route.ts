@@ -200,6 +200,11 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
                       type: "number",
                       description: "Target value per period (e.g., 7 for 7 hours sleep, 4 for 4 workouts/week)"
                     },
+                    direction: {
+                      type: "string",
+                      enum: ["higher", "lower"],
+                      description: "Whether higher or lower values are better. 'higher' for things like workouts, sleep. 'lower' for things like distractions, missed days."
+                    },
                     unit: {
                       type: "string",
                       description: "Unit of measurement (e.g., 'hours', 'days', 'minutes', 'sessions')"
@@ -209,7 +214,7 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
                       description: "How often to track: 'daily' or 'weekly'"
                     }
                   },
-                  required: ["name", "target"]
+                  required: ["name", "target", "direction"]
                 }
               }
             },
@@ -671,46 +676,57 @@ If something seems like it was already covered, acknowledge it: "Earlier you men
 
 ## FORMATTING (CRITICAL - Follow exactly)
 
-Use clear section headers to organize your responses. NEVER put headers inline with text or at the end of paragraphs.
+EVERY **bold header** MUST be preceded by TWO newlines (a full paragraph break). This creates visual separation between sections.
 
-STRUCTURE EVERY RESPONSE LIKE THIS:
-1. Brief intro paragraph (1-2 sentences max)
-2. Separate sections with **bold headers** on their own lines
-3. Content under each header (can be paragraphs or bullet points)
-4. Each section clearly separated with blank lines
+WRONG - header right after text:
+"Here's what I suggest: **Option 1:** Do this thing"
 
-WRONG FORMAT (headers inline):
-\`\`\`
-Looking at your scorecard, you need these metrics. **Missing metrics that would help: Portfolio Progress:** "User research conversations"... **Principle Alignment:** "Rushed decisions"...
-\`\`\`
+WRONG - header only has one newline before:
+"Here's what I suggest:
+**Option 1:** Do this thing"
 
-RIGHT FORMAT (headers separated):
-\`\`\`
-Looking at your scorecard, you're tracking the right foundations. Here's what would help:
+RIGHT - header has paragraph break (blank line) before:
+"Here's what I suggest:
 
-**Missing metrics - Portfolio Progress:**
-- "User research conversations" - you have this at 0/1 weekly, but it's critical for your goal
-- "Portfolio work sessions" - dedicated time building your example product (target: 5/week)
-- "Network conversations" - aligns with finding potential employers (target: 2/week)
+**Option 1:**
+Do this thing"
 
-**Missing metrics - Principle Alignment:**
-- "Rushed decisions avoided" - for "Slow Is Smooth" when you feel time pressure (target: 0, lower is better)
-- "Uncomfortable conversations initiated" - for "Be Empathetically Honest" (target: 2/week)
+STRUCTURE YOUR RESPONSES:
 
-**Current scorecard adjustments:**
-Your stock/crypto/email checking totals are at 11.5 vs 8 target - this scattered attention fights your deep work. Consider combining them into "Distraction checks" with a total limit of 6/day.
+1. One intro paragraph
 
-Also, your meditation is at 0.3/5 - this directly impacts your ability to "slow down" and listen deeply in user research.
+2. Then each section with a **bold header** gets its own paragraph break before it
 
-What category feels most important to tackle first?
-\`\`\`
+3. Content under headers can be bullets or paragraphs
+
+4. Then next **bold header** with paragraph break before it
+
+EXAMPLE OF CORRECT FORMAT:
+
+Looking at your goal, you need a metric that measures consistent progress.
+
+**Best metric option: "AI agent coding sessions"**
+
+Target: 5/week. This tracks dedicated building time and aligns with your Deep Work metric.
+
+**Why this works:**
+
+- Measurable: either you worked on it or you didn't
+- Supports "Consistency Conquers Intensity Squanderers"
+- Small enough to hit weekly, meaningful enough to show progress
+
+**Alternative options:**
+
+- "AI agent features completed" - Target: 2/week
+- "Agent testing/iteration cycles" - Target: 3/week
+
+Which resonates most with how you want to approach this?
 
 KEY RULES:
-- **Bold headers** ALWAYS on their own line with blank line before
-- NEVER put headers at the end of a bullet point or mid-sentence
-- Use blank lines to separate each section visually
-- Each section should stand on its own
-- Bullet points should be complete thoughts, not run-on sentences with multiple inline headers`;
+- TWO newlines (paragraph break) before every **bold header**
+- Headers on their own line, never inline with other text
+- Bullets are clean and don't contain multiple headers
+- Each section is visually distinct`;
 
 export async function POST(request: NextRequest) {
   try {
