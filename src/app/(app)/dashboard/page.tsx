@@ -1915,50 +1915,120 @@ export default function DashboardPage() {
                           </span>
                           
                           {isEditing ? (
-                            <div className="flex items-center gap-2">
-                              <input
-                                type="number"
-                                value={metricInputValue}
-                                onChange={(e) => setMetricInputValue(e.target.value)}
-                                onKeyDown={(e) => {
-                                  if (e.key === "Enter") handleMetricSave();
-                                  if (e.key === "Escape") setEditingMetric(null);
-                                }}
-                                placeholder="Enter value"
-                                className="w-20 px-2 py-1 text-sm border border-slate-300 rounded outline-none focus:border-emerald-400"
-                                autoFocus
-                              />
-                              <button
-                                onClick={handleMetricSave}
-                                className="p-1 text-emerald-600 hover:bg-emerald-100 rounded"
-                              >
-                                <Check className="w-4 h-4" />
-                              </button>
-                              <button
-                                onClick={() => setEditingMetric(null)}
-                                className="p-1 text-slate-400 hover:bg-slate-100 rounded"
-                              >
-                                <X className="w-4 h-4" />
-                              </button>
-                            </div>
+                            metric.aggregation === 'count' ? (
+                              // Yes/No toggle for "days done" metrics
+                              <div className="flex items-center gap-2">
+                                <button
+                                  onClick={() => {
+                                    setDailyValue(metric.id, today, 1);
+                                    setEditingMetric(null);
+                                  }}
+                                  className={`px-3 py-1 text-sm rounded-lg border transition-colors flex items-center gap-1 ${
+                                    todayValue === 1
+                                      ? "bg-emerald-500 border-emerald-500 text-white"
+                                      : "bg-emerald-50 border-emerald-200 text-emerald-700 hover:bg-emerald-100"
+                                  }`}
+                                >
+                                  <Check className="w-3.5 h-3.5" />
+                                  Yes
+                                </button>
+                                <button
+                                  onClick={() => {
+                                    setDailyValue(metric.id, today, 0);
+                                    setEditingMetric(null);
+                                  }}
+                                  className={`px-3 py-1 text-sm rounded-lg border transition-colors flex items-center gap-1 ${
+                                    todayValue === 0
+                                      ? "bg-slate-500 border-slate-500 text-white"
+                                      : "bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100"
+                                  }`}
+                                >
+                                  <X className="w-3.5 h-3.5" />
+                                  No
+                                </button>
+                                <button
+                                  onClick={() => setEditingMetric(null)}
+                                  className="p-1 text-slate-400 hover:bg-slate-100 rounded ml-1"
+                                >
+                                  <X className="w-4 h-4" />
+                                </button>
+                              </div>
+                            ) : (
+                              // Number input for other metrics
+                              <div className="flex items-center gap-2">
+                                <input
+                                  type="number"
+                                  value={metricInputValue}
+                                  onChange={(e) => setMetricInputValue(e.target.value)}
+                                  onKeyDown={(e) => {
+                                    if (e.key === "Enter") handleMetricSave();
+                                    if (e.key === "Escape") setEditingMetric(null);
+                                  }}
+                                  placeholder="Enter value"
+                                  className="w-20 px-2 py-1 text-sm border border-slate-300 rounded outline-none focus:border-emerald-400"
+                                  autoFocus
+                                />
+                                <button
+                                  onClick={handleMetricSave}
+                                  className="p-1 text-emerald-600 hover:bg-emerald-100 rounded"
+                                >
+                                  <Check className="w-4 h-4" />
+                                </button>
+                                <button
+                                  onClick={() => setEditingMetric(null)}
+                                  className="p-1 text-slate-400 hover:bg-slate-100 rounded"
+                                >
+                                  <X className="w-4 h-4" />
+                                </button>
+                              </div>
+                            )
                           ) : (
-                            <button
-                              onClick={() => {
-                                setEditingMetric({
-                                  metricId: metric.id,
-                                  date: today,
-                                  currentValue: todayValue
-                                });
-                                setMetricInputValue(todayValue !== null ? String(todayValue) : "");
-                              }}
-                              className={`px-3 py-1 text-sm rounded-lg border transition-colors ${
-                                todayValue !== null
-                                  ? "bg-emerald-100 border-emerald-200 text-emerald-700"
-                                  : "bg-white border-slate-200 text-slate-600 hover:border-emerald-300 hover:bg-emerald-50"
-                              }`}
-                            >
-                              {todayValue !== null ? `Today: ${todayValue}` : "+ Log Today"}
-                            </button>
+                            metric.aggregation === 'count' ? (
+                              // Show toggle buttons directly for "days done" metrics
+                              <div className="flex items-center gap-1.5">
+                                <button
+                                  onClick={() => setDailyValue(metric.id, today, 1)}
+                                  className={`px-2 py-1 text-xs rounded-md border transition-colors flex items-center gap-1 ${
+                                    todayValue === 1
+                                      ? "bg-emerald-500 border-emerald-500 text-white"
+                                      : "bg-white border-slate-200 text-slate-500 hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-600"
+                                  }`}
+                                >
+                                  <Check className="w-3 h-3" />
+                                  Yes
+                                </button>
+                                <button
+                                  onClick={() => setDailyValue(metric.id, today, 0)}
+                                  className={`px-2 py-1 text-xs rounded-md border transition-colors flex items-center gap-1 ${
+                                    todayValue === 0
+                                      ? "bg-slate-500 border-slate-500 text-white"
+                                      : "bg-white border-slate-200 text-slate-500 hover:border-slate-300 hover:bg-slate-100"
+                                  }`}
+                                >
+                                  <X className="w-3 h-3" />
+                                  No
+                                </button>
+                              </div>
+                            ) : (
+                              // Standard log button for other metrics
+                              <button
+                                onClick={() => {
+                                  setEditingMetric({
+                                    metricId: metric.id,
+                                    date: today,
+                                    currentValue: todayValue
+                                  });
+                                  setMetricInputValue(todayValue !== null ? String(todayValue) : "");
+                                }}
+                                className={`px-3 py-1 text-sm rounded-lg border transition-colors ${
+                                  todayValue !== null
+                                    ? "bg-emerald-100 border-emerald-200 text-emerald-700"
+                                    : "bg-white border-slate-200 text-slate-600 hover:border-emerald-300 hover:bg-emerald-50"
+                                }`}
+                              >
+                                {todayValue !== null ? `Today: ${todayValue}` : "+ Log Today"}
+                              </button>
+                            )
                           )}
                         </div>
                       </div>
