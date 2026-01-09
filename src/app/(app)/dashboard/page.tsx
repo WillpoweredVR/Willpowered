@@ -775,21 +775,14 @@ export default function DashboardPage() {
     return tasks.filter(t => t.metricId === metricId && t.status !== "completed");
   };
 
-  // Get top priority tasks for "Today's Focus" - sorted by urgency (due date)
+  // Get tasks due today for "Today's Focus"
   const focusTasks = useMemo(() => {
-    const urgencyOrder = { overdue: 0, today: 1, soon: 2, later: 3, none: 4 };
     return tasks
-      .filter(t => t.status !== "completed")
+      .filter(t => t.status !== "completed" && getTaskUrgency(t.dueDate) === "today")
       .sort((a, b) => {
-        // Sort by urgency (due date based)
-        const aUrgency = getTaskUrgency(a.dueDate);
-        const bUrgency = getTaskUrgency(b.dueDate);
-        const urgencyDiff = urgencyOrder[aUrgency] - urgencyOrder[bUrgency];
-        if (urgencyDiff !== 0) return urgencyDiff;
-        // Then by creation date (newest first)
+        // Sort by creation date (newest first)
         return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
-      })
-      .slice(0, 3);
+      });
   }, [tasks]);
 
   const handleSignOut = async () => {
@@ -1147,7 +1140,7 @@ export default function DashboardPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-sm">Today&apos;s Focus</h3>
-                  <p className="text-xs text-muted-foreground">{tasks.filter(t => t.status !== "completed").length} active tasks</p>
+                  <p className="text-xs text-muted-foreground">{focusTasks.length} task{focusTasks.length !== 1 ? "s" : ""} due today</p>
                 </div>
               </div>
               <Link
