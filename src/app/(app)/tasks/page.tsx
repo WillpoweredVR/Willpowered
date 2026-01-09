@@ -52,10 +52,13 @@ interface Task {
 // Helper to get urgency based on due date
 function getUrgency(dueDate?: string): "overdue" | "today" | "soon" | "later" | "none" {
   if (!dueDate) return "none";
+  
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const due = new Date(dueDate);
-  due.setHours(0, 0, 0, 0);
+  
+  // Use parseDateLocal to avoid UTC conversion issues
+  const due = parseDateLocal(dueDate);
+  
   const diffDays = Math.floor((due.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
   
   if (diffDays < 0) return "overdue";
@@ -72,58 +75,48 @@ function formatDateLocal(date: Date): string {
   return `${year}-${month}-${day}`;
 }
 
+// Helper to display a date string in user-friendly format
+function displayDate(dateStr: string): string {
+  const date = parseDateLocal(dateStr);
+  return date.toLocaleDateString();
+}
+
 // Helper to parse date string as LOCAL midnight (not UTC)
 // Handles both "YYYY-MM-DD" and "M/D/YYYY" formats
 function parseDateLocal(dateStr: string): Date {
-  console.log("[parseDateLocal] Input:", dateStr);
-  
   let year: number, month: number, day: number;
   
   if (dateStr.includes('-')) {
     // ISO format: YYYY-MM-DD
-    const parts = dateStr.split('-');
-    console.log("[parseDateLocal] ISO format, parts:", parts);
-    [year, month, day] = parts.map(Number);
+    [year, month, day] = dateStr.split('-').map(Number);
   } else if (dateStr.includes('/')) {
     // US format: M/D/YYYY
     const parts = dateStr.split('/');
-    console.log("[parseDateLocal] US format, parts:", parts);
     month = Number(parts[0]);
     day = Number(parts[1]);
     year = Number(parts[2]);
   } else {
     // Fallback: try to parse as Date
-    console.log("[parseDateLocal] Unknown format, using Date constructor");
     const d = new Date(dateStr);
     year = d.getFullYear();
     month = d.getMonth() + 1;
     day = d.getDate();
   }
   
-  console.log("[parseDateLocal] Parsed:", { year, month, day });
-  const result = new Date(year, month - 1, day, 0, 0, 0, 0);
-  console.log("[parseDateLocal] Result:", result.toString());
-  return result;
+  return new Date(year, month - 1, day, 0, 0, 0, 0);
 }
 
 // Helper to get next occurrence date for recurring tasks
 // Ensures next date is always in the future (tomorrow or later)
 function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
-  console.log("[getNextOccurrence] Input:", { currentDate, recurrence });
-  
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  console.log("[getNextOccurrence] Today (midnight):", today.toString());
   
   // Parse the date as LOCAL time to avoid timezone issues
   let date = parseDateLocal(currentDate);
-  console.log("[getNextOccurrence] Parsed date:", date.toString());
   
-  let iterations = 0;
   // Keep adding intervals until we get a future date (after today)
-  while (date <= today && iterations < 100) {
-    iterations++;
-    console.log(`[getNextOccurrence] Iteration ${iterations}: date=${date.toString()}, adding ${recurrence}`);
+  while (date <= today) {
     switch (recurrence) {
       case "daily":
         date.setDate(date.getDate() + 1);
@@ -138,16 +131,12 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
         // For "once" or undefined, just return tomorrow
         const tomorrow = new Date(today);
         tomorrow.setDate(tomorrow.getDate() + 1);
-        console.log("[getNextOccurrence] Non-recurring, returning tomorrow:", formatDateLocal(tomorrow));
         return formatDateLocal(tomorrow);
     }
   }
   
-  const result = formatDateLocal(date);
-  console.log("[getNextOccurrence] Result:", result, "after", iterations, "iterations");
-  
   // Return formatted LOCAL date (not UTC)
-  return result;
+  return formatDateLocal(date);
 }
 
 interface Metric {
@@ -300,14 +289,6 @@ export default function TasksPage() {
     const task = tasks.find(t => t.id === taskId);
     if (!task) return;
 
-    console.log("[toggleTaskComplete] Task:", { 
-      id: task.id, 
-      title: task.title, 
-      dueDate: task.dueDate, 
-      recurrence: task.recurrence,
-      status: task.status 
-    });
-
     const isCompleting = task.status !== "completed";
     
     if (isCompleting) {
@@ -320,9 +301,7 @@ export default function TasksPage() {
 
       // If recurring, create next occurrence
       if (task.recurrence && task.recurrence !== "once" && task.dueDate) {
-        console.log("[toggleTaskComplete] Creating next occurrence for recurring task");
         const nextDueDate = getNextOccurrence(task.dueDate, task.recurrence);
-        console.log("[toggleTaskComplete] Next due date:", nextDueDate);
         const nextTask: Task = {
           ...task,
           id: `task-${Date.now()}`,
@@ -331,7 +310,6 @@ export default function TasksPage() {
           createdAt: new Date().toISOString(),
           completedAt: undefined,
         };
-        console.log("[toggleTaskComplete] New task:", nextTask);
         newTasks = [...newTasks, nextTask];
       }
 
@@ -704,7 +682,7 @@ export default function TasksPage() {
                               {suggestion.dueDate && (
                                 <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
                                   <Calendar className="w-3 h-3" />
-                                  {new Date(suggestion.dueDate).toLocaleDateString()}
+                                  {displayDate(suggestion.dueDate)}
                                 </span>
                               )}
                               {suggestion.recurrence && suggestion.recurrence !== "once" && (
@@ -879,7 +857,7 @@ function TaskRow({
           {task.dueDate && (
             <span className={`inline-flex items-center gap-1 text-xs ${urgency === "overdue" || urgency === "today" ? urgencyConfig[urgency].color.split(' ')[1] : "text-muted-foreground"}`}>
               <Calendar className="w-3 h-3" />
-              {new Date(task.dueDate).toLocaleDateString()}
+              {displayDate(task.dueDate)}
             </span>
           )}
         </div>

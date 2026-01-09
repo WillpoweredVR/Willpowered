@@ -68,10 +68,13 @@ interface Task {
 // Helper to get urgency based on due date
 function getTaskUrgency(dueDate?: string): "overdue" | "today" | "soon" | "later" | "none" {
   if (!dueDate) return "none";
+  
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const due = new Date(dueDate);
-  due.setHours(0, 0, 0, 0);
+  
+  // Use parseDateLocal to avoid UTC conversion issues
+  const due = parseDateLocal(dueDate);
+  
   const diffDays = Math.floor((due.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
   
   if (diffDays < 0) return "overdue";
