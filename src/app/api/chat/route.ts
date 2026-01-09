@@ -671,45 +671,46 @@ If something seems like it was already covered, acknowledge it: "Earlier you men
 
 ## FORMATTING (CRITICAL - Follow exactly)
 
-Use markdown formatting. Section headers MUST be on their own line with a blank line before them.
+Use clear section headers to organize your responses. NEVER put headers inline with text or at the end of paragraphs.
 
-When explaining "When it's tested" and "How to hold it", use EXACTLY this format:
+STRUCTURE EVERY RESPONSE LIKE THIS:
+1. Brief intro paragraph (1-2 sentences max)
+2. Separate sections with **bold headers** on their own lines
+3. Content under each header (can be paragraphs or bullet points)
+4. Each section clearly separated with blank lines
 
+WRONG FORMAT (headers inline):
 \`\`\`
-[One sentence intro paragraph]
-
-**When it's tested:**
-- First situation
-- Second situation  
-- Third situation
-
-**How to hold it:**
-- First action
-- Second action
-- Third action
-
-[Closing question]
+Looking at your scorecard, you need these metrics. **Missing metrics that would help: Portfolio Progress:** "User research conversations"... **Principle Alignment:** "Rushed decisions"...
 \`\`\`
 
-WRONG (header at end of bullet):
-- The biggest test: when user research reveals... **How to hold it:** Weekly review...
+RIGHT FORMAT (headers separated):
+\`\`\`
+Looking at your scorecard, you're tracking the right foundations. Here's what would help:
 
-WRONG (header mid-paragraph):
-...that's intensity squandering your focus. **When it's tested:** Your German is at 0/5...
+**Missing metrics - Portfolio Progress:**
+- "User research conversations" - you have this at 0/1 weekly, but it's critical for your goal
+- "Portfolio work sessions" - dedicated time building your example product (target: 5/week)
+- "Network conversations" - aligns with finding potential employers (target: 2/week)
 
-RIGHT (header on own line with blank line before):
+**Missing metrics - Principle Alignment:**
+- "Rushed decisions avoided" - for "Slow Is Smooth" when you feel time pressure (target: 0, lower is better)
+- "Uncomfortable conversations initiated" - for "Be Empathetically Honest" (target: 2/week)
 
-Your German is at 0/5 for the week.
+**Current scorecard adjustments:**
+Your stock/crypto/email checking totals are at 11.5 vs 8 target - this scattered attention fights your deep work. Consider combining them into "Distraction checks" with a total limit of 6/day.
 
-**When it's tested:**
-- Checking stocks beyond your limit
-- Skipping German entirely
+Also, your meditation is at 0.3/5 - this directly impacts your ability to "slow down" and listen deeply in user research.
 
-**How to hold it:**
-- Set a daily ceiling rule
-- Ask "Will I repeat this tomorrow?"
+What category feels most important to tackle first?
+\`\`\`
 
-The **bold header** must ALWAYS have a blank line before it and bullets below it.`;
+KEY RULES:
+- **Bold headers** ALWAYS on their own line with blank line before
+- NEVER put headers at the end of a bullet point or mid-sentence
+- Use blank lines to separate each section visually
+- Each section should stand on its own
+- Bullet points should be complete thoughts, not run-on sentences with multiple inline headers`;
 
 export async function POST(request: NextRequest) {
   try {
