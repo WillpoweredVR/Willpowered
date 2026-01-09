@@ -107,7 +107,7 @@ function parseDateLocal(dateStr: string): Date {
 }
 
 // Helper to get next occurrence date for recurring tasks
-// Ensures next date is always in the future (tomorrow or later)
+// Always advances to the next occurrence in the sequence
 function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -115,7 +115,25 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
   // Parse the date as LOCAL time to avoid timezone issues
   let date = parseDateLocal(currentDate);
   
-  // Keep adding intervals until we get a future date (after today)
+  // Always add one interval first (the task is being completed, so move to next occurrence)
+  switch (recurrence) {
+    case "daily":
+      date.setDate(date.getDate() + 1);
+      break;
+    case "weekly":
+      date.setDate(date.getDate() + 7);
+      break;
+    case "monthly":
+      date.setMonth(date.getMonth() + 1);
+      break;
+    default:
+      // For "once" or undefined, just return tomorrow
+      const tomorrow = new Date(today);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      return formatDateLocal(tomorrow);
+  }
+  
+  // If still in the past (task was very overdue), keep advancing until future
   while (date <= today) {
     switch (recurrence) {
       case "daily":
@@ -127,11 +145,6 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
       case "monthly":
         date.setMonth(date.getMonth() + 1);
         break;
-      default:
-        // For "once" or undefined, just return tomorrow
-        const tomorrow = new Date(today);
-        tomorrow.setDate(tomorrow.getDate() + 1);
-        return formatDateLocal(tomorrow);
     }
   }
   
@@ -196,7 +209,48 @@ export default function TasksPage() {
   const [suggestions, setSuggestions] = useState<SuggestedTask[]>([]);
   const [isLoadingSuggestions, setIsLoadingSuggestions] = useState(false);
   const [dismissedSuggestions, setDismissedSuggestions] = useState<Set<string>>(new Set());
+  const [suggestionsLoaded, setSuggestionsLoaded] = useState(false);
   const supabase = createClient();
+
+  // Load suggestions from localStorage on mount
+  useEffect(() => {
+    const stored = localStorage.getItem("willson-suggestions");
+    const storedDismissed = localStorage.getItem("willson-suggestions-dismissed");
+    
+    if (stored) {
+      try {
+        const parsed = JSON.parse(stored);
+        setSuggestions(parsed);
+      } catch (e) {
+        console.error("Error parsing stored suggestions:", e);
+      }
+    }
+    
+    if (storedDismissed) {
+      try {
+        const parsed = JSON.parse(storedDismissed);
+        setDismissedSuggestions(new Set(parsed));
+      } catch (e) {
+        console.error("Error parsing stored dismissed suggestions:", e);
+      }
+    }
+    
+    setSuggestionsLoaded(true);
+  }, []);
+
+  // Save suggestions to localStorage when they change
+  useEffect(() => {
+    if (suggestionsLoaded) {
+      localStorage.setItem("willson-suggestions", JSON.stringify(suggestions));
+    }
+  }, [suggestions, suggestionsLoaded]);
+
+  // Save dismissed suggestions to localStorage when they change
+  useEffect(() => {
+    if (suggestionsLoaded) {
+      localStorage.setItem("willson-suggestions-dismissed", JSON.stringify([...dismissedSuggestions]));
+    }
+  }, [dismissedSuggestions, suggestionsLoaded]);
 
   // Check URL params for metric filter and auto-open modal
   useEffect(() => {
@@ -370,12 +424,12 @@ export default function TasksPage() {
     return offTrack;
   };
 
-  // Load AI-generated task suggestions
+  // Load AI-generated task suggestions (only called when user clicks button)
   const loadSuggestions = useCallback(async () => {
     if (isLoadingSuggestions) return;
     
     setIsLoadingSuggestions(true);
-    setDismissedSuggestions(new Set());
+    setDismissedSuggestions(new Set()); // Clear dismissed when getting new suggestions
     
     try {
       const response = await fetch("/api/suggest-tasks", {
@@ -385,7 +439,12 @@ export default function TasksPage() {
       if (!response.ok) throw new Error("Failed to load suggestions");
       
       const data = await response.json();
-      setSuggestions(data.suggestions || []);
+      const newSuggestions = data.suggestions || [];
+      setSuggestions(newSuggestions);
+      
+      // Immediately save to localStorage
+      localStorage.setItem("willson-suggestions", JSON.stringify(newSuggestions));
+      localStorage.setItem("willson-suggestions-dismissed", JSON.stringify([]));
     } catch (error) {
       console.error("Error loading suggestions:", error);
       setSuggestions([]);
@@ -420,12 +479,8 @@ export default function TasksPage() {
     setDismissedSuggestions(prev => new Set([...prev, title]));
   };
 
-  // Load suggestions when scorecard is available and no suggestions yet
-  useEffect(() => {
-    if (scorecard && suggestions.length === 0 && !isLoadingSuggestions && isAdmin) {
-      loadSuggestions();
-    }
-  }, [scorecard, isAdmin]); // eslint-disable-line react-hooks/exhaustive-deps
+  // Note: Suggestions are loaded from localStorage on mount
+  // User must click "Get new suggestions" to fetch fresh ones from AI
 
   const getMetricById = (metricId: string): Metric | undefined => {
     if (!scorecard) return undefined;
@@ -616,7 +671,7 @@ export default function TasksPage() {
         )}
 
         {/* Willson Suggests Section */}
-        {isAdmin && (suggestions.length > 0 || isLoadingSuggestions) && (
+        {isAdmin && suggestionsLoaded && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -720,14 +775,17 @@ export default function TasksPage() {
                 
                 {suggestions.filter(s => !dismissedSuggestions.has(s.title)).length === 0 && (
                   <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100 p-6 text-center">
+                    <Lightbulb className="w-8 h-8 text-purple-300 mx-auto mb-2" />
                     <p className="text-sm text-muted-foreground">
-                      All suggestions added or dismissed.
+                      {suggestions.length === 0 
+                        ? "Get personalized task suggestions based on your off-track metrics."
+                        : "All suggestions added or dismissed."}
                     </p>
                     <button
                       onClick={loadSuggestions}
                       className="text-sm text-purple-600 hover:text-purple-700 mt-2 font-medium"
                     >
-                      Get new suggestions
+                      {suggestions.length === 0 ? "Get suggestions" : "Get new suggestions"}
                     </button>
                   </div>
                 )}

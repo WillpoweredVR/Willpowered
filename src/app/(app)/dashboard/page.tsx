@@ -103,7 +103,7 @@ function parseDateLocal(dateStr: string): Date {
 }
 
 // Helper to get next occurrence date for recurring tasks
-// Ensures next date is always in the future (tomorrow or later)
+// Always advances to the next occurrence in the sequence
 function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]): string {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -111,7 +111,25 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
   // Parse the date as LOCAL time to avoid timezone issues
   let date = parseDateLocal(currentDate);
   
-  // Keep adding intervals until we get a future date (after today)
+  // Always add one interval first (the task is being completed, so move to next occurrence)
+  switch (recurrence) {
+    case "daily":
+      date.setDate(date.getDate() + 1);
+      break;
+    case "weekly":
+      date.setDate(date.getDate() + 7);
+      break;
+    case "monthly":
+      date.setMonth(date.getMonth() + 1);
+      break;
+    default:
+      // For "once" or undefined, just return tomorrow
+      const tomorrow = new Date(today);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      return formatDateLocal(tomorrow);
+  }
+  
+  // If still in the past (task was very overdue), keep advancing until future
   while (date <= today) {
     switch (recurrence) {
       case "daily":
@@ -123,10 +141,6 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
       case "monthly":
         date.setMonth(date.getMonth() + 1);
         break;
-      default:
-        const tomorrow = new Date(today);
-        tomorrow.setDate(tomorrow.getDate() + 1);
-        return formatDateLocal(tomorrow);
     }
   }
   

@@ -477,7 +477,7 @@ export async function POST(request: NextRequest) {
             return new Date(year, month - 1, day, 0, 0, 0, 0);
           };
           
-          // Calculate next occurrence - ensures it's always in the future
+          // Calculate next occurrence - always advances to next in sequence
           const getNextOccurrence = (currentDate: string, recurrence: string): string => {
             const today = new Date();
             today.setHours(0, 0, 0, 0);
@@ -485,7 +485,24 @@ export async function POST(request: NextRequest) {
             // Parse the date as LOCAL time to avoid timezone issues
             let date = parseDateLocal(currentDate);
             
-            // Keep adding intervals until we get a future date (after today)
+            // Always add one interval first (task is being completed)
+            switch (recurrence) {
+              case "daily":
+                date.setDate(date.getDate() + 1);
+                break;
+              case "weekly":
+                date.setDate(date.getDate() + 7);
+                break;
+              case "monthly":
+                date.setMonth(date.getMonth() + 1);
+                break;
+              default:
+                const tomorrow = new Date(today);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                return formatDateLocal(tomorrow);
+            }
+            
+            // If still in the past (task was very overdue), keep advancing
             while (date <= today) {
               switch (recurrence) {
                 case "daily":
@@ -497,10 +514,6 @@ export async function POST(request: NextRequest) {
                 case "monthly":
                   date.setMonth(date.getMonth() + 1);
                   break;
-                default:
-                  const tomorrow = new Date(today);
-                  tomorrow.setDate(tomorrow.getDate() + 1);
-                  return formatDateLocal(tomorrow);
               }
             }
             
