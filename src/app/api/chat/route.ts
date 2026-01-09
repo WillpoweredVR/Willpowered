@@ -174,9 +174,11 @@ const WILLSON_TOOLS: Anthropic.Tool[] = [
   },
   {
     name: "save_scorecard",
-    description: `Save scorecard metrics to the user's dashboard. IMPORTANT: You MUST include the full categories array with all metric details. If the user is adding to an existing category, use that category name. If it's a new area, create an appropriate category name (e.g., 'Health', 'Work', 'Learning', 'Habits').
+    description: `Save NEW scorecard metrics to the user's dashboard. ONLY include the NEW metric(s) being added - do NOT include existing metrics (duplicates are automatically filtered out).
 
-Example usage - when user says "add AI coding sessions metric":
+If adding to an existing category, use that category name. If it's a new area, create an appropriate category name (e.g., 'Health', 'Work', 'Learning', 'Habits').
+
+Example - adding ONE new metric to existing "Work" category:
 {
   "categories": [
     {

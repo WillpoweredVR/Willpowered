@@ -281,7 +281,7 @@ export async function POST(request: NextRequest) {
           };
         });
 
-        // Merge with existing categories (add new ones)
+        // Merge with existing categories (add new ones, avoid duplicates)
         const allCategories = [...(existingScorecard.categories || [])];
         
         for (const newCat of newCategories) {
@@ -291,11 +291,26 @@ export async function POST(request: NextRequest) {
           );
           
           if (existingCatIndex >= 0) {
-            // Add metrics to existing category
-            allCategories[existingCatIndex].metrics = [
-              ...allCategories[existingCatIndex].metrics,
-              ...newCat.metrics,
-            ];
+            // Add ONLY NEW metrics to existing category (avoid duplicates)
+            const existingMetricNames = new Set(
+              allCategories[existingCatIndex].metrics.map(
+                (m: { name: string }) => m.name.toLowerCase()
+              )
+            );
+            
+            const trulyNewMetrics = newCat.metrics.filter(
+              (m: { name: string }) => !existingMetricNames.has(m.name.toLowerCase())
+            );
+            
+            console.log("[SAVE SCORECARD] Existing metrics:", [...existingMetricNames]);
+            console.log("[SAVE SCORECARD] New metrics to add:", trulyNewMetrics.map((m: { name: string }) => m.name));
+            
+            if (trulyNewMetrics.length > 0) {
+              allCategories[existingCatIndex].metrics = [
+                ...allCategories[existingCatIndex].metrics,
+                ...trulyNewMetrics,
+              ];
+            }
           } else {
             // Add new category
             allCategories.push(newCat);
