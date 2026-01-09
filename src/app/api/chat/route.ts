@@ -239,8 +239,7 @@ Example usage - when user says "add AI coding sessions metric":
               }
             },
             required: ["name", "metrics"]
-          },
-          description: "Array of categories, each containing metrics"
+          }
         }
       },
       required: ["categories"]
