@@ -112,14 +112,25 @@ export async function POST(request: NextRequest) {
     // Build context for Claude
     const client = new Anthropic();
     
+    // Get current date info for Claude
+    const now = new Date();
+    const currentDateStr = now.toISOString().split('T')[0];
+    const tomorrowStr = new Date(now.getTime() + 86400000).toISOString().split('T')[0];
+    const nextWeekStr = new Date(now.getTime() + 7 * 86400000).toISOString().split('T')[0];
+    
     const systemPrompt = `You are Willson, an AI coach helping users achieve their goals. Generate 2-3 specific, actionable task suggestions based on their scorecard data.
+
+TODAY'S DATE: ${currentDateStr}
+TOMORROW: ${tomorrowStr}
+NEXT WEEK: ${nextWeekStr}
 
 RULES:
 - Tasks must be CONCRETE and ACTIONABLE (e.g., "Block 9-11am for deep work" not "Improve focus")
 - Prioritize off-track metrics
 - Consider their purpose and principles
 - Include a brief reasoning for each suggestion
-- Set appropriate due dates (today or tomorrow for urgent, this week for others)
+- Set due dates using the dates above (use tomorrow ${tomorrowStr} for urgent, or dates within the next week)
+- IMPORTANT: All dates MUST be ${currentDateStr} or later. Never use past dates.
 - Suggest recurring tasks for habits that need consistency
 
 Return a JSON array of task suggestions in this exact format:
@@ -178,15 +189,23 @@ Generate 2-3 smart task suggestions that will help them improve. Focus on the mo
     const parsed = JSON.parse(jsonMatch[0]);
     const suggestions: SuggestedTask[] = parsed.suggestions || [];
 
-    // Add today's date as default if no due date
+    // Ensure all dates are in the future
     const todayDate = new Date().toISOString().split('T')[0];
-    const tomorrowDate = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+    const defaultDueDate = new Date(Date.now() + 86400000).toISOString().split('T')[0]; // tomorrow
     
-    const enrichedSuggestions = suggestions.map(s => ({
-      ...s,
-      dueDate: s.dueDate || tomorrowDate,
-      recurrence: s.recurrence || "once",
-    }));
+    const enrichedSuggestions = suggestions.map(s => {
+      // If no due date or date is in the past, use tomorrow
+      let dueDate = s.dueDate || defaultDueDate;
+      if (dueDate < todayDate) {
+        dueDate = defaultDueDate;
+      }
+      
+      return {
+        ...s,
+        dueDate,
+        recurrence: s.recurrence || "once",
+      };
+    });
 
     return NextResponse.json({ suggestions: enrichedSuggestions });
   } catch (error) {

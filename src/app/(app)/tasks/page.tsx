@@ -211,6 +211,9 @@ export default function TasksPage() {
   }, [loadData]);
 
   const saveTasks = async (newTasks: Task[]) => {
+    // Optimistic update - update UI immediately
+    setTasks(newTasks);
+    
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) return;
 
@@ -218,8 +221,6 @@ export default function TasksPage() {
       .from("profiles")
       .update({ tasks: newTasks })
       .eq("id", user.id);
-
-    setTasks(newTasks);
   };
 
   const addTask = async (task: Omit<Task, "id" | "createdAt" | "status">) => {
@@ -470,35 +471,6 @@ export default function TasksPage() {
           </div>
         </div>
 
-        {/* Off-Track Alert */}
-        {offTrackMetrics.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6"
-          >
-            <div className="flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-              <div className="flex-1">
-                <p className="font-medium text-amber-800">
-                  {offTrackMetrics.length} metric{offTrackMetrics.length > 1 ? "s" : ""} need attention
-                </p>
-                <p className="text-sm text-amber-700 mt-1">
-                  {offTrackMetrics.map(m => m.name).join(", ")} — create tasks to get back on track
-                </p>
-              </div>
-              <Button
-                size="sm"
-                variant="outline"
-                onClick={askWillsonForTasks}
-                className="border-amber-300 text-amber-700 hover:bg-amber-100"
-              >
-                Get Suggestions
-              </Button>
-            </div>
-          </motion.div>
-        )}
-
         {/* Filters */}
         <div className="flex flex-wrap items-center gap-3 mb-6">
           <div className="flex items-center gap-2 bg-white rounded-lg border border-slate-200 p-1">
@@ -621,10 +593,10 @@ export default function TasksPage() {
               <button
                 onClick={loadSuggestions}
                 disabled={isLoadingSuggestions}
-                className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors disabled:opacity-50"
+                className="flex items-center gap-1 text-sm text-purple-600 hover:text-purple-700 font-medium transition-colors disabled:opacity-50"
               >
                 <RefreshCw className={`w-4 h-4 ${isLoadingSuggestions ? "animate-spin" : ""}`} />
-                {isLoadingSuggestions ? "Thinking..." : "Refresh"}
+                {isLoadingSuggestions ? "Thinking..." : "Get new suggestions"}
               </button>
             </div>
 
