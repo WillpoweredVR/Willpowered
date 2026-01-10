@@ -212,10 +212,16 @@ export default function TasksPage() {
   const [suggestionsLoaded, setSuggestionsLoaded] = useState(false);
   const supabase = createClient();
 
-  // Load suggestions from localStorage on mount
+  // Get the localStorage key based on current filter
+  const getStorageKey = useCallback((base: string) => {
+    return filterMetric ? `${base}-${filterMetric}` : base;
+  }, [filterMetric]);
+
+  // Load suggestions from localStorage on mount and when filter changes
   useEffect(() => {
-    const stored = localStorage.getItem("willson-suggestions");
-    const storedDismissed = localStorage.getItem("willson-suggestions-dismissed");
+    const storageKey = getStorageKey("willson-suggestions");
+    const stored = localStorage.getItem(storageKey);
+    const storedDismissed = localStorage.getItem(`${storageKey}-dismissed`);
     
     if (stored) {
       try {
@@ -223,7 +229,11 @@ export default function TasksPage() {
         setSuggestions(parsed);
       } catch (e) {
         console.error("Error parsing stored suggestions:", e);
+        setSuggestions([]);
       }
+    } else {
+      // No saved suggestions for this filter - clear them
+      setSuggestions([]);
     }
     
     if (storedDismissed) {
@@ -231,26 +241,31 @@ export default function TasksPage() {
         const parsed = JSON.parse(storedDismissed);
         setDismissedSuggestions(new Set(parsed));
       } catch (e) {
-        console.error("Error parsing stored dismissed suggestions:", e);
+        console.error("Error parsing dismissed suggestions:", e);
+        setDismissedSuggestions(new Set());
       }
+    } else {
+      setDismissedSuggestions(new Set());
     }
     
     setSuggestionsLoaded(true);
-  }, []);
+  }, [filterMetric, getStorageKey]);
 
   // Save suggestions to localStorage when they change
   useEffect(() => {
     if (suggestionsLoaded) {
-      localStorage.setItem("willson-suggestions", JSON.stringify(suggestions));
+      const storageKey = getStorageKey("willson-suggestions");
+      localStorage.setItem(storageKey, JSON.stringify(suggestions));
     }
-  }, [suggestions, suggestionsLoaded]);
+  }, [suggestions, suggestionsLoaded, getStorageKey]);
 
   // Save dismissed suggestions to localStorage when they change
   useEffect(() => {
     if (suggestionsLoaded) {
-      localStorage.setItem("willson-suggestions-dismissed", JSON.stringify([...dismissedSuggestions]));
+      const storageKey = getStorageKey("willson-suggestions");
+      localStorage.setItem(`${storageKey}-dismissed`, JSON.stringify([...dismissedSuggestions]));
     }
-  }, [dismissedSuggestions, suggestionsLoaded]);
+  }, [dismissedSuggestions, suggestionsLoaded, getStorageKey]);
 
   // Check URL params for metric filter and auto-open modal
   useEffect(() => {
@@ -425,6 +440,7 @@ export default function TasksPage() {
   };
 
   // Load AI-generated task suggestions (only called when user clicks button)
+  // When filterMetric is set, suggestions are specific to that metric
   const loadSuggestions = useCallback(async () => {
     if (isLoadingSuggestions) return;
     
@@ -434,6 +450,8 @@ export default function TasksPage() {
     try {
       const response = await fetch("/api/suggest-tasks", {
         method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ metricId: filterMetric || undefined }),
       });
       
       if (!response.ok) throw new Error("Failed to load suggestions");
@@ -442,16 +460,19 @@ export default function TasksPage() {
       const newSuggestions = data.suggestions || [];
       setSuggestions(newSuggestions);
       
-      // Immediately save to localStorage
-      localStorage.setItem("willson-suggestions", JSON.stringify(newSuggestions));
-      localStorage.setItem("willson-suggestions-dismissed", JSON.stringify([]));
+      // Save to localStorage with metric-specific key
+      const storageKey = filterMetric 
+        ? `willson-suggestions-${filterMetric}` 
+        : "willson-suggestions";
+      localStorage.setItem(storageKey, JSON.stringify(newSuggestions));
+      localStorage.setItem(`${storageKey}-dismissed`, JSON.stringify([]));
     } catch (error) {
       console.error("Error loading suggestions:", error);
       setSuggestions([]);
     } finally {
       setIsLoadingSuggestions(false);
     }
-  }, [isLoadingSuggestions]);
+  }, [isLoadingSuggestions, filterMetric]);
 
   // Add a suggested task to the task list
   const addSuggestion = async (suggestion: SuggestedTask) => {
@@ -684,7 +705,12 @@ export default function TasksPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Willson Suggests</h3>
-                  <p className="text-xs text-muted-foreground">Based on your scorecard</p>
+                  <p className="text-xs text-muted-foreground">
+                    {filterMetric && getMetricById(filterMetric)
+                      ? `For improving "${getMetricById(filterMetric)?.name}"`
+                      : "Based on your scorecard"
+                    }
+                  </p>
                 </div>
               </div>
               <button

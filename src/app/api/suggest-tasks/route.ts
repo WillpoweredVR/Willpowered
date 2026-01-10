@@ -44,6 +44,15 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
     }
 
+    // Parse request body for optional metricId filter
+    let focusMetricId: string | null = null;
+    try {
+      const body = await request.json();
+      focusMetricId = body.metricId || null;
+    } catch {
+      // No body or invalid JSON - that's fine, we'll suggest for all metrics
+    }
+
     // Get user profile with scorecard and existing tasks
     const { data: profile, error } = await supabase
       .from("profiles")
@@ -68,11 +77,12 @@ export async function POST(request: NextRequest) {
     const today = new Date().toISOString().split('T')[0];
     const metricsWithStatus: Metric[] = [];
     const offTrackMetrics: Metric[] = [];
+    let focusMetric: Metric | null = null;
+    let focusCategoryName: string | null = null;
 
     for (const category of scorecard.categories) {
       for (const metric of category.metrics) {
         const history = scorecard.data?.history?.[metric.id] || {};
-        const todayValue = history[today] || 0;
         
         // Calculate week average
         const weekValues: number[] = [];
@@ -98,6 +108,12 @@ export async function POST(request: NextRequest) {
         if (!isOnTrack) {
           offTrackMetrics.push(metricWithStatus);
         }
+
+        // Track the focus metric if specified
+        if (focusMetricId && metric.id === focusMetricId) {
+          focusMetric = metricWithStatus;
+          focusCategoryName = category.name;
+        }
       }
     }
 
@@ -118,7 +134,46 @@ export async function POST(request: NextRequest) {
     const tomorrowStr = new Date(now.getTime() + 86400000).toISOString().split('T')[0];
     const nextWeekStr = new Date(now.getTime() + 7 * 86400000).toISOString().split('T')[0];
     
-    const systemPrompt = `You are Willson, an AI coach helping users achieve their goals. Generate 2-3 specific, actionable task suggestions based on their scorecard data.
+    // Adjust prompt based on whether we're focusing on a specific metric
+    const isFocused = focusMetric !== null;
+    
+    const systemPrompt = isFocused 
+      ? `You are Willson, an AI coach. Generate 2-3 specific, actionable task suggestions to help the user improve their "${focusMetric!.name}" metric in the ${focusCategoryName} category.
+
+TODAY'S DATE: ${currentDateStr}
+TOMORROW: ${tomorrowStr}
+NEXT WEEK: ${nextWeekStr}
+
+FOCUS METRIC: ${focusMetric!.name}
+- Current: ${focusMetric!.current?.toFixed(1) || 0}
+- Target: ${focusMetric!.target} ${focusMetric!.unit}
+- Direction: ${focusMetric!.direction === "higher" ? "Higher is better" : "Lower is better"}
+- Status: ${focusMetric!.isOnTrack ? "On track ✓" : "Needs improvement"}
+
+RULES:
+- ALL suggestions must directly help improve the "${focusMetric!.name}" metric
+- Tasks must be CONCRETE and ACTIONABLE (e.g., "Block 9-11am for deep work" not "Improve focus")
+- Consider creative angles - what specific behaviors drive this metric?
+- Include a brief reasoning for each suggestion
+- Set due dates using the dates above (use tomorrow ${tomorrowStr} for urgent, or dates within the next week)
+- IMPORTANT: All dates MUST be ${currentDateStr} or later. Never use past dates.
+- All tasks MUST have metricId: "${focusMetricId}" and metricName: "${focusMetric!.name}"
+
+Return a JSON array of task suggestions in this exact format:
+{
+  "suggestions": [
+    {
+      "title": "Specific actionable task",
+      "description": "Optional brief details",
+      "metricId": "${focusMetricId}",
+      "metricName": "${focusMetric!.name}",
+      "dueDate": "YYYY-MM-DD",
+      "recurrence": "once|daily|weekly|monthly",
+      "reasoning": "Brief explanation why this will help"
+    }
+  ]
+}`
+      : `You are Willson, an AI coach helping users achieve their goals. Generate 2-3 specific, actionable task suggestions based on their scorecard data.
 
 TODAY'S DATE: ${currentDateStr}
 TOMORROW: ${tomorrowStr}
@@ -148,7 +203,23 @@ Return a JSON array of task suggestions in this exact format:
   ]
 }`;
 
-    const userMessage = `Generate task suggestions for this user:
+    const userMessage = isFocused 
+      ? `Generate 2-3 task suggestions specifically for the "${focusMetric!.name}" metric.
+
+USER'S PURPOSE: ${purpose || "Not set"}
+
+RELEVANT PRINCIPLES: ${principles.map((p: { text: string }) => p.text).join(", ") || "None set"}
+
+EXISTING TASKS FOR THIS METRIC:
+${existingTasks.filter(t => t.status !== "completed" && t.metricId === focusMetricId).map(t => `- ${t.title}`).join("\n") || "No active tasks for this metric"}
+
+Think about:
+- What specific daily actions directly impact "${focusMetric!.name}"?
+- What blockers or bad habits might be getting in the way?
+- What time of day would be best for working on this?
+
+Generate creative, specific suggestions that will move this metric ${focusMetric!.direction === "higher" ? "up" : "down"}.`
+      : `Generate task suggestions for this user:
 
 PURPOSE: ${purpose || "Not set"}
 
