@@ -586,20 +586,35 @@ export default function DashboardPage() {
     
     setScorecard(updatedScorecard);
 
-    // Calculate tomorrow's date
+    // Calculate tomorrow's date using local time
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
-    const tomorrowStr = tomorrow.toISOString().split('T')[0];
+    const tomorrowStr = formatDateLocal(tomorrow);
+    
+    console.log("[SAVE SUMMARY] Tomorrow's tip:", summary.commentary.tomorrowTip);
+    console.log("[SAVE SUMMARY] Tomorrow date:", tomorrowStr);
 
     // Create a task from Willson's tomorrow tip
     const tomorrowTip = summary.commentary.tomorrowTip;
     if (tomorrowTip && tomorrowTip.length > 0) {
+      // Fetch current tasks from database to avoid stale state
+      const { data: profileData } = await supabase
+        .from("profiles")
+        .select("tasks")
+        .eq("id", user.id)
+        .single();
+      
+      const currentTasks: Task[] = (profileData?.tasks as Task[]) || [];
+      console.log("[SAVE SUMMARY] Current tasks count:", currentTasks.length);
+      
       // Check if we already have a Willson focus task for tomorrow
-      const existingFocusTask = tasks.find(t => 
+      const existingFocusTask = currentTasks.find(t => 
         t.dueDate === tomorrowStr && 
         t.suggestedBy === "willson" && 
         t.status !== "completed"
       );
+
+      console.log("[SAVE SUMMARY] Existing focus task for tomorrow:", existingFocusTask ? "Yes" : "No");
 
       // Only create if we don't already have one
       if (!existingFocusTask) {
@@ -612,17 +627,25 @@ export default function DashboardPage() {
           suggestedBy: "willson",
         };
 
-        const updatedTasks = [...tasks, focusTask];
+        console.log("[SAVE SUMMARY] Creating focus task:", focusTask);
+
+        const updatedTasks = [...currentTasks, focusTask];
         setTasks(updatedTasks);
 
         // Save tasks to database
-        await supabase
+        const { error } = await supabase
           .from("profiles")
           .update({ 
             scorecard: updatedScorecard,
             tasks: updatedTasks 
           })
           .eq("id", user.id);
+        
+        if (error) {
+          console.error("[SAVE SUMMARY] Error saving:", error);
+        } else {
+          console.log("[SAVE SUMMARY] Successfully saved focus task!");
+        }
         
         return; // Already saved both, skip the scorecard-only update
       }
