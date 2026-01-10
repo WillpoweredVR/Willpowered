@@ -798,15 +798,34 @@ export default function DashboardPage() {
     return tasks.filter(t => t.metricId === metricId && t.status !== "completed");
   };
 
-  // Get tasks due today for "Today's Focus"
+  // Get tasks due today for "Today's Focus" (including completed ones)
   const focusTasks = useMemo(() => {
+    const todayStr = formatDateLocal(new Date());
+    
     return tasks
-      .filter(t => t.status !== "completed" && getTaskUrgency(t.dueDate) === "today")
+      .filter(t => {
+        // Include tasks due today
+        if (getTaskUrgency(t.dueDate) === "today") return true;
+        // Also include tasks completed today (even if they were due on a different day)
+        if (t.status === "completed" && t.completedAt) {
+          const completedDate = t.completedAt.split('T')[0];
+          return completedDate === todayStr;
+        }
+        return false;
+      })
       .sort((a, b) => {
-        // Sort by creation date (newest first)
+        // Sort: active tasks first, then completed
+        if (a.status === "completed" && b.status !== "completed") return 1;
+        if (a.status !== "completed" && b.status === "completed") return -1;
+        // Within same status, sort by creation date (newest first)
         return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
       });
   }, [tasks]);
+
+  // Count of remaining (not completed) tasks for today
+  const remainingTodayTasks = useMemo(() => {
+    return focusTasks.filter(t => t.status !== "completed").length;
+  }, [focusTasks]);
 
   const handleSignOut = async () => {
     const supabase = createClient();
@@ -1163,7 +1182,12 @@ export default function DashboardPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-sm">Today&apos;s Focus</h3>
-                  <p className="text-xs text-muted-foreground">{focusTasks.length} task{focusTasks.length !== 1 ? "s" : ""} due today</p>
+                  <p className="text-xs text-muted-foreground">
+                    {remainingTodayTasks === 0 
+                      ? `All ${focusTasks.length} task${focusTasks.length !== 1 ? "s" : ""} complete! 🎉`
+                      : `${remainingTodayTasks} of ${focusTasks.length} remaining`
+                    }
+                  </p>
                 </div>
               </div>
               <Link
@@ -1179,7 +1203,11 @@ export default function DashboardPage() {
               {focusTasks.map((task) => (
                 <div
                   key={task.id}
-                  className="flex items-center gap-3 bg-white rounded-lg p-3 border border-amber-100"
+                  className={`flex items-center gap-3 rounded-lg p-3 border transition-all ${
+                    task.status === "completed"
+                      ? "bg-emerald-50/50 border-emerald-100"
+                      : "bg-white border-amber-100"
+                  }`}
                 >
                   <button
                     onClick={() => toggleTaskComplete(task.id)}
@@ -1192,7 +1220,7 @@ export default function DashboardPage() {
                     {task.status === "completed" && <Check className="w-3 h-3" />}
                   </button>
                   <div className="flex-1 min-w-0">
-                    <p className={`text-sm font-medium ${task.status === "completed" ? "line-through text-muted-foreground" : "text-foreground"}`}>
+                    <p className={`text-sm font-medium transition-all ${task.status === "completed" ? "line-through text-muted-foreground" : "text-foreground"}`}>
                       {task.title}
                     </p>
                     {task.metricName && (
@@ -1202,10 +1230,13 @@ export default function DashboardPage() {
                       </p>
                     )}
                   </div>
-                  {getTaskUrgency(task.dueDate) === "overdue" && (
+                  {task.status === "completed" && (
+                    <span className="text-xs text-emerald-600 font-medium">Done!</span>
+                  )}
+                  {task.status !== "completed" && getTaskUrgency(task.dueDate) === "overdue" && (
                     <span className="text-xs px-1.5 py-0.5 rounded-full bg-rose-100 text-rose-700 flex-shrink-0">Overdue</span>
                   )}
-                  {getTaskUrgency(task.dueDate) === "today" && (
+                  {task.status !== "completed" && getTaskUrgency(task.dueDate) === "today" && (
                     <span className="text-xs px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 flex-shrink-0">Today</span>
                   )}
                   {task.recurrence && task.recurrence !== "once" && (
