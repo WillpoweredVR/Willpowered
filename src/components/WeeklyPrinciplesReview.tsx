@@ -22,28 +22,8 @@ import type {
   PrincipleResponse,
   WeeklyPrincipleReview,
   PrincipleStrength,
+  Scorecard,
 } from "@/lib/supabase/types";
-
-interface ScorecardMetric {
-  id: string;
-  name: string;
-  target: number;
-  direction: "higher" | "lower";
-  unit: string;
-}
-
-interface ScorecardCategory {
-  id: string;
-  name: string;
-  metrics: ScorecardMetric[];
-}
-
-interface Scorecard {
-  categories: ScorecardCategory[];
-  data?: {
-    history?: Record<string, Record<string, number>>;
-  };
-}
 
 interface WeeklyPrinciplesReviewProps {
   isOpen: boolean;
