@@ -19,6 +19,13 @@ interface MetricData {
   isOnTrack: boolean;
 }
 
+export interface PrinciplesAnalysis {
+  connection: string; // How principles connect to metrics
+  pattern: string; // A pattern observed (positive or concerning)
+  actionItem: string; // One specific actionable suggestion
+  encouragement: string; // Motivational closing thought
+}
+
 export async function POST(request: NextRequest) {
   try {
     const supabase = await createClient();
@@ -42,57 +49,55 @@ export async function POST(request: NextRequest) {
 
     const client = new Anthropic();
 
-    const systemPrompt = `You are Willson, an insightful AI coach. Your task is to analyze how the user's principles reflection connects to their daily scorecard metrics.
+    const systemPrompt = `You are Willson, an insightful AI coach. Analyze how the user's principles reflection connects to their scorecard metrics.
 
-FORMATTING RULES (CRITICAL):
-- Use **bold** for section headers
-- Each bold header MUST have a blank line (paragraph break) before it
-- Keep sections concise but meaningful
-- Use clear, direct language
-- Focus on actionable insights
+Return a JSON object with exactly these 4 fields:
+{
+  "connection": "One sentence connecting a tested principle to a relevant metric",
+  "pattern": "One sentence about a positive pattern OR concerning pattern you notice",
+  "actionItem": "One specific, actionable task for next week (e.g., 'Block 30 minutes each morning for...')",
+  "encouragement": "One warm, motivating sentence to close"
+}
 
-Your analysis should:
-1. Identify connections between principles tested and relevant metrics
-2. Highlight patterns (positive or concerning)
-3. Suggest ONE specific, actionable adjustment
-4. Keep the total response under 200 words
-
-Be warm but direct. Focus on the most impactful insight.`;
+RULES:
+- Each field should be 1-2 sentences max
+- Be specific - reference actual principles and metrics by name
+- Be warm but direct
+- Focus on the most impactful insight
+- Return ONLY valid JSON, no markdown or extra text`;
 
     const testedPrinciples = principles.filter(p => p.wasTested);
     const offTrackMetrics = metrics.filter(m => !m.isOnTrack);
     const onTrackMetrics = metrics.filter(m => m.isOnTrack);
 
-    const userMessage = `Analyze how this user's weekly principle reflections connect to their daily metrics:
+    const userMessage = `Analyze this user's weekly data:
 
-PRINCIPLES REFLECTION THIS WEEK:
+PRINCIPLES TESTED THIS WEEK:
 ${testedPrinciples.length > 0 
   ? testedPrinciples.map(p => 
-      `- "${p.text}": ${p.response === 'held' ? '💪 Held strong' : p.response === 'struggled' ? '😓 Struggled but held' : '💔 Broke it'}${p.situation ? ` (Situation: ${p.situation})` : ''}${p.learning ? ` (Learning: ${p.learning})` : ''}`
+      `- "${p.text}": ${p.response === 'held' ? 'Held strong' : p.response === 'struggled' ? 'Struggled but held' : 'Broke it'}${p.situation ? ` | Context: ${p.situation}` : ''}${p.learning ? ` | Learning: ${p.learning}` : ''}`
     ).join('\n')
   : 'No principles were tested this week.'
 }
 
-NOT TESTED THIS WEEK:
-${principles.filter(p => !p.wasTested).map(p => `- "${p.text}"`).join('\n') || 'All principles were tested.'}
+PRINCIPLES NOT TESTED:
+${principles.filter(p => !p.wasTested).map(p => `- "${p.text}"`).join('\n') || 'All were tested.'}
 
-METRICS NEEDING ATTENTION (off-track):
+METRICS OFF-TRACK:
 ${offTrackMetrics.length > 0
   ? offTrackMetrics.map(m => 
-      `- ${m.name} (${m.category}): ${m.current}/${m.target} ${m.direction === 'higher' ? '↑ need more' : '↓ need less'}`
+      `- ${m.name}: ${m.current}/${m.target} (${m.direction === 'higher' ? 'need more' : 'need less'})`
     ).join('\n')
-  : 'All metrics are on track! 🎉'
+  : 'All on track!'
 }
 
-METRICS ON TRACK:
+METRICS ON-TRACK:
 ${onTrackMetrics.length > 0
-  ? onTrackMetrics.map(m => 
-      `- ${m.name} (${m.category}): ${m.current}/${m.target} ✓`
-    ).join('\n')
-  : 'No metrics on track yet.'
+  ? onTrackMetrics.map(m => `- ${m.name}: ${m.current}/${m.target}`).join('\n')
+  : 'None yet.'
 }
 
-Provide a brief, insightful analysis connecting the principle reflections to the metric patterns. What does this week tell them about living their principles in daily action?`;
+Return the JSON analysis object.`;
 
     const response = await client.messages.create({
       model: "claude-sonnet-4-20250514",
@@ -103,15 +108,40 @@ Provide a brief, insightful analysis connecting the principle reflections to the
 
     const content = response.content[0];
     if (content.type !== "text") {
-      return NextResponse.json({ analysis: "Unable to generate analysis." });
+      return NextResponse.json({ 
+        analysis: getDefaultAnalysis() 
+      });
     }
 
-    return NextResponse.json({ analysis: content.text });
+    // Parse JSON from response
+    try {
+      const jsonMatch = content.text.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        const parsed = JSON.parse(jsonMatch[0]) as PrinciplesAnalysis;
+        return NextResponse.json({ analysis: parsed });
+      }
+    } catch {
+      console.error("Failed to parse analysis JSON, using text fallback");
+    }
+
+    // Fallback: return as legacy text format
+    return NextResponse.json({ 
+      analysis: content.text,
+      isLegacy: true 
+    });
   } catch (error) {
     console.error("Error generating principles analysis:", error);
-    return NextResponse.json(
-      { error: "Failed to generate analysis" },
-      { status: 500 }
-    );
+    return NextResponse.json({ 
+      analysis: getDefaultAnalysis() 
+    });
   }
+}
+
+function getDefaultAnalysis(): PrinciplesAnalysis {
+  return {
+    connection: "Your principles and metrics work together to build the life you want.",
+    pattern: "Keep tracking both to see patterns emerge over time.",
+    actionItem: "Pick one metric that connects to a principle you want to strengthen and focus on it this week.",
+    encouragement: "Small, consistent actions compound into remarkable results."
+  };
 }

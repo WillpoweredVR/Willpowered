@@ -545,13 +545,21 @@ export interface PrincipleReflectionEntry {
   learning?: string // What they learned
 }
 
+// Structured analysis from Willson
+export interface PrinciplesAnalysis {
+  connection: string // How principles connect to metrics
+  pattern: string // A pattern observed (positive or concerning)
+  actionItem: string // One specific actionable suggestion
+  encouragement: string // Motivational closing thought
+}
+
 // Weekly principles review
 export interface WeeklyPrincipleReview {
   id: string
   weekOf: string // ISO date of the Monday of that week
   entries: PrincipleReflectionEntry[]
   willsonInsight?: string // AI-generated insight on patterns
-  willsonAnalysis?: string // AI-generated analysis connecting principles to metrics
+  willsonAnalysis?: PrinciplesAnalysis | string // AI-generated analysis connecting principles to metrics
   createdAt: string
 }
 

@@ -37,7 +37,7 @@ import { EditModal } from "@/components/EditModal";
 import { MetricEditModal } from "@/components/MetricEditModal";
 import { DailyCheckinModal } from "@/components/DailyCheckinModal";
 import { UsageIndicator } from "@/components/UsageIndicator";
-import { WeeklyPrinciplesReview, PrincipleStrengthBadge } from "@/components/WeeklyPrinciplesReview";
+import { WeeklyPrinciplesReview, PrincipleStrengthBadge, ViewWeeklyReview } from "@/components/WeeklyPrinciplesReview";
 import type { 
   Profile, 
   Goal, 
@@ -208,6 +208,7 @@ export default function DashboardPage() {
   // Weekly principles review
   const [isPrincipleReviewOpen, setIsPrincipleReviewOpen] = useState(false);
   const [principleReviews, setPrincipleReviews] = useState<WeeklyPrincipleReview[]>([]);
+  const [viewingReview, setViewingReview] = useState<WeeklyPrincipleReview | null>(null);
   
   // Admin status
   const [isAdmin, setIsAdmin] = useState(false);
@@ -1681,6 +1682,44 @@ export default function DashboardPage() {
             </div>
           )}
 
+          {/* Past Weekly Reviews */}
+          {principleReviews.length > 0 && (
+            <div className="mt-4 pt-4 border-t border-slate-100">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="text-sm font-medium text-muted-foreground">Recent Reviews</h4>
+                {!isReviewDue && principleReviews.length > 0 && (
+                  <button
+                    onClick={() => setIsPrincipleReviewOpen(true)}
+                    className="text-xs text-indigo-600 hover:text-indigo-700 font-medium"
+                  >
+                    Start New Review
+                  </button>
+                )}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {principleReviews.slice(-4).reverse().map((review) => {
+                  const weekDate = new Date(review.weekOf);
+                  const formattedWeek = weekDate.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+                  const held = review.entries.filter(e => e.response === "held").length;
+                  const tested = review.entries.filter(e => e.wasTested).length;
+                  
+                  return (
+                    <button
+                      key={review.id}
+                      onClick={() => setViewingReview(review)}
+                      className="flex items-center gap-2 px-3 py-2 bg-slate-50 hover:bg-indigo-50 border border-slate-100 hover:border-indigo-200 rounded-lg transition-colors group"
+                    >
+                      <span className="text-sm font-medium text-foreground">{formattedWeek}</span>
+                      <span className="text-xs text-muted-foreground group-hover:text-indigo-600">
+                        {held}/{tested} held
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           {/* Add principle input */}
           {isAddingPrinciple && (
             <div className="mt-3 p-3 bg-slate-50 rounded-xl border">
@@ -2233,6 +2272,15 @@ export default function DashboardPage() {
           setPrincipleReviews(prev => [...prev, review]);
         }}
       />
+
+      {viewingReview && (
+        <ViewWeeklyReview
+          isOpen={!!viewingReview}
+          onClose={() => setViewingReview(null)}
+          review={viewingReview}
+          principles={principles}
+        />
+      )}
     </div>
   );
 }

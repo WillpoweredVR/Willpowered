@@ -13,7 +13,19 @@ import {
   TrendingUp,
   TrendingDown,
   Minus,
+  Link2,
+  Eye,
+  Target,
+  Quote,
 } from "lucide-react";
+
+// Structured analysis from API
+interface PrinciplesAnalysis {
+  connection: string;
+  pattern: string;
+  actionItem: string;
+  encouragement: string;
+}
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
 import type {
@@ -127,7 +139,7 @@ export function WeeklyPrinciplesReview({
   const [entries, setEntries] = useState<PrincipleReflectionEntry[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [willsonInsight, setWillsonInsight] = useState<string>("");
-  const [willsonAnalysis, setWillsonAnalysis] = useState<string>("");
+  const [willsonAnalysis, setWillsonAnalysis] = useState<PrinciplesAnalysis | string | null>(null);
   const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(false);
   const [isResuming, setIsResuming] = useState(false);
 
@@ -167,7 +179,7 @@ export function WeeklyPrinciplesReview({
             setEntries(parsed.entries);
             setCurrentStep(parsed.currentStep || 0);
             setWillsonInsight(parsed.willsonInsight || "");
-            setWillsonAnalysis(parsed.willsonAnalysis || "");
+            setWillsonAnalysis(parsed.willsonAnalysis || null);
             // Show resuming indicator if we're past the intro
             setIsResuming((parsed.currentStep || 0) > 0);
             return;
@@ -186,7 +198,7 @@ export function WeeklyPrinciplesReview({
       );
       setCurrentStep(0);
       setWillsonInsight("");
-      setWillsonAnalysis("");
+      setWillsonAnalysis(null);
       setIsResuming(false);
     }
   }, [isOpen, principles, storageKey]);
@@ -322,9 +334,12 @@ export function WeeklyPrinciplesReview({
 
   const generateAnalysis = async () => {
     if (!scorecard || scorecard.categories.length === 0) {
-      setWillsonAnalysis(
-        "Set up your scorecard metrics to see how your principles connect to your daily habits and behaviors."
-      );
+      setWillsonAnalysis({
+        connection: "Set up your scorecard metrics to see connections.",
+        pattern: "Your principles guide your values - metrics track your actions.",
+        actionItem: "Add 2-3 metrics that reflect behaviors tied to your principles.",
+        encouragement: "Once you have metrics, I can show you powerful patterns!"
+      });
       return;
     }
 
@@ -395,12 +410,25 @@ export function WeeklyPrinciplesReview({
       }
 
       const data = await response.json();
-      setWillsonAnalysis(data.analysis || "Unable to generate analysis at this time.");
+      // Handle both structured and legacy text responses
+      if (data.analysis) {
+        setWillsonAnalysis(data.analysis);
+      } else {
+        setWillsonAnalysis({
+          connection: "Your principles and metrics work together.",
+          pattern: "Keep tracking to see patterns emerge.",
+          actionItem: "Focus on one principle-metric connection this week.",
+          encouragement: "Small, consistent actions compound into remarkable results."
+        });
+      }
     } catch (error) {
       console.error("Error generating analysis:", error);
-      setWillsonAnalysis(
-        "I had trouble connecting your principles to your metrics this time. Try again later!"
-      );
+      setWillsonAnalysis({
+        connection: "I had trouble analyzing your data this time.",
+        pattern: "Your principles and metrics are still being tracked.",
+        actionItem: "Review your metrics manually and pick one to focus on.",
+        encouragement: "Technical hiccups happen - your progress is still saved!"
+      });
     } finally {
       setIsLoadingAnalysis(false);
     }
@@ -790,72 +818,128 @@ export function WeeklyPrinciplesReview({
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
-                  className="space-y-6"
+                  className="space-y-4"
                 >
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center mx-auto mb-4">
-                      <TrendingUp className="w-8 h-8 text-white" />
+                  {/* Quick Stats */}
+                  <div className="grid grid-cols-2 gap-3 mb-2">
+                    <div className="bg-emerald-50 rounded-xl p-4 text-center">
+                      <div className="text-3xl font-bold text-emerald-600">
+                        {entries.filter((e) => e.response === "held").length}
+                      </div>
+                      <div className="text-sm text-emerald-700">Held Strong</div>
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      Principles → Actions
-                    </h3>
-                    <p className="text-muted-foreground">
-                      How your principles connect to your daily scorecard
-                    </p>
+                    <div className="bg-slate-50 rounded-xl p-4 text-center">
+                      <div className="text-3xl font-bold text-slate-600">
+                        {entries.filter((e) => e.wasTested).length}
+                      </div>
+                      <div className="text-sm text-slate-600">Tests Faced</div>
+                    </div>
                   </div>
 
-                  {/* Analysis content */}
-                  <div className="p-5 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100">
-                    {isLoadingAnalysis ? (
-                      <div className="flex items-center justify-center py-8">
-                        <div className="flex items-center gap-3">
-                          <div className="w-5 h-5 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" />
-                          <p className="text-sm text-purple-700">
-                            Analyzing your principles and metrics...
-                          </p>
-                        </div>
+                  {/* Analysis Cards */}
+                  {isLoadingAnalysis ? (
+                    <div className="flex items-center justify-center py-8">
+                      <div className="flex items-center gap-3">
+                        <div className="w-5 h-5 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" />
+                        <p className="text-sm text-purple-700">
+                          Connecting your principles to metrics...
+                        </p>
                       </div>
-                    ) : (
+                    </div>
+                  ) : willsonAnalysis && typeof willsonAnalysis === "object" ? (
+                    <div className="space-y-3">
+                      {/* Connection */}
+                      <motion.div 
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.1 }}
+                        className="flex gap-3"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                          <Link2 className="w-4 h-4 text-indigo-600" />
+                        </div>
+                        <div className="flex-1 bg-indigo-50 rounded-2xl rounded-tl-none p-3">
+                          <p className="text-sm font-medium text-indigo-800">{willsonAnalysis.connection}</p>
+                        </div>
+                      </motion.div>
+
+                      {/* Pattern */}
+                      <motion.div 
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.2 }}
+                        className="flex gap-3"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                          <Eye className="w-4 h-4 text-blue-600" />
+                        </div>
+                        <div className="flex-1 bg-blue-50 rounded-2xl rounded-tl-none p-3">
+                          <p className="text-sm text-blue-800">{willsonAnalysis.pattern}</p>
+                        </div>
+                      </motion.div>
+
+                      {/* Action Item */}
+                      <motion.div 
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.3 }}
+                        className="flex gap-3"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                          <Target className="w-4 h-4 text-purple-600" />
+                        </div>
+                        <div className="flex-1 bg-purple-50 rounded-2xl rounded-tl-none p-3">
+                          <p className="text-xs text-purple-600 font-medium mb-1">Next Week&apos;s Focus</p>
+                          <p className="text-sm text-purple-800">{willsonAnalysis.actionItem}</p>
+                        </div>
+                      </motion.div>
+
+                      {/* Encouragement */}
+                      <motion.div 
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.4 }}
+                        className="flex gap-3"
+                      >
+                        <div className="w-8 h-8 rounded-lg gradient-ember flex items-center justify-center flex-shrink-0">
+                          <Sparkles className="w-4 h-4 text-white" />
+                        </div>
+                        <div className="flex-1 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl rounded-tl-none p-3">
+                          <p className="text-sm font-medium text-amber-900">{willsonAnalysis.encouragement}</p>
+                        </div>
+                      </motion.div>
+                    </div>
+                  ) : typeof willsonAnalysis === "string" ? (
+                    // Fallback for legacy text format
+                    <div className="p-4 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100">
                       <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 rounded-xl gradient-ember flex items-center justify-center flex-shrink-0">
-                          <Sparkles className="w-5 h-5 text-white" />
+                        <div className="w-8 h-8 rounded-lg gradient-ember flex items-center justify-center flex-shrink-0">
+                          <Sparkles className="w-4 h-4 text-white" />
                         </div>
                         <div className="flex-1">
-                          <p className="text-sm font-medium text-purple-800 mb-2">
-                            Willson&apos;s Analysis
-                          </p>
-                          <div className="text-sm text-slate-700 whitespace-pre-wrap leading-relaxed">
+                          <p className="text-sm text-slate-700 whitespace-pre-wrap leading-relaxed">
                             {willsonAnalysis}
-                          </div>
+                          </p>
                         </div>
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  ) : null}
 
-                  {/* Quick stats */}
-                  {scorecard && scorecard.categories.length > 0 && (
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="p-3 bg-white rounded-lg border border-slate-200 text-center">
-                        <p className="text-2xl font-bold text-purple-600">
-                          {entries.filter((e) => e.wasTested).length}
-                        </p>
-                        <p className="text-xs text-muted-foreground">
-                          Principles tested
-                        </p>
-                      </div>
-                      <div className="p-3 bg-white rounded-lg border border-slate-200 text-center">
-                        <p className="text-2xl font-bold text-indigo-600">
-                          {scorecard.categories.reduce(
-                            (sum, c) => sum + c.metrics.length,
-                            0
-                          )}
-                        </p>
-                        <p className="text-xs text-muted-foreground">
-                          Metrics tracked
-                        </p>
+                  {/* Motivational Quote */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="bg-slate-900 text-white rounded-xl p-4"
+                  >
+                    <div className="flex items-start gap-3">
+                      <Quote className="w-5 h-5 text-slate-400 flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="text-sm italic mb-2">&ldquo;Character is the ability to carry out a good resolution long after the excitement of the moment has passed.&rdquo;</p>
+                        <p className="text-xs text-slate-400">- Cavett Robert</p>
                       </div>
                     </div>
-                  )}
+                  </motion.div>
                 </motion.div>
               )}
             </AnimatePresence>
