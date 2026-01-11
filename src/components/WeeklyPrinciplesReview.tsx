@@ -149,6 +149,7 @@ export function WeeklyPrinciplesReview({
   const [willsonInsight, setWillsonInsight] = useState<string>("");
   const [willsonAnalysis, setWillsonAnalysis] = useState<string>("");
   const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(false);
+  const [isResuming, setIsResuming] = useState(false);
 
   const totalSteps = principles.length + 3; // intro + principles + summary + analysis
   const currentPrinciple =
@@ -159,9 +160,44 @@ export function WeeklyPrinciplesReview({
     ? entries.find((e) => e.principleId === currentPrinciple.id)
     : null;
 
-  // Initialize entries when modal opens
+  // Get the current week's Monday for storage key
+  const weekKey = getCurrentWeekMonday();
+  const storageKey = `principle-review-progress-${weekKey}`;
+
+  // Load saved progress or initialize fresh when modal opens
   useEffect(() => {
     if (isOpen && principles.length > 0) {
+      // Try to load saved progress
+      const saved = localStorage.getItem(storageKey);
+      
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          // Verify the saved data matches current principles
+          const savedPrincipleIds = new Set(parsed.entries?.map((e: PrincipleReflectionEntry) => e.principleId) || []);
+          const currentPrincipleIds = new Set(principles.map(p => p.id));
+          
+          // Check if principles haven't changed
+          const principlesMatch = 
+            savedPrincipleIds.size === currentPrincipleIds.size &&
+            principles.every(p => savedPrincipleIds.has(p.id));
+          
+          if (principlesMatch && parsed.entries?.length > 0) {
+            // Restore saved progress
+            setEntries(parsed.entries);
+            setCurrentStep(parsed.currentStep || 0);
+            setWillsonInsight(parsed.willsonInsight || "");
+            setWillsonAnalysis(parsed.willsonAnalysis || "");
+            // Show resuming indicator if we're past the intro
+            setIsResuming((parsed.currentStep || 0) > 0);
+            return;
+          }
+        } catch (e) {
+          console.error("Error parsing saved progress:", e);
+        }
+      }
+      
+      // Initialize fresh if no valid saved progress
       setEntries(
         principles.map((p) => ({
           principleId: p.id,
@@ -170,8 +206,24 @@ export function WeeklyPrinciplesReview({
       );
       setCurrentStep(0);
       setWillsonInsight("");
+      setWillsonAnalysis("");
+      setIsResuming(false);
     }
-  }, [isOpen, principles]);
+  }, [isOpen, principles, storageKey]);
+
+  // Save progress when entries or step changes
+  useEffect(() => {
+    if (isOpen && entries.length > 0) {
+      const progress = {
+        entries,
+        currentStep,
+        willsonInsight,
+        willsonAnalysis,
+        savedAt: new Date().toISOString(),
+      };
+      localStorage.setItem(storageKey, JSON.stringify(progress));
+    }
+  }, [isOpen, entries, currentStep, willsonInsight, willsonAnalysis, storageKey]);
 
   const updateEntry = (update: Partial<PrincipleReflectionEntry>) => {
     if (!currentPrinciple) return;
@@ -213,6 +265,7 @@ export function WeeklyPrinciplesReview({
       weekOf: getCurrentWeekMonday(),
       entries,
       willsonInsight: willsonInsight || undefined,
+      willsonAnalysis: willsonAnalysis || undefined,
       createdAt: new Date().toISOString(),
     };
 
@@ -230,6 +283,9 @@ export function WeeklyPrinciplesReview({
       .from("profiles")
       .update({ principle_reviews: updatedReviews })
       .eq("id", user.id);
+
+    // Clear saved progress after successful completion
+    localStorage.removeItem(storageKey);
 
     setIsSubmitting(false);
     onReviewComplete(review);
@@ -435,11 +491,14 @@ export function WeeklyPrinciplesReview({
                     <Shield className="w-8 h-8 text-indigo-600" />
                   </div>
                   <h3 className="text-2xl font-semibold text-foreground mb-4">
-                    How did you live your principles this week?
+                    {isResuming 
+                      ? "Welcome back! Let's continue." 
+                      : "How did you live your principles this week?"}
                   </h3>
                   <p className="text-muted-foreground mb-6 max-w-sm mx-auto">
-                    This takes about 5 minutes. For each principle, we&apos;ll
-                    explore if it was tested and how you responded.
+                    {isResuming
+                      ? "Your progress has been saved. Pick up right where you left off."
+                      : "This takes about 5 minutes. For each principle, we'll explore if it was tested and how you responded."}
                   </p>
                   <p className="text-sm text-muted-foreground">
                     You have{" "}
@@ -448,6 +507,16 @@ export function WeeklyPrinciplesReview({
                     </span>{" "}
                     to review
                   </p>
+                  {isResuming && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-full text-sm"
+                    >
+                      <Check className="w-4 h-4" />
+                      Progress saved
+                    </motion.div>
+                  )}
                 </motion.div>
               )}
 

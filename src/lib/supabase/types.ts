@@ -551,6 +551,7 @@ export interface WeeklyPrincipleReview {
   weekOf: string // ISO date of the Monday of that week
   entries: PrincipleReflectionEntry[]
   willsonInsight?: string // AI-generated insight on patterns
+  willsonAnalysis?: string // AI-generated analysis connecting principles to metrics
   createdAt: string
 }
 
