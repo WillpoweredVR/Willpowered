@@ -2228,6 +2228,7 @@ export default function DashboardPage() {
         onClose={() => setIsPrincipleReviewOpen(false)}
         principles={principles}
         existingReviews={principleReviews}
+        scorecard={scorecard}
         onReviewComplete={(review) => {
           setPrincipleReviews(prev => [...prev, review]);
         }}

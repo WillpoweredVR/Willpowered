@@ -24,11 +24,33 @@ import type {
   PrincipleStrength,
 } from "@/lib/supabase/types";
 
+interface ScorecardMetric {
+  id: string;
+  name: string;
+  target: number;
+  direction: "higher" | "lower";
+  unit: string;
+}
+
+interface ScorecardCategory {
+  id: string;
+  name: string;
+  metrics: ScorecardMetric[];
+}
+
+interface Scorecard {
+  categories: ScorecardCategory[];
+  data?: {
+    history?: Record<string, Record<string, number>>;
+  };
+}
+
 interface WeeklyPrinciplesReviewProps {
   isOpen: boolean;
   onClose: () => void;
   principles: Principle[];
   existingReviews: WeeklyPrincipleReview[];
+  scorecard?: Scorecard | null;
   onReviewComplete: (review: WeeklyPrincipleReview) => void;
 }
 
@@ -118,14 +140,17 @@ export function WeeklyPrinciplesReview({
   onClose,
   principles,
   existingReviews,
+  scorecard,
   onReviewComplete,
 }: WeeklyPrinciplesReviewProps) {
-  const [currentStep, setCurrentStep] = useState(0); // 0 = intro, 1-N = principles, N+1 = summary
+  const [currentStep, setCurrentStep] = useState(0); // 0 = intro, 1-N = principles, N+1 = summary, N+2 = analysis
   const [entries, setEntries] = useState<PrincipleReflectionEntry[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [willsonInsight, setWillsonInsight] = useState<string>("");
+  const [willsonAnalysis, setWillsonAnalysis] = useState<string>("");
+  const [isLoadingAnalysis, setIsLoadingAnalysis] = useState(false);
 
-  const totalSteps = principles.length + 2; // intro + principles + summary
+  const totalSteps = principles.length + 3; // intro + principles + summary + analysis
   const currentPrinciple =
     currentStep > 0 && currentStep <= principles.length
       ? principles[currentStep - 1]
@@ -213,8 +238,15 @@ export function WeeklyPrinciplesReview({
 
   // Generate Willson insight when reaching summary
   useEffect(() => {
-    if (currentStep === totalSteps - 1 && !willsonInsight) {
+    if (currentStep === totalSteps - 2 && !willsonInsight) {
       generateInsight();
+    }
+  }, [currentStep]);
+
+  // Generate Willson analysis when reaching analysis step
+  useEffect(() => {
+    if (currentStep === totalSteps - 1 && !willsonAnalysis && !isLoadingAnalysis) {
+      generateAnalysis();
     }
   }, [currentStep]);
 
@@ -249,6 +281,92 @@ export function WeeklyPrinciplesReview({
       setWillsonInsight(
         `Setbacks are data, not defeat. ${brokenPrinciple ? `"${brokenPrinciple.text}"` : "Your principle"} got tested and you learned something. What matters now is what you do with that knowledge.`
       );
+    }
+  };
+
+  const generateAnalysis = async () => {
+    if (!scorecard || scorecard.categories.length === 0) {
+      setWillsonAnalysis(
+        "Set up your scorecard metrics to see how your principles connect to your daily habits and behaviors."
+      );
+      return;
+    }
+
+    setIsLoadingAnalysis(true);
+
+    try {
+      // Build context for the analysis
+      const principlesSummary = entries
+        .map((entry) => {
+          const principle = principles.find((p) => p.id === entry.principleId);
+          if (!principle) return null;
+          
+          return {
+            text: principle.text,
+            wasTested: entry.wasTested,
+            response: entry.response,
+            situation: entry.situation,
+            learning: entry.learning,
+          };
+        })
+        .filter(Boolean);
+
+      // Get metric performance data
+      const today = new Date().toISOString().split("T")[0];
+      const metricsData = scorecard.categories.flatMap((category) =>
+        category.metrics.map((metric) => {
+          const history = scorecard.data?.history?.[metric.id] || {};
+          const weekValues: number[] = [];
+          for (let i = 0; i < 7; i++) {
+            const d = new Date();
+            d.setDate(d.getDate() - i);
+            const dateStr = d.toISOString().split("T")[0];
+            if (history[dateStr] !== undefined) {
+              weekValues.push(history[dateStr]);
+            }
+          }
+          const weekAvg =
+            weekValues.length > 0
+              ? weekValues.reduce((a, b) => a + b, 0) / weekValues.length
+              : 0;
+          const isOnTrack =
+            metric.direction === "higher"
+              ? weekAvg >= metric.target
+              : weekAvg <= metric.target;
+
+          return {
+            name: metric.name,
+            category: category.name,
+            target: metric.target,
+            current: weekAvg.toFixed(1),
+            direction: metric.direction,
+            isOnTrack,
+          };
+        })
+      );
+
+      const response = await fetch("/api/analyze-principles", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          principles: principlesSummary,
+          metrics: metricsData,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate analysis");
+      }
+
+      const data = await response.json();
+      setWillsonAnalysis(data.analysis || "Unable to generate analysis at this time.");
+    } catch (error) {
+      console.error("Error generating analysis:", error);
+      setWillsonAnalysis(
+        "I had trouble connecting your principles to your metrics this time. Try again later!"
+      );
+    } finally {
+      setIsLoadingAnalysis(false);
     }
   };
 
@@ -496,7 +614,7 @@ export function WeeklyPrinciplesReview({
               )}
 
               {/* Summary Step */}
-              {currentStep === totalSteps - 1 && (
+              {currentStep === totalSteps - 2 && (
                 <motion.div
                   key="summary"
                   initial={{ opacity: 0, x: 20 }}
@@ -610,6 +728,82 @@ export function WeeklyPrinciplesReview({
                             {willsonInsight}
                           </p>
                         </div>
+                      </div>
+                    </div>
+                  )}
+                </motion.div>
+              )}
+
+              {/* Analysis Step - Connecting Principles to Scorecard */}
+              {currentStep === totalSteps - 1 && (
+                <motion.div
+                  key="analysis"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  className="space-y-6"
+                >
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center mx-auto mb-4">
+                      <TrendingUp className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                      Principles → Actions
+                    </h3>
+                    <p className="text-muted-foreground">
+                      How your principles connect to your daily scorecard
+                    </p>
+                  </div>
+
+                  {/* Analysis content */}
+                  <div className="p-5 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100">
+                    {isLoadingAnalysis ? (
+                      <div className="flex items-center justify-center py-8">
+                        <div className="flex items-center gap-3">
+                          <div className="w-5 h-5 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" />
+                          <p className="text-sm text-purple-700">
+                            Analyzing your principles and metrics...
+                          </p>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="flex items-start gap-3">
+                        <div className="w-10 h-10 rounded-xl gradient-ember flex items-center justify-center flex-shrink-0">
+                          <Sparkles className="w-5 h-5 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-sm font-medium text-purple-800 mb-2">
+                            Willson&apos;s Analysis
+                          </p>
+                          <div className="text-sm text-slate-700 whitespace-pre-wrap leading-relaxed">
+                            {willsonAnalysis}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Quick stats */}
+                  {scorecard && scorecard.categories.length > 0 && (
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="p-3 bg-white rounded-lg border border-slate-200 text-center">
+                        <p className="text-2xl font-bold text-purple-600">
+                          {entries.filter((e) => e.wasTested).length}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          Principles tested
+                        </p>
+                      </div>
+                      <div className="p-3 bg-white rounded-lg border border-slate-200 text-center">
+                        <p className="text-2xl font-bold text-indigo-600">
+                          {scorecard.categories.reduce(
+                            (sum, c) => sum + c.metrics.length,
+                            0
+                          )}
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          Metrics tracked
+                        </p>
                       </div>
                     </div>
                   )}
