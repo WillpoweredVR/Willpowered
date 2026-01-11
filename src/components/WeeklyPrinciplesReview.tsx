@@ -1011,3 +1011,237 @@ export function PrincipleStrengthBadge({
   );
 }
 
+// Component to view a saved weekly review
+interface ViewWeeklyReviewProps {
+  isOpen: boolean;
+  onClose: () => void;
+  review: WeeklyPrincipleReview;
+  principles: Principle[];
+}
+
+export function ViewWeeklyReview({
+  isOpen,
+  onClose,
+  review,
+  principles,
+}: ViewWeeklyReviewProps) {
+  if (!isOpen) return null;
+
+  const tested = review.entries.filter((e) => e.wasTested).length;
+  const held = review.entries.filter((e) => e.response === "held").length;
+  const struggled = review.entries.filter((e) => e.response === "struggled").length;
+  const broke = review.entries.filter((e) => e.response === "broke").length;
+
+  const weekDate = new Date(review.weekOf);
+  const formattedWeek = weekDate.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+
+  const analysis = review.willsonAnalysis;
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+        onClick={onClose}
+      >
+        <motion.div
+          initial={{ scale: 0.95, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.95, opacity: 0 }}
+          onClick={(e) => e.stopPropagation()}
+          className="bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-hidden flex flex-col"
+        >
+          {/* Header */}
+          <div className="bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-white">
+                  <h2 className="font-semibold">Weekly Review</h2>
+                  <p className="text-sm text-white/80">Week of {formattedWeek}</p>
+                </div>
+              </div>
+              <button
+                onClick={onClose}
+                className="p-2 text-white/80 hover:text-white rounded-lg hover:bg-white/10 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="flex-1 overflow-y-auto p-6 space-y-4">
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="bg-emerald-50 rounded-xl p-4 text-center">
+                <div className="text-3xl font-bold text-emerald-600">{held}</div>
+                <div className="text-sm text-emerald-700">Held Strong</div>
+              </div>
+              <div className="bg-slate-50 rounded-xl p-4 text-center">
+                <div className="text-3xl font-bold text-slate-600">{tested}</div>
+                <div className="text-sm text-slate-600">Tests Faced</div>
+              </div>
+            </div>
+
+            {/* Summary Stats */}
+            {(struggled > 0 || broke > 0) && (
+              <div className="flex gap-4 text-sm text-muted-foreground">
+                {struggled > 0 && <span>😓 {struggled} struggled</span>}
+                {broke > 0 && <span>💔 {broke} broke</span>}
+              </div>
+            )}
+
+            {/* Analysis Cards */}
+            {analysis && typeof analysis === "object" && (
+              <div className="space-y-3">
+                {/* Connection */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 }}
+                  className="flex gap-3"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                    <Link2 className="w-4 h-4 text-indigo-600" />
+                  </div>
+                  <div className="flex-1 bg-indigo-50 rounded-2xl rounded-tl-none p-3">
+                    <p className="text-sm font-medium text-indigo-800">{analysis.connection}</p>
+                  </div>
+                </motion.div>
+
+                {/* Pattern */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="flex gap-3"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                    <Eye className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <div className="flex-1 bg-blue-50 rounded-2xl rounded-tl-none p-3">
+                    <p className="text-sm text-blue-800">{analysis.pattern}</p>
+                  </div>
+                </motion.div>
+
+                {/* Action Item */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="flex gap-3"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                    <Target className="w-4 h-4 text-purple-600" />
+                  </div>
+                  <div className="flex-1 bg-purple-50 rounded-2xl rounded-tl-none p-3">
+                    <p className="text-xs text-purple-600 font-medium mb-1">Focus</p>
+                    <p className="text-sm text-purple-800">{analysis.actionItem}</p>
+                  </div>
+                </motion.div>
+
+                {/* Encouragement */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="flex gap-3"
+                >
+                  <div className="w-8 h-8 rounded-lg gradient-ember flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="flex-1 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl rounded-tl-none p-3">
+                    <p className="text-sm font-medium text-amber-900">{analysis.encouragement}</p>
+                  </div>
+                </motion.div>
+              </div>
+            )}
+
+            {/* Legacy text format or willsonInsight */}
+            {(!analysis || typeof analysis === "string") && (review.willsonInsight || analysis) && (
+              <div className="p-4 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl border border-purple-100">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-lg gradient-ember flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-purple-800 mb-1">Willson&apos;s Take</p>
+                    <p className="text-sm text-slate-700 whitespace-pre-wrap leading-relaxed">
+                      {typeof analysis === "string" ? analysis : review.willsonInsight}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Principles breakdown */}
+            <div className="pt-2">
+              <h4 className="text-sm font-medium text-foreground mb-3">Principles Reviewed</h4>
+              <div className="space-y-2">
+                {review.entries.map((entry) => {
+                  const principle = principles.find((p) => p.id === entry.principleId);
+                  if (!principle) return null;
+                  
+                  return (
+                    <div
+                      key={entry.principleId}
+                      className="p-3 bg-slate-50 rounded-lg"
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <p className="text-sm font-medium text-foreground flex-1">
+                          {principle.text}
+                        </p>
+                        {entry.wasTested ? (
+                          <span
+                            className={`text-xs px-2 py-0.5 rounded-full font-medium flex-shrink-0 ${
+                              entry.response === "held"
+                                ? "text-emerald-700 bg-emerald-100"
+                                : entry.response === "struggled"
+                                ? "text-amber-700 bg-amber-100"
+                                : "text-red-700 bg-red-100"
+                            }`}
+                          >
+                            {entry.response === "held"
+                              ? "💪 Held"
+                              : entry.response === "struggled"
+                              ? "😓 Struggled"
+                              : "💔 Broke"}
+                          </span>
+                        ) : (
+                          <span className="text-xs text-muted-foreground flex-shrink-0">
+                            Not tested
+                          </span>
+                        )}
+                      </div>
+                      {entry.situation && (
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {entry.situation}
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <div className="px-6 py-4 border-t border-slate-100">
+            <Button onClick={onClose} className="w-full gradient-ember text-white">
+              Close
+            </Button>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
