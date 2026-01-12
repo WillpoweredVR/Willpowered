@@ -212,19 +212,6 @@ export function DailyCheckinModal({
     }
   }, [isOpen, allMetrics, getTodayValue, savedSummary]);
 
-  // Load existing note when step changes
-  useEffect(() => {
-    if (currentItem && getTodayNote) {
-      const existingNote = getTodayNote(currentItem.metric.id);
-      const pendingNote = pendingNotes[currentItem.metric.id];
-      setNoteValue(pendingNote || existingNote || "");
-      setShowNoteInput(!!pendingNote || !!existingNote);
-    } else {
-      setNoteValue("");
-      setShowNoteInput(false);
-    }
-  }, [currentStep, currentItem?.metric.id]);
-
   // Fetch personalized summary from Willson
   const fetchSummary = async () => {
     // If we already have a saved summary for today, use it
@@ -304,6 +291,19 @@ export function DailyCheckinModal({
   const currentItem = allMetrics[currentStep];
   const isLastStep = currentStep >= allMetrics.length - 1;
   const totalSteps = allMetrics.length;
+
+  // Load existing note when step changes
+  useEffect(() => {
+    if (currentItem && getTodayNote) {
+      const existingNote = getTodayNote(currentItem.metric.id);
+      const pendingNote = pendingNotes[currentItem.metric.id];
+      setNoteValue(pendingNote || existingNote || "");
+      setShowNoteInput(!!pendingNote || !!existingNote);
+    } else {
+      setNoteValue("");
+      setShowNoteInput(false);
+    }
+  }, [currentStep, currentItem?.metric.id, getTodayNote, pendingNotes]);
 
   // Get Willson's prompt for current category
   const willsonPrompt = useMemo(() => {
