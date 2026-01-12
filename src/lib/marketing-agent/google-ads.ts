@@ -389,13 +389,20 @@ export class GoogleAdsClient {
       { query }
     );
     
-    return (response[0]?.results || []).map((r: Record<string, unknown>) => ({
-      keyword: (r.adGroupCriterion as Record<string, unknown>)?.keyword?.text || '',
-      impressions: (r.metrics as Record<string, number>)?.impressions || 0,
-      clicks: (r.metrics as Record<string, number>)?.clicks || 0,
-      conversions: (r.metrics as Record<string, number>)?.conversions || 0,
-      qualityScore: (r.adGroupCriterion as Record<string, Record<string, number>>)?.qualityInfo?.qualityScore || 0,
-    }));
+    return (response[0]?.results || []).map((r: Record<string, unknown>) => {
+      const adGroupCriterion = r.adGroupCriterion as Record<string, unknown> | undefined;
+      const keyword = adGroupCriterion?.keyword as Record<string, string> | undefined;
+      const qualityInfo = adGroupCriterion?.qualityInfo as Record<string, number> | undefined;
+      const metrics = r.metrics as Record<string, number> | undefined;
+      
+      return {
+        keyword: keyword?.text || '',
+        impressions: metrics?.impressions || 0,
+        clicks: metrics?.clicks || 0,
+        conversions: metrics?.conversions || 0,
+        qualityScore: qualityInfo?.qualityScore || 0,
+      };
+    });
   }
 }
 
