@@ -387,17 +387,30 @@ export default function DashboardPage() {
     if (!user) return;
 
     const updatedScorecard = { ...scorecard };
-    const category = updatedScorecard.categories.find(c => c.id === categoryId);
     
-    if (!category) return;
-
-    const existingIndex = category.metrics.findIndex(m => m.id === updatedMetric.id);
-    if (existingIndex >= 0) {
-      // Update existing
-      category.metrics[existingIndex] = updatedMetric;
+    // Check if this is a new category (format: "new:CategoryName")
+    if (categoryId.startsWith("new:")) {
+      const newCategoryName = categoryId.substring(4); // Remove "new:" prefix
+      const newCategory: ScorecardCategory = {
+        id: `category-${Date.now()}`,
+        name: newCategoryName,
+        metrics: [updatedMetric],
+      };
+      updatedScorecard.categories.push(newCategory);
     } else {
-      // Add new
-      category.metrics.push(updatedMetric);
+      // Find existing category
+      const category = updatedScorecard.categories.find(c => c.id === categoryId);
+      
+      if (!category) return;
+
+      const existingIndex = category.metrics.findIndex(m => m.id === updatedMetric.id);
+      if (existingIndex >= 0) {
+        // Update existing
+        category.metrics[existingIndex] = updatedMetric;
+      } else {
+        // Add new
+        category.metrics.push(updatedMetric);
+      }
     }
     
     setScorecard(updatedScorecard);
@@ -1761,18 +1774,34 @@ export default function DashboardPage() {
                 Your What
               </span>
             </div>
-            {weekProgress.total > 0 && (
-              <div className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-muted-foreground hidden sm:block" />
-                <span className="text-xs sm:text-sm text-muted-foreground">Last 7 days</span>
-                <span className={`text-xs sm:text-sm font-medium ml-1 sm:ml-2 ${
-                  weekProgress.percentage >= 70 ? "text-emerald-600" : 
-                  weekProgress.percentage >= 40 ? "text-amber-600" : "text-red-600"
-                }`}>
-                  {weekProgress.onTrack}/{weekProgress.total} on track
-                </span>
-              </div>
-            )}
+            <div className="flex items-center gap-3">
+              {weekProgress.total > 0 && (
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-muted-foreground hidden sm:block" />
+                  <span className="text-xs sm:text-sm text-muted-foreground">Last 7 days</span>
+                  <span className={`text-xs sm:text-sm font-medium ml-1 sm:ml-2 ${
+                    weekProgress.percentage >= 70 ? "text-emerald-600" : 
+                    weekProgress.percentage >= 40 ? "text-amber-600" : "text-red-600"
+                  }`}>
+                    {weekProgress.onTrack}/{weekProgress.total} on track
+                  </span>
+                </div>
+              )}
+              {scorecard?.categories && scorecard.categories.length > 0 && (
+                <button
+                  onClick={() => setMetricEditModal({
+                    isOpen: true,
+                    metric: null,
+                    categoryId: "",
+                    isNew: true
+                  })}
+                  className="flex items-center gap-1 px-2 py-1 text-xs text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors border border-emerald-200"
+                >
+                  <Plus className="w-3 h-3" />
+                  Add Metric
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Empty Scorecard State */}
@@ -2246,8 +2275,10 @@ export default function DashboardPage() {
         isOpen={metricEditModal.isOpen}
         onClose={() => setMetricEditModal({ ...metricEditModal, isOpen: false })}
         metric={metricEditModal.metric}
+        categories={scorecard?.categories || []}
+        currentCategoryId={metricEditModal.categoryId}
         isNew={metricEditModal.isNew}
-        onSave={(updatedMetric) => saveMetricConfig(metricEditModal.categoryId, updatedMetric)}
+        onSave={(updatedMetric, categoryId) => saveMetricConfig(categoryId, updatedMetric)}
         onDelete={(metricId) => deleteMetric(metricEditModal.categoryId, metricId)}
       />
 

@@ -2,15 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, TrendingUp, TrendingDown, Trash2 } from "lucide-react";
+import { X, TrendingUp, TrendingDown, Trash2, Plus, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import type { ScorecardMetric } from "@/lib/supabase/types";
+import type { ScorecardMetric, ScorecardCategory } from "@/lib/supabase/types";
 
 interface MetricEditModalProps {
   isOpen: boolean;
   onClose: () => void;
   metric: ScorecardMetric | null;
-  onSave: (metric: ScorecardMetric) => void;
+  categories?: ScorecardCategory[];
+  currentCategoryId?: string;
+  onSave: (metric: ScorecardMetric, categoryId: string) => void;
   onDelete?: (metricId: string) => void;
   isNew?: boolean;
 }
@@ -19,6 +21,8 @@ export function MetricEditModal({
   isOpen,
   onClose,
   metric,
+  categories = [],
+  currentCategoryId,
   onSave,
   onDelete,
   isNew = false,
@@ -29,6 +33,11 @@ export function MetricEditModal({
   const [unit, setUnit] = useState("");
   const [direction, setDirection] = useState<"higher" | "lower">("higher");
   const [aggregation, setAggregation] = useState<"average" | "sum" | "count">("average");
+  
+  // Category selection state (for new metrics)
+  const [selectedCategoryId, setSelectedCategoryId] = useState<string>("");
+  const [isCreatingCategory, setIsCreatingCategory] = useState(false);
+  const [newCategoryName, setNewCategoryName] = useState("");
 
   useEffect(() => {
     if (metric) {
@@ -47,10 +56,30 @@ export function MetricEditModal({
       setDirection("higher");
       setAggregation("average");
     }
-  }, [metric, isOpen]);
+    
+    // Set initial category
+    if (currentCategoryId) {
+      setSelectedCategoryId(currentCategoryId);
+    } else if (categories.length > 0) {
+      setSelectedCategoryId(categories[0].id);
+    }
+    setIsCreatingCategory(false);
+    setNewCategoryName("");
+  }, [metric, isOpen, currentCategoryId, categories]);
 
   const handleSave = () => {
     if (!name.trim() || !target) return;
+    
+    // Determine category ID
+    let categoryId = currentCategoryId || selectedCategoryId;
+    
+    // If creating new category, generate ID from name
+    if (isNew && isCreatingCategory && newCategoryName.trim()) {
+      categoryId = `category-${Date.now()}`;
+    } else if (isNew && !categoryId) {
+      // Must select or create a category for new metrics
+      return;
+    }
 
     const updatedMetric: ScorecardMetric = {
       id: metric?.id || `metric-${Date.now()}`,
@@ -62,7 +91,12 @@ export function MetricEditModal({
       aggregation,
     };
 
-    onSave(updatedMetric);
+    // Pass category info (for new categories, use the name as ID marker)
+    const finalCategoryId = isCreatingCategory 
+      ? `new:${newCategoryName.trim()}` 
+      : categoryId;
+
+    onSave(updatedMetric, finalCategoryId);
     onClose();
   };
 
@@ -106,6 +140,62 @@ export function MetricEditModal({
 
           {/* Form */}
           <div className="p-4 space-y-4">
+            {/* Category Selection (only for new metrics) */}
+            {isNew && categories.length > 0 && (
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Category
+                </label>
+                {!isCreatingCategory ? (
+                  <div className="space-y-2">
+                    <div className="relative">
+                      <select
+                        value={selectedCategoryId}
+                        onChange={(e) => setSelectedCategoryId(e.target.value)}
+                        className="w-full px-3 py-2 border border-slate-200 rounded-lg outline-none focus:border-emerald-400 appearance-none bg-white pr-10"
+                      >
+                        {categories.map((cat) => (
+                          <option key={cat.id} value={cat.id}>
+                            {cat.name}
+                          </option>
+                        ))}
+                      </select>
+                      <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setIsCreatingCategory(true)}
+                      className="flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700"
+                    >
+                      <Plus className="w-3 h-3" />
+                      Create new category
+                    </button>
+                  </div>
+                ) : (
+                  <div className="space-y-2">
+                    <input
+                      type="text"
+                      value={newCategoryName}
+                      onChange={(e) => setNewCategoryName(e.target.value)}
+                      placeholder="e.g., Fitness, Work, Learning"
+                      className="w-full px-3 py-2 border border-emerald-200 rounded-lg outline-none focus:border-emerald-400 bg-emerald-50"
+                      autoFocus
+                    />
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsCreatingCategory(false);
+                        setNewCategoryName("");
+                      }}
+                      className="text-sm text-slate-500 hover:text-slate-700"
+                    >
+                      ← Select existing category
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* Name */}
             <div>
               <label className="block text-sm font-medium text-slate-700 mb-1">
@@ -255,7 +345,15 @@ export function MetricEditModal({
               <Button variant="outline" onClick={onClose}>
                 Cancel
               </Button>
-              <Button onClick={handleSave} disabled={!name.trim() || !target}>
+              <Button 
+                onClick={handleSave} 
+                disabled={
+                  !name.trim() || 
+                  !target || 
+                  (isNew && isCreatingCategory && !newCategoryName.trim()) ||
+                  (isNew && !isCreatingCategory && !selectedCategoryId && !currentCategoryId)
+                }
+              >
                 {isNew ? "Add Metric" : "Save Changes"}
               </Button>
             </div>
