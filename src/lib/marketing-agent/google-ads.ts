@@ -47,7 +47,7 @@ export class GoogleAdsClient {
     }
     
     const data = await response.json();
-    this.accessToken = data.access_token;
+    this.accessToken = data.access_token as string;
     return this.accessToken;
   }
   
