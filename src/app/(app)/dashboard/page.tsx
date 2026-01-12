@@ -350,8 +350,8 @@ export default function DashboardPage() {
     };
   };
 
-  // Set a daily value for a metric
-  const setDailyValue = async (metricId: string, date: string, value: number) => {
+  // Set a daily value for a metric (with optional note)
+  const setDailyValue = async (metricId: string, date: string, value: number, note?: string) => {
     if (!scorecard) return;
 
     const supabase = createClient();
@@ -370,12 +370,29 @@ export default function DashboardPage() {
     }
     
     updatedScorecard.data.history[metricId][date] = value;
+    
+    // Save note if provided
+    if (note) {
+      if (!updatedScorecard.data.notes) {
+        updatedScorecard.data.notes = {};
+      }
+      if (!updatedScorecard.data.notes[metricId]) {
+        updatedScorecard.data.notes[metricId] = {};
+      }
+      updatedScorecard.data.notes[metricId][date] = note;
+    }
+    
     setScorecard(updatedScorecard);
 
     await supabase
       .from("profiles")
       .update({ scorecard: updatedScorecard })
       .eq("id", user.id);
+  };
+
+  // Get the note for a metric on a specific date
+  const getDailyNote = (metricId: string, date: string): string | null => {
+    return scorecard?.data?.notes?.[metricId]?.[date] ?? null;
   };
 
   // Save metric configuration (update or add new)
@@ -847,15 +864,32 @@ export default function DashboardPage() {
     window.location.href = "/";
   };
 
-  // Check if weekly principle review is due (not done this week)
-  const isReviewDue = useMemo(() => {
-    if (principles.length === 0) return false;
+  // Get the current week's Monday date string
+  const currentWeekMonday = useMemo(() => {
     const now = new Date();
     const day = now.getDay();
     const diff = now.getDate() - day + (day === 0 ? -6 : 1);
-    const monday = new Date(now.setDate(diff)).toISOString().split("T")[0];
-    return !principleReviews.some(r => r.weekOf === monday);
-  }, [principles, principleReviews]);
+    const monday = new Date(now);
+    monday.setDate(diff);
+    return monday.toISOString().split("T")[0];
+  }, []);
+
+  // Check if today is Sunday (the only day you can start a new review)
+  const isSunday = useMemo(() => {
+    return new Date().getDay() === 0;
+  }, []);
+
+  // Find the current week's review (if it exists)
+  const currentWeekReview = useMemo(() => {
+    return principleReviews.find(r => r.weekOf === currentWeekMonday) || null;
+  }, [principleReviews, currentWeekMonday]);
+
+  // Check if weekly principle review is available (Sunday only, and not done this week)
+  const isReviewDue = useMemo(() => {
+    if (principles.length === 0) return false;
+    // Can only start a new review on Sunday if one doesn't exist for this week
+    return isSunday && !currentWeekReview;
+  }, [principles, isSunday, currentWeekReview]);
 
   // Calculate strength for a principle
   const getPrincipleStrength = (principleId: string): PrincipleStrength => {
@@ -1285,7 +1319,17 @@ export default function DashboardPage() {
             <div className="flex items-center gap-2">
               {principles.length > 0 && (
                 <>
-                  {isReviewDue && (
+                  {currentWeekReview ? (
+                    // This week's review exists - show View button
+                    <button
+                      onClick={() => setViewingReview(currentWeekReview)}
+                      className="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 text-xs font-medium text-emerald-600 bg-emerald-50 hover:bg-emerald-100 rounded-lg transition-colors"
+                    >
+                      <Check className="w-3.5 h-3.5" />
+                      <span className="hidden sm:inline">View</span> Review
+                    </button>
+                  ) : isReviewDue ? (
+                    // Sunday, no review yet - show Start button
                     <button
                       onClick={() => setIsPrincipleReviewOpen(true)}
                       className="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 text-xs font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-lg transition-colors"
@@ -1293,6 +1337,11 @@ export default function DashboardPage() {
                       <ClipboardCheck className="w-3.5 h-3.5" />
                       <span className="hidden sm:inline">Weekly</span> Review
                     </button>
+                  ) : (
+                    // Not Sunday, no review - show when next review is available
+                    <span className="text-xs text-muted-foreground">
+                      Next review: Sunday
+                    </span>
                   )}
                   <span className="text-xs sm:text-sm text-muted-foreground">
                     {principles.length} principle{principles.length !== 1 ? "s" : ""}
@@ -1700,7 +1749,7 @@ export default function DashboardPage() {
             <div className="mt-4 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="text-sm font-medium text-muted-foreground">Recent Reviews</h4>
-                {!isReviewDue && principleReviews.length > 0 && (
+                {isSunday && !currentWeekReview && (
                   <button
                     onClick={() => setIsPrincipleReviewOpen(true)}
                     className="text-xs text-indigo-600 hover:text-indigo-700 font-medium"
@@ -2286,8 +2335,9 @@ export default function DashboardPage() {
         isOpen={isCheckinOpen}
         onClose={() => setIsCheckinOpen(false)}
         scorecard={scorecard}
-        onLogValue={(metricId, value) => setDailyValue(metricId, today, value)}
+        onLogValue={(metricId, value, note) => setDailyValue(metricId, today, value, note)}
         getTodayValue={(metricId) => getDailyValue(metricId, today)}
+        getTodayNote={(metricId) => getDailyNote(metricId, today)}
         getWeekAverage={getAggregatedValue}
         savedSummary={getTodaySummary()}
         onSaveSummary={saveTodaySummary}

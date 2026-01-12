@@ -1025,9 +1025,7 @@ export function ViewWeeklyReview({
   review,
   principles,
 }: ViewWeeklyReviewProps) {
-  if (!isOpen) return null;
-
-  const tested = review.entries.filter((e) => e.wasTested).length;
+  if (!isOpen) return null;  const tested = review.entries.filter((e) => e.wasTested).length;
   const held = review.entries.filter((e) => e.response === "held").length;
   const struggled = review.entries.filter((e) => e.response === "struggled").length;
   const broke = review.entries.filter((e) => e.response === "broke").length;

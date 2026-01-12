@@ -14,6 +14,8 @@ import {
   Calendar,
   Target,
   Loader2,
+  StickyNote,
+  MessageSquare,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Scorecard, ScorecardMetric, ScorecardCategory } from "@/lib/supabase/types";
@@ -48,8 +50,9 @@ interface DailyCheckinModalProps {
   isOpen: boolean;
   onClose: () => void;
   scorecard: Scorecard | null;
-  onLogValue: (metricId: string, value: number) => void;
+  onLogValue: (metricId: string, value: number, note?: string) => void;
   getTodayValue: (metricId: string) => number | null;
+  getTodayNote?: (metricId: string) => string | null;
   getWeekAverage: (metric: ScorecardMetric) => { value: number; daysWithData: number };
   savedSummary: SummaryData | null;
   onSaveSummary: (summary: SummaryData) => void;
@@ -139,6 +142,7 @@ export function DailyCheckinModal({
   scorecard,
   onLogValue,
   getTodayValue,
+  getTodayNote,
   getWeekAverage,
   savedSummary,
   onSaveSummary,
@@ -149,6 +153,11 @@ export function DailyCheckinModal({
   const [showSummary, setShowSummary] = useState(false);
   const [summaryData, setSummaryData] = useState<SummaryData | null>(null);
   const [isLoadingSummary, setIsLoadingSummary] = useState(false);
+  
+  // Notes feature
+  const [showNoteInput, setShowNoteInput] = useState(false);
+  const [noteValue, setNoteValue] = useState("");
+  const [pendingNotes, setPendingNotes] = useState<Record<string, string>>({});
 
   // Flatten all metrics into a checklist
   const allMetrics = useMemo(() => {
@@ -197,8 +206,24 @@ export function DailyCheckinModal({
       setInputValue("");
       setLoggedMetrics(new Set());
       setIsLoadingSummary(false);
+      setShowNoteInput(false);
+      setNoteValue("");
+      setPendingNotes({});
     }
   }, [isOpen, allMetrics, getTodayValue, savedSummary]);
+
+  // Load existing note when step changes
+  useEffect(() => {
+    if (currentItem && getTodayNote) {
+      const existingNote = getTodayNote(currentItem.metric.id);
+      const pendingNote = pendingNotes[currentItem.metric.id];
+      setNoteValue(pendingNote || existingNote || "");
+      setShowNoteInput(!!pendingNote || !!existingNote);
+    } else {
+      setNoteValue("");
+      setShowNoteInput(false);
+    }
+  }, [currentStep, currentItem?.metric.id]);
 
   // Fetch personalized summary from Willson
   const fetchSummary = async () => {
@@ -290,9 +315,20 @@ export function DailyCheckinModal({
   const handleLogValue = (value: number) => {
     if (!currentItem) return;
     
-    onLogValue(currentItem.metric.id, value);
+    // Save note if there's one
+    const note = noteValue.trim() || pendingNotes[currentItem.metric.id] || undefined;
+    onLogValue(currentItem.metric.id, value, note);
     setLoggedMetrics(prev => new Set(prev).add(currentItem.metric.id));
     setInputValue("");
+    setNoteValue("");
+    setShowNoteInput(false);
+    
+    // Remove from pending notes since it's been saved
+    if (pendingNotes[currentItem.metric.id]) {
+      const newPending = { ...pendingNotes };
+      delete newPending[currentItem.metric.id];
+      setPendingNotes(newPending);
+    }
     
     if (isLastStep) {
       setShowSummary(true);
@@ -302,12 +338,22 @@ export function DailyCheckinModal({
   };
 
   const handleSkip = () => {
+    // Save note to pending if there is one, so it's preserved when they come back
+    if (currentItem && noteValue.trim()) {
+      setPendingNotes(prev => ({
+        ...prev,
+        [currentItem.metric.id]: noteValue.trim()
+      }));
+    }
+    
     if (isLastStep) {
       setShowSummary(true);
     } else {
       setCurrentStep(prev => prev + 1);
     }
     setInputValue("");
+    setNoteValue("");
+    setShowNoteInput(false);
   };
 
   const handleCustomSubmit = () => {
@@ -603,6 +649,45 @@ export function DailyCheckinModal({
                   }
                   return null;
                 })()}
+
+                {/* Optional Note - Elegant collapsible */}
+                <div className="mb-4">
+                  {!showNoteInput ? (
+                    <button
+                      onClick={() => setShowNoteInput(true)}
+                      className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-600 transition-colors group"
+                    >
+                      <StickyNote className="w-4 h-4 group-hover:text-amber-500 transition-colors" />
+                      <span>Add a note</span>
+                      {(pendingNotes[currentItem.metric.id] || (getTodayNote && getTodayNote(currentItem.metric.id))) && (
+                        <span className="w-2 h-2 rounded-full bg-amber-400" />
+                      )}
+                    </button>
+                  ) : (
+                    <div className="relative">
+                      <div className="flex items-center gap-2 mb-2">
+                        <StickyNote className="w-4 h-4 text-amber-500" />
+                        <span className="text-sm font-medium text-slate-600">Note</span>
+                        <button
+                          onClick={() => {
+                            setShowNoteInput(false);
+                            setNoteValue("");
+                          }}
+                          className="ml-auto text-xs text-slate-400 hover:text-slate-600"
+                        >
+                          Hide
+                        </button>
+                      </div>
+                      <textarea
+                        value={noteValue}
+                        onChange={(e) => setNoteValue(e.target.value)}
+                        placeholder="Quick thought, context, or anything you want to remember..."
+                        className="w-full p-3 text-sm border border-amber-200 bg-amber-50/50 rounded-xl resize-none outline-none focus:border-amber-300 focus:bg-amber-50"
+                        rows={2}
+                      />
+                    </div>
+                  )}
+                </div>
 
                 {/* Input based on aggregation type */}
                 {currentItem.metric.aggregation === 'count' ? (

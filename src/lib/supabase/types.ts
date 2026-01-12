@@ -620,9 +620,17 @@ export interface DailySummary {
   stats: { onTrack: number; total: number; percentage: number }
 }
 
+// Notes for metrics by date
+export interface MetricNotes {
+  [metricId: string]: {
+    [date: string]: string
+  }
+}
+
 // The complete scorecard data
 export interface ScorecardData {
   history: MetricHistory // All daily values by metric
+  notes?: MetricNotes // Optional notes for each metric by date
   savedSummaries?: { [date: string]: DailySummary } // Saved summaries by date
 }
 
