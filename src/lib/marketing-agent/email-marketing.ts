@@ -90,7 +90,8 @@ export class EmailCampaignManager {
     };
   }): Promise<{ sent: number; failed: number; messageIds: string[] }> {
     const templateGroup = EMAIL_TEMPLATES[params.template];
-    const templateVariant = templateGroup[params.variant as keyof typeof templateGroup];
+    const templateVariant = templateGroup[params.variant as keyof typeof templateGroup] as 
+      { subject: string; preheader: string } | undefined;
     
     if (!templateVariant) {
       throw new Error(`Unknown template variant: ${params.template}.${params.variant}`);
