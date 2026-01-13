@@ -29,6 +29,7 @@ import {
   Zap,
   Crosshair,
   ClipboardCheck,
+  Flame,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
@@ -971,6 +972,51 @@ export default function DashboardPage() {
     };
   }, [scorecard, last7Days]);
 
+  // Calculate streak (consecutive days with at least one metric logged)
+  const streak = useMemo(() => {
+    if (!scorecard?.data?.history) return 0;
+    
+    const allMetricIds = scorecard.categories.flatMap(c => c.metrics.map(m => m.id));
+    if (allMetricIds.length === 0) return 0;
+    
+    let currentStreak = 0;
+    const checkDate = new Date();
+    checkDate.setHours(0, 0, 0, 0);
+    
+    // Go back day by day checking if any metric was logged
+    for (let i = 0; i < 365; i++) { // Max 1 year streak
+      const dateStr = formatDateLocal(checkDate);
+      const hasAnyLogged = allMetricIds.some(id => 
+        scorecard.data?.history?.[id]?.[dateStr] !== undefined
+      );
+      
+      if (hasAnyLogged) {
+        currentStreak++;
+        checkDate.setDate(checkDate.getDate() - 1);
+      } else if (i === 0) {
+        // Today not logged yet - check if yesterday was logged to continue streak
+        checkDate.setDate(checkDate.getDate() - 1);
+        continue;
+      } else {
+        break;
+      }
+    }
+    
+    return currentStreak;
+  }, [scorecard]);
+
+  // Calculate average principle strength
+  const avgPrincipleStrength = useMemo(() => {
+    if (principles.length === 0) return -1;
+    
+    const strengths = principles.map(p => getPrincipleStrength(p.id).strengthScore);
+    const validStrengths = strengths.filter(s => s >= 0);
+    
+    if (validStrengths.length === 0) return -1;
+    
+    return Math.round(validStrengths.reduce((a, b) => a + b, 0) / validStrengths.length);
+  }, [principles, principleReviews]);
+
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-white">
@@ -1134,6 +1180,131 @@ export default function DashboardPage() {
             </div>
           </div>
         </motion.div>
+
+        {/* === COMMAND CENTER === */}
+        {(hasScorecard || isAdmin) && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.05 }}
+            className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mb-6"
+          >
+            {/* Today's Tasks */}
+            {isAdmin && (
+              <Link
+                href="/tasks"
+                className="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 hover:border-amber-300 hover:shadow-sm transition-all group"
+              >
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center group-hover:bg-amber-200 transition-colors">
+                    <Target className="w-4 h-4 text-amber-600" />
+                  </div>
+                  <span className="text-xs text-muted-foreground font-medium">Today&apos;s Tasks</span>
+                </div>
+                <div className="flex items-baseline gap-1">
+                  <span className={`text-xl sm:text-2xl font-bold ${
+                    focusTasks.length === 0 
+                      ? "text-slate-300" 
+                      : remainingTodayTasks === 0 
+                        ? "text-emerald-600" 
+                        : "text-amber-600"
+                  }`}>
+                    {focusTasks.filter(t => t.status === "completed").length}/{focusTasks.length}
+                  </span>
+                  {focusTasks.length > 0 && remainingTodayTasks === 0 && (
+                    <span className="text-xs text-emerald-600">✓</span>
+                  )}
+                </div>
+              </Link>
+            )}
+
+            {/* Metrics On Track */}
+            <button
+              onClick={() => setIsCheckinOpen(true)}
+              className="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 hover:border-emerald-300 hover:shadow-sm transition-all group text-left"
+            >
+              <div className="flex items-center gap-2 mb-1">
+                <div className="w-7 h-7 rounded-lg bg-emerald-100 flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
+                  <BarChart3 className="w-4 h-4 text-emerald-600" />
+                </div>
+                <span className="text-xs text-muted-foreground font-medium">Metrics</span>
+              </div>
+              <div className="flex items-baseline gap-1">
+                <span className={`text-xl sm:text-2xl font-bold ${
+                  weekProgress.total === 0 
+                    ? "text-slate-300" 
+                    : weekProgress.percentage >= 70 
+                      ? "text-emerald-600" 
+                      : weekProgress.percentage >= 40 
+                        ? "text-amber-600" 
+                        : "text-rose-600"
+                }`}>
+                  {weekProgress.onTrack}/{weekProgress.total}
+                </span>
+                <span className="text-xs text-muted-foreground">on track</span>
+              </div>
+            </button>
+
+            {/* Principle Strength */}
+            <button
+              onClick={() => {
+                if (currentWeekReview) {
+                  setViewingReview(currentWeekReview);
+                } else if (isReviewDue) {
+                  setIsPrincipleReviewOpen(true);
+                }
+              }}
+              className="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 hover:border-indigo-300 hover:shadow-sm transition-all group text-left"
+            >
+              <div className="flex items-center gap-2 mb-1">
+                <div className="w-7 h-7 rounded-lg bg-indigo-100 flex items-center justify-center group-hover:bg-indigo-200 transition-colors">
+                  <Shield className="w-4 h-4 text-indigo-600" />
+                </div>
+                <span className="text-xs text-muted-foreground font-medium">Principles</span>
+              </div>
+              <div className="flex items-baseline gap-1">
+                <span className={`text-xl sm:text-2xl font-bold ${
+                  avgPrincipleStrength < 0 
+                    ? "text-slate-300" 
+                    : avgPrincipleStrength >= 70 
+                      ? "text-indigo-600" 
+                      : avgPrincipleStrength >= 40 
+                        ? "text-amber-600" 
+                        : "text-rose-600"
+                }`}>
+                  {avgPrincipleStrength >= 0 ? `${avgPrincipleStrength}%` : "—"}
+                </span>
+                <span className="text-xs text-muted-foreground">strength</span>
+              </div>
+            </button>
+
+            {/* Streak */}
+            <div className="bg-white border border-slate-200 rounded-xl p-3 sm:p-4">
+              <div className="flex items-center gap-2 mb-1">
+                <div className={`w-7 h-7 rounded-lg flex items-center justify-center ${
+                  streak >= 7 
+                    ? "bg-gradient-to-br from-orange-400 to-rose-500" 
+                    : "bg-orange-100"
+                }`}>
+                  <Flame className={`w-4 h-4 ${streak >= 7 ? "text-white" : "text-orange-600"}`} />
+                </div>
+                <span className="text-xs text-muted-foreground font-medium">Streak</span>
+              </div>
+              <div className="flex items-baseline gap-1">
+                <span className={`text-xl sm:text-2xl font-bold ${
+                  streak === 0 
+                    ? "text-slate-300" 
+                    : streak >= 7 
+                      ? "text-orange-600" 
+                      : "text-foreground"
+                }`}>
+                  {streak}
+                </span>
+                <span className="text-xs text-muted-foreground">day{streak !== 1 ? "s" : ""}</span>
+              </div>
+            </div>
+          </motion.div>
+        )}
 
         {/* === STEP 1: PURPOSE === */}
         <motion.div

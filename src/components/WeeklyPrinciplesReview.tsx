@@ -1230,9 +1230,7 @@ export function ViewWeeklyReview({
                 })}
               </div>
             </div>
-          </div>
-
-          {/* Footer */}
+          </div>          {/* Footer */}
           <div className="px-6 py-4 border-t border-slate-100">
             <Button onClick={onClose} className="w-full gradient-ember text-white">
               Close

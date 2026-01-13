@@ -6,6 +6,7 @@ import { motion, AnimatePresence, Reorder } from "framer-motion";
 import {
   Plus,
   Check,
+  CheckCircle,
   Clock,
   Target,
   Trash2,
@@ -212,8 +213,10 @@ export default function TasksPage() {
   const [suggestionsLoaded, setSuggestionsLoaded] = useState(false);
   const supabase = createClient();
 
-  // Get the localStorage key based on current filter
+  // Get the localStorage key based on current filter (exclude urgency filters)
   const getStorageKey = useCallback((base: string) => {
+    // Don't key by urgency filters - only by actual metric IDs
+    if (filterMetric?.startsWith("_urgency:")) return base;
     return filterMetric ? `${base}-${filterMetric}` : base;
   }, [filterMetric]);
 
@@ -447,11 +450,14 @@ export default function TasksPage() {
     setIsLoadingSuggestions(true);
     setDismissedSuggestions(new Set()); // Clear dismissed when getting new suggestions
     
+    // Don't pass urgency filters to the API - only actual metric IDs
+    const metricIdForApi = filterMetric?.startsWith("_urgency:") ? undefined : filterMetric;
+    
     try {
       const response = await fetch("/api/suggest-tasks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ metricId: filterMetric || undefined }),
+        body: JSON.stringify({ metricId: metricIdForApi || undefined }),
       });
       
       if (!response.ok) throw new Error("Failed to load suggestions");
@@ -521,6 +527,14 @@ export default function TasksPage() {
   const filteredTasks = tasks.filter(task => {
     if (filterStatus === "active" && task.status === "completed") return false;
     if (filterStatus === "completed" && task.status !== "completed") return false;
+    
+    // Handle urgency-based filters
+    if (filterMetric?.startsWith("_urgency:")) {
+      const urgencyType = filterMetric.replace("_urgency:", "") as "overdue" | "today" | "soon";
+      return getUrgency(task.dueDate) === urgencyType;
+    }
+    
+    // Handle metric-based filters
     if (filterMetric && task.metricId !== filterMetric) return false;
     return true;
   });
@@ -589,43 +603,134 @@ export default function TasksPage() {
           </div>
         </div>
 
-        {/* Filters */}
-        <div className="flex flex-wrap items-center gap-3 mb-6">
-          <div className="flex items-center gap-2 bg-white rounded-lg border border-slate-200 p-1">
-            {(["active", "all", "completed"] as const).map((status) => (
+        {/* Priority Filter Pills */}
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          {/* Urgency-based filter pills */}
+          <button
+            onClick={() => {
+              setFilterStatus("active");
+              setFilterMetric(null);
+            }}
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+              filterStatus === "active" && !filterMetric
+                ? "bg-slate-900 text-white shadow-sm"
+                : "bg-white border border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50"
+            }`}
+          >
+            All Active
+            <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-xs ${
+              filterStatus === "active" && !filterMetric
+                ? "bg-white/20 text-white"
+                : "bg-slate-100 text-slate-500"
+            }`}>
+              {tasks.filter(t => t.status !== "completed").length}
+            </span>
+          </button>
+
+          {/* Overdue pill */}
+          {(() => {
+            const count = tasks.filter(t => t.status !== "completed" && getUrgency(t.dueDate) === "overdue").length;
+            return count > 0 ? (
               <button
-                key={status}
-                onClick={() => setFilterStatus(status)}
-                className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                  filterStatus === status
-                    ? "bg-ember text-white"
-                    : "text-muted-foreground hover:text-foreground"
+                onClick={() => {
+                  setFilterStatus("active");
+                  // We'll use a special value to indicate urgency filter
+                  setFilterMetric("_urgency:overdue");
+                }}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  filterMetric === "_urgency:overdue"
+                    ? "bg-rose-600 text-white shadow-sm"
+                    : "bg-rose-50 border border-rose-200 text-rose-700 hover:bg-rose-100"
                 }`}
               >
-                {status.charAt(0).toUpperCase() + status.slice(1)}
+                <span className="w-2 h-2 rounded-full bg-current animate-pulse" />
+                Overdue
+                <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-xs font-bold ${
+                  filterMetric === "_urgency:overdue"
+                    ? "bg-white/20 text-white"
+                    : "bg-rose-200 text-rose-800"
+                }`}>
+                  {count}
+                </span>
               </button>
-            ))}
-          </div>
+            ) : null;
+          })()}
 
-          {scorecard && (
-            <select
-              value={filterMetric || ""}
-              onChange={(e) => setFilterMetric(e.target.value || null)}
-              className="px-3 py-2 text-sm border border-slate-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-ember/20"
-            >
-              <option value="">All Metrics</option>
-              {scorecard.categories.map(category => (
-                <optgroup key={category.id} label={category.name}>
-                  {category.metrics.map(metric => (
-                    <option key={metric.id} value={metric.id}>
-                      {metric.name}
-                    </option>
-                  ))}
-                </optgroup>
-              ))}
-            </select>
-          )}
+          {/* Today pill */}
+          {(() => {
+            const count = tasks.filter(t => t.status !== "completed" && getUrgency(t.dueDate) === "today").length;
+            return count > 0 ? (
+              <button
+                onClick={() => {
+                  setFilterStatus("active");
+                  setFilterMetric("_urgency:today");
+                }}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  filterMetric === "_urgency:today"
+                    ? "bg-amber-500 text-white shadow-sm"
+                    : "bg-amber-50 border border-amber-200 text-amber-700 hover:bg-amber-100"
+                }`}
+              >
+                Today
+                <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-xs font-bold ${
+                  filterMetric === "_urgency:today"
+                    ? "bg-white/20 text-white"
+                    : "bg-amber-200 text-amber-800"
+                }`}>
+                  {count}
+                </span>
+              </button>
+            ) : null;
+          })()}
 
+          {/* This Week pill */}
+          {(() => {
+            const count = tasks.filter(t => t.status !== "completed" && getUrgency(t.dueDate) === "soon").length;
+            return count > 0 ? (
+              <button
+                onClick={() => {
+                  setFilterStatus("active");
+                  setFilterMetric("_urgency:soon");
+                }}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  filterMetric === "_urgency:soon"
+                    ? "bg-blue-500 text-white shadow-sm"
+                    : "bg-blue-50 border border-blue-200 text-blue-700 hover:bg-blue-100"
+                }`}
+              >
+                This Week
+                <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-xs font-bold ${
+                  filterMetric === "_urgency:soon"
+                    ? "bg-white/20 text-white"
+                    : "bg-blue-200 text-blue-800"
+                }`}>
+                  {count}
+                </span>
+              </button>
+            ) : null;
+          })()}
+
+          {/* Completed pill */}
+          <button
+            onClick={() => setFilterStatus(filterStatus === "completed" ? "active" : "completed")}
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+              filterStatus === "completed"
+                ? "bg-emerald-600 text-white shadow-sm"
+                : "bg-white border border-slate-200 text-slate-500 hover:border-emerald-300 hover:text-emerald-600"
+            }`}
+          >
+            <CheckCircle className="w-3.5 h-3.5" />
+            Completed
+            <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-xs ${
+              filterStatus === "completed"
+                ? "bg-white/20 text-white"
+                : "bg-slate-100 text-slate-500"
+            }`}>
+              {tasks.filter(t => t.status === "completed").length}
+            </span>
+          </button>
+
+          {/* View mode toggle - push to end */}
           <div className="flex items-center gap-1 bg-white rounded-lg border border-slate-200 p-1 ml-auto">
             <button
               onClick={() => setViewMode("list")}
@@ -645,6 +750,60 @@ export default function TasksPage() {
             </button>
           </div>
         </div>
+
+        {/* Metric Filter - Secondary row */}
+        {scorecard && (
+          <div className="flex flex-wrap items-center gap-2 mb-6">
+            <span className="text-xs text-muted-foreground font-medium uppercase tracking-wide">Filter by metric:</span>
+            <div className="flex flex-wrap items-center gap-1.5">
+              <button
+                onClick={() => {
+                  if (!filterMetric?.startsWith("_urgency:")) {
+                    setFilterMetric(null);
+                  } else {
+                    // Keep urgency filter but clear metric
+                    setFilterMetric(filterMetric);
+                  }
+                }}
+                className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-all ${
+                  !filterMetric || filterMetric.startsWith("_urgency:")
+                    ? "bg-emerald-100 text-emerald-700 border border-emerald-200"
+                    : "bg-white border border-slate-200 text-slate-500 hover:border-slate-300"
+                }`}
+              >
+                All
+              </button>
+              {scorecard.categories.flatMap(category => 
+                category.metrics.map(metric => {
+                  const count = tasks.filter(t => t.metricId === metric.id && t.status !== "completed").length;
+                  const isActive = filterMetric === metric.id;
+                  return (
+                    <button
+                      key={metric.id}
+                      onClick={() => setFilterMetric(isActive ? null : metric.id)}
+                      className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium transition-all ${
+                        isActive
+                          ? "bg-emerald-100 text-emerald-700 border border-emerald-200"
+                          : count > 0
+                            ? "bg-white border border-slate-200 text-slate-600 hover:border-emerald-300 hover:text-emerald-600"
+                            : "bg-white border border-slate-200 text-slate-400 hover:border-slate-300"
+                      }`}
+                    >
+                      {metric.name}
+                      {count > 0 && (
+                        <span className={`px-1 py-0.5 rounded text-[10px] ${
+                          isActive ? "bg-emerald-200 text-emerald-800" : "bg-slate-100 text-slate-500"
+                        }`}>
+                          {count}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Task List or Kanban */}
         {viewMode === "list" ? (
@@ -706,7 +865,7 @@ export default function TasksPage() {
                 <div>
                   <h3 className="font-semibold text-foreground">Willson Suggests</h3>
                   <p className="text-xs text-muted-foreground">
-                    {filterMetric && getMetricById(filterMetric)
+                    {filterMetric && !filterMetric.startsWith("_urgency:") && getMetricById(filterMetric)
                       ? `For improving "${getMetricById(filterMetric)?.name}"`
                       : "Based on your scorecard"
                     }
