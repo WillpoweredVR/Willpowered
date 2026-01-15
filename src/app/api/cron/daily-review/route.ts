@@ -40,6 +40,7 @@ export async function GET(request: Request) {
   const hasValidSecret = CRON_SECRET && authHeader === `Bearer ${CRON_SECRET}`;
   
   // 3. Check for authenticated admin user (manual dashboard trigger)
+  const ADMIN_EMAILS = ['colin@willpowered.com', 'colin.robertson3@gmail.com'];
   let isAdmin = false;
   try {
     const supabase = await createServerClient();
@@ -47,7 +48,7 @@ export async function GET(request: Request) {
     if (user) {
       // Check if user is admin by ID or email
       const isAdminById = ADMIN_USER_ID && user.id === ADMIN_USER_ID;
-      const isAdminByEmail = user.email === ADMIN_EMAIL || user.email === 'colin@willpowered.com';
+      const isAdminByEmail = user.email && (user.email === ADMIN_EMAIL || ADMIN_EMAILS.includes(user.email));
       isAdmin = isAdminById || isAdminByEmail;
     }
   } catch {

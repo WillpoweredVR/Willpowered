@@ -13,13 +13,18 @@ import { getMarketingAgent } from '@/lib/marketing-agent';
 const ADMIN_USER_ID = process.env.ADMIN_USER_ID;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'colin@willpowered.com';
 
+const ADMIN_EMAILS = [
+  'colin@willpowered.com',
+  'colin.robertson3@gmail.com',
+];
+
 function isAdminUser(user: { id: string; email?: string }): boolean {
   // Check by user ID
   if (ADMIN_USER_ID && user.id === ADMIN_USER_ID) {
     return true;
   }
   // Check by email
-  if (user.email === ADMIN_EMAIL || user.email === 'colin@willpowered.com') {
+  if (user.email && (user.email === ADMIN_EMAIL || ADMIN_EMAILS.includes(user.email))) {
     return true;
   }
   return false;
