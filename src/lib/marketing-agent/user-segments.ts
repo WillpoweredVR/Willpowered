@@ -29,6 +29,16 @@ export interface MarketingUser {
   onboardingCompleted: boolean;
 }
 
+// Type for profile query results
+interface ProfileRow {
+  id: string;
+  email: string | null;
+  full_name: string | null;
+  updated_at: string | null;
+  created_at: string;
+  onboarding_completed: boolean;
+}
+
 // ============================================================================
 // SEGMENT QUERIES
 // ============================================================================
@@ -43,7 +53,7 @@ export async function getDormantUsers(daysInactive: number): Promise<MarketingUs
   cutoffDate.setDate(cutoffDate.getDate() - daysInactive);
   
   // Get profiles that haven't been updated recently
-  const { data: profiles, error } = await supabase
+  const { data, error } = await supabase
     .from('profiles')
     .select('id, email, full_name, updated_at, created_at, onboarding_completed')
     .lt('updated_at', cutoffDate.toISOString())
@@ -55,7 +65,9 @@ export async function getDormantUsers(daysInactive: number): Promise<MarketingUs
     throw error;
   }
   
-  return (profiles || [])
+  const profiles = (data || []) as ProfileRow[];
+  
+  return profiles
     .filter(p => p.email) // Ensure email exists
     .map(p => ({
       id: p.id,
@@ -80,7 +92,7 @@ export async function getUsersBySignupMonth(
   const startDate = new Date(year, month, 1);
   const endDate = new Date(year, month + 1, 0); // Last day of month
   
-  const { data: profiles, error } = await supabase
+  const { data, error } = await supabase
     .from('profiles')
     .select('id, email, full_name, updated_at, created_at, onboarding_completed')
     .gte('created_at', startDate.toISOString())
@@ -92,7 +104,9 @@ export async function getUsersBySignupMonth(
     throw error;
   }
   
-  return (profiles || [])
+  const profiles = (data || []) as ProfileRow[];
+  
+  return profiles
     .filter(p => p.email)
     .map(p => ({
       id: p.id,
@@ -110,7 +124,7 @@ export async function getUsersBySignupMonth(
 export async function getAbandonedOnboardingUsers(): Promise<MarketingUser[]> {
   const supabase = getAdminClient();
   
-  const { data: profiles, error } = await supabase
+  const { data, error } = await supabase
     .from('profiles')
     .select('id, email, full_name, updated_at, created_at, onboarding_completed, onboarding_step')
     .eq('onboarding_completed', false)
@@ -122,7 +136,9 @@ export async function getAbandonedOnboardingUsers(): Promise<MarketingUser[]> {
     throw error;
   }
   
-  return (profiles || [])
+  const profiles = (data || []) as ProfileRow[];
+  
+  return profiles
     .filter(p => p.email)
     .map(p => ({
       id: p.id,
@@ -142,7 +158,7 @@ export async function getAllActiveUsers(): Promise<MarketingUser[]> {
   const thirtyDaysAgo = new Date();
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
   
-  const { data: profiles, error } = await supabase
+  const { data, error } = await supabase
     .from('profiles')
     .select('id, email, full_name, updated_at, created_at, onboarding_completed')
     .gte('updated_at', thirtyDaysAgo.toISOString())
@@ -153,7 +169,9 @@ export async function getAllActiveUsers(): Promise<MarketingUser[]> {
     throw error;
   }
   
-  return (profiles || [])
+  const profiles = (data || []) as ProfileRow[];
+  
+  return profiles
     .filter(p => p.email)
     .map(p => ({
       id: p.id,
