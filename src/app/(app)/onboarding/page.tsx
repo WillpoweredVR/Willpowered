@@ -346,7 +346,7 @@ export default function OnboardingPage() {
           user_id: user.id,
           title: goal,
           why_statement: goalWhy,
-          target_date: targetDate.toISOString().split("T")[0],
+          target_date: `${targetDate.getFullYear()}-${String(targetDate.getMonth() + 1).padStart(2, '0')}-${String(targetDate.getDate()).padStart(2, '0')}`,
           is_primary: true,
         });
       }

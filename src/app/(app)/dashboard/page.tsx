@@ -84,17 +84,18 @@ function getTaskUrgency(dueDate?: string): "overdue" | "today" | "soon" | "later
   return "later";
 }
 
-// Helper to get today's date in ISO format
-function getToday(): string {
-  return new Date().toISOString().split('T')[0];
-}
-
 // Helper to format date as YYYY-MM-DD using LOCAL time (not UTC)
 function formatDateLocal(date: Date): string {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');
   const day = String(date.getDate()).padStart(2, '0');
   return `${year}-${month}-${day}`;
+}
+
+// Helper to get today's date in ISO format (using local time)
+function getToday(): string {
+  // Use local time, not UTC - this ensures the day matches the user's calendar
+  return formatDateLocal(new Date());
 }
 
 // Helper to parse date string as LOCAL midnight (not UTC)
@@ -149,13 +150,13 @@ function getNextOccurrence(currentDate: string, recurrence: Task["recurrence"]):
   return formatDateLocal(date);
 }
 
-// Helper to get the last 7 days including today
+// Helper to get the last 7 days including today (using local time)
 function getLast7Days(): string[] {
   const days: string[] = [];
   for (let i = 6; i >= 0; i--) {
     const date = new Date();
     date.setDate(date.getDate() - i);
-    days.push(date.toISOString().split('T')[0]);
+    days.push(formatDateLocal(date));
   }
   return days;
 }
@@ -205,6 +206,8 @@ export default function DashboardPage() {
   
   // Daily check-in modal
   const [isCheckinOpen, setIsCheckinOpen] = useState(false);
+  const [checkinDate, setCheckinDate] = useState<string | null>(null); // null = today
+  const [showBackfillPicker, setShowBackfillPicker] = useState(false);
   
   // Weekly principles review
   const [isPrincipleReviewOpen, setIsPrincipleReviewOpen] = useState(false);
@@ -872,7 +875,7 @@ export default function DashboardPage() {
     const diff = now.getDate() - day + (day === 0 ? -6 : 1);
     const monday = new Date(now);
     monday.setDate(diff);
-    return monday.toISOString().split("T")[0];
+    return formatDateLocal(monday);
   }, []);
 
   // Check if today is Sunday (the only day you can start a new review)
@@ -1151,34 +1154,36 @@ export default function DashboardPage() {
             Day {daysOnJourney + 1} of your journey, {firstName}
           </p>
 
-          {/* Journey Steps Progress - horizontally scrollable on mobile */}
-          <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide">
-            <div className="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-3 bg-white border border-slate-200 rounded-xl min-w-max">
-              {journeySteps.map((step, i) => (
-                <div key={step.key} className="flex items-center">
-                  <div className={`flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 rounded-lg transition-colors ${
-                    step.complete 
-                      ? "bg-emerald-100 text-emerald-700" 
-                      : i === completedSteps
-                      ? "bg-amber-100 text-amber-700"
-                      : "bg-slate-100 text-slate-500"
-                  }`}>
-                    {step.complete ? (
-                      <Check className="w-4 h-4" />
-                    ) : (
-                      <span className="w-4 h-4 flex items-center justify-center text-xs font-medium">
-                        {i + 1}
-                      </span>
+          {/* Journey Steps Progress - only show when not all complete */}
+          {completedSteps < journeySteps.length && (
+            <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide">
+              <div className="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-3 bg-white border border-slate-200 rounded-xl min-w-max">
+                {journeySteps.map((step, i) => (
+                  <div key={step.key} className="flex items-center">
+                    <div className={`flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 rounded-lg transition-colors ${
+                      step.complete 
+                        ? "bg-emerald-100 text-emerald-700" 
+                        : i === completedSteps
+                        ? "bg-amber-100 text-amber-700"
+                        : "bg-slate-100 text-slate-500"
+                    }`}>
+                      {step.complete ? (
+                        <Check className="w-4 h-4" />
+                      ) : (
+                        <span className="w-4 h-4 flex items-center justify-center text-xs font-medium">
+                          {i + 1}
+                        </span>
+                      )}
+                      <span className="text-xs sm:text-sm font-medium whitespace-nowrap">{step.label}</span>
+                    </div>
+                    {i < journeySteps.length - 1 && (
+                      <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-slate-300 mx-0.5 sm:mx-1 flex-shrink-0" />
                     )}
-                    <span className="text-xs sm:text-sm font-medium whitespace-nowrap">{step.label}</span>
                   </div>
-                  {i < journeySteps.length - 1 && (
-                    <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-slate-300 mx-0.5 sm:mx-1 flex-shrink-0" />
-                  )}
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </motion.div>
 
         {/* === COMMAND CENTER === */}
@@ -1306,92 +1311,12 @@ export default function DashboardPage() {
           </motion.div>
         )}
 
-        {/* === STEP 1: PURPOSE === */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-4 sm:p-6 mb-4 sm:mb-6"
-        >
-          {profile?.purpose_statement ? (
-            <>
-              {/* Purpose Statement - Main Header */}
-              <div className="flex items-start gap-2 group mb-3">
-                <h2 className="font-serif text-xl sm:text-2xl font-bold leading-tight">{profile.purpose_statement}</h2>
-                <button
-                  onClick={() => setEditModal({ isOpen: true, type: "purpose", value: profile.purpose_statement || "" })}
-                  className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-white p-1 transition-opacity mt-1 flex-shrink-0"
-                >
-                  <Pencil className="w-4 h-4" />
-                </button>
-              </div>
-
-              {/* Why Statement - Quote underneath */}
-              {goal?.why_statement && (
-                <div className="flex items-start gap-2 group">
-                  <p className="text-slate-400 italic">&ldquo;{goal.why_statement}&rdquo;</p>
-                  <button
-                    onClick={() => setEditModal({ isOpen: true, type: "why", value: goal.why_statement || "" })}
-                    className="opacity-0 group-hover:opacity-100 text-slate-500 hover:text-white p-1 transition-opacity flex-shrink-0"
-                  >
-                    <Pencil className="w-3 h-3" />
-                  </button>
-                </div>
-              )}
-            </>
-          ) : goal ? (
-            <>
-              {/* Fallback: Show goal if no purpose */}
-              <div className="flex items-start gap-2 group mb-2">
-                <h2 className="font-serif text-2xl font-bold">{goal.title}</h2>
-                <button
-                  onClick={() => setEditModal({ isOpen: true, type: "goal", value: goal.title })}
-                  className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-white p-1 transition-opacity mt-1"
-                >
-                  <Pencil className="w-4 h-4" />
-                </button>
-              </div>
-
-              {goal.why_statement && (
-                <div className="flex items-start gap-2 group">
-                  <p className="text-slate-400 italic">&ldquo;{goal.why_statement}&rdquo;</p>
-                  <button
-                    onClick={() => setEditModal({ isOpen: true, type: "why", value: goal.why_statement || "" })}
-                    className="opacity-0 group-hover:opacity-100 text-slate-500 hover:text-white p-1 transition-opacity flex-shrink-0"
-                  >
-                    <Pencil className="w-3 h-3" />
-                  </button>
-                </div>
-              )}
-            </>
-          ) : (
-            <div className="text-center py-6">
-              <p className="text-slate-400 mb-3">
-                What do you want to achieve? What&apos;s your mission?
-              </p>
-              <Button
-                onClick={() => {
-                  setCoachContext({
-                    message: "I want to define my purpose and set a meaningful goal. Can you help me think through this?",
-                    title: "Define Purpose"
-                  });
-                  setIsChatOpen(true);
-                }}
-                className="gradient-ember"
-              >
-                <Sparkles className="w-4 h-4 mr-2" />
-                Discover with Willson
-              </Button>
-            </div>
-          )}
-        </motion.div>
-
         {/* === TODAY'S FOCUS (Admin Only) === */}
         {isAdmin && focusTasks.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15 }}
+            transition={{ delay: 0.08 }}
             className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-2xl p-4 sm:p-5 mb-4 sm:mb-6"
           >
             <div className="flex items-center justify-between mb-3">
@@ -1470,7 +1395,97 @@ export default function DashboardPage() {
           </motion.div>
         )}
 
-        {/* === STEP 2: PRINCIPLES === */}
+        {/* === PURPOSE === */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-4 sm:p-6 mb-4 sm:mb-6"
+        >
+          {profile?.purpose_statement ? (
+            <>
+              {/* Section Header */}
+              <div className="flex items-center gap-2 mb-4 pb-3 border-b border-white/10">
+                <Compass className="w-5 h-5 text-amber-400" />
+                <span className="text-xs sm:text-sm text-white/60 uppercase tracking-wide font-medium">
+                  Purpose
+                </span>
+                <span className="text-xs text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded-full font-medium">
+                  Your Why
+                </span>
+              </div>
+              {/* Purpose Statement - Main Header */}
+              <div className="flex items-start gap-2 group mb-3">
+                <h2 className="font-serif text-xl sm:text-2xl font-bold leading-tight">{profile.purpose_statement}</h2>
+                <button
+                  onClick={() => setEditModal({ isOpen: true, type: "purpose", value: profile.purpose_statement || "" })}
+                  className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-white p-1 transition-opacity mt-1 flex-shrink-0"
+                >
+                  <Pencil className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* Why Statement - Quote underneath */}
+              {goal?.why_statement && (
+                <div className="flex items-start gap-2 group">
+                  <p className="text-slate-400 italic">&ldquo;{goal.why_statement}&rdquo;</p>
+                  <button
+                    onClick={() => setEditModal({ isOpen: true, type: "why", value: goal.why_statement || "" })}
+                    className="opacity-0 group-hover:opacity-100 text-slate-500 hover:text-white p-1 transition-opacity flex-shrink-0"
+                  >
+                    <Pencil className="w-3 h-3" />
+                  </button>
+                </div>
+              )}
+            </>
+          ) : goal ? (
+            <>
+              {/* Fallback: Show goal if no purpose */}
+              <div className="flex items-start gap-2 group mb-2">
+                <h2 className="font-serif text-2xl font-bold">{goal.title}</h2>
+                <button
+                  onClick={() => setEditModal({ isOpen: true, type: "goal", value: goal.title })}
+                  className="opacity-0 group-hover:opacity-100 text-slate-400 hover:text-white p-1 transition-opacity mt-1"
+                >
+                  <Pencil className="w-4 h-4" />
+                </button>
+              </div>
+
+              {goal.why_statement && (
+                <div className="flex items-start gap-2 group">
+                  <p className="text-slate-400 italic">&ldquo;{goal.why_statement}&rdquo;</p>
+                  <button
+                    onClick={() => setEditModal({ isOpen: true, type: "why", value: goal.why_statement || "" })}
+                    className="opacity-0 group-hover:opacity-100 text-slate-500 hover:text-white p-1 transition-opacity flex-shrink-0"
+                  >
+                    <Pencil className="w-3 h-3" />
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="text-center py-6">
+              <p className="text-slate-400 mb-3">
+                What do you want to achieve? What&apos;s your mission?
+              </p>
+              <Button
+                onClick={() => {
+                  setCoachContext({
+                    message: "I want to define my purpose and set a meaningful goal. Can you help me think through this?",
+                    title: "Define Purpose"
+                  });
+                  setIsChatOpen(true);
+                }}
+                className="gradient-ember"
+              >
+                <Sparkles className="w-4 h-4 mr-2" />
+                Discover with Willson
+              </Button>
+            </div>
+          )}
+        </motion.div>
+
+        {/* === PRINCIPLES === */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -1481,7 +1496,7 @@ export default function DashboardPage() {
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-indigo-600" />
               <span className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wide font-medium">
-                Step 2 · Principles
+                Principles
               </span>
               <span className="text-xs text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded-full font-medium">
                 Your How
@@ -1977,7 +1992,7 @@ export default function DashboardPage() {
           )}
         </motion.div>
 
-        {/* === STEP 3: SCORECARD === */}
+        {/* === SCORECARD === */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -1988,7 +2003,7 @@ export default function DashboardPage() {
             <div className="flex items-center gap-2">
               <BarChart3 className="w-5 h-5 text-emerald-600" />
               <span className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wide font-medium">
-                Step 3 · Scorecard
+                Scorecard
               </span>
               <span className="text-xs text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full font-medium">
                 Your What
@@ -2061,6 +2076,14 @@ export default function DashboardPage() {
             const allLogged = logged === total && total > 0;
             const someLogged = logged > 0 && logged < total;
             
+            // Find days with missing data (for backfill suggestions)
+            const missingDays = last7Days.filter(date => {
+              if (date === today) return false; // Don't suggest today
+              const dayLogged = scorecard?.categories.reduce((acc, c) => 
+                acc + c.metrics.filter(m => getDailyValue(m.id, date) !== null).length, 0) || 0;
+              return dayLogged < total;
+            });
+            
             let buttonText = "Start Check-in";
             if (allLogged) buttonText = "View Summary";
             else if (someLogged) buttonText = "Continue Check-in";
@@ -2081,14 +2104,74 @@ export default function DashboardPage() {
                       </p>
                     </div>
                   </div>
-                  <Button 
-                    onClick={() => setIsCheckinOpen(true)}
-                    className="bg-white text-emerald-600 hover:bg-white/90 w-full sm:w-auto"
-                    size="sm"
-                  >
-                    <Sparkles className="w-4 h-4 mr-2" />
-                    {buttonText}
-                  </Button>
+                  <div className="flex items-center gap-2 w-full sm:w-auto">
+                    <Button 
+                      onClick={() => {
+                        setCheckinDate(null); // Reset to today
+                        setIsCheckinOpen(true);
+                      }}
+                      className="bg-white text-emerald-600 hover:bg-white/90 flex-1 sm:flex-initial"
+                      size="sm"
+                    >
+                      <Sparkles className="w-4 h-4 mr-2" />
+                      {buttonText}
+                    </Button>
+                    
+                    {/* Backfill dropdown */}
+                    {missingDays.length > 0 && (
+                      <div className="relative">
+                        <button
+                          onClick={() => setShowBackfillPicker(!showBackfillPicker)}
+                          className="p-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors"
+                          title="Log a past day"
+                        >
+                          <Calendar className="w-4 h-4" />
+                        </button>
+                        
+                        {showBackfillPicker && (
+                          <>
+                            <div 
+                              className="fixed inset-0 z-40" 
+                              onClick={() => setShowBackfillPicker(false)} 
+                            />
+                            <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-xl border border-slate-200 overflow-hidden z-50">
+                              <div className="p-2 border-b border-slate-100">
+                                <p className="text-xs font-medium text-slate-500">Log a previous day</p>
+                              </div>
+                              <div className="max-h-48 overflow-y-auto">
+                                {missingDays.slice().reverse().map(date => {
+                                  const dayLogged = scorecard?.categories.reduce((acc, c) => 
+                                    acc + c.metrics.filter(m => getDailyValue(m.id, date) !== null).length, 0) || 0;
+                                  const dateObj = new Date(date + 'T12:00:00');
+                                  const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
+                                  const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                                  
+                                  return (
+                                    <button
+                                      key={date}
+                                      onClick={() => {
+                                        setCheckinDate(date);
+                                        setIsCheckinOpen(true);
+                                        setShowBackfillPicker(false);
+                                      }}
+                                      className="w-full px-3 py-2 text-left hover:bg-emerald-50 transition-colors flex items-center justify-between"
+                                    >
+                                      <span className="text-sm text-slate-700">
+                                        <span className="font-medium">{dayName}</span> {dateStr}
+                                      </span>
+                                      <span className="text-xs text-slate-400">
+                                        {dayLogged}/{total} logged
+                                      </span>
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          </>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             );
@@ -2248,6 +2331,58 @@ export default function DashboardPage() {
                             }`}
                             style={{ width: `${progress}%` }}
                           />
+                        </div>
+
+                        {/* 7-day timeline - clickable dots for each day */}
+                        <div className="flex items-center gap-1 mb-3">
+                          {last7Days.map((date, idx) => {
+                            const value = getDailyValue(metric.id, date);
+                            const isToday = date === today;
+                            const dayLabel = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' }).slice(0, 2);
+                            const dateLabel = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                            const hasValue = value !== null;
+                            
+                            return (
+                              <button
+                                key={date}
+                                onClick={() => {
+                                  if (metric.aggregation === 'count') {
+                                    // For count metrics, toggle or set to 1 if not set
+                                    setDailyValue(metric.id, date, hasValue ? (value === 1 ? 0 : 1) : 1);
+                                  } else {
+                                    // For other metrics, open edit mode
+                                    setEditingMetric({
+                                      metricId: metric.id,
+                                      date: date,
+                                      currentValue: value
+                                    });
+                                    setMetricInputValue(value !== null ? String(value) : "");
+                                  }
+                                }}
+                                className={`
+                                  relative flex-1 flex flex-col items-center gap-0.5 py-1.5 rounded-lg transition-all
+                                  ${isToday ? 'ring-2 ring-emerald-400 ring-offset-1' : ''}
+                                  ${hasValue 
+                                    ? 'bg-emerald-100 hover:bg-emerald-200' 
+                                    : 'bg-slate-100 hover:bg-slate-200'
+                                  }
+                                `}
+                                title={`${dateLabel}: ${hasValue ? value : 'Not logged'}`}
+                              >
+                                <span className={`text-[10px] font-medium ${hasValue ? 'text-emerald-700' : 'text-slate-400'}`}>
+                                  {dayLabel}
+                                </span>
+                                <span className={`text-xs font-semibold ${hasValue ? 'text-emerald-600' : 'text-slate-300'}`}>
+                                  {hasValue ? (metric.aggregation === 'count' ? (value === 1 ? '✓' : '✗') : value) : '·'}
+                                </span>
+                                {!hasValue && (
+                                  <span className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                    <Plus className="w-3 h-3 text-slate-500" />
+                                  </span>
+                                )}
+                              </button>
+                            );
+                          })}
                         </div>
 
                         {/* Today's entry */}
@@ -2504,14 +2639,19 @@ export default function DashboardPage() {
 
       <DailyCheckinModal
         isOpen={isCheckinOpen}
-        onClose={() => setIsCheckinOpen(false)}
+        onClose={() => {
+          setIsCheckinOpen(false);
+          setCheckinDate(null); // Reset to today when closing
+        }}
         scorecard={scorecard}
-        onLogValue={(metricId, value, note) => setDailyValue(metricId, today, value, note)}
-        getTodayValue={(metricId) => getDailyValue(metricId, today)}
-        getTodayNote={(metricId) => getDailyNote(metricId, today)}
+        onLogValue={(metricId, value, note) => setDailyValue(metricId, checkinDate || today, value, note)}
+        getTodayValue={(metricId) => getDailyValue(metricId, checkinDate || today)}
+        getTodayNote={(metricId) => getDailyNote(metricId, checkinDate || today)}
         getWeekAverage={getAggregatedValue}
-        savedSummary={getTodaySummary()}
+        savedSummary={checkinDate ? null : getTodaySummary()} // No saved summary for past days
         onSaveSummary={saveTodaySummary}
+        checkinDate={checkinDate}
+        onDateChange={setCheckinDate}
       />
 
       <WeeklyPrinciplesReview

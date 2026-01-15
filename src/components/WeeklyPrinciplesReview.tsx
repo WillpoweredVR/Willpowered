@@ -46,13 +46,17 @@ interface WeeklyPrinciplesReviewProps {
   onReviewComplete: (review: WeeklyPrincipleReview) => void;
 }
 
-// Get the Monday of the current week
+// Get the Monday of the current week (using local time, not UTC)
 function getCurrentWeekMonday(): string {
   const now = new Date();
-  const day = now.getDay();
-  const diff = now.getDate() - day + (day === 0 ? -6 : 1);
+  const dayOfWeek = now.getDay();
+  const diff = now.getDate() - dayOfWeek + (dayOfWeek === 0 ? -6 : 1);
   const monday = new Date(now.setDate(diff));
-  return monday.toISOString().split("T")[0];
+  // Use local time components to avoid timezone issues
+  const year = monday.getFullYear();
+  const month = String(monday.getMonth() + 1).padStart(2, '0');
+  const dayStr = String(monday.getDate()).padStart(2, '0');
+  return `${year}-${month}-${dayStr}`;
 }
 
 // Calculate principle strength from reviews
@@ -363,7 +367,7 @@ export function WeeklyPrinciplesReview({
         .filter(Boolean);
 
       // Get metric performance data
-      const today = new Date().toISOString().split("T")[0];
+      const formatLocal = (dt: Date) => { const y = dt.getFullYear(); const m = String(dt.getMonth() + 1).padStart(2, '0'); const d = String(dt.getDate()).padStart(2, '0'); return `${y}-${m}-${d}`; }; const today = formatLocal(new Date());
       const metricsData = scorecard.categories.flatMap((category) =>
         category.metrics.map((metric) => {
           const history = scorecard.data?.history?.[metric.id] || {};
@@ -371,7 +375,7 @@ export function WeeklyPrinciplesReview({
           for (let i = 0; i < 7; i++) {
             const d = new Date();
             d.setDate(d.getDate() - i);
-            const dateStr = d.toISOString().split("T")[0];
+            const dateStr = formatLocal(d);
             if (history[dateStr] !== undefined) {
               weekValues.push(history[dateStr]);
             }

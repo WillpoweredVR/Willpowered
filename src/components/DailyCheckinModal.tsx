@@ -56,6 +56,9 @@ interface DailyCheckinModalProps {
   getWeekAverage: (metric: ScorecardMetric) => { value: number; daysWithData: number };
   savedSummary: SummaryData | null;
   onSaveSummary: (summary: SummaryData) => void;
+  // Optional: check-in for a specific date (defaults to today)
+  checkinDate?: string | null;
+  onDateChange?: (date: string | null) => void;
 }
 
 // Willson's encouraging prompts for different categories
@@ -146,7 +149,17 @@ export function DailyCheckinModal({
   getWeekAverage,
   savedSummary,
   onSaveSummary,
+  checkinDate,
+  onDateChange,
 }: DailyCheckinModalProps) {
+  // Determine if we're backfilling a past date
+  const isBackfilling = !!checkinDate;
+  const displayDate = checkinDate ? new Date(checkinDate + 'T12:00:00') : new Date();
+  const dateLabel = displayDate.toLocaleDateString('en-US', { 
+    weekday: 'long', 
+    month: 'short', 
+    day: 'numeric' 
+  });
   const [currentStep, setCurrentStep] = useState(0);
   const [inputValue, setInputValue] = useState("");
   const [loggedMetrics, setLoggedMetrics] = useState<Set<string>>(new Set());
@@ -413,15 +426,23 @@ export function DailyCheckinModal({
             
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-                <Sparkles className="w-5 h-5" />
+                {isBackfilling ? <Calendar className="w-5 h-5" /> : <Sparkles className="w-5 h-5" />}
               </div>
               <div>
-                <h2 className="font-semibold">Daily Check-in with Willson</h2>
+                <h2 className="font-semibold">
+                  {isBackfilling ? "Backfill Check-in" : "Daily Check-in with Willson"}
+                </h2>
                 <p className="text-sm text-white/80">
-                  {showSummary 
-                    ? "Here's your summary!" 
-                    : `${currentStep + 1} of ${totalSteps} metrics`
-                  }
+                  {isBackfilling ? (
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-3 h-3" />
+                      {dateLabel}
+                    </span>
+                  ) : showSummary ? (
+                    "Here's your summary!"
+                  ) : (
+                    `${currentStep + 1} of ${totalSteps} metrics`
+                  )}
                 </p>
               </div>
             </div>
