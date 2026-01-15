@@ -47,8 +47,8 @@ export async function GET(request: Request) {
     const { data: { user } } = await supabase.auth.getUser();
     if (user) {
       // Check if user is admin by ID or email
-      const isAdminById = ADMIN_USER_ID && user.id === ADMIN_USER_ID;
-      const isAdminByEmail = user.email && (user.email === ADMIN_EMAIL || ADMIN_EMAILS.includes(user.email));
+      const isAdminById = !!(ADMIN_USER_ID && user.id === ADMIN_USER_ID);
+      const isAdminByEmail = !!(user.email && (user.email === ADMIN_EMAIL || ADMIN_EMAILS.includes(user.email)));
       isAdmin = isAdminById || isAdminByEmail;
     }
   } catch {
