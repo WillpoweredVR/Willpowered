@@ -50,5 +50,17 @@ export {
   generateHeadlineVariants,
 } from './campaigns';
 
+// User segments
+export {
+  getDormantUsers,
+  getUsersBySignupMonth,
+  getAbandonedOnboardingUsers,
+  getAllActiveUsers,
+  getUsersForSegment,
+  getSegmentSize,
+  type SegmentType,
+  type MarketingUser,
+} from './user-segments';
+
 // Agent
 export { MarketingAgent, getMarketingAgent } from './agent';

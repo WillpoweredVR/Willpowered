@@ -20,8 +20,22 @@ import {
   getAgentConfig 
 } from './config';
 import { GoogleAdsClient, generateAdCopy } from './google-ads';
-import { EmailCampaignManager } from './email-marketing';
+import { EmailCampaignManager, EMAIL_TEMPLATES } from './email-marketing';
 import { CAMPAIGN_TEMPLATES, getRecommendedCampaign } from './campaigns';
+import type { SegmentType } from './user-segments';
+
+// ============================================================================
+// PENDING DECISIONS STORE (In-memory for now, could be Redis/DB)
+// ============================================================================
+
+interface StoredDecision {
+  id: string;
+  decision: AgentDecision;
+  createdAt: Date;
+  params: Record<string, unknown>;
+}
+
+const pendingDecisions: Map<string, StoredDecision> = new Map();
 
 // ============================================================================
 // AGENT TOOLS DEFINITION
@@ -391,20 +405,45 @@ export class MarketingAgent {
       }
       
       case 'send_email_campaign': {
+        // Preview the segment first
+        const segmentPreview = await this.emailManager.previewSegment(
+          input.segment as string
+        );
+        
+        // Create a decision ID for tracking
+        const decisionId = `email_${Date.now()}`;
+        
+        const decision: AgentDecision = {
+          action: 'send_email',
+          reasoning: `Email campaign to ${segmentPreview.segmentSize} users in "${input.segment}" segment`,
+          params: { 
+            ...input as Record<string, unknown>, 
+            decisionId,  // Include decisionId in params for frontend
+            segmentSize: segmentPreview.segmentSize,
+          },
+          requiresApproval: true,
+          confidence: 0.85,
+        };
+        
+        // Store the pending decision
+        pendingDecisions.set(decisionId, {
+          id: decisionId,
+          decision,
+          createdAt: new Date(),
+          params: input as Record<string, unknown>,
+        });
+        
         return {
           result: {
-            status: 'email_scheduled',
+            status: 'pending_approval',
+            decisionId,
             template: input.template,
             segment: input.segment,
-            scheduledFor: input.scheduleFor || 'now',
+            segmentSize: segmentPreview.segmentSize,
+            sampleUsers: segmentPreview.sampleUsers,
+            message: `Ready to send to ${segmentPreview.segmentSize} users. Approve to send.`,
           },
-          decision: {
-            action: 'send_email',
-            reasoning: `Scheduled ${input.template} email to ${input.segment} segment`,
-            params: input,
-            requiresApproval: true, // Emails need approval
-            confidence: 0.85,
-          },
+          decision,
         };
       }
       
@@ -433,26 +472,146 @@ export class MarketingAgent {
   }
   
   /**
-   * Approve a pending decision
+   * Approve a pending decision and execute it
    */
-  async approveDecision(decisionId: string, notes?: string): Promise<void> {
-    // In real implementation, would execute the approved action
-    console.log(`Approved decision ${decisionId}`, notes);
+  async approveDecision(decisionId: string, notes?: string): Promise<{
+    success: boolean;
+    result?: unknown;
+    error?: string;
+  }> {
+    const stored = pendingDecisions.get(decisionId);
+    
+    if (!stored) {
+      return { success: false, error: `Decision ${decisionId} not found` };
+    }
+    
+    console.log(`[Agent] Approving decision ${decisionId}:`, stored.decision.action, notes);
+    
+    try {
+      // Execute the action based on type
+      switch (stored.decision.action) {
+        case 'send_email': {
+          const params = stored.params;
+          const segment = (params.segment as string) || 'dormant_users';
+          
+          // Determine template and variant based on segment
+          const templateConfig = this.getTemplateForSegment(segment);
+          
+          const result = await this.emailManager.sendToSegment({
+            segment,
+            template: templateConfig.template,
+            variant: templateConfig.variant,
+            maxRecipients: 100, // Safety limit
+            dryRun: false,
+          });
+          
+          // Remove from pending
+          pendingDecisions.delete(decisionId);
+          
+          return {
+            success: true,
+            result: {
+              action: 'send_email',
+              segmentSize: result.segmentSize,
+              sent: result.sent,
+              failed: result.failed,
+              message: `Successfully sent ${result.sent} emails to "${segment}" segment`,
+            },
+          };
+        }
+        
+        case 'create_campaign': {
+          // Google Ads campaign creation would go here
+          pendingDecisions.delete(decisionId);
+          return {
+            success: true,
+            result: {
+              action: 'create_campaign',
+              message: 'Campaign created (Google Ads integration pending token approval)',
+            },
+          };
+        }
+        
+        case 'adjust_budget': {
+          // Budget adjustment would go here
+          pendingDecisions.delete(decisionId);
+          return {
+            success: true,
+            result: {
+              action: 'adjust_budget',
+              message: 'Budget adjusted (Google Ads integration pending token approval)',
+            },
+          };
+        }
+        
+        default:
+          return { success: false, error: `Unknown action type: ${stored.decision.action}` };
+      }
+    } catch (error) {
+      console.error(`[Agent] Error executing decision ${decisionId}:`, error);
+      return { 
+        success: false, 
+        error: error instanceof Error ? error.message : 'Unknown error',
+      };
+    }
+  }
+  
+  /**
+   * Get the appropriate template and variant based on segment
+   */
+  private getTemplateForSegment(segment: string): { template: keyof typeof EMAIL_TEMPLATES; variant: string } {
+    // Normalize segment name
+    const normalizedSegment = segment.toLowerCase();
+    
+    // Map segments to template/variant combinations
+    if (normalizedSegment.includes('dormant') || normalizedSegment.includes('inactive')) {
+      if (normalizedSegment.includes('7')) {
+        return { template: 'reEngagement', variant: 'dormant7Days' };
+      } else if (normalizedSegment.includes('30')) {
+        return { template: 'reEngagement', variant: 'dormant30Days' };
+      }
+      // Default dormant to 14 days
+      return { template: 'reEngagement', variant: 'dormant14Days' };
+    }
+    
+    if (normalizedSegment.includes('january') || normalizedSegment.includes('jan')) {
+      return { template: 'resolutionSeason', variant: 'january' };
+    }
+    
+    if (normalizedSegment.includes('february') || normalizedSegment.includes('feb')) {
+      return { template: 'resolutionSeason', variant: 'february' };
+    }
+    
+    if (normalizedSegment.includes('abandoned') || normalizedSegment.includes('onboarding')) {
+      return { template: 'leadNurture', variant: 'day14' };
+    }
+    
+    // Default fallback
+    return { template: 'reEngagement', variant: 'dormant14Days' };
   }
   
   /**
    * Reject a pending decision
    */
-  async rejectDecision(decisionId: string, reason: string): Promise<void> {
-    console.log(`Rejected decision ${decisionId}: ${reason}`);
+  async rejectDecision(decisionId: string, reason: string): Promise<{ success: boolean }> {
+    const stored = pendingDecisions.get(decisionId);
+    
+    if (!stored) {
+      console.warn(`[Agent] Decision ${decisionId} not found for rejection`);
+      return { success: false };
+    }
+    
+    console.log(`[Agent] Rejected decision ${decisionId}: ${reason}`);
+    pendingDecisions.delete(decisionId);
+    
+    return { success: true };
   }
   
   /**
-   * Get pending approvals
+   * Get all pending approvals
    */
-  async getPendingApprovals(): Promise<AgentDecision[]> {
-    // Would fetch from database in real implementation
-    return [];
+  async getPendingApprovals(): Promise<Array<StoredDecision>> {
+    return Array.from(pendingDecisions.values());
   }
   
   /**

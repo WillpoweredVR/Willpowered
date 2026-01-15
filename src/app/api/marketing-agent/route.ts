@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { message, action } = body;
     
-    if (!message && action !== 'reset' && action !== 'pending') {
+    if (!message && !['reset', 'pending', 'approve', 'reject'].includes(action)) {
       return NextResponse.json(
         { error: 'Message is required' },
         { status: 400 }
@@ -58,13 +58,21 @@ export async function POST(request: NextRequest) {
         const pending = await agent.getPendingApprovals();
         return NextResponse.json({ pending });
       
-      case 'approve':
-        await agent.approveDecision(body.decisionId, body.notes);
-        return NextResponse.json({ success: true });
+      case 'approve': {
+        if (!body.decisionId) {
+          return NextResponse.json({ error: 'decisionId required' }, { status: 400 });
+        }
+        const approveResult = await agent.approveDecision(body.decisionId, body.notes);
+        return NextResponse.json(approveResult);
+      }
       
-      case 'reject':
-        await agent.rejectDecision(body.decisionId, body.reason);
-        return NextResponse.json({ success: true });
+      case 'reject': {
+        if (!body.decisionId) {
+          return NextResponse.json({ error: 'decisionId required' }, { status: 400 });
+        }
+        const rejectResult = await agent.rejectDecision(body.decisionId, body.reason);
+        return NextResponse.json(rejectResult);
+      }
       
       default:
         // Regular chat message

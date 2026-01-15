@@ -7,6 +7,10 @@
     {
       "path": "/api/cron/reminder-emails",
       "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/daily-review",
+      "schedule": "0 14 * * *"
     }
   ]
 }

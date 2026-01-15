@@ -7,6 +7,7 @@
 
 import { resend, FROM_EMAIL, REPLY_TO } from '../resend';
 import type { Creative } from './types';
+import { getUsersForSegment, type SegmentType, type MarketingUser } from './user-segments';
 
 // ============================================================================
 // EMAIL TEMPLATES
@@ -103,44 +104,44 @@ export class EmailCampaignManager {
       messageIds: [] as string[],
     };
     
-    // Send in batches to respect rate limits
-    const BATCH_SIZE = 50;
-    for (let i = 0; i < params.recipients.length; i += BATCH_SIZE) {
-      const batch = params.recipients.slice(i, i + BATCH_SIZE);
-      
-      const promises = batch.map(async (recipient) => {
-        try {
-          const response = await resend.emails.send({
-            from: FROM_EMAIL,
-            replyTo: REPLY_TO,
-            to: recipient.email,
-            subject: params.customContent?.subject || templateVariant.subject,
-            html: this.renderEmailHtml({
-              ...templateVariant,
-              recipientName: recipient.name,
-              customBody: params.customContent?.body,
-            }),
-            headers: {
-              'X-Entity-Ref-ID': recipient.userId || recipient.email,
-            },
-          });
-          
+    // Send sequentially to respect rate limits (2 req/sec on free tier)
+    for (const recipient of params.recipients) {
+      try {
+        console.log(`[Email] Sending to ${recipient.email}...`);
+        const response = await resend.emails.send({
+          from: FROM_EMAIL,
+          replyTo: REPLY_TO,
+          to: recipient.email,
+          subject: params.customContent?.subject || templateVariant.subject,
+          html: this.renderEmailHtml({
+            ...templateVariant,
+            recipientName: recipient.name,
+            customBody: params.customContent?.body,
+          }),
+          headers: {
+            'X-Entity-Ref-ID': recipient.userId || recipient.email,
+          },
+        });
+        
+        // Check for API errors (mock returns { data: null, error: {...} })
+        if (response.error) {
+          console.error(`[Email] API error for ${recipient.email}:`, response.error);
+          results.failed++;
+        } else if (response.data?.id) {
+          console.log(`[Email] ✓ Sent to ${recipient.email}, ID: ${response.data.id}`);
           results.sent++;
-          if (response.data?.id) {
-            results.messageIds.push(response.data.id);
-          }
-        } catch (error) {
-          console.error(`Failed to send to ${recipient.email}:`, error);
+          results.messageIds.push(response.data.id);
+        } else {
+          console.warn(`[Email] No message ID returned for ${recipient.email}`);
           results.failed++;
         }
-      });
-      
-      await Promise.all(promises);
-      
-      // Rate limit: wait between batches
-      if (i + BATCH_SIZE < params.recipients.length) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+      } catch (error) {
+        console.error(`[Email] Failed to send to ${recipient.email}:`, error);
+        results.failed++;
       }
+      
+      // Rate limit: wait 600ms between emails (stay under 2/sec limit)
+      await new Promise(resolve => setTimeout(resolve, 600));
     }
     
     return results;
@@ -271,6 +272,85 @@ export class EmailCampaignManager {
       bounced: 0,
       openRate: 0,
       clickRate: 0,
+    };
+  }
+  
+  /**
+   * Send campaign to a user segment
+   * This is the main method for marketing automation
+   */
+  async sendToSegment(params: {
+    segment: SegmentType | string;
+    template: keyof typeof EMAIL_TEMPLATES;
+    variant: string;
+    maxRecipients?: number; // Safety limit
+    dryRun?: boolean; // Preview without sending
+  }): Promise<{
+    segmentSize: number;
+    sent: number;
+    failed: number;
+    messageIds: string[];
+    dryRun: boolean;
+  }> {
+    // Safety limit: default to 100 recipients max
+    const maxRecipients = params.maxRecipients || 100;
+    
+    // Get users in this segment
+    const users = await getUsersForSegment(params.segment);
+    const limitedUsers = users.slice(0, maxRecipients);
+    
+    console.log(`[Email Campaign] Segment "${params.segment}" has ${users.length} users, sending to ${limitedUsers.length}`);
+    
+    // If dry run, just return the preview
+    if (params.dryRun) {
+      return {
+        segmentSize: users.length,
+        sent: 0,
+        failed: 0,
+        messageIds: [],
+        dryRun: true,
+      };
+    }
+    
+    // Convert to recipients format
+    const recipients = limitedUsers.map(user => ({
+      email: user.email,
+      name: user.name || undefined,
+      userId: user.id,
+    }));
+    
+    // Send the campaign
+    const result = await this.sendCampaign({
+      recipients,
+      template: params.template,
+      variant: params.variant,
+    });
+    
+    console.log(`[Email Campaign] Sent ${result.sent}, failed ${result.failed}`);
+    
+    return {
+      segmentSize: users.length,
+      ...result,
+      dryRun: false,
+    };
+  }
+  
+  /**
+   * Preview a segment without sending
+   */
+  async previewSegment(segment: SegmentType | string): Promise<{
+    segmentSize: number;
+    sampleUsers: Array<{ email: string; name: string | null; lastActive: Date | null }>;
+  }> {
+    const users = await getUsersForSegment(segment);
+    
+    return {
+      segmentSize: users.length,
+      sampleUsers: users.slice(0, 5).map(u => ({
+        email: u.email.replace(/(.{2}).*(@.*)/, '$1***$2'), // Mask email
+        name: u.name,
+        lastActive: u.lastActive,
+      })),
     };
   }
 }
