@@ -14,11 +14,13 @@
 import { NextResponse } from 'next/server';
 import { resend } from '@/lib/resend';
 import { createClient } from '@supabase/supabase-js';
+import { createClient as createServerClient } from '@/lib/supabase/server';
 import Anthropic from '@anthropic-ai/sdk';
 
 // Verify cron secret to prevent unauthorized access
 const CRON_SECRET = process.env.CRON_SECRET;
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'colin@willpowered.com';
+const ADMIN_USER_ID = process.env.ADMIN_USER_ID;
 const POSTHOG_API_URL = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.posthog.com';
 
 // Initialize Supabase admin client
@@ -28,10 +30,33 @@ const supabaseAdmin = createClient(
 );
 
 export async function GET(request: Request) {
-  // Verify the request is from Vercel Cron or has valid secret
+  // Check authorization - allow Vercel Cron, CRON_SECRET, or authenticated admin
   const authHeader = request.headers.get('authorization');
-  if (CRON_SECRET && authHeader !== `Bearer ${CRON_SECRET}`) {
-    // Allow in development without secret
+  
+  // 1. Check for Vercel Cron header (automatic cron calls)
+  const isVercelCron = request.headers.get('x-vercel-cron') === '1';
+  
+  // 2. Check for CRON_SECRET (if configured)
+  const hasValidSecret = CRON_SECRET && authHeader === `Bearer ${CRON_SECRET}`;
+  
+  // 3. Check for authenticated admin user (manual dashboard trigger)
+  let isAdmin = false;
+  try {
+    const supabase = await createServerClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) {
+      // Check if user is admin by ID or email
+      const isAdminById = ADMIN_USER_ID && user.id === ADMIN_USER_ID;
+      const isAdminByEmail = user.email === ADMIN_EMAIL || user.email === 'colin@willpowered.com';
+      isAdmin = isAdminById || isAdminByEmail;
+    }
+  } catch {
+    // Auth check failed, continue with other checks
+  }
+  
+  // Allow if any auth method passes
+  if (!isVercelCron && !hasValidSecret && !isAdmin) {
+    // In development, allow without auth
     if (process.env.NODE_ENV === 'production') {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }

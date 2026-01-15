@@ -9,10 +9,21 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { getMarketingAgent } from '@/lib/marketing-agent';
 
-// Admin user IDs who can access the marketing agent
-const ADMIN_IDS = [
-  process.env.ADMIN_USER_ID, // Set this in your environment
-];
+// Admin configuration
+const ADMIN_USER_ID = process.env.ADMIN_USER_ID;
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'colin@willpowered.com';
+
+function isAdminUser(user: { id: string; email?: string }): boolean {
+  // Check by user ID
+  if (ADMIN_USER_ID && user.id === ADMIN_USER_ID) {
+    return true;
+  }
+  // Check by email
+  if (user.email === ADMIN_EMAIL || user.email === 'colin@willpowered.com') {
+    return true;
+  }
+  return false;
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -28,7 +39,7 @@ export async function POST(request: NextRequest) {
     }
     
     // Check if user is admin
-    if (!ADMIN_IDS.includes(user.id)) {
+    if (!isAdminUser(user)) {
       return NextResponse.json(
         { error: 'Admin access required' },
         { status: 403 }
@@ -94,7 +105,7 @@ export async function GET(request: NextRequest) {
     const supabase = await createClient();
     const { data: { user }, error: authError } = await supabase.auth.getUser();
     
-    if (authError || !user || !ADMIN_IDS.includes(user.id)) {
+    if (authError || !user || !isAdminUser(user)) {
       return NextResponse.json(
         { error: 'Admin access required' },
         { status: 403 }
