@@ -209,6 +209,9 @@ export default function DashboardPage() {
   const [checkinDate, setCheckinDate] = useState<string | null>(null); // null = today
   const [showBackfillPicker, setShowBackfillPicker] = useState(false);
   
+  // Expanded metric history (for showing 7-day timeline)
+  const [expandedMetricHistory, setExpandedMetricHistory] = useState<string | null>(null);
+  
   // Weekly principles review
   const [isPrincipleReviewOpen, setIsPrincipleReviewOpen] = useState(false);
   const [principleReviews, setPrincipleReviews] = useState<WeeklyPrincipleReview[]>([]);
@@ -1254,9 +1257,14 @@ export default function DashboardPage() {
             <button
               onClick={() => {
                 if (currentWeekReview) {
+                  // Show this week's review
                   setViewingReview(currentWeekReview);
                 } else if (isReviewDue) {
+                  // It's Sunday - start new review
                   setIsPrincipleReviewOpen(true);
+                } else if (principleReviews.length > 0) {
+                  // Show most recent review
+                  setViewingReview(principleReviews[principleReviews.length - 1]);
                 }
               }}
               className="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 hover:border-indigo-300 hover:shadow-sm transition-all group text-left"
@@ -2333,63 +2341,19 @@ export default function DashboardPage() {
                           />
                         </div>
 
-                        {/* 7-day timeline - clickable dots for each day */}
-                        <div className="flex items-center gap-1 mb-3">
-                          {last7Days.map((date, idx) => {
-                            const value = getDailyValue(metric.id, date);
-                            const isToday = date === today;
-                            const dayLabel = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' }).slice(0, 2);
-                            const dateLabel = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-                            const hasValue = value !== null;
-                            
-                            return (
-                              <button
-                                key={date}
-                                onClick={() => {
-                                  if (metric.aggregation === 'count') {
-                                    // For count metrics, toggle or set to 1 if not set
-                                    setDailyValue(metric.id, date, hasValue ? (value === 1 ? 0 : 1) : 1);
-                                  } else {
-                                    // For other metrics, open edit mode
-                                    setEditingMetric({
-                                      metricId: metric.id,
-                                      date: date,
-                                      currentValue: value
-                                    });
-                                    setMetricInputValue(value !== null ? String(value) : "");
-                                  }
-                                }}
-                                className={`
-                                  relative flex-1 flex flex-col items-center gap-0.5 py-1.5 rounded-lg transition-all
-                                  ${isToday ? 'ring-2 ring-emerald-400 ring-offset-1' : ''}
-                                  ${hasValue 
-                                    ? 'bg-emerald-100 hover:bg-emerald-200' 
-                                    : 'bg-slate-100 hover:bg-slate-200'
-                                  }
-                                `}
-                                title={`${dateLabel}: ${hasValue ? value : 'Not logged'}`}
-                              >
-                                <span className={`text-[10px] font-medium ${hasValue ? 'text-emerald-700' : 'text-slate-400'}`}>
-                                  {dayLabel}
-                                </span>
-                                <span className={`text-xs font-semibold ${hasValue ? 'text-emerald-600' : 'text-slate-300'}`}>
-                                  {hasValue ? (metric.aggregation === 'count' ? (value === 1 ? '✓' : '✗') : value) : '·'}
-                                </span>
-                                {!hasValue && (
-                                  <span className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                                    <Plus className="w-3 h-3 text-slate-500" />
-                                  </span>
-                                )}
-                              </button>
-                            );
-                          })}
-                        </div>
-
-                        {/* Today's entry */}
+                        {/* Today's entry + expandable history */}
                         <div className="flex items-center justify-between">
-                          <span className="text-xs text-muted-foreground">
-                            {daysWithData}/7 days logged
-                          </span>
+                          <button
+                            onClick={() => setExpandedMetricHistory(
+                              expandedMetricHistory === metric.id ? null : metric.id
+                            )}
+                            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                          >
+                            <span>{daysWithData}/7 days logged</span>
+                            <ChevronDown className={`w-3 h-3 transition-transform ${
+                              expandedMetricHistory === metric.id ? 'rotate-180' : ''
+                            }`} />
+                          </button>
                           
                           {isEditing ? (
                             metric.aggregation === 'count' ? (
@@ -2508,6 +2472,66 @@ export default function DashboardPage() {
                             )
                           )}
                         </div>
+                        
+                        {/* Collapsible 7-day timeline */}
+                        {expandedMetricHistory === metric.id && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="mt-3 pt-3 border-t border-slate-100"
+                          >
+                            <div className="flex items-center gap-1">
+                              {last7Days.map((date) => {
+                                const value = getDailyValue(metric.id, date);
+                                const isToday = date === today;
+                                const dayLabel = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short' }).slice(0, 2);
+                                const dateLabel = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                                const hasValue = value !== null;
+                                
+                                return (
+                                  <button
+                                    key={date}
+                                    onClick={() => {
+                                      if (metric.aggregation === 'count') {
+                                        setDailyValue(metric.id, date, hasValue ? (value === 1 ? 0 : 1) : 1);
+                                      } else {
+                                        setEditingMetric({
+                                          metricId: metric.id,
+                                          date: date,
+                                          currentValue: value
+                                        });
+                                        setMetricInputValue(value !== null ? String(value) : "");
+                                      }
+                                    }}
+                                    className={`
+                                      relative flex-1 flex flex-col items-center gap-0.5 py-1.5 rounded-lg transition-all
+                                      ${isToday ? 'ring-2 ring-emerald-400 ring-offset-1' : ''}
+                                      ${hasValue 
+                                        ? 'bg-emerald-100 hover:bg-emerald-200' 
+                                        : 'bg-slate-100 hover:bg-slate-200'
+                                      }
+                                    `}
+                                    title={`${dateLabel}: ${hasValue ? value : 'Not logged - click to add'}`}
+                                  >
+                                    <span className={`text-[10px] font-medium ${hasValue ? 'text-emerald-700' : 'text-slate-400'}`}>
+                                      {dayLabel}
+                                    </span>
+                                    <span className={`text-xs font-semibold ${hasValue ? 'text-emerald-600' : 'text-slate-300'}`}>
+                                      {hasValue ? (metric.aggregation === 'count' ? (value === 1 ? '✓' : '✗') : value) : '·'}
+                                    </span>
+                                    {!hasValue && (
+                                      <span className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                                        <Plus className="w-3 h-3 text-slate-500" />
+                                      </span>
+                                    )}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          </motion.div>
+                        )}
                       </div>
                     );
                   })}
