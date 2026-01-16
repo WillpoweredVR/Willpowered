@@ -402,8 +402,8 @@ export default function DashboardPage() {
     return scorecard?.data?.notes?.[metricId]?.[date] ?? null;
   };
 
-  // Save metric configuration (update or add new)
-  const saveMetricConfig = async (categoryId: string, updatedMetric: ScorecardMetric) => {
+  // Save metric configuration (update, add new, or move between categories)
+  const saveMetricConfig = async (newCategoryId: string, updatedMetric: ScorecardMetric) => {
     if (!scorecard) return;
 
     const supabase = createClient();
@@ -412,9 +412,27 @@ export default function DashboardPage() {
 
     const updatedScorecard = { ...scorecard };
     
+    // Find if metric already exists in any category (for moving)
+    let originalCategoryIndex = -1;
+    let originalMetricIndex = -1;
+    for (let i = 0; i < updatedScorecard.categories.length; i++) {
+      const idx = updatedScorecard.categories[i].metrics.findIndex(m => m.id === updatedMetric.id);
+      if (idx >= 0) {
+        originalCategoryIndex = i;
+        originalMetricIndex = idx;
+        break;
+      }
+    }
+    
     // Check if this is a new category (format: "new:CategoryName")
-    if (categoryId.startsWith("new:")) {
-      const newCategoryName = categoryId.substring(4); // Remove "new:" prefix
+    if (newCategoryId.startsWith("new:")) {
+      const newCategoryName = newCategoryId.substring(4); // Remove "new:" prefix
+      
+      // If metric exists elsewhere, remove it first
+      if (originalCategoryIndex >= 0 && originalMetricIndex >= 0) {
+        updatedScorecard.categories[originalCategoryIndex].metrics.splice(originalMetricIndex, 1);
+      }
+      
       const newCategory: ScorecardCategory = {
         id: `category-${Date.now()}`,
         name: newCategoryName,
@@ -422,20 +440,35 @@ export default function DashboardPage() {
       };
       updatedScorecard.categories.push(newCategory);
     } else {
-      // Find existing category
-      const category = updatedScorecard.categories.find(c => c.id === categoryId);
+      // Find target category
+      const targetCategory = updatedScorecard.categories.find(c => c.id === newCategoryId);
       
-      if (!category) return;
+      if (!targetCategory) return;
 
-      const existingIndex = category.metrics.findIndex(m => m.id === updatedMetric.id);
-      if (existingIndex >= 0) {
-        // Update existing
-        category.metrics[existingIndex] = updatedMetric;
+      // Check if metric is being moved to a different category
+      const isMoving = originalCategoryIndex >= 0 && 
+        updatedScorecard.categories[originalCategoryIndex].id !== newCategoryId;
+      
+      if (isMoving) {
+        // Remove from original category
+        updatedScorecard.categories[originalCategoryIndex].metrics.splice(originalMetricIndex, 1);
+        // Add to new category
+        targetCategory.metrics.push(updatedMetric);
       } else {
-        // Add new
-        category.metrics.push(updatedMetric);
+        // Same category - update in place or add new
+        const existingIndex = targetCategory.metrics.findIndex(m => m.id === updatedMetric.id);
+        if (existingIndex >= 0) {
+          // Update existing
+          targetCategory.metrics[existingIndex] = updatedMetric;
+        } else {
+          // Add new
+          targetCategory.metrics.push(updatedMetric);
+        }
       }
     }
+    
+    // Clean up empty categories (optional, but keeps things tidy)
+    updatedScorecard.categories = updatedScorecard.categories.filter(c => c.metrics.length > 0);
     
     setScorecard(updatedScorecard);
 

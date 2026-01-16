@@ -71,13 +71,13 @@ export function MetricEditModal({
     if (!name.trim() || !target) return;
     
     // Determine category ID
-    let categoryId = currentCategoryId || selectedCategoryId;
+    let categoryId = selectedCategoryId || currentCategoryId;
     
     // If creating new category, generate ID from name
-    if (isNew && isCreatingCategory && newCategoryName.trim()) {
+    if (isCreatingCategory && newCategoryName.trim()) {
       categoryId = `category-${Date.now()}`;
-    } else if (isNew && !categoryId) {
-      // Must select or create a category for new metrics
+    } else if (!categoryId) {
+      // Must select or create a category
       return;
     }
 
@@ -92,6 +92,7 @@ export function MetricEditModal({
     };
 
     // Pass category info (for new categories, use the name as ID marker)
+    // Also handle moving existing metric to different category
     const finalCategoryId = isCreatingCategory 
       ? `new:${newCategoryName.trim()}` 
       : categoryId;
@@ -140,11 +141,16 @@ export function MetricEditModal({
 
           {/* Form */}
           <div className="p-4 space-y-4">
-            {/* Category Selection (only for new metrics) */}
-            {isNew && categories.length > 0 && (
+            {/* Category Selection (for both new and existing metrics) */}
+            {categories.length > 0 && (
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Category
+                  {!isNew && selectedCategoryId !== currentCategoryId && !isCreatingCategory && (
+                    <span className="ml-2 text-xs text-amber-600 font-normal">
+                      (will move metric)
+                    </span>
+                  )}
                 </label>
                 {!isCreatingCategory ? (
                   <div className="space-y-2">
@@ -152,7 +158,11 @@ export function MetricEditModal({
                       <select
                         value={selectedCategoryId}
                         onChange={(e) => setSelectedCategoryId(e.target.value)}
-                        className="w-full px-3 py-2 border border-slate-200 rounded-lg outline-none focus:border-emerald-400 appearance-none bg-white pr-10"
+                        className={`w-full px-3 py-2 border rounded-lg outline-none appearance-none bg-white pr-10 ${
+                          !isNew && selectedCategoryId !== currentCategoryId
+                            ? "border-amber-300 focus:border-amber-400"
+                            : "border-slate-200 focus:border-emerald-400"
+                        }`}
                       >
                         {categories.map((cat) => (
                           <option key={cat.id} value={cat.id}>
@@ -168,7 +178,7 @@ export function MetricEditModal({
                       className="flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700"
                     >
                       <Plus className="w-3 h-3" />
-                      Create new category
+                      {isNew ? "Create new category" : "Move to new category"}
                     </button>
                   </div>
                 ) : (
@@ -350,8 +360,8 @@ export function MetricEditModal({
                 disabled={
                   !name.trim() || 
                   !target || 
-                  (isNew && isCreatingCategory && !newCategoryName.trim()) ||
-                  (isNew && !isCreatingCategory && !selectedCategoryId && !currentCategoryId)
+                  (isCreatingCategory && !newCategoryName.trim()) ||
+                  (!isCreatingCategory && !selectedCategoryId && !currentCategoryId)
                 }
               >
                 {isNew ? "Add Metric" : "Save Changes"}
