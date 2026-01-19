@@ -902,14 +902,17 @@ export default function DashboardPage() {
     return tasks.filter(t => t.metricId === metricId && t.status !== "completed");
   };
 
-  // Get tasks due today for "Today's Focus" (including completed ones)
+  // Get tasks for "Today's Focus" - includes today's tasks, overdue tasks, and completed today
   const focusTasks = useMemo(() => {
     const todayStr = formatDateLocal(new Date());
     
     return tasks
       .filter(t => {
+        const urgency = getTaskUrgency(t.dueDate);
         // Include tasks due today
-        if (getTaskUrgency(t.dueDate) === "today") return true;
+        if (urgency === "today") return true;
+        // Include overdue tasks (that aren't completed)
+        if (urgency === "overdue" && t.status !== "completed") return true;
         // Also include tasks completed today (even if they were due on a different day)
         if (t.status === "completed" && t.completedAt) {
           const completedDate = t.completedAt.split('T')[0];
@@ -918,11 +921,23 @@ export default function DashboardPage() {
         return false;
       })
       .sort((a, b) => {
-        // Sort: active tasks first, then completed
+        // Sort: overdue first, then active, then completed
+        const aUrgency = getTaskUrgency(a.dueDate);
+        const bUrgency = getTaskUrgency(b.dueDate);
+        
+        // Completed tasks go to the bottom
         if (a.status === "completed" && b.status !== "completed") return 1;
         if (a.status !== "completed" && b.status === "completed") return -1;
-        // Within same status, sort by creation date (newest first)
-        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+        
+        // Overdue tasks come before today's tasks
+        if (aUrgency === "overdue" && bUrgency !== "overdue") return -1;
+        if (aUrgency !== "overdue" && bUrgency === "overdue") return 1;
+        
+        // Within same status, sort by due date (oldest first for overdue)
+        if (a.dueDate && b.dueDate) {
+          return new Date(a.dueDate).getTime() - new Date(b.dueDate).getTime();
+        }
+        return 0;
       });
   }, [tasks]);
 
