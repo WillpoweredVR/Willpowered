@@ -5,7 +5,7 @@ export const initPostHog = () => {
   if (typeof window !== 'undefined' && !posthog.__loaded) {
     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
       api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
-      person_profiles: 'identified_only',
+      person_profiles: 'always', // Track all visitors including anonymous
       capture_pageview: false, // We'll handle this manually for SPA
       capture_pageleave: true,
       // Enable session recording
