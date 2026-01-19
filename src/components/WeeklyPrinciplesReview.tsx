@@ -265,27 +265,45 @@ export function WeeklyPrinciplesReview({
       createdAt: new Date().toISOString(),
     };
 
-    // Save to database
-    const { data: profile } = await supabase
-      .from("profiles")
-      .select("principle_reviews")
-      .eq("id", user.id)
-      .single();
+    try {
+      // Save to database
+      const { data: profile, error: fetchError } = await supabase
+        .from("profiles")
+        .select("principle_reviews")
+        .eq("id", user.id)
+        .single();
 
-    const existingData = (profile?.principle_reviews as WeeklyPrincipleReview[]) || [];
-    const updatedReviews = [...existingData, review];
+      if (fetchError) {
+        console.error("[WEEKLY REVIEW] Error fetching profile:", fetchError);
+        throw fetchError;
+      }
 
-    await supabase
-      .from("profiles")
-      .update({ principle_reviews: updatedReviews })
-      .eq("id", user.id);
+      const existingData = (profile?.principle_reviews as WeeklyPrincipleReview[]) || [];
+      const updatedReviews = [...existingData, review];
 
-    // Clear saved progress after successful completion
-    localStorage.removeItem(storageKey);
+      const { error: updateError } = await supabase
+        .from("profiles")
+        .update({ principle_reviews: updatedReviews })
+        .eq("id", user.id);
 
-    setIsSubmitting(false);
-    onReviewComplete(review);
-    onClose();
+      if (updateError) {
+        console.error("[WEEKLY REVIEW] Error saving review:", updateError);
+        throw updateError;
+      }
+
+      console.log("[WEEKLY REVIEW] Review saved successfully:", review.id, "for week of", review.weekOf);
+
+      // Clear saved progress after successful completion
+      localStorage.removeItem(storageKey);
+
+      setIsSubmitting(false);
+      onReviewComplete(review);
+      onClose();
+    } catch (error) {
+      console.error("[WEEKLY REVIEW] Failed to save review:", error);
+      setIsSubmitting(false);
+      alert("Failed to save your review. Please try again. Your progress is saved locally.");
+    }
   };
 
   // Generate Willson insight when reaching summary
@@ -1021,9 +1039,7 @@ interface ViewWeeklyReviewProps {
   onClose: () => void;
   review: WeeklyPrincipleReview;
   principles: Principle[];
-}
-
-export function ViewWeeklyReview({
+}export function ViewWeeklyReview({
   isOpen,
   onClose,
   review,

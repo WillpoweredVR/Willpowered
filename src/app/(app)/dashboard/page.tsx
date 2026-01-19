@@ -30,6 +30,7 @@ import {
   Crosshair,
   ClipboardCheck,
   Flame,
+  Eye,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
@@ -1564,10 +1565,19 @@ export default function DashboardPage() {
                       <ClipboardCheck className="w-3.5 h-3.5" />
                       <span className="hidden sm:inline">Weekly</span> Review
                     </button>
+                  ) : principleReviews.length > 0 ? (
+                    // Not Sunday, but has past reviews - show View Last button
+                    <button
+                      onClick={() => setViewingReview(principleReviews[principleReviews.length - 1])}
+                      className="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 text-xs font-medium text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors"
+                    >
+                      <Eye className="w-3.5 h-3.5" />
+                      <span className="hidden sm:inline">View Last</span> Review
+                    </button>
                   ) : (
-                    // Not Sunday, no review - show when next review is available
+                    // No reviews at all yet
                     <span className="text-xs text-muted-foreground">
-                      Next review: Sunday
+                      First review: Sunday
                     </span>
                   )}
                   <span className="text-xs sm:text-sm text-muted-foreground">
