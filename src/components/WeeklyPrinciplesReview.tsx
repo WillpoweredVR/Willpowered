@@ -17,6 +17,7 @@ import {
   Eye,
   Target,
   Quote,
+  Lightbulb,
 } from "lucide-react";
 
 // Structured analysis from API
@@ -1212,7 +1213,7 @@ interface ViewWeeklyReviewProps {
                   return (
                     <div
                       key={entry.principleId}
-                      className="p-3 bg-slate-50 rounded-lg"
+                      className="p-3 bg-slate-50 rounded-xl"
                     >
                       <div className="flex items-start justify-between gap-2">
                         <p className="text-sm font-medium text-foreground flex-1">
@@ -1241,9 +1242,21 @@ interface ViewWeeklyReviewProps {
                         )}
                       </div>
                       {entry.situation && (
-                        <p className="text-xs text-muted-foreground mt-1">
-                          {entry.situation}
+                        <p className="text-xs text-slate-500 mt-2 italic">
+                          &ldquo;{entry.situation}&rdquo;
                         </p>
+                      )}
+                      {entry.learning && (
+                        <div className="mt-2 pt-2 border-t border-slate-200">
+                          <div className="flex items-start gap-2">
+                            <div className="w-5 h-5 rounded bg-amber-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                              <Lightbulb className="w-3 h-3 text-amber-600" />
+                            </div>
+                            <p className="text-xs text-slate-700 leading-relaxed">
+                              {entry.learning}
+                            </p>
+                          </div>
+                        </div>
                       )}
                     </div>
                   );
