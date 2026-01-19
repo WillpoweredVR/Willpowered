@@ -16,13 +16,13 @@ At that moment, I became hyper-focused.
 I didn't have time to worry about things like sleep, fun, or even fear. My only concern was the mission and figuring out a way to achieve victory.
 This focus was so powerful that I didn't even need the 10 days...I reached the goal in 5.
 **That is the power of scarcity.** However, that power comes at a price.
-## **what is Scarcity?**
+## **What is Scarcity?**
 Everyone reading this has probably faced a similar feeling of scarcity at some point in your life.
 It feels like another "you" takes over. One who tunes out all distractions, becomes super productive, and makes the most of scarce resources like time, money, employees, etc.
 Whatever scarce resource resonates most with you, **the true measurement of scarcity isn't the lack of the resource itself, but the _feeling_ that you don't have enough of it.**
 A dieter and non-dieter may eat the same food, but only the dieter will feel as if it isn't enough. The same is true for money, time, or even friendships.
 You will not experience scarcity unless you feel it.
-## **advantages of Scarcity**
+## **Advantages of Scarcity**
 ### **1\. Focus:**
 The key factor of scarcity is how it heightens your focus.
 Beyond productivity, if you're gainfully employed and money is abundant, you don't need to focus on how much things cost. If you get fired, however, scarcity will be triggered and you will pay much closer attention to every expense.
@@ -68,7 +68,7 @@ If a student is unprepared for a big test tomorrow, an all-nighter seems like a 
 When you need to pay a bill you can't afford today, a payday loan can look attractive. One creditor is demanding payment within the tunnel, and this new creditor is safely outside of it...for now.
 Before you think you are immune to the irrational decision-making of a college student or the cash-strapped, think back to the last time you justified skipping the gym, skipping your diet, or hitting the snooze.
 None of these decisions are rational, but they make sense when we our tunnel-vision is focused on our need for rest, food, and sleep.
-## **optimizing Scarcity**
+## **Optimizing Scarcity**
 _What do I do now?!_
 I wasn't ready to give up on scarcity as a useful strategy, but clearly these disadvantages can't be ignored.
 _So how do we get the benefits without the negatives?_
@@ -81,7 +81,7 @@ He found that the controls of the two planes were very different --particularly 
 For the fighters, the wheels were deliberately placed away from the flaps. However, for the bombers, _they were right next to each other!_
 Sleep deprived and exhausted, the bomber pilots accidentally pulled the wrong lever, lifted up the wheels, and crashed the plane.
 Once they fixed that flaw, the difference in crashes evaporated.
-## **the Power of Environment**
+## **The Power of Environment**
 Think about how hard it would've been for the Air Force to implement all of their strategies for "better pilots" for their planes.
 They would need:
 1.  Buy-in from training officers to adopt new plans.
@@ -91,7 +91,7 @@ They would need:
 They would've spent countless weeks, months, or even years coming up with strategies and experiments to implement this plan and make their pilots "better."
 Yet, all they need to do was change one control of the cockpit.
 No buy-in, minimal funding, and once they did it, the problem was solved and they could focus their attention on much bigger issues.
-## **the One and Out Strategy**
+## **The One and Out Strategy**
 When we feel the pressures of scarcity, we typically blame ourselves for not being able to live up to the demands of the moment.
 **We try to fix "the pilots," rather than the cockpit.**
 While there are obviously things that you can be doing better, it's likely that somewhere in your environment there is at least one "design flaw" that can be altered quickly, simply, and drastically improve your results.
@@ -107,7 +107,7 @@ Getting out of bed in the morning is difficult –even for a morning person like
 It's a lot harder to go back to sleep in a bright room, and a lot easier to get out of bed with a rush of adrenaline when the lights start blinking. I bought those lights once, and now I will save hundreds of mornings of struggle to get out of bed.
 Whatever your goal, ask yourself:
 _What change can I make to my environment once that will free my time, money, or mental bandwidth for months or years to come?_
-## **conclusion**
+## **Conclusion**
 Playing with scarcity is playing with fire.
 It Isn't comfortable, it isn't fun, and it can also have some real consequences. However, the focus, prioritization, and creativity that you get from scarcity has made it one of the cornerstones of my philosophy.
 To use scarcity to your advantage, you must find the things in your environment that you might neglect due to "tunnel-vision." See if there is something you can do once, ensure you're on top of it, and let it out of your mind.

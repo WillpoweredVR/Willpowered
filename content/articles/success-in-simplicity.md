@@ -13,7 +13,7 @@ The coaching staff of a high school cross-country running team recently got toge
 He was referring to the strategy of the program: **Run best at the end.**
 This simple strategy was laid out and executed to perfection. And it resulted in the cross-country team going from ranked in the middle of the state, to contenders for the title year after year.
 And the lessons we can learn from this team can be applied to our own teams, businesses and ourselves.
-## **what the Team Focused On**
+## **What the Team Focused On**
 The team devoted all of its focus on their simple goal – run best at the end. It was not just a slogan; it was a way of life. They ran best at the end of workouts. They ran best at the end of races. And they ran best at the end of the season when it counted the most.
 With this goal in mind, they were able to focus on three key things that would help them achieve perennial success:
 ### **Making it clear**
@@ -22,7 +22,7 @@ Everything in their program from how they trained, to how they competed and to h
 Running hardest at the end of the race doesn’t just challenge you physically; it challenges you mentally. Research has shown that [fatigue exists more in your mind](http://www.willpowered.co/learn/what-fatigue-really-is) than in your muscles \[[2](http://rspb.royalsocietypublishing.org/content/96/679/438)\]. So by having the runners push through these feelings of fatigue they weren’t just exercising their muscles, but [also their willpower.](http://www.willpowered.co/learn/willpower-is-a-muscle)
 ### **Making it competitive**
 Competition is fun. So to add an extra fun challenge, they placed a coach at the 2-mile mark of a 3.1-mile race to see which place each runner was in. Then the coaches calculated not how fast the runners went, but how many competitors they passed from mile 2 to the finish. They then used this data to award "head bones" to each of their runners, which symbolized each of their vanquished competitors.
-## **what the Team Didn’t Focus On**
+## **What the Team Didn’t Focus On**
 Just as important in analyzing the success of this team is seeing what they didn’t focus on.
 ### **They didn’t jump to the “latest and greatest” strategies**
 There have been marvelous advances in sports science in the last decades. We are learning more and more about how the human body can be built for optimal performance and the strategies to get there. **This team tuned them all out.**
@@ -33,11 +33,11 @@ They wanted kids to join their program who believed running is fun. Making progr
 ### **They didn’t have inspirational speeches or lofty goals**
 Before they won their first state title, the coach never explicitly made the state championship a goal. She focused solely on running hardest at the end. She didn’t care what the ultimate result was, just the process.
 So she didn’t make inspirational speeches about how they’re the greatest team to ever set foot on a track. She didn’t explicitly motivate the team through big talk and positive thinking. **She let the results speak for themselves.** As the team continued to have success in race after race, they began to gain confidence from their results, not from unfounded optimism. It was this _earned_ confidence led them to believe they could hoist the trophy at the end of the season.
-## **what We Can Learn From Them**
+## **What We Can Learn From Them**
 My guess is that at least 99% of the people reading this are neither on, nor coaching, a cross-country team. So why do we care?
 As Tony Robbins said, “success leaves clues”. Whether that success is going from the bottom of the food chain to CEO, from the park basketball court to the NBA, or in this case from a mediocre cross-country team to a perennial title contender.
 For ourselves, we can take away 3 very powerful lessons from this team that can be applied to our everyday lives:
-### **1\. not doing the wrong things IS As Important As doing the right things**
+### **1\. Not doing the wrong things IS As Important As doing the right things**
 When we set a goal, we typically focus only on what “we can do right” in order to accomplish it. If we set a goal to lose weight, we focus on adding the right behaviors more than getting rid of the wrong behaviors. Instead of eating less bad food, we focus on spending more time in the gym. **We think that “doing more” is always the best solution.**
 This team proved otherwise. They were successful just as much for what they didn’t do as what they did do. The strategy to get rid of frivolous activities that would attract the wrong type of people was just as important as implementing the “head bones” competition. The team not only did more of the right things, but it also did fewer of the wrong things.
 So the next time you set a goal, don’t just ask what you should start doing, ask yourself what you should _stop doing._
@@ -50,7 +50,7 @@ In our world of endless strategies, plans and new technology, it’s hard to bel
 However, this does not mean it was easy. Running hardest at the end - when you are drained both physically and mentally - is extremely challenging. But that is why they were so successful.
 In our lives, we constantly jump from one strategy to the next trying to find that one “silver-bullet” that will finally get us to where we want to go. We try out one strategy for a while, then either give up when it gets too hard or boring. We then blame the strategy for being “wrong for us”. The truth is that most strategies – diets, exercise programs, productivity methods, etc. – do really work. **But you need to actually stick with them!**
 [Our willpower is limited](http://www.willpowered.co/learn/limits-of-willpower). It is much better spent creating a simple plan and sticking to it, rather than hopping from one strategy to the next. Succeeding at a goal isn’t easy. You’re going to face hard days, you’re going to face painful days, and you’re going to face days where you’re quite simply bored with the process. **But if you can stay on the path and fight through those days, you will earn some of the best days of your life.**
-## **conclusion**
+## **Conclusion**
 Success leaves clues. By studying the practices of great leaders, great companies or even great cross country teams; we can learn more about what it takes to be successful in our own endeavors. This team was successful because they stuck to a simple and clear strategy of running hardest at the end, and ignored everything else.
 In our own lives, we tend to overcomplicate things. We spend our time trying to find the magical formula for success, rather than finding a simple strategy and working toward the success itself. [Our willpower is limited](http://www.willpowered.co/learn/willpower-limited-resource). You can use it endlessly searching for success, or you can use it to _work_ toward it.
 **Sources**

@@ -18,14 +18,14 @@ _“I can’t run inside because the treadmill might give me shin splints.”_
 _“What is one day going to matter?”_
 _“Sleep is good for your muscles.”_
 _“I have been training so hard recently, I deserve to have one day where I rest.”_
-## **the Importance of the Middle of the Journey**
+## **The Importance of the Middle of the Journey**
 We have all experienced this feeling at some point in our lives. What we do not realize is that **these moments are some of the most important when it comes to reaching our goals.** This is when we make the decision about how committed we really are to achieving what we want. This is the middle of the journey and it is by far the hardest.
 **It is easy to find motivation on December 31st** when you are [visualizing](http://www.willpowered.co/learn/inspiration-will-enhance-your-willpower) what life will be like when you accomplish your goals. You see your results, you see your progress, you see where you want to be, and you get excited about your plan to get there.
 **It is also easy to find motivation when you nearing the completion of your goal.** You see what you have been able to accomplish by adhering to your plan and you are confident that you will be able to see it through to the finish.
 You may even work harder as you see how close you are to the finish line. But in order to get there, **you need to get through the middle.** When the motivation from visualizing and setting your goals has worn off, and the goal is still weeks, months or even years away. That is when **one day of progress seems completely insignificant in comparison to the higher goal,** so if we “don’t feel good” then we choose to skip it.
 This is when our willpower is truly tested. **This is when the true achievers set themselves apart from the rest of the pack.** Everybody can find motivation when they are inspired and setting their goals, plans and the “big changes” that are about to happen for them. Everybody can get motivated to push hard to the finish of their goal when they are near the end and the goal is in their sights. But only 8% of people even make it that far. **92% of people get lost in the middle.**
 They wake up tired, they wake up to cold weather, they wake up and “they do not feel right”, so they take the day off. Then that day sets the precedent that it is okay to take another day off. And before they know it, they have given up entirely.
-## **how to Get Through the Middle of the Journey**
+## **How to Get Through the Middle of the Journey**
 So how do we make it through this all so important part of the journey? How do we join the 8% of people who see their goals through to completion and achieve what we know we can?
 Here are 3 practical ways that you can reframe your perspective and reach the finish line:
 ### **1\. Win the Day**
@@ -54,7 +54,7 @@ The middle of the journey is like the 2nd Act of a great movie. The 2nd Act is w
 **Many people believe that the challenges they are facing in the middle of the journey will last forever.** So once they hit the feeling of being tired, unmotivated, and demoralized by how far they are away from achieving their result, they give up.
 **Understand that these moments do not last forever.** These moments are the ones that test _how bad you really want something._ If you can simply get through these times, taking it day-by-day, things will get easier!
 You will adapt to the changes in behavior and develop habits that make it easier to achieve your goals regularly. You will grow more confident with each passing day, you will see a huge chain of red X’s on your calendar, and begin to feel and act more like your ideal self. With each day, you will feel more confident that **you can do this.**
-## **conclusion**
+## **Conclusion**
 In the journey to achieving our goals, the middle is always the hardest. It is so hard in fact that **92% of people give up.** Most of these people give up because they lose motivation once they realize how far they are from reaching their end result.
 To overcome these demotivating feelings, **we need to shift our focus from the end result to simply winning each day.** Winning each day is a goal that we can all achieve. It is something concrete, tangible and motivating. And if we can win each day through the middle of the journey, before we know it we will achieve the results that we were after all along.
 The days in the middle of the journey are hard. But if you can fight your way through these challenging days when you are tired and unmotivated, **you may just earn some of the best days of your life.**

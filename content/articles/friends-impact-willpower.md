@@ -11,7 +11,7 @@ featuredImage: ""
 The town was Framingham, Massachusetts – a simple place in the Northeastern United States with a population of approximately 68,000. It is a lovely town with a mix of old colonial ties and new developments. It is a town so nice that in 2012, Framingham was listed by CNN Money Magazine as the 36th best place to live in the United States.
 **But the town has a dark side that many people do not know about.**
 Since 1948, the town has endured an epidemic of a very specific disease. This particular disease is as deadly as there is in America. It has taken countless lives and it seems like the more we try to control the problem, the larger it gets. This epidemic is not HIV, cancer, or even drug use. _This epidemic is obesity._ \[[1](https://www.nhlbi.nih.gov/research/resources/obesity/population/framingham.htm)\]
-## **epidemic in Framingham**
+## **Epidemic in Framingham**
 In 1948, researchers began tracking residents of Framingham to discover what causes an obesity epidemic. They started with 5,200 residents and added new generations in 1971 and 2002.
 **What they found over 50+ years of research is shocking**. Obesity is indeed infectious. Just like a disease, it spreads within families. It spreads within work environments and it spreads within friend groups.
 **If someone’s friend in Framingham became obese, their own likelihood of becoming obese increased by 171%!**
@@ -21,7 +21,7 @@ Researchers also found that if one person started smoking, all of her friends we
 **It seemed like no matter what the vice was, if one person started, his social network was soon to follow.**
 Things seemed bleak. But then the researchers came across some good news – vices were not the only things that were contagious!
 They also found that if your friends started going to the gym, you were likely to join them. If your family began shopping at the farmer’s market, you would begin eating locally as well. Whether it is a virtue or a vice, we follow the habits of our social networks.
-## **why We Follow the Lead of Others**
+## **Why We Follow the Lead of Others**
 This behavior can be traced back to our ancestors and our desire to remain in the tribe. We want to act like the people around us. If we act like them, they are more likely to like us. If they like us, we are more likely to stay in the tribe and therefore stay safe. \[[2](http://www.annualreviews.org/doi/abs/10.1146/annurev.anthro.32.061002.093158)\]
 Because of this importance, we developed something in the brain known as “[mirror neurons](http://www.brainfacts.org/brain-basics/neuroanatomy/articles/2008/mirror-neurons/)”. These mirror neurons cause us to look at the behavior of others and begin to act in the same manner. \[[3](http://www.amazon.com/The-Inner-Eye-Intelligence-Evolution/dp/0192802445)\]
 If we see people smoking, then we have a natural desire to do the same – no matter how many warning labels we see. If we see others indulging in cheesecake, we have a natural desire to indulge as well – regardless of those weight loss goals we set a month ago. And if we see others starting to exercise, we get a sudden motivation to not be seen as "lazy".
@@ -34,13 +34,13 @@ The researchers found that those who were successful in their weight loss all us
 The ones who were unsuccessful in their behavior change, however, did not open up to their friends and family about their goals. This led to many friends - even with the best of intentions - **to not** **become allies, but accomplices.**
 Rather than helping to motivate and support their friends through the hours of struggle and temptation, these social networks sought to ease their pain. They saw their friends struggling to make it to the gym and offered the advice that they "start taking it easy" or "give themselves a break".
 These friends may have meant well, but rather than supporting their goals, they provided justification for taking the easy way out. And in the end, while those with allies created a chain reaction of positive behavior, those with accomplices dug themselves into an even deeper hole.
-## **the Shocking Advantage of Being Vulnerable**
+## **The Shocking Advantage of Being Vulnerable**
 There was one key difference between those who turned their friends into allies and those who turned them into accomplices - **vulnerability.**
 Those who were open, honest, and willing to ask for help, showed how committed they were to their goal. They communicated exactly what they needed from their friendships in order to change their behavior and achieve the happiness they sought. Because the message was clear, these friends knew their duty and provided genuine help.
 Those who weren't vulnerable, and willing to admit that they needed support, didn't send this clear message to their social networks. Therefore their friends couldn't provide great support because they didn't know how. **They didn't know that the participants needed them to provide that extra push**. So rather than helping them in their time of need, they sought to ease their pain by suggesting the easy way out.
 Your friends have a powerful influence on your behavior. **Genuine friends will always want the best for you, but they need to know what they can do to help.** If you do not communicate your goals to them and let them know how they can support you, they cannot help you - and may just end up hurting you.
 So open yourself up to them, share your struggles, and ask for support. This may just create a chain reaction that leads to a happier, healthier, life for your entire social network!
-## **conclusion**
+## **Conclusion**
 Since we first started living in tribes, we have sought the approval of others. _We crave it._ Even to a point where one person's lifestyle change can spread like an epidemic across an entire community.
 This phenomenon can be either good or bad. We can use the influence of others for motivation to achieve more, or justification for giving up. In the end, it all comes down to whether we are brave enough to be vulnerable, admit that we need support, and allow our friends and family to be allies, not accomplices.
 **Sources:**

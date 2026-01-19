@@ -18,7 +18,7 @@ Then a thought occurred to me – no matter what, in 30 minutes I will be finish
 **At that time, I can either be proud of my effort on these last 2 miles, or I can regret it.**
 That thought kept me going. It kept me mentally strong. It helped me understand that _the pain I was feeling was temporary_. It is only going to be for 30 more minutes at most, and if I do my best, I will be proud of myself.
 Understanding that, I fought through those last 2 miles, giving my best effort and finishing 14th – my first time ever in the Top 15.
-## **pain is Temporary**
+## **Pain is Temporary**
 > “Pain is temporary. It may last for a minute, it may last for an hour, it may last for a year. But eventually, it will subside. Success, however, lasts forever.” – **Eric Thomas**
 
 The pain I endured that day was excruciating. I hated every single minute of those last 2 miles until I crossed the finish line. But once I crossed it, the pain was over and I placed 14th out of over 6000.
@@ -31,7 +31,7 @@ The person who hears that alarm, gets out of bed, and goes to the gym will be in
 He will have taken another step towards [making exercise a habit.](http://www.willpowered.co/create-exercise-habit) While the one who rolled over will continue to languish; feeling like he will never be able to get into shape.
 The same goes for the student who chooses to spend her night studying while her friend goes out to party. The pain of missing out on fun is temporary, but the grade she gets on her exam is permanent.
 The key is to simply embrace the pain.
-## **how to Embrace the Pain**
+## **How to Embrace the Pain**
 Make no mistake about it, embracing the pain of going through a morning workout, or spending a night studying over hanging out with friends is not easy.
 However, once you recognize that embracing the pain will be worth it, there are several things you can do to summon the willpower to fight through it.
 ### **1\. Chunking**

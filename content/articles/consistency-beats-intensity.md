@@ -19,7 +19,7 @@ Waking up every day with these three factors motivating me has helped me see eve
 But these factors would mean nothing if I didn't put them into action through...
 > [**Consistency.**](http://www.willpowered.co/the-consistency-challenge?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Consistency)
 
-## **the False Promise of Intensity**
+## **The False Promise of Intensity**
 Before 2013, my relationship with New Year's resolutions was fairly typical.
 1.  Get excited by the promise of a New Year
 2.  Set a plan to exercise regularly
@@ -39,7 +39,7 @@ The willpower, determination, and belief that "this time" will be different that
 In 2013, I was tired of squandering the promise of a New Year.
 So I followed [Jim Collins'](http://www.jimcollins.com/?utm_source=Willpowered&utm_medium=Referral&utm_campaign=SMaC_Formula) strategy from [_Great by Choice_](http://amzn.to/2ilvPVp)_,_ and implemented my [_SMaC Formula_](http://www.willpowered.co/learn/create-a-smac-formula?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Consistency) _(_a "Specific, Methodical, and Consistent" list of habits to complete every day).
 _That decision changed everything._
-## **the Smac Formula**
+## **The Smac Formula**
 Almost every success I've had over the last 4 years traces back to my SMaC Formula:
 1.  Wake up every weekday at 4 AM
 2.  Plan my transportation ahead of time
@@ -55,7 +55,7 @@ By doing so, I killed 4 birds with one stone:
 2.  **I learned from failure with an objective perspective.** i.e. Discovering that I skip the gym more at night because there are more distractions. Easy switch to the morning, and I don't have to feel "hopeless" or "lazy."'
 3.  **I achieved more than I thought was possible.** Consistency creates a snowball. With every push, the results grow bigger and bigger. As long as you keep pushing, they grow beyond what you thought was possible at the beginning of the year.
 4.  **I set new goals based on my progress, not my enthusiasm.** We see our future selves as a superhero with more time, energy and willpower than Superman himself. So, we set unrealistic goals...and fail them. By tracking my progress, I overcame this flaw and set goals that I knew were possible.
-## **the Challenge**
+## **The Challenge**
 After that, consistency became my "go to" strategy.
 1.  I used it to reach the [Top 10 of the Spartan Race](http://www.willpowered.co/learn/spartan-race-lessons?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Consistency)
 2.  I used it to build an audience of [30,000 Willpowered subscribers in 6 months](http://www.willpowered.co/learn/willpower-publishing-book?rq=lessons%20in%20willpower)

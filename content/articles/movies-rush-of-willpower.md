@@ -17,7 +17,7 @@ _There are no two words in the English language more harmful... Than 'good job.'
 I was floored when I heard [JK Simmons](https://en.wikipedia.org/wiki/J._K._Simmons) say those words in his Oscar-winning performance in the 2014 movie, _[Whiplash](https://en.wikipedia.org/wiki/Whiplash_\(2014_film)_.
 That speech completely [changed my perspective](http://www.willpowered.co/learn/frame-of-reference) on how to become truly great in my field. I think about it probably once per week, and whenever I do it gives me a rush of willpower to keep pushing and [never settle](http://www.willpowered.co/learn/perseverance) for "good enough."
 That is the power of inspiration you can get from a movie.
-## **inspiration From Movies**
+## **Inspiration From Movies**
 I've been writing a lot recently about the [power of stories](http://www.willpowered.co/learn/use-stories-to-inspire-action). And another place you can look for that inspirational power is from movies.
 Whiplash is my personal favorite because it shows the grittier side to the pursuit of excellence. Rather than show the "ra ra" speeches, it shows the sacrifices. However, like any piece of art, you may see it completely differently.
 So I wanted to see which movies others use as their source of inspiration. To do this, I reached out to fellow writers from around the world to see which movies inspire them and why.

@@ -19,7 +19,7 @@ _**But by being afraid of flying and choosing to drive instead.**_
 -   The chances of dying on a commercial flight is approximately 1 in 15,000,000.
 -   The chances of dying from a road trip is approximately 1 in 10,000.
 So when over 15 million Americans chose to drive instead of fly, **it led to 1,595 deaths from car accidents** that wouldn't have occurred if the people weren't afraid—a death toll equal to another tower going down. \[[1](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)\]
-## **what We Fear Versus Larger Dangers**
+## **What We Fear Versus Larger Dangers**
 Terrorism and plane crashes are two of the most feared causes of death—and they are also two of the least justified.
 **Here are some yearly statics of what we fear vs. what actually kills us (U.S. statistics/year):**
 1\. We fear—**Planes: 50** deaths \[[2](http://matadornetwork.com/life/what-americans-fear-vs-what-americans-should-fear-infographic/)\]
@@ -34,20 +34,20 @@ Bigger danger—**Deer: 200** deaths \[[6](https://en.wikipedia.org/wiki/Deer%E2
 Bigger danger—**Soldiers committing suicide after war: 8,078** deaths \[[8](http://www.va.gov/opa/docs/suicide-data-report-2012-final.pdf)\]
 **Some pretty shocking statistics.**
 Not that our fears aren't warranted, every example does have a risk of death, but why is there is such a huge gap between what we fear and the bigger danger?
-## **where Our Fear Comes From**
+## **Where Our Fear Comes From**
 In his book, _[The Science of Fear](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=),_ [Daniel Gardner](http://dangardner.ca/) highlights many of these disparities and traces our fears back to the battle of our two minds—[the primitive brain and the modern brain.](http://www.willpowered.co/learn/short-term-and-long-term-motivation)
 **The primitive brain­—aka the [limbic system](https://en.wikipedia.org/wiki/Limbic_system)—is where your emotions, feelings, and basic instincts reside.** It evolved to help us humans survive in the Stone Age by motivating us to hunt for food, conserve our energy, and _fear things that might kill us._
 These fears developed in a way that would cause us to act fast. In order to survive being attacked by a snake, for example, we would have to move quickly, without taking the time to think.
 So rather than rely on rationality to avoid dangers, our brains evolved to **connect fear with images, sounds, and feelings that we stored deep in our memories** so we could rely on our instincts and act fast in order to survive.
 Fast-forward to modern day, and our fears are still based in this part of our brain. So we still associate fear with images, with sounds, and with memories of the feelings we had when we saw these things. \[[1](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)\]
-## **exposure = Fear**
+## **Exposure = Fear**
 Given that we base our fears on images and feelings rather than on rationality, it is no surprise then that **the media has played a big role in what we fear and what we don’t.**
 Every incident of terrorism is shown and analyzed by the media for days. But they don't show up to the hospital to report on the thousands who die of heart disease.
 Every year there is a new illegal drug that the media calls an "epidemic." But they seldom cover the drug that _actually is an epidemic_—alcohol.
 The same could be said for wars, plane crashes, and shark attacks.
 **Then when you're exposed to** **the vivid images of people dying from terrorism, plane crashes, and drug overdoses they become burned in your memory.** And the more you expose yourself to them, the more deeply entrenched they become.
 Then because you can easily remember these images and associate them with the feeling of fear, you begin to believe that they are more prevalent and dangerous than they actually are. \[[9](http://psycnet.apa.org/journals/psp/63/4/545/)\]
-## **how Fear Kills Your Willpower**
+## **How Fear Kills Your Willpower**
 Okay, so you may fear these things, but how does that affect your willpower?
 There are 3 key reasons why fear kills the willpower of both you and society:
 ### **1\. We Strengthen the Primitive Brain**
@@ -77,7 +77,7 @@ From a strictly scientific standpoint you should:
 -   Focus on getting on a plane, not worrying about crashes and choosing to drive instead.
 -   Focus on being cautious of deer on the road, not on worrying about sharks in the water.
 And if the goal truly is safety—both at the individual and societal level—**then we should focus our willpower on the things that will result in the greatest amount of lives saved.** Not on the things that give us the strongest emotional reactions. \[[1](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231?tag=viglink123827-20)[3](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231?tag=viglink123827-20)\]
-## **what to do about fear**
+## **What to do about fear**
 _"I'm just glad I'm old. I'm worried about what will happen to the world in your lifetime."_
 My stepdad told me those words in 2012, but I didn't understand why. By all major measures, [2012 was the best year in the history of the world](http://www.spectator.co.uk/2012/12/glad-tidings/). And 3 years later it has only gotten better!
 **Violent crime has steadily declined...**
@@ -96,7 +96,7 @@ _And a new cause of cancer that could be in one of your household items!_
 Instead, understand how fear works. The more you take in the images, sounds, and feelings of terrible things happening in the world, the more you will allow fear to strengthen your primitive brain and weaken your willpower. \[[1](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)\]
 I'm not saying you should ignore current events, or [deny the brutal facts](http://www.willpowered.co/learn/stockdale-paradox) of dangers in the world.
 Simply pause, recognize the negative bias, understand that fear will weaken your willpower, and remember that, in general, the world is heading in a very positive direction. Then allow yourself to [feel grateful](http://www.willpowered.co/learn/gratitude-increases-willpower) that you get to be a part of it.
-## **conclusion**
+## **Conclusion**
 There is a gap between what we fear and what we should fear. This gap is due to where your fear comes from. Your fear comes from images, sounds, and feelings—not rational thought.
 Fear kills your willpower by giving control to your primitive brain, diminishing the benefits of something you fear, and by causing you to focus your willpower on the wrong things.
 You can fight back against fear by avoiding scare stories, understanding the negative bias of the media, and remembering that **you are living in the healthiest, wealthiest time in the history of mankind—and it is only getting better.**

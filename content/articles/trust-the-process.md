@@ -13,7 +13,7 @@ In a famous essay by [Isaiah Berlin](http://en.wikipedia.org/wiki/Isaiah_Berlin)
 The fox knows a great many things. He is cunning and smart. He is fast and sneaky. He is willing to try a lot of strategies to beat the hedgehog and win his share of the forest.
 The hedgehog, on the other hand, knows one big thing. He is simple. He knows only one strategy but executes it to perfection. Whatever the fox tries, the hedgehog defends himself with what he knows to do best.
 When they face each other in the forest, the fox always tries a new strategy to defeat the hedgehog. Ultimately, though, the hedgehog always wins. No matter what the fox tries, the hedgehog just curls up into an impenetrable ball, exposes his spikes and thwarts the crafty fox – forcing him to retreat and come up with another plan.
-## **the Hedgehog and the Fox Pursuing Goals**
+## **The Hedgehog and the Fox Pursuing Goals**
 When it comes to pursuing goals, many of us act like a fox. We set our goal and come up with a bold new strategy that we are going to use achieve it.
 _An 8-week abs program._
 _A 12-day juice cleanse._
@@ -34,7 +34,7 @@ They create [a habit](http://www.willpowered.co/learn/daily-willpower-habits) of
 They finish their Spanish 101 class, so they move on to Spanish 102.
 After that, they become comfortable with taking the next step, then the next one after that. They establish a solid foundation and continue the pursuit of their goal with patience and persistence. They do not endlessly jump from one strategy to the next, they know the results will come as long as they [trust the process.](http://www.willpowered.co/learn/internal-locus-of-control)
 **And in the end, these hedgehogs reach their goals;** while the foxes are off trying yet another brilliant strategy to get the "quick results" they want.
-## **trust the Process**
+## **Trust the Process**
 In the information age we are living in, there are countless strategies we can use to achieve our goals. Google search for a “diet plan” and you will find an endless supply of free information on diets that will help you lose weight and become healthy.
 Some will advocate for a diet that is high in fat and low in carbs.
 Some will advocate for a diet that is high in carbs and low in fat.
@@ -46,7 +46,7 @@ Almost any diet that is advocated with any kind of scientific basis to it will w
 **But no diet program will work unless you do.**
 Unless you are willing to stick to the program that is laid out and persist with it for the long term, you will never see the results that they promise. The same can be said for a program to improve your fitness, a program to improve your productivity, or a program to learn a new skill.
 **The process that you choose in pursuit of any goal is far less important than the willpower you use to stick with it.** And trusting that the process will bring you the results you want is absolutely necessary in order to find the willpower to stick with it.
-## **how to Stick With the Process**
+## **How to Stick With the Process**
 So how do we stick with this process? How do we trust that it will get us results we desire and achieve our goals?
 Here are 3 strategies you can use that will help you stick to the process:
 ### **1\. Win the Day**
@@ -70,7 +70,7 @@ You can tap into this natural motivation by [tracking your progress.](http://www
 This gives you a rush of willpower to continue to make progress. It gives you drive to continue the journey and continue to improve. \[[4](http://www.amazon.com/gp/product/B005ERIRZE/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B005ERIRZE&linkCode=as2&tag=willpowered-20&linkId=D6QNKKNC5VE5XXSC)\]
 **Take advantage of your inner drive to improve by tracking your progress**. Create a journal and write down as much information as you can about how you're progressing. This may seem tedious, but by tracking this progress, you will find a desire within yourself to constantly improve.
 _You can find tools and strategies to track your progress in [this article](http://www.willpowered.co/learn/self-monitoring)._
-## **conclusion**
+## **Conclusion**
 Goals are not achieved because of some magical new strategy that will give you big results, fast. The truth is that almost every strategy that you use to diet, exercise or learn a new skill will give you results - if you have the patience to stick with it.
 Many of us ignore this fact. **Rather than choosing one strategy and sticking with it, we try a something, get bored or impatient with it, then try a new "better" strategy.** We run around like a fox; constantly changing our plans and ultimately making no progress.
 The people who see their goals through to completion do not do this. They act like hedgehogs. **They choose a goal, focus on one strategy to get them there and stick with it no matter what.** They slowly and consistently make progress every day toward their goal. And in the end, they see the results they were looking for - while their fox-like colleagues are probably trying yet another "better" strategy.

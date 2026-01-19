@@ -18,7 +18,7 @@ Everybody around him would make fun of his dream. They would scoff at the work h
 Then he finally got the chance he had been waiting for. He had been invited to the Junior Mr. Europe competition in Stuttgart, Germany. So he snuck out of the military base at night, boarded a freight train and arrived the morning of the competition.
 There, Arnold put on a show. He seized his moment, generated huge cheers from the audience and won first place in the competition.
 That victory was the starting point that launched the massive success that was to follow. Arnold fulfilled his vision by winning the [top prize in body-building 6 years in a row,](http://en.wikipedia.org/wiki/Mr._Olympia) and followed that by becoming the most famous action star of the 20th century. All because he never lost sight of his vision.
-## **the Power of a Vision**
+## **The Power of a Vision**
 Humans have a unique ability to see the future before it actually happens. We can visualize how we believe the world will be and begin to take action to make it happen.
 Throughout history, we have seen many visionaries take ideas that are decades ahead of their time and believe in them so strongly that they have literally changed the world. From Henry Ford, to Steve Jobs we have seen visionary people completely revolutionize the way our world works.
 But what separates these visionaries from the rest of us? And, more importantly, what can we do to find our own visionary calling?
@@ -43,12 +43,12 @@ What are some small wins you can attain in the process of achieving your vision 
 All of the great visionaries of our time are on a journey that never ends. They constantly evolve their vision and take it one step further. Arnold did not stop when he won the top prize in bodybuilding. He went on to win it 6 times in a row. Then he took that success to the next level when he was cast as Conan the Barbarian.
 He then continued to learn and grow as his journey took him to becoming the most famous action star of the 20th century. Which, of course, he followed up with becoming the two-term governor of California. Even today he has not stopped. He is now leading the [largest organization in charge of after school programs in the country](http://afterschoolallstars.org/).
 All great visions are never finished. Even when it looks like you have accomplished what you had originally set out to do, you must embrace the fact that there is still more to be done. **No matter how much you accomplish, there will always be another step that you can take on your journey.**
-## **do Not Mistake a Vision for Action**
+## **Do Not Mistake a Vision for Action**
 There is one downside to having a strong vision. When we use it to visualize the future, rather than take action, we can fall into a trap. Our brains are so good at [visualization](http://www.willpowered.co/learn/how-to-influence-the-subconscious-mind) that we can see our future selves with the results that we’re trying to get extremely vividly.
 When we visualize our future selves, we can get a false sense of reward as if it has already happened for us. And when we get that sense of reward we can lose the motivation to actually take action toward it. \[[6](http://www.jstor.org/discover/10.1086/497548?uid=2&uid=4&sid=21105140344723)\]
 We are especially susceptible to making this mistake when we first set out to accomplish our vision. Most people get inspired to make a "big change" in their lives, then set an unrealistic plan to accomplish it. Then they lose hope when they realize how much work they need to do.
 Vision serves as a great motivator to keep you going when you're working toward your goals, but can set you up for failure if you're not careful. **The most important thing is to make sure that you use your vision to take action.**
-## **conclusion**
+## **Conclusion**
 A vision is powerful. Arnold Schwarzenegger was surrounded by people who could not possibly imagine the wild success that was about to come for him. So they did their best to get Arnold to think "realistically". Luckily, Arnold's vision was so strong that he was able to tune these people out and stick to his plan.
 Many visionaries follow the same path as Arnold. It all begins with a powerful spark of inspiration, but it must be followed by a lot of long hours of relentless work. After that, you will start accumulating small wins that prove that you are on the right path to making your vision become a reality. But always remember, no matter how high you climb, there is always another peak out there somewhere. True greatness is a journey without an end.
 **Sources:**

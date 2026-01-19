@@ -19,13 +19,13 @@ No...
 Ford was relentlessly driven to succeed, but he was far from a genius.
 So if he didn't invent the car, the engine, or design the "best" model on the market, _why is he so highly regarded today?_
 Because Ford knew a profound truth — **simpler is better than better.**
-## **the Power of Simplicity**
+## **The Power of Simplicity**
 Ford took one of the most complicated and technologically advanced products of his era and made it simple enough for uneducated workers to manufacture.
 His factories provided jobs to thousands of working class people. His assembly line ran so efficiently that Ford pioneered the 8-hour workday. [2](https://en.wikipedia.org/wiki/Henry_Ford#Model_T?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Simple)
 His [Model T](https://en.wikipedia.org/wiki/Henry_Ford#Model_T?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Simple)was the embodiment of the incredible feats humanity can achieve when we combine the rigor of science, with the innovation of entrepreneurship.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1486651692101-Z2OE00QJ2QDDOJO7JPI8/image-asset.jpeg?format=original)
 Thanks to Ford, a whole class of people were able to experience a rich, beautiful world beyond the limits of their horizon.
-## **the Enemy of Simplicity**
+## **The Enemy of Simplicity**
 Thanks to the efforts of Henry Ford and the many great minds who followed, today's world is limitless.
 Despite all of the problems we face, **we are living in an unprecedented time of opportunity for individuals to create their future.**
 _So why doesn't it feel that way?_
@@ -46,7 +46,7 @@ If you can relate to this...
 > The worst decision is not picking the wrong car; it's wasting precious time and resources constantly trying to find a "better" car.
 
 That is why simpler is better than better.
-## **how to Focus on Simplicity**
+## **How to Focus on Simplicity**
 Let me start by saying, I'm no master of simplicity yet.
 I still suffer from overconfidence and sometimes lose discipline to stay within my core strength (see my articles on addiction).
 However, by using the simple techniques below, I vastly improved — and continue to do so.

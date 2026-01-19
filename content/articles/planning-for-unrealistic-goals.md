@@ -38,14 +38,14 @@ Then you can give an estimate of when you will complete those steps and hit the 
 Repeat this process for each milestone on your path.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1473702530228-XCRUR5CEJFBEI6S6KJYZ/image-asset.png?format=original)
 * * *
-## **Step 4: How Did It All Go Wrong?**  
+## **Step 4: How Did It All Go Wrong?**
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1473702816202-OC4TEP9TIDMLLZKAXGZU/image-asset.png?format=original)
 ### Now, it’s time to identify all the things that could go wrong.
 This isn’t to make you feel bad about yourself, it’s to **identify everything that you need to be mindful of** going forward.
 As [an optimist](http://www.willpowered.co/learn/stockdale-paradox), this is always the crucial step for me.
 It’s far better to confront your weaknesses with calm, cool-headed planning, than when you’re tired and stressed from pushing your comfort zone.
 * * *
-## Step 5: Break It Into Daily Goals  
+## Step 5: Break It Into Daily Goals
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1473703320669-QM9965ZSX8W4MVGH42C8/image-asset.png?format=original)
 ## **Conclusion**
 One of the most effective life strategies I've used is "burning my boats" and forcing myself into difficult situations.

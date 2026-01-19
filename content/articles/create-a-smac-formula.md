@@ -30,7 +30,7 @@ _Southwest still views the passenger as the #1 priority._
 _They still have stayed out of the food business_.
 _They still have kept the family feeling and fun atmosphere._
 And it has helped them still be one of the top airlines in the world.
-## **the Smac Formula**
+## **The Smac Formula**
 I first learned about Putnam’s 10 points when I read [Jim Collins’](http://www.jimcollins.com/) book, _[Great by Choice,](http://amzn.to/29Bk9qE)_ in 2012. Collins called these 10 points a “specific methodical and consistent formula” for success (or a “SMaC formula”).
 He found that companies that can succeed in harsh economic conditions have their version of a “SMaC formula” that helped keep them achieve stable growth in an unstable world.
 This formula like a terrific idea for companies…_but could it apply to individuals?_
@@ -42,7 +42,7 @@ Almost every success I've had over the last 3 years traces back to my SMaC formu
 4.  Log the food I eat
 5.  Log the cost of the food I eat
 That's it. Just achieving these 5 points daily led to great habits to reach my goals.
-## **smac Formula Breakdown**
+## **Smac Formula Breakdown**
 Here's what happened when I started implementing these points into my daily life.
 ### **Wake up every weekday at 4 AM**
 I wanted to wake up every day 4 AM because I felt like it would create a “platform” for success. It would allow me to get things done early in the morning before the work day even began.
@@ -76,7 +76,7 @@ Since I was already keeping track of the food I was eating, keeping track of the
 1.  I started packing a lunch rather than eating out.
 2.  I started buying in bulk because I could see the big cost differences.
 3.  I started creating, and sticking to, a budget for everything other than just food**.**
-## **why the Smac Formula Works**
+## **Why the Smac Formula Works**
 _So why did this work so well?_
 Had I set out to create all the habits that eventually sprung up, I would’ve been completely overwhelmed.
 There’s no way that within a single year I could have woke up at 4 AM, exercised at least 90 minutes per day, completely overhauled my diet, and stuck to a strict budget.
@@ -87,7 +87,7 @@ Following my exercise routine didn’t mean I needed workout 90 minutes every da
 Logging my food and the cost of it didn’t mean I needed to follow a strict paleo diet, or follow a strict budget, it just said that I needed to be aware of what I was eating and how much I was spending on it.
 **All of these things are achievable.**
 I’m not saying that this was easy — staying consistent with anything never is — but I can tell you, it was certainly easier to set out to accomplish those 5 things, than to achieve the habits that surrounded them.
-## **creating Your Smac Formula**
+## **Creating Your Smac Formula**
 To help you create your SMaC formula, I added my template below that you can download.
 [→ Click here to download.](/s/SMaC-Formula-Template.csv)
 It will help you list your unique points, and track whether or not you achieve them.
@@ -106,7 +106,7 @@ The same can be said for [tracking your finances](https://www.mint.com), trackin
 **3\. They act as a small win (follow my exercise plan)**
 Finally, they act as a small win. Do not underestimate the power of a [small win](http://www.willpowered.co/learn/small-wins). No matter what my [exercise plan](http://www.willpowered.co/learn/create-exercising-habit) has been, accomplishing it every single day acts as a huge confidence booster even 3 years later.
 Since then, I have added [meditation](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower) and [writing a set number of words per day](http://www.willpowered.co/learn/willpower-publishing-book) to my SMaC formula which are also small wins. Anything you can achieve on a daily basis that will increase your confidence and move you closer to your goal will work for your win.
-## **what Not to Do With Your Formula**
+## **What Not to Do With Your Formula**
 Now that we have covered the “to-dos” it’s time to cover what “not to-do” which is just as important.
 **1\. Do not overload yourself**
 The most tempting thing with your formula will be to start off with 10 points on Day 1. **Don’t do this.** To make sure you get the point I’m going to say it two more times:
@@ -139,7 +139,7 @@ It’s saying that those days are just as important as the day when I skipped my
 By being honest with myself, I am able to celebrate the true wins, and learn how to avoid the true losses.
 The same will go for you in creating your own formula.
 [→ Click here to download my SMaC Template.](/s/SMaC-Formula-Template.csv)
-## **conclusion**
+## **Conclusion**
 For the last 3 years, there has been no better single strategy for me than creating my specific, methodical, and consistent success formula—my "SMaC Formula".
 It helped me eat healthy, exercise regularly, write a book, build an audience, save money...the list goes on. **And I achieved all of these things without even setting out to accomplish them!**
 To create your own SMaC formula, use the template above and follow the instructions. I hope your results are as good, or even better, than mine!

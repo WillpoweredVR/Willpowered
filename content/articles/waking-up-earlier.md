@@ -51,7 +51,7 @@ Doing so will help your brain begin to calm down and produce fewer delta waves (
 ## **5\. Have a Purpose**
 All of the tips above will make it easier for you to get up earlier, but none will work unless you have a [great purpose](http://www.willpowered.co/learn/power-of-purpose) for getting out of bed. You need to know deep down that you’re getting up to accomplish something important.
 You’re getting up to [become the person you want to become](http://www.willpowered.co/learn/identity), not because of external pressures or because you think you should. **A deep, passionate, purpose for getting up early will give you that extra motivation to stay consistent and meet your goals. \[**[5](http://www.amazon.com/gp/product/1583335080/ref=as_li_tl?ie=UTF8&camp=211189&creative=373489&creativeASIN=1583335080&link_code=as3&tag=willpowered-20&linkId=CH5X7JD454ZFLKEX)\]
-## **conclusion**
+## **Conclusion**
 The morning is a special time of the day. It’s the one time of the day that you have complete control over. You have a fully stocked [reservoir of willpower](http://www.willpowered.co/learn/perfect-morning-routine), fewer external pressures, and more time to work toward your goals.
 Doing things that you will be happy to wake up to like having your favorite breakfast, playing a game on your phone, or watching your favorite TV show; will all help you avoid hitting the snooze.
 **Ultimately, though, the greatest motivation will come down to your purpose**. If you have a great, motivating reason to get a head start on the day, you will be far more likely to put your feet on the floor.

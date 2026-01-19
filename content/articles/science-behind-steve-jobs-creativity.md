@@ -45,7 +45,7 @@ _But do you need to be a cold, arrogant, egomaniac in order to develop Jobs' cre
 **The answer is no.** The core of Jobs' creativity comes from the ["Dimensional Mind](http://www.willpowered.co/learn/learning-mistake)".
 The dimensional mind is one that is open, one that is curious, one that simply learns and observes without any ideas of what is possible or impossible.
 This is the mindset Jobs used to see the world differently. And, like the teams he worked with at Apple, it is one that you can develop yourself.
-## **how to Develop Jobs' Unique Creativity**
+## **How to Develop Jobs' Unique Creativity**
 The dimensional mind is how we saw the world when we were "foolish" children, and developing it will help open your mind to the unlimited possibilities that Jobs saw throughout his life.
 Below are some proven ways to develop Jobs' creativity _without_ his arrogance:
 ### **1\. Practice Curiosity**

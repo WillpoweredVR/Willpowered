@@ -17,24 +17,24 @@ Afterward, these participants showed significantly less persistence to complete 
 He and many other researchers then confirmed this theory by replicating the experiment with different willpower challenges, types of “fuel,” and exercises. In total, over 100 studies were published over the next 18 years with similar results.
 However, a study was just released claiming **there is no connection between “fuel” and the strength of your willpower**. \[[1](https://static1.squarespace.com/static/550b09eae4b0147d03eda40d/t/56f6d84a0442629cf99e78a5/1459017803049/A-multi-lab-pre-registered-replication-of-the-ego-depletion-effect.pdf)\]
 Here's what was discovered, how scientists got it so wrong, and what it means for your willpower.
-## **the New Finding**
+## **The New Finding**
 In 2007, Evan Carter—a graduate student at the [University of Miami](http://welcome.miami.edu/)—tried to fuel the willpower of participants by using sugar-full lemonade (a popular willpower fuel used by researchers due to the quick spike of energy it provides to the brain).
 However, Carter could not find any difference in the willpower of people who drank the lemonade, versus those who drank lemonade with artificial sweetener (which wouldn’t provide any change in blood glucose or energy).
 **He repeated the experiment over and over again without any significant results.**
 So he and his advisor started questioning the idea of willpower fuel itself in 2010 by running a meta-analysis of all studies on ego-depletion. After conducting the study he and his advisor found a significant “publication bias."
-### **publication Bias**
+### **Publication Bias**
 In this case, a publication bias means that over the near 20 years of ego-depletion studies, the only ones that would make it into published journals are those which confirmed ego-depletion in their participants.
 Experiments like the one Carter conducted with lemonade that _could not_ confirm ego-depletion, wouldn’t make it into published journals because the experiment essentially "failed."
 So after analyzing _the whole body_ of studies, including those that didn’t get published, **he found little to no significant evidence of ego-depletion.** \[[2](http://www.psy.miami.edu/ehblab/PubBiasSelfControlEgo.pdf)\]
 This analysis led many other researchers in the field to challenge the whole concept of ego-depletion, or at least its relative impact on our willpower. This led to the latest study in which they tried replicating _all_ of the ego-depletion experiments with no significant results.
-### **how Researchers Made an 18-year Mistake**
+### **How Researchers Made an 18-year Mistake**
 If we accept that ego-depletion is at least relatively insignificant, then the question becomes, _how did over 100 studies get this wrong?_
 **Well, as a science, psychology is one of the least “black and white.”**
 Humans are complicated. There are so many aspects of our thinking and behavior that are left up to interpretation. This interpretation is so varied, in fact, that when one research team tried to replicate 100 psychological experiments, _only 40% of them were confirmed!_ \[[3](http://science.sciencemag.org/content/349/6251/aac4716)\]
 Let's take the poster-child of psychology, [Sigmund Freud](https://en.wikipedia.org/wiki/Sigmund_Freud), as an example of how interpretation can go awry. Freud had many crazy ideas by today’s standards. These include his belief that all males have an “[Oedipus complex](https://en.wikipedia.org/wiki/Oedipus_complex)” and that all females have “[penis envy](https://en.wikipedia.org/wiki/Penis_envy).”
 **Amazingly, people accepted many of these ideas at the time.** This was because Freud could always explain behavior of people through his ideological framework. He could look to past behavior of individuals and figure out a way to explain it through his ideas. \[[4](https://www.youtube.com/watch?v=-X8Xfl0JdTQ)\]
 In the same way, psychologists with the “ego-depletion” framework could always explain the behavior of their participants through that idea. This allowed them to claim ego-depletion was taking place in experiments where there was, perhaps, another phenomenon going on.
-## **what This All Means for You and Me**
+## **What This All Means for You and Me**
 _So what does this really mean? Is the entire Willpowered body of work completely ruined?_
 **Well, unfortunately, some of it is.**
 My interpretation of the science of willpower has always been a mixture of biological factors (which usually rely on the ego-depletion idea) and psychological factors (which don’t).
@@ -55,7 +55,7 @@ Today, after spending a full month thoroughly reviewing the new literature refut
 Biological factors like what you eat, [how much you sleep](http://www.willpowered.co/learn/sleep-affects-willpower), and how much mental energy you’re exerting on stressful tasks, still matter. Anyone who goes to work after a poor night of sleep, or tries to exercise after a stressful workday, knows this well.
 However, it seems that **these biological factors _are not as important_ to your willpower as we once thought they were.**
 The science today indicates that factors like [finding your purpose](http://www.willpowered.co/learn/schwarzenegger-willpower-vision), [having the proper perspective,](http://www.willpowered.co/learn/joe-desena-unbreakable-will) and [breaking your huge tasks into small, manageable chunks](http://www.willpowered.co/learn/chunking) are far more important to strengthening your willpower and reaching your goals. \[[5](http://www.sciencedirect.com/science/article/pii/S0022103112000509)\]
-## **the Consequences of Refusing to Be Wrong**
+## **The Consequences of Refusing to Be Wrong**
 When I learned about the fact that ego-depletion may have little to no affect on willpower, I immediately became emotional. I was angry, embarrassed, and was on the search for any information that would tell me, “it’s okay, these researchers are all quacks—your ideas are safe.”
 **I didn't want to confront the fact that I was wrong.**
 This reaction reminded me of a story that occurred in 1846 at Vienna General Hospital – _where 1 in 6 women were dying of childbed fever._ \[[6](http://www.amazon.com/gp/product/1412804671/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1412804671&linkCode=as2&tag=willpowered-20&linkId=KBRP3YJGVOLALIMR)\]

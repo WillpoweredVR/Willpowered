@@ -20,7 +20,7 @@ Especially when you can justify such thinking by saying, "I'm doing important wo
 But even in my most desperate moments, I avoided this mindset by adhering to Rule #6:
 > Principles before practicality.
 
-## **putting Principles Before Practicality**
+## **Putting Principles Before Practicality**
 Marketing is a beautiful thing — when done right.
 Thanks to this ad by Apple in 1997, when Steve Jobs returned to the company, I will be an Apple customer for as long as the spirit of this message is alive.
 It shows me that Apple is building its products for the type of people I want to be like — and even inspires me to approach my daily work with their mindset.
@@ -32,7 +32,7 @@ The practical pressures on Apple were enormous.
 Yet, instead of releasing an advertisement touting the concrete benefits of buying a Mac over a PC, they had the audacity to promote themselves as, "helping the next Einstein change the world."
 I started out in marketing, and I always tried to follow this method in all of my messaging.
 **Unfortunately, many of my colleagues have not done the same.**
-## **putting Practicality Before Principles**
+## **Putting Practicality Before Principles**
 Unfortunately, a lot of marketers today seriously ask themselves, _"how can we trick people's [primitive brain](http://www.willpowered.co/learn/short-term-and-long-term-motivation?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Principles), so they buy from us?"_
 You can find endless articles about how to..
 _Create false [scarcity](http://www.willpowered.co/learn/what-is-scarcity?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Principles)..._  
@@ -54,7 +54,7 @@ If you are a content creator, marketer, etc. who has done this in the past, I un
 > But this is a waste of your time, skills, and intelligence.
 
 And it will only end up hurting you and your subscribers in the end.
-## **how to Avoid the Practicality Trap**
+## **How to Avoid the Practicality Trap**
 Marketing is just one example, of course.
 In your life, I'm sure there is a practical solution you can think of that goes against your principles or what is best for the long term.
 The best way to avoid this trap is to remember what your real goal is.
@@ -79,7 +79,7 @@ _Discovering my true value to them..._
 **_And writing better content._**
 None of these things provided immediate results — but they are the reason I'm able to wake up every day and do work I'm passionate about for the rest of my life.
 All because I put [principles](http://www.willpowered.co/learn/principles-benefit-willpower?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Principles) before practicality.
-## **conclusion**
+## **Conclusion**
 Until the day I die, I will always have a short term, viable solution, that is practical at the moment, but goes against my principles.
 By recognizing this, I was able to continue making long-term, disciplined decisions; even when I faced moments of desperation.
 A practical, short-term, easy way out will always be there to tempt you. The next time you notice it, just remember...

@@ -15,14 +15,14 @@ I claim to have the answers about what it takes to will yourself through the har
 For those of you who don't know, [Kickstarter](https://www.kickstarter.com/projects/743524537/the-will-of-heroes/) is "all or nothing". If we don't reach the goal in time, we don't receive _any funding_ _to publish the book._
 With just over 9 days left, we are 2/3rds of the way to getting [The Will of Heroes](https://www.kickstarter.com/projects/743524537/the-will-of-heroes) published and share the unbelievable true stories of willpower with the world.
 So here is how I plan to use my willpower to finish these last 9 days strong and come out the other side victorious.
-## **1.** **remove as Many Trivial Decisions as Possible**
+## **1.** **Remove as Many Trivial Decisions as Possible**
 Making decisions is [one of the biggest wastes](http://www.willpowered.co/learn/decisions-waste-willpower) to your willpower there is. \[[1](http://www.psy.lu.se/upload/psykologi/pdf/strength_model1.pdf)\]
 As you mentally rehearse your options and their consequences, you waste valuable mental energy that can be used for more important things like creativity, problem-solving, and [focused productivity](http://www.willpowered.co/learn/nothing-alternative).
 **Over these final 9 days, I’m going to need all of the willpower I can get.**
 So I have all of my meals planned, the exact clothes that I will wear on each day picked out, and as many tasks that I can plan ahead on my calendar as possible - with the exact time and place so I know what to do and when.
 **Obviously there are still a lot of decisions that I cannot plan ahead of time.** I’m going to have to learn and adapt as I go through this. But any decisions that I can make ahead of time, have now been made.
 _That way I focus my willpower on executing my pre-loaded decisions._
-## **2.** **eating the Frog First**
+## **2.** **Eating the Frog First**
 Mark Twain once famously said:
 _“Eat a live frog first thing in the morning and nothing worse will happen to you the rest of the day.”_
 **Of course, he wasn’t actually advocating that we all eat live frogs in the morning.** His ["frog"](http://www.willpowered.co/learn/eat-the-frog-first) is that task on your to-do list that is so awful and disgusting that you want to procrastinate it more than anything else.
@@ -37,7 +37,7 @@ My frog is reaching out to people about [publishing the book](https://www.kickst
 **I hate doing it.** I’m a writer and researcher, _not a salesman!_
 But without being vulnerable and reaching out to people, I would never have gotten this far. So I need to do it.
 First thing in the morning, I will eat my frog, and will myself to reach out to people.
-## **3.** **make up for Lost Sleep With Other Willpower Fuel**
+## **3.** **Make up for Lost Sleep With Other Willpower Fuel**
 Quality sleep is one of the most important factors for long-term willpower health.
 Without sleep, your brain doesn’t create glucose ([willpower fuel](http://www.willpowered.co/learn/what-fuels-willpower)) as effectively, you cannot regulate emotions as easily, and you will get cravings for junk food much more frequently. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/19444258)\]
 **But these last 9 days are not meant to be sustainable.** They are my last push toward the finish line, and I’m going to spend as many hours as I can making sure that the project reaches its goal.
@@ -48,7 +48,7 @@ So I am going to make the most out of the hours that I can spend asleep by:
 2\. [Meditating](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower) an extra time per-day. \[[5](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000145)\]
 3\. Eating strictly [willpower-packed foods](http://www.willpowered.co/learn/best-foods-for-willpower). \[[6](http://www.uky.edu/~njdewa2/gailliotetal07JPSP.pdf)\]
 This probably won’t entirely make up for the lost hours of sleep, but I'm betting the extra time over these last days will be worth it.
-## **4.** **maintain the Proper Perspective**
+## **4.** **Maintain the Proper Perspective**
 **It is very easy to feel sorry for yourself during challenging times.**
 _Things don’t go the way you hoped._
 _You envy the success of others who seem luckier than you._
@@ -64,7 +64,7 @@ When I am worried about what others may think, I will remember [Temple Grandin](
 _Compared to that, is it really so bad to pick up a phone or send an email?_
 And when I begin to lose faith in raising enough money to get the book published, I will think about Joe DeSena. Who was told by 4 doctors that he would never be able to run again – **but worked relentlessly in rehab and has since run over 25 Ironman Triathlons!**
 _Compared to that, my challenge doesn't seem so unconquerable._
-## **conclusion**
+## **Conclusion**
 My plan was to continue writing about [the Heroes](https://www.kickstarter.com/projects/743524537/the-will-of-heroes) to share with you a glimpse of how incredible their stories are. **But throughout my research, I have always wondered one thing that I may never know about them...**
 It is fun for me to read about their stories, because I know it's a happy ending.
 _But_ _what were they thinking when they didn’t know the end of their story?_

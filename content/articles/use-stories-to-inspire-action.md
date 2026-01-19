@@ -39,11 +39,11 @@ I have thought about the hardships she faced...
 The obstacles she overcame...
 And, most importantly, the greatness she proved was possible.
 Her story has always been enough to inspire me to take action—even on the hardest days.
-## **how to Use Stories to Inspire Action**
+## **How to Use Stories to Inspire Action**
 If you’ve been following my work for a while, you know that I love to tell stories about how people used their willpower to achieve greatness (you may even be sick of hearing about J.K. Rowling at this point...)
 However, I’ve never explained how to apply stories to your daily challenges. Nor have I explained the science behind why they can be powerful motivators when you face those inevitable days of demotivation on the journey to your goals.
 So let's break down the proven reasons why J.K. Rowling's story inspired me to take action—even when all I wanted to do is procrastinate. **And how you can find that same drive for work through your inspirational stories.**
-### **1.** **shifting Your Perspective**
+### **1.** **Shifting Your Perspective**
 As I mentioned in my journal entry, my situation in January wasn’t nearly as hard as J.K. Rowling’s was when she was writing her first book.
 I’m not saying that my situation was better, necessarily. I understand why some of you might find my lifestyle lonely and boring, and would prefer her life as a parent. But, if nothing else, my situation while writing was certainly easier to handle.
 Despite this, my initial thoughts focused on feeling sorry for myself.
@@ -65,13 +65,13 @@ I have an amazing audience that supports my work!
 I can even play beach volleyball in January!
 These are all things I knew intellectually, but it wasn’t until I thought of Rowling’s story that I truly appreciated them. And that [gratitude also increased my willpower.](http://www.willpowered.co/learn/gratitude-increases-willpower)
 As fellow writer [Ben Austin](https://twitter.com/benaustinblog) wrote about in [this guest post](http://www.willpowered.co/learn/gratitude-increases-willpower), simply being grateful benefits your willpower in big ways.
-### **benefit 1: Gratitude Focuses Your Ras**
+### **Benefit 1: Gratitude Focuses Your Ras**
 The RAS ([reticular activating system](http://en.wikipedia.org/wiki/Reticular_activating_system)) is a bundle of nerves that is attached to your brainstem and acts as a filter for everything going in and out of your brain.
 When you focus your attention on the positive things in your life, your brain will filter out the bad and prevent your subconscious from overreacting to harmless “threats.” This allows you to create more willpower, retain your existing [willpower stores](http://www.willpowered.co/learn/what-fuels-willpower), and focus on the tasks that matter. \[6\]
-### **benefit 2: Prefrontal Cortex Activity Increases**
+### **Benefit 2: Prefrontal Cortex Activity Increases**
 The Prefrontal Cortex (PFC) is the part of your brain associated with willpower and [proble](http://www.willpowered.co/learn/value-of-mindfulness)[m solving](http://www.willpowered.co/learn/value-of-mindfulness). In other words, gratitude makes you tougher and [more resilient.](http://www.willpowered.co/learn/perseverance)
 **Resilient people activate their PFC and dominate**. Resistant people enable their fight-or-flight nervous system and get pushed around by life. \[[7](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3851848/)\]
-## **benefit 3: Expand Your Self-concept**
+## **Benefit 3: Expand Your Self-concept**
 According to psychologist Carl Rogers, gratitude expands your **Self-Concept,** which consists of 3 things:
 1. Self-image, or how you see yourself.
 2. Self-esteem, or how much you value yourself.
@@ -90,7 +90,7 @@ I cannot image what the world would look like today if instead, she made the rat
 How many others have faced similar struggles to Rowling, but **quit before they created their master work?**
 We will never know for sure, but the number is certainly much higher than those who followed Rowling's path and refused to give up.
 My own journey of sharing the science of willpower with the world has not been easy. It's been a bumpy road, full of many days where I've been tempted to quit. But Rowling’s story has given me endless inspiration to ignore that temptation, and **make progress every single day.**
-## **conclusion**
+## **Conclusion**
 Greatness doesn’t come from innate gifts, a brilliant idea, or even from a story itself. It comes from making a choice to embark on the journey and making progress every single day until you reach the destination.
 Unfortunately, our nature is to ignore the value of consistent progress. Instead, we choose to procrastinate when we hit the inevitable days of exhaustion and demotivation along the way.
 Taken alone, skipping one day won't do much harm. But procrastinating this one day sets the precedent to procrastinate again...and again.

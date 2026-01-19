@@ -18,7 +18,7 @@ After giving in to these indulgences, Stanley decides that his diet for the day 
 So bring on more fettuccine, more wine and, _what the hell,_ why not an extra-large helping of dessert!
 Virtue, he decides, can resume tomorrow. Tonight he is going to binge!
 This binge, of course, leads to an increase in weight, a loss in progress and ultimately a feeling of defeat as - once again - Stanley is unable to reach his weight-loss goals.
-## **the What-the-hell Effect**
+## **The What-the-hell Effect**
 If Stanley’s story sounds familiar, don’t worry. It happens to all of us. Whether it is giving up on our diets, giving up on our exercise program or giving up on any of our goals, when we start to slip, we start justifying going completely overboard.
 _But why?_
 To find out, researchers created a similar situation to Stanley’s to see why dieters would turn one slip into an all-out binge. \[[1](http://www.ncbi.nlm.nih.gov/pubmed/20691231)\]
@@ -36,7 +36,7 @@ This logic is obviously flawed. And it ruins the day-in-day-out efforts put fort
 _You tell yourself that you’re only going to have 1 drink, but if you take a 2nd, what the hell, why not have 3 or 4?_
 _You tell yourself that you’re going to the gym every morning, but if you skip it, what the hell, why not also help yourself to a slice of pizza at lunch too?_
 It doesn't matter what your goal is. If you break it for the day, you feel justified in breaking it _even more!_ Because if the day is ruined, then you may as well have fun in doing so.
-## **how to defeat the what-the-hell effect**
+## **How to defeat the what-the-hell effect**
 This logic has the potential to derail even the best-laid plans. In one afternoon, you have the power to ruin all of your progress. **So what can you do about it?**
 To try to avoid this trap, most people think that it will be best to [make themselves feel guilty.](http://www.willpowered.co/learn/science-behind-guilt) "After all, if I feel guilty, then I will be motivated to stop indulging and feeling even more guilty!"
 **But this is actually why we turn to the what-the-hell effect in the first place.**
@@ -50,7 +50,7 @@ Think about what you would tell your best friend if they were to make a mistake 
 Of course not!
 You would be there to support them. You would tell them to forgive themselves and understand that they are human and they are going to make mistakes. Then encourage them stay strong and stick to their diet from here on.
 The people who learn to forgive themselves take their indulgence as a lesson on the journey to achieving their goals. Just like a future basketball star is not going to make every shot on his way to the NBA, we’re not going to be a model of perfection on our way to achieving our goals.
-## **conclusion**
+## **Conclusion**
 Having a minor setback on the path to achieving your goals is natural. **We’re only human.** Our natural response is to get down on ourselves, which only leads to more setbacks as we say, _“what the hell, why not indulge even more?”_
 To prevent these major setbacks, **forgive yourself and learn from the failure.** Even Michael Jordan admitted to failing over and over again in his career. But he learned from those failures and used them to guide his future success. So do not let yourself go overboard. Learn from your mistakes and see your goals through to the finish!
 [![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1451845867738-D7CX8SGV6A6ZRGDZI9QR/image-asset.jpeg?format=original)](http://www.willpowered.co/courses/willpower?ref=bottom-button)

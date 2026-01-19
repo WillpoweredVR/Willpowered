@@ -57,7 +57,7 @@ Set SMARTS Goals allowed me to reach out and share with my best friend my decisi
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1521715980381-QFRBRZTC5MUH6BJN6KJM/Screenshot+%7C+SSG+Shareable.png?format=original)
 Just knowing that he will be there checking in on me has helped me find motivation when I need it the most.
 It can feel awkward and vulnerable to share your goals with others. But remember that just like you want what’s best for them, they want what’s best for you. So don’t be afraid to share your goals or take their help.
-## **conclusion**
+## **Conclusion**
 The simple decision to set a SMARTS Goal at the beginning of this year set in motion this dashboard:
 It shows where I am spending my time versus where I should be spending my time.
 A great example of how this helps is shown by the first 6 steps (our sales pipeline) because now I know what I need to prioritize to help Educo flourish.

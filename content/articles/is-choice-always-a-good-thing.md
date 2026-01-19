@@ -11,16 +11,16 @@ featuredImage: ""
 They are two men at the very top of their professions. One is the head of the one of the largest technology companies in the world and is personally valued at over $33 billion dollars. The other is the President of the United States of America. And they have one very unique thing in common – **they wear the exact same thing every day.** \[[1](http://hypebeast.com/2014/11/mark-zuckerberg-explains-why-he-wears-the-same-t-shirt-and-hoodie-every-day),[2](http://www.fastcompany.com/3026265/work-smart/always-wear-the-same-suit-obamas-presidential-productivity-secrets)\]
 Whatever your feelings are on Mark Zuckerberg or Barack Obama, you cannot deny their relative success or their work ethic. Each of these men is at the top of their respective fields and will likely enjoy success for many years to come.
 But why does Zuckerberg, who is worth billions of dollars, put on the exact same grey T-shirt and hoodie every day? And why does Barack Obama, who is as public of a figure as there is in America, wear the exact same suit?
-## **the Significance of Choices**
+## **The Significance of Choices**
 It’s a beautiful vision that many of us have had since we were children – having the perfect wedding. We get to choose the perfect destination, invite all of our family and friends, go on a honeymoon, and we get to choose all of our own presents!
 But talk to any soon to be married couple about this process, and you’ll hear a different story. All of these choices seem to take a toll on their psyche to a point where they just want to get the wedding over with.
 What was once a dream coming true has turned into a nightmare of planning and fighting with one another over who should make the final guest list, which plate of chicken they should serve, and making sure they don't leave anything off the gift registry. Eventually, most engaged couples simply default to saying “what do you recommend?” to the wedding planner - ending the torture of having to make any more choices.
-## **what Happens When We Choose**
+## **What Happens When We Choose**
 What is happening to these couples? They aren’t exerting themselves physically, they’re not doing anything that’s too intellectually difficult like math or physics. **So why do they get so exhausted?**
 In order to answer this question, researchers set up several experiments to see what happens in the brain when we make choices. Could it be that simply making a choice – even with something fun like choosing your wedding gifts – could [drain a person’s willpower](http://www.willpowered.co/learn/willpower-limited-resource) the same way working through a challenging task would?
 The answer is a clear and resounding, YES. Researchers found that with every choice we make, whether it’s choosing the movie we want to watch or choosing a university to attend, we expend our willpower. This is because we don’t see it as merely choosing to see [Guardians of the Galaxy](http://www.imdb.com/title/tt2015381/), we see it as “killing” all other movie choices.
 And before we “kill” all other movie choices, we want to be absolutely sure that we made the right decision. So we use valuable willpower pondering the positives and negatives of all choices in front of us. \[[3](http://www.apa.org/pubs/journals/releases/psp945883.pdf)\]
-## **do All Choices Drain Willpower Equally?**
+## **Do All Choices Drain Willpower Equally?**
 Of course, not all of our decisions drain our willpower to the same extent as others. In doing further testing of how willpower is depleted in people making choices, researchers found 3 major distinguishers of choice \[[3](http://www.apa.org/pubs/journals/releases/psp945883.pdf)\]:
 ### **“Fun” choices won't drain willpower - until a certain point**
 Some choices really are fun to make. Choosing what you’ll spend a gift card on, picking something from the dessert cart, etc. With choices like these, researchers found that participants didn’t drain any willpower until a certain point. Choosing dessert just for you is fun, but choosing 6 desserts to share with your entire party becomes a drain.
@@ -28,7 +28,7 @@ Some choices really are fun to make. Choosing what you’ll spend a gift card on
 Simply thinking about a choice will drain your willpower, but not as much as if you actually have to make it. You will use up willpower thinking about whether or not to fire someone, but it will take the most willpower to make the final decision to send them packing.
 ### **Choosing for others requires less willpower than choosing for ourselves**
 It also requires less willpower to make decisions for others. Since you probably will not have to live with the consequences, there is less emotional attachment to the decision and less second-guessing.
-## **reasons to Limit Your Choices**
+## **Reasons to Limit Your Choices**
 Many of us have grown up believing that having more options is always better. We believe that the more variety there is, the more likely that the “perfect choice” is going to be among them.
 Unfortunately, this process can be completely overwhelming. Because we have so many options, we feel more pressure to find the one that meets absolutely all of our criteria.
 The best example of this is in the online dating world. With thousands of profiles to browse through, you would think that people would have no problem finding someone to go on a date with. But because there are so many profiles, people will jump right past someone that they may be compatible with because they feel that there is still someone "better". This is why speed dating – where choices are limited to the size of the event – **leads to a 10 times higher chance** **of meeting someone to go on a date with**. \[[4](https://www.aeaweb.org/assa/2006/0106_0800_0502.pdf)\]
@@ -43,7 +43,7 @@ Using the same strategy as Zuckerberg and Obama, laying out the next day's cloth
 Research has shown that those who lay out their gym clothes the night before are more likely to make it there \[[6](http://www.everydayhealth.com/fitness-pictures/10-ways-to-get-motivated-for-your-morning-workout.aspx#07)\]. It's just one less choice you need to make on your way to your goal.
 ### **3\. Schedule your tasks and priorities ahead of time**
 In order to [maximize productivity,](http://www.willpowered.co/learn/increase-energy-focus-productivity) experts suggest that you have as much of your work planned ahead of time as possible \[[7](http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity-ebook/dp/B000WH7PKY/ref=sr_1_1?ie=UTF8&qid=1417695051&sr=8-1&keywords=getting+things+done)\]. If you can remove the choice of "what should I be working on right now?" You increase the willpower you will have to stay energized and focused on the task.
-## **conclusion**
+## **Conclusion**
 We all make many choices in our daily lives – what time to get out of bed, what to wear, what to eat, etc. Every one of these choices uses up valuable willpower that we can use for more productive activities. And the more options we have to choose from, the more willpower we expend.
 To avoid this, see if there are areas of your life that you can limit or eliminate choices. Some great examples are to plan your meals in advance, lay out your work or gym clothes the night before and schedule your tasks and priorities in advance. The more of these choices you can make beforehand, the more willpower you can use to eat healthy, exercise and be more productive.
 **Sources**

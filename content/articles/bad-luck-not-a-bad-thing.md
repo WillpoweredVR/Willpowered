@@ -27,7 +27,7 @@ As a teenager, the age difference in months no longer played as big of a role. N
 **He could skate faster, shoot harder, and defend better than everyone around him** – and now he was the same size as them too.
 Because Ray had the bad luck of growing up poor and being small, he was forced to strengthen other skills. This led him to playing on an entirely different level than everyone else around him.
 A level that would eventually lead to becoming arguably the best NHL defenseman of all time and a unanimous pick for the Hockey Hall of Fame.
-## **could Bad Luck Really Be Good Luck?**
+## **Could Bad Luck Really Be Good Luck?**
 We attribute so much of the success of others to whether or not they were lucky.
 In his popular book, _[Outliers](http://www.amazon.com/gp/product/0316017930/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0316017930&linkCode=as2&tag=willpowered-20&linkId=BLWN5QF2PGRW7QQT)__,_ [Malcolm Gladwell](https://en.wikipedia.org/wiki/Malcolm_Gladwell) pointed out that luck has a lot to do with many people's success. [\[2](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930/ref=sr_1_1?ie=UTF8&qid=1437245230&sr=8-1&keywords=outliers)\]
 Bill Gates likely would not have become the richest man in the world if he didn't have many lucky circumstances. He was born just as programming computers was becoming possible, to an upper-middle class family and was sent to one of the few high schools in the country who actually had a computer! **Lucky indeed.**
@@ -37,7 +37,7 @@ Yet, there is a different statistic that Gladwell failed to point out in Outlier
 That means that those “unlucky” kids born in the second half of the year actually have a greater chance of becoming one of the best players of all time than the "lucky" kids born in the first half of the year.
 Like Ray Bourque, these players needed to work extremely hard on their other skills to make up for their lack of size and speed in order to stay with the top-flight teams.
 Then when they inevitably grew to the same size as their peers, they were superior in all other aspects of the game. Giving them the upper hand on not just becoming a good hockey player, but a hall-of-fame caliber one.
-## **how to View Luck**
+## **How to View Luck**
 Bad luck does not guarantee good outcomes. And good luck does not guarantee good outcomes. Luck plays a role in your success but it is not the ultimate decider of your fate in life.
 What really matters is what you do with the luck that you get.
 After Mark Cuban got his first professional job as a salesman, his boss unjustly fired him after less than a full year. It was an unlucky time to be fired, as the job market in Dallas was horrendous at the time, and Mark had bills to pay. \[[3](http://www.amazon.com/gp/product/1626810915/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1626810915&linkCode=as2&tag=willpowered-20&linkId=5RAW5WIY6PMJZ3VY)\]
@@ -47,11 +47,11 @@ He was abused by the company he worked for and wasn’t even given worker’s co
 “I wanted to make Starbucks a company that my dad would be proud to work for.” \[[4](http://www.amazon.com/gp/product/0786883561/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0786883561&linkCode=as2&tag=willpowered-20&linkId=TKBQUNBCPZ2VCUOT)\]
 One of the key reasons for Starbucks’ wild success has been its treatment of entry-level employees – including offering them health insurance and stock in the company. His bad luck became a brilliant idea in the creation of one of the greatest companies on earth.
 Bad luck is not a good thing. But, if you react the right way to your bad luck, it can be.
-## **how Can You Turn Your Bad Luck Into Good Results?**
+## **How Can You Turn Your Bad Luck Into Good Results?**
 Outcomes are ultimately out your control. There is no way that Ray Bourque could have foreseen that his unlucky birthdate would lead to him creating a relentless work-ethic or superior skating and shooting skills.
 Nor could Mark Cuban or Howard Schultz have seen how their bad luck would end up helping them.
 However, just because you are not guaranteed to get results, does not mean you can’t begin to take steps in the right direction. Here are 2 key ways that you can make the most out of your bad luck:
-### **make No Excuses and Place No Blame**
+### **Make No Excuses and Place No Blame**
 > "Be relentless in pursuit of your goals, especially in the face of obstacles. Along the way, make no excuses and place no blame." - Ray Bourque
 
 **Most people use bad luck as an excuse.** The reason why they are not successful is because of their ill fortune in life. Ray Bourque could have easily taken this path. He could have blamed his poor upbringing and unfortunate birthdate for why he couldn't make the top flight team. But he didn't.
@@ -66,7 +66,7 @@ Also, before him, many defensemen didn't worry too much about their shooting abi
 Then once he made it to the NHL, his shot was one of the most powerful in the game - regardless of position.
 Others may have advantages in life that you simply do not. However, there are also advantages that you have that they may not.
 What are your advantages in life that you may be overlooking? How can you use your willpower to develop those advantages so that you can get on the same playing field?
-## **conclusion**
+## **Conclusion**
 Bad luck is not in itself a good thing, but it does not have to be a bad thing. Those who are unlucky have different opportunities than those who are lucky. If they are able to summon the willpower to overcome their bad luck, they almost always come out better than those who were lucky in the first place.
 In order to achieve good results from bad luck, you cannot make excuses or place blame. Rather, you must identify those areas that you have an advantage - no matter how slight - and pursue those advantages with rigor and excellence.
 If you are able to do that, you might just count yourself amongst those who society truly admires. Those people who came from humble beginnings and through their sheer power of will were able to create their own measure of greatness.

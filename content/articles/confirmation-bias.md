@@ -19,7 +19,7 @@ _So how do I decide?_
 Do I follow the lead of the successful people listed and disregard sleep?
 Or do I follow the clear scientific evidence and stick to my regular sleeping plan?
 **It all depends on which answer I want to be confirmed.**
-## **the Confirmation Bias**
+## **The Confirmation Bias**
 If I really want to stay up late working and disregard sleep, I will use the anecdotal evidence of Marissa Mayer, Leonardo da Vinci and Arnold Schwarzenegger to justify my decision to continue working.
 However, if I’m tired, if I’m [burned out](http://www.willpowered.co/learn/burnout) and I really do not want to continue working, then I will use the scientific evidence to justify my decision to go to sleep.
 **No matter what I’m feeling, I will naturally search for self-justifying information.** This is called the confirmation bias and it is one of the key reasons that you make bad decisions on the way to your goals. \[[4](http://www.amazon.com/Decisive-Make-Better-Choices-Life/dp/0307956393/ref=sr_1_1?ie=UTF8&qid=1421187081&sr=8-1&keywords=decisive&pebp=1421187088633&peasin=307956393)\]
@@ -28,14 +28,14 @@ Someone who wants to skip their workout will search for information on the benef
 Someone on a diet who wants to indulge in their favorite treat will begin to look up the benefits of a "cheat day".
 And a hiring manager who really likes a candidate after their first interview will probably start downplaying any flaws in their second interview.
 Although they may think that they’re gathering more information to make an informed decision, they are really just seeking to confirm their current bias.
-## **the Dangers of the Confirmation Bias**
+## **The Dangers of the Confirmation Bias**
 The problem with the confirmation bias is not that we are looking up incorrect information. It is a fact that rest and recovery is necessary in an exercise routine. It is a fact that Leonardo da Vinci only slept for 4 hours each day and that there is value in having a “cheat day”.
 The danger comes when we are only looking for this confirming information and completely ignoring the opposing view.
 So we do a google search “is it okay to have a cheat day?”
 Then skim through the first article and immediately start looking for the benefits. Then convince ourselves that the benefits are more applicable to our unique situation anyway. So we really should go ahead and have a cheat day.
 Now, although we _feel_ like we have done further research, all we have really done is simply look up confirming information of what we really want. We see only what we want to see and use it as justification for deviating from our plans.
 Then, eventually, we look up so much confirming information that we deviate from our goals entirely.
-## **how to Defeat the Confirmation Bias**
+## **How to Defeat the Confirmation Bias**
 It is not easy to defeat the confirmation bias. After all, we legitimately think that we're doing the proper research! But, of course, it can be done with a little willpower and self-awareness.
 In their book, [Decisive](http://www.amazon.com/Decisive-Make-Better-Choices-Life/dp/0307956393/ref=sr_1_1?ie=UTF8&qid=1421187081&sr=8-1&keywords=decisive&pebp=1421187088633&peasin=307956393), brothers Dan and Chip Heath write extensively on the subject of the confirmation bias and how you can overcome it. Here are 3 ways that you can overcome the confirmation bias and stay on track toward your goals:
 ### **1\. Consider the Opposite**
@@ -60,7 +60,7 @@ If you want to hire someone, isn't it worth it to have them do a smaller project
 If you’re looking to have a cheat day, isn’t it worth it to experience how much extra time in the gym you’ll have to spend to make up for those calories?
 The more you can experiment with the decision before fully jumping in, the less biased you will be.
 Despite the money and prestige, the day-to-day work of a doctor may not be worth it to you. And the extra time you have to spend in the gym may not be worth that cheat day.
-## **conclusion**
+## **Conclusion**
 Most of us are smart enough to seek out more information in order to make a well-informed decision. The problems occur when we aren’t really seeking information, we’re just seeking justification for what we really want.
 If you want to quit your job and follow your passion, you’ll find confirming stories of people who have done so with wild success. If you want to stay in the 9-5 world, you’ll find information that says that it is stupid to quit your secure job and take a chance.
 The next time you feel tempted to justify a decision that you really want, stop. Summon the willpower to consider the opposite, respect the objective data and experiment before you make a final decision. You will be much happier with your actual well-informed decision!

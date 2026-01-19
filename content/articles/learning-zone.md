@@ -13,7 +13,7 @@ Those were my thoughts as I looked at the course load at the beginning of my 4th
 I had received exemplary marks up until that point – especially in my 3rd level Spanish class. My 3rd level class was a breeze. The professor was lenient, the assignments were easy, and I aced the course. **So I had a lot of confidence going into that 4th level Spanish course.**
 However, I was met with the complete opposite situation. After the first class, we were no longer allowed to speak any English. We became loaded with hours of assignments, studying, and 300 word journal entries in Spanish every night. **This professor was determined to have us either leave the class fluent in Spanish, or leave the class as failures.**
 _I left as a failure._
-## **the Comfort Zone**
+## **The Comfort Zone**
 In my 3rd level Spanish class, I was in my comfort zone. I knew all of the vocabulary, I knew all of the grammar and I knew how to get all of the assignments and studying done with minimal effort.
 I was good at everything – _but I didn’t learn anything!_
 I was simply regurgitating information that I already knew and understood. **This made me feel great.** It made me feel confident and it made me feel like I had a great grasp of the language. I was in my comfort zone and I loved it!
@@ -22,7 +22,7 @@ _But there is no growth in the comfort zone!_
 **Doing the things that we already do well makes us feel great, but doesn’t help us become great.** We simply put in our time and go through the motions. We do not learn and we do not grow. \[[1](http://www.amazon.com/gp/product/B001HD8NZ8/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B001HD8NZ8&linkCode=as2&tag=willpowered-20&linkId=3I7AQRK2DEGJHIEH)\]
 This is why you see people work for decades in their job without becoming any better at it. This is why you see athletes squander their potential as they rest on their talent and don’t push themselves. And this is why we get stuck in a rut as we see the weeks and months go by without making any progress.
 Staying in our comfort zone may feel great today, but we will always regret it tomorrow.
-## **the Chaos Zone**
+## **The Chaos Zone**
 When I entered my 4th level Spanish class, I entered the chaos zone. I went from easy lessons, easy assignments and an easy professor; to confusing lessons, impossible assignments and a strict professor.
 I was lost and confused about everything – _so I still didn’t learn anything!_
 By the time I finally grasped one concept, the class was already four concepts ahead. This made me feel terrible. It made me lose hope in ever being able to learn Spanish. So I gave up.
@@ -30,17 +30,17 @@ By the time I finally grasped one concept, the class was already four concepts a
 _Even though we feel like we’re pushing ourselves, there is no growth in the chaos zone._ \[[1](http://www.amazon.com/gp/product/B001HD8NZ8/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B001HD8NZ8&linkCode=as2&tag=willpowered-20&linkId=3I7AQRK2DEGJHIEH)\]
 Because it is so far beyond our capabilities, we are doomed to fail. Worse still, we cannot even learn from our mistakes because we’re making so many of them!
 So we lose faith. We lose hope. And we give up on our goals.
-## **comfort or Chaos in the Pursuit of Goals**
+## **Comfort or Chaos in the Pursuit of Goals**
 Too often when we set goals, we create a plan in one of these two zones.
 **We want to graduate from University and get a good job, but we don’t want the classes to be too hard.** So we take the easiest classes, the easiest professors and enjoy our free time, rather than take a part-time internship. Then we graduate and wonder why it is so difficult to find work.
 **On the opposite end, we want to lose 10 pounds ASAP!** So we go from not exercising or watching what we eat; to going on a strict diet and exercising _every single day._ After just a few days of this, we burn ourselves out. Then we feel hopeless when we can’t seem to summon the willpower to make it to the gym or resist the side of fries.
 **Neither one of these paths will lead us to success, yet we go down them so often!** To truly get on the right path to your goals you need to find the middle ground – The Learning Zone.
-## **the Learning Zone**
+## **The Learning Zone**
 The learning zone is that place just beyond your current capabilities. It is when you are pushing yourself to learn and grow without going overboard and setting yourself up for failure.
 To the person who wants to graduate University, this means taking challenging courses and an internship; without working 40 hours/week and taking honors classes.
 To the person who wants to lose 10lbs, this means starting by [eating a healthy breakfast](http://www.willpowered.co/learn/what-to-eat-for-breakfast) and exercising just [one day per week.](http://www.willpowered.co/learn/create-exercising-habit) Then slowly creating the right habits and making consistent progress.
 **The learning zone is where true growth occurs.** This is where we venture outside of our comforts, do things we’re not great at yet, fail at them, but learn from our mistakes.
-## **how to Get Into the Learning Zone**
+## **How to Get Into the Learning Zone**
 Getting to the learning zone requires two types of willpower.
 **First, you need the willpower to push yourself beyond your comfort zone** – both when you are planning for your goal and when you are in the [process of achieving it.](http://www.willpowered.co/learn/get-through-the-middle)
 **Venturing outside of your comfort zone can be scary.** Even when you are just putting a plan to paper, you will naturally visualize what it will be like to go to the gym for the first time and feel out of place. You will think about [the boredom](http://www.willpowered.co/learn/embrace-boredom) from studying or completing assignments, so you will [procrastinate](http://www.willpowered.co/learn/why-we-procrastinate).
@@ -57,7 +57,7 @@ This reliance on future willpower is natural, but it is also dangerous.
 1.  [Understand that willpower is a limited resource](http://www.willpowered.co/learn/willpower-limited-resource)
 2.  [Have patience and know your limits](http://www.willpowered.co/learn/limits-of-willpower)
 3.  [Trust the process](http://www.willpowered.co/learn/trust-the-process)
-## **the Learning Zone "sweet Spot"**
+## **The Learning Zone "sweet Spot"**
 So what is the perfect place between the comfort zone and the chaos zone? How much should we be pushing ourselves and how much should we be holding back?
 According to Dan Coyle, author of [The Talent Code](http://www.amazon.com/gp/product/B0026OR1UK/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0026OR1UK&linkCode=as2&tag=willpowered-20&linkId=4F5OJOTIDZNOFRQ4), the "Sweet Spot" of the Learning Zone is when **you are successful 60%-80% of the time.** \[[2](http://www.amazon.com/gp/product/B0026OR1UK/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0026OR1UK&linkCode=as2&tag=willpowered-20&linkId=4F5OJOTIDZNOFRQ4)\]
 His direct quote:
@@ -65,7 +65,7 @@ His direct quote:
 
 **Unfortunately, the learning zone isn't exactly "pleasant".** Only succeeding 60-80% of the time can be frustrating. But if you allow yourself to become fully engaged in the process of learning, then it is very intrinsically motivating.
 More than we enjoy the ease of the comfort zone, **we enjoy the process of getting better.** It fills us with joy to see the "before and after photo" of our progress over time. We gain confidence in ourselves and find the motivation we need to take on the next the challenge.
-## **conclusion**
+## **Conclusion**
 Personal growth has been a natural human motivation since we first needed to become better hunters and gatherers in order to survive. Deep down, we want to learn, we want to grow and we want to improve our lives for the better.
 But growth isn't easy. We must be willing to push ourselves outside of our comfort zones while also holding ourselves back from trying to do too much. To get the best results, put yourself into a position where you are successful 60-80% of the time.
 Then immerse yourself in learning, have patience, and enjoy the process. It may be difficult, but it will definitely be worth it!

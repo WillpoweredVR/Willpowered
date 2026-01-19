@@ -23,14 +23,14 @@ However, she could not stand having another person hug her. She felt like she ha
 But when she saw the squeeze chute, she felt like it could give her the sensation she was looking for all of her life - without losing control. So she used the squeeze chute on herself and instantly felt a sense of calm come over her.
 All of her anxious feelings melted away and she finally felt safe.
 Immediately, she wanted to create a machine that would give her the same sensation she felt in the squeeze chute. So when she got back from Arizona, Temple got straight to work in her other great passion in life – building things. \[[2](http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/ref=sr_1_1?s=books&ie=UTF8&qid=1444996860&sr=1-1&keywords=mastery)\]
-## **the Incredible Power of Passion**
+## **The Incredible Power of Passion**
 She was so excited about this that she would spend hours researching machine design without any boredom. Because she was so [focused](http://www.willpowered.co/learn/nothing-alternative) on her goal of building the squeezing mechanism, **she overcame her weakness of understanding things in words!**
 Eventually, she built a makeshift squeeze chute that she would use to calm her anxiety through the [social awkwardness](http://www.willpowered.co/learn/social-events) of her adolescents.
 After completion, Temple’s curiosity only increased. She wanted to know why the machine impacted her so positively. So she became obsessed with how touch and pressure affect autistic children.
 Still an outcast, she had ample time alone for research and studying. Although reading through textbooks took her longer than normal children, it provided a great platform to practice learning through books.
 This helped her immensely as she progressed through high school.Temple wasn't a stellar student by any means, but with each passing year, her options grew.
 After years of passionate research and remarkable improvements in her learning ability, Temple went to University - eventually graduating with a Master's in animal science.
-## **using Her Strengths in Life**
+## **Using Her Strengths in Life**
 When she entered the working world, Temple became more than just an autism success story, **she became the greatest innovator in her field.**
 She started working on feedlots, which were horrible in the 1970s.
 Workers didn't take the animals’ thoughts or emotions into account at all. They were only focused on forcing the cattle to move along the assembly line - leading to group panic, injuries and even death.
@@ -67,7 +67,7 @@ _She embraced her passion for autism, researching everything she could about it.
 **However, she also realized that she needed to improve her weaknesses.**
 If she hadn't built a device to overcome her anxiety, she never would have made it through the bullying in high school. If she hadn't overcome her inability to learn in words, she never would have gone to college.
 **Embrace those things you can do better than everyone else, but also do not ignore the things you need to work on.** Sometimes it will not matter how good you are in one area if you are not good enough in another.
-### **3\. the Greatest Willpower Comes From Passion**
+### **3\. The Greatest Willpower Comes From Passion**
 Think about how painful and boring it would be for you to read a textbook about machine design for the next 6 hours. _Now think about how boring and painful it would be if you were autistic and couldn't process words properly!_
 Yet, Temple did that regularly.
 She was so passionate about animals, building things, and learning how pressure affected autistic children, that she could summon the willpower to endure that frustration for hours every single day.

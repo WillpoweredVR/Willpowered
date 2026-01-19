@@ -19,10 +19,10 @@ They felt like crap and were less likely to donate, help others, _and_...drumrol
 What’s the takeaway here?
 **Social inclusion and your willpower are related.** You deplete less of your ego when you feel like you’re part of the group and can exert more self-control than if you were ostracized.
 **Today I want to share 8 actionable tips that you can use to socialize like a pro** by taking advantage of what we know about the science of willpower.
-## **gear up for Social Events**
+## **Gear up for Social Events**
 It’s Friday night, you were invited to a birthday party but you find yourself thinking of good excuses because you’re “not in the mood” to go. You _know_ that you should be putting yourself out there and meeting new people...but you just don’t _feel_ like it.
 **So how do you beat the urge to stay plopped on the couch watching Netflix?** One of the most effective things you can do is gear up for your social event by reserving your willpower in the hours prior to the event.
-### **tip #1 Avoid Stressful People or Situations**
+### **Tip #1 Avoid Stressful People or Situations**
 Your willpower is like a gas tank. It gets depleted throughout the day when you’re using your [pre-frontal cortex](https://en.wikipedia.org/wiki/Prefrontal_cortex) to exert self-control and make decisions. \[[2](http://faculty.washington.edu/jdb/345/345%20Articles/Baumeister%20et%20al.%20\(1998\).pdf)\]
 In order to have as much willpower as possible for the social event, you have to be smart about how you’re depleting it.
 **If you know there’s a particular person who stresses you out, avoid them at all costs.**
@@ -30,19 +30,19 @@ It could be a coworker you don’t get along with, or a family member who you al
 In a fascinating study on emotion and willpower, two groups watched a sad movie.
 One group was asked to suppress their emotions while watching and the other group was simply told to watch it. The group who suppressed their emotions had less willpower after the movie, compared to the control group. [\[3](https://www.apa.org/helpcenter/willpower.pdf)\]
 So if you’re using your self-control to prevent yourself from losing your temper on a coworker, you may not have enough left to deal with meeting new people and feeling socially uncomfortable. You may feel “drained” faster than usual.
-### **tip #2 Meditate**
+### **Tip #2 Meditate**
 “Meditation training improves a wide range of willpower skills, including attention, focus, stress management, impulse control and self-awareness.”
 [Your brain is plastic](https://www.youtube.com/watch?v=C_Sv1pYcz-s) and different parts of it can change by practicing meditation. In a study from Massachusetts General Hospital, they saw changes in the brain from a two week meditation course that people were subjected to.
 Those who meditated felt less stress and had physical changes in their brains, including increased [gray matter](https://en.wikipedia.org/wiki/Grey_matter) (stronger cells) in the prefrontal cortex compared to subjects that did not meditate.
 So start developing the [habit of meditation](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower).
 You can also do it prior to a social event to regain some [focus](http://www.willpowered.co/develop-incredible-focus) and [self-awareness](http://www.willpowered.co/learn/no-progress-without-self-awareness). There are so many great resources for guided meditation including [Insight Timer](https://insighttimer.com/), [Headspace](http://www.headspace.com), and more.
 **Having some silence before a social event where there will be a lot of talking going on is a great way to be “calm before the storm.”**
-### **tip #3 Get Sleep**
+### **Tip #3 Get Sleep**
 [Sleep deprivation greatly affects your prefrontal cortex](http://www.willpowered.co/learn/sleep-affects-willpower), an important part of your brain when it comes to willpower because it’s the part where self-control and decision-making are taking place.
 In order to be at peak performance make sure you get a decent night’s rest of at least 6 hours of sleep. If that’s difficult, you can take a short nap before the event.
 [This study](http://www.journalsleep.org/ViewAbstract.aspx?pid=28574) showed that a 10-minute nap is the most effective period of time for napping, they learned that it produced immediate improvements when it comes to things like feelings of sleepiness, fatigue and cognitive performance. \[[5](http://www.journalsleep.org/ViewAbstract.aspx?pid=28574)\]
 **Simply resting and being in silence for 10 minutes is usually enough time to shut off distractions and enjoy the silence.**
-### **the Power of Listening**
+### **The Power of Listening**
 Listening is one of the most important and underrated virtues of social skills. Did you know that [about 40%](http://www.wsj.com/articles/SB10001424052702304451104577390392329291890) of everyday speech is us talking about ourselves and expressing how we feel or think?
 **That’s why listening is the easiest way to make someone feel good and come across as charismatic and attentive.**
 But it’s a lot easier said than done. Do you ever feel the urge to jump in while someone is speaking to share a similar story (that’s probably even funnier than theirs) or correct the way someone mispronounced that tiny, little known European city?
@@ -56,13 +56,13 @@ So the next time you feel like interrupting someone mid-sentence, remember how m
 \- Don’t interrupt
 \- Don’t correct people (unless they’re saying something totally inappropriate, use your best judgement)
 \- Stay present and actively listening during the conversation
-### **tip #4 Start Taking Tabs**
+### **Tip #4 Start Taking Tabs**
 An effective way to become more conscious about your listening skills is to start taking tabs on yourself during conversations.
 If you’re like most people, you probably haven’t paid much attention to how often you interrupt others or aren't actively listening.
 **Make it a point to be aware of how often your mind is drifting or how many times you interject while someone else is talking...you may be surprised!**
 If that’s too much for you to handle during a conversation, you can ask your friends for honest feedback. Tell them you’re working on improving your social skills and you’d appreciate their feedback on how well you're actively listening.
 **If it’s something you need to work on, begin building listening habits.**
-### **tip #5 Create the Listening Habit**
+### **Tip #5 Create the Listening Habit**
 What’s the best way to build your listening willpower? You can [build it into a habit](http://www.willpowered.co/learn/keystone-habit). One of my favorite books is _[The Power of Habit](http://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X/ref=sr_1_1?ie=UTF8&qid=1442774350&sr=8-1&keywords=the+power+of+habit)_ by Charles Duhigg, he talks about the habit loop which consists of the cue, routine, and reward. \[[8](http://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X/ref=sr_1_1?ie=UTF8&qid=1442774350&sr=8-1&keywords=the+power+of+habit)\]
 **The habit loop is an effective way to transform or create habits so that you don’t have to use up your willpower. Your habits can be really helpful in social contexts where you may feel anxious or nervous.**
 **Cue:** The cue is the “trigger” that causes you to do something. When you wake up in the morning and brush your teeth, the trigger is time. It starts the automatic behavior that you want.
@@ -74,7 +74,7 @@ _What are you passionate about?_
 _How do you know the host of the event?_
 **Reward**: The reward is what you get when the routine is done. The feeling of a clean mouth when brushing your teeth.
 Or in this case, the pride that you feel when you let the other person speak first and immerse yourself in the conversation.
-### **tip #6 Staying Present**
+### **Tip #6 Staying Present**
 Another important factor of listening is to [stay present](http://www.willpowered.co/learn/present-minded) during the conversation.
 Do you ever find yourself zoning out when someone is speaking? You may be thinking about that project at work or what you’re going to have for lunch while they’re talking which means you aren’t attentively listening to the other person.
 **In order to be engaged in a conversation with someone, you can build presence into a habit as well.**
@@ -84,24 +84,24 @@ Here’s an example.
 Another alternative routine is to take a few deep breaths and center yourself to make sure you’re present.
 **Reward:** The reward in this case is most likely that the other person will perceive you as charismatic as you’re giving them your undivided attention.
 Practicing these habits will improve your listening willpower, [since willpower and self-regulation are muscles](http://www.willpowered.co/learn/willpower-is-a-muscle) that can be exercised and strengthened get to working on them now!
-## **replenish Your Social Willpower**
+## **Replenish Your Social Willpower**
 Many of my students describe socializing as “draining”.
 They feel that there’s so much energy to expend when interacting with new people. It’s true, putting yourself out there and meeting people can be tolling, but don’t be afraid to take time out to replenish your social willpower.
 **After having multiple positive interactions, your willpower gets depleted.**
 You’ve probably had to exert some self-control and also decisions like if you should close the conversation or interject. So here are some actionable ways to take a time out and refresh.
-### **tip #7 Excuse Yourself**
+### **Tip #7 Excuse Yourself**
 If you feel yourself losing energy or patience, don't be afraid to excuse yourself. **Here are some word-for-word scripts you can use:**
 _I’m really enjoying our conversation, but I have to run \[to the bathroom, take a call, get some air\] is it cool if we pick up this conversation in a few minutes?_
 _I really like talking with you, but I need to take a quick breather outside. Can I grab your contact information so we can stay in touch? I’d love to continue our conversation later_
 You don’t have to make up intricate lies or excuses. **Simply tell them you’re enjoying the conversation but you want to chat with a few other folks, run to the bathroom or do you whatever you want to do.**
 If you want to stay in touch with the person, exchange contact information before leaving the conversation. If you don’t want to stay in touch with them, tell them you’re leaving or maybe you’ll see them around. Don’t overthink it. Honesty is usually the best policy, as long as it’s delivered in a friendly manner.
 Use your time out to walk around the block, get some air and refresh. You may also want to grab a small snack since [research shows that glucose](http://carlo-hamalainen.net/stuff/Gailliot%20Baumeister%20-%20The%20physiology%20of%20willpower%3A%20linking%20blood%20glucose%20to%20self-control.pdf) gets depleted as your willpower does. By getting a bit of sugar in your body, you can replenish some willpower and get a boost of energy.
-### **tip #8 Power Poses**
+### **Tip #8 Power Poses**
 While you’re taking your time out there’s another awesome tip you can use called **Power Posing**.
 It was developed by leading Harvard social psychologist Amy Cuddy. She had subjects pose in [high and low power poses](http://www.willpowered.co/learn/body-language-affects-willpower) and then took their saliva samples to figure out what was going on in their body. \[[10](http://dash.harvard.edu/bitstream/handle/1/9547823/13-027.pdf?sequence=1)\]
 The high power-posers who stood like Superman or took up space by propping their feet up on a table had decreased cortisol (chemical associated with stress) levels and increased testosterone levels, compared to the low power posers.
 **So the next time you want a quick boost of confidence, run to a bathroom stall and pose like Superman for just two minutes!**
-## **conclusion & Free Ebook**
+## **Conclusion & Free Ebook**
 Whether you realize it or not, your social skills and willpower are closely related. Improving your willpower can make you a better communicator. Before social events make sure you reserve your willpower and gear up accordingly.
 When you’re speaking with people, keep in mind that listening is the easiest and most effective way to get people to like you. Finally, if you feel socially drained don’t be afraid to take a timeout and replenish your willpower and confidence.
 \[caption id="" align="alignnone" width="100"\]![     Katrina ](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1442775860944-B3NTWJAZHNWM96X4W4F0/image-asset.jpeg?format=original) Katrina \[/caption\]

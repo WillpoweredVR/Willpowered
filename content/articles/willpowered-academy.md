@@ -21,7 +21,7 @@ I had been studying and implementing the [science of willpower](http://www.willp
 Then an idea popped into my head:
 “_What if I could create a place where people could learn about and actually strengthen their willpower without having to go through the years of research and experimentation that I have?”_
 I wanted to create a [Willpower Academy](http://academy.willpowered.co/)**.**
-## **a Long Journey**
+## **A Long Journey**
 A lot has happened since that day.
 I have spent 2 more years researching and experimenting with concepts within the science of willpower.
 I started [teaching](http://www.willpowered.co/speaking) the science of willpower in person to as many people as I possibly could. Doing speeches and teaching classes.
@@ -33,7 +33,7 @@ Today I am launching [Willpowered Academy](http://academy.willpowered.co/). An o
 It will include books, training, classes and resources from some of the top industry experts.
 We are still in the beginning stages, but soon we will cover all of the major categories of willpower - exercise, productivity, dieting, studying, sticking to a budget and, of course, procrastination.
 **Whatever you use your willpower for, we will create resources for you to strengthen it.**
-## **conclusion**
+## **Conclusion**
 Creating a Willpower Academy has been my dream since first looking upon that empty gym in 2013. This is just the beginning, but today marks a big "[small win](http://www.willpowered.co/learn/small-wins-and-systems)" in helping that dream come to life.
 I firmly believe that your future is created by what you decide to do today. And I believe that **what you do today is determined by whether or not you have the willpower to do what is right.**
 With the launch of Willpowered Academy, we are one step closer to strengthening the willpower of the world - one person at a time.

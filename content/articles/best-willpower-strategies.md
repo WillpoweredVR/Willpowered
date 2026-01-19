@@ -18,7 +18,7 @@ _Face…meet palm._
 I didn't share much because I believed you would be more interested in reading about people like [J.K. Rowling](http://www.willpowered.co/learn/jk-rowling-rags-to-riches), [Warren Buffett,](http://www.willpowered.co/learn/warren-buffet-willpower-formula) or [Kobe Bryant.](http://www.willpowered.co/learn/will-of-kobe-bryant) Writers, entrepreneurs, and athletes who have achieved success–not ones like me who are still struggling to reach it.
 But with hundreds of questions, and 5 years worth of data to answer them, I'm finally starting a series of posts where I write exclusively about my personal experiments, my best strategies, and how I apply them in writing, entrepreneurship, and daily-life.
 As I continue to write, I will get more detailed, but I will start with the most successful high-level willpower strategies that I have implemented thus far.
-## **1.** **a Great Purpose**
+## **1.** **A Great Purpose**
 I’ve been an entrepreneur since graduating from college.
 Before discovering the science of willpower, I was a part several startups–including one I cofounded with a brilliant team, and all the "right pieces" we needed to be one of the startups to actually make it.
 Things started off great. We were learning, growing, and even winning start up competitions. However, after about 2.5 years, we were running dangerously low on cash…_it was do or die time._
@@ -31,7 +31,7 @@ So I pushed my mind, I pushed my body, and I pushed I [my comfort zone](http://w
 The power of my purpose was the difference between using a lot of willpower, and discovering a whole new level of willpower that I didn’t even know I was capable of.
 Your purpose informs [your perspective](http://www.willpowered.co/learn/frame-of-reference). To me, it wasn’t that hard of a decision to dedicate myself 24/7 to saving Willpowered, because it was worth it. It would require a whole lot more willpower for me to work a 9-5 job that didn’t leave me fulfilled.
 It is not what you are doing that drains your willpower, it is _why_ you are doing it. \[1\]
-## **2.** **find Your “frog”...and Eat it First Thing**
+## **2.** **Find Your “frog”...and Eat it First Thing**
 By far the best strategy that I’ve used to progress as a writer is dedicating myself to writing a set number of words every day.
 When I began my journey with Willpowered, I was terrible. And I realized that in order to make it, I was going to [have to improve—a lot](http://www.willpowered.co/learn/talent-is-overrated). So when I began, I dedicated myself to writing 1000 words every day.
 This forced me to improve my writing skills, while also building an audience who could rely on my consistency. My daily traffic numbers slowly but surely started to grow, and I began to learn what topics people actually wanted to read about.
@@ -43,7 +43,7 @@ These are things that you want to procrastinate more than anything, but if you c
 That’s why I committed to writing [first thing in the morning](http://www.willpowered.co/learn/perfect-morning-routine).
 I learned early on that the only way I was going to get it done is if I got it done right away. If I ever put it off until later in the day, I found I had no ideas, no motivation, and no willpower to sit down and write.
 So find ONE practice that will ensure that you make progress every day–and commit to doing it first thing in the morning.
-## **3.** **write Terrible First Drafts**
+## **3.** **Write Terrible First Drafts**
 One of the biggest reasons [why we procrastinate](http://www.willpowered.co/learn/why-we-procrastinate) is because it doesn’t _feel_ like the right time. This rings especially true for struggling writers. It can feel like we’re not at our “creative best,” so we wait for a time for inspiration to strike. \[[3](http://studiemetro.au.dk/fileadmin/www.studiemetro.au.dk/Procrastination_2.pdf)\]
 I felt this every time I sat down blankly staring at that dreaded blink...blink…blink of the cursor.
 But then I read _[On Writing Well](http://amzn.to/1QVUfdo)_ by [William Zinsser](http://www.amazon.com/William-Zinsser/e/B000AQ1LN4/ref=dp_byline_cont_book_1) (a must read if you want to become a writer) and realized my huge advantage—I'm the only one who sees my first draft!
@@ -69,7 +69,7 @@ People are capable of incredible things when they have to sink or swim. Like in 
 Entrepreneurs inevitably make mistakes. That's part of the process. Just like falling is a part of learning how to walk. By starting before I was ready, those mistakes have made a bigger impact–both financially and personally.
 Leaving yourself no retreat is not fun. It’s frustrating, painful, and honestly disheartening to consistently push your comfort zone and open yourself up for failure. Being in that position is not for everybody.
 So when leaving no retreat, whether you're pursuing dreams, or running 5 miles away from home, you have to ask yourself if the prize is worth the pain.
-## **5.** **learning How to Handle Failure**
+## **5.** **Learning How to Handle Failure**
 Now let's talk about some of those mistakes I've made with Willpowered.
 _I've written articles that have made people furious..._
 _I've fallen short on some promises that I wasn't able to keep..._
@@ -95,7 +95,7 @@ This, of course, makes little sense. If there is a bigger issue, then I should w
 There's no silver bullet solution to this problem. Training my [mind through meditation](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower), taking a moment for self-awareness, and focusing on the objective consequences, have all helped me handle failure more effectively.
 However, [learning how to handle failure](http://www.willpowered.co/learn/let-your-kids-fail) is like learning how to overcome [a fear](http://www.willpowered.co/learn/fear-kills-willpower) of public speaking–you can't get it from a textbook (and surely not from a blog post). The only way you learn is to leave your comfort zone, experience failure, and realize it's not the end of the world. \[[7](http://www.tandfonline.com/doi/abs/10.1080/0729436930120105)\]
 I've failed a lot, and I'll fail again (sorry in advance). But failing is a part of learning how to succeed, just like falling is a part of learning how to walk.
-## **conclusion**
+## **Conclusion**
 These are my best high-level willpower strategies. This is a very subjective list and I'm only going off my experience.
 My journey is full of risk, and these are the strategies that help me handle that risk. There may be other strategies that work better for your journey, your priorities, and the destination you want to get to.
 So I'd love to know what willpower strategies are at the top of your list? Did any of mine make the cut? Comment below and let me know!

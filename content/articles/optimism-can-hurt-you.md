@@ -40,7 +40,7 @@ They probably felt like failures with every planned workout missed – leading t
 The worst part is that you can clearly see that the 20+ hours of exercise were not necessary. Had they planned on even doing 5 hours of exercise over the two-week period it would have been a big improvement over nothing!
 **Yet, they didn't see it that way. They were too optimistic and they set themselves up for failure.**
 No matter what your goal, you will have a natural desire to overestimate your ability to accomplish it. You will look at the result you want, the free time you have, and you will genuinely believe that "this time" you will summon the willpower to do it.
-## **how to Keep Your Optimism in Check**
+## **How to Keep Your Optimism in Check**
 Unfortunately, you can't just keep your optimism in check by telling yourself to "be realistic".
 In a similar exercise planning study, researchers found that participants who were told to "be realistic" actually planned to spend _more_ time in the gym than those who weren't given any message! \[[4](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters-ebook/dp/B005ERIRZE/ref=sr_1_1?s=books&ie=UTF8&qid=1415642918&sr=1-1&keywords=the+willpower+instinct)\]
 **So what can you do to keep your optimism in check and _actually_ be realistic?**

@@ -20,7 +20,7 @@ _Will people indulge in less junk food if they forgive themselves?_
 **Most people, including me, will find that question absurd.**
 _If people don’t feel guilty, then what is stopping them from eating ALL of the doughnuts and candy?_
 _How will they hold themselves back if they don’t feel bad about giving up on their diets?_
-## **the Experiment**
+## **The Experiment**
 To find the answer, the researchers separated the dieters into two groups:
 1.  A “feel guilty” group
 2.  A self-compassionate group
@@ -39,7 +39,7 @@ Then, for the second study, the researchers gave both groups three large bowls o
 -   Skittles
 -   Peppermint Patties
 They asked each group to sample some candy from each bowl and rate it. They were encouraged to eat as many candies as they’d like to achieve a “definite rating."
-## **the Results**
+## **The Results**
 After each group of women had eaten the candy, the researchers weighed the bowls to measure the difference.
 Here are their averages:
 Self-compassion group — ate 28 grams of candy
@@ -48,7 +48,7 @@ Self-compassion group — ate 28 grams of candy
 
 Since then, researchers have repeated similar experiments with consistent results.
 _Feeling guilty always leads to letting loose._
-## **why Feeling Guilty Doesn’t Work**
+## **Why Feeling Guilty Doesn’t Work**
 Now, you may be thinking:
 > "Okay, maybe this works for others, but I know that I need to feel guilty! Otherwise, I won't learn my lesson!"
 
@@ -59,7 +59,7 @@ By feeling guilty, the dieters were unknowingly fueling it. \[[5](https://www.an
 However, when the other group received a supportive and rational message that _everyone indulges sometimes_ they could see their situation with greater clarity. It wasn't the end of the world.
 Their mental activity stimulated the rational, "Modern Brain" — which is responsible for self-control and discipline.
 By seeing a guilty situation objectively and forgiving yourself, the situation remains under your control. \[[2](https://www.annualreviews.org/doi/abs/10.1146/annurev.anthro.32.061002.093158)\]
-## **alternatives to Feeling Guilty**
+## **Alternatives to Feeling Guilty**
 Many of us have become so used to feeling guilty when we slip that thinking about an alternative seems strange.
 So I laid out three scientifically proven strategies that you can use to rebound from a setback and stick with your goals:
 ### **1\. What Would You Tell Your Best Friend?**
@@ -100,7 +100,7 @@ Additionally, seeing myself through both lenses helped me overcome my insecurity
 This leads to a horrible downward spiral as we try to cover up our negative traits, and talk only about our successes. This makes us feel even more guilty about failure when we inevitably hit bumps along the road.
 Everyone falls. Everyone hurts. **Not everyone gets back up.**
 Those that do, learn that falling down isn't the opposite of success — it's a part of success.
-## **conclusion**
+## **Conclusion**
 I realize this is all easier said than done.
 Our brains are always wary of how others may judge our success and failures. That judgment was once the difference between the safety and security of the tribe, and facing the wild alone.
 Thus, we all have an internal judge who makes us feel guilty whenever we don't live up to its standards of perfection.

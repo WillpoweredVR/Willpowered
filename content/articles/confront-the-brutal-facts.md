@@ -14,7 +14,7 @@ Not because I hated doing my homework — because they were a reminder that I _w
 **I've always been a dreamer.** Thinking big, taking risks, and fear of the unknown have never been a problem for me.
 My problem is getting my ability to keep up with my aspirations — and admitting the hard facts along the way.
 Nowhere was this more apparent than when I moved to the US at 14.
-## **ignoring the Brutal Facts**
+## **Ignoring the Brutal Facts**
 I arrived in Omaha, Nebraska, at the agree of 14 with a dream of playing in the NFL. Like usual, nobody understood why I was doing it.
 I was merely average on my Canadian team where the caliber of players doesn't even come close to America. On paper, I didn't have a hope of even getting playing time — let alone going pro.
 To me, however, the choice was obvious — I would never make it to the NFL playing in Canada. So if I wanted to try, this was my only shot. Thus, I arrived with nothing but hopes and dreams...
@@ -24,7 +24,7 @@ I was on junior varsity. But I didn't start, I wasn't the backup, I was the back
 My role on the team was to be a tackling dummy for the varsity team.
 They needed players to practice against without worrying about injuring them. For the next two years, I was their guy.
 So much for my dreams of the NFL...
-## **decision**
+## **Decision**
 At the end of the season, I had a tough decision.
 _Is it worth it to play again next year?_
 On paper, the decision didn't seem too hard:
@@ -39,7 +39,7 @@ Over the next year...
 3.  Our underdog team upset the state and won the championship
 4.  And I learned the fundamental principle at the base of my philosophy toward life since
 ### _"Confront the Brutal Facts, Yet Never Lose Faith."_
-## **confront the Brutal Facts**
+## **Confront the Brutal Facts**
 This was not an easy principle for me to grasp.
 Throughout high school, my denial of any facts that didn't match with my dreams led me to become a compulsive liar.
 I lied to my parents... I lied to my friends... But mostly, I lied to myself.
@@ -112,7 +112,7 @@ Today, I feel the same about the truth.
 If I only gave you the "facts" that made me look smart and successful, then I would be quitting on the value that allows us to trust each other and work together to overcome the real problems ahead.
 > It's uncomfortable being vulnerable, but it's miserable being dishonest.
 
-## **conclusion**
+## **Conclusion**
 _"You have to be the change you want to see in the world." — Gandhi_
 I firmly believe in Gandhi's words — because they're true.
 Genuine change doesn't start with politicians, it doesn't start with inspirational speeches, it starts with a woman refusing to give into an injustice by giving up her seat on a bus.

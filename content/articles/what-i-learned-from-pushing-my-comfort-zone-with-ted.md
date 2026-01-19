@@ -16,7 +16,7 @@ It's complicated, it's challenging, and it can result in hard, cold, embarrassin
 Thus, life asks you a tough question – _comfort today? Or growth tomorrow?_
 In the moment, the appeal of comfort paralyzes us, and we default to inaction.
 To overcome this tendency in my own life, I started using [The Growth Rings](https://educocommunity.com/p/the-growth-rings/?product_id=417181&coupon_code=TRIAL&utm_medium=Referral&utm_source=Educo&utm_campaign=Clicked+the-growth-rings) program we developed with [Bill Eckstrom](https://educocommunity.com/blog/1344409/bill-eckstrom-the-growth-rings).
-## **setting Goals Outside of My Comfort Zone**
+## **Setting Goals Outside of My Comfort Zone**
 The Growth Rings program helps you identify a goal outside of your comfort zone, specify why it's important to reach it, and create a plan to conquer your fears.  
 The latest goal I set with the program was to create an affiliate partnership with TED.
 ![](https://www.filepicker.io/api/file/TJAFgbWLRtS0b4PBcyds)
@@ -55,7 +55,7 @@ To make the uncomfortable thing even more concrete, I specified the worst case s
 ![](https://www.filepicker.io/api/file/Uo8r71tBQAyXOg8kT6OP)
 This helped me see that the worst thing that happened is that I made a bad impression or annoyed them. Not ideal, but also not the end of the world.
 * * *
-### 5\. What actions can you take to prevent that from happening?  
+### 5\. What actions can you take to prevent that from happening?
 With the worst-case clear in my mind, I could start planning actions that would prevent the worst case from happening.
 ![](https://www.filepicker.io/api/file/taeJCpBqSWiPZeKO8eKV)
 This included simple steps like researching who I should reach out to, learning how their partnerships work, and crafting a clear message to them. Once I set that plan, my mind was immediately less afraid of reaching out.
@@ -65,7 +65,7 @@ This is perhaps the most important question posed by The Growth Rings program. M
 ![](https://www.filepicker.io/api/file/MPI45PULQ6K3sOSJeI1P)
 By remembering the fact that partnerships don’t happen overnight, they grow over time, I knew that every day I put off building that relationship was costing me. I knew it was time to act _now._
 * * *
-## **results**
+## **Results**
 What happened? None of my fears were realized.
 I reached out to them, got a meeting later that week, and I am currently waiting for TED to get back to me with the terms of their agreement.
 It may not work out, or it may not end up being the ideal partnership I envisioned, **but I never expected success.**

@@ -40,7 +40,7 @@ When you don't get enough sleep, your willpower takes the biggest hit. When you 
 Then your brain will recognize the fact that it is not getting enough glucose, and immediately start to crave sugary foods and caffeine to replenish its supply. However, because your brain cells are not absorbing glucose as efficiently as they should be, not only will you give in to eating junk, you will **_eat much more than you need_**_._
 Your brain will continue to crave junk food until it gets as much glucose as it can out of your bloodstream – regardless of how many calories that may be.
 Luckily, there are [scientifically proven tactics](https://sleepinvestor.com/power-nap/) that will help you get a better night’s sleep even without adding more hours:
-### **1\. a Completely Dark Room**
+### **1\. A Completely Dark Room**
 Most of us underestimate the affect that lights in our room have on our sleep. When our room is completely dark, it helps our brain shut down and sleep more efficiently. This helps us get more rest out of the hours we lay in bed; helping to restore our willpower. \[[6](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000145)\]
 ### **2\. Nap**
 Other research suggests that it is the amount of consecutive hours you spend awake that matters the most. So breaking up the day with a nap can have significant benefits. It is better to sleep for 7 hours with a 1-hour nap than it is to sleep for 8 consecutive hours without taking that break during the day. \[[7](http://www.webmd.com/balance/features/the-secret-and-surprising-power-of-naps)\]

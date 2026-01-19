@@ -18,7 +18,7 @@ I seriously cannot thank all of you enough. There aren't many campaigns that com
 I know. You've heard that before. But today I want to show you _why_ it really did look like we didn't have a shot. Why it seemed like we had run out of options and why it was pretty unlikely we'd be able to turn everything around.
 **And why I'm glad I had to go through that struggle.**
 Here is an overview of the project's journey. Showing what I planned, what I anticipated, and what I learned at each stage to show why it's a good thing that it _wasn't_ popular at the beginning.
-## **day 1-5**
+## **Day 1-5**
 **What I thought:** I have the perfect plan of action. I have a book I've worked hard for, a popular site with tens of thousands of subscribers, and - of course - the willpower! _How can I lose?_
 **My plan:** Directly promote _[The Will of Heroes](https://www.kickstarter.com/projects/743524537/the-will-of-heroes)_ to close friends, subscribers, blogs/publications that care about one of the Heroes, and people who browse Kickstarter.
 **Anticipated result:** $4,000, connections to the press, and for the book to start "going viral".
@@ -36,19 +36,19 @@ Here is an overview of the project's journey. Showing what I planned, what I ant
 **Anticipated result:** $3,000 - I started managing my expectations a little at this point – and an opportunity to show the value of the online courses.
 **Actual result:** $2815, 60 new backers, and the ability to expose more people to the science of willpower.
 ### Total Raised: $5825 (43%)
-## **day 16-20**
+## **Day 16-20**
 **What I learned:** I was a little behind the pace, but I finally found something that works! And I also learned that many of the backers for the bonus were coming from social media.
 **My plan:** Extend the bonus offer and begin promoting it more through social media, guest blogs, etc.
 **Anticipated result:** $3,000, which would set us up for a solid finish.
 **Actual result:** $735, _and a much needed reality check._
 ### Total: $6560 (54.7%)
-## **day 21-25**
+## **Day 21-25**
 **What I learned:** That improving any strategies I'm working on right now was not going to be enough to make it. If I was going to really see this through, I needed to venture outside of my comfort zone and take a risk.
 **My plan:** Use the challenge in front of me as an opportunity to show the value of [the book](https://www.kickstarter.com/projects/743524537/the-will-of-heroes?ref=in-text). Instead of figuring out a way to sell people, I was going to simply share how I am using the book's principles to overcome a real challenge and beat the odds.
 **Anticipated result:** $2,500, to at least give us a shot at a strong finish.
 **Actual result:** $4,215, a deeper connection with you subscribers, and [a wakeup call](http://www.willpowered.co/learn/embarrassing-wakeup-call) to support those in the online community and help them achieve their dreams.
 ### Total: $10,775 (90%)
-## **conclusion - Day 26-30**
+## **Conclusion - Day 26-30**
 **What I learned:** That I am grateful for the struggle and that my book didn't go "viral".
 Imagine if my first tactic had worked? That the project did go “viral” and I raised $12,000 just through direct marketing...what would I have learned?
 I would’ve stayed in my comfort zone, and not built a deeper connection with you subscribers or the online community.
@@ -60,7 +60,7 @@ So here's my plan...
 2. I will reach out to the Kickstarter staff to get my story of the last 5 days in their blog to be seen by more people. That way more people can know the simple steps you can take to choose to work for your dream project.
 3. **After coming this far in 5 days, the sky is the limit.** Which is why I will give a FREE audio version of the book to anyone at the Professional-Level or above if we pass our goal of $12,000 and hit $13,000!
 **Anticipated result:** $2,500, which will pass the stretch goal, get the audio version created, help more people finish strong, _and prove the power of will._
-## **results:**
+## **Results:**
 -   **What we needed** today to reach our goal: $429
 -   **What we raised** today from 11 backers: $1303
 -   **Key learning:** I'm grateful for the struggle because through it I found strength.

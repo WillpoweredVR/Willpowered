@@ -12,7 +12,7 @@ _Done!_
 I had officially completed _[The Will of Heroes](http://www.willpowered.co/the-will-of-heroes?ref=in-text),_ and I felt incredibly proud of the accomplishment.
 But as I moved onto the acknowledgements and citations, I realized just how much brilliant writers and researchers who came before me have influenced my work.
 The rigorous research, the groundbreaking conclusions, and brilliant principles taught by these people helped me become a willpower superstar—and they can help you become one as well!
-## **1.** **roy Baumeister**
+## **1.** **Roy Baumeister**
 Roy Baumeister is the top researcher on the science of willpower. He is the first one to discover that willpower works like a muscle, and he created a base for future researchers to build on.
 **Key ideas from his work:**
 1.  [Willpower works like a muscle.](http://www.willpowered.co/learn/willpower-is-a-muscle)
@@ -25,7 +25,7 @@ Roy Baumeister is the top researcher on the science of willpower. He is the firs
 1.  The science of willpower from the top researcher.
 2.  Self-control vs. self-esteem.
 3.  How to use willpower with money, productivity, and dieting.
-## **2.** **kelly Mcgonigal**
+## **2.** **Kelly Mcgonigal**
 Kelly McGonigal is a Stanford health psychologist who focuses on willpower as it relates to diet, mindfulness, and stress. She focuses less on the biology of willpower—as Baumeister does—and more on the psychology of it.
 **Key ideas from her work:**
 1.  [Want power](http://www.willpowered.co/learn/want-power).
@@ -38,7 +38,7 @@ Kelly McGonigal is a Stanford health psychologist who focuses on willpower as it
 1.  Where your willpower comes from.
 2.  How to use it effectively.
 3.  Simple changes in perspective that will give you more willpower.
-## **3.** **robert Greene**
+## **3.** **Robert Greene**
 Robert Greene is the author of several books that explore the principles behind power, mastery, and success. He is extremely good at taking abstract ideas and applying them in a concrete and powerful way.
 **Key ideas from his work:**
 1.  [The dimensional mind.](http://www.willpowered.co/learn/learning-mistake)
@@ -51,7 +51,7 @@ Robert Greene is the author of several books that explore the principles behind 
 1.  The path to mastery taken by the world’s greatest masters across multiple fields.
 2.  The principles of each master’s success.
 3.  How to apply those principles to your life and attain mastery.
-## **4.** **the Heath Brothers**
+## **4.** **The Heath Brothers**
 Dan and Chip Heath are business professors at Duke and Stanford respectively. They write about the science behind behavior change, communication, and decision-making. Although they target business, the principles can be applied across a wide-range of goals.
 **Key ideas form their work:**
 1.  [The 10-10-10 rule](http://www.willpowered.co/learn/10-10-10-rule).
@@ -64,7 +64,7 @@ Dan and Chip Heath are business professors at Duke and Stanford respectively. Th
 1.  Why the typical decision-making process is flawed.
 2.  The factors that motivate us to make bad decisions.
 3.  A simple process to overcome those factors and make better decisions.
-## **5.** **susan Cain**
+## **5.** **Susan Cain**
 Susan Cain is a graduate of Harvard Law School and ran a negotiating consulting company with Fortune 100 clients. But, unlike many others in her field, she is an extreme introvert. Her misfit status led her to study the science behind introverts and extroverts and how we can make the best of our unique traits.
 **Key ideas from her work:**
 1.  [The value of self-awareness.](http://www.willpowered.co/learn/no-progress-without-self-awareness)
@@ -76,7 +76,7 @@ Susan Cain is a graduate of Harvard Law School and ran a negotiating consulting 
 1.  How to increase your self-awareness as an introvert or extrovert.
 2.  The benefits of both traits and how to better understand each other.
 3.  How to improve your willpower by embracing your trait, and how to prepare for those moments when you need to be the opposite.
-## **6.** **chris Bailey**
+## **6.** **Chris Bailey**
 Chris Bailey loves productivity as much as I love willpower (maybe even more). He spent an entire year doing nothing but learning productivity methods from the top gurus and running experiments to see which work the best in practice. He shares all of his experiments, results, and lessons in his book.
 **Key ideas from his work:**
 1.  [Productivity = Focus + Energy + Time management](http://www.willpowered.co/learn/increase-energy-focus-productivity)
@@ -100,7 +100,7 @@ Amy Cuddy is a professor at Harvard Business School and studies how nonverbal cu
 1.  The surprising role of body language on meeting your challenges.
 2.  How your body language affects your energy and stress.
 3.  How to bring the best version of yourself to situations when you need it most.
-## **8.** **charles Duhigg**
+## **8.** **Charles Duhigg**
 Charles Duhigg is a reporter for [The New York Times](http://www.nytimes.com/)_._ He is the author who first introduced me to the science of willpower, which was the focus of one of his chapters in his best-selling book _The Power of Habit._ He writes about the science of productivity, habits, and success.
 **Key ideas from his work:**
 1.  [Keystone habit](http://www.willpowered.co/learn/keystone-habit)
@@ -112,5 +112,5 @@ Charles Duhigg is a reporter for [The New York Times](http://www.nytimes.com/)_.
 1.  How habits are formed.
 2.  How great habits create more great habits.
 3.  The impact of habits for individuals, corporations, and society.
-## **conclusion**
+## **Conclusion**
 No person is an island. If it wasn't for the work of the people above, I would not be in the position I am in today. Their work has helped me become a willpower superstar—and I hope they can make you one as well!

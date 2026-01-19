@@ -80,7 +80,7 @@ _After all, I am fighting for the noble purpose t__o Make America Great Again!_
 4\. Taking my views to the extreme by joining a group of like-minded people
 5\. Belief that my cause is virtuous, so the ends justify the means
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407117363-0MH6L203YGQ9Y50GAF85/image-asset.jpeg?format=original)
-## **application to Any Belief**
+## **Application to Any Belief**
 This process, of course, does not just apply to Trump supporters. If I was a protestor, I'd have gone through the same steps on the opposite end.
 1\. Thinking emotionally, not rationally out of fear of a Trump presidency
 2\. Forming my views based on a simple solution like shutting the rally down
@@ -93,7 +93,7 @@ The result is two groups who both believe that they are doing what's right and a
 If I see a documentary about the meat processing industry, that's going to stir up my emotions. It may lead me down this path to become a vegan, then dismissive of any positive information about meat, and then judge anyone associated with meat as a "bad guy."
 If I see a news report about the dangers of a drug, I'll fear that drug's impact. That may lead me down the path to believe we need to "crack down hard," then ignore any medical benefits I may hear about it, and then judge anyone who uses it a "bad guy."
 Once you allow your emotions to form your point of view, it is a slippery slope.
-## **conclusion**
+## **Conclusion**
 When I saw the violence at the Trump rally in Chicago, I was afraid. I quickly blamed Trump and cast prejudice on all of his supporters. But at that moment, I paused. I remembered how **t****he media always make things seem worse than they really are, and my emotional reactions were flawed.**
 If nothing else, I hope this article is a reminder that people are more complicated than we see at first glance. Even a good person can go through these steps and become hateful, racist, or violent. Not because they've always been this way, but because they were afraid.
 At their core, I firmly believe most people are good. And to be fair, most people haven't gone through every step. But as you can see it, it is a slippery slope to radical feelings on either end. So if you have strong feelings, take a moment to pause and reflect—before going down this path.

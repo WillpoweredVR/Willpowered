@@ -64,7 +64,7 @@ What Twain meant by this quote is that if you [get the hardest things done first
 For the holiday season, this means accomplishing your goals of health and well-being first thing in the morning. If you [want to exercise](http://www.willpowered.co/learn/create-exercising-habit), do it right after you wake up. If you’re worried about eating healthy, [eat a healthy breakfast](http://www.willpowered.co/learn/what-to-eat-for-breakfast), which will make you feel better about indulging at dinner.
 **Your willpower is the strongest first thing in the morning**. So use it to accomplish the things that are going to help you make it through the holidays happy and healthy. \[[1](http://www.amazon.com/gp/product/B0052REQCY?btkr=1)\]
 It will be much easier to make it to the gym or eat a healthy before you begin to indulge in the treats of the holidays. Plus, if you get these things accomplished, you will be able to truly enjoy yourself the rest of the day.
-## **conclusion**
+## **Conclusion**
 The holidays are a special time of year. They are a reason for celebration as we look back on everything that we have accomplished over the last year and get ready to do even more in the next one. However, we can get too carried away with our celebration and dig ourselves into a huge hole on January 1st.
 The best way to avoid this fate is to think about what you really want out of this holiday season. Then "play offense" with your willpower.Do not indulge too much, nor deny yourself the ability to celebrate with family and friends.
 Use the strategies listed above to create a plan to make the most out of the holidays and get ready to make 2016 the best year of your life!

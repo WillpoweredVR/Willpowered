@@ -24,7 +24,7 @@ How many great leaders, geniuses, and individuals capable of changing the world 
 To me, this is the greatest tragedy in the world.
 I know there are countless "Michael Faraday's" out there that are capable of building a better world for all of us, but the opportunity just isn't there for them.
 Providing these people with that opportunity is my "WHY".
-## **the Golden Circle**
+## **The Golden Circle**
 When setting a goal, whether it is to exercise this week, or change the world, there's a very simple formula we usually go through to achieve it.
 1.  We start with what we want to accomplish.
 2.  We strategize about how to achieve it.
@@ -33,7 +33,7 @@ In his book Start With Why, author Simon Sinek called this formula, "The Golden 
 In nearly every problem we try to solve, or goal we strive to achieve, we follow this formula.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1470844183476-FC6891N6Z61OUNQ8K20H/image-asset.png?format=original)
 _Unfortunately, we usually approach the golden circle from the wrong direction._
-## **starting With What**
+## **Starting With What**
 On the surface, starting with WHAT makes sense. _Shouldn't you know what you want to accomplish before you set out to achieve it?_
 That is sound logic...if you actually know what you want.
 Most people who set goals do not know why they want to reach that goal in the first place. So when they hit the inevitable hard days along the way, they do not have the inspiration to push their comfort zone and achieve an excellent result.
@@ -42,7 +42,7 @@ You will likely get a puzzled look, followed by, _"Uh...to get in shape?"_
 In contrast, ask someone who just finished her first half marathon this year why she wants to exercise 4 times per week, and she will say confidently, "_this year I am training for a full marathon."_
 The WHAT is the same, but the WHY is completely different.
 Which is why we know she will finish that marathon, while millions of new gym members will not even make it to February.
-## **the Power of Starting With Why**
+## **The Power of Starting With Why**
 _“Hi Colin,  
 First of all thanks for your mail, but I cannot open your articles, I think this is banned in Sudan.  
 Please is it possible for u to find a way to provide me these articles through any other source? I do not want to miss them.”_
@@ -61,7 +61,7 @@ _Do you believe it will benefit your family?_
 _Do you believe it will make a positive impact on the world?_
 There are no right or wrong answers. What really matters is finding the WHY that will motivate you to persevere through all of the obstacles you will face along way.
 Just remember that finding your why is merely the starting place.
-## **why is the Start, Not the Finish**
+## **Why is the Start, Not the Finish**
 Starting with why will inspire you to achieve goals, help you bounce back from failure, and might even give you the confidence to change the world – **but you still need to put in the work.**
 Unfortunately, many people who start with WHY never figure out the HOW. They are the "dreamers" who never learn how to "do."
 **Here are 2 strategies you can use to ensure you're not one of them.**
@@ -81,6 +81,6 @@ To counteract this tendency, I need to track as much information about my progre
 To track my information, I use what I call a, "SMaC Tracker" that you can access for free by clicking the image below:
 [![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1472407577896-IU2CJYHSRZL248NI6FAN/SMaC+Formula+Checklist+top.png?format=original)](http://www.willpowered.co/s/SMaC-Formula-Template.csv)
 Or you can check out [this article](http://www.willpowered.co/learn/self-monitoring) which lists all the benefits of tracking your progress, and suggests tools to help you get started.
-## **conclusion**
+## **Conclusion**
 The biggest mistake people make with their goals is approaching them in the wrong direction. Before you determine WHAT you want to accomplish, **take the time to find your WHY_._**
 The purpose, cause, or belief behind your goals will be the thing that motivates you to overcome the inevitable hard times along the way.

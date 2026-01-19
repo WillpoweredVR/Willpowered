@@ -36,7 +36,7 @@ When you are working toward your goals or resolutions in 2016, remember that the
 Because you do have a much more complicated brain than a simple reward and punishment system, there is no simple answer to what will actually motivate you.
 Everyone is different, and will be motivated by different things.
 However, there are some general, scientifically proven guidelines that you can follow to find motivation when you really need it.
-### **1\. an Inspiring Purpose**
+### **1\. An Inspiring Purpose**
 This should come as no surprise to you, but the best and most motivating thing you will ever have is an [inspiring purpose](http://www.willpowered.co/learn/power-of-purpose) to work toward your goals.
 If you do not genuinely care about getting into good shape, then you might be able to force yourself to go to the gym for the first 2 weeks of January, **but eventually [you will hit that day](http://www.willpowered.co/learn/get-through-the-middle) when your alarm goes off and the last thing you want to do is exercise.**
 So you will skip it once....then twice...then by February you will join the 92% of others who fail their New Year's Resolutions in 2016. \[[3](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231/ref=sr_1_1?ie=UTF8&qid=1451304574&sr=8-1&keywords=willpower)\]

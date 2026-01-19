@@ -76,7 +76,7 @@ In order to do so, you need to have one clear reason why someone will open up th
 That's it. **That's the only thing that I want people to think of when they think about Willpowered.** So as much as I would love to write about topics like sports, politics or even entrepreneurship, I know that will make the signal weaker.
 So you must have the discipline to choose an important topic, then never deviate from it.
 Then you must stay consistent and write every day. This will help you to become a better writer and figure out which topics are more valuable to readers than others. These may not work for everyone, but this is the best advice I can give so far.
-## **9\.** **do Men or Women Have More Willpower?**
+## **9\.** **Do Men or Women Have More Willpower?**
 Sorry gentlemen, the answer is that women do naturally have more willpower than men do. This explains a lot about the differences between men and women. Men are more likely to commit crimes, drop out of school, become obese and abuse drugs/alcohol. \[[2](http://www.amazon.com/gp/product/0143122231/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0143122231&linkCode=as2&tag=willpowered-20&linkId=FWXY62FGMWK344LA)\]
 However, do not let that discourage you, men. Although women have a head start when it comes to willpower, remember from question 5 that willpower is like a muscle. Women may have more willpower to begin with, but you can [strengthen your willpower](http://www.willpowered.co/learn/strengthen-your-willpower) over time.
 However, ladies, if you do the same [willpower workouts](http://www.willpowered.co/learn/strengthen-your-willpower) as a man does, you will still have the upper hand.
@@ -90,7 +90,7 @@ Chunking works because it shifts your focus from that larger goal, into smaller 
 If your goal is to follow a 12-week exercise plan, it can be overwhelming when you’re tired on day 4 and thinking about the fact that _you have 80 more days of this._
 But if you shift your focus to simply accomplishing the workout plan _today,_ you are far less likely to become overwhelmed. Then, before you know it, 20, 40, 60 days have passed and you are more confident than ever that we can make it to the end.
 I personally use the process of chunking every single day for every single task I have. It is as close to a "willpower miracle" as there is.
-## **conclusion**
+## **Conclusion**
 I have received a lot of great questions over the past 9 months - and surely there are many more to come! I hope that this list of 10 questions helped you learn a little bit more about the science of willpower and about Willpowered itself.
 If you ever have any questions of your own, you can ALWAYS reach out to me at colin@willpowered.co. **I read and respond to every message!**
 **Sources:**

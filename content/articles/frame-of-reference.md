@@ -18,13 +18,13 @@ After the Saint Lawrence, they hiked for two days in snow that was knee-deep. Th
 Then he started to literally lose his mind.
 He saw members of his family, he saw fast food restaurants, and he smelled the delicious aroma of a cheeseburger—despite the fact that the nearest McDonalds was hundreds of miles away. **He was half mad, and he wasn’t even at the halfway point!**
 So how did he and his team not only persevere through the next 150-plus miles of the race, but _also become one of the first teams to cross the finish line?_ \[[1](http://amzn.to/1r1D0CL)\]
-## **changing His Frame of Reference**
+## **Changing His Frame of Reference**
 To make it through the rest of the race, Joe thought about an explorer named [Ernest Shackleton](https://en.wikipedia.org/wiki/Ernest_Shackleton).
 In 1912, Shackleton led [an expedition](https://en.wikipedia.org/wiki/Nimrod_Expedition) of fifty-six men to be the first to cross Antarctica. From the very beginning, the expedition was doomed. Shackleton’s ship crashed into ice hundreds of miles from the shores of Antarctica.
 He and his crew spent over a year trying to get home, traveling over 1,000 miles in temperatures much colder than those in Canada, in a place where nobody could help them. **Compared to that situation, Joe's journey to the end of the race didn’t seem so bad.**
 _If Shackleton was able to make it,_ Joe thought, _there’s no reason why we can’t._
 When Joe thought of Shackleton, he changed his frame of reference. And doing so vastly increased his willpower to keep going.
-## **how a Frame of Reference Impacts Your Willpower**
+## **How a Frame of Reference Impacts Your Willpower**
 My guess is you’re probably not going to be freezing cold in the Canadian winter anytime soon, so how can you use the frame of reference in your life?
 Imagine you come face-to-face with the opportunity to make an impulse $100 purchase.
 **Immediately, your whole body feels like it’s in panic mode.** The temptation to buy seems like it’s too much to bear. Part of you is telling yourself that you deserve it, another part is reminding you of your plan to stick to your budget this month.
@@ -34,7 +34,7 @@ _”Would I accept one hundred dollars to NOT buy this?”_
 This seems obvious. Shouldn’t everyone realize that saving the $100 is the exact same thing as getting $100 dollars to not buy something?
 **The answer is no.** Because if you believe you are saving $100 you will still consider the impulse purchase as a reward. However, if you shift your frame of reference to getting $100 dollars as a "gift" for not buying that thing, now the $100 is the reward.
 So your impulsive, emotional, primitive brain that motivates you to seek short-term rewards now wants you to get that $100 for not making the purchase just as badly as your long-term, rational, modern brain wants to you to save it. \[[3](http://www.springer.com/us/book/9781461258896)\]
-## **ways to Shift Your Frame of Reference**
+## **Ways to Shift Your Frame of Reference**
 This experiment shows how powerful a simple change in your frame of reference can be. But there are obviously more ways to capture its power than simply by saving money.
 Here are some other proven ways to change your frame of reference and increase your willpower:
 ### **1\. See it as an Opportunity, Not an Obligation**

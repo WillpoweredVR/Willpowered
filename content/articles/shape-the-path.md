@@ -40,7 +40,7 @@ After all, if you have a great car and neglect the whole concept of a map, what 
 _Insert self-criticism and/or self-justification here_
 Clearly, this is not a formula for reaching your destination.
 _So is it any wonder that so many of us struggle to reach our goals?_
-## **shaping the Path**
+## **Shaping the Path**
 Think of the profound implication of this.
 A terrible driver in a "clunker" with paved roads, stop signs, and GPS will _always_ beat the great driver with treacherous roads and vague directions.
 That's the power of the path.
@@ -50,14 +50,14 @@ Yet, when you think of what it will take to "turn things around" in your life, w
 -   The endless list of problems and the lack of time available to solve them all?
 These undoubtedly merit your consideration, but you're not going to change anybody — including yourself — overnight.
 You can, however, change your path.
-## **how to Shape Your Path**
+## **How to Shape Your Path**
 The first principle of shaping the path is recognizing that you're not aiming for perfection.
 _The path to your goal will likely never be as clear as the path you take to work._
 However, there is a lot of room for improvement between that level of clarity and what you probably used when you began the journey to your latest goal.
 To illustrate this, I'm going to show you how I've built Wilson to make sense of the unknown and overwhelming journey of Entrepreneurship.
 > Not through perfection, but through progress.
 
-### **getting Things Done**
+### **Getting Things Done**
 There's probably no more widely useful and effective Checklist than the [Getting Things Done (GTD)](http://gettingthingsdone.com/?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path) method by [David Allen.](http://gettingthingsdone.com/meet-david?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)
 [![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492169612565-0KQE5CPQ9I11EC1JOVBU/Gtd+Workflow.gif?format=original)](http://gettingthingsdone.com?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)
 GTD involves emptying all the "stuff" in your head (to-dos, ideas, reminders, etc.) putting them into an in-basket, and identifying what action you need to make progress on every single idea next.

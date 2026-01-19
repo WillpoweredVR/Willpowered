@@ -19,7 +19,7 @@ So how do the typical 24 racers do this for at least a full week? Better yet, ho
 To endure this hardship, Jure only has choice over music, food and bathroom breaks. Every other decision is up to his support crew. They decide when he rests, they decide when he eats, and they decide how fast he must go.
 “It’s best if he has no idea about these things. He rides – that is all.” \[[1](http://www.nytimes.com/2006/02/05/sports/playmagazine/05robicpm.html?pagewanted=all&_r=0)\]
 **And for Jure and his crew, he rides to world record finishes over and over again.**
-## **how We Can Scientifically Push Beyond Exhaustion**
+## **How We Can Scientifically Push Beyond Exhaustion**
 Why does this system work?
 It seems to make no sense. Shouldn’t Jure have control over when he needs to rest? Or at least how fast he can go?
 **To scientifically push beyond limits, the answer is no.** Whether Jure and his crew realize it or not, they have cracked the secret to [beating fatigue.](http://www.willpowered.co/learn/what-fatigue-really-is)
@@ -29,29 +29,29 @@ Following this research, a modern day ultra marathoner and sports scientist name
 So by ignoring his own brain’s messages of fatigue and only listening to his crew, Jure was able to keep going. And going. Jure’s crew believe that when he says that he cannot possibly push any more, that he has really only reached about 50% of what he is capable of doing.
 ‘‘When Jure cannot go any more, we know he can still go. We must motivate him sometimes, but he goes.’’
 And Jure’s results prove that they are correct.
-## **what This Means for Us**
+## **What This Means for Us**
 These findings do not just apply to our physical energy, they also apply to our willpower. [Willpower is like a muscle](http://www.willpowered.co/learn/willpower-is-a-muscle). And just like the other muscles in the body, [it can feel fatigued](http://www.willpowered.co/learn/willpower-limited-resource). When you get home from a long day of expending mental energy at work, you can feel just as tired as if you just got back from the gym.
 Because willpower acts like a muscle, it also adheres to the same principle we discussed with fatigue. When the brain begins expending mental energy, it will start sending you messages to rest \[[4](https://web.stanford.edu/~gwalton/home/Publications_files/Job,%20Dweck,%20%26%20Walton,%202010.pdf)\]. It will make you _feel_ more mentally drained than you actually are in order to conserve mental resources to survive.
 So all of the sudden, unhealthy food will seem more tempting, exercise will seem more daunting and our pet peeves will seem more annoying. **It will feel like you have absolutely no willpower to pursue your long-term aspirations when you really have plenty at your disposal.**
-## **so What Can We Do?**
+## **So What Can We Do?**
 How can we overcome these mental barriers the same way Jure Robic was able to overcome his?
-### **1.** **remove the Decision**
+### **1.** **Remove the Decision**
 Jure’s system works because he is not the one in charge. All he needs to do is listen and act. That makes it easier for him to push himself when his willpower is extremely low.
 Understand that when starting a new diet, exercise routine, or productivity method, [you will not be thinking with the same “cool head”](http://www.willpowered.co/learn/the-hot-cold-empathy-gap) you have when you are planning it. When it comes time to execute your plan, you will be tired, you will be tempted and you will want to take the easy way out. In those situations, **you must have a pre-commitment** that no matter how tired or tempted you are, you will stick to your goal.
-### **2.** **have Social Accountability**
+### **2.** **Have Social Accountability**
 Another reason that Jure’s system works is because if he quits, he’s not only letting himself down, he’s letting down his crew. He and the members of his crew have a deep connection and love for one another. He has trust in them to make the right decisions, and keep him accountable for maintaining his speed.
 We will go to great lengths to keep a [promise to anyone else except ourselves](http://www.willpowered.co/learn/self-monitoring). We don’t want to let them down. We want them to know that we are someone who will keep their word. So when we have someone else to be accountable to, **we focus less on reasons why we can’t do something, and focus more on figuring out ways that we can do it**.
-### **3.** **have a Greater Purpose**
+### **3.** **Have a Greater Purpose**
 For Jure, sometimes these first two tactics were not enough to keep pushing. The pain he was enduring was just too great. In those moments, he remembered his harsh childhood and his father saying that he will never amount to anything – a message further reinforced by the Slovenian army. Then he found the greater purpose for why he pushes himself so hard - t_o prove to himself and others that he is somebody._
 One time in the Appalachian Mountains, he had all but given up. In that moment, his best friend and crew member, Miran Stanovik, shouted at him with tears streaming down his face, “You show Slovenia, you show the army, you show the world what you are!” **And Jure was able to keep going,** maintaining the proper speed.
 In our darkest moments, when it feels like there is no way we can keep going, we need to have a purpose. Something that is more important than the pain we may be feeling or the absolute lack of energy at our disposal. If we can remember that purpose, it will trigger something called “[Want Power](http://www.willpowered.co/learn/inspiration-will-enhance-your-willpower)” and give you the extra energy you need to keep going.
-## **my Personal Story of Pushing Limitations**
+## **My Personal Story of Pushing Limitations**
 For the last 2 years, I have been training for a sport known as “[Obstacle Course Racing](http://www.spartan.com/)”. It is a foot race typically run in trails and has obstacles like walls and ropes you must climb along the way. It is a challenging test of strength, speed and mental toughness.
 Typical races have about 6,000 competitors and in my first race I finished 334th. [But after 2 long years of training, I finally finished in the Top 10](http://www.willpowered.co/learn/spartan-race-lessons). One of the major turning points for me was when I hired my coach, Owen Brittan.
 I had heard about Robic and knew that our brains will tell us that we’re tired before we actually are, so I turned as much of my training over to him as possible. The training program he put me on became my “crew” as I attempted to test the limits of my own physical capabilities. **It was one of the most difficult decisions that I have ever made.**
 The training program I was put on was challenging to say the least. I consistently believed that there was no way I was going to be able to complete all of it in addition to work, friends and family. But I ensured that the decision was not up to me. I had to do everything that was on the program the same way that Jure had to maintain the bike speed set by his crew.
 This was an extraordinary challenge. But by taking the choice out of it, adding Owen's social accountability, and working toward my own purpose of learning the science behind winning the mental battle, I was able to do it. I am far from an elite athlete comparable to Robic, but I was able to accomplish far more than I believed I was capable of. And I went from being a person who “works out now and then,” into a competitive athlete.
-## **conclusion**
+## **Conclusion**
 Unfortunately in September of 2010, [Jure Robic died in a car accident.](http://www.nytimes.com/2010/09/30/sports/cycling/30robic.html?_r=0) Although he is no longer with us, his spirit and his story live on. **Not many people can say that they truly defied their own limitations in their lifetime, but Jure can**. He pushed beyond exhaustion over and over again to set records in ultra-endurance sports that may never be broken.
 By delegating his decisions to his crew, he was able to ignore the false messages of exhaustion that his brain sent to him. With his crew there to support him, he was also held accountable to the seemingly impossible standards he was able to live up to. And finally, he rode with a purpose that was greater than the pain that he felt. He rode to prove that he was somebody bigger than his father or the military believed he could be. And in the end, he proved it.
 [\*Sources](/s/Limits.pdf)

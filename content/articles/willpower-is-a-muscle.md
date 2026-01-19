@@ -17,12 +17,12 @@ The students were then taken to another room to work on a geometry puzzle. They 
 **The real test was to see how long the students would persevere before giving up.**
 This test is used by researchers around the world to measure how much willpower a person has. The more willpower they have, the longer they will spend trying to solve the impossible puzzle.
 The cookie eaters worked on the puzzle for 20 minutes on average – trying to tackle it from multiple angles before finally admitting defeat. The radish eaters, though, _didn’t even last half as long!_ After just 8 minutes, they lost their energy and gave up!
-## **what Willpower Really Is**
+## **What Willpower Really Is**
 It was no coincidence that the radish eaters gave up so quickly. Their willpower was depleted by resisting the temptation of the cookies. So when they got to the puzzle, they had less left to use to persevere.
 The cookie eaters, on the other hand, didn’t have to exert _any_ willpower in the previous room (apparently there weren’t many radish-lovers amongst them) giving them more energy to continue the puzzle.
 **For almost all of history, we have believed that willpower is a virtue.** Some people have it...and some people don’t. But if that were the case, why are there some days when going to the gym or resisting temptations feels effortless, and others where we cannot summon the strength to make the right decision?
 **The cookies and radishes experiment shows that willpower isn’t a skill at all**. It's actually more like a muscle! And like other muscles in the body, your willpower gets exhausted from overuse, but it can also be [strengthened with practice](http://www.willpowered.co/learn/strengthen-your-willpower)! \[[2](http://www.ncbi.nlm.nih.gov/pubmed/10457761)\]
-## **what This Means**
+## **What This Means**
 When setting goals, many of us take the “complete overhaul” approach. We follow a new diet, we plan to exercise everyday, and become more productive all at the same time.
 **We can keep this up for a while, but we always end up in the same place as the radish eaters.**
 We deplete our willpower working on one of these goals, which leaves us with even less to take on the next one. Then we get down on ourselves. We feel like there is no way we will ever be able to reach our goals, and blame ourselves for our lack of willpower.
@@ -33,7 +33,7 @@ Think of it in terms of lifting weights. If you were to show up to the gym on da
 Lifting 200lbs, is not impossible, but you need to start by lifting 50lbs first. Once you lift 50lbs, you will strengthen your muscles and be able to add a little bit more weight. Then eventually work your way up to lifting 200lbs.
 This is exactly how your willpower works as well.
 So do not set unrealistic - and simply unattainable - goals for yourself. First "lift 50lbs", strengthen your willpower by achieving it, then move onto the next goal. Your health, confidence and success will be much better through the process!
-## **conclusion**
+## **Conclusion**
 We tend to think of willpower as a virtue – something you either have or you don’t. The cookies and radishes experiment, however, proves that willpower is actually more like a muscle.
 It gets exhausted from overuse, but can also be strengthened with the right practice. Instead of trying to completely overhaul your life – expending willpower on many things at once – **focus your willpower muscle on just accomplishing one goal.**
 This will be much easier on your psyche, while also leading to real, sustainable, results!

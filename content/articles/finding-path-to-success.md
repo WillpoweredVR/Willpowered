@@ -41,7 +41,7 @@ They were also more likely to:
 -   Report that they learned and grew from the experience.
 These results seem to make no sense. When you think about it, they were visualizing failure, **yet somehow they felt even more positive about themselves than those who visualized success!**
 _So why did the event-simulation work so much more effectively?_
-## **outcome-visualization**
+## **Outcome-visualization**
 What you may think:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1464269832271-XO8L7F8RD9E5Z7Y3AVOI/image-asset.jpeg?format=original)
 Visualization is powerful. So powerful, in fact, that your brain will actually treat visualizations the same way it treats real events.
@@ -54,7 +54,7 @@ Sure, I could visualize the result, but I had no idea what the _process was to a
 Reality:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1464269808577-6EL1RCIYANFH0REIKW8D/image-asset.jpeg?format=original)
 You may visualize yourself in possession of wealth, achievement, or whatever goal you are working toward, but if you don’t know the path from where you are to where you want to be, it will simply create this same gap in your mind.
-## **event-simulation**
+## **Event-simulation**
 What you may think:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1464270446347-K16M716XMWAH3DBSTJA5/image-asset.jpeg?format=original)
 So why is event-simulation better at filling this gap? How is it possible to find the right path to success by visualizing your previous path to failure?
@@ -74,7 +74,7 @@ Not that any of these will magically change things, but added together they migh
 Reality:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1464271245781-LSAHC1JDNR1OKRUC48KE/image-asset.jpeg?format=original)
 Compare this practice with visualizing that you have the body of a pro athlete or a swimsuit model…_Is it any wonder that event-simulation is more effective?_
-## **creating a Plan**
+## **Creating a Plan**
 What you may think:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1464271639719-MSEW92J1H4XP4L75H2IH/image-asset.jpeg?format=original)
 _Okay, but what about planning?_
@@ -97,7 +97,7 @@ _Sound familiar?_
 This story helped Arnold face relentless criticism from friends and family without giving up on his dream. Arnold had confidence because the path to achieving his dream was already set by Park—he just needed to follow it. \[[7](http://www.nips.ac.jp/fmritms/conference/references/Mano/Zwann1998PB.pdf)\]
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1464272962398-S27AJF9F0NBRUBUZ5FKK/image-asset.jpeg?format=original)
 The best method for finding a path to success you've never reached, is to follow the path of those who have already achieved it.
-## **conclusion**
+## **Conclusion**
 Visualization is a powerful tool for reaching your goals. But visualizing the results, without knowing the process to achieve it, might just leave you frustrated by the gap between where you are and where your mind believes you should be.
 A far more effective strategy is to visualize your failed attempts of the past to determine the factors that led you off your path. With that awareness, you can make effective changes to increase your chances of success.
 Then when you're ready to go to the next level, learn the story of someone who has already reached it. When you learn the path someone has already taken to achieve your goal, you will naturally visualize yourself in their shoes.

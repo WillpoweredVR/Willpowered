@@ -17,7 +17,7 @@ So excited, in fact, that his first words to his team upon arrival were:
 **This speech captivated the team;** especially the starting quarterback, Bart Starr, who said, "I couldn't even sit in my chair I was so excited."
 This was a team that had little to believe in. Before Lombardi, they had not had a winning record in over a decade. So they knew that in order to achieve the success that their coach expected, they had an uphill battle. **So they worked - and never stopped.**
 The coach demanded great effort out of each of his players all of the time. He personally would work from 7 in the morning until 11 at night - relentlessly chasing perfection. **This relentless work created a powerhouse in Green Bay.** Lombardi won so many championships with this team that Green Bay soon became known as "Title-Town".
-## **the Typical Paralyzing Nature of Perfection**
+## **The Typical Paralyzing Nature of Perfection**
 If you’ve ever had a goal, you know how exciting it can be at first. You can see the perfect “after photo” of your life when the goal is achieved **and you love what you see.** You imagine all of the great things about the “new you” and you can't wait to get started working towards that goal!
 Then it’s time to actually do the work. And whether that work is putting pen to paper, or putting foot to treadmill, **you get a sudden rush of being completely overwhelmed.** You see _just how much work_ it’s going to take to get from where you are, to where you want to be. Then you get paralyzed by the fact that you don’t know where to begin.
 **So you procrastinate.** \[[2](http://studiemetro.au.dk/fileadmin/www.studiemetro.au.dk/Procrastination_2.pdf)\]
@@ -26,7 +26,7 @@ You _are so far_ from getting that degree.
 You are even _so far_ from having a perfectly clean garage.
 And right now doesn’t feel like the “perfect time” to get started. So why bother? Why not wait for a time that does _feel right?_
 **This perfectionism is one of the key de-motivators in achieving our goals**. After our initial enthusiasm wears off, we hit the [middle of the journey](http://www.willpowered.co/learn/get-through-the-middle) and the perfect body seems so far out of our grasp. So we think, "what's the point? We'll never get there."
-## **how to Become Inspired by Perfection, Rather Than Paralyzed**
+## **How to Become Inspired by Perfection, Rather Than Paralyzed**
 Chasing perfection does not have to be like this. Lombardi and the Green Bay Packers are proof! They used perfection to motivate them to create a team of excellence. So what can we do to become motivated by perfection, rather than paralyzed?
 Here are 3 proven ways to use perfection to your advantage:
 ### **1\. Chunk it Up**
@@ -48,7 +48,7 @@ Despite his best intention of perfection, Vince Lombardi knew what he was gettin
 Results are ultimately out of our control. You could follow a [strict diet plan](http://www.willpowered.co/learn/how-to-resist-cravings) and [exercise every single day](http://www.willpowered.co/learn/create-exercising-habit), but you cannot control how your body will respond. You may lose 5lbs, you may lose 10lbs, _you may lose 20lbs!_
 Perfection is not found in results. **Perfection is found in your effort.** Making sure that you do the right things to make progress _every single day_. That is the only thing you can control when working toward your goal. The result is ultimately just a guess.
 **So shift your idea of perfection from the result, [to the process](http://www.willpowered.co/learn/internal-locus-of-control) that it will take to get there**. Always asking yourself, _"how can I do this better?"_
-## **conclusion**
+## **Conclusion**
 Perfection is something we all strive for - we want to be a part of creating something truly great. Whether that is a great product, a great body, or a great life. **This pursuit of perfection has the power to motivate us, or to completely paralyze us.**
 Do not become paralyzed by the pursuit of perfection. Break up your huge goals into small chunks, "write terrible first drafts" and focus on your effort - not your results. And find the strength to just do it. **You don't need to be great to start, but you do need to start to be great.**
 **Sources**

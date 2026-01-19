@@ -21,7 +21,7 @@ There, as she continued to build the world of Harry Potter, her own world contin
 
 Thus, Rowling lived on welfare while she wrote the book and cared for her infant child.
 This life left her so exhausted that she couldn't muster the willpower to do anything but write. After a long day of writing and caring for Jessica, her [willpower muscle](http://www.willpowered.co/learn/willpower-is-a-muscle) was too weak to care about housework, eating healthy, or anything else important.
-## **the Will of J.k. Rowling**
+## **The Will of J.k. Rowling**
 This left her in a constant battle with depression, as she wondered if Harry was worth it.
 > “I had to fight my realistic side. I was a first time author, so of course I was going to struggle to get published. And just because I thought the story was great, didn’t mean anyone else would. To muster the willpower to keep writing, I had to truly believe in Harry. I knew he was bigger than me. I knew I had to do right by this book.”
 
@@ -35,30 +35,30 @@ After being turned down by 12 of the best names in publishing, Rowling finally f
 Once Harry Potter hit the shelves, it became an instant hit.
 It became so big, in fact, that U.S. publishers started a bidding war for the book. Eventually Scholastic publishing bought its rights for $105,000 – more than they have ever paid _any_ author, let alone a first time author.
 Over the next 15 years, Harry Potter continued to expand until it became the most successful book and movie series of all time.
-## **how to Develop J.k. Rowling’s Willpower**
+## **How to Develop J.k. Rowling’s Willpower**
 Unlike almost everything else in life, your willpower is something that you have complete control over. You cannot control your circumstances, your luck, or other people in your life.
 **But you can control your decisions and your actions.**
 And ultimately that is what J.K Rowling did to achieve her extraordinary success. So let’s unpack her story to see how she was able to develop the willpower to create one of the greatest stories ever told.
-### **1.** **one Goal**
+### **1.** **One Goal**
 Throughout those 5 years of struggle, J.K. Rowling was remarkably focused.
 **Aside from being a good mother, her goal was to get Harry Potter published. That’s it**.
 So she put all other goals, habits, and even housework aside. She focused all of her willpower on what was most important to her. _That’s why she was able to keep writing!_
 Your willpower works like a muscle. The more goals you have, the more things you try to accomplish, the more you will tire your willpower out. Yet, most of us just keep adding more and more goals to our lists! \[[2](http://www.psy.lu.se/upload/psykologi/pdf/strength_model1.pdf)\]
 **Focus your willpower on ONE goal.** It’s tempting to want to improve your health, relationships, and professional career all at once, but the more things you try to do, the less willpower you will have to do them.
-### **2.** **the Path to Greatness Has Many Easy Ways Out**
+### **2.** **The Path to Greatness Has Many Easy Ways Out**
 There were countless opportunities for Rowling to give up.
 Besides her own doubts about whether people would like Harry or whether she would be able to get published as a first time author, she must have also faced criticism from friends and family. _After all, she had a daughter to support!_
 At any point, she could have quit and taken a job as an English teacher to help make a better world for her daughter - but she didn’t. She stayed on the path to success, and the world is a better place because of that.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1444395927488-HKSNDEEENYOOH4XIHNXX/image-asset.jpeg?format=original)
 **Once you get on your path to greatness,** _**stay on it.**_ Like the miner in this image above, you may be closer to success than you think. But you will never know what you can accomplish if you take one of the many easy ways out.
-### **3.** **success is 1% Inspiration and 99% Perspiration**
+### **3.** **Success is 1% Inspiration and 99% Perspiration**
 The magical world of Harry Potter may be one of the greatest ideas in history. It has sparked the creativity of millions of people all over the world who fell in love with the world that Rowling created.
 But it was not the idea itself that made Harry Potter a reality.
 **For 5 long years, Rowling had to will herself to keep writing.** She had to fight through her doubts, fears, and low standard of living. She had to work long and hard for a goal that she knew may never actually be reached.
 And that willpower is ultimately what made Harry Potter into a reality.
 Many people believe that success comes from a brilliant idea. Whether that idea is a new product, a new business, or a new story. But no matter how great an idea is, it means nothing without the willpower to make it a reality.
 **Do not be seduced by the “brilliant idea”.** Understand that success brilliant ideas mean nothing without the willpower to make those ideas a reality.
-## **conclusion**
+## **Conclusion**
 J.K. Rowling had a brilliant idea on that train in 1990, but it was not her brilliance that put Harry Potter on bookshelves. It was her willpower to keep going through all of the struggles she would face over the next 5 years.
 Whatever your idea of greatness is, focus as much willpower as you possibly can on it, ignore the many temptations you will face to quit, and be prepared to put in the work to make greatness happen.
 Lots of people have brilliant ideas. But very few have what it takes to make those ideas become a reality. The ones that do are the ones that achieve their dreams.

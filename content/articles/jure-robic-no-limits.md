@@ -13,7 +13,7 @@ featuredImage: ""
 But as the cyclists went through their final preparations for the 2004 race, they didn't fear the pain they were about to endure over the next week. They feared the seemingly inhuman winner of last year’s race, [Jure Robic.](https://en.wikipedia.org/wiki/Jure_Robi%C4%8D)
 Since the race is non-stop, each rider chooses exactly how long he rests, how much he eats, and how long he sleeps. He must bike as fast as he can, for as long as he can, while also sleeping as little as he can.
 This means that it is just as important to be mentally strong as it is physically strong – **and that is exactly where Jure Robic beats the other 23 competitors.** \[[1](http://www.nytimes.com/2006/02/05/sports/playmagazine/05robicpm.html?pagewanted=all&_r=0)\]
-## **a Brutal Competition**
+## **A Brutal Competition**
 First, he must face the heat of desert - where temperatures are over 40 degrees Celsius.
 During these miles, he does not just have to deal with the discomfort of the heat, but he is also at such risk of dehydration that he must drink as much as one liter of water per hour.
 After the heat, Robic’s digestive tract is tested.
@@ -25,7 +25,7 @@ Better yet, how does Robic endure this kind of pain while biking faster than eve
 Robic is able to accomplish this extraordinary feat of willpower because **he does not give himself a choice.**
 “We are Jure’s software.” Said Miran Stanovik, a member of Robic’s support crew.
 “He is the hardware going down the road.”
-## **the Power of Having No Choice**
+## **The Power of Having No Choice**
 To endure this hardship, Robic only has a choice over his music, food, and bathroom breaks. Every other decision is up to his support crew.
 They decide when he rests, they decide when he eats, and they decide how fast he must go.
 “It is best if he has no idea about these things. He rides – that is all.”
@@ -33,7 +33,7 @@ They decide when he rests, they decide when he eats, and they decide how fast he
 _Why does this system work?_ It seems to make no sense. Who knows when Jure needs to rest better than Jure himself?
 _Why would he leave that decision like to a crew who has no idea how his muscles feel?_
 The answer lies in understanding what “fatigue” really is.
-## **the Truth of Fatigue**
+## **The Truth of Fatigue**
 For centuries, physiologists believed that fatigue is what occurs when our muscles simply cannot keep working.
 **They need to rest and replenish, or they will fail.**
 While this made sense in theory, they could never scientifically prove this is what actually made exercisers give up.
@@ -48,7 +48,7 @@ Just like the anxiety motivates us to hold back from giving a public speech, fat
 So, whether they knew it or not, Robic and his crew cracked the scientific code to beating fatigue!
 Because he ignored his own brain’s messages and listened only to his crew, he conditioned himself to ignore this emotional response to stop.
 Over time, Jure’s crew saw that he could push much further than the initial feeling of fatigue. So when Jure said that he could not possibly push any more, they knew it was their duty to motivate him to keep going.
-## **willpower Fatigue**
+## **Willpower Fatigue**
 _Is it possible that this same phenomenon is true of your willpower?_
 Could your brain make you feel as if you were completely out of willpower, when really you could keep pushing like Robic?
 To answer this question, we need to look at a part of our brain known as the limbic system – or as I refer to it “[the primitive brain](http://www.willpowered.co/learn/short-term-and-long-term-motivation)”.
@@ -68,7 +68,7 @@ _Even if you feel completely drained of willpower, you still have the ability to
 _Even if all you want to do is lay on your couch and watch TV, you can still force yourself to clean you kitchen._
 _Even if you feel like you have no mental energy left, you can still force yourself to stop procrastinating and start studying._
 There may be a final limit to your willpower, but it is much farther than what you probably call “exhausted”.
-## **how to Push Your Limits**
+## **How to Push Your Limits**
 Robic was about 2/3rds of the way through the race in 2004 _when he finally believed that he was finished._
 He simply could not push any farther.
 Despite his ability to ignore his brain’s messages, despite his crew’s motivation, and despite his unbelievable endurance, _he just could not keep going._

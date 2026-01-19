@@ -18,7 +18,7 @@ I wasn't a disaster. I was just stiff, robobotic, and **completely drained by th
 I didn’t stay for the networking I knew would be incredibly valuable,,,I needed some time alone to recharge.
 Several of the companies that pitched that day set up further meetings with investors…mine wasn’t one of them.
 Such is the life of the introverted entrepreneur.
-## **the Extrovert Advantage**
+## **The Extrovert Advantage**
 It’s no secret that extroverts have a big advantage in the marketplace.
 The investors that day believed a better indicator of company success was how well the founder performed in those 10 minutes on stage—**rather than the 40+ hours/week they spent in the office** (although, to be fair, none of us ended up being a good investment).
 This same advantage occurs in almost every area of life:
@@ -31,7 +31,7 @@ After that speech, I decided to finally overcome my introversion. And, like all 
 **What I learned change the course of my life.**
 Not because I overcame my introversion, but because I learned how to embrace it. I learned how both introverts and extroverts can use their natural strengths to achieve more in work and life. \[[1](http://amzn.to/28OqsKt)\]
 So whether you're introverted or extrroverted, this article will help you use your strength more effectively–and hopefully help you understand your opposite a little bit better.
-## **the Spectrum**
+## **The Spectrum**
 The first thing to understand is that classification as an introver or extrovert is not a simple "A or B" choice. **It’s a spectrum.**
 To illustrate the different points along this spectrum, I’m going to use an example of myself, and the co-founders that soon joined me on the startup I was pitching that day: Jeff and Maggie.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1467402770203-F25MLAINI8FHYQTFOP78/image-asset.png?format=original)
@@ -111,7 +111,7 @@ So my first inclination was to say that plans are useless. Jeff was there to rem
 **Extroverts:**
 -   If you're an extrovert, use your propensity for action to learn from experience faster than introverts can. It's a huge advantage.
 -   But make sure you're not downplaying risk too much. If you take a risk and fail, learn from the experience. Too often extroverts double-down after a loss and lose control. \[[5](http://www.ncbi.nlm.nih.gov/pubmed/11301519)\]
-## **conclusion**
+## **Conclusion**
 When I started my entrepreneurial career, I was ashamed of my **introverted nature.** I believed I would never be successful without becoming as charismatic and outgoing as someone like Maggie.
 But by learning the science behind my introversion, I came to the understanding that it's a detriment to myself and society to go against my nature. Just it would be for Maggie to spend her days cooped up in an office.
 Going against your natural strength is like a 7'2 trying to play soccer. Sure, he technically _can_ do it, **but it will require a lot more willpower to ignore his gift of height, than to embrace it by playing basketball.**

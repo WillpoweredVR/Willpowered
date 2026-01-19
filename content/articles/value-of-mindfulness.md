@@ -14,7 +14,7 @@ How much does the ball cost?
 Was your answer 10 cents? If so, you answered like 80% of college-educated individuals, _and you also answered wrong_.
 Check again. If the ball costs $0.10, then the bat would cost $1.10, bringing the total to $1.20.
 The correct answer is actually 5 cents. If the ball costs $0.05, then the bat would cost $1.05, bringing the total to $1.10. \[[1](http://www.amazon.com/gp/product/0374533555/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0374533555&linkCode=as2&tag=willpowered-20&linkId=IW6D3B7HSSX7YFMN)\]
-## **why Do People Get This Problem Wrong?**
+## **Why Do People Get This Problem Wrong?**
 Do not feel bad if you answered this problem incorrectly the first time around. **Even Ivy League graduates only answer correctly on this problem 50% of the time!**
 So why do so many intelligent people get this problem wrong?
 The answer lies in the part of our brain that is doing the problem solving. When you were thinking about the problem the first time around, you were using a completely different part of your brain than when you thought about it the second time.
@@ -25,13 +25,13 @@ _Why does he want me to answer quickly?_
 _If the answer is this easy, why is he even asking me?_
 _Maybe I should add my prices for the ball and the bat to see what I get before deciding on my final answer._
 **These questions call upon our modern brain.** This part of our brain is responsible for a higher level of thinking. It is what we use for [abstract thinking, creativity and exerting our willpower.](http://www.willpowered.co/learn/evolution-of-willpower)
-## **our Daily Decisions**
+## **Our Daily Decisions**
 We like to believe that our daily decisions are made from a process of well-informed decision-making. We believe that we are investigating every angle of the problem and choosing our best option.
 Unfortunately this is completely false. **About 45% of the decisions that we make come from our primitive brain.** We naturally want to conserve our mental energy, so we default to making the easiest decision whenever possible. \[[3](http://www.amazon.com/gp/product/081298160X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=081298160X&linkCode=as2&tag=willpowered-20&linkId=WOA5DTGYOKUGAGNN)\]
 This works well when the task is simple, like remembering to brush your teeth, but problems occur when we start to [use our automatic decision-making in pursuit of our higher goals.](http://www.willpowered.co/learn/willpower-and-habits)
 As you can see from the problem at the beginning of this article, **our primitive brain’s decision-making is flawed.** If we default to using the logic of our primitive brain to make decisions about what food to eat, when to exercise, or how to prioritize our to-do list, we will be thinking with the same logic as “the ball equals 10 cents”.
 **We will make poor decisions without realizing it.** We will not double-check to make sure we are on the right path, or question the consequences of our choices. This is a natural flaw in our genetic makeup, but one that can be easily corrected with a simple idea – **becoming more mindful.**
-## **benefits of Mindfulness**
+## **Benefits of Mindfulness**
 [Mindfulness](http://en.wikipedia.org/wiki/Mindfulness) is one of the most underrated skills in our society. Studies have shown that people who are more mindful of their decisions have: \[[4](http://www.amazon.com/gp/product/0143122231/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0143122231&linkCode=as2&tag=willpowered-20&linkId=FWXY62FGMWK344LA)\]
 · More happiness
 · More success in relationships
@@ -45,10 +45,10 @@ The list goes on. The reason that people who are more mindful see this kind of s
 Rather than being on autopilot, they have developed the natural ability to see problems through the lens of the modern brain, leading them to make better decisions.
 **This trait is powerful.** Think about the fact that if you simply approach the bat and ball problem in a mindful way, you will have answered the question with **more logic and reasoning than** **50% of the people _at Harvard!_** \[[1](http://www.amazon.com/gp/product/0374533555/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0374533555&linkCode=as2&tag=willpowered-20&linkId=IW6D3B7HSSX7YFMN)\]
 Powerful indeed. And, unlike Harvard, you won’t need to spend hundreds of thousands of dollars to develop this trait.
-## **how to Become More Mindful**
+## **How to Become More Mindful**
 So how do we become more mindful and develop the natural ability to apply our modern brain to our daily decisions?
 Researchers have found 3 simple ways to train your brain to become more mindful.
-### **1.** **meditation**
+### **1.** **Meditation**
 Most of the time that we are on autopilot, our minds are completely lost in thought. We are thinking about what we’re going to do in the future, or reminiscing on something in the past. This means that our modern brain is lost in thought and not focusing on the present decision. So our primitive brain is called into duty.
 **Meditation trains the modern brain to be present.** Practicing meditation for as little as 10 minutes a day will help develop your natural ability to focus and let go of the worries of the future or past. Simply by training the brain to be present in the decision-making process, you will naturally begin to think about the decision with your modern brain. \[[5](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3004979/)\]
 To get started meditating, [check out this article](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower) which will list all of the benefits of meditation and give you the step-by-step guide to getting started.
@@ -64,7 +64,7 @@ Both of these problems require our modern brain to solve. If I were to ask you t
 **The modern brain, however, does not like to multi-task.** Because it requires a higher level of thought than the primitive brain, it works best when focused on one problem at a time.
 The more you try to multi-task in your life, the more you are training your primitive brain. **Despite your best intentions, you will unknowingly be applying the primitive brain's flawed logic to your multi-tasking.**
 So resist the temptation to multi-task and remain focused. This will train your modern brain and help you become more mindful. \[[1](http://www.amazon.com/gp/product/0374533555/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0374533555&linkCode=as2&tag=willpowered-20&linkId=IW6D3B7HSSX7YFMN)\]
-## **conclusion**
+## **Conclusion**
 There is a big difference in the intelligence of our primitive brain and our modern brain. Our primitive brain is lazy. It wants to get things done quickly and does not stop to make sure that it is making the right decision. And **45% of the time, we are naturally using this part of the brain to make our decisions!**
 We can overcome this natural tendency by becoming more mindful. **Simply by becoming more mindful of our daily decisions, we begin to use our modern brain.** Our modern brain is intelligent. It applies logic, reasoning and questioning of possible consequences; leading to better decision-making.
 By practicing [meditation](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower), [self-monitoring](http://www.willpowered.co/learn/self-monitoring) and [focusing on one task at a time](http://www.willpowered.co/learn/built-for-focus-and-deliberate-practice), you can train your modern brain to become the dominant decision-maker. This will lead to better decisions, better habits and a better chance of reaching your goals!

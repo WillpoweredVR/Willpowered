@@ -24,7 +24,7 @@ He was a star basketball player at his high school and, even though he used drug
 His status as an athlete was also what led Carl to do well enough in school to get into college. He fully admitted that he didn’t care about schoolwork; but he was determined to earn a scholarship to play college basketball.
 Unfortunately, though, Carl was small for a basketball player and his coach made little attempt to get schools to recruit him. So he didn’t receive the scholarship offer he dreamed of, and he was crushed. **His dream was dead.**
 What was he going to do now? He’d been bragging about getting out of Miami and going to college for years. If he stayed, he would have lost pride and status amongst his friends. So without the financial means to go to college, he enlisted in the Air Force. \[[1](http://www.amazon.com/High-Price-Neuroscientists-Self-Discovery-Challenges-ebook/dp/B009NF75MY/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)\]
-## **finding His New Purpose**
+## **Finding His New Purpose**
 When he entered the Air Force, Hart was lost. He'd never thought of doing anything but be a professional athlete. So as he went through basic training, through time stationed in Japan, and through time stationed in England, he was searching for a new purpose for his life.
 In England, he started the first college courses provided by the Air Force.
 He was far from studious going into his classes, but for the first time in his life, he actually enjoyed learning. He was able to fully immerse himself in his schoolwork and his instructors started to see potential in him. **His confidence as a student began to grow.**
@@ -32,7 +32,7 @@ After a year of study, Hart returned to Miami in 1987 on leave and was horrified
 He saw more guns in the hands of teens. He heard stories about the turf wars over crack. And he saw the escalation of police force: leading to more harassment, more arrests, and more children who would grow up with their parents in prison.
 **Things had changed.** And Hart, like the rest of the nation, blamed crack cocaine. He saw clearly that the reason he was in college while his friends were in prison was because of the drug. He never got hooked on it, so he avoided its downward spiral.
 His new purpose became clear to him—**learn the cause of addiction, and save his community.**
-## **digging Deeper**
+## **Digging Deeper**
 This new purpose helped Hart fight through his huge learning disadvantage.
 Even though he'd been accepted into college, his high school's standards were still far below the norm of what his college classmates were used to. But, despite being behind his classmates in some critical thinking skills, Hart's professors noticed the potential in him.
 They encourage him to fight through his struggles by teaching him one of the most important lessons when it comes to science—you don't need to be a genius to be a scientist.
@@ -43,7 +43,7 @@ Then, after 10 years of slow, consistent, determined progress, Hart got his Ph.D
 As I sum up in [this article](http://www.willpowered.co/learn/addiction), Hart discovered that what he thought about addiction was completely wrong. Crack was not a "one hit and you're hooked" drug. In fact, **only 9% of people who use crack actually became addicted.** The 91% of others were usually normal, healthy people. \[[2](http://www.ncbi.nlm.nih.gov/pubmed/10821213),[3](http://www.ncbi.nlm.nih.gov/pubmed/19515516)\]
 And the reason why some became addicts has less to do with the drug itself, and more to do with _why they are using it_ in the first place.
 Which led Hart to wonder..._what was the real reason he was in a lab instead of a prison cell?_
-## **differences in Purpose**
+## **Differences in Purpose**
 When we look back at Hart's story, we can see that he had little shot of ending up in a laboratory.
 _His parents couldn't take care of him._
 _His living situation was terrible and constantly changing._
@@ -55,7 +55,7 @@ It was this status, too, that motivated him to leave Miami and join the Air Forc
 Then when he enrolled in college, he was able to learn in a world free of the distractions of his old neighborhood. **Then, slowly but surely, he grew his confidence as a student until he found another purpose worth fighting for—solving drug addiction.**
 Step-by-step he began unraveling the science behind addiction, working towards his purpose, while also earning his Ph.D and the respect of scientists everywhere. And after all this work, he became the first [black tenured professor ever at Columbia University.](http://www.columbia.edu/cu/psychology/fac-bios/HartC/faculty.html)
 And today his purpose is [speaking to people around the world](https://www.youtube.com/results?search_query=carl+hart+ted+talk) sharing the real science behind addiction.
-## **beware the Danger of the Easy Answer**
+## **Beware the Danger of the Easy Answer**
 In a piece by CNN on a heroin epidemic taking place in New Jersey, they [challenged Dr. Hart on his findings](https://www.youtube.com/watch?v=2Cc3J9Huin4). They did a story on teenagers who were addicted to heroin and the terrible state they were in.
 _“What do you say to one of these 12 year-olds who are addicted to heroin?”_ asked the reporter.
 Hart responded by saying, _“I assure you, if you have a 12 year-old who is addicted to heroin, heroin is not the problem. There are clearly a lot more issues that the 12 year-old is facing. I need to know a lot more information before I could tell you to do anything._
@@ -65,7 +65,7 @@ But when we see a story like this, or we hear about crime rising in Carl Hart's 
 **This is the same reason we seek easy answers to solving our goals.**
 The world is complicated. And in order to not be overwhelmed with all of it's complexity, your brain is wired to find simple, easy answers. That's why we search for the _8-week ab program or the 90-day diet,_ rather than seeking the reason why we are struggling with health in the first place. \[[4](http://www.annualreviews.org/doi/abs/10.1146/annurev.anthro.32.061002.093158)\]
 **Whatever your goal, you must avoid this temptation and force yourself to dig deeper.** Your willpower is much better used when it is spent finding "the cause of the disease" rather than "treating the symptoms."
-## **conclusion**
+## **Conclusion**
 The human brain is literally wired to seek an easy answer to a difficult problem.
 We see crime, we see violence, we see poverty, and we instantly blame a drug because it is a simple solution that seems to make sense. It doesn't require us to confront the brutal facts about _why_ those people are turning to drugs in the first place.
 And because we don't dig deeper to find the root of the problem, we don't learn why the Carl Harts of the world are able to overcome adversity, avoid joining a gang, and even push the human race forward by advancing our understanding of addiction.

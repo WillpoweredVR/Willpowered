@@ -16,20 +16,20 @@ I was going to tell my friend "no way", but then I learned that one of my [heroe
 **I knew that overhauling my diet would not be easy.** So I [played offense](http://www.willpowered.co/learn/playing-offense), used scientific understanding and consulted every [willpower trick](http://www.willpowered.co/learn/?category=Willpower+101) in the book to help me establish the habit.
 **It was challenging, it was painful, but ultimately it was successful!** And I can say honestly that it was one of the best decisions of my life. I firmly established the habit and now the diet is simply a part of my lifestyle.
 Here is how I scientifically created the habit of eating the Paleo diet - and how you can use it follow any diet you want!
-## **1.** **focus on One Goal**
+## **1.** **Focus on One Goal**
 In the past, whenever I tried eating a new diet, I also had many other goals.
 I would try [exercising more](http://www.willpowered.co/learn/create-exercising-habit), becoming more productive, waking up earlier, etc. This would work for a while, but eventually I would always crash and burn. So by trying to do _all_ of these things at once, I wouldn't accomplish any of them.
 Your [willpower is like a muscle.](http://www.willpowered.co/learn/willpower-is-a-muscle) If you use it to start exercising, not only will you be hungrier, but your willpower will also be weaker when you try to use it to resist tempting foods. The same goes for using it to stick to a budget, quit smoking or wake up earlier. \[[1](http://www.psy.lu.se/upload/psykologi/pdf/strength_model1.pdf)\]
 The reason that I was successful in establishing the habit this time is more because of what I didn't do than what I did do. I _didn't_ add all of those other goals to my list of priorities. I was solely focused on establishing the new eating habit.
 **So commit yourself to the top priority of sticking to a new diet.** You have plenty of time left in your life to get to your other goals later. Right now, your focus should be on your diet.
-## **2.** **make That Goal Process Oriented**
+## **2.** **Make That Goal Process Oriented**
 The next mistake I always made was making my goal results-oriented. I was dieting because I wanted to lose weight or get a "six-pack". I was focused on the results of dieting, rather than the process of it.
 But with dieting, these results-oriented goals were completely out of my control.
 Even expert nutritionists cannot control exactly how the body is going to respond to a particular diet or know how long it will take to see results. So as much as I wanted to use the diet as a means to get better Spartan Race results, that was not my focus.
 Instead I focused on creating a [process-oriented goal](http://www.willpowered.co/learn/internal-locus-of-control). My goal was to simply follow the Paleo Diet for Athletes. I knew the results I wanted would come if I just followed the process ([and they did](http://www.willpowered.co/learn/spartan-race-lessons)).
 When coming up with your new diet, make the goal to simply follow the process of that diet. You cannot control whether or not your body loses weight, but you can control what you put into it.
 Don't go overboard with the process either. It doesn't need to be for every meal, there are huge benefits of simply [eating a healthy breakfast.](http://www.willpowered.co/learn/what-to-eat-for-breakfast)
-## **3.** **set up the Ideal Environment**
+## **3.** **Set up the Ideal Environment**
 It was day 3 of my new diet and I felt like I was done for.
 One of the hardest parts of adhering to the Paleo diet is that your body must adjust to the new lack of carbohydrates (much of the diet is based in protein and fat). They call this adjustment the “carbohydrate flu”.
 This “flu” hit me hard. My body _craved_ pasta, bread and peanut butter so much that I thought I would die without it.
@@ -37,13 +37,13 @@ This “flu” hit me hard. My body _craved_ pasta, bread and peanut butter so m
 Making it just a little bit harder helped me resist the craving and stick to my diet.
 **The best way to deny a temptation is to not have to face it in the first place.** Use your willpower to play offense with your diet. Get rid of all of the food you don’t want to eat in the house and make it harder to give into cravings. \[[2](http://hpq.sagepub.com/content/16/5/750)\]
 Also, make it easier to eat healthy! Prepare your meals beforehand so you don’t have to use as much willpower to make them. Sometimes the difference in success and failure is making it just a little bit easier to stick to your diet. \[[3](https://www.youtube.com/watch?v=3TX-Nu5wTS8)\]
-## **4.** **keep a Food Diary**
+## **4.** **Keep a Food Diary**
 _“Jeez, I guess I never realized I ate so unhealthy after work…”_
 That popped into my head when I finally sat down to log all of the food I ate. I knew that a food diary was the proven number one way that dieters lose weight, and now it made sense why. \[[4](http://www.ncbi.nlm.nih.gov/pubmed/10457761)\]
 I had always craved a quick, unhealthy snack after work. After a long, stressful day, I was hungry at a time when it was harder to resist cravings. So I ended up snacking on chips, granola bars, or whatever else was quick and tempting in the fridge.
 **By writing down that food, I realized just how unhealthy I ate when I got home.** So now I could focus on keeping quick, healthy meals ready for me to eat after work. This was a small win with my diet that was incredibly easy to do.
 So begin writing down what you eat and when you eat it. This will help you make more intelligent, non-emotional decisions with you diet. It will also help you act more like the best version of yourself for all of the reasons listed [here.](http://www.willpowered.co/learn/self-monitoring)
-## **5.** **always Have a Healthy Snack on Hand**
+## **5.** **Always Have a Healthy Snack on Hand**
 Here came another test to my ability to stick to my new diet – a cocktail party.
 I was surrounded by food and drinks that I had told myself that I would resist – **yet the temptation to make an exception “just this once” was overpowering**!
 As I was denying the temptations all around me, my brain was burning through an energy source called glucose – what the brain uses to exert willpower. \[[5](http://www.uky.edu/~njdewa2/gailliotetal07JPSP.pdf)\]
@@ -52,7 +52,7 @@ This is known as the dieter’s catch 22 – **the more willpower you use to res
 When you have a healthy snack on hand, you can stop this cycle before it starts.
 I made sure that I had a mix of nuts and berries with me wherever I went. So when I faced a situation like the cocktail party, I was able to eat the healthy snack, lower my hunger and ensure that my level of glucose didn't drop. Thus giving myself plenty of willpower fuel to continue to resist the craving.
 So make sure that you always have a healthy snack on hand to avoid the dieter’s catch 22!
-## **6.** **just Eat Healthy Today**
+## **6.** **Just Eat Healthy Today**
 I was finally almost broken. I had just eaten a healthy dinner and I was _craving_ something for dessert.
 But that’s when I remembered the motto of an organization that has a much harder time with cravings, [Alcoholics Anonymous.](http://www.aa.org/)
 _“Just don’t have a drink today.”_
@@ -61,7 +61,7 @@ One of the most effective things you can do for your willpower is to avoid getti
 Many people set a diet with the goal of eating healthy for 8 weeks, 6 months, whatever. When you do that, you can feel completely overwhelmed when you’re struggling on day 6 and thinking, _“how can I possibly get through 7 more weeks of this!”_
 But when you simply focus on eating healthy _today_ the task becomes achievable. Then before you know it, 4, 14, 24 days have passed and you become more confident than ever that _you can do this._
 So do not focus on the overall goal of creating the habit of eating healthy, simply focus on eating healthy _today!_
-## **7.** **forgive Yourself**
+## **7.** **Forgive Yourself**
 Alas, after all of those times I was able to stick to my diet, I was still not perfect.
 Despite all of my knowledge of willpower, cravings, and strategies to combat them, I did slip up on a couple of days. But, unlike most people, **I did not feel guilty about them – and that’s a good thing.**
 This seems completely counter-intuitive. If you don’t feel guilty, how will you motivate yourself to get back to sticking to your diet? _Shouldn’t you punish yourself?!_
@@ -76,7 +76,7 @@ _Of course not!_
 You know that making them feel bad would only make the situation worse. You would encourage them to not let the slip up get them down. Then you would encourage them to get back to it and reach their goal.
 _So why would it be any different for yourself?_
 So if you have any slip-ups in sticking to your diet, forgive yourself. Learn from your mistakes and make the changes necessary to make sure you don't slip up again.
-## **conclusion**
+## **Conclusion**
 Sticking to a diet is one of the hardest challenges there is to your willpower. No matter who you are, you will struggle to stick to a diet that is new to you. But there are rational, scientifically proven tactics that you can take to help you in the process.
 The 7 steps listed above are what I used to create my habit of eating healthy. They may not work for everyone, but they will improve your chances of success. I wish you the best of luck creating your habit of healthy eating!
 **Souces:**

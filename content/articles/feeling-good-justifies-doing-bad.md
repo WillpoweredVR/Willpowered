@@ -14,14 +14,14 @@ The researchers believed they had a sure winner in the group that focused on the
 **Apparently not.**
 The participants who focused on their progress not only did worse than the participants who focused on how far they still needed to go, they also did worse than the control group who didn’t focus on either! \[[1](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.144.7322)\]
 Why is this? Shouldn’t feeling good about your progress give you the confidence that you need to make it to the finish?
-## **why Focusing on Your Progress Hurts You**
+## **Why Focusing on Your Progress Hurts You**
 When the participants celebrated their progress, they began to feel virtuous. They looked at everything they were able to accomplish and were proud of how far they had come.
 **Unfortunately, it was this “virtuous” feeling that doomed them from actually reaching their goal.**
 As soon as they started to view their progress to that point as “good”, they began to justify to themselves the ability to do “bad”.
 _“After all, I’ve been so good lately! Don’t I deserve to indulge just a little bit?”_
 This perspective led the participants down the wrong path. After they began using their good behavior to justify bad behavior once, they began using it to justify _even more bad behavior!_ Which eventually ruined all of their progress.
 This is a phenomenon known as moral licensing. And it has the ability to make you give up on your goals – **and feel good about doing it.** \[[2](http://pss.sagepub.com/content/20/4/523.abstract)\]
-## **moral Licensing**
+## **Moral Licensing**
 There is an internal battle constantly going on inside of your brain.
 It is being fought between your [limbic system](https://en.wikipedia.org/wiki/Limbic_system) – which is concerned with your short-term desires like eating delicious food, making impulse purchases and relaxing – and your [pre-frontal cortex](https://en.wikipedia.org/wiki/Prefrontal_cortex) – which is concerned with your higher aspirations.
 Every time you come across temptation, [this internal debate gets cued up](http://www.willpowered.co/learn/short-term-and-long-term-motivation). The limbic system sees the temptation and immediately tells you, “YESSSSS! Get it! Now!!”
@@ -31,14 +31,14 @@ But what if your pre-frontal cortex starts believing that giving in to temptatio
 **This is exactly what takes place with moral licensing.**
 Now your pre-frontal cortex is looking at all of your “good” behavior and using it as logical, rational reasons for you to justify skipping the trip to the gym, eating the dessert and procrastinating your work.
 So rather than an epic battle between your long-term goals and your short-term desires, you have the two sides agreeing with each other – leading you to stray from your goals _and feel justified in doing so!_
-## **how Bad This Can Be**
+## **How Bad This Can Be**
 It gets worse. Moral licensing does not even require that there is a connection between the good and bad behavior!
 People who put extra time in at the office will use that as justification for indulging in food.
 People who stick to their diets will use that to justify a major credit card purchase.
 In one study, all it took was getting people to _think_ about a charity they might donate to one day for them to increase their chances of splurging at the mall! \[[3](http://wat1224.ucr.edu/Morality/Monin%202010%20Compass%20on%20Moral%20Licensing.pdf)\]
 **They didn't even have to volunteer or donate!**
 We don’t need to see a connection (or even do the good act!) we just need to _feel good._
-## **how to Overcome Moral Licensing**
+## **How to Overcome Moral Licensing**
 So how can you avoid this trap?
 Well, the main problem with moral licensing comes when you start to credit activities like going to the gym, eating healthy, saving money, etc. with a moral virtue that they do not deserve.
 **There is nothing moral about going to the gym, plenty of immoral people do!** The same can be said for having no credit card debt or choosing a side salad instead of french fries.

@@ -13,14 +13,14 @@ _“I quit my job and I’m going to start a blog where I write about and teach 
 Yeah, mine too.
 Blank stares, worried faces and **ultimately a lot of judgment and criticism –** especially because the last time I pursued a dream, I failed. Miserably.
 _But, of course, I am not the only one who has faced criticism._
-## **criticism for All**
+## **Criticism for All**
 No matter who you are, no matter what you do, and no matter how nice your friends and family are; **you will be criticized for something**.
 It is in our nature to judge those who are different than us. And given the fact that we are all different in some way, your very existence is going to make somebody out there critical of you.
 You could stand out from the crowd and be criticized for whatever your stand for. Or you could blend in with the crowd and be criticized for not being more vocal. You could be ambitious and be criticized for being greedy. Or you could live a simple life and be criticized for having no "drive".
 Aristotle said it best when he claimed:
 _“There is only one way to avoid criticism. Say nothing, do nothing, be nothing.”_
 In other words, **it’s impossible to avoid criticism.** And the first step towards becoming better at dealing with criticism is to accept that fact. Because if we can accept that fact, then we can make it much easier to handle **our biggest critic - the one we see in the mirror.**
-## **why You Are Your Own Biggest Critic**
+## **Why You Are Your Own Biggest Critic**
 It is not just the pressures of modern day society to live up to a higher ideal that make us our own biggest critic. We are actually wired to linger to negative events more than positive events.
 The brain handles negative events differently than positive ones. Even people with a positive outlook on life remember negative events more strongly and in greater detail. \[[1](http://www.amazon.com/gp/product/B0043DFFVE/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0043DFFVE&linkCode=as2&tag=willpowered-20&linkId=OA55PEVSFZFZHK5C)\]
 _Why?_
@@ -29,7 +29,7 @@ _Why?_
 We are constantly thinking about it, which implants it into our long-term memories. This makes us _feel_ like the negative event was a bigger deal than it actually was. _After all, if we remember it, then it must have been a big deal!_
 This not only leads us to become more self-critical, but it also makes us want to avoid criticism from others in the future. We remember clearly what criticism felt like last time, _and we don’t want to face it again!_
 This leads to taking fewer risks, [becoming less vulnerable](http://www.willpowered.co/learn/vulnerability), and keeping our greatness locked safely inside of us where no one can criticize it.
-## **how to Deal With Criticism**
+## **How to Deal With Criticism**
 Last week, I sent out emails to approximately 40,000 people. About 4,000 of these people read the article, then simply went about the rest of their day. About 100-150 either emailed me with an inspiring story about how the science of willpower has helped them, or simply said something along the lines of “great article”.
 **Then a whopping 1 person sent me something about how my "ideas are bullshit and I write like a 4 year-old".** This person is outnumbered at least 100 to 1 by people sending me positive feedback and 4000 to 1 by people who care enough to open the email, click-through and read the article.
 **Yet, this is the one who lingers.** This is the one that I’m thinking about. And while I’m questioning whether or not he might be right, he’s probably off criticizing someone else’s blog.
@@ -43,7 +43,7 @@ The brain is naturally judgmental because it wants to take the easy way out. [It
 When you make judgments on other people, cultures, or ideas; you train the brain to become just as judgmental on yourself. You begin criticizing yourself for what you dislike in others.
 This makes you feel [more guilty](http://www.willpowered.co/learn/science-behind-guilt) about mistakes and makes you lose confidence in your own abilities. Which, of course, leads you on a destructive path to becoming your own worst critic. \[[3](http://www.amazon.com/gp/product/B007V65PBK/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B007V65PBK&linkCode=as2&tag=willpowered-20&linkId=W7AAJKFUVJCTPM23)\]
 **So let go of your need to judge.** You don’t need to try to understand everyone, but you don’t need to criticize him or her either. Simply accept them as they are. Just as you would hope they would do for you.
-### **2\.** **meditate**
+### **2\.** **Meditate**
 There is no better way to practice letting go of thoughts than [daily meditation](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower). Meditation trains your brain to not linger on any thought that you do not want to. This means you will be able to not only let go of your personal need to criticize others, but also let go of other people's criticism of you.
 Research shows that after just 2-3 days of practicing meditation for 10 minutes, you will be better at letting go of negative, self-critical thoughts, and be able to better control your judgments towards others.
 There are a lot of myths surrounding meditation, so I'll start by explaining what meditation really is. **Meditation is simply the practice of bringing your thoughts to the present moment.** 47% of our lives are spent either reminiscing about the past or thinking about what we are going to do in the future. \[[4](http://news.harvard.edu/gazette/story/2010/11/wandering-mind-not-a-happy-mind/)\]
@@ -55,7 +55,7 @@ So, of course, I got more criticism for continuing despite the lack of results. 
 They couldn't see the hours of research I was doing. They couldn't see my commitment to writing 1000 words per day to become a better writer. They couldn't see that I was riding my bike to Costco in sub-freezing temperatures to load up on groceries in order to keep my expenses down.
 **Your effort is the only thing that is truly worth judgment.** Ultimately, [that is the only thing that you can control.](http://www.willpowered.co/learn/internal-locus-of-control) If you are giving your best effort towards something that you truly believe in, it will be much easier to let criticism from others go. **Because deep down, you know that you can be proud of yourself.**
 Remember, in most cases, those who criticize you cannot see how hard you are working. But that is the only thing that really matters. You will never be able to control your results, but you can control your effort. **And as long as you can be proud of your own effort, what does it matter what others think?**
-## **conclusion**
+## **Conclusion**
 No matter who you are, or what you do, you will be criticized by someone. It is an unfortunate part of our nature to criticize those who are different than us. But no matter how bad of criticism you receive from the outside world, your biggest critic will always be yourself.
 **You will dwell on criticism you receive far more than rejoice in praise**. So you must train your mind to let go of the criticism that you receive from others and not allow it to sink in.
 By letting go of your need to judge others, practicing meditation, and evaluating yourself by your effort - rather than your results - you will begin to train your mind to let go of criticism. This will give you more confidence to put your unique greatness out there for the whole world to see.

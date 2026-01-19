@@ -26,8 +26,7 @@ I was finding interesting and exciting people on Craigslist with whom I was part
 One morning after an all nighter of cocaine and [MDMA](https://www.erowid.org/chemicals/mdma/mdma.shtml), I needed to go to work (I was a shop clerk at a women’s boutique) and my partner in crime, who was the director of an area hospital, crushed up a line for me.
 After I snorted the line, I asked him what it was. It was methamphetamine. I’ll never forget my thought in that moment, “shit, this is one of the ones I wasn’t going to do!”
 I’d just crossed over from party to serious in one line.
-##   
-**Creating an addict**
+## **Creating an addict**
 But like Colin says in his [Example Rule](/learn/example-rule) piece, 85-90% of people who try meth don’t become addicts. My addiction didn’t happen overnight. I didn’t immediately want more. I wasn’t immediately hooked. I didn’t become a drug fiend.
 **I didn’t start scratching imaginary scabs off my arms, lose my teeth, or move into a trailer.**
 But now I knew this thing existed and the line had been crossed. So as I continued to “party” on the weekends, sometimes I would use methamphetamine. It was a lot cheaper than cocaine and the high was about 100 times more intense, lasting for days and taking me to a place of euphoria.
@@ -58,7 +57,7 @@ But this part of my identity was instrumental in helping me not stay addicted to
 ### 4\. I had a loving therapist who gave me empathy.
 I’m not sure what I would have done without Donna from San Luis Obispo County Drug & Alcohol. She just gave me pure love and empathy. She had been a cocaine addict herself and related to me. She never shamed me for my behavior. She saw the good in me and always brought that out.
 In her office I felt whole, enough, and capable of greatness. She treated me like a regular human: she never put me down, treated me like a criminal, or said demeaning things. I told her that I wasn’t enjoying one of the classes and she said “then don’t go! Don’t do things you don’t enjoy!” And that was that. No one had ever given me that permission before!
-### 5\. 3 month outpatient rehab program that was almost free.
+### 5\. 3 Month outpatient rehab program that was almost free.
 I think I only had to pay $5-$10 for each visit which was about 3 times a week between one-on-one with my drug counselor and the group classes. Thanks SLO County!
 My parents would not have been able to pay for me to go to a fancy treatment center so I’m so grateful this nearly-free resource was available. I consider myself so lucky. I’m not sure that all communities have free centers this good.
 ### 6\. 12 Step meetings: believing in a power greater than myself, a sober community and sober friends, 1 day at a time.

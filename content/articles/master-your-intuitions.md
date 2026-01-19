@@ -20,7 +20,7 @@ When he made this discovery, Semmelweis immediately began requiring that doctors
 After some time had passed, Semmelweis felt that he had enough evidence to bring to the head of Vienna General and make the hand washing procedures required hospital-wide.
 After listening to Semmelweis' theory and evidence, the head doctor not only refused to make the hand washing rules a hospital-wide practice, he forbid the doctors in Semmelweis' department from adhering to them!
 **He simply could not fathom that the doctors were the ones that were killing their patients.** So he ignored Semmelweis, and attributed the disease to the ventilation system. Which, of course, led to more deaths and no progress.
-## **the Power of Our Intuition**
+## **The Power of Our Intuition**
 Most of you will look down on the head of Vienna General Hospital–and for good reason.
 _How dare he refuse the evidence and allow innocent women to die!_
 But the question is…was he just an arrogant or immoral person? Or is it possible that you and I are just as likely to ignore evidence that we don't want to accept either?
@@ -65,7 +65,7 @@ Because participants had to respond quickly, it was difficult to categorize the 
 The same experiment has been conducted to test various intuitive prejudices against race, age, and social group. You can take it for yourself by [clicking here.](http://projectimplicit.org/index.html)
 Of course, your willpower is not immune to this power of the elephant.
 When faced with the decision to work on your goals, if your elephant starts heading too far down the path to [procrastination](http://www.willpowered.co/learn/why-we-procrastinate), the rational part of your brain will turn into a lawyer [seeking justification](http://www.willpowered.co/learn/feeling-good-justifies-doing-bad) for putting that work off.
-## **how Do You Avoid This Pattern?**
+## **How Do You Avoid This Pattern?**
 So how do you make the best decision and get your elephant going in the right direction?
 When I learned about this phenomenon, I immediately believed that if you teach people “how to think” like we do in our top colleges and universities, that will train them to become scientists, rather than lawyers.
 Once again, the opposite is true.

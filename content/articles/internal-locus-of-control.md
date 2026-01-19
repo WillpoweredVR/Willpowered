@@ -15,7 +15,7 @@ So, despite the victory, Wooden scolded his team. **He demanded of them greater 
 The team responded well, winning their next 3 games without giving up more than 84 points against much better opposition than the Redhawks. This led the Bruins to finish the season undefeated and win their first of 10 NCAA championships under Wooden over the next 12 years.
 To provide context about how big of an accomplishment this is, the next closest coach, **[Mike Krzyzewski](#)** who has coached Duke for over 30 years now, **only has 4 championships!**
 So what is the lesson here? That being a hardass is the key to wild success? **No.** John Wooden may have seemed to be harsh on his players in the game against the Redhawks, but what he was really doing was getting them to **focus on what they could control.**
-## **internal Locus of Control**
+## **Internal Locus of Control**
 Despite all of his success as a basketball coach, John Wooden claimed that he **never once cared what the final score of the game was.** If his team won or lost, he did not care. What he cared about was whether or not they played with great effort, focus and resiliency \[[1](http://www.amazon.com/Wooden-Leadership-Create-Winning-Organization/dp/0071453393/ref=sr_1_2?s=books&ie=UTF8&qid=1420756999&sr=1-2&keywords=john+wooden+books)\]. So there were some games where his team won yet he was not happy, and there were other games where they lost and he was extremely proud.
 Ultimately, aspects outside of your control can determine the final score of a basketball game. You may play perfect defense, but your opponent hits shots from near impossible ranges. Your team may get some bad calls against you at the worst possible times. And for whatever reason, tonight you may just miss the shots that you usually make.
 Due to these and many other factors, you may play your heart out and end up walking away from the court defeated. Wooden knew this, so instead of having his players focus on the scoreboard, he had them focus on the things they could control.
@@ -25,7 +25,7 @@ If your goal is to run a marathon, you cannot control all of the factors that ma
 If your goal is to get a promotion, you cannot control who else the company will look at as well. You can't control what other candidates' level of experience is, or what connections they may have.
 **All of these factors lie outside of our control**. So if we focus on result-oriented goals like this, even if we do everything right, we may still not get the result we want. Just like John Wooden’s teams could do everything right on the court, yet still end up losing the game.
 **Then if we do not achieve these results, our willpower can take a major hit.** We lose our motivation and inspiration as we begin to question whether or not we will ever be able to achieve what we really want in life. This can leave us deeply debilitated and not only derail these goals, but any others we may have in the future as well.
-## **shift Your Focus to the Process**
+## **Shift Your Focus to the Process**
 We can beat this phenomenon by **shifting our focus to what we can control.** Rather than being results-oriented, we must become [process-oriented](http://www.willpowered.co/learn/small-wins-and-systems). Even the best-laid plans can be disrupted by outside forces.
 You cannot control your body’s ability to lose a certain amount of weight, but you can control the food that you put into it. You cannot ensure that you will complete a marathon, but you can control your effort in training for it. You cannot control whether or not your boss promotes you, but you can get into the office early on a regular basis with a positive attitude.
 When we become process-oriented and shift our focus to what we can control, we get key 3 advantages:
@@ -47,7 +47,7 @@ _The boss has never liked me._
 **When we place blame in this way, we shut out our ability to learn from the mistakes we made.** Because these are all factors outside of our control, there is nothing we can do to change them to achieve our goals in the future.
 **If we shift our focus to the process and what we can control, however, we can learn from what went wrong and change it for next time.** Perhaps we tried to set up an exercise routine in the evenings, but had more post-work commitments than we thought that we would.
 So we learn from that process and we shift the exercise routine to the morning. We can then assess whether the morning works as a better time to exercise. By focusing on the process and what we can control, we can make constant tweaks and improvements because we are in control.
-## **conclusion**
+## **Conclusion**
 There are many advantages to being goal-oriented. You gain focus, motivation and confidence by setting goals and achieving them. But if you focus on results rather than the process, you can set yourself up to fail because of factors outside of your control.
 There will always be factors outside of your control that will influence the ultimate outcome of your efforts. By shifting your focus to the process and factors within your control, you set yourself up to achieve small wins, to learn from experience and avoid trying to predict the future. **Focus on the process and eventually the results will come** – and they may be even greater than you predicted!
 **Sources**

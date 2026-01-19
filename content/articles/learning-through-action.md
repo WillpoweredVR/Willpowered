@@ -15,7 +15,7 @@ There was no reason to believe that the brothers would be successful. They had n
 A man named [Samuel Pierpont Langley](https://en.wikipedia.org/wiki/Samuel_Pierpont_Langley) was the clear favorite to be the first to develop manned flight. He was a brilliant engineer, he had a full team who all graduated from Ivy League schools and he had financial backing from both private investors and the government.
 _So why have you probably never heard of Samuel Pierpont Langley?_
 How did the Wright brothers – simple bicycle repairmen from [Dayton, Ohio](https://en.wikipedia.org/wiki/Dayton,_Ohio) – go down in the history books as the first to achieve manned flight?
-## **theory Vs. Action**
+## **Theory Vs. Action**
 Samuel Pierpont Langley’s team was full of brilliant engineers. They believed – and for good reason – that flying a plane would be similar to sailing a boat. This meant that their flying machine should be built for stability.
 Their pilot, they believed, should be focused mostly on going straight, making only gradual turns so as to ensure his stability in the air.
 So Langley and his team spent months calculating how to make a stable aircraft for the highly turbulent open air. They focused all of their attention on the physics of how to create the perfect aircraft.
@@ -26,7 +26,7 @@ The first designs of the Wright brothers were terrible. But that was simply a pa
 Then, because they were actually piloting the planes, they were able to _feel_ how the pilot could play a role in stabilizing the craft. So they could create their new designs based on actual experience in the air.
 Then, on December 17, 1903, while Langley’s team was still locked in their offices trying to figure out how to create the perfect aircraft, the two bicycle repairmen achieved the first sustained flight.
 With no advanced education, no financial backing and no experience in aviation, Orville Wright flew the very first manned aircraft for an impressive 59 seconds. Winning the race and adding the Wright brother's names to the history books.
-## **learning Through Action**
+## **Learning Through Action**
 There is no greater way to learn than by trial and error. Because Langley’s team was focused completely on designing the “perfect” aircraft, they were unable to gain experience of what it actually felt like to fly a plane.
 If they did, they would have realized how much more control the pilot had to stabilize the plane in the air than they originally thought. This would have instantly set them on new path to design something with the pilot in mind.
 **But they didn’t.** **They never got that experience.** So even the most brilliant minds and endless financial backing could not help them to be the first to achieve manned flight.
@@ -36,7 +36,7 @@ Thomas Edison, who is widely regarded as the greatest inventor of all time, _did
 There is no better example of this than in his invention of the light bulb. It famously took him 1000 attempts before he finally figured it out. _Talk about trial and error!_ \[[2](http://www.uky.edu/~eushe2/Pajares/OnFailingG.html)\]
 Even the great Albert Einstein, perhaps the greatest genius of all time, showed little brilliance in his actual formal education. It was not until he got a job at the Swiss Patent office that he began to show any promise.
 Even then, it took him years of doing his "thought experiments" before he was finally able to come up with his theory of relativity. \[[3](https://www.youtube.com/watch?v=owxnwXdkWBU)\]
-## **how to Learn Through Action, Not Theory**
+## **How to Learn Through Action, Not Theory**
 It is tempting for us to ignore the path of the Wright brothers and instead choose the path of Samuel Pierpont Langley.
 **We don't have to deal with failure when we are reading, strategizing and planning****!**
 So it is much [more comfortable](http://www.willpowered.co/learn/learning-zone) for our psyche. Plus, there is a certain romanticism tied to developing brilliance and genius – rather than learning through trial and error. **However, learning through action is exponentially more powerful.**
@@ -64,7 +64,7 @@ When I was working with my first startup, we followed this learning through tria
 This would be like Edison setting out to create the lightbulb, but through trial and error realizing that maybe he should focus instead on making kerosine gas lamps brighter and last longer.
 When you are learning through trial and error, there can be the temptation to choose a different destination than you originally intended. _Do not do this._ You want to change the different paths you can take, not change the destination entirely.
 So make sure that you take the time to step back and ensure that you are still journeying toward your higher goal. Otherwise you may find yourself completely off track as I did with my first startup.
-## **conclusion**
+## **Conclusion**
 The Wright brothers should not have been the ones to achieve the first manned flight. It should have been Samuel Pierpont Langley. However, while Langley and his team of brilliant engineers were theorizing their airplane, the Wright brothers were out testing theirs.
 This helped them learn what actually worked in practice and allowed them to tweak and improve their designs - eventually leading to the first plane capable of sustained flight. **This is a perfect example of why action is always a better way to learn than theory.**
 You must create action-oriented practice and get consistent feedback on your ideas. But make sure that you never lose sight of your overall goal. Use action-oriented learning to find the right path, and eventually you will reach your destination!

@@ -24,7 +24,7 @@ John also continues to consume Substance A every day, but he has no plans of sto
 -   Christopher is former presidential candidate [Chris Christie](http://www.huffingtonpost.com/ocean-robbins/the-truth-about-governor-_b_8198498.html), and Substance F is unhealthy food.
 -   John is a friend of mine, and Substance A is alcohol.
 Chris Christie has an eating addiction, and John simply has a beer after work every day. \[[1](http://www.huffingtonpost.com/ocean-robbins/the-truth-about-governor-_b_8198498.html),[2](http://healthland.time.com/2013/05/07/gov-chris-christies-weight-loss-surgery-demystified/)\]
-## **what is an Addiction?**
+## **What is an Addiction?**
 The topic of addiction is incredibly hard to define–even to scientists who have been researching the topic for decades.
 _Some believe it’s a disease...s__ome believe it’s a choice...s__ome believe it’s genetics…_
 With this article, I intend to show you just how complicated and personal the topic is, and why it cannot be reduced to a blanket statement.
@@ -85,7 +85,7 @@ However, there is a much bigger factor that separates him from the typical addic
 John is happy. He loves his job, his family, and he drinks beer to enhance his reality–not escape it.
 He doesn’t bury any feelings in his drinking, he doesn’t see it as an escape from his emotional pain, and he values things like waking up early to exercise and being productive at work. Both of which he can’t do if he spends his nights binge drinking.
 Because he has his priorities in line, it doesn't require much willpower to say "no." \[[9](http://www.amazon.com/High-Price-Neuroscientists-Self-Discovery-Challenges/dp/0062015893/ref=sr_1_1?ie=UTF8&qid=1452689166&sr=8-1&keywords=high+price)\]
-## **conclusion**
+## **Conclusion**
 Many things have an addictive potential. Drugs, alcohol, sugar, sex, gambling, shopping… the list goes on. However, 80-90% of people consume these things or engage in these activities without getting addicted.
 It is not because 80 to 90% of people have an iron willpower, and the people who do get addicted don't. It is because **addiction doesn't come from the thing you consume, addiction comes from the reason you consume it.**
 It is a deeply personal and psychological problem that cannot be cured by taking away the substance or activity that one is addicted to–_even through surgical intervention!_

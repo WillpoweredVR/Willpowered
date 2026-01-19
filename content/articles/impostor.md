@@ -18,7 +18,7 @@ I know what you’re thinking…”Wow, she must have a ton of confidence and be
 _“I went in there with this incredible fear that my play that was in front of cameras...would prove that everybody was right and I was actually a terrible player, despite the fact that I had spent the last 10 years making my living playing poker at the highest levels of the game...that I didn’t really deserve to have ever won anything and I was bad and I had just gotten lucky and everyone would know it.”_
 I couldn’t believe that a poker winner who won $2 million would _ever_ feel this way.
 But I can relate. Can you?
-## **here’s My Story**
+## **Here’s My Story**
 A few years ago I was also at a poker table. I was at an invite-only event for startup founders with some of the most successful startup entrepreneurs surrounding me. I was the only female there. Yes, I had my own startup but it was _nowhere near_ the levels of the others.
 I’m also not a poker player, I had no idea what I was doing. _Thankfully the buy-in was only $20._
 Needless to say, I felt like an impostor. Sure, I had raised $100,000 in capital, but as I was sitting at that table all I kept on thinking was “How the heck did I get here? I don’t belong here, these guys are way ahead of me and are worth _millions of dollars!!"_
@@ -26,7 +26,7 @@ But I didn’t just feel like that at the poker table. **Those thoughts haunted 
 When I was pitching my business, when I’d wake up in the mornings, when I’d be at networking events where I felt people were more important than me...it was constant.
 I’ve gotten better at it over the years, but it still hits me. I’ve recently joined the blogging world as a communication coach and there are still times where I think, “People actually listen to me?! Why??” even though I have helped numerous students transform their lives.
 **Like Annie, I feel like an impostor**
-## **what is Impostor Syndrome?**
+## **What is Impostor Syndrome?**
 In [1978 two social psychologists, Pauline Rose Clance & Suzanne Imes](http://www.paulineroseclance.com/pdf/ip_high_achieving_women.pdf) came up with a definition for it as a feeling of “phoniness in people who believe that they are not intelligent, capable or creative despite evidence of high achievement.”
 If you’ve ever felt like you didn’t truly deserve a promotion or that the reason you’ve gotten to where you are is because of a mistake, luck or other things _outside_ of your control you’ve suffered from impostor syndrome.
 But here’s the problem with constantly feeling like an impostor… _you will act as if you are one and those actions will strengthen that false belief._
@@ -111,7 +111,7 @@ What you’re grateful for, the big and small things (i.e. your job, your home, 
 The people you send blessings to (i.e. family, friends, coworkers, even strangers you met that day!)
 The 2-3 tasks that you want to get done today. If it’s night time, think about the 2-3 things you accomplished that day
 Whether you write, meditate or reflect on what you’re grateful for, build it into a habit so it becomes part of your life and builds your self-esteem simultaneously.
-## **conclusion & Free Mini-course**
+## **Conclusion & Free Mini-course**
 Feeling like an impostor can be lonely, debilitating and frustrating. But the good news is that you can take action to beat these feelings. By connecting with like-minded people, quit comparing yourself to others, getting clear on your values and practicing gratitude you can build your own self-esteem and give yourself credit for the things you’ve achieved.
 _This is a guest post by Katrina Razavi, communication coach & founder of_ [_CommunicationforNerds.com_](https://www.communicationfornerds.com/welcome-willpowered-friends)_. If you liked this article, visit her site to sign up for a free three-video mini course called:_ [_Crush your Inner-Critic & Have Charismatic Conversations_](https://www.communicationfornerds.com/welcome-willpowered-friends)_. It covers 6 secrets to social confidence, the #1 strategy to improve your life and how to have natural conversations….even if you’re socially awkward._
 \*[Sources](/s/Guest-post.pdf)

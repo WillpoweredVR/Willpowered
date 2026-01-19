@@ -35,7 +35,7 @@ _And we start feeling superiority in our way of thinking._
 **It was this feeling of superiority that doomed Daniel Everett with the Piraha.**
 He saw himself as the intelligent scientist coming to study the Piraha language the same way he might study the behavior of ants. So he didn’t fully embrace their culture and couldn’t see its powerful connection to their language.
 Once he let go of this feeling of superiority, he learned the language with ease and [changed the way linguists across the world think.](http://www.amazon.com/gp/product/B004Y89PC8?btkr=1)
-## **the Dimensional Mind**
+## **The Dimensional Mind**
 This shift allowed Everett to change his mental perspective to what is called the “[Dimensional Mind](http://greatestinstruments.net/the-dimensional-mind-engine-of-innovation/)”.
 **The dimensional mind is open.** There is no prejudice, no superiority, and no judgment on what is and isn’t possible. Like a child, it simply observes and learns – accepting the role of the student.
 Cultivating a dimensional mind helps you overcome one of the biggest flaws in learning anything new – the feeling that you already know what’s best.
@@ -64,7 +64,7 @@ Regular writing has been proven to have [many mental health benefits](http://lif
 Most of your "thinking time" is undisciplined. Time spent thinking is really just allowing your brain to wander; which can quickly lead to placing judgment on all of the things in the world around you.
 By keeping a journal, you help your mind develop focused creativity. \[[6](http://www.edutopia.org/blog/writing-executive-function-brain-research-judy-willis)\]
 Whether you’re writing about events in your life, a problem you’ve been dealing with, or a new idea, as you write you begin to see the problem from different angles. You start to open your mind as you put your ideas to paper and see things from a different perspective.
-## **conclusion**
+## **Conclusion**
 You have a natural bias toward your own culture, your own religious/political beliefs and your own ideas. The huge learning mistake that we all make is allowing these biases to close our minds off to what others can teach us.
 When you were a child, you didn't have these biases. You simply observed and learned - accepting your role as the student. This helped you learn and develop far faster than many adults can today.
 By practicing curiosity, meditation, and journal writing, you can begin to train your mind to go back to that child-like openness. This will help you immensely in becoming a better learner, leader, and citizen of our global and diversified world.

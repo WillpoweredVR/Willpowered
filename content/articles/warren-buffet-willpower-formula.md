@@ -27,7 +27,7 @@ This book – and the more thorough version titled _[Security Analysis](http://w
 Just as he regretted not making an investment before 11, he also regretted having wasted all of this time and money on stocks that were overvalued.
 So he vowed at that moment he would not make another investment until he understood every single line of the 725 page book. So he read the book again...and again….and again.
 **He willed himself to read the book _12 times_ before making another investment!**
-## **buffett’s Hero**
+## **Buffett’s Hero**
 After turning that book into his personal “Bible” for the world of investing, Buffet then sought out to learn as much as he could from the man who actually wrote it – [Benjamin Graham](https://en.wikipedia.org/wiki/Benjamin_Graham).
 So, after graduating from the University of Nebraska, he applied to get his MBA from Columbia University in New York where Graham was a professor.
 Then in the Spring of 1951, Buffett had the opportunity to take Graham’s class and seized his moment to impress him. He answered almost every question asked to the class – _even reciting lines from Graham’s book!_
@@ -39,7 +39,7 @@ That mentorship would help mold the young Buffett into one of the brightest fina
 Buffett claims that he has been "hardwired since birth to allocate capital". \[[3](http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/ref=sr_1_1?s=books&ie=UTF8&qid=1448300139&sr=1-1&keywords=talent+is+overrated)\]
 However, while his passion for investing is certainly real, his story proves that he cannot claim that talent alone is what led to his success. In reality it was his willpower.
 Here is how Buffett used his willpower to achieve extraordinary financial success.
-### **1\. the Will to Do the Boring Things**
+### **1\. The Will to Do the Boring Things**
 Once Buffett realized the value of _The Intelligent Investor_ and _Security Analysis,_ he used his "[Will Power](http://www.willpowered.co/learn/types-of-willpower)" to read it over and over again until he understood absolutely every aspect of the book. \[[4](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters-ebook/dp/B005ERIRZE/ref=sr_1_1?s=books&ie=UTF8&qid=1415642918&sr=1-1&keywords=the+willpower+instinct)\]
 He knew it so well, in fact, that he could quote from the 725 page book even better than the man who wrote it!
 Now, you may think that given his passion for investing, he probably enjoyed the book. That reading it was pleasurable to him, not boring.
@@ -53,7 +53,7 @@ Those like Buffett who achieve extraordinary success do not just work hard, they
 For example, I believe that citing my sources is what truly separates Willpowered from other self-improvement blogs out there.
 Other blogs may be more interesting, or even have better ideas than mine. But readers can trust what I say just a little bit more because they know that citing my sources means I've done the boring research to back up my ideas with science.
 **Whatever your goal or ambition, remember that the boring work is sometimes the most important.**
-### **2\. the Will to Hold Back**
+### **2\. The Will to Hold Back**
 _"Be greedy when others are fearful, and fearful when others are greedy." - Warren Buffett_
 Buffett's success can also be attributed to his "[Won't Power](http://www.willpowered.co/learn/types-of-willpower)". While others got excited by the bull markets and the potential "quick scores", he held back his capital during boom times - **always being fearful that the crash was right around the corner.**
 _So he didn't bet big on the technology booms of the 20th century._
@@ -75,7 +75,7 @@ Thus creating for himself an apprenticeship with Graham that would influence his
 We all have people we admire, but few of us have the willpower to do what it takes to actually earn their guidance. Buffett recognized how big of an influence Graham could have on his life, and focused on becoming his protege no matter what.
 Buffett is proof that there is no mentor that is too great for you to personally learn from.
 No matter who you wish to learn from, there is a path available to becoming their student. As long as you have the will to go above and beyond to gain their attention and respect. Just as Buffett did with Graham.
-## **conclusion**
+## **Conclusion**
 Warren Buffett is often cited as being a child prodigy that was obviously wired since birth with extraordinary talent. _After all, what 11 year-old invests in the stock market? What 15 year-old owns property?_
 However, saying that it was "talent" alone that led to Buffett's success dismisses entirely the willpower that he used to become the Warren Buffett that we know today.
 He may have been talented, but he also had the willpower to do the boring things others wouldn't, to hold back from being impulsive, and to focus on gaining a mentorship with one of the best financial minds in the country.

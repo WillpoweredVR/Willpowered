@@ -27,7 +27,7 @@ _She was robbed, nearly sexually assaulted, and frequently broke down crying._
 _And finally her health was so bad that she couldn’t make it through her rugby practice._
 **Luckily, that moment playing rugby woke her up to the fact that she had a problem.** It motivated her to check herself into rehab, overcome her addiction, and never touch meth again.
 Alison's story sums up exactly what we think we know about meth addiction—but in reality, Alison is about as far from the stereotype there is.
-## **stereotype Meets Reality**
+## **Stereotype Meets Reality**
 The broad strokes of Alison’s addiction meet the stereotype perfectly.
 1.  Girl comes from a low-income neighborhood.
 2.  Starts experimenting with drugs in high school.
@@ -50,7 +50,7 @@ _That is the biggest gift I never asked for. It has helped me in my work as a li
 _My only regret is hurting people I loved," Alison shares. "My family and friends were concerned for me. They probably thought they could lose me forever."_
 **But they didn't.** Alison got the help she needed and today she is a [successful wellness coach](http://www.alisoncebulla.com/coaching/), writer for the [Huffington Post](http://www.huffingtonpost.com/), and speaks at conferences all over the U.S. about trust, intimacy, and intuition.
 [_\*Read Alison's full story here._](/learn/meth-addiction-recovery)
-## **why is There a Gap?**
+## **Why is There a Gap?**
 As you read through Alison’s story, you probably built up a picture in your mind about her.
 **You may have thought of someone with weak [willpower](http://www.willpowered.co/learn/willpower-is-a-muscle), bad teeth, and scabs all over her body**—rather than an extremely bright Berkeley student who was spending time with successful San Francisco neuroscientists.
 Yet, 85-90% of people who use a drug even as demonized as methamphetamine never even become addicted to it as Alison did. \[[1](https://www.opensocietyfoundations.org/sites/default/files/methamphetamine-dangers-exaggerated-20140218.pdf)\]
@@ -63,7 +63,7 @@ And 6 out of 10 people _who do become addicted_ have a story similar to Alison�
 Compare that to a 34% obesity rate in America and one may even conclude that meth is less harmful than junk food!
 \[caption id="" align="alignnone" width="600"\]![    Methamphetamine death statistics: [ 4 ] , Junk food  (HEART DISEASE)  death statistics: [ 5 ], Obesity statistics: [ 6 ] ](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1459105734458-Q0UZECVUJYLCBMF49ATO/image-asset.jpeg?format=original)   Methamphetamine death statistics: \[ 4 \] , Junk food (HEART DISEASE) death statistics: \[ 5 \], Obesity statistics: \[ 6 \] \[/caption\]
 Why is it, then, that even after reading [Alison’s story](/learn/meth-addiction-recovery) and knowing the statistics, _will you still walk away from this article feeling exactly the same about meth?_
-## **the Example Rule**
+## **The Example Rule**
 As I wrote about in my [article on fear](http://www.willpowered.co/learn/fear-kills-willpower), your fears of dangerous things are based in a primitive part of your brain known as the [limbic system](https://en.wikipedia.org/wiki/Limbic_system).
 This [primitive brain](#) doesn’t think rationally. **It thinks in terms of images, emotions, and feelings.** And it burns those images and feelings into your memory so you instinctively know to avoid potential dangers.
 The more examples of these images and feelings you're exposed to, the more dangerous you will believe the threat is. This is known as “The Example Rule.” \[[7](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=&tag=viglink123827-20)\]
@@ -78,7 +78,7 @@ _"9 years after rehab is when I finally came out and shared my story publicly wi
 **Undoubtedly, there are thousands of other people feeling that shame who will never come forward as Alison did.**
 So if after years of The Example Rule giving you plenty of images of the dangers of meth, some science blogger comes along and tells you that those images represent an extreme minority, _you won’t believe him._
 Because the images and feelings are burned so deep inside your memory that your primitive brain tells you they must be true. \[[7](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=&tag=viglink123827-20)\]
-## **how the Example Rule Applies to You**
+## **How the Example Rule Applies to You**
 The Example Rule doesn’t just apply to things we believe are bad, it also applies to things we believe are good.
 _If we see "organic" on a food label, we'll assume that the product is good for us!_
 _If we’re told by parents and teachers that a college degree is the ticket to getting a good job, we’ll take out those student loans!_
@@ -89,7 +89,7 @@ _So we treat meth users without a problem as criminals._
 _We don't check how much fat and sugar is in the organic food._
 _We don’t consider the high paying jobs you can get without a college degree._
 _And we adhere to the “[calories in, calories out](http://healthyenough.net/calorie-counting/)" philosophy._
-## **how to Find the Truth**
+## **How to Find the Truth**
 Unfortunately, there is no easy way to defeat The Example Rule.
 Like I said earlier, even readers who trust the most won’t fully believe that a demonized drug like methamphetamine isn’t as addictive as we’ve been told—_[I didn’t believe it either](/learn/addiction)!_
 Stats…facts…rationality…unfortunately none of those are enough to overcome the primitive brain’s feelings and emotions. **But you can fight back.**
@@ -104,7 +104,7 @@ This curiosity feels good. Just like you have a desire to fear something, you al
 **So embrace your curious desire and allow it to motivate you to find the truth.**
 This motivation to find the truth can overcome your primitive brain’s feelings and emotions the same way it can overcome your primitive brain’s desires to [indulge](http://www.willpowered.co/learn/how-to-resist-cravings) and [procrastinate](http://www.willpowered.co/learn/why-we-procrastinate). \[[1](http://pss.sagepub.com/content/early/2010/09/28/0956797610384745)[0](http://pss.sagepub.com/content/early/2010/09/28/0956797610384745)\]
 Despite the feelings, emotions, and motivations of the primitive brain, your modern brain is the one in control. And remembering how important the truth is as an individual or as a society might just give you the willpower to find it.
-## **conclusion**
+## **Conclusion**
 Alison Cebula was not who I thought she would be when I was lucky enough to meet her. I was expecting someone who fit the “meth head” example I’d seen through anti-drug ads, the media, and [Breaking Bad](https://en.wikipedia.org/wiki/Breaking_Bad).
 Instead I found an intelligent person who felt out of place, made some mistakes, realized she had a problem, and got the help she needed to take care of the bigger problems she was dealing with (_[read Alison's full story here](/learn/meth-addiction-recovery))._
 She is amongst the 96% of people who use methamphetamine without it completely ruining their lives. But we don’t hear their stories, we hear about the 4% who do have a serious problem with it.

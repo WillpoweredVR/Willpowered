@@ -18,7 +18,7 @@ After being released back to his cell, Stockdale heard elaborate taps from the c
 However, Stockdale was able to devise a tapping code in order to communicate with his men and fight back against the isolation his captors tried to instill in each of the prisoners.
 Stockdale tapped back to his men, letting them know he was okay. Then he tried to ignore his throbbing pain as he settled in for yet another night in his cold, damp cell. **But as he lay there beaten and numb, his spirit was as strong as ever.**
 He still had faith that one day he was going to get out of there. He knew he was going to prevail in the end and even turn the experience into the defining moment of his life, which, in retrospect, he would not trade. \[[1](http://www.amazon.com/In-Love-War-Familys-Sacrifice/dp/0060153180)\]
-## **optimism Vs. Faith**
+## **Optimism Vs. Faith**
 Stockdale told this story to author Jim Collins in his book, _[Good to Great](http://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6)._ Collins had recently read Stockdale’s memoir of the event, _[In Love and War](http://www.amazon.com/In-Love-War-Familys-Sacrifice/dp/0060153180),_ and was depressed by Stockdale’s story.
 Collins had trouble even reading about Stockdale getting beaten, not receiving medical treatment, and enduring life in solitary confinement for almost 8 years—despite the fact that Collins knew the happy ending to the story!
 How did Stockdale not only endure the horrid events he wrote about in his memoir, **but endure them _without_ knowing that he would ever make it out?**
@@ -27,7 +27,7 @@ Completely baffled by his response, Collins asked, _“who didn’t make it out?
 _“Oh that’s easy, the [optimists](http://www.willpowered.co/learn/optimism-can-hurt-you).”_ Said Stockdale_, “they were the ones who said, ‘We’re going to be out by Christmas.’ And Christmas would come and Christmas would go._
 _Then they’d say, ‘We’re going to be out by Easter.’ And Easter would come, and Easter would go. And then Thanksgiving...and then it would be Christmas again. And they died of a broken heart..._
 _You must never confuse faith that you will prevail in the end—which you can never afford to lose—with the discipline to confront the most brutal facts of your reality, whatever they may be.”_ \[[2](http://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6)\]
-## **the Stockdale Paradox**
+## **The Stockdale Paradox**
 This mindset is what Collins later called "the Stockdale Paradox."
 Jim Stockdale genuinely believed that he was going to get out of that concrete cell. But he never allowed that faith to cloud the terrible reality of his situation.
 If he was going to achieve his happy ending, he was going to have to endure pain, suffering, and isolation from everyone and everything he loved—not just for weeks or months: but for years.
@@ -36,7 +36,7 @@ Communicating through tapping on the concrete, setting milestones to reach while
 But he knew he was going to be there for the long-term—and these systems were necessary.
 Meanwhile, think about the pain that the optimists must have gone through. They focused all of their willpower on just making it to Christmas when they believed they would be saved, then had to face the painful reality that they weren’t going anywhere.
 Eventually they simple could not [muster the willpower to persevere](http://www.willpowered.co/learn/perseverance) any longer, and died of a broken heart.
-## **using the Stockdale Paradox to Reach Your Goals**
+## **Using the Stockdale Paradox to Reach Your Goals**
 In pursuing goals, most of us act like the optimists. We believe that we can achieve big results, fast!
 _We can lose 10lbs in a month…_
 _We can get flat abs in 3 months…_
@@ -50,7 +50,7 @@ _Learning a new language is boring, tedious, and frustrating…_
 Take a realistic assessment of what you were able to accomplish in the past. What has worked for you? What hasn't worked for you? Given your past accomplishments, what is a realistic timeline for accomplishing your next goal?
 Also, what parts of the journey to your goal will be the most difficult or most boring? How can you persevere through those hardest tasks to make the process more enjoyable or achievable?
 In order to defeat challenges, you must truly know what your up against. So don't discount the brutal facts of what it will take to reach your goals—**find a way to overcome them.** \[[3](http://www.ncbi.nlm.nih.gov/pubmed/21878607)\]
-## **conclusion**
+## **Conclusion**
 Jim Stockdale faced a harsh reality. He was tortured, beaten, and isolated in solitary confinement—not just for weeks or months, but for 8 years.
 In order to endure this harsh reality for so long, he had to genuinely believe that not only would he get out of the POW camp, but that he would become a stronger person because of it. However, he never let that faith cloud the brutal facts of his reality.
 To achieve your goals, you must embrace this "Stockdale Paradox" as well. You must genuinely believe that in the end you will be able to reach your goal, but never let that faith cloud the difficult, tedious, or even boring tasks you will have to accomplish along the way.

@@ -25,7 +25,7 @@ As I continued to adjust, I started speaking more clearly, the software started 
 Then with the extra time at my disposal, I started making the most out of the tool. I found another app called “[Automator](http://www.macworld.co.uk/how-to/mac-software/what-automator-can-do-for-you-3605538/)” that allows you to create voice commands like "begin new article" and it will open up a new word document.
 So in addition to writing faster, I was also answering emails faster, organizing my tasks faster, and overall accomplishing more with my time.
 This week, my wrist is fully healed, but I have no plans to go back to typing again.
-## **how to Accomplish More Through Scarcity**
+## **How to Accomplish More Through Scarcity**
 Despite this endorsement for voice dictation software, I know that about 0-1% of you are going to be motivated to install your own after reading this. A month ago I certainly wouldn’t have—even if my favorite authors recommended it! (For the 0-1%, [check out this beginner's guide](https://zapier.com/blog/best-text-dictation-software/)).
 It’s only because I _had_ to use the software that I realized just how powerful it could be.
 The necessity forced me to see first hand how it could improve my productivity and even my health (I’ve had issues with my wrist from over typing before).

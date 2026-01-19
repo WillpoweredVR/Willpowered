@@ -26,7 +26,7 @@ Benjamin Franklin not only hung out in coffee shops before they were cool, but h
 Yet, none of these men even come close to the daily totals of Teddy Roosevelt, who drank an entire gallon, or Voltaire–who drank 40 to 50 cups! \[[4](https://books.google.com/books?id=4O_RAAAAMAAJ&pg=PA557#v=onepage&q&f=false)\]
 There are countless more examples: Jerry Seinfeld, David Lynch, and Ralph Waldo Emerson just to name a few.
 _But is it the coffee that leads to genius? Or something else?_
-## **does Coffee Lead to Genius?**
+## **Does Coffee Lead to Genius?**
 It started with the necessity.
 I was in my freshman year of college, and there just weren't enough hours in the day. So I needed to suck it up, drink the bitter tasting beverage I never liked (except in Frappuccino form), and study for my exams.
 **That's when my love affair with coffee began.**
@@ -35,7 +35,7 @@ As I was slowly increasing my total cups per day, I noticed something else–my 
 _But what role did the coffee play in this success?_
 For that matter, what role did it play in the success of Beethoven, Benjamin Franklin, or Teddy Roosevelt?
 To answer these questions, let's break down how coffee actually works.
-## **how Does Coffee Work?**
+## **How Does Coffee Work?**
 The active ingredient in coffee is caffeine, which is present in many other foods and beverages from chocolate to Red Bull.
 When the brain uses energy to perform tasks, it creates a byproduct called adenosine. Adenosine acts like "lactic acid" in the brain and makes you feel tired. Caffeine blocks the effects of adenosine, making you feel more awake.
 _But does it actually improve performance?_
@@ -47,7 +47,7 @@ Beethoven was obsessive about counting his coffee beans because if he had fewer 
 Interestingly, if you're not a coffee drinker, trying to recover from a poor sleep by drinking a huge pot of coffee in the morning actually won't help nearly as much as it would a regular coffee drinker.
 But you can take solace in the fact that despite spending hundreds or thousands of dollars every year on coffee, studies have found only a slight improvement in performance amongst daily drinkers. \[[5](https://www.amazon.com/Drugs-Without-Hot-David-Nutt/dp/1906860165)\]
 _So why, then, have all of these great thinkers throughout history been so obsessive about their coffee?_
-## **the Fuel, Not the Spark**
+## **The Fuel, Not the Spark**
 Before my love affair with coffee began, I had no real need for it.
 I didn't know what I wanted to do with my life yet. I wasn't a great student, and I had no real motivation to stay up late studying. So even if I drank 40-50 cups per day like Voltaire, I wouldn't have anything to use that energy boost on.
 However, once I started working towards my purpose in life, that's when coffee became a powerful ally.
@@ -56,11 +56,11 @@ I used it to stay up late, I used it to wake up early. I used it to increase my 
 I cannot say for sure, but I believe each of these geniuses used coffee the same way. It wasn't the coffee itself that made them geniuses, but it was a powerful tool to help them along the way.
 This is why studies have only found a slight improvement in cognitive performance amongst regular coffee drinkers. Most people use coffee as a tool to get through the day, not to work through the night.
 It's not the tool that makes a difference, it's why you're using it.
-## **start With Why**
+## **Start With Why**
 So often we read about a great strategy to lose weight, get a promotion, run a successful business, etc. When we see the strategy in action, we immediately credit it for the success.
 **In reality, though, most success tools, strategies, and resources are just like coffee.** They can help you reach a goal, but only after you gain a deep understanding of _what_ you want to achieve and _why_ you want to achieve it.
 Without a genuine, inspiring purpose that you truly believe in, you can follow the success habits of great people all you want–but you'll likely end up in a never-ending loop of frustration as you fail with one strategy after the next.
-## **conclusion**
+## **Conclusion**
 Several of history's greatest minds were avid coffee drinkers–even drinking as many as 50 cups per day! Some may look at these people and conclude that coffee will undoubtedly lead to success.
 However, when you take a closer look at the reason _why_ these geniuses drank so much coffee, you'll see that it was merely a tool used to help achieve success–rather than the cause of it.
 Today, you can learn about nearly all of the tools, strategies, and resources used by successful people. These may explain _how_ people can reach success, but they don't explain _why_ they became successful.
