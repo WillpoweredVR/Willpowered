@@ -217,6 +217,8 @@ export default function DashboardPage() {
   const [isPrincipleReviewOpen, setIsPrincipleReviewOpen] = useState(false);
   const [principleReviews, setPrincipleReviews] = useState<WeeklyPrincipleReview[]>([]);
   const [viewingReview, setViewingReview] = useState<WeeklyPrincipleReview | null>(null);
+  const [reviewDay, setReviewDay] = useState<number>(0); // 0=Sunday, 1=Monday, etc.
+  const [showReviewDayPicker, setShowReviewDayPicker] = useState(false);
   
   // Admin status
   const [isAdmin, setIsAdmin] = useState(false);
@@ -233,6 +235,16 @@ export default function DashboardPage() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = () => {
+      if (showReviewDayPicker) setShowReviewDayPicker(false);
+      if (showBackfillPicker) setShowBackfillPicker(false);
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [showReviewDayPicker, showBackfillPicker]);
 
   // Handle subscription success - sync status from Stripe
   useEffect(() => {
@@ -301,6 +313,11 @@ export default function DashboardPage() {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const isAdminUser = (profileData as any).is_admin === true || adminEmails.includes(user?.email || "");
       setIsAdmin(isAdminUser);
+      
+      // Load weekly review day preference (default to Sunday = 0)
+      if (typeof profileData.weekly_reflection_day === 'number') {
+        setReviewDay(profileData.weekly_reflection_day);
+      }
     }
 
     const { data: goalData } = await supabase
@@ -810,6 +827,21 @@ export default function DashboardPage() {
       .eq("id", user.id);
   };
 
+  // Save weekly review day preference
+  const saveReviewDay = async (day: number) => {
+    const supabase = createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return;
+
+    setReviewDay(day);
+    setShowReviewDayPicker(false);
+
+    await supabase
+      .from("profiles")
+      .update({ weekly_reflection_day: day })
+      .eq("id", user.id);
+  };
+
   // Task functions (admin feature)
   const toggleTaskComplete = async (taskId: string) => {
     const supabase = createClient();
@@ -915,22 +947,25 @@ export default function DashboardPage() {
     return formatDateLocal(monday);
   }, []);
 
-  // Check if today is Sunday (the only day you can start a new review)
-  const isSunday = useMemo(() => {
-    return new Date().getDay() === 0;
-  }, []);
+  // Check if today is the user's weekly review day
+  const isReviewDay = useMemo(() => {
+    return new Date().getDay() === reviewDay;
+  }, [reviewDay]);
+  
+  // Day names for display
+  const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
   // Find the current week's review (if it exists)
   const currentWeekReview = useMemo(() => {
     return principleReviews.find(r => r.weekOf === currentWeekMonday) || null;
   }, [principleReviews, currentWeekMonday]);
 
-  // Check if weekly principle review is available (Sunday only, and not done this week)
+  // Check if weekly principle review is available (review day only, and not done this week)
   const isReviewDue = useMemo(() => {
     if (principles.length === 0) return false;
-    // Can only start a new review on Sunday if one doesn't exist for this week
-    return isSunday && !currentWeekReview;
-  }, [principles, isSunday, currentWeekReview]);
+    // Can only start a new review on the user's review day if one doesn't exist for this week
+    return isReviewDay && !currentWeekReview;
+  }, [principles, isReviewDay, currentWeekReview]);
 
   // Calculate strength for a principle
   const getPrincipleStrength = (principleId: string): PrincipleStrength => {
@@ -1566,19 +1601,67 @@ export default function DashboardPage() {
                       <span className="hidden sm:inline">Weekly</span> Review
                     </button>
                   ) : principleReviews.length > 0 ? (
-                    // Not Sunday, but has past reviews - show View Last button
-                    <button
-                      onClick={() => setViewingReview(principleReviews[principleReviews.length - 1])}
-                      className="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 text-xs font-medium text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors"
-                    >
-                      <Eye className="w-3.5 h-3.5" />
-                      <span className="hidden sm:inline">View Last</span> Review
-                    </button>
+                    // Not review day, but has past reviews - show View Last + next review info
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() => setViewingReview(principleReviews[principleReviews.length - 1])}
+                        className="flex items-center gap-1.5 px-2 sm:px-3 py-1.5 text-xs font-medium text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors"
+                      >
+                        <Eye className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">View Last</span> Review
+                      </button>
+                      <div className="relative">
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setShowReviewDayPicker(!showReviewDayPicker); }}
+                          className="text-[10px] text-muted-foreground hover:text-foreground transition-colors flex items-center gap-0.5"
+                          title="Change review day"
+                        >
+                          <span className="hidden sm:inline">Next:</span> {dayNames[reviewDay].slice(0, 3)}
+                          <ChevronDown className={`w-2.5 h-2.5 transition-transform ${showReviewDayPicker ? 'rotate-180' : ''}`} />
+                        </button>
+                        {showReviewDayPicker && (
+                          <div className="absolute top-full right-0 mt-1 bg-white border border-slate-200 rounded-lg shadow-lg py-1 z-10 min-w-[120px]" onClick={(e) => e.stopPropagation()}>
+                            {dayNames.map((name, idx) => (
+                              <button
+                                key={name}
+                                onClick={() => saveReviewDay(idx)}
+                                className={`w-full px-3 py-1.5 text-xs text-left hover:bg-slate-50 transition-colors ${
+                                  idx === reviewDay ? 'text-indigo-600 font-medium bg-indigo-50' : 'text-slate-600'
+                                }`}
+                              >
+                                {name}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   ) : (
-                    // No reviews at all yet
-                    <span className="text-xs text-muted-foreground">
-                      First review: Sunday
-                    </span>
+                    // No reviews at all yet - show when next review is
+                    <div className="relative">
+                      <button
+                        onClick={(e) => { e.stopPropagation(); setShowReviewDayPicker(!showReviewDayPicker); }}
+                        className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        <span>Next: {dayNames[reviewDay]}</span>
+                        <ChevronDown className={`w-3 h-3 transition-transform ${showReviewDayPicker ? 'rotate-180' : ''}`} />
+                      </button>
+                      {showReviewDayPicker && (
+                        <div className="absolute top-full right-0 mt-1 bg-white border border-slate-200 rounded-lg shadow-lg py-1 z-10 min-w-[120px]" onClick={(e) => e.stopPropagation()}>
+                          {dayNames.map((name, idx) => (
+                            <button
+                              key={name}
+                              onClick={() => saveReviewDay(idx)}
+                              className={`w-full px-3 py-1.5 text-xs text-left hover:bg-slate-50 transition-colors ${
+                                idx === reviewDay ? 'text-indigo-600 font-medium bg-indigo-50' : 'text-slate-600'
+                              }`}
+                            >
+                              {name}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   )}
                   <span className="text-xs sm:text-sm text-muted-foreground">
                     {principles.length} principle{principles.length !== 1 ? "s" : ""}
@@ -1986,7 +2069,7 @@ export default function DashboardPage() {
             <div className="mt-4 pt-4 border-t border-slate-100">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="text-sm font-medium text-muted-foreground">Recent Reviews</h4>
-                {isSunday && !currentWeekReview && (
+                {isReviewDay && !currentWeekReview && (
                   <button
                     onClick={() => setIsPrincipleReviewOpen(true)}
                     className="text-xs text-indigo-600 hover:text-indigo-700 font-medium"
