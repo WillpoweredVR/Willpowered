@@ -48,9 +48,9 @@ All vegetables will help build your long-term willpower, but specific veggies th
 This article began by examining the importance of breakfast, so that is where we will close. Before you try to set a plan to completely overhaul your diet to some of the foods listed above, stop!
 If you do not currently have one of the 4 food types listed above on a regular basis, do not try to have them for all 3 meals – **just have them consistently for breakfast.**
 There are 3 reasons you should consistently eat a low-glycemic breakfast:
-### **1\. It Will Give You a Consistent Stream of Glucose**
+### **1\. it Will Give You a Consistent Stream of Glucose**
 If you’re going to eat one meal where you produce a consistent stream of glucose, it may as well be the first one. This will give you more time throughout the day in which your brain has consistent glucose to work with, as opposed to dinner in which you will only have a few hours before bed.
-### **2\. It Will Give You More Willpower to Eat Healthy Later in the Day**
+### **2\. it Will Give You More Willpower to Eat Healthy Later in the Day**
 With the increased level of glucose in your system, you will have more willpower to resist the donuts that were brought into the office and order the healthiest item on the lunch menu. By eating a healthy breakfast, you’re setting yourself up for a healthy snack and lunch as well.
 ### **3\. You Will Eat Healthy When You Have the Most Willpower**
 Your willpower is strongest in the morning – provided that you had a good night’s sleep. This means that it will be easier for you to work up the willpower to cook a healthy meal than, say, after a long day at work. So eat healthy when it’s the most important and easiest time of the day. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/19444258)\]

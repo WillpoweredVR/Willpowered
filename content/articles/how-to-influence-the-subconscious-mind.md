@@ -48,7 +48,7 @@ This exercise will reinforce to your subconscious mind (which accounts for rough
 So when you get to the actual decisions in your day like accomplishing sales goals, or accomplishing your workout, your subconscious mind will begins identify with the best version of yourself.
 This won’t happen overnight, but [with enough practice](http://www.willpowered.co/learn/talent-is-overrated), the decisions will become automatic.
 Try to do this exercise for 20 minutes per day. There are 3 times that are optimal listed below, simply choose the one that's best for you:
-### **After Waking Up**
+### **After Waking up**
 **Pro -** Mind already in a natural Theta Wave state from sleep, so it’s easier to reach total relaxation.
 **Con -** You could just end up falling back to sleep during the exercise.
 ### **After Work**

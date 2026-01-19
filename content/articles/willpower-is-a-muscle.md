@@ -17,7 +17,7 @@ The students were then taken to another room to work on a geometry puzzle. They 
 **The real test was to see how long the students would persevere before giving up.**
 This test is used by researchers around the world to measure how much willpower a person has. The more willpower they have, the longer they will spend trying to solve the impossible puzzle.
 The cookie eaters worked on the puzzle for 20 minutes on average – trying to tackle it from multiple angles before finally admitting defeat. The radish eaters, though, _didn’t even last half as long!_ After just 8 minutes, they lost their energy and gave up!
-## **What Willpower Really Is**
+## **What Willpower Really is**
 It was no coincidence that the radish eaters gave up so quickly. Their willpower was depleted by resisting the temptation of the cookies. So when they got to the puzzle, they had less left to use to persevere.
 The cookie eaters, on the other hand, didn’t have to exert _any_ willpower in the previous room (apparently there weren’t many radish-lovers amongst them) giving them more energy to continue the puzzle.
 **For almost all of history, we have believed that willpower is a virtue.** Some people have it...and some people don’t. But if that were the case, why are there some days when going to the gym or resisting temptations feels effortless, and others where we cannot summon the strength to make the right decision?

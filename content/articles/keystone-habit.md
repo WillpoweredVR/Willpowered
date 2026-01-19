@@ -33,10 +33,10 @@ With each habit she changed, she grew more confident that she would be able to e
 ## **What is a Keystone Habit?**
 A keystone habit is a positive change in behavior that allows other positive habits to grow as well. For Lisa, substituting smoking for running naturally changed other behaviors in her life.
 Some other keystone habits might be:
-### **Eating healthier**
+### **Eating Healthier**
 What you eat is one of the most important aspects of your willpower. Eating a healthy, low-glycemic diet will give you more mental energy for your brain to use to exert willpower throughout the day.
 With more mental energy, you will be able to accomplish more of your difficult daily challenges like being productive at work, or sticking to your exercise routine. You will also feel healthier and better about your appearance – leading to increased happiness and confidence. \[[4](http://www.uky.edu/~njdewa2/gailliotetal07JPSP.pdf)\]
-### **Waking up earlier**
+### **Waking up Earlier**
 Your willpower is the highest in the morning. So not only does waking up earlier give you time for things like exercising, writing or planning for the day, but also the willpower to get those things done.
 By planning to wake up earlier, you will also naturally start to go to bed earlier. This will lead to less time watching late night TV, less time spent out late partying, etc. \[[5](http://www.amazon.com/gp/product/0143122231/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0143122231&linkCode=as2&tag=willpowered-20&linkId=FWXY62FGMWK344LA)\]
 ### **Meditating**
@@ -46,14 +46,14 @@ All of these daily practices help other great habits flourish naturally.
 ## **The Keystone Habit Formula**
 If none of the keystone habits above seem appealing to you – no problem! To find out if there are other keystone habits that are more suitable to your lifestyle, simply determine if they meet the criteria below:
 **There are 3 characteristics of a keystone habit that distinguish it from other**s:
-### **1.** **It Gives You More Willpower**
+### **1.** **it Gives You More Willpower**
 Although it would be great to read a book every day, that’s a habit that’s going to drain your mental energy and willpower. A habit like exercising, on the other hand, will actually [give you _more_ energy](http://www.webmd.com/fitness-exercise/features/exercise-for-energy-workouts-that-work) that you can use to build other productive habits.
 So when trying to create a keystone habit, **try to find something that will naturally give your more willpower.** For a little help, [here is a list](http://www.willpowered.co/learn/daily-willpower-habits) of 10 habits that will increase your willpower.
-### **2.** **It Builds Confidence Through Small Wins**
+### **2.** **it Builds Confidence Through Small Wins**
 Probably the most important factor in Lisa’s transformation is that it began small. If she set out to change all of her bad habits at once, she would have been doomed to fail. Instead, each run was a small win and each small win gave her more confidence.
 With more confidence, she began to believe she could accomplish the next change in her habits; causing that chain reaction.
 **So don’t try to overhaul your life.** Focus on changing one thing, build confidence by achieving it [consistently](http://www.willpowered.co/learn/slight-edge) and let the dominos fall from there.
-### **3.** **It Creates a Platform**
+### **3.** **it Creates a Platform**
 A keystone habit will create a platform for other habits to flourish. By exercising, Lisa naturally wanted to eat healthier so that exercise would become easier for her. Then by not spending money on cigarettes, she now had more money to start paying down her debts.
 **So find a habit that will create a platform for other habits to flourish.** Waking up early, saving money and investing in your education are all great examples of this.
 ## **Conclusion**

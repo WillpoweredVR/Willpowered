@@ -13,7 +13,7 @@ As he and his friend were eating, a man entered the diner. Sam turned to his fri
 **At the time Sam Walton was personally worth about 8 billion dollars.**
 Here sat a man at the top of the greatest retail company in the entire world. A company that was setting records year after year for having the most sales of any company_, ever!_ **Yet, there he was in a simple Arkansas diner; telling a friend that he had a lot to learn from a man who started his own chicken farm!**
 This story highlights Sam Walton’s mindset. He realized the simple fact that no matter how many goals he accomplished, no matter how smart he became, or how successful his enterprise, he always had more to learn. And he did not care who it was he learned from.
-## **Why we are naturally judgmental**
+## **Why We Are Naturally Judgmental**
 Most people, including myself, would simply view Joe as “oh that farmer.” We would make a judgment call about who Joe was as a person. He is probably someone who grew up in Arkansas working on a farm all of his life. He is probably a simple, family man with a good work ethic.
 That is the stereotype of an Arkansas farmer; and our brain wants us to believe it. The brain naturally wants to take the easy way out. It wants to conserve energy. If we spend our time trying to analyze every person on the street by more than what we see on the surface, then we would waste mental energy. Mental energy that can be used on more important tasks. \[[2](http://brainconnection.brainhq.com/2005/03/11/the-role-of-snap-judgments-in-intelligence-an-intriguing-perspective/)\]
 **But this process is dangerous.** Because we do not just place judgments on others, we place them on _ourselves._

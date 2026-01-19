@@ -26,7 +26,7 @@ Social media is a time sink.
 It siphons valuable time away from actually building products, solutions, and putting in the work necessary to build a company.
 Although you do have access to a lot of potential customers for free, it’s not the only medium in which to market.
 And the time I spent on social media was less profitable than other ways of getting In touch with my audience like email and SEO.
-## It was against my purpose
+## It Was Against My Purpose
 I started Willpowered to help people implement the practices of science to create a better future for themselves.
 **Social media is directly opposed to achieving that goal.**
 Social media is a place where talking about your goals, dreams, plans, etc. is an end in itself.

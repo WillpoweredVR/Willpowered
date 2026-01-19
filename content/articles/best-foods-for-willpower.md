@@ -25,11 +25,11 @@ The students with the unhealthy breakfast had a quick spike of glucose - provide
 ## **The 10 Best Foods for Long-lasting Willpower**
 So what foods, exactly, will give you the most willpower? As a general rule, any low-glycemic foods like lean proteins, vegetables, nuts and fruit will all give you a heathy dose of long-term willpower. \[[3](http://www.amazon.com/Food-Rules-Eaters-Michael-Pollan-ebook/dp/B002YJK5L4/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1415726126&sr=1-1&keywords=food+rules+by+michael+pollan)\]
 **But here are the 10 best foods for long-term willpower**. I included some from every major diet, so there should be something on this list for everybody:
-## **1\. Poultry/Fish**
+## **1\. Poultry/fish**
 All lean meats will give you a healthy dose of long-term willpower, but the best meats for you are poultry and fish. They have the most protein and the least fat, leading to the most health benefits.
 However, if you are on a low-carbohydrate diet, you may want to choose fattier meats like beef, pork or lamb in order to get enough energy.
 [Click here](http://authoritynutrition.com/11-health-benefits-of-fish/) to see the full list of health benefits poultry/fish.
-## **2\. Free-Range Eggs**
+## **2\. Free-range Eggs**
 Eggs are one of the most nutrient-rich and healthiest foods available – and they are almost remarkably good for your willpower! The mixture of protein and healthy fat creates a steady stream of glucose for your brain.
 Ensure that you are eating free-range eggs, however. Regardless of any moral claims, chickens that are locked in cages produce eggs with Omega-6 fatty acids, rather than Omega-3 fatty acids. So the “good fat” becomes “bad fat”.
 [Click here](http://authoritynutrition.com/10-proven-health-benefits-of-eggs/) to see the full list of health benefits of eggs.
@@ -37,11 +37,11 @@ Ensure that you are eating free-range eggs, however. Regardless of any moral cla
 Tofu is a great option for the vegans out there that want a steady stream of willpower fuel. Just ensure that when that you are eating tofu in its purest state.The more processing that foods go through from their natural production to your plate, the less willpower benefits you will get from it.
 This is because usually [high fructose corn syrup](https://en.wikipedia.org/wiki/High_fructose_corn_syrup) is added to the food during processing, which will lead to the spike and crash effect. So foods like tofu dogs, tofu nuggets and tofu burgers won’t help you very much.
 [Click here](http://www.thehealthsite.com/fitness/4-reasons-why-you-should-eat-tofu/) to see the full list of health benefits of tofu.
-## **4\. Split peas/lentils**
+## **4\. Split Peas/lentils**
 Many legumes are low-glycemic, but split peas and lentils will give you the most willpower benefits. They have the least amount of natural sugar and therefore will have the least chance of producing the spike and crash effect.
 Again, getting these in their most raw state will have the most willpower benefits for you. So skip the canned peas and stick to the ones straight from the pods.
 [Click here](http://authoritynutrition.com/legumes-good-or-bad/) to see the full list of health benefits of these and other legumes.
-## **5\. Almonds/Almond milk**
+## **5\. Almonds/almond Milk**
 Almonds are perhaps the best snack food for your willpower. They have incredible benefits to your health, will quench your hunger and provide your brain with a long-term supply of glucose.
 Almond milk is also preferable to cow’s milk or soy milk because of its low amount of sugar and carbohydrates. Although the other types of milk are perfectly fine, they will produce more of the spike and crash effect than almond milk.
 [Click here](http://authoritynutrition.com/foods/almonds/) to see the full list of health benefits of almonds.
@@ -57,11 +57,11 @@ They also have the added benefit of being high in fiber and antioxidants, so the
 Avocados are also a great fruit option for long-term willpower due to their relatively low sugar and high amount of healthy fats. These healthy fats have also been proven to help you absorb nutrients from other plant foods more effectively.
 They also provide a very healthy alternative to butter or mayonnaise if you want to add a creamy texture to your food.
 [Click here](https://4inlanyards.com/blog/health-benefits-of-avocado/) to see the full list of health benefits of avocados.
-## **9\. Sweet potatoes**
+## **9\. Sweet Potatoes**
 All vegetables will give you long-term willpower, but the best vegetables for willpower are root-based - and sweet potatoes are at the top of the list!
 Sweet potatoes are some of the most nutrient-dense foods around and are possibly the best source of carbohydrates there is. There is even some evidence that they will help regulate your blood sugar level and thus improving the long-term willpower advantages.
 [Click here](http://authoritynutrition.com/foods/sweet-potatoes/) to see the full list of health benefits of sweet potatoes.
-## **10.Carrots**
+## **10.carrots**
 Carrots are another great snack food for long-lasting willpower. Like sweet potatoes, they are rich in beta-carotene which the body turns into Vitamin A for energy.
 Although not quite as healthy as sweet potatoes, carrots are a much healthier carbohydrate option than breads or cereals.
 [Click here](http://authoritynutrition.com/foods/carrots/) to see the full list of health benefits of carrots.

@@ -16,7 +16,7 @@ Then - also as planned - I had another meditation session in the afternoon to ma
 _I am thinking about myself way too much!_
 With every person I reach out to, with every social media post, and with every place I try to market the Kickstarter, I am asking the question:
 _How can I get this person to do what I want?_
-## **Change in attitude**
+## **Change in Attitude**
 Well, maybe I haven't been quite that selfish. **But I’m really only thinking about how I can reach my goal**. And I failed to open my eyes to the thousands of others out there that are exactly like me!
 I never thought about all of the others who are hoping that some online influencer will help them share their own dream with the world.
 _Bloggers..._
@@ -26,7 +26,7 @@ Even within Kickstarter there are thousands of people who are in the same strugg
 **So my willpower challenge will be to use my knowledge of willpower, writing, and building an online community to help others who are truly dedicated.**
 Not because I am looking to get something out of them, but because right now what I need most is the support of others who truly believe in the [work I am doing.](https://www.kickstarter.com/projects/743524537/the-will-of-heroes/)
 _So why not be that person for someone who needs me as much as I need them?_
-## **The plan OF ACTION**
+## **The Plan of Action**
 This is outside of my [comfort zone](http://www.willpowered.co/learn/learning-zone), so it will require using some willpower to do it.
 Therefore, I will do myself a big favor by [making pre-loaded decisions](http://www.willpowered.co/learn/decisions-waste-willpower) about exactly what I need to do - reducing the chance that I'll procrastinate.
 _So here's the plan..._

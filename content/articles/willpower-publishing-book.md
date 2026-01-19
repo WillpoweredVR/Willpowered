@@ -46,7 +46,7 @@ But not all aspects of writing were glamorous.
 I spent countless boring hours [practicing my writing](http://www.willpowered.co/learn/talent-is-overrated), doing citations, and ensuring the manuscript adhered to proper formatting. These were extremely boring, but also extremely important. So I had to learn to [embrace the boredom](http://www.willpowered.co/learn/embrace-boredom) in order to create a quality book.
 **Usually we don't give up on goals because they're hard—we give up on them because they're boring.** It's boring eating vegetables, boring running on the treadmill, and boring studying textbook information.
 But these boring moments are incredibly important. And embracing them will make all of the difference in sticking with your goals to the finish.
-## **6\. See Criticism for What it Is**
+## **6\. See Criticism for What it is**
 No matter who you are, what you do with your time, or how much you “put yourself out there” _you will [face criticism](http://www.willpowered.co/learn/how-to-deal-with-criticism)._
 One of the most important things I learned when I started putting my work into the public eye was [how to use the proper perspective with all of the criticism I receive](http://www.willpowered.co/learn/how-to-handle-critical-feedback). In general, I have found three groups of people who will criticize you:
 1.  People who are simply trolls and feel better about themselves by criticizing you.

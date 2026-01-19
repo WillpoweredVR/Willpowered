@@ -23,7 +23,7 @@ Then came time for my Will of Heroes ship to set sail...**and I realized how man
 Yet, I would never have learned these things until I had actually "set sail" figuring out what works and what doesn’t. The project has been in a constant state of change this whole time and to this day I’m still changing it.
 I’m so glad that I went through the planning process because it made me think and prepare, but the plan I had got tossed out the window on day one.
 **Willpower lesson – [Plan and prepare](http://www.willpowered.co/learn/start-taking-action) as much as you can for whatever your “gameday” is, but get ready to learn and adapt.** There are things you won’t know until you’re in it.
-## 2. **The Power of Not Letting Failure Be an Option**
+## 2. **the Power of Not Letting Failure Be an Option**
 Several months ago, I wrote [an article](http://www.willpowered.co/learn/no-retreat) about [Hernan Cortes](https://en.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s) burning his ships when his army arrived in Mexico – leaving him and his men no retreat. **There were only 2 options: succeed or die.** They succeeded. \[[1](http://burningboats.com/about-burningboatscom/)\]
 This journey has had the same effect on me. Failing to reach the goal is not an option – especially now that there are over 100 people that are expecting a finished [copy of the book!](/the-will-of-heroes)
 That means I am forced to face my weaknesses – being vulnerable, being detail-oriented, and believing that I can do it all myself – and conquer them. It is forcing me to put myself out there, forcing me to look at every detail, and forcing me to ask for support.
@@ -38,11 +38,11 @@ I saw how far away we were from reaching the total goal and I thought that there
 But then I came back to what I have learned and written about for years. Set the destination to your big goal, but then forget about it. **Shift your focus to the [small wins you need to achieve to get there.](http://www.willpowered.co/learn/small-wins)**
 Most Kickstarter campaigns have a huge surge of funding at the beginning, then they slow down in the middle, and then pick up near the finish. **But The Will of Heroes has made steady progress every single day.**
 This shows the typical 5-day fundraising trends:
-## Kickstarter trends
+## Kickstarter Trends
 Admittedly, part of that is because I made so many mistakes in the beginning that we didn’t get the initial “surge”. **But it is also because I am simply focused on winning each day.**
 I am not waiting for the typical Kickstarter growth curve to come to me. I am learning, adapting, and fighting for each small win to ensure that we stay on track.
 **Willpower lesson – don’t focus on the huge, daunting goal you want to achieve.** Focus only on the small goal right in front of you. And get ready to fight for every inch.
-## **4.** **An Inspiring Purpose is the Greatest Willpower You Have**
+## **4.** **an Inspiring Purpose is the Greatest Willpower You Have**
 Each of my Kickstarter days has started at 5am and ended no earlier than 12am. **Other than quickly eating, exercising, and meditating, I have been at my desk working.**
 I have heard stories of some of the greatest masters of all time – Leonardo DaVinci, Albert Einstein, Bill Gates – producing great works with hardly any sleep.
 It never made sense to me before. After all, [sleep is one of the most important components](http://www.willpowered.co/learn/sleep-affects-willpower) of fueling your willpower! \[[2](http://www.ncbi.nlm.nih.gov/pubmed/15798944)\]

@@ -18,7 +18,7 @@ _Face…meet palm._
 I didn't share much because I believed you would be more interested in reading about people like [J.K. Rowling](http://www.willpowered.co/learn/jk-rowling-rags-to-riches), [Warren Buffett,](http://www.willpowered.co/learn/warren-buffet-willpower-formula) or [Kobe Bryant.](http://www.willpowered.co/learn/will-of-kobe-bryant) Writers, entrepreneurs, and athletes who have achieved success–not ones like me who are still struggling to reach it.
 But with hundreds of questions, and 5 years worth of data to answer them, I'm finally starting a series of posts where I write exclusively about my personal experiments, my best strategies, and how I apply them in writing, entrepreneurship, and daily-life.
 As I continue to write, I will get more detailed, but I will start with the most successful high-level willpower strategies that I have implemented thus far.
-## **1.** **A Great Purpose**
+## **1.** **a Great Purpose**
 I’ve been an entrepreneur since graduating from college.
 Before discovering the science of willpower, I was a part several startups–including one I cofounded with a brilliant team, and all the "right pieces" we needed to be one of the startups to actually make it.
 Things started off great. We were learning, growing, and even winning start up competitions. However, after about 2.5 years, we were running dangerously low on cash…_it was do or die time._

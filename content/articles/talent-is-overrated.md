@@ -30,7 +30,7 @@ The next name that people think about when it comes to natural talent is Tiger W
 Tiger Woods’ father was Earl Woods. Like Leopold Mozart, Earl was only average as a golfer, but he loved to teach. He and his wife had decided that Tiger would be their only son and they would nurture his development as much as possible.
 He gave Tiger his first putter at the age of 7 months and began hitting balls with him at the age of 2. He then had Tiger working with professional instructors as early as the age of 4.
 **Tiger even admits that he did not have a natural talent for golf.** Only that he had a natural desire to be like the man he admired most – his father. Which gave him the extra [willpower](http://www.willpowered.co/learn/willpower-is-a-muscle) to practice and improve his skills. \[[4](http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/ref=sr_1_1?ie=UTF8&qid=1439303284&sr=8-1&keywords=talent+is+overrated)\]
-## **If Not Talent, Then What is It?**
+## **If Not Talent, Then What is it?**
 So what is it that truly separates great performers?
 The usual answer to this question is “hard work”. But there are plenty of people in this world who work extremely hard. Yet, they do not achieve the level of success of a Mozart or a Tiger Woods.
 The next answer is usually “experience”. After all, years of experience are usually a key factor that we look for in job applicants. But once again, just because you have been doing a job for 40 years, does not mean you will be a true master of the field.
@@ -58,7 +58,7 @@ Aside from staying consistent by writing 2 articles per week, continually [impro
 Take a look at [one of my first articles](http://www.willpowered.co/learn/2014/9/18/why-we-believe-our-cravings-will-bring-us-happiness) on this site and you will see a big gap in my writing ability then and my writing ability now. In fact, I am almost embarrassed to have those articles still on this site.
 ## **How to Add Deliberate Practice to Your Life**
 The key elements of deliberate practice are to:
-### **1. Determine What You Need to Work On**
+### **1. Determine What You Need to Work on**
 Rather than working on what you are already good at, deliberate practice requires that you work on those things that you _are not good at._ So identify what you need to work on to reach your goals.
 ### **2. Get Feedback on Your Work**
 Feedback is one of the most important aspects of deliberate practice. You need to be constantly learning what you are doing well and where you can improve. You don't need to have an instructor, per se, I simply use other authors' work as my feedback. The basketball player in the example also simply used the hoop as his feedback.

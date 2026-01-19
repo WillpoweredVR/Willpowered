@@ -24,11 +24,11 @@ When the body takes in food, it creates a [chemical known as glucose](http://lea
 Any food that contains calories will give your brain glucose to work with. But not all glucose is created equally. Sugary foods will cause a quick spike of glucose, giving you willpower fuel for the short-term, but will cause a subsequent crash that depletes your willpower just as fast.
 The best thing you can do is keep the glucose level in your bloodstream steady. This will give your brain a consistent reserve of fuel to exert willpower for the long-term. **To accomplish this, researchers suggest a low-glycemic diet. \[[3](http://www.amazon.com/Food-Rules-Eaters-Michael-Pollan-ebook/dp/B002YJK5L4/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1415726126&sr=1-1&keywords=food+rules+by+michael+pollan)\]**
 Here are some low-glycemic foods that will give you long-term willpower fuel:
-### **1.** **Lean proteins**
+### **1.** **Lean Proteins**
 Nothing fancy is required – just lean cuts of beef, poultry, pork and fish.
 ### **2.** **Nuts**
 Specifically those nuts that are high in omega-3 fatty acids like walnuts, pecans and cashews. (Note: this does not include legumes like peanuts).
-### **3.** **Fresh fruit**
+### **3.** **Fresh Fruit**
 Fresh fruit is preferred over dried fruit because dried fruits have a high concentration of sugar in them. This will result in the glucose spike for the short term and lead to a subsequent crash. Some good choices are bananas, blueberries, apples and cherries.
 ### **4.** **Vegetables**
 All vegetables will help build your long-term willpower, but specific veggies that pack a willpower punch are root-based. These include sweet potatoes, potatoes and carrots which will all give you some serious willpower fuel!

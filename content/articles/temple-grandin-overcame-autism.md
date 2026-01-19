@@ -15,7 +15,7 @@ Somehow, against all odds, young Temple started to make progress. It was slow, b
 This was a huge win for Temple, but still her future still seemed limited. She struggled throughout her entire school life because she simply did not think the way “normal” children did.
 She could not think in terms of words, only pictures. She could not understand basic human emotions or interactions. This inability to relate to her peers, or be understood by her teachers, alienated Temple.
 She became extremely anxious and lonely. And although she avoided institutionalization, it appeared Temple would never be successful in mainstream society. **She was just too different.** \[[1](http://www.amazon.com/Thinking-Pictures-Expanded-Edition-Autism/dp/0307275655)\]
-## **Temple's Turning point**
+## **Temple's Turning Point**
 That started to change when Temple spent a summer on a farm with her aunt. There, Temple interacted with her aunt’s cattle and realized the deep connection she felt for them.
 **For some reason, she felt an empathy for them that she couldn’t feel for other people.**
 Then Temple spotted a machine known as the “[squeeze chute](https://en.wikipedia.org/wiki/Livestock_crush)” which holds cattle tightly while they are examined, marked, or given veterinary treatment. Like all children, Temple wanted to be hugged to help her feel safe and secure.
@@ -44,7 +44,7 @@ The men in the feedlots laughed at her crazy ideas of "cattle psychology", but T
 **No injuries, no deaths, no panic, and no forcing the cattle to move. It was perfect.**
 Thus, Temple went from having no brighter future than working on an assembly line, to being one of the greatest assembly line innovators since Henry Ford.
 Today, she is a world renowned author, speaker, and one of the greatest inspirations for autistic children everywhere who now know that success is possible for them.
-## **How to develop the will of Temple grandin**
+## **How to Develop the Will of Temple Grandin**
 Temple Grandin truly is a hero. She was born with a disorder that stopped thousands of other children from having a good life, and thousands more from even having the right to their own freedom.
 Yet, she not only had a good life, she made the world a better place for animals and autistic children everywhere.
 So what can we learn from her?
@@ -67,7 +67,7 @@ _She embraced her passion for autism, researching everything she could about it.
 **However, she also realized that she needed to improve her weaknesses.**
 If she hadn't built a device to overcome her anxiety, she never would have made it through the bullying in high school. If she hadn't overcome her inability to learn in words, she never would have gone to college.
 **Embrace those things you can do better than everyone else, but also do not ignore the things you need to work on.** Sometimes it will not matter how good you are in one area if you are not good enough in another.
-### **3\. The Greatest Willpower Comes From Passion**
+### **3\. the Greatest Willpower Comes From Passion**
 Think about how painful and boring it would be for you to read a textbook about machine design for the next 6 hours. _Now think about how boring and painful it would be if you were autistic and couldn't process words properly!_
 Yet, Temple did that regularly.
 She was so passionate about animals, building things, and learning how pressure affected autistic children, that she could summon the willpower to endure that frustration for hours every single day.

@@ -70,8 +70,8 @@ However, most people who feel this sense of calm, slowly but surely let stuff pi
 Are back to being constantly nagged by wandering thoughts of something we don't want to forget about — but can't do anything about right now.
 This was my story far too often — but I was determined to take the boredom out of the process.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492169798705-SRIIOSXGSXZ0207UFHO8/image-asset.gif?format=original)
-### ← So I turned this
-### Into this →
+### ← so I Turned This
+### Into This →
 Now all it takes for me to follow the path from a huge in-basket of stuff to complete organization and mental clarity is just the tap of a button.
 I even set it up so I can process my inbox completely hands-free!
 So I can walk outside, enjoy the weather, and process all my tasks at the same time.
@@ -131,15 +131,15 @@ Like it or not, **Checklists are the best tool you have for bridging the gap bet
 _Why_?
 Becuase Checklists...
 [![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492176056804-5BS1S7YOFW8YM5B7UK2P/image-asset.jpeg?format=original)](http://blogs.jamaicans.com/metinking/files/2009/01/overloadcartoon2.jpg)
-### ← Turn this
-### Into this →
+### ← Turn This
+### Into This →
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492176107587-RJN3LU3DQEFLHK8QEYC1/image-asset.gif?format=original)
 They take the vast amounts of knowledge from experts, practitioners, and case studies, and put it into a framework that's **actionable**.
 But it's not enough.
 **Just because something is actionable, that doesn't mean it's useful.**
 And that's why the path ahead for Willpowered is dedicated to taking Checklists one step further to the next step by...
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492176719633-WPG8KCWAQCSWEA732MJ1/image-asset.gif?format=original)
-### ←Turning this
-### Into this →
+### ←turning This
+### Into This →
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492511862074-9FCI9T457I3X6WCHXLMC/GTD+Dashboard.png?format=original)
 So your path is clear, your progress is tracked, and the next step on [your journey to greatness](http://academy.willpowered.co/p/consistency?utm_source=Newsletter&utm_medium=Email&utm_campaign=Shape_the_Path) takes nothing more than a click.

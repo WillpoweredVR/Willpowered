@@ -37,7 +37,7 @@ It was amazing how the brains of those in the second group reacted to the visual
 But which group of participants do you think worked harder to get an actual glass of water - the ones who feel like they've already drank one? Or the ones who are still dehydrated?
 **Exactly. The ones who visualized drinking the water, didn't need to work for it!**
 Oettingen’s conclusion, therefore, was that positive visualization does indeed make you believe that you are already in possession of the thing you want. _So why bother working for it?_
-## **Positive Thinking Vs. Positive Action**
+## **Positive Thinking vs. Positive Action**
 These are just two examples, but as you can see, there is scientific evidence that supports each theory. Although each does hold its own merit, I believe it is reasonable to say that the evidence at this point is inconclusive.
 **There is just as much evidence supporting positive thinking as there is against it.**
 One clear finding, however, is that **taking positive action _will_ lead to successful outcomes.** There is no debate about whether engaging in [deliberate practice](http://www.willpowered.co/learn/talent-is-overrated), [strengthening your willpower](http://www.willpowered.co/learn/strengthen-your-willpower), or [being relentless](http://www.willpowered.co/learn/relentless-perseverance) will lead to successful outcomes.

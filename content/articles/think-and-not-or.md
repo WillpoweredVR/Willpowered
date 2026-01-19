@@ -60,7 +60,7 @@ Most people have these goals in mind, but they aren't concrete about what exactl
 Notice that my goal wasn't to "write more." It was, "write 1,000 words/day." And the reason why I want to write is clear in my mind — it's my creative outlet.
 Whatever those nagging goals in the back of your mind are, **make them concrete and purposeful.**
 You don't necessarily have to write them down, but you do need to know what you want to achieve and [why you want to achieve it.](http://www.willpowered.co/learn/start-each-goal-with-why?utm_source=Newsletter&utm_medium=Email&utm_campaign=AND_not_OR)
-### **3\. Is it Worth It?**
+### **3\. is it Worth it?**
 The next step is to simply ask yourself if your concrete goal and the purpose behind it is worth the effort it will take to achieve.
 With my goal to keep in touch with my Chicago friends, I realized that I would have to venture outside of my comfort zone and ask my friends to chat on the phone.
 I'm not sure what your experience is with phone calls, but **I had never really just called a friend to chat**. In my circles, it's just not what guys do.
@@ -71,7 +71,7 @@ If the answer is "yes" to that question — whether it's a small thing like bein
 
 If it is worth the effort, then you'll only cause yourself pain and suffering by complaining.
 So remember your purpose, remember that it's worth, and focus on finding the solutions — not adding more problems.
-### **4\. It's (date) and You Accomplished All These Goals. _how Did You Do It?_**
+### **4\. It's (date) and You Accomplished All These Goals. _How Did You Do it?_**
 > It's the end of the day and I just wrote 1,000 words, exercised for an hour, had a great conversation with a friend, and explored a new area of town...how did I do it?
 
 🤔...🤔...🤔

@@ -13,7 +13,7 @@ Said [Amanda Palmer](http://en.wikipedia.org/wiki/Amanda_Palmer) as a frat boy t
 Some people would insult her, others would try to make her laugh, and some would threaten to steal the money she had been collecting. But through it all, she remained completely still.
 Then there were the countless other distractions she dealt with. She couldn’t move her eyes, so she had to ignore all of the interesting things passing by. If she had an itch, she wouldn’t be able to scratch it. And if a bug just happened to land on her face, she had to wait patiently until it left.
 All of this discipline completely drained her. She could not work for more than 90 minutes at a time, and could only do it for a total of 3 hours a day. And when she got home, she was completely exhausted mentally _and_ physically _–_ **even though she barely moved! \[[1](http://www.amazon.com/gp/product/B0052REQCY?btkr=1)\]**
-## **Draining MENTAL ENERGY**
+## **Draining Mental Energy**
 At some point in your life, you have probably experienced the same phenomenon as Amanda Palmer. You struggled through a stressful day at work and for some reason you feel completely exhausted when you got home. You may have spent the entire day at a desk, but for some reason your legs, your arms and your body all feel completely drained.
 Why is this? Why does our whole body feel physically exhausted when we’ve only been exerting ourselves mentally?
 To try to understand this, researchers ran experiments that would test someone’s self-control in one task (such as holding in their emotions), then immediately test it in another unrelated task (such as squeezing a handgrip as long as possible).

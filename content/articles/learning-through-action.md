@@ -15,7 +15,7 @@ There was no reason to believe that the brothers would be successful. They had n
 A man named [Samuel Pierpont Langley](https://en.wikipedia.org/wiki/Samuel_Pierpont_Langley) was the clear favorite to be the first to develop manned flight. He was a brilliant engineer, he had a full team who all graduated from Ivy League schools and he had financial backing from both private investors and the government.
 _So why have you probably never heard of Samuel Pierpont Langley?_
 How did the Wright brothers – simple bicycle repairmen from [Dayton, Ohio](https://en.wikipedia.org/wiki/Dayton,_Ohio) – go down in the history books as the first to achieve manned flight?
-## **Theory Vs. Action**
+## **Theory vs. Action**
 Samuel Pierpont Langley’s team was full of brilliant engineers. They believed – and for good reason – that flying a plane would be similar to sailing a boat. This meant that their flying machine should be built for stability.
 Their pilot, they believed, should be focused mostly on going straight, making only gradual turns so as to ensure his stability in the air.
 So Langley and his team spent months calculating how to make a stable aircraft for the highly turbulent open air. They focused all of their attention on the physics of how to create the perfect aircraft.

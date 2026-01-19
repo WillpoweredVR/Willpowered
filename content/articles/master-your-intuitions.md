@@ -31,7 +31,7 @@ So with every year of work, he reinforced this message to his [cerebellum](https
 The intuitive brain is responsible for our ability [to ride a bike](http://www.willpowered.co/learn/knowledge-understanding), for our [survival instinct](http://www.willpowered.co/learn/fear-kills-willpower), and for our deeply held beliefs about politics, religion, and [principles](http://www.willpowered.co/learn/principles-benefit-willpower).
 In his book _[The Righteous Mind](http://amzn.to/21pN0C5)_, University of Virginia professor [Jonathan Haidt](https://en.wikipedia.org/wiki/Jonathan_Haidt) refers to this part of our brain as “the elephant” because it is powerful, difficult to control, and has a great memory. \[[2](http://amzn.to/21pN0C5)\]
 When you make a snap judgment about someone you meet—good or bad—this is your elephant using years of stored memories of inter-personal relationships to help you understand how you should act towards this person.
-## **The true role of rationality**
+## **The True Role of Rationality**
 By the time Vienna general was having issues with childbed fever, the head doctor already had **years of his elephant believing that doctors are the good guys.**
 Doctors _save_ lives—they don’t put them in danger.
 So when Semmelweis presented his evidence and theory, he made the same snap judgments about it that you would make when hearing evidence contrary to your religious or political beliefs. \[[3](http://www.psy.ohio-state.edu/fazio/documents/cogemo.pdf)\]
@@ -39,14 +39,14 @@ Let’s examine why this happens…
 When we are presented evidence for or against our beliefs, we think it is communicated to our [cerebrum](https://en.wikipedia.org/wiki/Cerebrum)–the conscious, “rational brain.”
 Then we believe our rational brain takes the role of a “scientist.”
 It searches for the truth, examines the evidence, and makes a well-informed decision. The scientist then informs the elephant about what our beliefs and ideas should be based on the evidence.
-### **What we believe:**
+### **What We Believe:**
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1462356356974-RQMYVRA57AQAVTVYMPEL/image-asset.jpeg?format=original)
 **However, it is actually the opposite.** It is the intuitive brain that determines our beliefs, and our rational brain acts much more like a “lawyer.” It rationalizes _why we made our judgments_, rather than trying to understand the evidence.
-### **What really happens:**
+### **What Really Happens:**
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1462356317279-WUH5V1J64ZS91BOIKY4E/image-asset.jpeg?format=original)
 This is seen perfectly with the head of Vienna General.
 When Semmelweis presented the evidence, he didn’t try to understand it and form a judgment based upon his understanding. He saw the evidence, formed an intuitive judgment that it can't be right, then tried to rationalize his judgment by blaming the ventilation system.
-## **HOW snap judgments influence decisions**
+## **How Snap Judgments Influence Decisions**
 We make [subconscious](http://www.willpowered.co/learn/how-to-influence-the-subconscious-mind), intuitive judgments about almost everything around us.  
 When you saw the title of this article, you made an intuitive judgment about reading it. When you [woke up this morning,](http://www.willpowered.co/learn/perfect-morning-routine) you made an intuitive judgment about hitting "the snooze."
 When you read words like:

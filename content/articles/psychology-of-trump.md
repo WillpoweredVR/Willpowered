@@ -25,7 +25,7 @@ I believe that America has lost our former glory, that our economy is terrible, 
 Because I'm in fear, a primitive part of my brain known as the [limbic system](https://en.wikipedia.org/wiki/Limbic_system) takes over.
 This [primitive brain](http://www.willpowered.co/learn/short-term-and-long-term-motivation) is our survival instinct, and it developed to act fast. We didn't have time to think rationally and plan if we saw a snake nearby. We had to make a quick getaway! **So when I'm afraid I don't think rationally, I think emotionally.**
 My fear of things getting worse leads me to think emotionally about possible ways to make things better. \[[1](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)\]
-### My state of mind:
+### My State of Mind:
 1\. Thinking emotionally, not rationally
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407024892-DNYJ41OU0Z0YY33G8ZRF/image-asset.jpeg?format=original)
 ## **2\. Simple Solutions to Complex Problems**
@@ -35,7 +35,7 @@ Rather than looking deeper to find that far more illegal immigrants fly into the
 **Bad economy? _Stop immigrants from taking our jobs! Make products in America!_**
 Rather than looking deeper to find that [free trade](https://www.youtube.com/watch?v=65UcSx_LrZI) is one of the many factors that have led to the fact that we’re the healthiest, wealthiest society that has ever lived. \[[3](https://www.uschamber.com/sites/default/files/open_door_trade_report.pdf)\]
 These are all natural human reactions. The greater my fear, the more likely I'm going to be willing to emotionally attach myself to these views. And if I don’t take a moment to pause and look deeper into the situation, there is little hope of bringing me back to rationality. \[[1](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)\]
-### My state of mind:
+### My State of Mind:
 1.  Thinking emotionally, not rationally
 2.  Forming my views based on simple solutions to complex problems
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407046411-ZO5FRJO94ZVIV7INX5Q7/image-asset.jpeg?format=original)
@@ -47,7 +47,7 @@ Unsurprisingly, Republicans tried to justify Bush, but called Kerry a liar. Mean
 But the incredible finding was when each group heard their candidate saying contradictory information, a different area of their brain lit up than their normal information-processing center. **In other words, they were hardwired to ignore it.** \[[6](http://www.amazon.com/gp/product/B0049MPKAU/ref=dp-kindle-redirect?ie=UTF8&btkr=1)\]
 So, as time passes, I begin to find more reasons why these simple solutions will solve my complex problems. And because these solutions are rooted in fear, I get more emotional and less rational.
 Meanwhile, I ignore anything bad that's said about Trump and, knowingly or unknowingly, try to justify him when he says anything contradictory like, ["there are two Donald Trumps."](http://thehill.com/blogs/ballot-box/presidential-races/272666-trump-there-are-two-donald-trumps) followed soon by, ["I don't think there are two Donald Trumps."](http://thehill.com/blogs/ballot-box/presidential-races/272666-trump-there-are-two-donald-trumps)
-### My state of mind:
+### My State of Mind:
 1.  Thinking emotionally, not rationally
 2.  Forming my views based on simple solutions to complex problems
 3.  Embracing any information that supports my views, while ignoring anything else
@@ -59,7 +59,7 @@ Let’s say love and hate of Trump is a spectrum between 1—10. 1 being hate, 1
 This is called "[group polarization](https://en.wikipedia.org/wiki/Group_polarization)" and it has the potential to turn me from someone who has simply chosen to vote for Trump, into someone who is willing to compromise my own principles for him. \[[7](https://www.unc.edu/~fbaum/teaching/articles/jpsp-1979-Lord-Ross-Lepper.pdf)\]
 Even if I thought his idea of [wiping out the families of terrorists](http://www.nationalreview.com/article/428719/kill-terrorists-families-gangsta-trump) was immoral, if I hear justification for it from the “correct” people in my group, I’ll believe them. Then I will feel even better about a Trump Presidency! So me and my group of 7s begins to morph into a group of 9s or 10s.
 We're more passionate, dedicated, and extreme in our views than ever before. And it is time to show our support at a Trump rally!
-### My state of mind:
+### My State of Mind:
 1\. Thinking emotionally, not rationally
 2\. Forming my views based on simple solutions to complex problems
 3\. Embracing any information that supports my views, while ignoring anything else
@@ -73,7 +73,7 @@ Normal, innocent people were made either guards or prisoners. As soon as they pu
 They immediately started treating the prisoners horribly. And the experiment got so violent and intense that they needed to shut it down prematurely. \[[8](http://www.simplypsychology.org/zimbardo-paper.pdf)\]
 **So just like the guards, if I'm in a group against the bad guys, I may do some radical things.** Because I'm still the "good guy" and I justify doing it for good reasons.
 _After all, I am fighting for the noble purpose t__o Make America Great Again!_
-### My state of mind:
+### My State of Mind:
 1\. Thinking emotionally, not rationally
 2\. Forming my views based on simple solutions to complex problems
 3\. Embracing any information that supports my views, while ignoring anything else

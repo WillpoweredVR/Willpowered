@@ -62,7 +62,7 @@ If he's claiming that at best he produces something that is merely "good," what 
 Slim to none — but there's still a chance.
 **The difference comes down to your will to look at your own failures**, your own weaknesses, and your own stupidity. Then come back the next day and make your flaws just a little bit better.
 It is in this state of mind which I have thrived.
-## **My Stupidity — and Will to Improve It.**
+## **My Stupidity — and Will to Improve it.**
 When I started Willpowered I had a simple goal:
 > Write 1,000 words every day.
 

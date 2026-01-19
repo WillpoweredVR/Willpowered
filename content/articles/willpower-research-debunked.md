@@ -38,11 +38,11 @@ In the same way, psychologists with the “ego-depletion” framework could alwa
 _So what does this really mean? Is the entire Willpowered body of work completely ruined?_
 **Well, unfortunately, some of it is.**
 My interpretation of the science of willpower has always been a mixture of biological factors (which usually rely on the ego-depletion idea) and psychological factors (which don’t).
-### **Biological examples:**
+### **Biological Examples:**
 1.  [What Fuels Willpower?](http://www.willpowered.co/learn/what-fuels-willpower)
 2.  [10 Best Foods for Long-lasting Willpower](http://www.willpowered.co/learn/best-foods-for-willpower)
 3.  [Willpower is a Limited Resource](http://www.willpowered.co/learn/willpower-limited-resource)
-### **Psychological examples:**
+### **Psychological Examples:**
 1.  [Want Power—How to Tap Into Your True Potential](http://www.willpowered.co/learn/want-power)
 2.  [The Overwhelming Power of Small Wins](http://www.willpowered.co/learn/small-wins)
 3.  [The Extraordinary Value of Identity on Your Willpower](http://www.willpowered.co/learn/identity)
@@ -67,7 +67,7 @@ So they carried all of the diseases with them, and the doctors themselves were k
 When he made this discovery, Semmelweis immediately began requiring that doctors wash their hands before and after performing medical procedures.
 This practice saved countless lives within his department, but it was shut down quickly by the head doctor of Vienna General. He simply could not fathom that the doctors were the ones that were killing their patients.
 **So he ignored Semmelweis**, attributed the disease to the ventilation system, and refused to adopt the new hand washing procedures throughout the hospital. Which, of course, led to more deaths and no progress.
-## **Embracing THE TRUTH**
+## **Embracing the Truth**
 When I first heard of these studies, I was acting exactly like the head of Vienna General. I didn't want to confront the brutal facts, and my gut reaction was to deny it.
 [Being wrong](http://www.willpowered.co/learn/negative-capability) is one of the hardest things for us to accept. We attach our ideas to our sense of self-worth. And if we find evidence that our ideas are wrong, we take it as a personal attack against our character.
 So we "fight back" against this new evidence by denying it, discrediting it, or searching for other evidence that [confirms our original idea](http://www.willpowered.co/learn/confirmation-bias)—which a quick search on Google will always provide.

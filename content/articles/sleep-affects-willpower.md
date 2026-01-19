@@ -32,7 +32,7 @@ But as we know, getting more sleep is not that easy. We all have many pulls on o
 ### **1\. Meditation**
 In order to revitalize the body and mind a tactic you can use is [meditation.](http://www.willpowered.co/learn/what-i-learned-by-meditating) Research shows that **just 10 minutes of meditation** when sleep deprived will have significant benefits on your pre-frontal cortex’s ability to function properly. \[[4](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3612308/)\]
 You can find all of the benefits of meditation and learn how to get started by reading [this article.](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower)
-### **2\. A Completely Dark Room**
+### **2\. a Completely Dark Room**
 Most of us underestimate the affect that lights have on our sleep. When your room is completely dark, it helps your brain shut down and sleep more efficiently. This helps you get more rest out of the hours we lay in bed; helping to restore your willpower. \[[5](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000145)\]
 ### **3\. Nap**
 Other research suggests that it is the amount of consecutive hours you spend awake that matters the most. So breaking up the day with a nap can have significant benefits. It is better to sleep for 7 hours with a 1-hour nap than it is to sleep for 8 consecutive hours without taking that break during the day. \[[6](http://www.webmd.com/balance/features/the-secret-and-surprising-power-of-naps)\]

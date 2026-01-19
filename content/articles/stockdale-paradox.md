@@ -18,7 +18,7 @@ After being released back to his cell, Stockdale heard elaborate taps from the c
 However, Stockdale was able to devise a tapping code in order to communicate with his men and fight back against the isolation his captors tried to instill in each of the prisoners.
 Stockdale tapped back to his men, letting them know he was okay. Then he tried to ignore his throbbing pain as he settled in for yet another night in his cold, damp cell. **But as he lay there beaten and numb, his spirit was as strong as ever.**
 He still had faith that one day he was going to get out of there. He knew he was going to prevail in the end and even turn the experience into the defining moment of his life, which, in retrospect, he would not trade. \[[1](http://www.amazon.com/In-Love-War-Familys-Sacrifice/dp/0060153180)\]
-## **Optimism Vs. Faith**
+## **Optimism vs. Faith**
 Stockdale told this story to author Jim Collins in his book, _[Good to Great](http://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6)._ Collins had recently read Stockdale’s memoir of the event, _[In Love and War](http://www.amazon.com/In-Love-War-Familys-Sacrifice/dp/0060153180),_ and was depressed by Stockdale’s story.
 Collins had trouble even reading about Stockdale getting beaten, not receiving medical treatment, and enduring life in solitary confinement for almost 8 years—despite the fact that Collins knew the happy ending to the story!
 How did Stockdale not only endure the horrid events he wrote about in his memoir, **but endure them _without_ knowing that he would ever make it out?**

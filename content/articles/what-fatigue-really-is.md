@@ -11,7 +11,7 @@ featuredImage: ""
 _“Who needs this?”_
 Said Joe DeSena, founder of [The Spartan Race](http://www.spartan.com), as he was in the middle of doing an [Ironman Triathlon](http://en.wikipedia.org/wiki/Ironman_Triathlon) in Utah. Joe is renowned for pushing his body to the limit, but this time he felt like he had pushed his body as far as it could possibly go. He was 10 miles into the run and he was so nauseous that he had to walk over to an ambulance to vomit uncontrollably.
 Joe had all but decided that he was going to amongst those on the DNF (did not finish) list, when he saw a woman with one leg run by him. When he saw the woman pushing herself through a physical feat that many 2-legged people don’t even try, it changed his perspective. **Seeing this gave him the strength he needed to run with her for the final 16 miles and finish the race!** \[[1](http://www.mensjournal.com/adventure/races-sports/joe-de-senas-spartan-empire-20140421)\]
-## **How Did Joe Do It?**
+## **How Did Joe Do it?**
 To say that Joe was fatigued would be an understatement. His body and mind were telling him that he had finally reached his limit. Yet, all it took was a change in perspective from a focus on himself and his problems, to the one-legged woman who was going to triumph over circumstance to complete one of the world’s hardest competitions.
 Once Joe was able to believe that if she could get it done, then he could to, his body was able to follow his mental desire 16 miles to the finish line. This begs the question, **was Joe really fatigued?**
 ## **Is Fatigue Real?**
@@ -23,11 +23,11 @@ Following this research, a modern day ultra marathoner and sports scientist name
 ## **So What Can We Do?**
 Now that we know that fatigue is not exhaustion, does that mean that we can trick the brain to never feel fatigue anymore? Unfortunately no. No matter what, we will still feel the effects of fatigue the same way we will always have things that trigger fear and anxiety.
 **However there are tactics that we can use to fight against fatigue:**
-### **1.** **Remember what’s happening**
+### **1.** **Remember What’s Happening**
 When the feeling of fatigue hits, simply remember that fatigue is not exhaustion. Remind yourself that your body is still strong and empower yourself to keep going. That simple reminder will send a message back to the brain that you are not in any real danger and decrease your feeling of fatigue. \[[4](https://web.stanford.edu/~gwalton/home/Publications_files/Job,%20Dweck,%20%26%20Walton,%202010.pdf)\]
-### **2.** **Use the “chunking” technique**
+### **2.** **Use the “chunking” Technique**
 If you are on mile 1 of a 7 mile run and starting to feel fatigued, your brain will send even more messages to your body to “STOP”. It will do this because it knows how much farther you need to go. Instead, use the [chunking technique](http://www.willpowered.co/learn/chunking) to focus your mind on simply getting through the next mile. If your brain is focused on what it believes it can accomplish, it will lower the amount of fatigue in your body. \[[5](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength-ebook/dp/B0052REQCY/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1415727506&sr=1-1&keywords=willpower+rediscovering+the+greatest+human+strength)\]
-### **3.** **Find inspiration**
+### **3.** **Find Inspiration**
 Joe DeSena was able to finish the Utah Ironman because the one-legged woman running by inspired him. It took his mind off of his own body and onto the sheer determination she had to overcome her physical obstacles. When you’re feeling fatigued, find your source of inspiration that will keep you strong. \[[6](http://psp.sagepub.com/content/29/7/894.abstract)\]
 Remember why you are doing what you are doing and [believe in yourself.](http://www.willpowered.co/learn/why-positive-thinking-works) This will focus your mind on the thing you’re fighting for, rather than the pain you’re feeling, which will lower your fatigue.
 ## **Conclusion**

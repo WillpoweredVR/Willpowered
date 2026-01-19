@@ -32,7 +32,7 @@ Make no mistake about it. Opening up your mind to new ideas and trying to play t
 ## **How to Become More Dimensional Minded**
 So how can we become more dimensional minded? The easy answer would be to tell you to “open up your mind”, but that’s like telling someone who wants to lose weight to simply “start eating healthy”. **It’s not that easy.**
 So here are some exercises that you can use to help you achieve a dimensional mindset.
-### **1.** **Practice curiosity**
+### **1.** **Practice Curiosity**
 We take so many things in our world for granted. We see a kitchen table as just a kitchen table, we see a computer as just a computer and flushing the toilet as just the removal of waste. But where does that waste go?
 When we were children, we asked questions like that. We saw water leaving the toilet bowl like magic and wondered how it all works. We endlessly asked questions with the infamous “but why?” Then as we age we just see it as a functioning toilet. Not something that we need to understand anymore.
 Like any exercise, if we just practice this curiosity that we had when we were children we can literally reshape our brains to think more openly \[[3](http://www.washingtonpost.com/posteverything/wp/2014/10/03/how-curiosity-changes-our-brains/)\]. **To get started, simply select 15-30 minutes out of the day to just be curious.**
@@ -40,7 +40,7 @@ A great time to do this is on your commute to work. Look around at the cars, ads
 ### **2.** **Meditate**
 One of the main benefits of meditation is the rewiring of the brain to have less judgment and more empathy \[[4](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9744.2005.00671.x/abstract)\]. This will [influence your subconscious mind](http://www.willpowered.co/learn/how-to-influence-the-subconscious-mind) to avoid placing judgment on everything you see, which will allow you to be more open and curious.
 **It only requires [10 minutes of daily meditation](http://www.willpowered.co/learn/what-i-learned-by-meditating) to make a significant impact on your subconscious.** To get started, [download the free Headspace app.](headspace.com) It will provide a guided meditation program designed specifically for beginners.
-### **3\. Keep a journal**
+### **3\. Keep a Journal**
 Regular writing has been proven to have [many mental health benefits](http://lifehacker.com/5855019/how-to-harness-the-mental-and-emotional-benefits-of-regular-writing), one of which is increased creativity \[[5](http://www.edutopia.org/blog/writing-executive-function-brain-research-judy-willis)\]. Most of our "thinking time" is undisciplined. Time spent thinking is really just allowing our brains to wander, which can quickly lead to placing judgment.
 By keeping a journal, you help your mind develop focused creativity. Whether you’re writing about events in your life, a problem you’ve been dealing with, or a new idea, as you write you begin to see the problem from different angles. You start to develop a dimensional mind as you put your ideas to paper.
 ## **Conclusion**

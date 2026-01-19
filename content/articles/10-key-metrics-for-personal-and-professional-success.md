@@ -29,7 +29,7 @@ Here are the 10 metrics I use to track success in each of these areas:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1560354602560-OF5TIIS768X803FTKI2R/Content+%7C+10-key-metrics-for-personal-and-professional-success.png?format=original)
 ## 1\. Meditation
 ### Category: Mental Health
-### Success Metric: Meditate for 1 hour/day
+### Success Metric: Meditate for 1 Hour/day
 ### App Used: [Headspace](https://itunes.apple.com/us/app/headspace-meditation-sleep/id493145008?mt=8)
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1560253131960-THT0H6UFT8GE1AAPVYC8/Meditation+data.jpeg?format=original)
 The most important value in my life is mental health.
@@ -61,7 +61,7 @@ A perfect score is 85, so shooting for 80 ensures that I'm getting quality sleep
 Since adopting the practice of trying to be as consistent as possible, I have found that I am never sleepy throughout the day. Tired yes, exhausted yes, but never sleepy. **And that is crucial when trying to perform at your best.**
 ## 3\. Journaling
 ### Category: Mental Health
-### Success Metric: Journal Entries/Week
+### Success Metric: Journal Entries/week
 ### App Used: [Drafts](https://itunes.apple.com/us/app/drafts-capture-act/id1236254471?mt=8)
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1556055500312-WKNRAMOYYSLNL6QY9DWU/Journaling+Metrics.jpeg?format=original)
 The final mental health metric that I track is journaling on a daily basis.
@@ -79,7 +79,7 @@ The act of trying to make sense of all of your thoughts, feelings, and emotions 
 It is this ability to make sense of my problems that led me to believe that journaling is almost as vital to my mental health as meditation or sleep.
 ## 4\. Workouts
 ### Category: Physical Health
-### Success Metric: Workout plans completed/week
+### Success Metric: Workout Plans Completed/week
 ### App Used: [Strong](https://itunes.apple.com/us/app/strong-workout-tracker-gym-log/id464254577?mt=8)
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1556056442832-7YE6GM2CNI75PEDV0SJF/Workout+metrics.jpeg?format=original)
 Moving on to the thing I value most in life after mental health – physical health.
@@ -101,7 +101,7 @@ If you can track your success rate in following whatever plan works best for you
 To plan and track my workouts, I use an app called "Strong" for iOS. I highly recommend checking it out – especially if you have an Apple Watch. It is constantly improving and worth every penny.
 ## 5\. Fasting
 ### Category: Physical Health
-### Success Metric: Successful Fasts/Week
+### Success Metric: Successful Fasts/week
 ### App Used: [Zero](https://itunes.apple.com/us/app/zero-fasting-tracker/id1168348542?mt=8)
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1560254531442-R17MB9HCFEIM3ZFN29HJ/Fasting+metrics.jpeg?format=original)
 As mentioned in my introduction, I am currently following a time restricted eating habit.
@@ -113,7 +113,7 @@ With time restricted eating, your digestive system only needs to work for a few 
 If you are to try this yourself, know that it is going to be extremely difficult at first. But eventually, your body will get used to it **– and you will begin to love it.**
 ## 6\. Promises
 ### Category: Relationships
-### Success Metric: Promises kept
+### Success Metric: Promises Kept
 ### App Used: [Trello](https://trello.com/colinwillpoweredco/recommend)
 Moving on from physical health, **the next most important value to me are my relationships with others.**
 This could be family, this could be friends, this could be coworkers, it could be anybody in your life who is important to you.
@@ -141,9 +141,9 @@ Calm – Were you calm and levelheaded in the face of adversity today?
 Honesty – Did you tell the truth or, at least, not lie?
 For my leadership metrics, I want to say “yes” to those answers at least 90% of the time. Thus, I have continually updated percentage of times I said “yes.”
 To track this, I use my SMaC tracker template which you can [download here](http://www.willpowered.co/s/SMaC-Formula-Template.csv) and learn more about [here.](http://www.willpowered.co/learn/create-a-smac-formula?rq=smac)
-## 8\. Eat my Frog
+## 8\. Eat My Frog
 ### Category: Time
-### Success Metric: Days of eating my frog
+### Success Metric: Days of Eating My Frog
 ### App Used: [Trello](https://trello.com/colinwillpoweredco/recommend)
 Moving onto the fourth most important value to me – time.
 **Time is a far more valuable resource than money.**
@@ -162,7 +162,7 @@ To accomplish my frog first thing in the morning every single day, I break down 
 That way, when I start my day at 7 AM, all I need to do is take each of those manageable steps one at a time in order to get the job done.
 ## 9\. Deep Work
 ### Category: Time
-### Success Metric: Hours of deep work/Week
+### Success Metric: Hours of Deep Work/week
 ### App Used: [Leadership Checklist](http://www.willpowered.co/leadership-checklist)
 Many of us are more worried about "looking busy" than getting the job done.
 I am very lucky to be able to do my work remotely, so it's more important that I get results than look busy getting those results.

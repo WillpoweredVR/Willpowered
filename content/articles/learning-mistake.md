@@ -18,7 +18,7 @@ When he arrived, he instantly started making great progress. He spent a full yea
 **But one day he stopped making progress.**
 Some things just didn’t make sense. They didn’t have a word for left or right. They had multiple meanings for certain words that didn’t seem to connect. With each step forward, he felt as if he was taking two steps back.
 This must have been when the previous missionaries went insane.
-## **What was everett doing wrong?**
+## **What Was Everett Doing Wrong?**
 Clearly, learning this language was not impossible. Children in the tribe seemed to pick it up with ease! _So why couldn’t he?_
 After months of feeling like he was getting nowhere, Everett finally ventured outside of the village. He joined the Piraha men on one of their hunts. There, he discovered something remarkable.
 **The language they were using while hunting was completely different than the language used in the village!** They communicated with different pitches of whistling that allowed them to be stealthier when stalking their prey.

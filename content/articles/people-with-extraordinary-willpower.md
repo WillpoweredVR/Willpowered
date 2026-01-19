@@ -63,7 +63,7 @@ There’s even worse news. Because your brain cells aren’t absorbing glucose a
 **In short, those who are sleep deprived certainly will not be Willpowered.**
 To avoid this fate, the obvious answer is to **get more sleep!** But that is easier said than done in today’s world of constant distractions.
 So here are a few ways you can get more willpower out of the sleep you are currently getting:
-### **1\. A Completely Dark Room**
+### **1\. a Completely Dark Room**
 Most of us underestimate the affect that lights in our room have on our sleep. When your room is completely dark, it helps your brain shut down and sleep more efficiently. This helps you get more rest out of the hours you lay in bed; helping to restore your willpower. \[[5](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000145)\]
 ### **2\. Nap**
 Other research suggests that it is the amount of consecutive hours you spend awake that matters the most. So breaking up the day with a nap can have significant benefits. It is better to sleep for 7 hours with a 1-hour nap than it is to sleep for 8 consecutive hours without taking that break during the day. \[[6](http://www.webmd.com/balance/features/the-secret-and-surprising-power-of-naps)\]

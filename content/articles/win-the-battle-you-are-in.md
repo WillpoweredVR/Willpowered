@@ -34,7 +34,7 @@ One of the worst [habits](http://www.willpowered.co/learn/keystone-habit) I have
 That is, until I get 500 words into the new article and come up with an even better idea!
 The result? I have dozens of half written articles. Most of them I have completely forgotten the point I was trying to make. Meanwhile, I have few actually edited and finished articles that are worthy of publishing.
 This adds unnecessary stress and headaches – always trying to think about the “next big article” rather than focusing on finishing the perfectly good articles that I have half-written.
-## **Win the Battles That You Are In**
+## **Win the Battles That You Are in**
 To overcome this tendency, you and I need to take a lesson from Steve Jobs. We must be rigorous about finishing what we have started before we pick new battles to fight.
 New battles may be sexy – they certainly seem to be compared to the discipline that it takes to win our current ones - **but that is irrelevant.**
 Because those new and “sexy” battles will seem just as boring and uninteresting once our initial enthusiasm has worn off and the finish line still seems so far away. When we enter the [middle of the journey](http://www.willpowered.co/learn/get-through-the-middle), we will be just as unmotivated by the new project.

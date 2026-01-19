@@ -16,7 +16,7 @@ _They both were serving 30-month sentences._
 _They both were well-behaved during their 18-months in prison._
 **The only difference – at least on paper – was the time of their parole hearing.** One was at 8:50am and the other was at 4:30pm.
 The lucky man with the morning hearing was granted his freedom, while the unlucky man with the late afternoon hearing was to spend the next 12 months behind bars. \[[1](http://www.amazon.com/gp/product/B0052REQCY?btkr=1)\]
-## **The Rapid depletion of decision-making**
+## **The Rapid Depletion of Decision-making**
 After learning this anecdotal evidence, researchers conducted a study to determine if the time of a parole hearing really made a difference in whether or not a prisoner was set free.
 They discovered that prisoners who were scheduled **first thing in the morning were granted parole 65% of the time**. While the ones who were scheduled in the **late afternoon were granted parole only 10% of the time!** \[[2](http://www.pnas.org/content/108/17/6889.full)\]
 Which means those who had their parole hearing in the morning were **more than 6 times more likely to be set free!**

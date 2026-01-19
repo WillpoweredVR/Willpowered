@@ -30,7 +30,7 @@ Practicing your _internal_ locus of control makes your mental preparation and ef
 Likewise, practicing an _external_ locus of control makes your shame (poor results) and arrogance (good results) muscles stronger.
 When I saw this talk, I knew that not only did I need to follow her advice and begin practicing mindfulness more in my own life, **I needed to add her to my list of calls.**
 After speaking with her, I formed my life philosophy and started practicing what I believe would be the most valuable thing to grow stronger – bringing my best self to every moment.
-## Bring My Best Self To Every Moment
+## Bring My Best Self to Every Moment
 ![](https://www.filepicker.io/api/file/EIjf8kkSQfWxl9iDnTD4)
 **It is always now.**
 The past cannot be changed; the future cannot be known. And all you can control is what you do right here, right now, in this moment.

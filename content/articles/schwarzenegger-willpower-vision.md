@@ -46,7 +46,7 @@ He had so many opportunities to give up. Opportunities to listen to his friends 
 But he not only didn't listen to them, **he pushed himself through pain every single day to reach the goal that he knew was possible.**
 Arnold's story proves the power of a vision, but it was not his vision alone that turned him from a poor, skinny boy in rural Austria, to one of the most successful people of all time...
 Here are 3 factors that led to his ultimate success
-### **1\. The Search for Purpose**
+### **1\. the Search for Purpose**
 Before he even picked up the magazine about Reg Park, Arnold knew that he had to get out of that little Austrian village.
 He knew that his purpose in life was beyond becoming a police officer, marrying a girl in Thal, and living the simple life. He wanted something more. So his subconscious was on the lookout for a purpose in life that would get him out of Thal.
 Undoubtedly, plenty of children in tiny villages around the world also read the magazine article about Reg Park. **But they saw it from a different perspective than Arnold.** They didn't see the plan he did because they were not looking for one!

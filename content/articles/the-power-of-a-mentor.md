@@ -21,11 +21,11 @@ However, acquiring these 10,000 hours isn't easy. Deliberate practice isn’t ju
 ## **How to Find Your Coach**
 Finding a great coach or mentor is easier than many people believe. Anyone who is successful once had someone who helped him or her get there. So there is an intrinsic desire for them to pay it forward. The key is to prove to them that you’re willing to work hard and listen as they once did.
 [Kerry Hannon](http://www.forbes.com/sites/kerryhannon/) has a [great article on Forbes](http://www.forbes.com/sites/kerryhannon/2011/10/31/how-to-find-a-mentor/) about some steps you can take to find a great mentor, but here are my favorite:
-### **1.** **Find the right person**
+### **1.** **Find the Right Person**
 Find the person who’s going to be able to guide your development as well as inspire you to endure the grueling practice necessary to become a master. If you can get that level of mentorship, it will be well worth the effort.
-### **2.** **Create a relationship first**
+### **2.** **Create a Relationship First**
 Chances are this person is extremely busy and you’re not the first to ask him or her to become a mentor. So don’t. Not at first, at least. Begin by opening up a dialogue and asking for advice. Offer to buy them coffee or lunch and eventually make it a regular meeting. Build a relationship with them and the mentorship will begin to naturally occur.
-### **3.** **Listen and work**
+### **3.** **Listen and Work**
 When you initially ask the person for advice, you had better follow it. This is most likely a [person of action](http://www.willpowered.co/learn/characteristics-of-peak-performers), so if you can show your initiative as well, then you will begin to earn their respect. If nothing else, following their advice will keep the dialogue open and create an opportunity to get feedback.
 ## **Conclusion**
 Well-structured deliberate practice has been proven time and again to distinguish the world’s top performers. The best way to follow a deliberate practice routine is by finding the right mentor or coach. A mentor will be able to tell you what you need to work on, and provide that extra motivation you need to keep going through the hard times. **If you find the right person to aid in your development, there’s no telling where you can end up!**

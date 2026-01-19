@@ -14,7 +14,7 @@ These 14 Ironman Triathlons are part of over 125 total endurance races that DeSe
 In his own words:
 “I'm really good at compartmentalizing. If you're 10 miles into a 100-mile run and you're thinking about mile 90, you're dead. You've got to think about mile 11 and completely shut out the next 24 hours.” \[[1](http://www.mensjournal.com/adventure/races-sports/joe-de-senas-spartan-empire-20140421)\]
 In all of Joe DeSena’s endeavors from sports, to business, to life, he doesn’t focus on the huge goal that is hours, months or years away. He focuses on what he needs to do next. This is a technique that researchers call “[chunking](http://www.willpowered.co/learn/chunking)” and it is the key component to what I call “The Rule of One Thousand Ones.”
-## **The rule of one thousand ones**
+## **The Rule of One Thousand Ones**
 Take the number 1000. The number 1000 is made up of one thousand individual 1s. Taken alone, each individual 1 seems completely insignificant. It doesn't even represent 1% of 1000! However, you need each and every 1 in order to get to the total of 1000.
 When we are working toward a goal, we tend to think about the whole landscape of things that need to be done. We focus on “the 1000” rather than on each individual 1. This sounds good in theory. After all, we want to be able to see the big picture, we want to be visionaries and we want to dream big. However, when we focus on the one thousand, we actually hurt our chances of getting there.
 Imagine your goal is to build a cathedral. You have been envisioning building this cathedral all of your life and you are finally ready to get started. So you lay out the plans to build and you get to work laying bricks.

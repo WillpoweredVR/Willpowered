@@ -13,7 +13,7 @@ If so, think about a problem that is currently stressing you out.
 It could be in your work, your relationships, anything. However, it must be realistically solvable (ending world hunger will have to wait for another time).
 Got your problem?
 Okay, now think about which of these methods will be most effective in coming up with a solution:
-### **1\. Create a plan**
+### **1\. Create a Plan**
 Spend the next week researching, brainstorming, and coming up with a plan:
 1.  Learn more about your problem.
 2.  Think about what you can do to solve it.
@@ -86,7 +86,7 @@ Reality:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1464271665493-TFIA4V6B0J8DJW660B9L/image-asset.jpeg?format=original)
 Event-simulation helps prevent that issue by forcing us to do what is known as a "[reference class forecast.](https://en.wikipedia.org/wiki/Reference_class_forecasting)" It helps us assess the reality of the past, like remembering how tired we were last Wednesday evening, and account for the factors that led to failing our last goal.
 This helps immensely in setting a clearer path for the future. \[[4](http://www.tandfonline.com/doi/abs/10.1080/09654310701747936#.VGJP3_TF_88)\]
-## **FOLLOWING a Proven PATH**
+## **Following a Proven PATH**
 _Okay, but what about reaching success with a completely new strategy?_ _If you can't simulate your own events, how do you find the right path?_
 Back my story from the beginning, in addition to my attempts at visualizing success, I also started reading the top books and biographies of some of my greatest heroes in [athletics](http://www.willpowered.co/learn/will-of-kobe-bryant), [business](http://www.willpowered.co/learn/science-behind-steve-jobs-creativity), and [creative](http://www.willpowered.co/learn/jk-rowling-rags-to-riches) fields.
 As this site thoroughly demonstrates, these stories struck a chord with me that visualizing success didn’t—and there is solid evidence why.

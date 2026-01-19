@@ -29,7 +29,7 @@ And right now doesn’t feel like the “perfect time” to get started. So why 
 ## **How to Become Inspired by Perfection, Rather Than Paralyzed**
 Chasing perfection does not have to be like this. Lombardi and the Green Bay Packers are proof! They used perfection to motivate them to create a team of excellence. So what can we do to become motivated by perfection, rather than paralyzed?
 Here are 3 proven ways to use perfection to your advantage:
-### **1\. Chunk it Up**
+### **1\. Chunk it up**
 The biggest reason that we become demotivated by perfection is because we get the feeling of being overwhelmed. When our brain takes a look at how much work we need to do in order to reach perfection, it believes that it is hopelessly out of reach. \[[2](http://www.uky.edu/~eushe2/Bandura/Bandura1981JPSP.pdf)\]
 Chunking is the process of shifting your focus from that larger goal, into smaller chunks that are easier for your brain to comprehend. If your goal is to follow a 12-week exercise plan, it can be overwhelming when you’re tired on day 4 and thinking about the fact that _you have 80 more days of this._
 But if you shift your focus to simply accomplishing the workout plan _today,_ you are far less likely to become overwhelmed. Then, before you know it, 20, 40, 60 days have passed and you are more confident than ever that we can make it to the end.

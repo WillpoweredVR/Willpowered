@@ -21,7 +21,7 @@ Then after 2 years of teaching Wolfgang, Leopold thought up an ingenious idea. H
 Sure enough, the crowds on the tour could not get enough of the young, precious musicians. This show was so popular, in fact, that **it was Wolfgang and his sister that supported the Mozart family, not Leopold.**
 So here we have, at the extraordinarily young age of 6, Wolfgang Amadeus Mozart with 2 years of music experience, composing his own pieces, and performing at such a high-level that he was the primary breadwinner of the family! \[[1](http://www.amazon.com/Wolfgang-Amadeus-Mozart-Piero-Melograni/dp/0226519619/ref=sr_1_2?s=books&ie=UTF8&qid=1450192608&sr=1-2&keywords=mozart+biography)\]
 If there has ever been an example of innate talent, Mozart has to be it. How else can you explain such extraordinary accomplishment at such a young age? Well, let us examine the Mozart story a little more closely.
-## **Was it Talent? Or Something Else?**
+## **Was it Talent? or Something Else?**
 As mentioned, since his inception into this world, Wolfgang was exposed to music. It filled the Mozart home all day with music played by Leopold’s students, and all night with music played by his older sister, Maria Anna.
 Wolfgang loved the music, but he was also jealous of the affection the other children got from his father – especially Maria Anna. He saw how much her playing made their father happy, and Wolfgang wanted to impress him in the same way.
 This ignited a passion inside of him to learn music himself to gain his father’s affection.
@@ -65,7 +65,7 @@ The colleague keeps a record of shots made. If the shot is missed the colleague 
 ## **How to Add Deliberate Practice to Your Life**
 You can clearly see the difference between the two players. But deliberate practice does not just apply to sports or music. You can add it to any skill you want to acquire by using the formula below.
 The key elements of deliberate practice are to:
-### **1. Determine What You Need to Work On**
+### **1. Determine What You Need to Work on**
 Rather than working on what you are already good at, deliberate practice requires that you work on those things that you _are not good at._ So identify what you need to work on to reach your goals.
 ### **2. Get Feedback on Your Work**
 Feedback is one of the most important aspects of deliberate practice. You need to be constantly learning what you are doing well and where you can improve. You don't need to have an instructor, per se, the basketball player in the example simply used the hoop as his feedback.

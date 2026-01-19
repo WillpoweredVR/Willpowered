@@ -77,7 +77,7 @@ From a strictly scientific standpoint you should:
 -   Focus on getting on a plane, not worrying about crashes and choosing to drive instead.
 -   Focus on being cautious of deer on the road, not on worrying about sharks in the water.
 And if the goal truly is safety—both at the individual and societal level—**then we should focus our willpower on the things that will result in the greatest amount of lives saved.** Not on the things that give us the strongest emotional reactions. \[[1](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231?tag=viglink123827-20)[3](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231?tag=viglink123827-20)\]
-## **What to do about fear**
+## **What to Do About Fear**
 _"I'm just glad I'm old. I'm worried about what will happen to the world in your lifetime."_
 My stepdad told me those words in 2012, but I didn't understand why. By all major measures, [2012 was the best year in the history of the world](http://www.spectator.co.uk/2012/12/glad-tidings/). And 3 years later it has only gotten better!
 **Violent crime has steadily declined...**

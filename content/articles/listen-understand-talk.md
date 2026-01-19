@@ -46,14 +46,14 @@ Listen to the facts, _then try to understand them._
 ## **Understand**
 Below are the key points I picked up from the conversation and the questions I used to gain deeper understanding of each man and his approach to the problem.
 Here's what I found:
-### **1\. Bill Maher's solution sounds good, but he clearly didn't think it through.**
+### **1\. Bill Maher's Solution Sounds Good, but He Clearly Didn't Think it Through.**
 -   Did he not think about how his solution would actually work?
 -   Would they lock me up for posting scientific information on my blog?
 -   What about a reporter who also has a book for sale?
 -   Or the thousands of self-published authors?
 This is one of the biggest mistakes people make by **talking before understanding.**
 If you already have a solution in your head, your [primitive brain](http://willpowered.co/learn/short-term-long-term-motivation?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Listen) will lead you toward confirming evidence, and away from questions that challenge your solution.
-### **2\. The President, doesn't claim to have the answer, but clearly understands the situation better than Maher.**
+### **2\. the President, Doesn't Claim to Have the Answer, but Clearly Understands the Situation Better Than Maher.**
 -   _Aha, so there is a difference between having an answer and understanding the problem._
 -   _I wonder what led to the difference in mindset between these two?_
 -   _Is it possible that others with useful insights are drowned out by those who believe they know the answer?_
@@ -61,14 +61,14 @@ If you already have a solution in your head, your [primitive brain](http://willp
 This was the first time it hit me that I needed to pull back the curtain and share as much of what I understand as possible — and so do you.
 Unfortunately, there are those who do not understand your field, skill, or experiences as well as you do. Yet, they will be more than happy to act as if they know it even better.
 Not because they're bad people, per-se, but because it's second nature for most people to focus immediately on finding the right answer — instead of finding the right question.
-### **3\. Neither man is asking the right question.**
+### **3\. Neither Man is Asking the Right Question.**
 -   Maher is asking, "how do we get the media to focus on the truth instead of ratings?"
 -   _But is a focus on ratings the root cause of the problem?_
 -   _Are people even getting the truth from the media?_
 -   _Obama is asking, "how do we make the truth entertaining?"_
 -   But is the truth being "boring" really the issue?
 -   Do people ignore the truth because it's not entertaining enough?
-### 4\. **There's a big opportunity here.**
+### 4\. **There's a Big Opportunity Here.**
 -   Obama cares about this issue.
 -   His mind is open to a solution (he didn't need to pretend he had an answer).
 -   It will be hard to get on his radar, but for all I know, I'm the closest person on earth to finding the solution he's looking for.

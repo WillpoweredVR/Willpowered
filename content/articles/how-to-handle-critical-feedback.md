@@ -30,7 +30,7 @@ You can find Trolls in real life who may criticize you, but they are most preval
 ### **Example of a Troll**
 _“This article is bullshit and you’re a terrible writer. Any one of these other people commenting could write better than you. Keep practicing…it clearly isn’t working.”_
 ### **How to Deal With a Troll:**
-### Ignore them.
+### Ignore Them.
 Trolls are inevitable. You cannot hide from them if your work is in the public sphere. So as soon as you realize this person isn’t offering you any real criticism and is just there to bring you down, let go of their words. They don’t really mean anything.
 ## **2\. Aliens**
 The next type of feedback you will receive is from people whom I’ll call “Aliens.”
@@ -41,7 +41,7 @@ You are much more likely to come across Aliens in real life than Trolls. They ma
 _“You’re dangerous! You’re a Nazi! I’m sure Hitler would have loved to have you to justify him!”_
 The person who first emailed me calling me a Nazi is an Alien. As soon as he saw “good person” and “Trump supporter” in the same sentence, he no longer wanted to understand. His heart was full of rage, and I was the target.
 ### **How to Deal With an Alien:**
-### Understand their perspective, and keep it in mind.
+### Understand Their Perspective, and Keep it in Mind.
 It is really easy to stereotype an Alien and respond with the same ignorance they’re showing you. **But they have a reason for their beliefs**. This particular Alien was a [protestor at a Trump rally](http://www.nytimes.com/2016/03/12/us/trump-rally-in-chicago-canceled-after-violent-scuffles.html) and witnessed the violence first hand—if I were there, I might have felt the same way. \[[2](http://amzn.to/1Mm6EMr)\]
 However, understanding them doesn’t mean accepting their feedback as the truth. It is simply taking the time to understand their [perspective](http://www.willpowered.co/learn/perspective) and keeping it in mind for your work in the future.
 ## **3\. Yes Men/women**
@@ -53,7 +53,7 @@ There are many Yes Men in your life. The list includes your parents who praise y
 ### **Example of a Yes Man:**
 _“I loved every word of your book! I wouldn't change a thing!” (Upon receiving the first draft of [The Will of Heroes](http://www.willpowered.co/the-will-of-heroes), which needed many changes…)_
 ### **How to Deal With a Yes Man:**
-### Check yourself, and challenge them with specifics.
+### Check Yourself, and Challenge Them With Specifics.
 When I received that email from a Yes Man, I felt my ego being stroked. It felt good. _No flaws…I knew I was a great writer!_ But I had to check myself. I didn’t send him the first draft just to make myself feel better. I sent it to improve the book.
 So I challenged him with specific questions that others brought up.
 When you challenge them like this, they will either:
@@ -70,7 +70,7 @@ Unlike Aliens, they understand you (or at least accept you). **Rather than tryin
 _“You’ve just repeated and copied EXACTLY what Andy Puddicombe from Headspace said and YOU NEVER EVEN MENTIONED HIS NAME ONCE, not even listed him in your sources._
 _Instead, you've taken complete ownership and full credit of what Andy's given you for FREE. Can't you just simply thank the man? Egocentric.”_
 ### **How to Deal With a Tarantino:**
-### Listen to them, don't get emotional, and address the issue.
+### Listen to Them, Don't Get Emotional, and Address the Issue.
 This Tarantino was calling me out on one of my top values with this site—citing my sources. I instantly became emotional. I just wanted to delete this comment so no one else would know I didn’t live up to my standards.
 **But I took a deep breath, understood why he was angry, accepted my mistake, and fixed it.** Then I responded to him apologizing and thanking him for calling me out on it.
 He responded:
@@ -90,12 +90,12 @@ _"The article mainly addresses the "big" fears. What would you say about the sma
 _I mean the fear of the stranger besides me on the bus, or the fear to ask a question I believe I will look stupid, the fear to tell the other person that what he/she's doing is harming someone, etc..._
 _My understanding is that those fears are over emphasized by no one but ourselves but still they consume our energy."_
 ### **How to Deal With a Challenger:**
-### Engage them in debate, and DO NOT take them for granted.
+### Engage Them in Debate, and DO NOT Take Them for Granted.
 The example above is from a man named Philippe, who is one of my earliest subscribers. With every article I write, I know there's a good chance Philippe will challenge me on my ideas, or bring up questions I never even thought about.
 His feedback, as well as the feedback from many other Challengers in my life, has been priceless.
 The biggest mistake people make with Challengers is taking them for granted. They either take their feedback too personally, or ignore it entirely. **You don't always have to adhere to the feedback you get from a Challenger, but you must show them that you respect their opinion.**
 If you don't show a Challenger that you at least respect their question or suggestion, you will teach them that it isn't worth their time to challenge you. And you will lose a powerful ally.
-## **The most dangerous feedback**
+## **The Most Dangerous Feedback**
 About 2 months before I released _The Will of Heroes,_ I was giving a review for my friend [Chris Bailey's](http://alifeofproductivity.com/) book, _[The Productivity Project](http://amzn.to/1VEhjUT)._ Chris is about the same age as me and this is his first book as well.
 **When I was reviewing his book on Amazon, something startled me—a negative review.**
 Not a review that was full of hate, but one that was written by a smart person who made some good points. That made me realize, _"uh oh, smart people are going to give me bad reviews too! I can't let that happen!"_

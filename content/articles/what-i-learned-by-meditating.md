@@ -18,12 +18,12 @@ Our minds are constantly wandering. They’re worrying about the future, regrett
 ## **What I Learned**
 Andy Puddicombe, [meditation expert and founder of Headspace](https://www.headspace.com/andy-puddicombe), suggests that just 10 minutes of meditation practice every day can make a world of difference.
 So I followed his advice and after just one week, this is what I noticed:
-### **1.** **My focus increased**
+### **1.** **My Focus Increased**
 Think of your mind like a muscle and your first meditation practice like your first time on the bench press. It’s really awkward at first and you’re terrible at it. But the second time, it’s a little more comfortable. The third time, you’re seeing improvement, and the fourth time you’re seeing some pretty big progress in your strength.
 Meditation follows this same pattern. At first it was awkward and I was terrible. But as the week went on, I slowly got better. By day 4, I noticed a significant improvement in my ability to focus on the task at hand and resist temptations like checking my email or Facebook.
-### **2.** **I began judging others less**
+### **2.** **I Began Judging Others Less**
 Part of the wandering mind is the want to place judgment on things. We naturally judge the things we see on TV, the people we see walking down the street, and of course, the person we see in the mirror. Part of the practice of meditation is to train your brain to focus on simply observing thoughts and feelings, rather than judging them. After just a week, I began to judge others less, which freed up my thoughts to observe smaller details I didn't notice before.
-### **3.** **My energy increased**
+### **3.** **My Energy Increased**
 This was the most immediate change. **After just one session, I immediately felt more energy.** I chose to do the 10 minutes after work to help me de-stress from the day. Not only did it accomplish this, but it also gave me the energy to do more in the evening. It gave me the energy to resist the takeout menu and cook a healthy dinner. It gave me the mental focus to resist the TV and read a book instead. When my willpower was low, it gave me a quick boost!
 ## **Try it Yourself**
 I’ve been meditating for over a year now, but I wanted to share what I learned over the first 7 days so that you can try it yourself and see if you get the same benefits. To anyone who’s interested in getting started, the first thing I would recommend is to download a free app called [Headspace](http://www.headspace.com). Headspace is a guided meditation tool that has daily meditation exercises of 10 minutes each that are designed for beginners. **Try it for just 7 days and see if you notice any of the same benefits!**

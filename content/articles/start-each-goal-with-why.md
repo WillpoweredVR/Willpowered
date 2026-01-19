@@ -65,7 +65,7 @@ Just remember that finding your why is merely the starting place.
 Starting with why will inspire you to achieve goals, help you bounce back from failure, and might even give you the confidence to change the world – **but you still need to put in the work.**
 Unfortunately, many people who start with WHY never figure out the HOW. They are the "dreamers" who never learn how to "do."
 **Here are 2 strategies you can use to ensure you're not one of them.**
-### **Find People Who Know "HOW"**
+### **Find People Who Know "how"**
 Walt Disney was once asked by a shareholder, "what would happen to Disney if he was hit by a truck?" His answer shocked the crowd.
 _“Absolutely nothing. My brother Roy runs this company. I just piddle around.”_
 He was not kidding.

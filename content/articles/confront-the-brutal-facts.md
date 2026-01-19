@@ -38,7 +38,7 @@ Over the next year...
 2.  I started every game
 3.  Our underdog team upset the state and won the championship
 4.  And I learned the fundamental principle at the base of my philosophy toward life since
-### _"Confront the Brutal Facts, Yet Never Lose Faith."_
+### _"confront the Brutal Facts, yet Never Lose Faith."_
 ## **Confront the Brutal Facts**
 This was not an easy principle for me to grasp.
 Throughout high school, my denial of any facts that didn't match with my dreams led me to become a compulsive liar.
@@ -51,7 +51,7 @@ When you're lying to everyone, you believe everyone else is lying to you. This l
 Luckily, that started to change when I finally had face facts.
 This was the first time I could not ignore the facts, If I wanted to reach my goal, I could no longer lie to myself.
 Which is why the first fact I faced was...  
-## **BRUTAL FACT #1: Self-Awareness Is the First Step Toward Self-Improvement**
+## **Brutal FACT #1: Self-awareness is the First Step Toward Self-improvement**
 Self-awareness is the most underrated aspect of working toward any goal. Simply being honest about how much I was exercising didn't allow me to cut corners anymore.
 Similarly, rather than trying to defend my weaknesses, I started seeing them for what they were —- problems in need of a solution.
 Some I could fix quickly, (like studying offensive formations) some would be much harder (like improving my speed). Being "okay" with my weaknesses started a fundamental shift in how I saw the world.
@@ -60,14 +60,14 @@ When I could admit I wasn't as strong or fast as my teammates, I realized that I
 By thinking this way you will miss out on all of the positive things you'll find out about yourself or others in the process of owning up to your mistakes and learning from them.
 > If you have a brutal fact that you've been ignoring, ask yourself what positive findings may come from "pulling back the curtain."
 
-## **BRUTAL FACT #2: Exaggerating Diminishes Your True Accomplishments.**
+## **Brutal FACT #2: Exaggerating Diminishes Your True Accomplishments.**
 When I held up the championship trophy after such a long, hard journey; I realized that by exaggerating, I disrespect the real hard choices that went into that achievement.
 Exaggerating sends the message that "I don't believe I've accomplished enough in my life to be worthy of your approval, but maybe adding this on will make up for it."
 > If you're ever tempted to exaggerate, try to think about what you're hoping to achieve from doing so — why do you believe this person will like you more if you exaggerate rather than tell the truth?
 
 **Don't judge yourself for the answer, just clarify it.**
 You'll be surprised how effective this exercise is, and how silly your answers will sound.
-## **BRUTAL FACT #3: The Only Truly Bad Decision Is One Made Out of Denial.**
+## **Brutal FACT #3: the Only Truly Bad Decision is One Made Out of Denial.**
 If you look back on the key decisions in your life, you'll notice there weren't many between a good and bad option. After all, in those cases, it's not much of a decision.
 Instead, we face a never-ending series of compromises and tradeoffs from having many good options in one case, and many bad options in another.
 Unfortunately, we all face choices that may hurt someone we love — like choosing to leave home in pursuit of a dream.
@@ -83,7 +83,7 @@ Some of your decisions may hurt people but that doesn't mean they're wrong, and 
 More important than whether a decision might hurt someone is choosing to respect that person with the honest truth of the situation — especially if that person is you.
 > In those moments, you must become aware of the situation and ask yourself — are you being honest with the respect they deserve?
 
-## **BRUTAL FACT #4: Never lose hope.**
+## **Brutal FACT #4: Never Lose Hope.**
 In November of my junior year of high school, things looked bleak.
 Despite all my ambition, I was a terrible football player, on a mediocre team, and lied to myself and others in order to justify myself. I was completely miserable.
 Looking back, though, I'm incredibly grateful that things were so bleak. Because it taught me that even if everything seems to be working against you, and your world seems hopeless...
@@ -97,7 +97,7 @@ They're coming from individuals who now have the power to open a laptop and acce
 _I am deeply grateful for all the individuals that pushed our society forward to help me do just that_ — and equally saddened to learn that **more than twice as many 18-29 year olds are more frearful than hopeful for the future.**
 > When we ignore the brutal facts, we never find the facts that will give us hope.
 
-## **BRUTAL FACT #5: The Truth Needs Our Help.**
+## **Brutal FACT #5: the Truth Needs Our Help.**
 I wrote this post because I wanted to share my struggle to confront the brutal facts — and how they set me free.
 You would not be reading this article right now if I hadn't confronted the brutal facts, yet never lost faith.
 -   10 years ago it was to play another year of football.

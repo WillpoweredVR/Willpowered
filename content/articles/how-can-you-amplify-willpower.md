@@ -10,7 +10,7 @@ featuredImage: ""
 
 Last week, I sat down with Ben Austin, the founder of [Stop Start Do](http://www.stopstartdo.com/) and the host of the [Unleash Your Inner Genius Podcast](https://itunes.apple.com/us/podcast/unleash-your-inner-genius/id1113808789?mt=2)!
 We talk about the keys to mastering willpower, the best habits, and more!
-## **In our interview WE cover topics like:**
+## **In Our Interview WE Cover Topics Like:**
 -   Q: What are the most common reasons someone would want to understand willpower and how to improve it? What has improving your willpower allowed you to do in your career?
 -   Q: What caused you to be so interested in the science of willpower? And what's the story behind willpowered.co?
 -   Q: What are some of the most common misconceptions about willpower?

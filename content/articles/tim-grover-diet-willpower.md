@@ -14,7 +14,7 @@ Tim Grover, an up and coming athletic trainer, called the Chicago Bulls for a me
 So Grover created a detailed plan that outlined what [exercises](http://www.willpowered.co/learn/create-exercising-habit) Michael would do, how much [sleep](http://www.willpowered.co/learn/sleep-affects-willpower) he would get, and **which food he was allowed to eat.**
 Grover explained his plan to the finest detail, but Michael was not fully convinced it would work. Be he did agree to give it a try for the next 30 days.
 And he ended up following it for 15 years. \[[1](http://www.amazon.com/Relentless-Unstoppable-Tim-S-Grover/dp/1476714207/ref=sr_1_1?ie=UTF8&qid=1449507525&sr=8-1&keywords=relentless+grover)\]
-## **Grover's relentless Training**
+## **Grover's Relentless Training**
 The training and diet regimen that Grover put Michael through helped him become the greatest basketball player in the world.
 Since that time, Grover has worked with the best of the best in the game of basketball. The list includes [Charles Barkley](https://en.wikipedia.org/wiki/Charles_Barkley), [Hakeem Olajuwon](https://en.wikipedia.org/wiki/Hakeem_Olajuwon), [Kobe Bryant](https://en.wikipedia.org/wiki/Kobe_Bryant) and [Dwyane Wade](https://en.wikipedia.org/wiki/Dwyane_Wade).
 His training methods are so intense that even superstar athletes like these **are seen vomiting from the workouts within the first 30 minutes!**
@@ -35,7 +35,7 @@ _So what does Grover have his athletes eat instead of this “healthy” food th
 This diet avoids “[high-glycemic](https://en.wikipedia.org/wiki/Glycemic_index)” foods which cause a sharp increase in your blood sugar. Instead, Grover only allows his athletes to eat [low-glycemic](https://en.wikipedia.org/wiki/Glycemic_index) foods – those that increase your blood sugar gradually.
 These include eggs, meat, vegetables, nuts and other low-carb foods. On this diet, his athletes are now burning through their fat and not just the sugar they ate for breakfast.
 This helps them get into better shape every day as they go through Grover’s program. And, whether Grover realizes it or not, the bodies of his athletes aren’t the only thing affected by his diet. **The diet also fuels their willpower.**
-## **The willpowered Diet**
+## **The Willpowered Diet**
 To exert willpower, the brain uses a chemical known as glucose.
 When the body takes in food, it turns some of that food into glucose which is sent throughout the blood stream. 20% of the body's glucose goes to the brain, which it uses to think, communicate and, yes, **exert willpower.**
 All foods create glucose, but not all glucose fuels your willpower as effectively.

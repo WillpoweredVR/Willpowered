@@ -69,7 +69,7 @@ If at any point during the rest of this article that little voice inside your he
 That voice is the key thing that is going to get in the way of the true happiness that you can develop through rich human relationships.
 **Everything that I recommend from here on requires that you set aside your ego and put other people first.**
 Because that is what genuine human relationships are built on. People being there for other people.
-## Step 2: PlaY OFFENSE
+## Step 2: Play Offense
 Now that you have let go of your ego, the next step is to understand that you can't just wait around for friends to come to you (playing defense).
 You have to play offense.
 **The vast majority of people are not going to come to you looking to make plans.** This is not necessarily because they don’t want to hang out with you.
@@ -105,7 +105,7 @@ In our self-obsessed culture, people may not be used to someone who is genuinely
 Instead, as your friendship grows, let them know of your genuine desire to understand who they are as a person.
 In my own friendships, I have been upfront about my introverted nature and how resting on my natural curiosity is what allows me to build friendships with people like them. They are always fascinated to learn more. I’m sure they will be with you as well.
 Especially if you succeed in Step 4…
-## Step 4: Show AppreciatIon
+## Step 4: Show Appreciation
 With a good understanding of your new friend — and a focus on them and not you — you can start to find things that you genuinely appreciate about them.
 Like with being understood, every single person wants to be appreciated for the things that make him or her special.
 If you can give the gift of genuine appreciation to another person, they will be eternally grateful.
@@ -138,7 +138,7 @@ It's easy to share your successes with somebody. That's why we find it so easy t
 If your goal is to simply add more friends on Facebook, share your hopes, dreams, and successes.
 **If you want to gain real friends, share your fears, insecurities, and failures.**
 How other people respond to that will show you who your real friends are.
-## ConcLUSION
+## Conclusion
 In 2015, after raising $13,000 on Kickstarter to write [The Will of Heroes](http://amzn.to/1U8xw2M), I moved from Chicago to Florida to seek solitude and write the book.
 I finished the book in six months, I stayed in solitude for three years.
 I thought that I was doing the smart thing. I was still trying to succeed as an entrepreneur and I was devoting myself entirely to my work.

@@ -28,20 +28,20 @@ But what I found is that **this process has downsides – plenty of them.** It m
 **This article will explain why habit formation _is not_ the best strategy for changing your behavior and achieving your goals.** Then I will offer you practical takeaways to accomplish the type of behavior change you want that is rooted in real evidence.
 ## **The Benefits of Habits**
 Before we get into that, though, let’s go over some of the benefits that habits have:
-### **1.** **They conserve resources**
+### **1.** **They Conserve Resources**
 Whenever we make a conscious decision about something, [we use mental resources.](http://www.willpowered.co/learn/willpower-is-a-muscle) Every time we have to decide whether or not to floss, we use our willpower. If the behavior is automatic, though, it doesn’t require any mental energy. We simply go through the motion, conserving mental energy for other, more complicated tasks. \[[3](http://www.amazon.com/gp/product/B005ERIRZE?btkr=1)\]
-### **2.** **They are useful when we’re stressed or tired**
+### **2.** **They Are Useful When We’re Stressed or Tired**
 If we are stressed or tired from a full day of working, then a good habit is extremely useful to fall back on. For example, if you have developed a habit of eating a healthy snack you enjoy when you get home rather than bag of Cheetos, you will be less likely to indulge even under stress. \[[2](http://vimeo.com/44699354)\]
-### **3.** **They are useful when it’s mindless**
+### **3.** **They Are Useful When It’s Mindless**
 As long as the activity is completely mindless, the habit loop will work flawlessly. This includes things like flossing, bringing your lunch to work, wearing a helmet when biking, etc. All of these habits can easily be added to your daily behavior using the habit loop.
 ## **The Downside of Habits**
 Now let’s go over some of the downsides of habits that can actually end up hurting you more than helping:
-### **1.** **They are formed in the primitive brain**
+### **1.** **They Are Formed in the Primitive Brain**
 You know the struggle. You just got home from work and _know that you need to [hit the gym](http://www.willpowered.co/learn/exercise-affects-willpower),_ but you’re exhausted. Then comes the internal debate. Part of you is trying to say that you are exhausted and you need to rest, while the other part of you is saying that you have goals and aspirations of weight loss that are more important!
 It feels like we have two competing minds – and we do! One is the [limbic system](http://en.wikipedia.org/wiki/Limbic_system), which is responsible for emotions, desires and rewards (the primitive brain). It is the part of you that wants to rest. The other is the [prefrontal cortex](http://en.wikipedia.org/wiki/Prefrontal_cortex), which is responsible for thinking, communication and long-term goals (the evolved brain). It is the part of you that wants to hit the gym! \[[3](http://www.amazon.com/gp/product/B005ERIRZE?btkr=1)\]
 **Because habits require no thought, they are formed in the primitive brain.** So we are essentially delegating the job of achieving our long-term goals through behavior change to our short-term minded brain, rather than the one responsible for the long-term!
 **This is like choosing a repeated arsonist as the head of fire safety rather than the fire department chief!** The primitive brain's deep-down motivations are completely opposite to what we’re trying to accomplish. Yet, we are giving it more authority than the evolved brain who is the most qualified!
-### **2.** **Most habits that are developed are bad ones**
+### **2.** **Most Habits That Are Developed Are Bad Ones**
 Thinking back to how habits are formed, it’s not difficult to see why most habits that we form are bad ones.
 **Cue:** See cookie
 **Routine:** Eat cookie
@@ -55,13 +55,13 @@ Doesn’t that sound like a habit that is more likely to stick than this one:
 **Routine:** Feel bad about self for skipping the last run I was supposed to do
 **Reward:** Comfort self by delicious taste of cookie. [Feel good about thinking that tomorrow will be different.](http://www.willpowered.co/learn/inspiration-will-enhance-your-willpower)
 **Not exactly a solid ground to create behavior change.**
-### **3.** **New habits don’t necessarily change old ones**
+### **3.** **New Habits Don’t Necessarily Change Old Ones**
 Let’s say that you were finally able to create the running habit that we talked about above. Does that replace the habit of eating cookies? Not necessarily. One change in behavior doesn’t affect another. In fact, some research suggests that you are _more likely to indulge_ in unhealthy food if you pick up an exercise habit. \[[4](http://www.jstor.org/discover/10.1086/497548?uid=2&uid=4&sid=21105140344723)\]
 So let’s assume that you’re trying to start running for the greater goal of health. Simply **changing the one behavior of running is just a small part of achieving the overall goal.** It’s not as simple as just adding running to your life, you have to make _a lot of other changes_ that you would have to design specific habits for as well - eating healthy food, walking up stairs, etc.
-### **4.** **Habits won’t work in every situation**
+### **4.** **Habits Won’t Work in Every Situation**
 Again, let’s assume that you were able to design all of those specific habit changes and you are well on your way to becoming a healthy person. Exercising, eating right, resisting empty calories, etc.
 **But what happens when you get invited to a cocktail party after work?** When do you go running? How will you deal with the unhealthy food at the party? Because there is no habit to fall back on, you are not only likely to skip your run and eat unhealthy food, but **you’re actually more likely to go on a full-out binge due to the “[what-the-hell effect](http://www.willpowered.co/learn/what-the-hell-effect)”.** \[[5](http://www.amazon.com/gp/product/B0052REQCY?btkr=1)\]
-### **5.** **Achieving the habit can make us forget about the goal**
+### **5.** **Achieving the Habit Can Make Us Forget About the Goal**
 The final problem with habits is that we can focus so much on creating the habit, that we lose sight of the goal entirely.
 Let’s go back to our example of creating the running habit in order to achieve our higher goal of health. If we accomplish our running habit in the morning, our brains will "put a checkmark” next to health on our goal to-do list \[[2](http://vimeo.com/44699354)\].
 So later in the day, if we’re tempted to eat unhealthy food, we will credit ourselves for having “accomplished health” for the day and [grant ourselves license to indulge](http://www.willpowered.co/learn/moral-licensing) \[[3](http://www.amazon.com/gp/product/B005ERIRZE?btkr=1)\]. This can lead to not making any progress towards our goal, or even leave us worse off than before.

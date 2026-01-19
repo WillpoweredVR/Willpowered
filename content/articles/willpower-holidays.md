@@ -35,7 +35,7 @@ One of the worst mistakes people make by “playing defense” rather than offen
 When we are sitting here on December 22nd with a cool head and no delicious, tempting food in front of us, we overestimate the willpower we will have once the holiday parties get started and there will be plenty of temptation. \[[2](http://www.amazon.com/gp/product/B0052REQCY?btkr=1)\]
 **Understand that your future self is not a super hero.** In fact, he or she is probably a lot like yourself. The one who has flaws, does not have an endless supply of willpower, and is indeed tempted by food and drink.
 But, you can set yourself up for success in those hot situations with the “if-then” strategy.
-## **4\. Use the “If-Then” Strategy**
+## **4\. Use the “if-then” Strategy**
 When the heat is turned up during the holiday season, your self-control and rational decision-making processes take a major hit. By preloading an ["if-then" decision](http://www.willpowered.co/learn/hot-cold-gap), you know in advance how to react to the heat.
 It will give you a rational, mindful, and well thought-out decision that was made ahead of time. So you are able to bypass the irrational and emotional decision that you would naturally make when under pressure. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/18444745)\]
 Some examples:

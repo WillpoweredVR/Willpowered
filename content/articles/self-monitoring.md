@@ -47,7 +47,7 @@ The first group ate their candy in a room without any mirrors, and acted as expe
 However, the second group was placed at a table directly in front of a mirror. So they could not help but see themselves eat the candy.
 This group not only ate less candy, but also reported less difficulty in resisting the temptation to binge.
 By seeing their reflection, they tapped into the desire to be the best version of themselves – which made it easier to resist the temptations in front of them. \[[3](http://books.google.com/books/about/Attention_and_self_regulation.html?id=8YjsAAAAMAAJ)\]
-## **Self-awareness** → **self-improvement**
+## **Self-awareness** → **Self-improvement**
 _So what does this mean?_
 _Should you start carrying a mirror around to look at your reflection any time you face a challenge to your willpower?_
 Maybe.

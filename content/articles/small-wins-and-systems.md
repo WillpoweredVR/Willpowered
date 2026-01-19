@@ -15,11 +15,11 @@ But I want to focus on one rule that AA uses to help make the task of getting ov
 With any huge project, dream or goal, our minds can find the task completely daunting. We see how far away we are from reaching the finish line, so the task seems impossible to accomplish. For an alcoholic who has been turning to drinking for much of his or her life, giving up the bottle entirely seems too tough of a task to comprehend. So instead of AA instructing its members to set a goal to give up drinking for the next year, or even the next month, it breaks it into a simple, manageable chunk, **“just don’t have a drink today.”**
 ## **How This Works Wonders**
 There are 3 key reasons reasons why this rule works for AA.
-### **1\. Small chunks**
+### **1\. Small Chunks**
 Like I mentioned in the last paragraph, it breaks the huge task of giving up alcohol entirely into a small manageable [chunk](http://www.willpowered.co/learn/chunking) \[[2](http://www.uky.edu/~eushe2/Bandura/Bandura1981JPSP.pdf)\]. In moments when an alcoholic is tempted and in a [“hot” state of mind](http://www.willpowered.co/post/98463121284/hot-cold-empathy-gap), they know that their goal is to just make it through the day without drinking. Then in the morning they know that it will be easier to say no.
-### **2\. System based**
+### **2\. System Based**
 Since the alcoholic is focused on simply making it through the day, she is going to set up daily routines that help to avoid temptation. These new routines will eventually turn into habits. Then before she knows it, her daily life is designed to avoid the temptations that once made her turn to alcohol.
-### **3\. Small wins**
+### **3\. Small Wins**
 If alcoholics were to focus on not having a drink this year, this month or even this week, the daily struggle would be all the more challenging. They would feel impossibly far away from their goal, and there would be no intrinsic reward along the way. By focusing on “winning the day”, alcoholics build confidence with each small win they achieve. **If they make it through today, they gain the confidence that they can make it through tomorrow.** And that cycle builds upon itself. \[[3](http://www.amazon.com/Willpower-Rediscovering-Our-Greatest-Strength-ebook/dp/B0052REQCY/ref=sr_1_1?s=books&ie=UTF8&qid=1415817813&sr=1-1&keywords=willpower+rediscovering+the+greatest+human+strength)\]
 ## **How Can We Apply This to Our Lives**
 We are all dreamers. We love thinking about what our lives would be like if we could accomplish our goals. To use an analogy, we focus on how beautiful the cathedral will be when it’s complete, rather than focusing on simply laying each brick that is necessary to build it.

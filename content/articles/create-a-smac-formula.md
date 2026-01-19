@@ -44,33 +44,33 @@ Almost every success I've had over the last 3 years traces back to my SMaC formu
 That's it. Just achieving these 5 points daily led to great habits to reach my goals.
 ## **Smac Formula Breakdown**
 Here's what happened when I started implementing these points into my daily life.
-### **Wake up every weekday at 4 AM**
+### **Wake up Every Weekday at 4 AM**
 I wanted to wake up every day 4 AM because I felt like it would create a “platform” for success. It would allow me to get things done early in the morning before the work day even began.
 **Habits that occurred:**
 1.  I didn’t stay out late the night before.
 2.  I turned off all electronics and began reading at 9 PM so I could get enough sleep.
 3.  I always had time to workout in the morning.
 4.  I learned how to get out of bed when my alarm went off.
-### **Planning my transportation ahead of time**
+### **Planning My Transportation Ahead of Time**
 Living in Chicago, there are seemingly an infinite number of ways you can go from A to B. By planning ahead; I was able to prepare for the most efficient and cost-effective transportation ahead of time.
 **Habits that occurred:**
 1.  I started preparing everything the night before.
 2.  I was never late for appointments.
 3.  I saved money by biking and using public transportation.
-### **Follow my exercise plan**
+### **Follow My Exercise Plan**
 Before implementing my formula, I found it so easy to justify either not going to the gym, or cutting out early. I knew if I could just follow my exercise plan neither of those would be an option.
 **Habits that occurred:**
 1.  I started planning workouts ahead of time.
 2.  I started tracking my progress and planning to improve.
 3.  I focused my willpower on pushing through workouts, not coming up with excuses.
 4.  I allowed myself to feel good about rest days—it was just part of the plan.
-### **Log the food I eat**
+### **Log the Food I Eat**
 I'd read studies that keeping a daily food journal was one of the best ways for people to lose weight. So I knew that by keeping track of what I ate, I would start to get control over my diet.
 **Habits that occurred:**
 1.  I saw how my diet affected my energy.
 2.  I saw when I was tempted to snack, so I made sure to have a healthy snack on hand.
 3.  I was able to switch to the paleo diet and stick to it.
-### **Log the cost of food**
+### **Log the Cost of Food**
 Since I was already keeping track of the food I was eating, keeping track of the cost of that food was also incredibly beneficial. Paleo diet food can be expensive, so I wanted to see how I could keep my food expenses down, while still eating healthy.
 **Habits that occurred:**
 1.  I started packing a lunch rather than eating out.
@@ -95,7 +95,7 @@ Simply input:
 -   “Achieved” if you accomplished it.
 -   “Failed” if you didn’t.
 -   “N/A” if it doesn’t apply (like waking up on the weekends for me).
-### **How do you find your points?**
+### **How Do You Find Your Points?**
 The points of a great SMaC formula are typically one of three things:
 **1\. They create a platform for other habits to succeed (waking up at 4 AM)**
 The first characteristic is a great platform for other habits to succeed. My best example of this is waking up at 4 AM because that allowed me time before work to exercise, to read, and to write the early drafts of this blog.

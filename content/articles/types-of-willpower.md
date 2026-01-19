@@ -10,7 +10,7 @@ featuredImage: ""
 
 What is willpower, really? We talk about the concept a lot in passing, always wishing that somehow we could have more of it to summon in certain situations. Recently, researchers have begun to define [willpower as a muscle](http://www.willpowered.co/learn/willpower-is-a-muscle). One that can be weakened from overuse, but also one that can be [strengthened with practice](http://www.willpowered.co/learn/strengthen-your-willpower).
 But if you are like most people in our high-pressure society, you don’t want to wait weeks or months to build up a strong muscle, **you need to summon it tomorrow morning to hit the gym!** Heck, you need to summon it tonight to turn off your many electronic temptations and go to bed. **So what can you do _now_ to increase your willpower?**
-## Well let’s first come to understand the 3 types of willpower we have at our disposal:
+## Well Let’s First Come to Understand the 3 Types of Willpower We Have at Our Disposal:
 ### _I Will_ Power
 The power we use to do those tough things to accomplish our goals. This is what we use to workout, clean our homes and follow the dentists’ orders to floss.
 ### _I Won’t_ Power

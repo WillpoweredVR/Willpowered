@@ -26,7 +26,7 @@ I learned this rule through [this article by James Clear](https://jamesclear.com
 That ambiguity, however, **does not apply to automation.**
 Devoting myself to one hour per day every day over the last year to automation has continued to help me accomplish more in less time at a compounding rate.
 And this is the first of a series of posts I am putting together to teach you how to do the same.
-## 1\. What should you automate?
+## 1\. What Should You Automate?
 The opportunities for automation are limitless. There is no limit to what you can accomplish by automating your tasks, your emails, your sales pipeline, your marketing funnel – anything you do on a daily basis can be done more effectively.
 **This opportunity, however, comes at a price.** With everything you can automate, _where do you start?_
 The limitless opportunity available with automation can lead you to feel overwhelmed and end up automating the wrong things, **or nothing at all.**

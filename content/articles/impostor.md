@@ -41,7 +41,7 @@ Now if you’re reading this blog, you’re likely an ambitious person and there
 Suzanne Imes the researcher who coined the term says that, “the impostor phenomenon seems to be more common among people who are embarking on a new endeavor.”
 But the good news is you're not alone. The truth is in the statistics.
 Firstly, impostor syndrome affects both men and women to an equal degree and this has been shown in [study after study.](http://www.paulineroseclance.com/pdf/-Langford.pdf) Even people who are successful by society’s standards also feel like impostors from [doctors](http://www.textroad.com/pdf/JBASR/J.%20Basic.%20Appl.%20Sci.%20Res.,%202\(2\)1793-1802,%202012.pdf) to [two-thirds of incoming Harvard Business school students](http://www.psmag.com/business-economics/qualified-job-wait-probably-imposter-syndrome-psychology-68700), and other high-level professionals.
-### **Action Item #1: Connect with Like-Minded People**
+### **Action Item #1: Connect With Like-minded People**
 Connect with others who are going through what you’re going through. For example, if you’re a startup founder, connect with other startup founders who are at the same stage as you are. I’ve recently joined a community of ambitious bloggers, many of whom are at the same stage of their online business that I am and it has been comforting to realize that they struggle with a lot of the same things I do!
 If you’re not sure where to look, you can try meetups, networking events or even online forums to connect with other people who may feel the same way you do and have the same obstacles you do.
 Finally, look for someone who was once at your stage but has succeeded and pick their brain. You can find a mentor who can coach you and share their own experiences about how they used to feel when they were at your stage. You’ll be surprised to hear that they probably once felt (or even still feel) like an impostor.
@@ -75,7 +75,7 @@ To test stress levels they tested saliva samples of the subjects for cortisol (t
 They were able to replicate a similar study with university students and mid-term exams.
 The university study also surveyed students prior to the exam about social judgements i.e. “I worry that people will think I’m intelligent if I do poorly” or “I often worry that people will dislike me.” It turns out that students who worried the most about being judged benefited the most from affirming their own values before anxiety-ridden moments.
 The takeaway is that understanding and reflecting on your personal values can reduce the anxiety that you may feel by being an impostor. Getting in tune with your values adds to your self-definition. Being secure with who you are and what your values are, will shield you from relying on others to pass their own judgements on you and create your own definition of success.
-### **Action Item #3 Define your Values**
+### **Action Item #3 Define Your Values**
 One of my favorite exercises for getting clear on your values comes from Tony Robbins’ book, _Awaken_ _the Giant_. He explains two types of values that dictate the direction of your life.
 **Move toward values** \- pleasurable emotional states that you want to get to like happiness, love, security, success etc
 **Moving away values** - emotional states you want to avoid like humiliation, fear and insecurity
@@ -86,7 +86,7 @@ One of my favorite exercises for getting clear on your values comes from Tony Ro
 Is there a mismatch? Are there values that you realized you forgot the first time around that you only remembered when you thought about the life that _you want?_
 For example if you want true love and your #1 moving away value is vulnerability, then you better reasses either your values or what you really want because being vulnerable is inherent in finding love!
 Once you begin to realize what values matter most to you, you can leverage them when you feel like an impostor. You can do what the subjects did in the study and write about your #1 move toward value and why it’s important to you when you begin to feel like a “phony.”
-### **Action Item #4: Give yourself Credit by Reflecting on Past Success**
+### **Action Item #4: Give Yourself Credit by Reflecting on Past Success**
 When you’re done ranking your values, think about moments in the past where you experienced success. It could be that time you made a tight deadline or a time where you feel like you made a meaningful impact on the world. Whatever those successes are, vividly imagine them and write them down.
 Reflecting back on times where you felt like you achieved something will help you beat feelings of impostor syndrome and feel confident in your self-definition. You can also refer to this list when you begin to feel down to channel the skills and traits that you embody.
 ### **4\. Get Grateful**
@@ -99,7 +99,7 @@ Charles Duhigg defines a keystone habit as “small changes or habits that peopl
 Numerous studies have shown that feeling grateful will improve other areas of your life and also allow you to feel more comfortable and happier with yourself. Gratitude has been shown to improve [physical health](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3489271/), [overall happiness](http://www.psykologifabriken.se/wp-content/uploads/2011/04/gratitude-and-life-satisfaction21.pdf), reduces stress and makes it easier to cope with trauma but most importantly studies have shown that it [improves self-esteem.](http://www.tandfonline.com/doi/abs/10.1080/10413200.2014.889255)
 Earlier we talked about downward social comparisons, something we usually don’t do because we’re too busy comparing ourselves to people who have more.
 But [downward social comparisons can actually help improve self-esteem](http://www.ncbi.nlm.nih.gov/pubmed/8505703) especially when you experience major setbacks. Part of that downward comparison includes being grateful for the things that you have that others don’t. Think about all that’s going on in the world, the truth of the matter is if you have access to clean water, a roof over your head and a computer to read this on….you’re pretty lucky.
-### **Action Item #5: List out what you’re grateful for**
+### **Action Item #5: List Out What You’re Grateful for**
 One effective way I’ve made being grateful a habit in my life is by using the [5-minute journal](http://www.fiveminutejournal.com/). It’s an awesome way to quickly list what you’re grateful for every single day.
 If you’re not into writing, you can take 5-10 minutes of your day to do a quick mediation and incorporate what you’re grateful for into the meditation. On [Tim Ferriss’ podcast](http://fourhourworkweek.com/2014/10/15/money-master-the-game/), Tony Robbins shared a three-phased approach to meditation where he thinks about things he’s grateful for, people he sends blessings to and the things he wants to achieve that day.
 **Here’s an example, step-by-step:**

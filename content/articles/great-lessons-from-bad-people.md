@@ -41,7 +41,7 @@ _\- Warren Buffet, even, is known for being a cold-hearted negotiator and has pu
 However, just because these people made mistakes in their lives – or were not even good people to begin with – that does not change what we can learn from them about what it takes to become successful.
 **In fact, we can learn even more from them _because_ they made mistakes!**
 We can learn from the consequences of others' actions whether they are negative or positive. The only mistake comes when we choose to ignore the negatives and focus only on the positives.
-## **The Facts were STRAIGHT OUTTA THE STORY**
+## **The Facts Were Straight Outta the Story**
 Regardless of your feelings of gangster rap, _Straight Outta Compton_ is a great story of vision, passion, and underdogs achieving a dream.
 **After watching that movie, I was inspired to write an article on their story.**
 Then I started my research and found the violent facts about Dr. Dre - none of which were in the movie! Dr. Dre was portrayed as a visionary artist who overcame his harsh background and became one of the pioneers of rap music.

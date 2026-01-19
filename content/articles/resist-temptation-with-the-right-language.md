@@ -19,11 +19,11 @@ The next day, only 39% of those who said, “I can’t eat chocolate” were abl
 ## **Why “i Don’t” Works Better Than “i Can’t”**
 There are several reasons that saying “I don’t” works better than “I can’t” and they are all about your identity. Think about what you’re really saying when you use, “I can’t”. You’re saying that _you would_ eat the chocolate, but there is some outside reason that is preventing you from indulging. It doesn’t matter if that outside reason is an experiment or a diet plan, you see it as some factor that is preventing you from having what you really want.
 However, when you say, “I don’t” you are identifying as someone who doesn’t eat chocolate. You’re no longer identifying as a person who deep down _really wants chocolate,_ you’re now sending the message that you’re someone who simply doesn’t eat chocolate. **By using this language, there are 3 messages sent to your brain that help you resist the temptation.**
-### **1.** **You have control over your own decisions.**
+### **1.** **You Have Control Over Your Own Decisions.**
 You’re sending an empowering message to your brain that you are not imprisoned by outside factors. You have control over yourself and what you do.
-### **2\. You identify with the person you want to be.**
+### **2\. You Identify With the Person You Want to Be.**
 Whether your goal is to eat healthier, to read a book or to exercise more, by using empowering language like “I don’t” you’re sending the message that you identify with the person you want to become more than the person that you are right now. You’re sending the message that “I’m a person who eats healthy, so I don’t eat chocolate.”
-### **3\. You won’t just achieve, you will become.**
+### **3\. You Won’t Just Achieve, You Will Become.**
 The best finding in this study wasn’t from the initial ability to say no, it was from a 9-month follow-up with the participants. Those who used the “I don’t” language were not only able to resist the temptation up front, but they were much more likely to stick with their weight loss! \[[1](http://www.bauer.uh.edu/vpatrick/docs/DontversusCant.pdf)\]
 When you say, “I can’t”, even if you summon the willpower to resist every temptation during your diet, as soon as that diet is over you’re going to give in. Your plan is over now, so bring on the chocolate! Whereas people who say, “I don’t” aren’t just sticking to a goal that will eventually be achieved, they are becoming the person they want to become. **And that will last far longer than a 90-day diet or workout plan ever will.**
 ## **Conclusion**

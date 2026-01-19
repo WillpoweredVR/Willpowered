@@ -30,7 +30,7 @@ This is a concept known as the [Slight Edge](http://www.amazon.com/Slight-Edge-T
 Great results take time, they take patience and they take willpower to ensure that you show up consistently. Your brain is literally wired to achieve these slow results over time. This was formed as we began to make slow progress in the designing of tools and learning which hunting strategies worked best. \[[3](http://www.amazon.com/Origins-Modern-Mind-Evolution-Cognition/dp/0674644840)\]
 **So why do so many of us ignore the Slight Edge and go for big results, fast?**
 There are two key reasons we do not use the Slight Edge to our advantage:
-## **"Just This Once"**
+## **"just This Once"**
 What change would happen to your body today if you ate a delicious hamburger and fries with your favorite beer?
 Absolutely none.
 What change would happen to your body today if you spent a full hour exercising?

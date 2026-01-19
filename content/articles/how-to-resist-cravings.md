@@ -38,7 +38,7 @@ Here are 3 things you can do to fight back against a craving:
 If you catch yourself craving something tempting, **slow down.** Take a moment to think about what is happening in your brain and how it is trying to motivate you.
 Simply by taking this moment to think, you will activate the part of your modern brain that is in charge of impulse control. This will help you think about your higher goals and make the right decision. \[[3](http://psycnet.apa.org/books/13090/009)\]
 **So take 5 deep breaths**, remember the fact that the desire you feel will not actually lead to happiness, and think about how this decision will affect your long-term goals. This may seem simple, but it is incredibly effective in helping us push through those heated moments of a craving.
-### **2\. POSITIVE PROCRASTINATIONositive Procrastination**
+### **2\. Positive Procrastinationositive Procrastination**
 If that method does not work and you still feel like you must give in, try a tactic known as [positive procrastination](http://www.willpowered.co/learn/positive-procrastination).
 Your brain has evolved to believe that it needs to “act now” in order to get a reward – you need to think fast in order to catch a gazelle! But in this day and age, the decision of whether or not to give in to a craving is probably not life and death.
 **The next time you face a craving, put the decision off for just 10 minutes.** These 10 minutes will calm your reward center down and allow you to make a more rational decision. \[[4](http://www.jneurosci.org/content/27/21/5796.full.pdf)\]

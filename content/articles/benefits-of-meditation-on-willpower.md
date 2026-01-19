@@ -26,19 +26,19 @@ Perry isn’t the only famous person to practice daily meditation.
 Contrary to the belief that meditation is a practice reserved for Buddhists and hippies, **there are many famous and successful people who meditate every day.**
 Jerry Seinfeld, Clint Eastwood, Rupert Murdoch, Paul McCartney, Oprah Winfrey and many others all spend time meditating every day \[[2](http://tmhome.com/experiences/famous-people-who-meditate/)\].
 Why do these famous people to do it? **There are 5 major benefits to practicing meditation on a daily basis:**
-### **1.** **It Increases Willpower**
+### **1.** **it Increases Willpower**
 Our brains love to wander. They love to think about anything and everything that is exciting. **They love to be undisciplined.** During meditation, the goal is to resist these urges. By placing your attention on your breath, you are training the brain to become more focused and disciplined.
 The more you practice resisting your brain’s urge to wander, the easier it will be to resist other temptations in your life as well. If you can control your thoughts, you will be more likely to control your diet, productivity and exercise as well. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/17596341)\]
-### **2.** **It Increases Focus**
+### **2.** **it Increases Focus**
 When we think of our ability to focus, we usually think about being completely engaged in a task. Some people call this a state of “[flow](http://en.wikipedia.org/wiki/Flow_%28psychology%29)”. **But being focused is just as much about the ability to tune out the distractions around us**. Meditation not only trains our minds to focus on a task, it also trains us to tune out distractions. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/17596341)\]
 For example, when working on a project on the computer, many of us get tempted to browse the Internet, check our email, look up news stories, etc. Meditation helps us control these urges and tune out everything except what we should be focused on.
-### **3.** **It Lowers Stress**
+### **3.** **it Lowers Stress**
 Much of our stress comes from our inability to control our thoughts and emotions. We linger on a painful memory from the past, or we get anxious about something coming up in the future. These thoughts and feelings cause the body to release a chemical called cortisol, which increases our stress. \[[4](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3004979/)\]
 Meditation trains our minds to let thoughts like these go. It helps us deal with these feelings and understand that they do not have control over our present condition. The more we train our minds in this way, the less cortisol our body produces, leading to less stress in our lives.
-### **4.** **It Improves Our Ability to Learn**
+### **4.** **it Improves Our Ability to Learn**
 Another benefit of meditation is its ability to help us learn and retain information. Learning is all about making connections between information we know and information we have just taken in. With a clear mind, we are able to more easily make these connections. \[[5](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3004979/)\]
 It is no coincidence that many people claim to come up with their best ideas while meditating. Often it takes a clear mind for us to understand how one thing connects to another.
-### **5.** **It Improves Our Energy**
+### **5.** **it Improves Our Energy**
 Katy Perry is not the only one who gets her best rest by meditating. Even when we are asleep, our subconscious mind is thinking, which requires our energy and attention.
 **During meditation, however, your mind truly gets to rest**. It is challenging to keep your mind focused on the present, but once you get to a state where your brain is not contemplating the past or the future, it will be able to truly relax. This relaxation will revitalize you and give you the mental energy you need to take on the day. \[[6](http://www.pnas.org/content/107/35/15649.abstract)\]
 ## **How to Get Started Meditating**

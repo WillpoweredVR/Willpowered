@@ -38,7 +38,7 @@ I remembered that he just announced [his book was on pre-order](http://alifeofpr
 **Every word genuine.** A couple of hours later, I hear back from him thanking me and asking for a link to my Kickstarter page – _he pledged $45_ (far more than the cost of his book!)
 **This is someone I didn’t even think would respond!**
 It’s amazing how far genuine support can go – can’t wait to do it again.
-## **3.** **Review 3 Kickstarter Projects and Back Any I Believe In**
+## **3.** **Review 3 Kickstarter Projects and Back Any I Believe in**
 After my forum post, I didn’t even need to browse Kickstarter!
 I had people reply to me (all of which backed _[The Will of Heroes](https://www.kickstarter.com/projects/743524537/the-will-of-heroes)_) asking me to check out their projects and give them feedback.
 There was only one that I backed, ([which I cannot wait for!](https://www.kickstarter.com/projects/electric-indy/pocket-rocket-your-car-charger-and-battery-bank-in)), because just like with reaching out to bloggers, I only want to back projects that I genuinely believe in.

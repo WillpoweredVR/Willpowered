@@ -19,11 +19,11 @@ What this person is really preaching is **consistency.** One of the biggest reas
 With No Zero Days, you’re making the commitment that each day you are going to get closer to your goal. It doesn’t matter if you only write 1 sentence of a book or do 10 pushups – _you still made progress._
 ## **The Balance Between No Zero Days and Rest Days**
 As I mentioned in the beginning, rest days are still important for revitalizing the mind, body and spirit. **So how do you find the balance between a rest day and a no zero day?**
-### **1.** **Active recovery**
+### **1.** **Active Recovery**
 If your goal is fitness based, one thing you can do that will give you rest, while also helping you make progress, is active recovery. This may include [foam rolling](http://breakingmuscle.com/mobility-recovery/what-is-a-foam-roller-how-do-i-use-it-and-why-does-it-hurt), stretching, walking, [doing light yoga](http://www.runnersworld.com/recovery-yoga-for-runners) or [meditating](http://www.willpowered.co/learn/what-i-learned-by-meditating). Any of those will allow your body to rest while you still make progress towards your fitness goals. \[[1](http://journals.lww.com/psychosomaticmedicine/Abstract/1978/06000/Patterning_of_Cognitive_and_Somatic_Processes_in.4.aspx)\]
-### **2.** **A cheat meal, not a cheat day**
+### **2.** **a Cheat Meal, Not a Cheat Day**
 Just like rest days can be taken too far, [so can “cheat days”](http://www.highfatfitness.net/eng/tag/cheat-days/) - when one skips their diet for the day and allows oneself to go on a binge. This can escalate quickly and [completely derail your progress](http://www.willpowered.co/learn/what-the-hell-effect). If your goal is diet-based, give yourself one meal to indulge, but make sure that you’re still making progress with an overall healthy day. \[[2](http://www.ncbi.nlm.nih.gov/pubmed/20691231)\]
-### **3.** **Plan rather than create**
+### **3.** **Plan Rather Than Create**
 We all need time to let our creative minds rest. Instead of sitting at your desk and producing something every day, take the time to assess and plan. What worked well last week and what didn’t? Where can you improve for next week? This will help you make major improvements without having to spend time beating your creative head against the wall. \[[3](http://www.amazon.com/Wooden-Leadership-Create-Winning-Organizaion-ebook/dp/B000SEHJHK/ref=sr_1_2?s=books&ie=UTF8&qid=1415802403&sr=1-2&keywords=john+wooden+books)\]
 These are all just examples; they will obviously differ based on your own goals. The important thing is to do _something_ that will lead to progress - even if that activity only indirectly affects your progress.
 ## **Conclusion**

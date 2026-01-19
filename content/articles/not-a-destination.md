@@ -27,7 +27,7 @@ However, if you consider your goal “done” it will stop sending you those rem
 And if that task is unrelated...the scale tips to 200lbs again.
 This is a phenomenon known as the “[Zeignarik effect](http://www.psychwiki.com/wiki/Zeigarnik_Effect)”. And it is why you should always view your goal as a journey, not a destination.
 Because a journey is never finished....
-## **The Will of Heroes JOURNEY**
+## **The Will of Heroes Journey**
 My ultimate goal with _[The Will of Heroes](https://www.kickstarter.com/projects/743524537/the-will-of-heroes?ref=in-text)_ was never to raise $12,000 on Kickstarter.
 My ultimate goal is to use the book to take a big step forward in fulfilling my life's purpose of _strengthening the willpower of the world – one person at a time._
 The $12,000 was simply the minimum amount I needed to produce it at the level of quality of a traditional publisher – and Kickstarter was the platform that could get it there.

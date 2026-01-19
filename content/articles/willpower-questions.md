@@ -38,7 +38,7 @@ Despite the fact that she was a depressed single mother in poverty, JK Rowling s
 Despite getting rejected by over 200 investors, Howard Schultz kept pitching until he finally had the money to expand his small coffee company named Starbucks. \[[6](http://www.amazon.com/gp/product/0786883561/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0786883561&linkCode=as2&tag=willpowered-20&linkId=TKBQUNBCPZ2VCUOT)\]
 Imagine if these people followed the typical pattern of setting a huge goal, [over-extending themselves](http://www.willpowered.co/learn/the-hot-cold-gap) and giving up before they made any real progress?
 **Even if it takes months, years, or decades, you will never fail until you stop persisting.**
-## **4\. What Was Your Biggest Willpower Challenge and How Did You Overcome It?**
+## **4\. What Was Your Biggest Willpower Challenge and How Did You Overcome it?**
 My biggest willpower challenge was back in February when I had only 30 days of money left and I needed to figure out how to pay rent for next month - you can read the [full story here](http://www.willpowered.co/learn/willpowered). **It was one of the toughest challenges of my life. It was truly sink or swim time.**
 I then wrote an article called, "[10 Daily Habits That Will Give You Incredible Willpower](http://www.willpowered.co/learn/daily-willpower-habits)" that blew up online and increased the site's traffic from 700/day to over 5,000/day.
 It's easy to say that this was simply a stroke of luck that led to getting the traffic to a point that I could make a living, but that's not true. For the previous 6 months, I had willed myself to write 1,000 words _every single day_. Christmas, Thanksgiving, my birthday, **every day.**
@@ -80,7 +80,7 @@ Then you must stay consistent and write every day. This will help you to become 
 Sorry gentlemen, the answer is that women do naturally have more willpower than men do. This explains a lot about the differences between men and women. Men are more likely to commit crimes, drop out of school, become obese and abuse drugs/alcohol. \[[2](http://www.amazon.com/gp/product/0143122231/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0143122231&linkCode=as2&tag=willpowered-20&linkId=FWXY62FGMWK344LA)\]
 However, do not let that discourage you, men. Although women have a head start when it comes to willpower, remember from question 5 that willpower is like a muscle. Women may have more willpower to begin with, but you can [strengthen your willpower](http://www.willpowered.co/learn/strengthen-your-willpower) over time.
 However, ladies, if you do the same [willpower workouts](http://www.willpowered.co/learn/strengthen-your-willpower) as a man does, you will still have the upper hand.
-## **10\. What is the very Best willpower strategy?**
+## **10\. What is the Very Best Willpower Strategy?**
 There is no doubt about this one - [**chunking.**](http://www.willpowered.co/learn/chunking)
 Chunking is the process of taking a large task, goal, dream, etc. and breaking it into manageable “chunks”.
 If you’ve ever had a goal, you know how exciting it can be at first. You can see the “after photo” of your life when the goal is achieved - **and you love what you see.** You imagine all of the great things about the “new you” and you can't wait to get started working towards that goal!

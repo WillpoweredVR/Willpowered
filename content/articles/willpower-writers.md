@@ -51,7 +51,7 @@ Robert Greene is the author of several books that explore the principles behind 
 1.  The path to mastery taken by the world’s greatest masters across multiple fields.
 2.  The principles of each master’s success.
 3.  How to apply those principles to your life and attain mastery.
-## **4.** **The Heath Brothers**
+## **4.** **the Heath Brothers**
 Dan and Chip Heath are business professors at Duke and Stanford respectively. They write about the science behind behavior change, communication, and decision-making. Although they target business, the principles can be applied across a wide-range of goals.
 **Key ideas form their work:**
 1.  [The 10-10-10 rule](http://www.willpowered.co/learn/10-10-10-rule).

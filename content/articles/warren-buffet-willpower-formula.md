@@ -17,7 +17,7 @@ _He had poor grades._
 _He ran away from home several times._
 _He even shoplifted sporting goods that he sold on the black market!_
 But there was always one glimmer of hope in Buffett, and that was his prospects of becoming a successful businessman.
-## **Buffett the child prodigy**
+## **Buffett the Child Prodigy**
 At the age of 11, he bought his first stock, regretting that he didn't invest sooner.
 At the age of 13, he bought a paper route and filed his own income tax return – making sure to write off his bicycle as a business expense.
 At the age of 15, he used the proceeds from various ventures like selling racing tip sheets and pinball machines, to buy a 40-acre Nebraska farm as an investment property.
@@ -35,11 +35,11 @@ When Graham was a young man trying to make it on Wall Street, he faced extreme p
 **But he could not help but be impressed by the passion and work ethic of Buffett.** Here was a kid that knew his philosophy as well as he did, and probably could recite the book even better!
 So Graham decided to give up his precious time and desire to focus primarily on young Jewish students, and took Buffett under his wing.
 That mentorship would help mold the young Buffett into one of the brightest financial minds the world has ever seen. And he was able to attain it because of his willpower. The same willpower that would define his investment philosophy and success. \[[1](http://www.amazon.com/Snowball-Warren-Buffett-Business-Life/dp/0553384619/ref=sr_1_2?s=books&ie=UTF8&qid=1448300175&sr=1-2&keywords=the+snowball+effect)\]
-## **How Buffett used his willpower for financial success**
+## **How Buffett Used His Willpower for Financial Success**
 Buffett claims that he has been "hardwired since birth to allocate capital". \[[3](http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/ref=sr_1_1?s=books&ie=UTF8&qid=1448300139&sr=1-1&keywords=talent+is+overrated)\]
 However, while his passion for investing is certainly real, his story proves that he cannot claim that talent alone is what led to his success. In reality it was his willpower.
 Here is how Buffett used his willpower to achieve extraordinary financial success.
-### **1\. The Will to Do the Boring Things**
+### **1\. the Will to Do the Boring Things**
 Once Buffett realized the value of _The Intelligent Investor_ and _Security Analysis,_ he used his "[Will Power](http://www.willpowered.co/learn/types-of-willpower)" to read it over and over again until he understood absolutely every aspect of the book. \[[4](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters-ebook/dp/B005ERIRZE/ref=sr_1_1?s=books&ie=UTF8&qid=1415642918&sr=1-1&keywords=the+willpower+instinct)\]
 He knew it so well, in fact, that he could quote from the 725 page book even better than the man who wrote it!
 Now, you may think that given his passion for investing, he probably enjoyed the book. That reading it was pleasurable to him, not boring.
@@ -53,7 +53,7 @@ Those like Buffett who achieve extraordinary success do not just work hard, they
 For example, I believe that citing my sources is what truly separates Willpowered from other self-improvement blogs out there.
 Other blogs may be more interesting, or even have better ideas than mine. But readers can trust what I say just a little bit more because they know that citing my sources means I've done the boring research to back up my ideas with science.
 **Whatever your goal or ambition, remember that the boring work is sometimes the most important.**
-### **2\. The Will to Hold Back**
+### **2\. the Will to Hold Back**
 _"Be greedy when others are fearful, and fearful when others are greedy." - Warren Buffett_
 Buffett's success can also be attributed to his "[Won't Power](http://www.willpowered.co/learn/types-of-willpower)". While others got excited by the bull markets and the potential "quick scores", he held back his capital during boom times - **always being fearful that the crash was right around the corner.**
 _So he didn't bet big on the technology booms of the 20th century._

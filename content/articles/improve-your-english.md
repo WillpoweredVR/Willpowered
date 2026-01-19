@@ -29,7 +29,7 @@ First identify the content that you want to become your raw resources.
 The raw resources that you need are simple and freely available to everyone! Simply by listening to English podcasts, [TED talks](https://www.ted.com/talks), movies, and TV Shows; you can get an ear for how to speak the language.
 Even reading blogs like this will subtly help you understand how to use proper grammar and communicate ideas effectively. The more you immerse yourself with these raw – and often free – resources, the more you will understand the subtleties of the language.
 **But make sure these resources are fun!** Find content that you enjoy and may actually help you achieve other goals besides learning English. This will help you find the motivation to use them consistently. \[[2](http://www.amazon.com/gp/product/0143122231/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0143122231&linkCode=as2&tag=willpowered-20&linkId=FWXY62FGMWK344LA)\]
-### **How to use them?**
+### **How to Use Them?**
 You should listen to the same resource at least 4 times to fully understand and grasp it.
 Shift your focus with each listen:
 -   1st learn the overall message
@@ -39,34 +39,34 @@ Shift your focus with each listen:
 Repeating this process will be immensely useful for all of the reasons [listed here](http://www.willpowered.co/learn/talent-is-overrated).
 ## **Organized Plan**
 Next comes choosing a plan that will help you reach your goals. There are several options you can choose.
-### **Private lessons with native speakers**
+### **Private Lessons With Native Speakers**
 This is the best option to help you become fluent. As long as you can afford it, it will give you the hands-on learning you need to reach your goals.
 You can find the private teacher that’s best for you [here.](https://www.italki.com/)
-### **Language exchange websites**
+### **Language Exchange Websites**
 This is where you connect with someone via email or chat to practice speaking each other’s language. It will work, but it does not quite direct you to fix your issues the way a private teacher would.
 You can find language exchange options [here.](http://www.mylanguageexchange.com/)
-### **Speak out loud to yourself**
+### **Speak Out Loud to Yourself**
 Speaking out loud in English and recording it will help you identify your areas of weakness. However, this is obviously not the best option as you may not be able to detect your own mistakes.
 A great way to start this is to listen to a native speaker communicate an idea. In your own words try to communicate that same idea and record it. Then go back and compare your recording to the native speaker to see where you can improve.
 There are obviously many other options for your plan such as classes, schools, etc. but they are quite expensive and usually take longer to achieve improvement.
 ## **Time and Effort**
 This is where many fall short in their efforts to learn English - and it is where your willpower is crucial to your success.
 To stick to your organized plan and be consistent with your raw resources, you must:
-### **1.** **Understand that learning English is a marathon, not a sprint.**
+### **1.** **Understand That Learning English is a Marathon, Not a Sprint.**
 This is a commitment for the long-term. **You won’t be able to master a new language overnight**. It takes months and years of consistent practice.
 _Ask yourself where you want to be with your English one year from now?_
 Once you have that direction, [break it down](http://www.willpowered.co/learn/internal-locus-of-control) to what you need to do every month in order to get there. Most people quit after 2-3 weeks, but it takes at least 90 days to see serious improvements.
 **So commit for the long-term, but focus on simply making progress.**
-### **2.** **Focus on consistency, not intensity**
+### **2.** **Focus on Consistency, Not Intensity**
 Do not set [yourself up for failure](http://www.willpowered.co/learn/hot-cold-gap) by trying to practice English for hours every day. It is much more important to make sure your practice is [sustainable](http://www.willpowered.co/learn/slight-edge). Even if that is only 15 minutes per day, a year of 15-minutes/day will bring you much closer to your goal.
 To ensure you are consistent, [build a habit](http://www.willpowered.co/learn/keystone-habit) of the same English routine every day. I recommend [doing it in the morning](http://www.willpowered.co/learn/perfect-morning-routine), because that’s when you have the most willpower. Stay consistent and it will become easy. \[[1](http://www.uky.edu/~njdewa2/gailliotetal07JPSP.pdf)\]
 **So start small, do something every day, and try to plan for the morning.**
-### **3\. Write down your purpose**
+### **3\. Write Down Your Purpose**
 There are many reasons to want to learn English. Whatever yours is, make sure that you write it down.
 When you remember your purpose, you tap into a special form of willpower known as “[Want Power](http://www.willpowered.co/learn/want-power)”. This gives you the same burst of energy that you feel when you watch a motivational video or hear an inspiring story. \[[3](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters-ebook/dp/B005ERIRZE/ref=sr_1_1?s=books&ie=UTF8&qid=1415642918&sr=1-1&keywords=the+willpower+instinct)\]
 It gives you the belief and motivation that _you can do this!_
 **So determine your purpose and write it down so you can see it everyday.**
-### **4.** **Find friends to learn with**
+### **4.** **Find Friends to Learn With**
 [Friends have a phenomenal impact on your willpower.](http://www.willpowered.co/learn/friends-impact-willpower) They can hold you accountable to your goals and be there to motivate you when things get hard. \[[4](https://www.nhlbi.nih.gov/research/resources/obesity/population/framingham.htm)\]
 You don’t want to let them down. So you will find extra motivation to make sure that doesn’t happen. This will also make the [process of learning](http://www.willpowered.co/learn/learning-zone) more fun and even help grow your friendship.
 **So find friends who want to learn English as well and set your goals together.**

@@ -34,7 +34,7 @@ Not only that, but any progress that you make toward your goal can seem insignif
 The person whose goal is to lose 20lbs will not only find the task overwhelming, but if he spends weeks struggling and only loses 5lbs, he will see that as a sign that he is never going to reach his goal.
 However, if he were to focus his attention on just losing one pound at a time. Or even better, simply focusing on just [eating one healthy meal at a time](http://www.willpowered.co/learn/habit-of-eating-healthy), he would see each step as a small win.
 His focus would be on how far he has come in losing 5lbs, rather than focusing on how far he needs to go to lose the total of 20lbs that was his major goal. This change in perspective would give him confidence; rather than lost hope.
-## **Dream of the cathedral, Focus on the Bricks**
+## **Dream of the Cathedral, Focus on the Bricks**
 We are all dreamers. We love thinking about what our lives will be like when we accomplish our goals. We focus on how beautiful the cathedral will be when it’s complete, rather than focusing on simply laying each brick to build it.
 If you focus on the cathedral, however, then once you start laying bricks, you see just _how far away you are_ from the beautiful cathedral you envisioned. This can lead to lost hope that you will ever be able to build it.
 But if you focus simply on perfectly laying each brick, each brick becomes a small win. \[[3](http://www.uky.edu/~eushe2/Bandura/Bandura1981JPSP.pdf)\]

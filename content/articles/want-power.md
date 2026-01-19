@@ -30,7 +30,7 @@ So when Kara reached the point where she had 13.1 miles to go, **her primitive b
 This primitive part of the brain is a powerful motivator, **but it does not call the shots.**
 Kara has a more modernly developed part of her brain that allows her to think, plan and, yes, _exert willpower._
 This part of the brain is the final decision-maker on all of Kara’s actions. It has the ability to “override” the primitive brain’s motivation to stop and rest. It has the power to endure pain and say that she _“is doing this.”_ \[[4](http://link.springer.com/chapter/10.1007/978-1-4899-6776-3_43)\]
-## **How Want Power Helped Kara Make It**
+## **How Want Power Helped Kara Make it**
 Despite the fact that the modern brain has the ability to override the primitive brain’s motivations, that does not mean doing so is easy. And the lower Kara gets on energy, the harder it is to ignore her impulse to stop.
 **That is, unless she uses her Want Power.**
 Imagine Kara is back in the Stone Age. She is in the same situation with only about 50% of her energy left. She is starving and her primitive brain is motivating her to rest.

@@ -14,7 +14,7 @@ Susan is on an 8-week exercise program. She has been trying to create [a regular
 On Sunday night when she’s planning her schedule for [the week ahead](http://www.willpowered.co/learn/hot-cold-gap) she is always positive. She plans to go to the gym 3 days after work per week and gets excited at the prospect of a newer, slimmer, body.
 However, by the time the bell tolls and she actually has to go to the gym, **that motivation is nowhere to be found.** Now she is stressed, tired and [craving](http://www.willpowered.co/learn/how-to-resist-cravings) a night of take-out food and television to help her get over the day.
 Her brain is now envisioning two different scenarios that may take place this evening:
-## **Scenario 1: sucking it up & going to the gym**
+## **Scenario 1: Sucking it up & Going to the Gym**
 First, she thinks about the scenario in which she is able to resist the temptation of a night of greasy food and relaxation by staying strong and going to the gym.
 Then she envisions the miles on the treadmill that she promised herself she would do.
 She remembers the pain of her previous run and [the boredom](http://www.willpowered.co/learn/embrace-boredom) of watching the clock go by _so slowly__._
@@ -31,7 +31,7 @@ _Make her begin to crave the food she's thinking about ordering_
 _Make her motivated to relax on the couch_
 _And deplete the total amount of glucose that she has to exert willpower_
 This, of course, leads Susan to decide to skip the gym – [just this once](http://www.willpowered.co/learn/slight-edge) – and allow herself a night of relaxation, takeout food and television. Besides, she can always make up for it tomorrow, right?
-## **Why envisioning the future sets you up for failure**
+## **Why Envisioning the Future Sets You up for Failure**
 Susan’s story is one that we have all gone through at some point.
 It may not have been a trip to the gym we tried to skip, but perhaps a night of studying, a night of working on chores, or a night of [working on a blog of your own](http://www.willpowered.co/learn/willpowered) that you have always wanted to start.
 Whatever your goal, the minute that you started envisioning what you had planned to do versus your much less stressful alternative, you began to set yourself up for failure. This occurs for 3 reasons:

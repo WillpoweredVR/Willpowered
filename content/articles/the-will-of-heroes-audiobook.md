@@ -8,7 +8,7 @@ categories: ["Books","Audio"]
 featuredImage: "https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1478596715936-L6DLNEGA59CI3BNQUDSO/Audiobook.png?format=original"
 ---
 
-### _"A game-changing, life-improving, scientifically-backed success!"_
+### _"a Game-changing, Life-improving, Scientifically-backed Success!"_
 [![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1478596715936-L6DLNEGA59CI3BNQUDSO/Audiobook.png?format=original)](http://bit.ly/the-will-of-heroes-audible)
 # About the Book
 The product of 5 years of research on how 12 of the world's greatest successes in business, athletics, writing, and many more fields willed themselves to greatness.

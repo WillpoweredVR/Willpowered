@@ -36,7 +36,7 @@ To achieve that purpose I need support to help grow the business and help reach 
 So I sent too many promotional emails, sent too many marketing messages and acted in too self-serving of a manner. This made a lot of subscribers angry and betrayed as they felt like I was just running the site to make money.
 To any of you who may have felt this way, I genuinely apologize.
 _And in year 2, I will do better to earn your support and not feel entitled to it._
-## **SUCCESS #2 – Sticking To My Principles**
+## **Success #2 – Sticking to My Principles**
 Through this process, I have met many other researchers and writers in different areas of psychology who offer advice similar to mine. **And I am always shocked when I realize how little of it they listen to themselves!**
 Some write on the [benefits of consistency](http://www.willpowered.co/learn/slight-edge) - but don’t publish another article for weeks.
 Some write on the [benefits of practice](http://www.willpowered.co/learn/talent-is-overrated) - yet they don’t practice their writing skills.

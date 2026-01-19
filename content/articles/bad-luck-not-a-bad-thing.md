@@ -59,7 +59,7 @@ He never saw himself as unlucky. He simply had a goal and a relentless desire to
 You may have been dealt a harder hand in life than some people. But you are not doing yourself any favors by using that as an excuse. You will never be able to control what happens to you. Nor will you be able to control your ultimate results.
 However, you can always control your [actions and your effort.](http://www.willpowered.co/learn/perfection) Making excuses will only demotivate you and lead you to wallowing in pain and bitterness. Believing that you have the power to overcome your bad luck, however, will lead you to [small wins](http://www.willpowered.co/learn/small-wins-and-systems) and confidence in yourself.
 Bad luck plays a role, but it is never the ultimate decider of your outcomes. **Make no excuses and place no blame.**
-### **Identify areas that you have the advantage**
+### **Identify Areas That You Have the Advantage**
 Ray Bourque was actually able to use his small stature to his advantage. He may not have been as fast as his peers, but he could be quicker than them.
 He could move his feet and his stick faster than they could because the neurons in his brain didn't need to travel as far. That is why he made sure to work on his footwork and puck-handling abilities.
 Also, before him, many defensemen didn't worry too much about their shooting abilities. After all, they're on the ice to prevent the other team from scoring, not score themselves. So, Ray knew that he could set himself apart by being an offensive-minded defender.

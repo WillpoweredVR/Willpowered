@@ -42,14 +42,14 @@ For a list of the best "willpowered" breakfast foods [check out this list](http:
 _“Eat a live frog first thing in the morning and nothing worse will happen to you the rest of the day.” – Mark Twain_
 Those who are able to work toward their goals, create great habits, and ultimately stick with it until the end are those who [eat their frog](http://www.willpowered.co/learn/eat-the-frog-first) (work on their goal) first thing in the morning - even if they aren’t morning people.
 There are several reasons why the morning works best:
-### **1.** **Your willpower is the strongest in the morning**
+### **1.** **Your Willpower is the Strongest in the Morning**
 Like I mentioned before, your willpower is like a muscle. It gets exhausted as you use it throughout the course of the day.
 Those who achieved their resolutions worked on them in the morning when they had the most willpower, not at night when they were drained.
-### **2\. You can create the right environment**
+### **2\. You Can Create the Right Environment**
 In the evening, you really have no idea what your circumstances will be. You may be tired, you may be stressed, you may want to inhale junk food, or chuck your gym bag out the window. In the morning, however, you can create an environment that will help you get your goals accomplished.
 You know that you will be tired and groggy, so what can you do to [make waking up easier](http://www.willpowered.co/learn/waking-up-earlier)? To make putting on your gym shoes less intimidating? What incentives can you provide to "eat your frog" first?
 Whatever it is, you can plan for it and create an environment for success beforehand.
-### **3\. Life happens at night, not in the morning.**
+### **3\. Life Happens at Night, Not in the Morning.**
 _How many times have you been invited to a breakfast party at 6am?_
 _How many times have you had to attend you kid's soccer game before school?_
 **Life happens.** You _will_ have to stay late to work, you _will_ have to go to PTA meetings after school, and your coworkers _will_ invite you to a happy hour. These are all commitments that are tough to get out of with the simple reason, “I can’t I have to work on my goals today".

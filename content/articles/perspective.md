@@ -35,13 +35,13 @@ Then it will actually start fueling our muscles with the abundance of energy we 
 ## **2 Simple Ways to Change Your Perspective**
 You do not need to see something as inspiring as a one-legged woman finishing the Ironman to change your perspective. Research shows that simply by changing your language, you can shift your mindset and tap into your _I Want Power._
 Here are 2 simple ways your can reframe your perspective to achieve your goals:
-### **“Have To” Vs. “get To”**
+### **“have To” vs. “get To”**
 When we set a plan to accomplish our goals, many of us begin to set a plan that we “have to” follow. We want to [become more fit](http://www.willpowered.co/learn/create-exercising-habit), so we “have to” go to the gym 3 times per week. Then when our friends invite us out after work, we politely decline claiming that we “have to” go to the gym.
 **Your brain is subconsciously paying attention to cues like this.** By saying that you “have to” do it, you are saying that there are better things that you want to be doing with your time, but you're restricted by a plan you set weeks or months ago.
 When you view this plan as an obligation that you “have to” do, your brain will begin to motivate you to skip it – _especially when you are [low on willpower](http://www.willpowered.co/learn/limits-of-willpower)._ It wants to take the easy way out and it will begin coming up with excuses why you should take a break today and resume your plan tomorrow.
 **However, this motivation gets completely switched by changing your perspective to “get to”.** You _get to_ go to the gym today and improve your health and fitness. You _get to_ go to work today and earn money to pay for the lifestyle that you enjoy. You _get to_ order a salad for lunch instead of pizza and feel good about yourself afterward.
 Try this simple technique the next time you feel like you “have to” do something to achieve a long-term goal. **You will be amazed at just how much of a difference this shift in perspective will make!**
-### **“I Can’t” Vs. “i Don’t”**
+### **“i Can’t” vs. “i Don’t”**
 When you’re watching your waist-line how often do you resist temptations by saying “I can’t eat \_\_\_\_\_”?
 If you’re like most people, that is probably your most common response. But is it possible that saying “I can’t” might actually _increase_ the likelihood that you will eat it?
 Researchers at Boston College wanted to find out. So they brought a group of undergraduate students into the lab to test if they could be influenced simply by the way they said “no” to temptation. \[[5](http://www.jstor.org/discover/10.1086/663212?uid=2&uid=4&sid=21105180733563)\]

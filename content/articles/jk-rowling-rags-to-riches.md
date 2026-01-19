@@ -45,7 +45,7 @@ Throughout those 5 years of struggle, J.K. Rowling was remarkably focused.
 So she put all other goals, habits, and even housework aside. She focused all of her willpower on what was most important to her. _That’s why she was able to keep writing!_
 Your willpower works like a muscle. The more goals you have, the more things you try to accomplish, the more you will tire your willpower out. Yet, most of us just keep adding more and more goals to our lists! \[[2](http://www.psy.lu.se/upload/psykologi/pdf/strength_model1.pdf)\]
 **Focus your willpower on ONE goal.** It’s tempting to want to improve your health, relationships, and professional career all at once, but the more things you try to do, the less willpower you will have to do them.
-### **2.** **The Path to Greatness Has Many Easy Ways Out**
+### **2.** **the Path to Greatness Has Many Easy Ways Out**
 There were countless opportunities for Rowling to give up.
 Besides her own doubts about whether people would like Harry or whether she would be able to get published as a first time author, she must have also faced criticism from friends and family. _After all, she had a daughter to support!_
 At any point, she could have quit and taken a job as an English teacher to help make a better world for her daughter - but she didn’t. She stayed on the path to success, and the world is a better place because of that.

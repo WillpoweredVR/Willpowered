@@ -43,7 +43,7 @@ The first step in designing an experiment is to state the question you are tryin
 ![](https://www.filepicker.io/api/file/hj9MFrqtRZ2Peh0CHz12)
 Using our example above, the question would be “should I join Scientology?"
 Your inner scientist has significant questions about the world – embrace them. Don’t take the easy path [by pretending you have the answers](https://educocommunity.com/blog/1247506/stop-visualizing-and-start-taking-action). Instead, write down “What precisely do I want to know?“  
-## 2\. What Is Your Hypothesis?
+## 2\. What is Your Hypothesis?
 To answer this question, you must come up with a clear and testable hypothesis.
 ![](https://www.filepicker.io/api/file/9yO3IppLQqOcoZehw0MN)
 Let’s say that I was seduced by Scientology’s message of self-improvement. So my hypothesis is:

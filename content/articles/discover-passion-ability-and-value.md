@@ -93,7 +93,7 @@ Now I wake up every day believing that with great scientists and entrepreneurs b
 **So I wrote this post as a challenge for you to begin searching for your 3 circles.**
 Whatever your definition of greatness is, if you discover the intersection of your unique passion, talent, and value to society, you will leave this world a better place than you found it.
 I look forward to seeing what you accomplish.
-## **Resources to help you find your hedgehog**
+## **Resources to Help You Find Your Hedgehog**
 ### Video
 ### Audio
 ### Self-reflection Questions

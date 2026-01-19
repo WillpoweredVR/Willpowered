@@ -36,31 +36,31 @@ Thanks to "The Growth Rings" program, I was able to silence this voice and take 
 ## **6 Questions to Help You Push Your Comfort Zone**
 To help you conquer your own growth goals, I want to share with you some of the key questions posed by The Growth Rings that helped me take on this challenge.
 * * *
-### 1\. Why is this worth your best effort?
+### 1\. Why is This Worth Your Best Effort?
 The first step in planning to achieve any goal – especially those outside your comfort zone – is to clearly state why doing so is worth it to you.
 ![](https://www.filepicker.io/api/file/u614kCR4TECOPw3QO2R3)
 This question helped me remember why it was worth silencing my internal critic and venturing outside my comfort zone.
 * * *
-### 2\. When will you know you’ve reached success?
+### 2\. When Will You Know You’ve Reached Success?
 The next step is to clearly define the ideal outcome is that you want to achieve. It’s very easy to get lost on the way to goal when you don’t have a clear target.
 ![](https://www.filepicker.io/api/file/IeIVs3BfQFWuAkGSyHai)
 With TED, I knew I wouldn’t be done until we had a deal in writing.
 * * *
-### 3\. Why is this uncomfortable?
+### 3\. Why is This Uncomfortable?
 Another key question to ask yourself outside of your comfort zone is what exactly it is that is causing you discomfort. Fears only exist in the unknown. And by specifying what makes you uncomfortable, you can start to see the thing for what it is.
 ![](https://www.filepicker.io/api/file/9giLcClVQuiJupzbfn1c)
 For me, I was mostly afraid of messing up our opportunity.
-### 4\. What is the worst that could happen?
+### 4\. What is the Worst That Could Happen?
 To make the uncomfortable thing even more concrete, I specified the worst case scenario. It’s easy to imagine things going terribly, _but how bad could it really get?_
 ![](https://www.filepicker.io/api/file/Uo8r71tBQAyXOg8kT6OP)
 This helped me see that the worst thing that happened is that I made a bad impression or annoyed them. Not ideal, but also not the end of the world.
 * * *
-### 5\. What actions can you take to prevent that from happening?
+### 5\. What Actions Can You Take to Prevent That From Happening?
 With the worst-case clear in my mind, I could start planning actions that would prevent the worst case from happening.
 ![](https://www.filepicker.io/api/file/taeJCpBqSWiPZeKO8eKV)
 This included simple steps like researching who I should reach out to, learning how their partnerships work, and crafting a clear message to them. Once I set that plan, my mind was immediately less afraid of reaching out.
 * * *
-### 6\. What is the cost of not taking action?
+### 6\. What is the Cost of Not Taking Action?
 This is perhaps the most important question posed by The Growth Rings program. Most of us don’t consider the huge costs that come with inaction.
 ![](https://www.filepicker.io/api/file/MPI45PULQ6K3sOSJeI1P)
 By remembering the fact that partnerships don’t happen overnight, they grow over time, I knew that every day I put off building that relationship was costing me. I knew it was time to act _now._

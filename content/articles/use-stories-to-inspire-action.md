@@ -17,7 +17,7 @@ I don’t want to confront how big the project is.
 I don’t want to confront the fact that whatever I put out there will be harshly criticized.
 I don’t want to face the possibility that the people who believed in me and backed the project may be disappointed—and feel like their support of my work was not worth it.
 This is all too much to handle for me right now…Maybe I need to take a break from this project for the day. I’ll probably feel better tomorrow anyway…
-## **Finding INSPIRATION When I Needed it most**
+## **Finding Inspiration When I Needed it Most**
 Wait, what am I saying?
 Think about when J.K. Rowling was writing her first Harry Potter book.
 Her bills were piling up much worse than mine.

@@ -36,7 +36,7 @@ This logic is obviously flawed. And it ruins the day-in-day-out efforts put fort
 _You tell yourself that you’re only going to have 1 drink, but if you take a 2nd, what the hell, why not have 3 or 4?_
 _You tell yourself that you’re going to the gym every morning, but if you skip it, what the hell, why not also help yourself to a slice of pizza at lunch too?_
 It doesn't matter what your goal is. If you break it for the day, you feel justified in breaking it _even more!_ Because if the day is ruined, then you may as well have fun in doing so.
-## **How to defeat the what-the-hell effect**
+## **How to Defeat the What-the-hell Effect**
 This logic has the potential to derail even the best-laid plans. In one afternoon, you have the power to ruin all of your progress. **So what can you do about it?**
 To try to avoid this trap, most people think that it will be best to [make themselves feel guilty.](http://www.willpowered.co/learn/science-behind-guilt) "After all, if I feel guilty, then I will be motivated to stop indulging and feeling even more guilty!"
 **But this is actually why we turn to the what-the-hell effect in the first place.**

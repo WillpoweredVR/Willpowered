@@ -52,7 +52,7 @@ Some people around you will help to motivate and keep you accountable–these ar
 Unfortunately, others will tempt you to stray from your goals, and provide justification for giving up on them–these are known as “accomplices”. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/15217330)\]
 **The successful participants understood this.** They communicated well with the people in their social groups and asked for their support, rather than their license to sin.
 ### **How to Apply it to Your Life**
-### The people around you can be allies or accomplices in the pursuit of your goals.
+### The People Around You Can Be Allies or Accomplices in the Pursuit of Your Goals.
 They want to see you happy and they want to see you achieving your goals, but even those with the best of intentions may end up tempting or enabling you without realizing it.
 **Be sure to communicate with everyone in your social groups effectively.**
 Explain to them your goal and why you are committed to it. Giving them the honest, passionate reason _why_ you want to make a change will help ensure they become allies and not accomplices. \[[4](http://fowler.ucsd.edu/estimating_peer_effects.pdf)\]

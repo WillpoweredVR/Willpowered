@@ -31,7 +31,7 @@ A question on my mind recently has been, “What is the best way to spend my tim
 There are many processes in place to run Educo: marketing, sales, product development, operations, etc.
 With so much on my plate, it's difficult to know how to allocate my time to produce the best results for customers, for experts, and for members of my team.
 Your inner scientist has significant questions about the world – embrace them. Don’t take the easy path [by pretending you have the answers](https://educocommunity.com/blog/1247506/stop-visualizing-and-start-taking-action). Instead, write down “What precisely do I want to know?“  
-## 2\. What Is Your Hypothesis?
+## 2\. What is Your Hypothesis?
 To answer this question, you must come up with a clear and testable hypothesis.
 ![](https://www.filepicker.io/api/file/9yO3IppLQqOcoZehw0MN)
 I wanted to learn the most valuable use of my time, so I needed an educated, testable prediction of what that activity might be.
