@@ -9,41 +9,92 @@ featuredImage: "https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3
 ---
 
 Hi. I’m [Alison](http://www.alisoncebulla.com/bio/).
+
 I live in [Austin, Texas](https://en.wikipedia.org/wiki/Austin,_Texas). I grew up in [Grover Beach, California](https://en.wikipedia.org/wiki/Grover_Beach,_California).
-I work as Life Coach and am a Certified Health Coach from the [Institute for Integrative Nutrition](http://www.integrativenutrition.com/), the world’s largest nutrition school. I am a Huffington Post blogger and speak at conferences in the US and Europe about trust, intimacy, and intuition.
-I am on a quest to always improve my physical and mental health, learn more and share more of what I learn with others. I derive purpose and meaning by ending suffering for myself and others.
+
+I work as Life Coach and am a Certified Health Coach from the [Institute for Integrative Nutrition](http://www.integrativenutrition.com/), the world’s largest nutrition school.
+
+I am a Huffington Post blogger and speak at conferences in the US and Europe about trust, intimacy, and intuition.
+
+I am on a quest to always improve my physical and mental health, learn more and share more of what I learn with others.
+
+I derive purpose and meaning by ending suffering for myself and others.
+
 And as Colin wrote about in his piece on [The Example Rule](http://www.willpowered.co/learn/the-example-rule), I was once addicted to [meth](https://www.erowid.org/chemicals/meth/meth.shtml).
-## **How Did I Become Addicted?**
-Looking back on that time 12 years ago, with all that I’ve learned about myself it’s now easy to see that I was seeking connection with others. Drugs were a medium of connection: they were a ritual experience that helped me talk intimately with others.
+## How Did I Become Addicted?
+Looking back on that time 12 years ago, with all that I’ve learned about myself it’s now easy to see that I was seeking connection with others.
+
+Drugs were a medium of connection: they were a ritual experience that helped me talk intimately with others.
+
 The whole process was a ritual: getting the drugs, getting a friend or group together at someone’s home, taking the drugs out, doing the drugs, etc. Then the drugs themselves would facilitate talking, stimulating endorphins that would keep us chatting all night until the sun came up.
-I didn’t have another ritual in place for this. I was 19 and was drinking alcohol a little but that one never appealed to me. I did join the Cal Women's Rugby team my freshman year but that didn't give me the deep intellectual talks I was craving.
+
+I didn’t have another ritual in place for this. I was 19 and was drinking alcohol a little but that one never appealed to me.
+
+I did join the Cal Women's Rugby team my freshman year but that didn't give me the deep intellectual talks I was craving.
 [Dr. Brian Little](http://www.brianrlittle.com/) says in his book [Me, Myself, and Us;](http://amzn.to/1MMHTDS) that extroverts, of which I’m one, perceive sensory input less.
-**So stimulants always helped me feel “normal” in my own skin**; they brought me up to a level of stimulation where I could comfortably interact with the world. When sober, I felt itchy in my own skin, awkward, and removed.
+**So stimulants always helped me feel “normal” in my own skin**; they brought me up to a level of stimulation where I could comfortably interact with the world.
+
+When sober, I felt itchy in my own skin, awkward, and removed.
+
+---
+
 ## **The When/where/how of My Meth Addiction:**
 For those of you reading this who just cannot even fathom how one might go about using methamphetamine, here are the specifics.
-I had been exposed to [cocaine](https://www.erowid.org/chemicals/cocaine/) in high school and halfway through my freshman year of college at [UC Berkeley,](https://en.wikipedia.org/wiki/University_of_California,_Berkeley) I thought it could be fun to seek this drug out again. People are always shocked to hear that I sought it out on [Craigslist](http://craigslist.org) and found it easily there.
-I was finding interesting and exciting people on Craigslist with whom I was partying and was exposed to all sorts of new drugs. I was curious about them all!  
+
+I had been exposed to [cocaine](https://www.erowid.org/chemicals/cocaine/) in high school and halfway through my freshman year of college at [UC Berkeley,](https://en.wikipedia.org/wiki/University_of_California,_Berkeley) I thought it could be fun to seek this drug out again.
+
+People are always shocked to hear that I sought it out on [Craigslist](http://craigslist.org) and found it easily there.
+
+I was finding interesting and exciting people on Craigslist with whom I was partying and was exposed to all sorts of new drugs.
+
+I was curious about them all!
+
 One morning after an all nighter of cocaine and [MDMA](https://www.erowid.org/chemicals/mdma/mdma.shtml), I needed to go to work (I was a shop clerk at a women’s boutique) and my partner in crime, who was the director of an area hospital, crushed up a line for me.
-After I snorted the line, I asked him what it was. It was methamphetamine. I’ll never forget my thought in that moment, “shit, this is one of the ones I wasn’t going to do!”
+
+After I snorted the line, I asked him what it was. It was methamphetamine.
+
+I’ll never forget my thought in that moment, “shit, this is one of the ones I wasn’t going to do!”
 I’d just crossed over from party to serious in one line.
-## **Creating an Addict**
-But like Colin says in his [Example Rule](/learn/example-rule) piece, 85-90% of people who try meth don’t become addicts. My addiction didn’t happen overnight. I didn’t immediately want more. I wasn’t immediately hooked. I didn’t become a drug fiend.
+
+---
+
+## Creating an Addict
+But like Colin says in his [Example Rule](/learn/example-rule) piece, 85-90% of people who try meth don’t become addicts.
+
+My addiction didn’t happen overnight. I didn’t immediately want more.
+
+I wasn’t immediately hooked.
+
+I didn’t become a drug fiend.
 **I didn’t start scratching imaginary scabs off my arms, lose my teeth, or move into a trailer.**
-But now I knew this thing existed and the line had been crossed. So as I continued to “party” on the weekends, sometimes I would use methamphetamine. It was a lot cheaper than cocaine and the high was about 100 times more intense, lasting for days and taking me to a place of euphoria.
+But now I knew this thing existed and the line had been crossed.
+
+So as I continued to “party” on the weekends, sometimes I would use methamphetamine.
+
+It was a lot cheaper than cocaine and the high was about 100 times more intense, lasting for days and taking me to a place of euphoria.
 _What’s meth like?_
 Imagine your happiest most blissed out moment. Close your eyes and remember everything about it. Now imagine amplifying that feeling by 10 times, maybe 100 times, even. _That’s_ a methamphetamine high.
 I do not at all want to glorify this destructive drug but the high feels _really_ good.
-## **How Did I Go From Casual Use to Addiction?**
+
+---
+
+## How Did I Go From Casual Use to Addiction?
 They say addiction is when something gets in the way of living your life. After several months of casual weekend use, I started to need it to function normally: to be awake enough to show up to class and work.
 **Taking it on a Monday morning instead of a Friday night: that’s addiction.**
 My life started to unravel: someone broke into my apartment and stole my laptop and camera, I was failing 2 out of 3 of the classes I was taking, I was feeling more lonely, depressed, and guilty by the day. Other weird stuff started happening and my life felt totally out of control.
-## **What Points Did I Reach to Make Me Realize I Had to Quit?**
+
+---
+
+## What Points Did I Reach to Make Me Realize I Had to Quit?
 My mom sent me a card in the mail that read “I love you and am so proud of you!” THAT is a moment when I felt so much shame about my drug use. “She wouldn’t love me if she knew what I’ve been hiding,” I thought.
 **I cried every day for a week and used a lot of drugs (counterintuitively) to mask the shame.**
 I had joined the Cal Women’s Rugby team at Berkeley and practices were becoming increasingly difficult. We did a lot of running and I was out of breath sooner and unable to keep up with the other women on the team. I felt embarrassed!
 Failing at school. I had always been a straight-A student and it was a large part of my self worth. I was not allowed to fail!
 I just knew “this isn’t me.” No one else in my family was a drug addict and I didn’t identify with myself anymore. My idea of myself was that I was a good student and an important community member. I’d grown up volunteering for community service groups and overachieving in every area.
 I felt depressed. After a few months of drug use at regular intervals my thoughts got dark! I was questioning the purpose of life; the shame and guilt were really intense.
+
+---
+
 ## **How Did I Quit?**
 ### 1\. I Wasn’t Afraid to Ask for Help.
 The minute my life started spiraling downward I went to the UC Berkeley health clinic and started seeing a therapist and going to a group for addicts. The therapist sucked, which I can only say now. She’d never been an addict and just did not relate. I left every session thinking “fuck you.”
@@ -78,12 +129,17 @@ Part of drug use for me was exploring new things and having exciting experiences
 I attended Unitarian Universalist Church every Sunday and joined the choir, I took organic gardening classes, I went hiking in nature often.
 ### 12\. Luck Factor: Having a Roommate That Introduced Me to Yoga.
 By chance I moved in with a woman who was coincidentally attending grad school to be a drug counselor. Thank you random chance! She managed a yoga studio and hooked me up with a few free classes to try out. This was a gateway to Eastern spirituality, mindfulness, self reflection, being present in my body, and meditation.
+
+---
+
 ## **“how Many Times Did You Try and How Many Times Did You Fail to Quit?”**
-This goes to prove Colin’s point in [his piece](/learn/the-example-rule). People have huge misconceptions about drug use. It’s assumed that everyone who tries drugs must fail and fail again on their path to getting clean. **For me it just took deciding once.**
+This goes to prove Colin’s point in [his piece](/learn/the-example-rule). People have huge misconceptions about drug use. It’s assumed that everyone who tries drugs must fail and fail again on their path to getting clean. For me it just took deciding once.
 This same person responded upon hearing this, “well then that makes you an expert on willpower!” Hopefully my list of factors that contributed to my recovery paints a picture of why I’m one of the ones who used and found it not that hard to walk away.
 I know that drug use and rehab led me on the path to coaching and I love my career as a life coach. Rehab taught me that there were new ways of being to be learned that could improve my life. This got me curious about all the habits and mindsets I didn’t know about yet that could give me a better life!
 _“You mean I can just call a friend when I’m feeling sad instead of using drugs?!”_ This was a revelation, _”What else don’t I know about?!”_
 Thus started my path of coping with the mystery that is life. This has now turned into learning more each and every day about how to thrive. Not to simply cope or survive, but to savor and enjoy every moment.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1459172196210-YA9ISACDMZI5NI8EILY9/image-asset.png?format=original)
 _This is a guest post by [Alison Cebulla](http://www.alisoncebulla.com/bio/)._
-_Alison works as a Life Coach and is a Certified Health Coach from the [Institute for Integrative Nutrition](http://www.integrativenutrition.com/), the world’s largest nutrition school. She is a Huffington Post blogger and speaks at conferences in the US and Europe about trust, intimacy, and intuition._
+_Alison works as a Life Coach and is a Certified Health Coach from the [Institute for Integrative Nutrition](http://www.integrativenutrition.com/), the world’s largest nutrition school.
+
+She is a Huffington Post blogger and speaks at conferences in the US and Europe about trust, intimacy, and intuition._

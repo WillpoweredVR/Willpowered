@@ -25,6 +25,9 @@ The biggest problem I'm dealing with right now is learning how to lead others.
 I have been counting on myself throughout my entire entrepreneurial journey, and I need to learn how to let go.
 I need to learn how to give the experts on our platform the freedom to share their ideas on their terms, I need to learn how to lead our team members, and I need to learn what things I need to do and what I can teach to others instead.
 When faced with a difficult problem in your life, just ask yourself what is the situation, and get it all out there.
+
+---
+
 ## 2\. What Can You Learn From Someone Who Has Conquered These Problems Before?
 Once you have the situation specified, reflect on times you've struggled with a situation like this before. Sometimes we are so focused on the problem in the present, that we forget about a solution from our past.
 Or if this is a new problem, we forget that there are other people who have probably already solved it.
@@ -34,6 +37,9 @@ This question reminded me that the founder of JotForm, an application that I am 
 Along the way, he must have dealt with one or two of the growing pains I’m facing right now.
 Whatever your problem, somebody somewhere – perhaps even your past self – has dealt with it before.
 Instead of feeling overwhelmed by the problem, look to the solutions that have from people who have dealt with similar situations.
+
+---
+
 ## 3\. How Can You Replicate That Solution With Some of Your Current Struggles?
 After discovering the solution proposed by yourself or others, now it's time to [create a plan to replicate that solution](https://educocommunity.com/blog/1129857/focus-on-the-solution) to conquer your current problems.
 ![](https://www.filepicker.io/api/file/m7dWDRSbQqSofsfd9AnL)
@@ -41,6 +47,9 @@ With me, I knew that to follow the guidance of the founder of JotForm, I would n
 That would help me learn more about his journey, the problems he faced, and what I can learn from them.
 In many cases, you don't need to come up with some new scheme to solve your problems. You just need to find the solutions elsewhere and use them.
 Once we have the solution in place, now it's time to change our behavior.
+
+---
+
 ## 4\. What Barriers Do You Typically Face When Trying to Change Your Behavior?
 [You are creature of habit.](https://educocommunity.com/blog/1247356/key-factors-of-behavior-change)
 Just like you can create habits to perform good behaviors on a regular basis, you also have underlying barriers that typically stop you from changing those habits.
@@ -51,6 +60,9 @@ So instead of signing up for his newsletter, I created [this automation on Zapie
 ![](https://www.filepicker.io/api/file/iOzcAYXQEKJ7uKtw20TF)
 Small changes like this can make a significant impact.
 Recognizing how you behave will help you create a plan to overcome the typical obstacles you face in changing behavior and reaching your goals.
+
+---
+
 ## 5\. Who Has Already Achieved the Behavior Change You Seek?
 With a concrete plan in place to overcome the typical barriers you face when changing your behavior, the next step is to look to others within your network.
 ![](https://www.filepicker.io/api/file/Ld2c47EeRO6pKliyzQ0H)
@@ -59,6 +71,9 @@ Including an expert on this very platform – [Bill Eckstrom](https://educocommu
 He also bootstrapped his company, [EcSell Institute](https://www.ecsellinstitute.com), and would be a great mentor in helping me solve these problems.
 Don't discount the value of your personal network. If you're willing to be vulnerable, you will gain a lot of help, advice, and support from the people who want to see you succeed.
 Since coming up with this plan, Bill has become a great mentor and friend.
+
+---
+
 ## 6\. Who Else Do You Know With Helpful Knowledge or Skills?
 Beyond someone who can serve as a mentor, it is also useful to find someone who can serve as a coach. Someone who has more knowledge or skills in the domain than you do and can give you guidance.
 ![](https://www.filepicker.io/api/file/f0ZDyjhKRhkV1FcrpJmu)
@@ -66,6 +81,9 @@ For me, this allowed me to expand beyond the realm of business and to look at le
 That's how I came to know Erik Therwanger, an ex-marine who now gives talks on leadership around the world.
 [He taught me great leadership lessons](https://educocommunity.com/blog/1478177/erik-therwanger-goal-planning-strategy) like the value of maintaining your composure, focusing on the little goals within a crisis, and many more.
 Find someone who has useful knowledge or skills that can help serve as a coach on your way to success.
+
+---
+
 ## 7\. How Will You Get in Touch With Them?
 Finally, you have to be willing to be vulnerable and ask for their help.
 It's not easy to admit that you need the help of someone else, but it is always worth it to try.
@@ -73,6 +91,9 @@ To help myself ask the questions that would make me more vulnerable, I reflected
 They will likely be honored and happy to help you do what it takes to make the behavior change you seek.  
 ![](https://www.filepicker.io/api/file/OoiaDenJTMKzRzMxIthC)
 Whoever you identify, make sure you set a hard deadline for reaching out to them and asking for their guidance.
+
+---
+
 ## Conclusion
 Most of us feel alone in our problems. But it doesn't take much to realize just how many resources we have at our disposal.
 Simply by asking myself these questions, I was able to find three people I admired who were able to help me become a better leader in one way or another.

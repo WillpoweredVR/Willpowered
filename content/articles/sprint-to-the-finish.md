@@ -11,10 +11,15 @@ featuredImage: "https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3
 I was entering the last mile of the Tampa Bay Spartan Race when I realized it…
 _“There are only 2 people in front of me!! If I can keep this up, I’ll be on the podium for the first time, ever!”_
 There was only 1 mile left in the race and I couldn’t believe how close I was to the top.
+
 I was so focused, so energized, and so willing to do whatever it took to finish strong that I completed the next 2 obstacles with ease.
-**But then I got cocky.**
+But then I got cocky.
 I messed up on the next obstacle…and saw two people pass by me as I had to do 30 burpees as a penalty.
-Then I lost it. As soon as I realized I wasn’t going to reach the podium, I lost my edge. I lost my motivation to give everything I could on the sprint to the finish.
+
+Then I lost it. As soon as I realized I wasn’t going to reach the podium, I lost my edge.
+
+I lost my motivation to give everything I could on the sprint to the finish.
+
 So I failed another obstacle and finished the race 9th.
 **I vowed never to make that mistake again.**
 There are only a few hours left in this campaign and it is time to sprint to the finish and make the audiobook available to the world.
