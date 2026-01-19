@@ -30,7 +30,7 @@ Then she began craving healthier food, which would make it easier for her to run
 Then, because she was eating healthier food and exercising more, her body had more natural energy. She used this boost of energy to start being more productive – which led to her landing a job. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/17032494)\]
 Slowly but surely, she changed every bad habit in her life and replaced it with a good one.
 With each habit she changed, she grew more confident that she would be able to establish the next one. Over the course of 4 years, the domino effect of that one habit change, completely turned Lisa’s life around. \[[1](http://www.amazon.com/Power-Habit-Why-What-Change-ebook/dp/B0055PGUYU/ref=sr_1_1?s=books&ie=UTF8&qid=1415817190&sr=1-1&keywords=the+power+of+habit)\]
-## **WHAT IS A KEYSTONE HABIT?**
+## **what is a Keystone Habit?**
 A keystone habit is a positive change in behavior that allows other positive habits to grow as well. For Lisa, substituting smoking for running naturally changed other behaviors in her life.
 Some other keystone habits might be:
 ### **Eating healthier**
@@ -46,17 +46,17 @@ All of these daily practices help other great habits flourish naturally.
 ## **The Keystone Habit Formula**
 If none of the keystone habits above seem appealing to you – no problem! To find out if there are other keystone habits that are more suitable to your lifestyle, simply determine if they meet the criteria below:
 **There are 3 characteristics of a keystone habit that distinguish it from other**s:
-### **1.** **IT GIVES YOU MORE WILLPOWER**
+### **1.** **it Gives You More Willpower**
 Although it would be great to read a book every day, that’s a habit that’s going to drain your mental energy and willpower. A habit like exercising, on the other hand, will actually [give you _more_ energy](http://www.webmd.com/fitness-exercise/features/exercise-for-energy-workouts-that-work) that you can use to build other productive habits.
 So when trying to create a keystone habit, **try to find something that will naturally give your more willpower.** For a little help, [here is a list](http://www.willpowered.co/learn/daily-willpower-habits) of 10 habits that will increase your willpower.
-### **2.** **IT BUILDS CONFIDENCE THROUGH SMALL WINS**
+### **2.** **it Builds Confidence Through Small Wins**
 Probably the most important factor in Lisa’s transformation is that it began small. If she set out to change all of her bad habits at once, she would have been doomed to fail. Instead, each run was a small win and each small win gave her more confidence.
 With more confidence, she began to believe she could accomplish the next change in her habits; causing that chain reaction.
 **So don’t try to overhaul your life.** Focus on changing one thing, build confidence by achieving it [consistently](http://www.willpowered.co/learn/slight-edge) and let the dominos fall from there.
-### **3.** **IT CREATES A PLATFORM**
+### **3.** **it Creates a Platform**
 A keystone habit will create a platform for other habits to flourish. By exercising, Lisa naturally wanted to eat healthier so that exercise would become easier for her. Then by not spending money on cigarettes, she now had more money to start paying down her debts.
 **So find a habit that will create a platform for other habits to flourish.** Waking up early, saving money and investing in your education are all great examples of this.
-## **CONCLUSION**
+## **conclusion**
 Lisa Allen is the perfect example of how great things are actually accomplished. They are not accomplished by completely overhauling your life and they are not accomplished overnight.
 Great things are accomplished by improving one small aspect of your life, achieving small wins, growing confidence and allowing time to take its course. This huge change started when Lisa was 30 and by the time she was 34, she was a success.
 From the perspective of an entire life, 4 years is almost nothing. And yet so many of us do not have the patience to start small with something we can control and stay persistent with it.

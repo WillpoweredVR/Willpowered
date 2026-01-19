@@ -18,13 +18,13 @@ After the Saint Lawrence, they hiked for two days in snow that was knee-deep. Th
 Then he started to literally lose his mind.
 He saw members of his family, he saw fast food restaurants, and he smelled the delicious aroma of a cheeseburger—despite the fact that the nearest McDonalds was hundreds of miles away. **He was half mad, and he wasn’t even at the halfway point!**
 So how did he and his team not only persevere through the next 150-plus miles of the race, but _also become one of the first teams to cross the finish line?_ \[[1](http://amzn.to/1r1D0CL)\]
-## **CHANGING HIS FRAME OF REFERENCE**
+## **changing His Frame of Reference**
 To make it through the rest of the race, Joe thought about an explorer named [Ernest Shackleton](https://en.wikipedia.org/wiki/Ernest_Shackleton).
 In 1912, Shackleton led [an expedition](https://en.wikipedia.org/wiki/Nimrod_Expedition) of fifty-six men to be the first to cross Antarctica. From the very beginning, the expedition was doomed. Shackleton’s ship crashed into ice hundreds of miles from the shores of Antarctica.
 He and his crew spent over a year trying to get home, traveling over 1,000 miles in temperatures much colder than those in Canada, in a place where nobody could help them. **Compared to that situation, Joe's journey to the end of the race didn’t seem so bad.**
 _If Shackleton was able to make it,_ Joe thought, _there’s no reason why we can’t._
 When Joe thought of Shackleton, he changed his frame of reference. And doing so vastly increased his willpower to keep going.
-## **HOW A FRAME OF REFERENCE IMPACTS YOUR WILLPOWER**
+## **how a Frame of Reference Impacts Your Willpower**
 My guess is you’re probably not going to be freezing cold in the Canadian winter anytime soon, so how can you use the frame of reference in your life?
 Imagine you come face-to-face with the opportunity to make an impulse $100 purchase.
 **Immediately, your whole body feels like it’s in panic mode.** The temptation to buy seems like it’s too much to bear. Part of you is telling yourself that you deserve it, another part is reminding you of your plan to stick to your budget this month.
@@ -34,17 +34,17 @@ _”Would I accept one hundred dollars to NOT buy this?”_
 This seems obvious. Shouldn’t everyone realize that saving the $100 is the exact same thing as getting $100 dollars to not buy something?
 **The answer is no.** Because if you believe you are saving $100 you will still consider the impulse purchase as a reward. However, if you shift your frame of reference to getting $100 dollars as a "gift" for not buying that thing, now the $100 is the reward.
 So your impulsive, emotional, primitive brain that motivates you to seek short-term rewards now wants you to get that $100 for not making the purchase just as badly as your long-term, rational, modern brain wants to you to save it. \[[3](http://www.springer.com/us/book/9781461258896)\]
-## **WAYS TO SHIFT YOUR FRAME OF REFERENCE**
+## **ways to Shift Your Frame of Reference**
 This experiment shows how powerful a simple change in your frame of reference can be. But there are obviously more ways to capture its power than simply by saving money.
 Here are some other proven ways to change your frame of reference and increase your willpower:
-### **1\. SEE IT AS AN OPPORTUNITY, NOT AN OBLIGATION**
+### **1\. See it as an Opportunity, Not an Obligation**
 Several years ago, I really struggled with [developing an exercise habit.](http://www.willpowered.co/learn/create-exercising-habit) I would exercise every single day for a week, then crash–leading me to skip a day, then another, then another…
 I would then follow this with several weeks of doing nothing, before repeating the cycle by going to gym every single day again.
 I was able to finally break this cycle when I signed up for a [Spartan Race](http://www.spartan.com/). I’m extremely competitive. So once I signed up, I wanted to do as well as I could in the race.
 **Instantly, my frame of reference for workouts completely changed.** Rather than the trip to the gym being an obligation that I “had to” do, it became an opportunity to get faster and stronger for the upcoming race.
 Whatever your goal, you probably set a plan that you “have to” follow. You see working towards it as an obligation and are therefore more tempted to [procrastinate](http://www.willpowered.co/learn/why-we-procrastinate) it as I did.
 However if you can shift your frame of reference to see working toward your goal as an opportunity to learn more, become healthier, and become the person you really want to be, it will require much less willpower to make progress. \[[4](http://www.jstor.org/discover/10.1086/663212?uid=2&uid=4&sid=21105180733563)\]
-### **2\. IDENTIFY WITH YOUR FUTURE SELF**
+### **2\. Identify With Your Future Self**
 When facing a challenge to your willpower, it is very easy to lose sight of the big picture.
 Your short-term, impulsive, primitive brain can make it feel like saying "no" to a dessert or impulse purchase will be the end of the world. While also convincing you that saying "yes" to relaxation or [staying in your comfort zone](http://www.willpowered.co/learn/learning-zone) will be the key to happiness.
 **By doing this, it is making it harder for you to see that your future self will feel the consequences of your decisions today (good or bad).** That’s why it is so easy to procrastinate and feel like you can always make up for it tomorrow.
@@ -52,7 +52,7 @@ However, if you can shift your frame of reference to your future self, it will h
 Sticking with my gym example, whenever I want to skip the gym in the morning, I think to myself:
 _“At 8 AM I’m going to be sitting at my computer, rested, relaxed and starting my work day. At that time, I can either be proud of myself for choosing to go to the gym right now, or regretting the fact that I didn’t."_
 That simple shift in my frame of reference allows me to [identify with my future self](http://www.willpowered.co/learn/10-10-10-rule) and see the benefits of exercising more clearly. This gives me that extra edge I need to make the right decision and lace up my running shoes.
-### **3\. SEE YOUR CHALLENGE THROUGH ANOTHER'S EYES**
+### **3\. See Your Challenge Through Another's Eyes**
 It is very easy to constantly look inward when it comes to willpower. This could be by trying to justify taking the easy way out, or motivating yourself to rise to the challenge. This is why using another’s perspective on your challenge can help you make the right decision.
 **There are 2 ways you can do this effectively:**
 The first, is using the same technique as Joe DeSena by thinking about [how a hero](https://book.willpowered.co/the-will-of-heroes) or inspiration to you overcame a similar challenge.

@@ -21,7 +21,7 @@ _Maybe it’s not a part of success..._
 _Maybe it’s actually getting in the way…_
 With this in mind, I began taking a skeptical look at my social media. And in July of 2017 I learned that **it's not worth it.**
 Here are all the reasons why:
-## IT WASN’T PROFITABLE
+## It Wasn’t Profitable
 Social media is a time sink.
 It siphons valuable time away from actually building products, solutions, and putting in the work necessary to build a company.
 Although you do have access to a lot of potential customers for free, it’s not the only medium in which to market.
@@ -33,7 +33,7 @@ Social media is a place where talking about your goals, dreams, plans, etc. is a
 [This will only lead to frustration.](http://www.willpowered.co/maps/talk-is-the-path-to-frustration) It feels great to talk about what you are going to achieve and get encouragement from friends and family via their likes and comments.
 It feels much better, in fact, than the feelings you get from doing the hard work it takes to actually achieve your goals, dreams, and plans.
 So, sadly, many of us choose to procrastinate the actions that will get us where we really want to go in favor of even more talk on social media.
-## IT WAS ADDICTIVE
+## It Was Addictive
 > “The tycoons of social media have to stop pretending that they’re friendly nerd gods building a better world and admit they’re just tobacco farmers in t-shirts, selling an addictive product to children. Because let’s face it, checking your likes is the new smoking." - [Bill Maher](http://www.willpowered.co/maps/talk-is-the-path-to-frustration)
 
 This was the most disheartening finding.

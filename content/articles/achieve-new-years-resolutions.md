@@ -12,7 +12,7 @@ New Year’s resolutions….more than half of us make them, **but only 8% of us 
 That’s right. 92% of us fail our resolutions for the New Year (and I have been no stranger to that list).
 But rather than scorn humanity for our apparent lack of follow-through, I wanted to learn _what exactly those 8% of successes do differently?_
 **Here are 10 strategies they use to reach their goals – and you can too!** \[[1](http://www.statisticbrain.com/new-years-resolution-statistics/)\]
-## **1.** **SET 3 GOALS OR LESS**
+## **1.** **set 3 Goals or Less**
 The biggest mistake people make with their resolutions is trying to take on every single goal they can think of all at once.
 Take this common list of resolutions from those who took part in the study above:
 1.  Lose weight
@@ -26,7 +26,7 @@ Let’s assume that the person who made this list _was_ _not working_ on them be
 That’s when you’re going to skip one day…then another…then another…and eventually you're going to slip right back into your old habits.
 **Do not feel that you need to improve all areas of you life at once.** Research shows that those who are most successful have no more than 3 goals that they are working on at any one time. \[[3](http://www.amazon.com/Handbook-Self-Regulation-Second-Edition-Applications/dp/1462509517)\]
 So set as few as possible, and do not go over 3!
-## **2\. SET COMPLEMENTARY, NOT CONTRADICTORY GOALS**
+## **2\. Set Complementary, Not Contradictory Goals**
 Let’s look at the list of goals above again.  
 Not only will it be hard to accomplish all of them given that you have a [limited amount of willpower](http://www.willpowered.co/learn/willpower-limited-resource) with which to work, **but some of those goals actually contradict one another!**
 For example, when you quit smoking, your hunger that was once suppressed by cigarettes is suddenly going to come back. So now your goal of losing weight is going to be much harder.
@@ -56,7 +56,7 @@ _How many times have you had to attend you kid's soccer game before school?_
 Luckily, life happens far less in the morning.
 You simply will not have the same temptations to procrastinate your goals in the morning as you will in the evening. You won’t need to turn down other commitments; you just need to [force your way out of bed!](http://www.willpowered.co/learn/waking-up-earlier)
 [](http://www.willpowered.co/learn/waking-up-earlier)
-## **5.** **FOCUS ON CONSISTENCY, NOT INTENSITY**
+## **5.** **focus on Consistency, Not Intensity**
 Most people who set resolutions focus all of their energy on intensity. They want to make big progress, they want to get big results, and they want to make it happen NOW!
 But those who achieve their resolutions don't try to get huge results through Herculean efforts in a short amount of time. They set long-term goals and focus on being incredibly consistent in achieving them. \[[3](http://www.amazon.com/Handbook-Self-Regulation-Second-Edition-Applications/dp/1462509517)\]
 There is no better example of this are those who set a writing goal.
@@ -76,14 +76,14 @@ Don't focus on going on a 90-day diet, focus on eating healthy _today._
 Don't focus on getting a promotion, just show up early to the office _this week._
 With each hour, day, or week that you achieve your small wins, your confidence will continue to grow. Then you will be even more motivated to achieve the next small win, and the next one after that.
 Eventually, you will be 3, 6, 9 months in and more confident than ever that _you can do this._
-## **7.** **GET THROUGH THE MIDDLE**
+## **7.** **get Through the Middle**
 **It is easy to find motivation on December 31st** when you are [visualizing](http://www.willpowered.co/learn/inspiration-will-enhance-your-willpower) what life will be like when you accomplish your goals. You visualize your results, you visualize your progress, you visualize where you want to be, and you get excited about your plan to get there!
 **It is also easy to find motivation when you nearing the completion of your goal.** You've accomplished a lot and you are confident that you will be able to see it through to the finish. You may even work harder as you see how close you are to the finish line!
 But in order to get there, you need to get through the middle.
 You need to [find motivation](http://www.willpowered.co/learn/motivation) when the excitement has worn off, and the goal is still weeks or months away. That is when one day of progress seems completely insignificant in comparison to the higher goal, so if you don’t "feel good” then you face big temptations [to procrastinate](http://www.willpowered.co/learn/why-we-procrastinate).
 This is when the true achievers set themselves apart from the rest of the pack. They [embrace the boredom](http://www.willpowered.co/learn/embrace-boredom) of working toward a goal and find ways to [enjoy the process](http://www.willpowered.co/learn/internal-locus-of-control) for its own sake.
 So understand that you will have a letdown in the middle of the journey and find ways to motivate yourself through it. Because _it will get easier._
-## **8.** **UNDERSTAND THAT IT WILL GET EASIER**
+## **8.** **understand That it Will Get Easier**
 The middle of the journey is like the 2nd Act of a great movie.
 The 2nd Act is when the protagonist faces an extraordinarily hard challenge and their character is tested. They must overcome this huge level of adversity in order to achieve their happy ending in the 3rd Act.
 **Many people believe that the challenges they are facing in the middle of the journey will last forever.** So once they hit the feeling of being tired, unmotivated, and demoralized by how far they are away from achieving their result, they give up.
@@ -107,7 +107,7 @@ If you can't workout for an hour as you planned, cut it back to 30 or even 15 mi
 If you can't write 1,000 words today like you planned, just write 100!
 If you can't stick to your planned diet today, eat at least 1 healthy meal.
 **There is likely no rush to complete your goal.** Take your time, but make sure every day you are making at least _some progress._ That progress, no matter how small, will add up. And eventually you will get there!
-## **CONCLUSION**
+## **conclusion**
 There is no secret to achieving a New Year's resolution. There is simply a long journey. And if you have the focus to keep less than 3 goals, work on them every day, and fight through the middle when they get hard and boring, **eventually you will get there!**
 That is, of course, unless you procrastinate.
 **Sources**

@@ -22,7 +22,7 @@ Joe pioneered the concept in 2009, and “[obstacle course racing](https://en.wi
 _How is this possible?!_
 How could he defy doctors, defy physical limits and defy the odds of building a successful company all at the same time?
 **It all comes from what Joe calls the “frame of reference”.**
-## **THE FRAME OF REFERENCE**
+## **the Frame of Reference**
 The sun was scorching as Joe DeSena was pushing himself through the last leg of the Utah Ironman Triathlon. By this point, he completed 20 Ironmans in his life, but with this one, he felt like he had finally met his match.
 He completed the 2.4 miles of swimming, 112 miles of biking and was 10 miles into the 26.2-mile run to the finish line. But it was at this point that Joe’s body gave up.
 He was so nauseous that he had to run to an ambulance on the side of the road. When he got there, he started vomiting uncontrollably. Then the idea of quitting – an idea that had never once popped into his head – finally seemed logical.
@@ -34,11 +34,11 @@ _How could he feel sorry for himself when this woman was pushing herself through
 **So he summoned the willpower to get out of the ambulance and catch up to her.** Then he pushed himself through the heat, the pain, and the nausea to keep pace with this woman all the way to the finish line.
 _What happened here?_ Clearly, Joe’s body had given up – he was vomiting uncontrollably!
 Yet all it took was this simple change to Joe’s frame of reference to motivate him to not only finish, but to keep pace with her for 16 more miles! \[[1](http://www.mensjournal.com/adventure/races-sports/joe-de-senas-spartan-empire-20140421)\]
-## **THE UNDERRATED POWER OF YOUR PERSPECTIVE**
+## **the Underrated Power of Your Perspective**
 Your perspective (or frame of reference as Joe calls it) is one of the most important factors on your willpower.
 If you truly enjoy your work - even if it is hard - it is going to be far easier to work long hours. If you haven't eaten anything all day, those vegetables will start looking pretty delicious.
 And the great news is, you can intentionally change the way you see something to immediately get a boost of willpower!
-### **1\. CHANGE HOW YOU SEE YOUR SITUATION**
+### **1\. Change How You See Your Situation**
 When Joe looked at the one-legged woman running by, he immediately felt grateful for everything he had. He was able to overcome his accident and still have two healthy legs!
 **So he immediately saw his situation differently.**
 Now the nausea he was feeling didn’t seem like as big of a deal as it once did. Sure he felt sick, _but he still had full use of his legs!_
@@ -46,7 +46,7 @@ It is very easy to feel sorry for yourself. It is very easy to feel like the vic
 The best example of this for me is [J.K. Rowling.](http://www.willpowered.co/learn/jk-rowling-rags-to-riches) Being a writer is not always easy. It requires a lot of work, with not a lot of pay-off, and whole lot of [criticism from others.](http://www.willpowered.co/learn/how-to-deal-with-criticism) And sometimes I get down on myself because of it.
 But then I simply think about Rowling’s story. Before getting Harry Potter published, she lost her mother, had a messy divorce, and had to live as a single parent on welfare, But she was still able to will herself to get the book published.
 **If she can do that, I can keep pushing through my hardships too.**
-### **2\. CHANGE HOW YOU SEE YOUR GOALS**
+### **2\. Change How You See Your Goals**
 When you set a plan to accomplish your goals, you probably create a schedule that **you “have to” follow.** You want to become more fit, so you “have to” go to the gym 3 times per week.
 Then when your friends invite you out after work, you politely decline claiming that you “have to” go to the gym. Meanwhile, your brain is subconsciously paying attention to these cues**.**
 By saying that you “have to” do it, you are claiming that there are better things that you _want_ to do, but you're restricted by a plan you set weeks or months ago.
@@ -54,7 +54,7 @@ When you view this plan as an obligation that you “have to” follow, your bra
 **You can completely switch this motivation by changing your perspective to “get to”.**
 You _get to_ go to the gym today and improve your fitness. You _get to_ order a salad for lunch instead of pizza and feel good about yourself afterward. You _get to_ engage in deliberate practice to become a master in your field.
 **Try this simple technique the next time you feel like you “have to” do something to achieve a long-term goal.** You will probably find extra motivation you had no idea you had! \[[2](https://web.stanford.edu/~gwalton/home/Publications_files/Job,%20Dweck,%20%26%20Walton,%202010.pdf)\]
-### **3\. CHANGE HOW YOU SEE YOURSELF**
+### **3\. Change How You See Yourself**
 When a group of hotel maids – all who claimed to be the furthest thing from habitual exercisers – were given the statistics about how many calories they were burning, **they we absolutely shocked.**
 Compared to a desk job, hotel maids actually get a lot of exercise. They are constantly moving. The scrubbing, vacuuming, and walking from room-to-room isn’t exactly "intense". But over the course of an 8-hour day, the calories add up.
 **In fact, they add up to about 900 calories burned every single day!** \[[3](https://www.psychologytoday.com/blog/curious/201001/what-maids-teach-us-about-physical-health-and-life-longevity-lesson-in)\]
@@ -62,7 +62,7 @@ After learning that they were burning more calories throughout the course of a d
 They naturally started eating healthier, walking more, and putting a little extra enthusiasm in their daily cleaning. Now that they knew it was exercise, they felt more empowered and healthy!
 It didn’t take a drastic change in diet, exercise routine, or other major life event. All it took was just seeing themselves through a different frame of reference.
 **Begin to see yourself as the person you truly want to become.** You will find you will have much more willpower to act like them! \[[4](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters/dp/1583335080/ref=sr_1_1?ie=UTF8&qid=1442412741&sr=8-1&keywords=the+willpower+instinct)\]
-## **CONCLUSION**
+## **conclusion**
 Joe DeSena has done things that seem almost inhuman. But there is nothing particularly special about him. **He simply sees the world through a different mindset than everyone else.**
 When Joe is faced with harsh circumstances, he thinks about others who have overcame much worse. Where others see obligations, Joe sees opportunities. And he has built up the identity of someone with an unbreakable will.
 If you can intentionally see the world with a similar perspective, your will might just become unbreakable as well!

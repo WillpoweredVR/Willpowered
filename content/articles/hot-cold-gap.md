@@ -18,7 +18,7 @@ _This time,_ they thought, _people_ _will come up with a more realistic number._
 **Nope. They planned to spend even more time in the gym!**
 They didn't learn from the past; they felt the need to make up for it.
 In their minds, the previous 2 weeks were an anomaly. Over the next 2 weeks, their “real selves” were going to show up and make it to the gym for 12.5 hours/week this time! \[[1](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters-ebook/dp/B005ERIRZE/ref=sr_1_1?s=books&ie=UTF8&qid=1415642918&sr=1-1&keywords=the+willpower+instinct)\]
-## **THE HOT-COLD EMPATHY GAP**
+## **the Hot-cold Empathy Gap**
 _So why did this happen?_
 Well, when the participants were in the laboratory, they were in a calm, cool and focused state of mind. So, they assumed that all of their future decisions - like going to the gym - we’re going to be in that same state of mind.
 It is easy to say that you will be disciplined and full of willpower in the future when you are calm and relaxed right now.
@@ -29,7 +29,7 @@ That is why planning New Year’s resolutions lead to setting impossible standar
 Of course, this is rarely the case.
 You get stressed. You get tired. You get emotional. And you get into a “hot” state of mind - where reason and self-discipline stand little chance against your impulses.
 When you’re in this state, your willpower is weak, and it’s harder to make the right choice. \[[2](http://www.amazon.com/Willpower-Rediscovering-Our-Greatest-Strength-ebook/dp/B0052REQCY/ref=sr_1_1?ie=UTF8&qid=1415796875&sr=8-1&keywords=willpower+rediscovering+the+greatest+human+strength)\]
-## **WHY WE SET OURSELVES UP FOR EVEN MORE FAILURE**
+## **why We Set Ourselves up for Even More Failure**
 Okay, so this explains why the non-exercisers failed with their initial prediction.
 _But why did they plan to exercise even more next time?_
 When the participants returned to their cool state of mind in the laboratory, they reflected on the last two weeks as if they were simply a series of unlucky breaks. \[[1](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters-ebook/dp/B005ERIRZE/ref=sr_1_1?s=books&ie=UTF8&qid=1415642918&sr=1-1&keywords=the+willpower+instinct)\]
@@ -37,14 +37,14 @@ Over the next two weeks, they surely won't be so unlucky...and now they have to 
 You've probably felt a similar need to make up for the past When you have a cool head; it's hard to understand how you made "stupid mistakes," and therefore vow to make up for them.
 _And who better to make up for the shame of the past than the superhero that exists in the future!_
 However, as we saw from the study, this only leads to more failure, more heartache, and more shame.
-## **HOW TO DEFEAT YOUR "HOT-HEAD"**
+## **how to Defeat Your "hot-head"**
 When Starbucks was going through its massive expansion, it faced a lot of growing pains. The biggest among them was ensuring that the mass influx of new employees was adequately trained and provided excellent customer service.
 For many employees, Starbucks is their first job. They haven’t had to deal with a packed line or an angry customer before.
 Even though they all _wanted_ to do a good job, as soon as the “heat” was turned up, many of them snapped at customers – or snapped at each other.
 To help employees deal with those situations, Starbucks came up with a simple solution – **the "if-then" strategy**.
 They added an extra page at the end of every employee handbook with lines like, “If a customer yells at me then I will \_\_\_\_\_\_”.
 The employee would then write in advance what their response would be to this and many other tough situations. It allowed employees to plan their response with a cool mindset, so they didn’t need to think as much under pressure. \[[3](http://www.amazon.com/Power-Habit-Why-What-Change-ebook/dp/B0055PGUYU/ref=sr_1_1?s=books&ie=UTF8&qid=1415797320&sr=1-1&keywords=the+power+of+habit)\]
-## **HOW TO IMPLEMENT THE IF-THEN STRATEGY**
+## **how to Implement the If-then Strategy**
 ### Change Your Mindset
 When coming up with the if-then strategy, Starbucks didn't blame the workers. They assumed the best in their people and wanted to understand _why_ they were struggling.
 You probably recognize the value in Starbucks not placing blame, and taking an honest assessment, but how often do you do the same with yourself?
@@ -62,7 +62,7 @@ _If I hear my alarm and want to hit the snooze, then I will focus on making it t
 _If I get tempted to buy something at the mall, then I will only use the cash I have in my pocket to pay for it._
 It sounds simplistic, but it is a remarkably effective strategy.
 When you make the if-then decision beforehand, you don't need to waste mental energy debating yourself about what to do. You know the plan. Now you just need to execute it.
-## **CONCLUSION**
+## **conclusion**
 You are part of an overly-optimistic species. When you have a relaxed mindset, you believe your future self will have endless time, energy, and willpower.
 But when you’re tired, stressed and staring temptation in the face, this willpower is nowhere to be found.
 However, by preloading an "if-then" decision, you create a defense mechanism to deal with these situations. **So hope for the best, but plan for the worst, for the sake of both you and your future self!**

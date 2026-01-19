@@ -39,11 +39,11 @@ I have thought about the hardships she faced...
 The obstacles she overcame...
 And, most importantly, the greatness she proved was possible.
 Her story has always been enough to inspire me to take action—even on the hardest days.
-## **HOW TO USE STORIES TO INSPIRE ACTION**
+## **how to Use Stories to Inspire Action**
 If you’ve been following my work for a while, you know that I love to tell stories about how people used their willpower to achieve greatness (you may even be sick of hearing about J.K. Rowling at this point...)
 However, I’ve never explained how to apply stories to your daily challenges. Nor have I explained the science behind why they can be powerful motivators when you face those inevitable days of demotivation on the journey to your goals.
 So let's break down the proven reasons why J.K. Rowling's story inspired me to take action—even when all I wanted to do is procrastinate. **And how you can find that same drive for work through your inspirational stories.**
-### **1.** **SHIFTING YOUR PERSPECTIVE**
+### **1.** **shifting Your Perspective**
 As I mentioned in my journal entry, my situation in January wasn’t nearly as hard as J.K. Rowling’s was when she was writing her first book.
 I’m not saying that my situation was better, necessarily. I understand why some of you might find my lifestyle lonely and boring, and would prefer her life as a parent. But, if nothing else, my situation while writing was certainly easier to handle.
 Despite this, my initial thoughts focused on feeling sorry for myself.
@@ -58,20 +58,20 @@ This simple change gave me just enough willpower [to get started](http://www.wil
 And a story is one of the best ways to shift this perspective. When you are engaged in a story, you put yourself in the character's shoes. You visualize other people's situations and gain a perspective outside of yourself.
 There’s a reason why religious books use stories. Reading about the generosity and kindness of a spiritual leader will shift your perspective and give you more willpower to be selfless as well.
 This same principle can be applied to a story about someone in your life, learning the path someone took from rags-to-riches, or even watching an inspirational movie. As the story plays out, your brain will visualize you in their shoes and shift your perspective. \[[5](http://www.nips.ac.jp/fmritms/conference/references/Mano/Zwann1998PB.pdf)\]
-### **2\. BECOMING GRATEFUL**
+### **2\. Becoming Grateful**
 Another benefit to thinking about J.K. Rowling’s story is that it also helped me become grateful for all the advantages I had ignored in my self-pity.
 I have proven demand for my book!
 I have an amazing audience that supports my work!
 I can even play beach volleyball in January!
 These are all things I knew intellectually, but it wasn’t until I thought of Rowling’s story that I truly appreciated them. And that [gratitude also increased my willpower.](http://www.willpowered.co/learn/gratitude-increases-willpower)
 As fellow writer [Ben Austin](https://twitter.com/benaustinblog) wrote about in [this guest post](http://www.willpowered.co/learn/gratitude-increases-willpower), simply being grateful benefits your willpower in big ways.
-### **BENEFIT 1: GRATITUDE FOCUSES YOUR RAS**
+### **benefit 1: Gratitude Focuses Your Ras**
 The RAS ([reticular activating system](http://en.wikipedia.org/wiki/Reticular_activating_system)) is a bundle of nerves that is attached to your brainstem and acts as a filter for everything going in and out of your brain.
 When you focus your attention on the positive things in your life, your brain will filter out the bad and prevent your subconscious from overreacting to harmless “threats.” This allows you to create more willpower, retain your existing [willpower stores](http://www.willpowered.co/learn/what-fuels-willpower), and focus on the tasks that matter. \[6\]
-### **BENEFIT 2: PREFRONTAL CORTEX ACTIVITY INCREASES**
+### **benefit 2: Prefrontal Cortex Activity Increases**
 The Prefrontal Cortex (PFC) is the part of your brain associated with willpower and [proble](http://www.willpowered.co/learn/value-of-mindfulness)[m solving](http://www.willpowered.co/learn/value-of-mindfulness). In other words, gratitude makes you tougher and [more resilient.](http://www.willpowered.co/learn/perseverance)
 **Resilient people activate their PFC and dominate**. Resistant people enable their fight-or-flight nervous system and get pushed around by life. \[[7](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3851848/)\]
-## **BENEFIT 3: EXPAND YOUR SELF-CONCEPT**
+## **benefit 3: Expand Your Self-concept**
 According to psychologist Carl Rogers, gratitude expands your **Self-Concept,** which consists of 3 things:
 1. Self-image, or how you see yourself.
 2. Self-esteem, or how much you value yourself.
@@ -79,7 +79,7 @@ According to psychologist Carl Rogers, gratitude expands your **Self-Concept,** 
 When your self-concept expands, all areas of your life benefit. A gratitude practice allows you to have more confidence, value your achievements, and work towards your goals. \[8\]
 Expanding your self-concept allows you to see the real value you bring in this world. It’s a powerful feeling and allows you to increase your impact and do the work that matters.
 If you read an inspiring story about someone with fewer resources than you, yet was still able to achieve an admirable goal, it will make you grateful for the resources or advantages you do have. And it will give you more confidence that you can reach your goals too.
-### **3\. PROVING WHAT IS POSSIBLE**
+### **3\. Proving What is Possible**
 This chapter of J.K. Rowling's story inspires me the most.
 Not only did she face a daily struggle to write Harry Potter, **but she endured that battle for roughly 1,825 days!** From her initial idea of a boy going to a school for witchcraft and wizardry to the book's publication–she wrote, she edited, she re-wrote, and she never gave up.
 Think about how many days she must have woken up with the same feelings of exhaustion and demotivation that I started this article with–and she had the additional responsibility of being a single mother!
@@ -90,7 +90,7 @@ I cannot image what the world would look like today if instead, she made the rat
 How many others have faced similar struggles to Rowling, but **quit before they created their master work?**
 We will never know for sure, but the number is certainly much higher than those who followed Rowling's path and refused to give up.
 My own journey of sharing the science of willpower with the world has not been easy. It's been a bumpy road, full of many days where I've been tempted to quit. But Rowling’s story has given me endless inspiration to ignore that temptation, and **make progress every single day.**
-## **CONCLUSION**
+## **conclusion**
 Greatness doesn’t come from innate gifts, a brilliant idea, or even from a story itself. It comes from making a choice to embark on the journey and making progress every single day until you reach the destination.
 Unfortunately, our nature is to ignore the value of consistent progress. Instead, we choose to procrastinate when we hit the inevitable days of exhaustion and demotivation along the way.
 Taken alone, skipping one day won't do much harm. But procrastinating this one day sets the precedent to procrastinate again...and again.

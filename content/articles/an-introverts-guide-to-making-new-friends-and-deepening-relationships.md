@@ -38,7 +38,7 @@ _Why do we spend so much time talking about the problem of loneliness without of
 With the consequences of our lonely society growing, **I set out to find that solution.**
 As an introvert, making new friends and deepening relationships has never come natural to me. I have never been able to rest on my natural talent to find new friends. I have needed a strategy.
 What I learned so far will hopefully guide both introverts and extroverts alike toward more deep and meaningful friendships.
-## SOCIAL MEDIA NOT REQUIRED
+## Social Media Not Required
 The first thing to note is that social media is not required – and probably makes things worse. [I left social media two years ago](http://www.willpowered.co/learn/i-left-social-media-1-year-ago-heres-what-happened) and my friendships have not only deepened, but they have grown.
 I am now friends with many more people than I ever was on social media.
 Of course I don't have the literal quantity of “friends” now that Facebook said I did. But when it comes to genuine, deep, human friendships, I have many many more.
@@ -118,7 +118,7 @@ For one, it was the fact that she left Nebraska to move to New York to pursue he
 For another, it was the fact that he was a far more successful entrepreneur than I was.
 For the third, it was the fact that, as an extrovert, he had the confidence to make friends with random strangers that I don’t have.
 I genuinely admire each of these traits in the people that I met with. And by communicating that appreciation effectively, it made the other piece person grateful and strengthened the bond between us.
-## Step 5: BE VULNERABLE
+## Step 5: Be Vulnerable
 The last step in creating genuine human friendships is to be vulnerable.
 Now that you have started building a genuine bond with this other person, it is time to open yourself up to be vulnerable.
 This is not easy – especially for introverts – but this is what will take your relationship from an acquaintance to a genuine friendship.

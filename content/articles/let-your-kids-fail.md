@@ -18,7 +18,7 @@ _I was small…_
 _I was slow…_
 _And I was Canadian…_
 These kids had grown up in an environment dedicated to the game of football. I grew up in an environment where football is for kids who aren't co-ordinated enough to skate.
-## **FAILING MISERABLY**
+## **failing Miserably**
 For those of you unfamiliar with high school football in the U.S., there are 2 teams you can play on – varsity and junior varsity. The better players play on the varsity team, and the lesser players play on the junior varsity team.
 **In my sophomore year, I didn’t get playing time on either.** I was technically on the junior varsity team, but I wasn’t even a backup. _I was the backup’s backup!_
 Even worse, my role on the team was essentially to be a tackling dummy for the varsity team. They needed players to run plays against that they didn’t care about injuring, and I was their guy.
@@ -28,7 +28,7 @@ But as I talked with them about quitting, they helped me realize that with each 
 I was a small, slow, Canadian kid, yet I was tough enough to hang in there with future NFL players _every single day._
 **All of the sudden my perspective shifted.**
 I realized that if I can endure that pain, then I could endure the pain that it will take to get stronger, faster, and smarter. If I can take the beating in practice, then I can take another rep in the weight room, another sprint on the field, and another 30 minutes of studying my position.
-## **FIGHTING THROUGH FAILURE**
+## **fighting Through Failure**
 **After changing my perspective, I showed up to the next practice with renewed enthusiasm.** I had a long road ahead of me, but I knew that if I could stay mentally tough, I could get playing time on the varsity team eventually.
 So I became one of the hardest workers on the team – knowing full well that I was capable of enduring anything at this point.
 The next year, I still wasn’t very good. But due to my work ethic, the coach started me on the junior varsity team over a more talented player.
@@ -43,7 +43,7 @@ I made it. After all of the painful practices, the hours of training, and overco
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1454102310010-GQ5V3OJQN4IUKRW6NYCR/image-asset.jpeg?format=original)
 And that wasn't the end of the story.
 Because our underdog team went on to win our first State Championship in over 25 years – an accomplishment I could never have dreamed of when I first moved to America.
-## **THE GREAT LESSONS FROM FAILURE**
+## **the Great Lessons From Failure**
 I wasn’t the only one who was in pain during sophomore year.
 My parents saw that I was starting to hate football. They saw the size of the players I was up against and knew the role my coach was using me for. It pained them to see me come home from practice every night demoralized.
 **That is why I am eternally grateful to them for talking me out of quitting.** It would have been really easy for them to simply accept my wishes, tell me “well, you gave it your best shot,” and breathe easy as I took my seat in the stands.
@@ -51,7 +51,7 @@ But then I would have never learned two of the most important lessons of my life
 1.  I am capable of handling failure.
 2.  If I work hard and persevere, then amazing things are possible.
 **These are lessons that people have to learn through experience.** I can tell you a hundred stories of failure and perseverance, but it will never truly stick with you until you prove to yourself that you can “take the punches” and keep moving forward. \[[1](http://www.tandfonline.com/doi/abs/10.1080/0729436930120105)\]
-## **THE DOWNSIDE OF The SELF-ESTEEM Movement**
+## **the Downside of the Self-esteem Movement**
 Although the value of learning from failure can be applied to all of us, I directed this article to be about children because there is a [self-esteem movement](http://www.willpowered.co/learn/self-esteem-vs-self-control) across the world that suggests kids are fragile, emotional, and incapable of handling failure.
 **So we need to shelter them from failure.** We need to constantly praise their results, tell them they're brilliant, and “[give everyone a trophy](http://www.huffingtonpost.com/michael-sigman/when-everyone-gets-a-trop_b_1431319.html).” \[[2](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231/ref=sr_1_1?ie=UTF8&qid=1454108067&sr=8-1&keywords=willpower)\]
 To illustrate the downside of this movement, let’s take the story of [Kobe Bryant](http://www.willpowered.co/learn/will-of-kobe-bryant).
@@ -68,7 +68,7 @@ It’s tempting to build up your children’s confidence by praising their natur
 **That is why most parents choose the easy route.** They choose to shelter them from failure, to ensure their feelings aren't hurt, and to give them a trophy for simply showing up.
 You must fight against this temptation.
 You must allow them to take chances, allow them to fail, and allow them to learn through their own experience that it is not the end of the world. They can get up, keep trying, and continue to learn and grow.
-## **CONCLUSION**
+## **conclusion**
 Nobody wants his or her kids to fail, but failure is a part of life.
 The pain I felt on the football field was bad. I wanted it to end more than anything. But by persevering I proved to myself that I’m capable of persevering through hard times. And, in the end, the results were better than I could have ever expected.
 Failing is tough. It hurts the self-esteem. But if your child learns how to deal with failure, it will give her the confidence to take risks, learn from mistakes, and persevere. And isn’t that what we wanted out of the self-esteem movement in the first place?

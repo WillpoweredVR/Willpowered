@@ -23,7 +23,7 @@ And he didn’t realize that these things were not real because he was awake!
 _So how did he do it?_
 **Many simply do not believe it was possible.** After all, David Blaine is a magician. He could have made it all an illusion the same way his hero [Harry Houdini](https://en.wikipedia.org/wiki/Harry_Houdini) once did.
 But those people might not be so skeptical if they knew the [mental training exercises](http://www.willpowered.co/learn/strengthen-your-willpower) Blaine has been doing since he was a boy.
-## **HOW DAVID BLAINE STRENGTHENED HIS WILLPOWER**
+## **how David Blaine Strengthened His Willpower**
 When Blaine was 4 years old, he got his first exposure to magic.
 He saw a magician in the subway near his home in Brooklyn perform the _[Pencil Through a Card Trick](https://www.youtube.com/watch?v=b8pgU05-iv8)_ and was completely blown away. \[[2](http://www.biography.com/people/david-blaine-12127585)\]
 _He couldn’t believe how the man was able to do that!_
@@ -42,17 +42,17 @@ _\- When he turned 18, he fasted for 10 days with only water and wine._
 All of this practice – before he even graduated high school – gave Blaine incredible willpower. \[[1](http://www.amazon.com/gp/product/0143122231/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0143122231&linkCode=as2&tag=willpowered-20&linkId=FWXY62FGMWK344LA)\]
 So by the time he started doing stunts like [spending 36 hours on a 30-meter high pillar](https://www.youtube.com/watch?v=9qRUhQESEs4) that was only half a meter wide, [spending 44 days in a glass box above the River Thames](https://www.youtube.com/watch?v=Ki5fRls2uv4) without food, or [holding his breath for 17 minutes,](https://www.youtube.com/watch?v=olKlc4Bv6CA) he was prepared.
 Just like an athlete who trains to have super-human athletic ability, David Blaine trained himself to have super-human willpower.
-## **HOW TO DEVELOP THE WILL OF DAVID BLAINE**
+## **how to Develop the Will of David Blaine**
 You may have no desire to do any of the stunts or the bizarre practice routines of David Blaine.
 But there are several things we can take from his story to help us endure just 20 more minutes on the treadmill or one more hour of studying.
-### **1.** **WILLPOWER CAN BE STRENGTHENED**
+### **1.** **willpower Can Be Strengthened**
 [Your willpower acts like a muscle](http://www.willpowered.co/learn/willpower-is-a-muscle). Most of the time this is a negative thing. The more you use it throughout the course of a day, the weaker it gets. So you can feel too exhausted to exercise after work – even if you just sat at a desk all day. \[[4](http://www.psy.lu.se/upload/psykologi/pdf/strength_model1.pdf)\]
 **But Blaine’s story proves that you can also strengthen that muscle.**
 By doing things like holding his breath for as long as possible, fasting for days, and staying in a closet without moving, he was strengthening his ability to hold his breath, fast for over a month, and fight sleep deprivation. \[[5](http://www.ncbi.nlm.nih.gov/pubmed/10457761)\]
 All of those things require willpower. And just like Mozart practicing the piano from an early age and mastering it, Blaine was practicing his willpower from an early age and mastering his self-control.
 You do not need to strengthen your willpower to the point of Blaine, but you can increase your chances of making it to the gym or turning down dessert.
 So follow one of these [10 exercises](http://www.willpowered.co/learn/strengthen-your-willpower) and begin strengthening your willpower.
-### **2.** **CHUNKING**
+### **2.** **chunking**
 It was not just pure willpower that allowed Blaine to make it through those final 8 hours of torture in the block of ice, he used a trick that helps him make it through every one of his stunts.
 When he learned that he had 8 hours left, he told himself:
 > “Okay, I just need to make it through the next 2 hours. Then there will only be 6 hours left. And that won’t be so bad.”
@@ -66,7 +66,7 @@ _You may not be able to fathom spending an entire night studying, but can you st
 _You may not be able to fathom sticking to a diet for months, but can you stick to it today?_
 When you chunk up your goals like this, not only does the task become more attainable, but you also grow confidence with each chunk you complete. Each chunk becomes a small win - **giving you more confidence than ever that you will reach your huge goal.**
 Whatever your goal is, start chunking it up into something small enough to be realistic, but large enough to feel like a “win”.
-### **3.** **SOCIAL ACCOUNTABILITY**
+### **3.** **social Accountability**
 Blaine fully admits that if he was not on TV, he would not be able to do these stunts.
 > “I don’t think I’d be able to fast for 44 days if I was in my apartment. The temptation is just too great.”
 
@@ -75,7 +75,7 @@ It's a lot easier to forgive yourself for a failure, than to admit your failure 
 You have a natural desire to be respected by others. And that desire will give you a boost of willpower to ensure that you remain respectable to them. \[[6](https://www.nhlbi.nih.gov/research/resources/obesity/population/framingham.htm)\]
 This is why Alcoholics Anonymous has sponsors, why many people hire personal trainers, and even why religious people have more willpower - _they don’t want to look like a failure in front of God._
 **So find someone who can hold you accountable.** Even if there are no actual consequences for you not living up to your goal, the simple knowledge that someone is holding you accountable will help keep you on track.
-## **CONCLUSION**
+## **conclusion**
 David Blaine is a true master of his willpower muscle. Like Arnold Schwarzenegger strengthening his body at an early age, so too did David Blaine strengthen his willpower.
 So begin an exercise to [strengthen your willpower](http://www.willpowered.co/learn/strengthen-your-willpower) like Blaine strengthened his. Then break up your huge goal into manageable chunks, and find someone to hold you accountable.
 You do not need to do anything as extreme as he does, but if he can strengthen his willpower to endure pain for hours, days, and even weeks, you can strengthen yours to endure a night of studying or an hour at the gym.

@@ -13,7 +13,7 @@ When Charles Duhigg wrote his best-selling book, _The Power of Habit,_ he made a
 Few of us would argue with the statement. After all, most of our lives are merely the accumulation of habits that we have built over the years. Some are positive, some are negative. But whether it’s lacing up your running shoes first thing in the morning, or keeping a fully stocked bowl of M&Ms by your desk, these habits have shaped who we are.
 **But what if we want to make a change to this daily behavior?** Is it possible to reshape our habits so that we can make it to the gym as effortlessly as we brush our teeth? Or to be able to [resist a cookie as easily as we can resist radishes](http://www.willpowered.co/learn/willpower-is-a-muscle)?
 Duhigg talks about a process for accomplishing just such a behavior change which is deeply rooted in scientific evidence known as “the habit loop”. \[[1](http://www.amazon.com/gp/product/B0055PGUYU?btkr=1)\]
-## **HOW HABITS ARE FORMED**
+## **how Habits Are Formed**
 The habit loop starts with an external cue: a time of day, an environment that you enter, seeing or smelling something, etc.
 It is then followed with a routine: it’s the morning so I drink coffee, I just sat down at my desk so I check email, I see cookie so I eat cookie.
 Then you receive a reward: the coffee wakes you up, an empty inbox gives you a sense of accomplishment and the cookie tastes delicious.
@@ -26,7 +26,7 @@ Seems simple, right?
 When I first came across Duhigg’s findings 3 years ago, this all made sense. I just need to design habits in my life and follow this process until they become automatic. This seemed like the easiest and most effective way for me to begin changing my behavior to accomplish my goals.
 But what I found is that **this process has downsides – plenty of them.** It makes sense in theory and even in the laboratory, but fails in the real world with many of the behaviors that we try to change. \[[2](http://vimeo.com/44699354)\]
 **This article will explain why habit formation _is not_ the best strategy for changing your behavior and achieving your goals.** Then I will offer you practical takeaways to accomplish the type of behavior change you want that is rooted in real evidence.
-## **THE BENEFITS OF HABITS**
+## **the Benefits of Habits**
 Before we get into that, though, let’s go over some of the benefits that habits have:
 ### **1.** **They conserve resources**
 Whenever we make a conscious decision about something, [we use mental resources.](http://www.willpowered.co/learn/willpower-is-a-muscle) Every time we have to decide whether or not to floss, we use our willpower. If the behavior is automatic, though, it doesn’t require any mental energy. We simply go through the motion, conserving mental energy for other, more complicated tasks. \[[3](http://www.amazon.com/gp/product/B005ERIRZE?btkr=1)\]
@@ -34,7 +34,7 @@ Whenever we make a conscious decision about something, [we use mental resources.
 If we are stressed or tired from a full day of working, then a good habit is extremely useful to fall back on. For example, if you have developed a habit of eating a healthy snack you enjoy when you get home rather than bag of Cheetos, you will be less likely to indulge even under stress. \[[2](http://vimeo.com/44699354)\]
 ### **3.** **They are useful when it’s mindless**
 As long as the activity is completely mindless, the habit loop will work flawlessly. This includes things like flossing, bringing your lunch to work, wearing a helmet when biking, etc. All of these habits can easily be added to your daily behavior using the habit loop.
-## **THE DOWNSIDE OF HABITS**
+## **the Downside of Habits**
 Now let’s go over some of the downsides of habits that can actually end up hurting you more than helping:
 ### **1.** **They are formed in the primitive brain**
 You know the struggle. You just got home from work and _know that you need to [hit the gym](http://www.willpowered.co/learn/exercise-affects-willpower),_ but you’re exhausted. Then comes the internal debate. Part of you is trying to say that you are exhausted and you need to rest, while the other part of you is saying that you have goals and aspirations of weight loss that are more important!
@@ -65,24 +65,24 @@ Again, let’s assume that you were able to design all of those specific habit c
 The final problem with habits is that we can focus so much on creating the habit, that we lose sight of the goal entirely.
 Let’s go back to our example of creating the running habit in order to achieve our higher goal of health. If we accomplish our running habit in the morning, our brains will "put a checkmark” next to health on our goal to-do list \[[2](http://vimeo.com/44699354)\].
 So later in the day, if we’re tempted to eat unhealthy food, we will credit ourselves for having “accomplished health” for the day and [grant ourselves license to indulge](http://www.willpowered.co/learn/moral-licensing) \[[3](http://www.amazon.com/gp/product/B005ERIRZE?btkr=1)\]. This can lead to not making any progress towards our goal, or even leave us worse off than before.
-## **WHAT ARE WE REALLY SEEKING?**
+## **what Are We Really Seeking?**
 So if not by changing our habits, what is the best way to ultimately achieve our goals?
 First we need to look at what we are really seeking. We're seeking be more [consistent](http://www.willpowered.co/learn/) with in the behaviors that will help us achieve our long-term goals. When we set a plan to go to the gym, we want to achieve it. Not just tomorrow, but for the long-term.
 **So we need to start by delegating this task to the long-term minded evolved brain, and this is why we want to strengthen our willpower.**
-## **TO CHANGE BEHAVIOR, GIVE YOURSELF MORE WILLPOWER**
+## **to Change Behavior, Give Yourself More Willpower**
 The evolved brain is our ultimate decision-maker. **It has the capacity to choose the thing we really want to do even when that choice is hard.** In the classic “angel & devil on our shoulders” situation, the evolved brain is the angel. **And that angel is fueled by our willpower.**
 There are 3 separate types of willpower that this part of the brain uses to help us do what we really want \[[3](http://www.amazon.com/gp/product/B005ERIRZE?btkr=1)\]:
-### **I WILL POWER**
+### **i Will Power**
 This is the power we use to do those tough things to accomplish our goals. This is what we use to workout, clean our homes and follow the dentist’s orders to floss.
 _You can learn more tactics to increase your I Will Power_ [_here_](http://www.willpowered.co/learn/?category=Building+Mental+Strength)_._
-### **I WON’T POWER**
+### **i Won’t Power**
 This is the power we use to resist the various temptations in our lives. This is what we call upon to resist those cravings of chocolate, playing the next episode on Netflix, or holding back our true feelings from rude clients.
 _You can learn more tactics to increase your I Won’t Power_ [_here_](http://www.willpowered.co/learn/?category=Resisting+Temptations)_._
-### **I WANT POWER**
+### **i Want Power**
 **This is the most important willpower we have**. It’s the part of the brain that remembers our long-term goals, dreams and desires. What we really want. It helps us remember _why_ we are resisting that donut or _why_ we are on that treadmill in the first place.
 Unlike the other two forms, this one can [seemingly produce willpower out of nothing](http://www.willpowered.co/learn/inspiration-will-enhance-your-willpower). If you’ve ever heard a motivational speech or read an inspirational story, you’ve felt this happening. You get a rush of energy and motivation to take on the world simply by believing in something bigger.
 **This is the part of the brain that we want to cultivate when we are trying to create behavior change.**
-## **THE WILLPOWER APPROACH**
+## **the Willpower Approach**
 To cultivate this part of the brain and strengthen our willpower, we can use 3 strategies:
 ### **1.** **Automating Goal Pursuit**
 **Instead of automating our behaviors, we want to automate our dedication to our goals.**
@@ -98,7 +98,7 @@ When you get into a relationship with someone, **would you create a habit to sta
 No, you would make a **commitment**. You would have a principle (hopefully) of being faithful to that person even if someone else may tempt you from time to time. It doesn’t require that you design a habit in order to stay faithful, it just requires that you **believe in the greater purpose of the relationship**. \[[3](http://www.amazon.com/gp/product/B005ERIRZE?btkr=1)\]
 This same principle holds true for our goals as well. In many cases you don’t need to have a specific behavioral response to avoid a temptation, you just need a higher purpose. Whether that is your health, being a good role model for your kids, or a dream to believe in.
 Making a commitment to your goal will help you deal with challenges that you could never foresee coming. Scientifically, this commitment calls your evolved brain into action when it gets challenged. **This will give you motivation to act on your long-term aspirations**. \[[7](http://www.ncbi.nlm.nih.gov/pubmed/19455377)\]
-## **CONCLUSION**
+## **conclusion**
 Charles Duhigg’s book, _The Power of Habit,_ changed my life. It gave me a framework to see how our habits are created and allowed me to believe that if I could change my daily behavior, my goals would eventually be accomplished. However, the real world is not black and white enough to simply set a cue, routine, reward, and then expect major life changes to happen.
 We are constantly given different scenarios that challenge our focus on our long-term goals. When this occurs, it is far better to be mindful of the situation, and think about how we can make the decision that is consistent with what we really want in life. No matter how perfectly we design habits into our lives, we will never be able to completely avoid the angel and devil on our shoulders scenario.
 So the best thing we can do to change our behavior and give ourselves a chance at long-term success is to give as much power to our evolved, rational, “angel” mind as possible. In the end, it is this mind who determines our ultimate action. **No matter how tired, how stressed, or how overwhelmed we are, we always have the willpower to do what is right.**

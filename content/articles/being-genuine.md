@@ -10,7 +10,7 @@ featuredImage: "https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3
 
 5am… time to get started on the new day and start [my new plan](http://www.willpowered.co/learn/embarrassing-wakeup-call) of reaching out to others!
 But this time, my focus was on _helping them,_ not helping myself. Here is how each point in the plan went:
-## **1.** **FOCUS ON TEACHING, NOT SELLING**
+## **1.** **focus on Teaching, Not Selling**
 I was blown away by the response from subscribers as I checked my inbox in the morning. It was full of support, awesome inspirational quotes, and truly kind words.
 **There aren't many people who get to wake up to that and I am deeply grateful.**
 I was worried about how you would respond to me sharing this story, and I am so glad that those worries weren’t justified!
@@ -21,7 +21,7 @@ Before, I had been posting things like:
 So I changed it to: “[How I’m saving my Kickstarter when everything once seemed lost.”](http://www.kickstarterforum.org/how-i-got-my-kickstarter-back-on-track-when-all-seemed-lost-t5901.html)
 **Result: 38 visits, 4 pledges, 6 replies, and even more coming….**
 _I’d say that’s a success!_ I can’t wait to share the story even more on day 7!
-## **2.** **SUBSCRIBE TO AT LEAST 3 BLOGS AND SEND THEM GENUINE EMAILS OF PRAISE**
+## **2.** **subscribe to at Least 3 Blogs and Send Them Genuine Emails of Praise**
 Now I was excited!
 So I looked up the top [100 self-development blogs](http://www.startofhappiness.com/top-100-personal-development-blogs-2015/) to find who the best of the best were and hopefully find some that I would enjoy. I was looking to offer praise for at least one article that I really liked from all 3 blogs.
 I started by looking at sites that get around the same traffic as me – Willpowered would have ranked 52nd on the list if it was written last month – and I started to browse their sites for their best articles.
@@ -38,18 +38,18 @@ I remembered that he just announced [his book was on pre-order](http://alifeofpr
 **Every word genuine.** A couple of hours later, I hear back from him thanking me and asking for a link to my Kickstarter page – _he pledged $45_ (far more than the cost of his book!)
 **This is someone I didn’t even think would respond!**
 It’s amazing how far genuine support can go – can’t wait to do it again.
-## **3.** **REVIEW 3 KICKSTARTER PROJECTS AND BACK ANY I BELIEVE IN**
+## **3.** **review 3 Kickstarter Projects and Back Any I Believe In**
 After my forum post, I didn’t even need to browse Kickstarter!
 I had people reply to me (all of which backed _[The Will of Heroes](https://www.kickstarter.com/projects/743524537/the-will-of-heroes)_) asking me to check out their projects and give them feedback.
 There was only one that I backed, ([which I cannot wait for!](https://www.kickstarter.com/projects/electric-indy/pocket-rocket-your-car-charger-and-battery-bank-in)), because just like with reaching out to bloggers, I only want to back projects that I genuinely believe in.
 I'm looking forward to seeing my replies tomorrow!
-## **4.** **ANSWER 3 QUESTIONS ON FORUMS**
+## **4.** **answer 3 Questions on Forums**
 Besides my own posts, I also answered the questions from the community.
 **One thing was clear:** there are those who are looking to contribute to the community, and those who are just asking a question as a cover to help spread the word about their project. They really don’t care about your answer.
 **That certainly reinforced my idea of being genuine.**
 I could see exactly how my earlier posts were viewed by the public. _No wonder I got only 2 views!_
 It didn't make a huge impact yet, but I will certainly answer another 3 questions on day 7!
-## **5\. CONTINUE TO THOUGHTFULLY ANSWER EVERY SUBSCRIBER EMAIL**
+## **5\. Continue to Thoughtfully Answer Every Subscriber Email**
 This was obviously a success. Again, thank you for the words of encouragement, inspiration, and support.
 **You guys are awesome!**
 Please do not hesitate to ever email me with anything I can do to help.

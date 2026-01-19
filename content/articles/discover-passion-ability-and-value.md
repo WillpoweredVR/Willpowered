@@ -21,7 +21,7 @@ They are always searching for the 8-week ab program…the 12-day juice cleanse�
 _This is Kobe Bryant using his insane work ethic to practice harder than any other basketball player, period._
 _This is Temple Grandin using her empathy for animals and ability to think in pictures to revolutionize the design of feedlots._
 _This is Warren Buffett passing on short-term gains from “boom markets” to focus on his long-term growth of 12% every year._
-## **HOW DOES ONE BECOME A HEDGEHOG?**
+## **how Does One Become a Hedgehog?**
 I first learned about the hedgehog concept in [Jim Collins](http://www.jimcollins.com/)' book, [](http://amzn.to/2aEejp7)_[Good to Great](http://amzn.to/2aEejp7),_ which explores how companies go from mediocrity to greatness. He found that every great company, and the great people within them, approaches life with a “hedgehog strategy.”
 **It is simple, it is effective, and executed to perfection.**
 However, these strategies did not just come out of nowhere. They were deeply rooted self-awareness and understanding of what you are deeply passionate about, what you are naturally skilled in, and what drives your economic engine.
@@ -37,7 +37,7 @@ If you only focus on what people will pay you for, and what you can become the b
 If you focus only on what you can become the best the world at, and what you’re passionate about, then you will not learn how to create something that is truly valuable to society.
 This would be like [J.K. Rowling](http://www.willpowered.co/learn/jk-rowling-rags-to-riches) giving up on Harry Potter after being rejected by 12 publishers, keeping the story in her personal journal, and never sharing the books that inspired millions of kids like me to start reading.
 Most people stop searching after discovering 2 of these circles. There's nothing wrong with that, as it will lead to a good life. But to achieve a great life, no matter what a "great life" is to you, you must continue to search for all 3.
-## **DISCOVERING ALL 3 CIRCLES**
+## **discovering All 3 Circles**
 After learning about the hedgehog concept, **I have been on a mission to discover all 3 of my circles.**
 It has not been easy. But with each step, I'm getting a little bit closer to understanding how I can leave this world a little bit better than I found it. I'm writing about this today because I have taken a big step in the last month towards discovering my 3 circles.
 But to provide context, and give you some concrete ideas for finding your hedgehog, I wanted to share my full journey...
@@ -84,7 +84,7 @@ I am building a platform that connects content creators who are always finding n
 With the end goal to provide reliable, expert-quality information, presented through innovative, engaging instructors – to give every individual the opportunity to learn, grow, and achieve whatever greatness they seek.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1469648239167-2O840OYGXYDZMBHRXB9H/%234+Hedge.png?format=original)
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1469648354530-RYZ0JSMSDVWTA0COD5Z3/%234.png?format=original)
-## **CONCLUSION**
+## **conclusion**
 _Good is the enemy of great._ Since I first read those words, I've tried to live them every day of my life.
 I've constantly been searching, experimenting, and working toward finding the intersection of my passion, talent, and value–_and I believe that now I have found it._
 This is just the beginning, obviously, but the combination of my passion, talent, and value is crystal clear.

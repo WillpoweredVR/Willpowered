@@ -19,7 +19,7 @@ _Where would you be today if you spent 20 minutes/day in the last year exercisin
 _Where would you be today if you spent 20 minutes/day in the last year learning a new language?_
 _Where would you be today if you just ate a [healthy breakfast](http://www.willpowered.co/learn/what-to-eat-for-breakfast) every morning?_
 **And that's just 1 year!** Imagine if you spent the last 5 or 10 years of your life making these slight changes to your daily routine. Would you still be struggling with your weight or falling short of your goals?
-## **THE SLIGHT EDGE**
+## **the Slight Edge**
 Every year, millions of us forget about the idea of small changes accumulating into big results and instead set huge goals for the New Year.
 **We set goals to quit smoking, eat healthy, exercise and spend more time with our family - all at the same time!** Then after just a few weeks, we are burnt out and left feeling helpless to ever achieve our goals and dreams.
 **That is, of course, until next New Years!**
@@ -30,7 +30,7 @@ This is a concept known as the [Slight Edge](http://www.amazon.com/Slight-Edge-T
 Great results take time, they take patience and they take willpower to ensure that you show up consistently. Your brain is literally wired to achieve these slow results over time. This was formed as we began to make slow progress in the designing of tools and learning which hunting strategies worked best. \[[3](http://www.amazon.com/Origins-Modern-Mind-Evolution-Cognition/dp/0674644840)\]
 **So why do so many of us ignore the Slight Edge and go for big results, fast?**
 There are two key reasons we do not use the Slight Edge to our advantage:
-## **"Just THIS ONCE"**
+## **"just This Once"**
 What change would happen to your body today if you ate a delicious hamburger and fries with your favorite beer?
 Absolutely none.
 What change would happen to your body today if you spent a full hour exercising?
@@ -43,7 +43,7 @@ I will fully admit that even I, Mr. Willpower, am absolutely guilty of telling m
 **This is a classic triumph of hope over experience.** Look back over the last few months. How many times did you promise yourself that you would skip out on your plan "just this once"?
 It is never an isolated incident. Yet, even though _we know_ deep down that it really won't be just this once, we still convince ourselves that this time will be different. Our future self will magically summon the discipline that we could not.
 When, in reality, our future self will probably be exactly like us. They will be tired, stressed and looking for justification to indulge "just this once".
-## **WE WANT IT NOW!**
+## **we Want it Now!**
 The second reason we don't adhere to the Slight Edge is because we want results and **we want them NOW!**
 _So we choose to go for the crash diet that promises that we will lose 10lbs in 2 weeks._
 _We choose to go from not exercising at all to trying to exercise every day._
@@ -54,7 +54,7 @@ Because these goals are nagging at us, we want to get them done as soon as possi
 The second reason is called [the planning fallacy](http://www.willpowered.co/learn/the-planning-fallacy). We believe that our future selves will have extraordinary time, [extraordinary focus](http://www.willpowered.co/training-your-focus) and extraordinary willpower to get things done. This phenomenon is so bad that we usually cannot even live up to our worst case scenarios. \[[6](http://psycnet.apa.org/?&fa=main.doiLanding&doi=10.1037/0022-3514.67.3.366)\]
 When we set our plans for the future, we do not think about the fact that we will be tired, we will be tempted and we will be low on willpower in the future. So we plan for the best - even when we may think that we're planning for the worst.
 So not only do we want big results, fast - we genuinely believe we can achieve them!
-## **TO CREATE A BETTER FUTURE, LOOK TO THE PAST**
+## **to Create a Better Future, Look to the Past**
 The key reason that we don't take advantage of the Slight Edge, is because we look to the present and the future, rather than the past.
 When think about the present, we think "just this once".
 When we think about the future, we think "we want those results - and we want them fast!"

@@ -21,7 +21,7 @@ But I never would have developed these skills without one crucial factor:
 > I'm willing to look stupid.
 
 And it is better to look stupid than perfect.
-## **WHY WE AVOID LOOKING STUPID**
+## **why We Avoid Looking Stupid**
 The desire to be liked by the crowd [is in our DNA.](http://www.willpowered.co/learn/evolution-of-willpower?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Stupid)
 We survived the [harsh living conditions](http://www.willpowered.co/learn/built-for-focus-and-deliberate-practice?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Stupid) of our ancestors by sticking together in a tribe.
 Due to our unique ability to work together, the tribe was safe. To maintain our place within it, we tried to show our strengths and hide our weaknesses.
@@ -32,7 +32,7 @@ With enough time, effort, and filter selection, I can make it look like I'm livi
 _Why admit to the world that I had to move back in with my parents, when I can just highlight the fact that I'm a published author!_
 _Why take a chance, start something new, and risk falling flat on my face?_
 **_Why look stupid, when I can look perfect?_**
-## **THE BIG PROBLEM WITH LOOKING PERFECT**
+## **the Big Problem With Looking Perfect**
 Nobody is perfect.
 We all have flaws. Being imperfect is part of being human.
 **We all know this.**
@@ -40,7 +40,7 @@ So trying to look perfect will only isolate you from your friends and from reali
 Rather than confront your issues, your weaknesses, and become more self-aware — **your strategy will become denial.**
 You will begin to avoid anything that reveals your weaknesses, you will run away from challenges, and you will cover up anything that doesn't fit your idea of perfection.
 Eventually, you will spend the majority of your time and energy hiding your flaws — rather than improving them.
-## **IMPROVING YOUR FAILURES**
+## **improving Your Failures**
 Whenever I tell someone that I create content for a living, it's usually followed up with some version of the question,
 > "...that's your full-time job?"
 
@@ -62,7 +62,7 @@ If he's claiming that at best he produces something that is merely "good," what 
 Slim to none — but there's still a chance.
 **The difference comes down to your will to look at your own failures**, your own weaknesses, and your own stupidity. Then come back the next day and make your flaws just a little bit better.
 It is in this state of mind which I have thrived.
-## **MY STUPIDITY — AND WILL TO IMPROVE IT.**
+## **my Stupidity — and Will to Improve It.**
 When I started Willpowered I had a simple goal:
 > Write 1,000 words every day.
 
@@ -75,7 +75,7 @@ But I am less embarrassed by the drafts I write today than the ones I wrote last
 I will never write a perfect article, a perfect paragraph, or even a perfect sentence — _but that's not the goal._
 The goal is to write 1,000 words per day that help you understand abstract scientific concepts and use them on your journey to become your best self.
 And no matter how stupid I may look to myself or others, **I will do everything I can to make that happen.**
-## **CONCLUSION — MAKE YOUR WORRIES CONCRETE**
+## **conclusion — Make Your Worries Concrete**
 Much of our concern about "what people will think" comes from our [fear of the unknown](http://www.willpowered.co/learn/fear-kills-willpower?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Stupid).
 I still worry every time I publish a new article that I'm going to get "hate mail" from a subscriber who was shocked and offended by the horribleness of my writing.
 **This worry, however, only exists in the unknown.** I've written over 200 articles, and have only received 1 harsh email that really stung — which was over 2 years ago now.

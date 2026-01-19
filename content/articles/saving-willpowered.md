@@ -20,7 +20,7 @@ I couldn't get the thoughts out of my head. I knew in my heart that Willpowered 
 **But then I snapped out of it.**
 _I still have 45 days left. This isn’t over. Time to get to work._
 This is how I saved Willpowered and helped it become more vibrant than ever.
-## **CONFRONTING THE BRUTAL FACTS**
+## **confronting the Brutal Facts**
 The biggest issue I had up until that point was not confronting the brutal facts. \[[1](http://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996/ref=sr_1_1?ie=UTF8&qid=1447709283&sr=8-1&keywords=good+to+great)\]
 Willpowered was not growing. Some ideas that I thought were brilliant were not working. I made some terrible decisions about where to invest my money, and simply ignored the consequences of that.
 That Saturday on the lake was the first time I truly confronted the brutal facts of my reality. Once I confronted the fact that everything was coming to an end, I started confronting the other brutal facts as well.
@@ -30,13 +30,13 @@ _And The Will of Heroes manuscript was sitting there for months without me touch
 **Then it hit me! [_The Will of Heroes!_](http://www.willpowered.co/the-will-of-heroes?ref=in-text)**
 The research project that initially ignited my passion for willpower was being ignored. My first draft was just sitting there. Untouched for months because I was distracted by other opportunities.
 It was time to get back to work on it. If this ship was going down, I was going to spend my last days on the project that I truly loved.
-## **FOCUS**
+## **focus**
 When your life is in balance, you make steady progress. You achieve an equilibrium and allow small changes to add up to big improvements over time. This is known as the "[slight-edge](http://www.willpowered.co/learn/slight-edge)" and it is one of the keys to mastery.
 But sometimes in life, balance is not what’s required. Sometimes you need to tip the scales in one direction. And that requires focusing on one thing and putting all of your effort into it. \[[2](http://www.inc.com/laura-montini/gary-vaynerchuk-s-secret-to-work-life-balance.html)\]
 **So I became hyper-focused.**
 I revisited the manuscript, updated it with my current research, added pieces to the stories that I have since written about, and added [Temple Grandin](http://www.willpowered.co/learn/temple-grandin-overcame-autism) as one of the heroes.
 Everything else – family, friends, exercise, marketing, everything – was put in the “it can wait” pile as I forced myself to focus on _The Will of Heroes_ until the manuscript was 100% complete.
-## **OPTIONS**
+## **options**
 It took me 3 weeks of focus to update the manuscript, re-edit it, and get it ready to be published. That meant I now had only 24 days until the lights were turned off.
 The big problem…_how do I make this word document into an actual book?_
 My options:
@@ -48,7 +48,7 @@ As a first time author, I had little chance of even getting a publisher to look 
 Next, although I'm working hard to become a great writer, I am far from a great editor. If I self-edited the book, it wouldn’t do justice to the heroes I wrote about. The end product would be amateur and worthless. Option 2 was tossed.
 At this point, I had already raised a total of over $100,000 from friends and family alone in my various startup failures. I couldn’t ask them for any more given the reality of my situation. Option 3 was tossed.
 **So it was option 4 or nothing. And I didn’t have any time to waste.**
-## **KICKSTARTER**
+## **kickstarter**
 Those who succeed on Kickstarter campaigns start marketing months in advance.
 They start creating connections, informing their personal networks, and building subscriber lists strictly for the purposes of their Kickstarter.
 _With 24 days left, I didn’t have time for any of that!_
@@ -57,14 +57,14 @@ My only option was to go to the bank and try to extend my line of credit. Luckil
 **It was my last bet. _Now I really could not fail._**
 So I started investing in marketing. I read everything I could about who is successful on Kickstarter and why, then created a plan based on that research. With the plan ready, I launched the campaign on October 12th.
 _30 days. $12,000. Do-or-die._
-## **THE FIRST 20 DAYS**
+## **the First 20 Days**
 Despite the humbling experience that I endured up to that point, I was still cocky.
 I believed that with the popularity of the Willpowered blog, my "genius" book concept, and the marketing plan I had, I was going to make it. **After all…willpower! That’s my thing! I can do this!**
 But, as I outline in [this post](http://www.willpowered.co/learn/kickstarter-didnt-go-viral), I was dead wrong. Things were beginning to look very bad. The only people who pledged the campaign were fiercely loyal subscribers and close friends.
 **So with 10 days left on the Kickstarter, I felt like I was finally at the end of my road.**
 I was only halfway to the goal. I was out of friends. Subscribers were tired of me trying to sell them. And I had run out of blogger/press connections.
 My hope was dwindling…
-## **IT’S NEVER OVER**
+## **it’s Never Over**
 It was then that I had a wake up call - I was being completely selfish! [I was only focused on myself and my goal.](http://www.willpowered.co/learn/embarrassing-wakeup-call)
 Since that day out on the lake, where the brutal fact of the impending doom of Willpowered was coming, **I was focused on one thing – saving it.**
 While it was good that I was focused, I realized that I was also selfish. I was waiting for others to come around and help me, but I wasn’t willing to do the same for them.
@@ -79,7 +79,7 @@ Instantly, everything changed.
 -   Day 24 - $397
 -   Day 25 - $1305
 That 5 days put us within $1200 with 5 days left!
-## **THIS IS HAPPINESS**
+## **this is Happiness**
 The night of Day 25 my computer crashed at 11:47pm – **permanently** **deleting the blog post I had been working on for the last 3 hours.**
 _I was tired. I was out of willpower. And I couldn't believe I had to redo 3 hours of work!_
 But then I received a message from a fellow [author on Kickstarter](https://www.kickstarter.com/projects/1431327156/bodywhealth) right as I was ready to toss my computer out the window.
@@ -98,7 +98,7 @@ I instantly thought back to my realization at the lake house when I had to confr
 I thought about all of the doubts, the fears, the anxiety, and the willpower I expended since that day. Then I allowed myself to feel the emotional weight, and I just broke down.
 Much like this…
 _(I'm not going to say my life was nearly as bad as Chris Gardner's - he was homeless - but if things didn't work out...it wouldn't have been much better)._
-## **CONCLUSION**
+## **conclusion**
 This was tough to write about. I made some bad mistakes over the last 2 months.
 I probably shouldn't have got so close to the edge. I probably should have had a backup plan if the Kickstarter didn't work out. I probably shouldn't have made that last bet which would have put me into further debt if it didn't work out.
 But it was precisely because I had no other option that I was able to summon the willpower I needed to think outside of the box, devote everything I have to this, and push my comfort zone in ways I didn't think possible.

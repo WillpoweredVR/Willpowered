@@ -13,14 +13,14 @@ Compared to a desk job, hotel maids are quite active. The scrubbing, vacuuming, 
 _In fact, it adds up to over 900 calories!_ [1](http://amzn.to/2faQ87q)
 I don't know about you, but that's more than even I burn on a daily basis. However, 1/3rd of hotel maids believe they get **don't get any exercise!**
 This stat made researchers wonder — _if the maids change their mindset, would they change their behavior?_
-## **A CHANGE IN MINDSET**
+## **a Change in Mindset**
 To find the answer to their question, researchers gathered the employees of several hotels and separated into two groups.
 One group learned the facts about their daily exercise. They received lists with how many calories each part of their job burned – from folding towels to changing the bed.
 The second was the control group. They received no exercise information so researchers could compare the difference in understanding of the facts.
 After four weeks, without any instructions to diet or change their behavior, the maids who knew the facts started losing weight — while the other group remained stagnant.
 By changing their mindset Toward their daily tasks, they recorded seeing their work as good for their bodies better than hard on them.
 Over time, this new attitude toward their work led to incredible improvements in their health, happiness, and fulfillment in life.
-## **HOW YOUR MINDSET AFFECTS YOUR RESULTS**
+## **how Your Mindset Affects Your Results**
 If this change in mindset seems heart believe, I don't blame you.
 \*If they're doing the same work, why does a change in attitude matter?
 Are you trying to say that if I believe pizza is good for me, all of a sudden it will become healthy?\*
@@ -39,7 +39,7 @@ The other group of maids, however, just saw themselves as “working.”
 **This distinction is crucial.**\[3\]
 If you feel overwhelmed, it’s going to require a lot of willpower to overcome that perspective and take action toward your goals.
 However, if you feel capable of handling the challenge, you will get an instant boost of willpower to rise to the occasion — as I learned two weeks ago.
-## **HOW I CHANGED MY STRESS MINDSET**
+## **how I Changed My Stress Mindset**
 I felt paralyzed as I sat down and stared at the screen...
 It seemed like no matter what I just couldn't keep up with my work. I was over- promising and under-delivering. I was barely sleeping, I was missing deadlines, and didn't know how I was going to handle this.
 A downward spiral began as I had more work, less willpower, and less confidence in myself to get on top of everything.
@@ -65,7 +65,7 @@ When I changed to a "stress is good" mindset:
 The change was incredible. And the results have been exponentially growing every day since.
 This made me realize, even if the evidence in Dr. McGonigal's book was proven false, the results from choosing to see the benefits in stress were real.
 As real as the declining numbers on the scale for the maids.
-## **CONCLUSION**
+## **conclusion**
 Your mindset matters.
 If you see yourself as an exerciser, it will require less willpower to act like an exerciser. If you see yourself as lazy, you will waste willpower just trying to prove yourself wrong.
 That is why the right mindset is crucial — but it is only half the battle.

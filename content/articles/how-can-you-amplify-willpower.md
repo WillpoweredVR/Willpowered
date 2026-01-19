@@ -22,7 +22,7 @@ We talk about the keys to mastering willpower, the best habits, and more!
 -   Q: What does your daily routine look like?
 -   Q: Who were your mentors (either in person or virtual) and how did they help you streamline your growth as an entrepreneur and writer?
 -   Q: What are you most excited about right now?
-## **RAPID FIRE QUESTIONS:**
+## **rapid Fire Questions:**
 -   What is the #1 habit you contribute most to your success? Typing 1,000 words per day
 -   What is the #1 book you’ve recommended to others and why? [Mastery](http://amzn.to/248mX29) , [Willpower Instinct](http://amzn.to/1RrNzE2) and the [Will of Heroes](http://amzn.to/1RrNIr9).
 -   What is your favorite online tool or app? [SumoMe](https://sumome.com/partner/startstopdo)

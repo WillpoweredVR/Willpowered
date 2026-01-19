@@ -40,7 +40,7 @@ And this all took place _before_ practice!
 At 34 years of age, with 5 NBA championships, 2 NBA Finals Most Valuable Player awards, 2 scoring titles, and soon to be 2 Olympic Gold Medals, Kobe was still **waking up before 4am and working out for at least 7 hours before practice even began**!
 To those who have read about [Kobe Bryant’s work ethic](http://www.willpowered.co/learn/will-of-kobe-bryant), this should not come as too much of a shock to you. He is widely recognized around the NBA as the hardest worker.
 **But this insane work ethic did not happen overnight.** It has been the process of decades of hard work and dedication that began when Kobe was 12 years old.
-## **HOW KOBE DEVELOPED HIS INSANE WORK ETHIC**
+## **how Kobe Developed His Insane Work Ethic**
 At the age of 12, Kobe entered a basketball summer camp and [did not score a single point](http://www.theplayerstribune.com/kobe-passes-jordan/).
 _Not one jumper..._
 _Not one layup..._
@@ -60,9 +60,9 @@ He forced himself to make 400 shots every single practice. He put himself throug
 Some NBA players love to play under the bright lights of the arena, but Kobe Bryant loves to put in the work before the lights even come on…**and stay long after they’re turned off.**
 Clearly, this man has reached a level of dedication and fitness that surpass what many of us believe is possible. But, whether or not he realizes it, his muscles and his basketball skills are not the only things that got stronger from all of this work.
 Throughout this process, Kobe was also [strengthening his willpower.](http://www.willpowered.co/learn/willpower-is-a-muscle)
-## **WHAT WE CAN LEARN FROM KOBE BRYANT**
+## **what We Can Learn From Kobe Bryant**
 For many of us, it is too late to start our path to becoming a Hall-of-Fame basketball player. But there are still many lessons we can learn from Kobe that can be applied to our own lives.
-### **1\. TALENT IS OVERRATED**
+### **1\. Talent is Overrated**
 Kobe is one of the greatest basketball players of all time–but he did not get there through talent.
 Clearly, there were other kids at the basketball camp he attended as a 12 year-old that had much more natural ability than he did. None of which will be joining Kobe in the NBA Hall-of-Fame.
 **Kobe [achieved greatness](https://book.willpowered.co/sample) simply because he had the willpower to outwork everyone else.**
@@ -72,21 +72,21 @@ In our lives, we always want to credit those who are successful as simply [havin
 We don't see [Howard Schultz](https://en.wikipedia.org/wiki/Howard_Schultz) getting rejected by over 100 investors when trying to raise the capital to get Starbucks off the ground. \[[3](http://www.amazon.com/Pour-Your-Heart-Into-Starbucks/dp/0786883561/ref=sr_1_1?ie=UTF8&qid=1421704377&sr=8-1&keywords=pour+your+heart+into+it)\]
 We don't read about [Leonardo DaVinci](https://en.wikipedia.org/wiki/Leonardo_da_Vinci)’s bastard childhood–where he was not allowed to get a real education, so he spent every waking hour practicing painting. \[[4](http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/ref=sr_1_1?ie=UTF8&qid=1421704412&sr=8-1&keywords=mastery)\]
 There are [countless other stories](http://www.willpowered.co/learn/jk-rowling-rags-to-riches) of the truly great performers in our world not achieving success though talent, but sheer ferocity of will. \[[5](http://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/ref=sr_1_1?ie=UTF8&qid=1421704609&sr=8-1&keywords=talent+is+overrated+what+really+separates+world-class+performers+from+everybody+else)\]
-### **2\. DO NOT REST ON YOUR LAURELS**
+### **2\. Do Not Rest on Your Laurels**
 There were countless opportunities for Kobe to stop working so hard.
 In High School he was completely dominating other teams. He could have easily settled into life as a lazy, arrogant jock; but he didn’t. Even though he was the best High School player in the country, **he still showed up at 5am and left at 7pm.**
 When he got to the NBA, he could have believed in his own hype as one of the top draft picks, but he didn’t. He outworked everyone on his team and forced them to stay long after practice with him so they could get better.
 When he won 5 NBA championships and was arguably the best player in basketball, he could have coasted his way into the Hall-of-Fame, but he didn’t. **He still showed up 7 hours before practice.**
 When we reach a certain level of success, there are a lot of reasons for us to [stop working so hard](http://www.willpowered.co/learn/perseverance). In fact, our society almost wants us to stop working–claiming that pursuing more wealth, fame, or success is “greedy.”
 But to achieve true "Hall-of-Fame" greatness requires that we are always working to get better. We are always trying to improve. And we are always striving to be the [best version of ourselves.](http://www.willpowered.co/learn/identity) Even when we are already successful.
-### **3\. HAVING A HERO IS POWERFUL**
+### **3\. Having a Hero is Powerful**
 When Kobe Bryant scored zero points in his basketball camp, he genuinely considered giving up basketball forever.
 Growing up in Italy, Kobe also spent his youth playing soccer and showed a lot of promise in the sport. But because Michael Jordan had proven to him that with enough hard work he can overcome his lack of talent, **Kobe was inspired to follow Michael's lead.**
 [Heroes blaze the trail](http://www.willpowered.co/learn/heroes-strengthen-willpower?rq=heroes) and show us what can be accomplished. This is so powerful that even [Warren Buffet himself](http://www.willpowered.co/learn/warren-buffet-willpower-formula) credits his success to the fact that he “picked the right heroes”.
 Heroes are not just for kids. We can all be inspired by those who have achieved our goals, or stand for our principles. Although we may all have different advantages, upbringings, and genetic traits, **we are all given 24 hours in the day to spend as we choose.**
 If we choose to spend those hours like our heroes, there is a good chance that we will end up with similar results. Kobe followed Michael by outworking everyone on his [path to greatness.](http://book.willpowered.co/sample)
 Kobe is one of my heroes. Although I will not be following his path through the NBA, I will follow it to becoming the best I possibly can be through hard work, willpower, and [perseverance](http://www.willpowered.co/learn/perseverance). And maybe one day I will achieve my own greatness as he achieved his.
-## **CONCLUSION**
+## **conclusion**
 Talent is overrated. It is one of the great flaws in our nature to credit anyone with extraordinary skill, intelligence, or ability, as simply born with more talent than us. We see the results of their work without seeing the countless hours of struggle that it took to get them there.
 Kobe Bryant is the perfect example of how greatness isn't achieved through talent, but through sheer willpower.
 Since the day he came home from being embarrassed by more talented players at his basketball camp, Bryant has refused to be outworked. And it is because of this relentless determination that he will go down as one of the greatest basketball players of all time.

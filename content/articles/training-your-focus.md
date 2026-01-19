@@ -17,7 +17,7 @@ See if you can write down a list of all 50 states.
 When you have listed 10, see if you can continue writing them while also figuring out the answer to 18 x 23.
 …
 _Were you able to do it?_
-## **WHY WE ARE TERRIBLE MULTI-TASKERS**
+## **why We Are Terrible Multi-taskers**
 We have 2 distinct parts of our brain that help in our problem-solving. One is the [limbic system](https://en.wikipedia.org/wiki/Limbic_system), which makes our easy and automatic decisions such as brushing our teeth, or stopping at a red light.
 The other is the [pre-frontal cortex,](https://en.wikipedia.org/wiki/Prefrontal_cortex) which solves more difficult problems like effectively communicating with someone, or solving more complicated math problems like the one above. \[[1](http://www.amazon.com/gp/product/0374533555/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0374533555&linkCode=as2&tag=willpowered-20&linkId=IW6D3B7HSSX7YFMN)\]
 The problems above both require the pre-frontal cortex to solve.
@@ -26,7 +26,7 @@ If I were to ask you to write the 50 states while doing a simple problem like 10
 So if you really do try to follow the plot of a good movie, do thoughtful work, and carry on a conversation with a friend — all tasks of which require the prefrontal cortex — you will unknowingly actually be switching from one task to the next and not giving your full attention to all 3.
 This means you will be missing out on important information in the movie, making major mistakes in your work, and probably giving your friend poor advice.
 To see just how bad we humans are at multi-tasking, [watch this self-proclaimed multi-tasking genius be put to the test.](https://www.youtube.com/watch?v=PkBa5oHXgsE)
-## **WHY OUR BRAINS REQUIRE FOCUS**
+## **why Our Brains Require Focus**
 Have you ever wondered why some animals have eyes on the front of their heads and others on the side? They serve two very different purposes, which played a significant role in the evolution of the species.
 Frontal eye placement, like we have, has a narrow line of vision. This allows an animal to see more detail on objects up close as well as into far off distances.
 Whereas placement of eyes on the side of the head allows an animal panoramic view of its environment, giving them the ability to scan the entire area for predators.
@@ -38,7 +38,7 @@ Side-sighted animals, on the other hand, had a view of their surroundings at all
 Over time, the differences in focus and multi-tasking began to move front-sighted animals further up the food chain. Because we had to focus and think abstractly, our brains developed much more rapidly than the simple scan and react mindset of the side-sighted animals.
 We were training our brains to think deeper about objects within our sight.
 This helped us learn more about the physical properties of things and how we could use them to make tools to hunt and defend ourselves. Because things in our environment had our complete focus and attention, we were able to learn and think creatively to help ensure our survival. \[[3](http://www.amazon.com/The-Inner-Eye-Intelligence-Evolution/dp/0192802445)\]
-## **WHAT THIS MEANS TODAY**
+## **what This Means Today**
 Today our society unjustly reveres those who are great at multi-tasking. Because there are so many stimuli that we can respond to, and so many things that we can be doing at once, we believe doing so is beneficial.
 What multi-taskers do not realize, however, is that this process _actually devolves their brain!_
 Rather than following our ancestors lead by training the brain to learn and be creative through deep focus, they are actually following the path of the side-sighted animals. \[[4](http://www.amazon.com/Mastery-Robert-Greene-ebook/dp/B007V65PBK/ref=sr_1_1?ie=UTF8&qid=1415642840&sr=8-1&keywords=mastery+robert+greene)\]
@@ -47,7 +47,7 @@ Not only will this lead to low-quality work, _but it will also strengthen the li
 The flip-side, though, is that **you can** [**strengthen your willpower**](http://www.willpowered.co/learn/strengthen-your-willpower) **by training your mind to focus**. If you truly [focus on one task at a time](http://niklasgoeke.com/focus-on-what-matters/), not only will you do better quality work, but you will also be training your pre-frontal cortex.
 You will be exercising your ability to solve problems by relying on the part of your brain that is responsible for your willpower.
 This means that when the problem of “should I resist those donuts” comes up, your brain will naturally rely on the pre-frontal cortex to solve the problem, rather than the limbic system. \[[4](http://www.amazon.com/Mastery-Robert-Greene-ebook/dp/B007V65PBK/ref=sr_1_1?ie=UTF8&qid=1415642840&sr=8-1&keywords=mastery+robert+greene)\]
-## **AN EXERCISE TO INCREASE YOUR FOCUS**
+## **an Exercise to Increase Your Focus**
 To train your brain to become more focused, try this meditative exercise from [Andy Puddicombe](https://www.headspace.com/andy-puddicombe) from [Headspace](http://headspace.com). Simply doing this exercise for 10 minutes/day for a week will give you significant results!
 1.  Go to a quiet room where you can sit upright and you will not be disturbed.
 2.  Set a timer for 10 minutes, take a seat in a chair and make sure that you are completely comfortable.
@@ -68,7 +68,7 @@ To train your brain to become more focused, try this meditative exercise from [A
 **This practice trains the mind to place focus where you want it.** It will help you become fully engaged in tasks and reach a state of flow. You will also find that fewer distracting thoughts enter your mind and you will have fewer temptations to procrastinate.
 Like any exercise, this will be harder at the beginning and easier as you continue to practice. At first, you will have many distracting thoughts, which is normal.
 Simply allow these thoughts to come and go. If you ever find yourself distracted, simply bring your attention back to the exercise and back to the points of attention. Every time you do this, you are training the brain’s ability to tune out distractions and focus its attention where you want it.
-## **CONCLUSION**
+## **conclusion**
 We all believe that we are much better at multi-tasking than we truly are. We may be able to fake our ability to multi-task on some projects, but ultimately when things get complicated enough, they require our full attention.
 **Multi-tasking is not only ineffective, it is dangerous.** Every time we try to multi-task, we are strengthening the short-term minded part of our brain that wants to indulge, be lazy and rest.
 However, if we train the brain to focus, we will not only create better quality work, we will also be strengthening the part of our brain responsible for our willpower. This part of the brain is what helped us survive the harsh wilderness millions of years ago, and it can also help us survive a world of constant stimulation and temptation to multi-task.

@@ -40,7 +40,7 @@ After all, if you have a great car and neglect the whole concept of a map, what 
 _Insert self-criticism and/or self-justification here_
 Clearly, this is not a formula for reaching your destination.
 _So is it any wonder that so many of us struggle to reach our goals?_
-## **SHAPING THE PATH**
+## **shaping the Path**
 Think of the profound implication of this.
 A terrible driver in a "clunker" with paved roads, stop signs, and GPS will _always_ beat the great driver with treacherous roads and vague directions.
 That's the power of the path.
@@ -50,14 +50,14 @@ Yet, when you think of what it will take to "turn things around" in your life, w
 -   The endless list of problems and the lack of time available to solve them all?
 These undoubtedly merit your consideration, but you're not going to change anybody — including yourself — overnight.
 You can, however, change your path.
-## **HOW TO SHAPE YOUR PATH**
+## **how to Shape Your Path**
 The first principle of shaping the path is recognizing that you're not aiming for perfection.
 _The path to your goal will likely never be as clear as the path you take to work._
 However, there is a lot of room for improvement between that level of clarity and what you probably used when you began the journey to your latest goal.
 To illustrate this, I'm going to show you how I've built Wilson to make sense of the unknown and overwhelming journey of Entrepreneurship.
 > Not through perfection, but through progress.
 
-### **GETTING THINGS DONE**
+### **getting Things Done**
 There's probably no more widely useful and effective Checklist than the [Getting Things Done (GTD)](http://gettingthingsdone.com/?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path) method by [David Allen.](http://gettingthingsdone.com/meet-david?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)
 [![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492169612565-0KQE5CPQ9I11EC1JOVBU/Gtd+Workflow.gif?format=original)](http://gettingthingsdone.com?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)
 GTD involves emptying all the "stuff" in your head (to-dos, ideas, reminders, etc.) putting them into an in-basket, and identifying what action you need to make progress on every single idea next.
@@ -78,7 +78,7 @@ So I can walk outside, enjoy the weather, and process all my tasks at the same t
 And so can you.
 If you join the Consistency Challenge this Spring, you will receive access to all the apps I've built like this to make it easier to get to your desired destination.
 If you can't join us this Spring, these tips will help point you in the right direction:
-### **1\. SPECIFY THE DESTINATION**
+### **1\. Specify the Destination**
 This seems absurdly obvious.
 _But how often when you set a goal do you take the time to specify exactly what "success" will look like?_
 What are you trying to achieve by going to the gym?
@@ -89,7 +89,7 @@ Your answer likely seems so implicit and obvious, that it seems tedious to respo
 But when you face the inevitable temptation to take a day off, making this answer clear and meaningful to you could be **the difference between a failure...[and a habit](http://academy.willpowered.co/p/consistency-challenge?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)**
 Here's how Wilson helps me:
 [→ Get this workflow on iOS](https://workflow.is/workflows/d9a748bf53bb46a3933bf8581ea51242)
-### **2\. GET DIRECTIONS**
+### **2\. Get Directions**
 Pay attention to this step...
 **This is the most important step that almost no one deliberately takes.**
 How do you "get directions?"
@@ -101,7 +101,7 @@ Learning their story probably won't be able to give you "turn-by-turn directions
 Learn the stories of several of these "experts" and getting from where you are, to where you want to be, won"t seem nearly as daunting.
 Here's what I built to always Get Directions
 [→ Get this workflow on iOS](https://workflow.is/workflows/97170fb135cf4ae185bc5f52ecf12f7d?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)
-### **3\. CREATE "RULES OF THE ROAD."**
+### **3\. Create "rules of the Road."**
 As you can see from this post's title, this is a "Rule of the Road" for me.
 I created this list for the same reason we use speed limits, stop signs, and insurance.
 Structure.
@@ -118,7 +118,7 @@ You may not know the specific that will challenge you on these questions, but yo
 So create a plan for how you will respond.
 Here's what I built to ensure I know which rules to apply:
 [→ Get this workflow on iOS](https://workflow.is/workflows/d9a748bf53bb46a3933bf8581ea51242?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)
-### **4\. FOLLOW THE DIRECTIONS!!**
+### **4\. Follow the Directions!!**
 When you shape your path with a clear destination, expert directions, and your principles and guidelines to reach it — follow it!
 Again, I know it seems obvious, but it will not seem obvious when You're exhausted, stressed out, and hit a bump in the road.
 That's why we need a Checklist.

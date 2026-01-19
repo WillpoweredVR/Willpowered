@@ -25,20 +25,20 @@ As I continued to adjust, I started speaking more clearly, the software started 
 Then with the extra time at my disposal, I started making the most out of the tool. I found another app called “[Automator](http://www.macworld.co.uk/how-to/mac-software/what-automator-can-do-for-you-3605538/)” that allows you to create voice commands like "begin new article" and it will open up a new word document.
 So in addition to writing faster, I was also answering emails faster, organizing my tasks faster, and overall accomplishing more with my time.
 This week, my wrist is fully healed, but I have no plans to go back to typing again.
-## **HOW TO ACCOMPLISH MORE THROUGH SCARCITY**
+## **how to Accomplish More Through Scarcity**
 Despite this endorsement for voice dictation software, I know that about 0-1% of you are going to be motivated to install your own after reading this. A month ago I certainly wouldn’t have—even if my favorite authors recommended it! (For the 0-1%, [check out this beginner's guide](https://zapier.com/blog/best-text-dictation-software/)).
 It’s only because I _had_ to use the software that I realized just how powerful it could be.
 The necessity forced me to see first hand how it could improve my productivity and even my health (I’ve had issues with my wrist from over typing before).
 **This is the power of scarcity.** If you remove options, resources, tools, etc. you can tap into your creativity and find innovative solutions that help you reach your goals more effectively.
 For those who don't want to break a bone to see benefits, here are 3 ways you can use scarcity right now to tap into your true potential:
-### **1\. INCREASING YOUR CREATIVITY**
+### **1\. Increasing Your Creativity**
 When I was launching [The Will of Heroes](#) back in February, I felt like I was out of new ideas for article topics. My writing felt stale and boring. It was as if I was just repeating the same information over and over again.
 **I was bored writing articles, so I can’t imagine how bored _you_ were reading them.** And anytime I tried to head in a “new direction” I found myself coming to the same conclusions…no matter what. For the first time with Willpowered, I had writers block. I just couldn’t think of any fresh ideas.
 What finally broke me out of the creative funk was following the "[Louis C.K. Rule](http://www.willpowered.co/learn/louis-ck-nobody-to-legend)."
 This rule states that at the end of each year, you must throw out all the material you covered in the last year. So I couldn't write about anything already on the site, and I was forced to explore new, deeper topics. \[[1](https://www.youtube.com/watch?v=R37zkizucPU)\]
 **The instant I made that decision, I felt a rush of new ideas hit me like a tsunami.** I couldn't believe I hadn't covered anything on [addiction](http://www.willpowered.co/learn/addiction), [fear](http://www.willpowered.co/learn/fear-kills-willpower), [failure](http://www.willpowered.co/learn/let-your-kids-failhttp://www.willpowered.co/learn/let-your-kids-fail), or personal lessons like this one. All of these ideas became clear when my mind wasn't clouded by my previous work.
 If you have the courage to wipe the slate clean, remove your options, and force your brain to come up with new ideas, you will be surprised by the creativity you will find in yourself. \[[2](http://calnewport.com/blog/2015/09/07/how-louis-c-k-became-funny-and-why-it-matters/)\]
-### **2\. OPTIMIZING YOUR TIME**
+### **2\. Optimizing Your Time**
 The clock struck 1 AM… but I still wasn’t finished…
 I was writing some new code for the site in a programming language that I wasn’t familiar with. It was only supposed to be something I worked on quickly before bed at 10, but here I was, several hours later, and obsessed with getting this right.
 I was trying over, and over again. But for some reason, it just wasn’t working.
@@ -48,7 +48,7 @@ After thoroughly kicking myself for the mistake, I finally understood [Parkinson
 I gave myself endless time at first, even feeling noble for doing so because it showed my commitment. **But once I created scarcity with my time, I found a simple, easy solution because I had to rethink my strategy.**
 If you give yourself endless time to work on something, you may waste countless hours focusing on the wrong things. You may not completely throw it out the window like I did, more likely you will spend it on lower priorities that won't create as much value.
 If you give yourself a finite amount of time, however, your brain will search for ways to help you make the most of it. That could be by coming up with productive solutions, or by forcing you to work on the highest priority tasks. \[[4](https://books.google.com/books?id=QhBMlKelYloC&pg=PA65&hl=en#v=onepage&q&f=false)\]
-### **3\. MAKING BETTER DECISIONS**
+### **3\. Making Better Decisions**
 I am a terrible decision maker. And I hate to break this to you…[but so are you.](http://www.willpowered.co/learn/master-your-intuitions)
 We all like to believe that we are like scientists; we examine the evidence and make well-informed decisions. Unfortunately, we make most decisions rapidly, through a narrow and biased lens without considering all the options.
 This is perfectly illustrated by this forum question used in [Dan and Chip Heath’s](http://heathbrothers.com/) book, _[Decisive](http://amzn.to/1V9CVso)_.

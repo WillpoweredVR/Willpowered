@@ -20,7 +20,7 @@ Every year, thousands of alcoholics check themselves in to AA in order to get ov
 Recently, many researchers have looked into what specific practices AA does differently than the other treatment methods to have such a high success rate. They have found many things AA does differently.
 AA attempts to increase the [self-awareness](http://www.willpowered.co/post/91941620807/why-self-awareness-works) of its patients by first taking time to understand why they turned to alcohol in the first place. They also create a sense of [genuine support](http://www.willpowered.co/learn/friends-impact-willpower) by providing a sponsor who knows what the alcoholic is going through.
 They have found many proven effective strategies for helping treat alcoholism. But there is one simple rule that AA uses that helped Eric Clapton avoid another relapse and go down yet another dark path. AA's motto - "don't have a drink today".
-## **WHY AA SAYS “DON’T HAVE A DRINK TODAY”**
+## **why Aa Says “don’t Have a Drink Today”**
 When people check into AA, their lives are set up to completely revolve around alcohol. Their lifestyles, their social networks, even their sense of purpose, all involve drinking.
 **When your whole life is set up in this way, how can you possibly fathom giving up drinking entirely?**
 The idea that you would have to give up something that you are not only physically addicted to, but emotionally addicted to, for years, months or even weeks can be too hard to handle.
@@ -44,7 +44,7 @@ The alcoholic should have the huge goal of overcoming her alcoholism, but then f
 The overweight man should have the huge goal of losing weight and being healthy, but then focus simply on eating healthy for his next meal.
 The aspiring author should have the huge goal of writing a 300 page book, but then focus only on writing 1000 words today.
 This shift in focus is incredibly powerful. Now your goal is actionable and attainable. Also, with each day sober, with each healthy meal, and with each 1000 words written, **you are now more confident than ever that _you can do this._**
-## **CONCLUSION**
+## **conclusion**
 Great things come from a lot of small things done well. For recovering alcoholics, that is simply staying sober today. Your brain will always perform better when it sees a goal in small, manageable chunks - rather than huge, long-term aspirations.
 This does not mean that you should not have long-term dreams. But these dreams should merely set the path for you. Once you have the path set, break it up into the small, attainable things you can do today.
 **Dream big, but start small - and celebrate each win along the way.**

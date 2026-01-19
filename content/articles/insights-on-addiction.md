@@ -24,7 +24,7 @@ John also continues to consume Substance A every day, but he has no plans of sto
 -   Christopher is former presidential candidate [Chris Christie](http://www.huffingtonpost.com/ocean-robbins/the-truth-about-governor-_b_8198498.html), and Substance F is unhealthy food.
 -   John is a friend of mine, and Substance A is alcohol.
 Chris Christie has an eating addiction, and John simply has a beer after work every day. \[[1](http://www.huffingtonpost.com/ocean-robbins/the-truth-about-governor-_b_8198498.html),[2](http://healthland.time.com/2013/05/07/gov-chris-christies-weight-loss-surgery-demystified/)\]
-## **WHAT IS AN ADDICTION?**
+## **what is an Addiction?**
 The topic of addiction is incredibly hard to define–even to scientists who have been researching the topic for decades.
 _Some believe it’s a disease...s__ome believe it’s a choice...s__ome believe it’s genetics…_
 With this article, I intend to show you just how complicated and personal the topic is, and why it cannot be reduced to a blanket statement.
@@ -36,7 +36,7 @@ With this article, I intend to show you just how complicated and personal the to
 4.  Even though John consumes a potentially addictive substance like alcohol every day, he doesn’t have any problem quitting when he needs to.
 And the question behind all of these points is _why?_
 **The answers give us 4 profound insights that will change how you think about addiction forever.**
-## **1\. WHY DID CHRISTOPHER BECOME ADDICTED TO SOMETHING THAT MOST PEOPLE DON’T?**
+## **1\. Why Did Christopher Become Addicted to Something That Most People Don’t?**
 Let’s not kid ourselves, unhealthy food is delicious.
 Salty, sweet, savory, rich, creamy…whatever your taste is, eating great food is one of the treats of life—even if it is unhealthy.
 Now, I do not know Chris Christie’s entire history or relationship with food, but if his story is similar to that of a typical food addict, he likely sees food differently than, say, I do.
@@ -45,7 +45,7 @@ For food addicts, it represents something much different.
 Recent research suggests that **people who become addicted to food have an emotional connection to it.** It represents happiness, comfort, or a way to handle stress and escape to a feeling of bliss. \[[3](https://colin-robertson-ru54.squarespace.com/learn/insights-on-addiction)\]
 So even though a healthy person may eat the same food as an addict, the emotional connection they have to the food is completely different.
 It is this emotional connection that makes someone an addict, not the food itself.
-## **2\. WHY DON’T WE CONSIDER JOHN AN ALCOHOLIC?**
+## **2\. Why Don’t We Consider John an Alcoholic?**
 Almost all of us know a person like John–someone who has a drink every day as a way of winding down and relaxing. We might think that this person has an unhealthy habit, but we certainly would not consider them an alcoholic.
 _But why not?_
 First, he’s just drinking 1 beer. If I said he was drinking 6, 8, or 12 beers at the end of the day, that would be a different story.
@@ -63,7 +63,7 @@ We see people use alcohol all around us. We see the 80 to 90% of people who use 
 This is known as "[the example rule](http://www.willpowered.co/learn/the-example-rule)." We base our thoughts and judgments from the examples we can recall, rather than the actual evidence. \[[5](http://www.amazon.com/Science-Fear-Culture-Manipulates-Brain-ebook/dp/B001AO0GOK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=&tag=viglink123827-20)\]
 Since we can think of many examples like John who aren't addicted, his behavior feels "normal." But since the only people who use meth every day we can think of are hard-core addicts, we think John is doomed to their fate.
 This is equal to us believing that everyone who starts having a glass of wine or a cocktail with dinner is destined to end up on the street drinking vodka out a paper bag.
-## **3\. WHY DIDN’T SURGERY WORK FOR CHRISTOPHER?**
+## **3\. Why Didn’t Surgery Work for Christopher?**
 _“In moments I go from complete misery and vulnerability to total invulnerability.”_
 Recalled Judy, a 36-year-old heroin and cocaine addict when she was explaining why she chose to use drugs.
 _"I have a lot of issues. A lot of the reason why I use is to get rid of those thoughts and emotions and cover them up.”_ \[[6](http://amzn.to/1rl7HTi)\]
@@ -76,7 +76,7 @@ This is why surgery didn’t work for Christopher.
 He may have decreased his biological appetite, **but whatever comfort, happiness, or emotional connection that he has to food cannot be surgically removed**. Just like getting clean will not erase Judy’s 36 years of being abused, sexually assaulted, and turning to drugs to find comfort.
 This is why addicts are almost twice as likely to recover for the long-term through individualized therapy, rather than through drug rehab centers. \[[7](https://www.drugabuse.gov/sites/default/files/soa_2014.pdf),[8](https://www.youtube.com/watch?v=LsYUzgQ10EA&list=PLHuAoPzfQhGFS8jEE942HV07hvKfPotwJ&index=12)\]
 Whether the addiction is to sugar or substances, the addict will continue to struggle until they overcome the deeper reason _why_ they are consuming it.
-## **4\. WHY DOESN’T JOHN GET ADDICTED EVEN THOUGH HE CONSUMES EVERY DAY?**
+## **4\. Why Doesn’t John Get Addicted Even Though He Consumes Every Day?**
 So now that we know more about why people become addicted, let’s explore why John doesn’t become addicted, despite drinking alcohol every day.
 As I mentioned in the section on why we don’t consider him an addict, dose plays an important role. The more you increase the dose something, the more your brain begins to anticipate it, release dopamine, and trigger a craving.
 Also, especially with alcohol, the more you consume on a daily basis, the worse the withdrawal symptoms are going to be when you stop (everyone who’s experienced a hangover will know this well).
@@ -85,7 +85,7 @@ However, there is a much bigger factor that separates him from the typical addic
 John is happy. He loves his job, his family, and he drinks beer to enhance his reality–not escape it.
 He doesn’t bury any feelings in his drinking, he doesn’t see it as an escape from his emotional pain, and he values things like waking up early to exercise and being productive at work. Both of which he can’t do if he spends his nights binge drinking.
 Because he has his priorities in line, it doesn't require much willpower to say "no." \[[9](http://www.amazon.com/High-Price-Neuroscientists-Self-Discovery-Challenges/dp/0062015893/ref=sr_1_1?ie=UTF8&qid=1452689166&sr=8-1&keywords=high+price)\]
-## **CONCLUSION**
+## **conclusion**
 Many things have an addictive potential. Drugs, alcohol, sugar, sex, gambling, shopping… the list goes on. However, 80-90% of people consume these things or engage in these activities without getting addicted.
 It is not because 80 to 90% of people have an iron willpower, and the people who do get addicted don't. It is because **addiction doesn't come from the thing you consume, addiction comes from the reason you consume it.**
 It is a deeply personal and psychological problem that cannot be cured by taking away the substance or activity that one is addicted to–_even through surgical intervention!_

@@ -20,7 +20,7 @@ _Will people indulge in less junk food if they forgive themselves?_
 **Most people, including me, will find that question absurd.**
 _If people don’t feel guilty, then what is stopping them from eating ALL of the doughnuts and candy?_
 _How will they hold themselves back if they don’t feel bad about giving up on their diets?_
-## **THE EXPERIMENT**
+## **the Experiment**
 To find the answer, the researchers separated the dieters into two groups:
 1.  A “feel guilty” group
 2.  A self-compassionate group
@@ -39,7 +39,7 @@ Then, for the second study, the researchers gave both groups three large bowls o
 -   Skittles
 -   Peppermint Patties
 They asked each group to sample some candy from each bowl and rate it. They were encouraged to eat as many candies as they’d like to achieve a “definite rating."
-## **THE RESULTS**
+## **the Results**
 After each group of women had eaten the candy, the researchers weighed the bowls to measure the difference.
 Here are their averages:
 Self-compassion group — ate 28 grams of candy
@@ -48,7 +48,7 @@ Self-compassion group — ate 28 grams of candy
 
 Since then, researchers have repeated similar experiments with consistent results.
 _Feeling guilty always leads to letting loose._
-## **WHY FEELING GUILTY DOESN’T WORK**
+## **why Feeling Guilty Doesn’t Work**
 Now, you may be thinking:
 > "Okay, maybe this works for others, but I know that I need to feel guilty! Otherwise, I won't learn my lesson!"
 
@@ -59,10 +59,10 @@ By feeling guilty, the dieters were unknowingly fueling it. \[[5](https://www.an
 However, when the other group received a supportive and rational message that _everyone indulges sometimes_ they could see their situation with greater clarity. It wasn't the end of the world.
 Their mental activity stimulated the rational, "Modern Brain" — which is responsible for self-control and discipline.
 By seeing a guilty situation objectively and forgiving yourself, the situation remains under your control. \[[2](https://www.annualreviews.org/doi/abs/10.1146/annurev.anthro.32.061002.093158)\]
-## **ALTERNATIVES TO FEELING GUILTY**
+## **alternatives to Feeling Guilty**
 Many of us have become so used to feeling guilty when we slip that thinking about an alternative seems strange.
 So I laid out three scientifically proven strategies that you can use to rebound from a setback and stick with your goals:
-### **1\. WHAT WOULD YOU TELL YOUR BEST FRIEND?**
+### **1\. What Would You Tell Your Best Friend?**
 Imagine your best friend just had a bad day and skipped their diet or exercise routine.
 _What advice would you give them?_
 _Would you try to make them feel guilty about what they ate?_
@@ -73,7 +73,7 @@ When we think about helping our best friends, we gain perspective on the reality
 We let go of the short-term emotions, which helps us think clearly. [6](https://docs.google.com/document/d/12-n3IE87UWDCiA81y4Z5lEv1DFiciUWUhFCdya7MgV0/pub)
 The next time you start to feel guilty about a setback, pause.
 Think about what you would tell your best friend if they were in your situation. The advice you give him or her may be the difference between a slip, and crash.
-### **2\. MAKE DELIBERATE MISTAKES**
+### **2\. Make Deliberate Mistakes**
 The first long-term goal every one of us sets in life is far from easy...
 _Learning how to walk._
 From the moment we saw the grownups walking upright, it inspired us.
@@ -85,7 +85,7 @@ Unfortunately, many of us forget this crucial life lesson and start worrying abo
 Any goal worth achieving is going to [push you out of your comfort zone.](http://www.willpowered.co/learn/learning-zone?) And just like learning how to walk, you will fall. Sometimes it will be your mistake, somtimes it will be bad luck.
 You can't always will yourself to success — **but you can will youself to get up.**
 Wounds heal for a reason. When they do, it's time to try again — not wallow in guilt.
-### **3\. KEEP A PROPER PERSPECTIVE**
+### **3\. Keep a Proper Perspective**
 I've honestly lost track of how many failures I've incurred over the last 8 years as an entrepreneur...
 _But there's no question that having to move back in with my parents was the hardest._
 I had worked so hard for so long, and it felt like a big step backward. It was a shining example of my failure as an entrepreneur.
@@ -100,7 +100,7 @@ Additionally, seeing myself through both lenses helped me overcome my insecurity
 This leads to a horrible downward spiral as we try to cover up our negative traits, and talk only about our successes. This makes us feel even more guilty about failure when we inevitably hit bumps along the road.
 Everyone falls. Everyone hurts. **Not everyone gets back up.**
 Those that do, learn that falling down isn't the opposite of success — it's a part of success.
-## **CONCLUSION**
+## **conclusion**
 I realize this is all easier said than done.
 Our brains are always wary of how others may judge our success and failures. That judgment was once the difference between the safety and security of the tribe, and facing the wild alone.
 Thus, we all have an internal judge who makes us feel guilty whenever we don't live up to its standards of perfection.

@@ -36,7 +36,7 @@ When you are working toward your goals or resolutions in 2016, remember that the
 Because you do have a much more complicated brain than a simple reward and punishment system, there is no simple answer to what will actually motivate you.
 Everyone is different, and will be motivated by different things.
 However, there are some general, scientifically proven guidelines that you can follow to find motivation when you really need it.
-### **1\. AN INSPIRING PURPOSE**
+### **1\. an Inspiring Purpose**
 This should come as no surprise to you, but the best and most motivating thing you will ever have is an [inspiring purpose](http://www.willpowered.co/learn/power-of-purpose) to work toward your goals.
 If you do not genuinely care about getting into good shape, then you might be able to force yourself to go to the gym for the first 2 weeks of January, **but eventually [you will hit that day](http://www.willpowered.co/learn/get-through-the-middle) when your alarm goes off and the last thing you want to do is exercise.**
 So you will skip it once....then twice...then by February you will join the 92% of others who fail their New Year's Resolutions in 2016. \[[3](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231/ref=sr_1_1?ie=UTF8&qid=1451304574&sr=8-1&keywords=willpower)\]
@@ -45,7 +45,7 @@ Now, an inspiring purpose does not need to be an over-the-top goal of curing can
 Going back to the gym example, you may not care about going to the gym to get fit, but you may care about setting a good example for your kids.
 There is a lot more purpose and meaning behind working to be a healthy, proactive, and disciplined person for your family. Rather than just getting into shape because you "feel like you should", or because you want to look good in a swimsuit.
 That simple change in perspective may make all the difference!
-### **2\. SMALL WINS**
+### **2\. Small Wins**
 Let's assume that your goals for 2016 will require an entire year's worth of work to complete (they are New _Year_ resolutions after all). If that's the case, then you will probably follow the typical script.
 1.  On January 1st, you come up with your goal and get a spark of energy and excitement as you begin to think about the positive changes that are coming!
 2.  So you [get up early](http://www.willpowered.co/learn/waking-up-earlier), eat healthy, resist temptations, and are a [productive machine](http://www.willpowered.co/learn/increase-energy-focus-productivity) for the first week.
@@ -59,7 +59,7 @@ Don't focus on going on a 90-day diet, focus on eating healthy _today._
 Don't focus on getting a promotion, just show up early to the office _this week._
 With each hour, day, or week that you achieve your small wins, your confidence will continue to grow. Then you will be even more motivated to achieve the next small win, and the next one after that.
 Eventually, you will be 3, 6, 9 months in and more confident than ever that _you can do this._
-### **3\. FOCUS ON WHAT YOU CAN CONTROL**
+### **3\. Focus on What You Can Control**
 _You cannot control the questions that will be on an exam._
 _You cannot control how your body will respond to diet and exercise._
 _And you cannot control whether the boss will give you a promotion._

@@ -18,7 +18,7 @@ After giving in to these indulgences, Stanley decides that his diet for the day 
 So bring on more fettuccine, more wine and, _what the hell,_ why not an extra-large helping of dessert!
 Virtue, he decides, can resume tomorrow. Tonight he is going to binge!
 This binge, of course, leads to an increase in weight, a loss in progress and ultimately a feeling of defeat as - once again - Stanley is unable to reach his weight-loss goals.
-## **THE WHAT-THE-HELL EFFECT**
+## **the What-the-hell Effect**
 If Stanley’s story sounds familiar, don’t worry. It happens to all of us. Whether it is giving up on our diets, giving up on our exercise program or giving up on any of our goals, when we start to slip, we start justifying going completely overboard.
 _But why?_
 To find out, researchers created a similar situation to Stanley’s to see why dieters would turn one slip into an all-out binge. \[[1](http://www.ncbi.nlm.nih.gov/pubmed/20691231)\]

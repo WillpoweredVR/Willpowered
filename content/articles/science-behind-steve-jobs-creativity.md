@@ -45,29 +45,29 @@ _But do you need to be a cold, arrogant, egomaniac in order to develop Jobs' cre
 **The answer is no.** The core of Jobs' creativity comes from the ["Dimensional Mind](http://www.willpowered.co/learn/learning-mistake)".
 The dimensional mind is one that is open, one that is curious, one that simply learns and observes without any ideas of what is possible or impossible.
 This is the mindset Jobs used to see the world differently. And, like the teams he worked with at Apple, it is one that you can develop yourself.
-## **HOW TO DEVELOP JOBS' UNIQUE CREATIVITY**
+## **how to Develop Jobs' Unique Creativity**
 The dimensional mind is how we saw the world when we were "foolish" children, and developing it will help open your mind to the unlimited possibilities that Jobs saw throughout his life.
 Below are some proven ways to develop Jobs' creativity _without_ his arrogance:
-### **1\. PRACTICE CURIOSITY**
+### **1\. Practice Curiosity**
 You probably take so many things in your world for granted. You see a kitchen table as just a kitchen table, you see a computer as just a computer and a car as just a car. _But where did they all come from? How do they all work?_
 When you were child, you asked questions like that. You saw a car driving by like it was a rocket ship and wondered how it all works. You were curious about everything around you and that trained your brain to be more open.
 Then, as you grew older, you began to accept everything in the world around you simply as it is. Your curiosity about things ended and you began to train your mind to be closed. As you know, the brain works like a muscle.
 **So take 10-15 minutes every day to simply be more curious about the world around you.** Look at people, objects and technology and simply wonder, “why?” You don’t even need to find the answer. You just need to open your mind to the question. \[[3](http://www.washingtonpost.com/posteverything/wp/2014/10/03/how-curiosity-changes-our-brains/)\]
-### **2\. MEDITATE**
+### **2\. Meditate**
 There are few better ways to train your mind than through [meditation](http://www.willpowered.co/learn/learning-mistake?rq=learning%20mistake#). And one of the main benefits of meditation is the rewiring of the brain to have less judgment and more empathy.
 This will [influence your subconscious mind](http://www.willpowered.co/learn/how-to-influence-the-subconscious-mind) to avoid placing judgment on everything you see, which will allow you to be more open and curious. It only requires 10 minutes of daily meditation to make a significant impact on your subconscious. \[[8](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9744.2005.00671.x/abstract)\]
 To get started, check out [this article](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower) which will list all of the benefits of meditation and give you some helpful exercises to get started.
-### **3\. DETACH YOUR EGO FROM YOUR IDEAS**
+### **3\. Detach Your Ego From Your Ideas**
 We have a natural tendency to attach ourselves to our ideas. We believe that they represent our character, intelligence and values. So when they are challenged, **we do not feel as if the idea is being challenged, but our own character.**
 In order to develop your creativity, you must learn to detach yourself from this.
 **You must be open to learning, growing, and constantly changing your ideas and beliefs.** The only way you can do this is by recognizing that your current ideas do not define who you are. They are merely the best understanding of your world at the current time.
 If you can learn to detach your ego from your beliefs, you will be much more open to new and better ideas that come across your path. \[[2](http://www.amazon.com/Mastery-Robert-Greene/dp/014312417X/ref=sr_1_1?ie=UTF8&qid=1417435814&sr=8-1&keywords=mastery)\]
-### **4\. LET GO OF YOUR NEED TO JUDGE**
+### **4\. Let Go of Your Need to Judge**
 We all have an ideal world that is based on our own belief system. So when you spend your time walking around, watching TV, or observing others' behavior, you judge everything you see against how you believe things should be.
 **Every time you do this, you are training your brain to become more close-minded.** You are reinforcing your own rules and not expanding them to another person’s perspective.
 To overcome this tendency, **you must identify the situations where you begin to judge others.** By recognizing the situation, you can begin to try to open your mind and see things from the other person’s point of view.
 This trains the mind to become more open to new ideas, perspectives, and beliefs – helping you develop your creativity. \[[6](http://www.amazon.com/gp/product/0374533555/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0374533555&linkCode=as2&tag=willpowered-20&linkId=IW6D3B7HSSX7YFMN)\]
-### **5\. BECOME MORE MINDFUL OF YOUR DECISIONS**
+### **5\. Become More Mindful of Your Decisions**
 We tend to believe that every choice we make throughout the day goes through a process of well-informed decision-making. But 45% of your daily-decision are made completely automatically. \[[5](http://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X/ref=sr_1_1?s=books&ie=UTF8&qid=1449692785&sr=1-1&keywords=the+power+of+habit)\]
 What you decide to eat, what you decide to wear and what you decide to do when you first get to work, are all made by your brain running on autopilot. These automatic choices are formed with the same part of the brain that wants to tune out opposing ideas.
 **By running on autopilot, you are essentially being close-minded in your daily decisions.** This trains the brain to become close-minded in its higher thinking as well.

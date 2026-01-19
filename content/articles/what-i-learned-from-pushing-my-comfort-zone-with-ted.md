@@ -16,7 +16,7 @@ It's complicated, it's challenging, and it can result in hard, cold, embarrassin
 Thus, life asks you a tough question – _comfort today? Or growth tomorrow?_
 In the moment, the appeal of comfort paralyzes us, and we default to inaction.
 To overcome this tendency in my own life, I started using [The Growth Rings](https://educocommunity.com/p/the-growth-rings/?product_id=417181&coupon_code=TRIAL&utm_medium=Referral&utm_source=Educo&utm_campaign=Clicked+the-growth-rings) program we developed with [Bill Eckstrom](https://educocommunity.com/blog/1344409/bill-eckstrom-the-growth-rings).
-## **SETTING GOALS OUTSIDE OF MY COMFORT ZONE**
+## **setting Goals Outside of My Comfort Zone**
 The Growth Rings program helps you identify a goal outside of your comfort zone, specify why it's important to reach it, and create a plan to conquer your fears.  
 The latest goal I set with the program was to create an affiliate partnership with TED.
 ![](https://www.filepicker.io/api/file/TJAFgbWLRtS0b4PBcyds)
@@ -33,7 +33,7 @@ _"Don’t embarrass yourself. They’ll never get back to you."_
 Or the internal procrastinator...
 _"Don’t blow your chance. It’s not ready yet. Wait a few months until you’ve grown."_
 Thanks to "The Growth Rings" program, I was able to silence this voice and take action.
-## **6 QUESTIONS TO HELP YOU PUSH YOUR COMFORT ZONE**
+## **6 Questions to Help You Push Your Comfort Zone**
 To help you conquer your own growth goals, I want to share with you some of the key questions posed by The Growth Rings that helped me take on this challenge.
 * * *
 ### 1\. Why is this worth your best effort?
@@ -65,7 +65,7 @@ This is perhaps the most important question posed by The Growth Rings program. M
 ![](https://www.filepicker.io/api/file/MPI45PULQ6K3sOSJeI1P)
 By remembering the fact that partnerships don’t happen overnight, they grow over time, I knew that every day I put off building that relationship was costing me. I knew it was time to act _now._
 * * *
-## **RESULTS**  
+## **results**
 What happened? None of my fears were realized.
 I reached out to them, got a meeting later that week, and I am currently waiting for TED to get back to me with the terms of their agreement.
 It may not work out, or it may not end up being the ideal partnership I envisioned, **but I never expected success.**

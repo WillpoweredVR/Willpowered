@@ -25,11 +25,11 @@ We see the “next 90 miles” rather than focusing on just getting through mile
 **2\. WE DISCREDIT THE VALUE OF EACH INDIVIDUAL BRICK**
 The next problem with focusing on the cathedral is that it makes each brick that we lay seem insignificant. Compared to the cathedral that we have in our minds, each brick that we lay down seems to have little impact on the overall picture.
 At best, this will only leave us feeling discouraged when we lay each individual brick because we see how far we are from our goal of the cathedral. At worst, it will lead us to take shortcuts and try a “quick fix” plan that will be unsustainable.
-## **NEW YEAR'S RESOLUTIONS**
+## **new Year's Resolutions**
 When we set New Year's Resolutions we are the most vulnerable to losing sight of the value of each individual 1 on our journey to 1000. We set huge goals for ourselves at the beginning of the year and are given constant reminders about how far away we are from reaching them.
 This leads to skipping days that we planned to go to the gym, cheating on our diet plans and making "just one" impulse purchase. We can rationalize each one of these things very easily. After all, one workout is not going to make us fit, one healthy meal is not going to make us skinny, and one swipe of the credit card is probably not going to break the bank. Just like each 1 means almost nothing compared to 1000.
 But each workout, each healthy meal, and each penny saved are all absolutely necessary in order to reach our goals. Even if individually they seem insignificant, you need each and every 1 in order to eventually get to 1000.
-## **SHIFT YOUR FOCUS**
+## **shift Your Focus**
 There are 3 key benefits that happen to us when we shift our focus from the 1000 to the 1.
 **1\. WE ARE NOT OVERWHELMED**
 We are much more productive and effective when we break tasks down into small manageable chunks \[4\]. Joe DeSena could not possibly fathom running for another 90 miles when he had already run 10, but he knew he could make it through mile 11. Then he focused on getting through mile 12 and so on.
@@ -40,7 +40,7 @@ For example, say your goal is to lose weight by going to the gym 3x/week. And yo
 **3.** **YOU WILL DO A MUCH BETTER JOB**
 By focusing on the 1000, we become less enthusiastic about the quality of each individual 1. Because each 1 seems insignificant, what does it matter if we do a good or bad job on it? Shifting your focus to the 1 changes this perspective. Because you are only concerned with the 1, you will ensure that you give it your best effort.
 Going back to the example of the workout routine, if you focus your attention on each individual workout, you will push yourself much harder. It will become less of a chore that you need to get through in order to achieve the higher goal of losing weight. Instead, you will start focusing on trying to lift heavier weights or running more miles than you did in your previous workout. Then eventually the byproduct of each individual workout will be the larger goal of losing weight in the process. And it will happen much faster than if you were to simply go through the motions without enthusiasm.
-## **CONCLUSION**
+## **conclusion**
 It is in our nature to dream big. If we didn’t dream big, we would not have accomplished big things like inventing the light bulb, going to the moon, or building all of the civilization we see around us. But each one of these huge accomplishments is merely the accumulation of small steps that were taken to get there.
 If we focus our attention on completing the small steps we won’t become overwhelmed by how far we are away from our goals. We will see each step completed as a small win and grow confidence that we will be able to complete the next step after that. And we will do a much better job on each step to getting there. Remember, no matter how big your goal is, you need each individual 1 in order to get to 1000.
 **Sources**

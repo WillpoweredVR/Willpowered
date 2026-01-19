@@ -14,7 +14,7 @@ This particular week's topic was the Internet. _Was it a fad? Or here to stay?_ 
 Until that point, Microsoft was completely focused on the personal computer and ignored many other opportunities like [personal digital assistants](http://www.wired.com/2013/08/remembering-the-apple-newtons-prophetic-failure-and-lasting-ideals/). **This [focus](http://www.willpowered.co/learn/nothing-alternative) was part of what made them great.**
 _So was the Internet really worth straying from that focus on the PC?_
 After a week of self-reflection, Bill Gates came to the conclusion - "absolutely!" So he bet big on the Internet. Immediately getting a team to start building their own browser that would be called, _Internet Explorer._
-## **TO TRULY REFLECT, YOU MUST STEP AWAY**
+## **to Truly Reflect, You Must Step Away**
 Most of us over-estimate our abilities to truly reflect on a situation or ourselves. We get so caught up in our emotions and short-term pressures that we can't take an accurate assessment of the situation.
 This is why Bill Gates forced himself to step away from the day-to-day of Microsoft.
 If he hadn’t removed himself from the situation, it was likely that politics, short-term thinking, and pressure from shareholders would have resulted in Microsoft missing one of the biggest opportunities of the 20th century.
@@ -25,14 +25,14 @@ If your goal is to exercise regularly, reflect on what has worked and what hasn'
 If your goal is to eat healthy, reflect on what happened on days when you stuck to your diet and what happened on days when you cheated on it. What was the difference? What can you do about it?
 If your goal is to stop procrastinating on tasks, reflect on what made you want to put things off until later. How can you create the right environment to prevent procrastination in the future?
 Regardless of the answers, remember to remain objective. Do not blame yourself, simply learn and think about how you can improve.
-## **TAKING THE TIME TO REFLECT**
+## **taking the Time to Reflect**
 Next week, Willpowered will officially be 1 year old!
 A lot has happened in the last year. I have written over 400,000 words, published over 100 articles, and shared that content with over 1,000,000 unique visitors from all over the world.
 **But that is not nearly good enough.**
 This is just the beginning of Willpowered and I am taking my own "Think Week" to determine how we can get closer to our purpose of **strengthening the willpower of the world – one person at a time.**
 So I am writing this to you from the Rocky Mountains in Colorado, where I will be taking the week think seriously about how Willpowered can take a big step toward achieving our purpose in year 2.
 I hope you're all ready for big things!
-## **CONCLUSION**
+## **conclusion**
 Self-reflection is one of the most underrated practices in our society. Sometimes we can get so caught up in short-term pressures and emotions that we lose sight of what decisions will help us achieve our goals.
 Bill Gates was able to overcome this by taking an entire week to step away from his day-to-day obligations and think about the best decisions for himself and his company.
 To get the same value as him, you do not need to take an entire week, you simply need to view your situation objectively. So take the time to assess what has worked and what hasn't in your goal pursuits without placing judgment on yourself.

@@ -18,7 +18,7 @@ But rather than stereotype either side, I wanted to learn the psychological step
 **This isn’t meant to be a political article**. I simply want to bring a rational, scientific voice to a heated, emotional topic. I firmly believe that people—supporters and protestors alike—are mostly good and they want to make the world a better place.
 So, here are the science-backed steps I might take to go from neutral to radical with any belief:
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458406989223-3CZJH3TX72H1D2JJSMTU/Neutral+spectrum.jpg?format=original)
-## **1\. FEAR THAT THINGS ARE GETTING WORSE**
+## **1\. Fear That Things Are Getting Worse**
 First, I have a fear that things are getting worse.
 I believe that America has lost our former glory, that our economy is terrible, that violent crime is increasing, and the future is dark and scary.
 **This isn’t because I'm ignorant necessarily.** In [this article on fear,](http://www.willpowered.co/learn/fear-kills-willpower) I highlight all of the reasons why it’s natural for even the smartest among us to believe that the future is bleak—even though we are the [healthiest, wealthiest, and safest society that has ever lived](https://medium.com/future-crunch/11-reasons-why-2015-was-a-great-year-for-humanity-70db584db748#.t2l4y04es).
@@ -28,7 +28,7 @@ My fear of things getting worse leads me to think emotionally about possible way
 ### My state of mind:
 1\. Thinking emotionally, not rationally
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407024892-DNYJ41OU0Z0YY33G8ZRF/image-asset.jpeg?format=original)
-## **2\. SIMPLE SOLUTIONS TO COMPLEX PROBLEMS**
+## **2\. Simple Solutions to Complex Problems**
 Now that I'm thinking emotionally, I'm prone to believe in simple solutions to complex problems.
 **Immigration problem? _Build a wall!_**
 Rather than looking deeper to find that far more illegal immigrants fly into the country for legal visits, then stay after their visas have expired. \[[2](http://www.politifact.com/punditfact/statements/2015/sep/08/jorge-ramos/ramos-40-undocumented-immigrants-come-air/)\]
@@ -39,7 +39,7 @@ These are all natural human reactions. The greater my fear, the more likely I'm 
 1.  Thinking emotionally, not rationally
 2.  Forming my views based on simple solutions to complex problems
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407046411-ZO5FRJO94ZVIV7INX5Q7/image-asset.jpeg?format=original)
-## **3\. CONFIRMATION BIAS**
+## **3\. Confirmation Bias**
 Now it is time for me to start embracing any information that supports my view, while also ignoring, rejecting, or attacking any information that goes against it.
 This is called the “[confirmation bias](http://www.willpowered.co/learn/confirmation-bias)” and it is one of the most destructive aspects of politics.
 During the 2004 election, researchers ran an MRI scan on a group of Republicans and Democrats while they watched [George Bush](https://en.wikipedia.org/wiki/George_W._Bush) and [John Kerry](https://en.wikipedia.org/wiki/John_Kerry) say contradictory statements. i.e. “I’ve always been in favor of more school funding” followed by, “we cannot afford more school funding.”
@@ -52,7 +52,7 @@ Meanwhile, I ignore anything bad that's said about Trump and, knowingly or unkno
 2.  Forming my views based on simple solutions to complex problems
 3.  Embracing any information that supports my views, while ignoring anything else
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407078305-HP0928YZOLMBVOMH78XC/image-asset.jpeg?format=original)
-## **4\. GROUP POLARIZATION**
+## **4\. Group Polarization**
 Now that I'm a firm believer in Trump’s views, it is time for me to find other people who are also big Trump supporters!
 Let’s say love and hate of Trump is a spectrum between 1—10. 1 being hate, 10 being love. At this point I'm at about 7. It would seem reasonable to assume that if I join a group of people who are all 7s, we would all high-five and be happy to stay at 7.
 **But when a like-minded group gets together, the view of the group becomes more extreme than the view of the individuals.** This is because I get social confirmation that my biases are correct, and I get to meet people who are also “correct" like me!
@@ -65,7 +65,7 @@ We're more passionate, dedicated, and extreme in our views than ever before. And
 3\. Embracing any information that supports my views, while ignoring anything else
 4\. Taking my views to the extreme by joining a group of like-minded people
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407094257-AL8111DGZHJPAZTPSMOZ/image-asset.jpeg?format=original)
-## **5\. MORAL JUSTIFICATION**
+## **5\. Moral Justification**
 Now I am emotional, absolutely convinced that my extreme views are correct, and I'm surrounded by thousands of people who are just as passionate as me.
 Then I see protestors from an opposing group at the other end of the spectrum. And if my group’s views are absolutely correct, then their group’s views are absolutely wrong. **They** **are the "bad guys" and we are the "good guys."**
 This same phenomenon was seen through something called the "[Stanford Prison Experiment](https://www.youtube.com/watch?v=sZwfNs1pqG0)."
@@ -80,7 +80,7 @@ _After all, I am fighting for the noble purpose t__o Make America Great Again!_
 4\. Taking my views to the extreme by joining a group of like-minded people
 5\. Belief that my cause is virtuous, so the ends justify the means
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1458407117363-0MH6L203YGQ9Y50GAF85/image-asset.jpeg?format=original)
-## **APPLICATION TO ANY BELIEF**
+## **application to Any Belief**
 This process, of course, does not just apply to Trump supporters. If I was a protestor, I'd have gone through the same steps on the opposite end.
 1\. Thinking emotionally, not rationally out of fear of a Trump presidency
 2\. Forming my views based on a simple solution like shutting the rally down
@@ -93,7 +93,7 @@ The result is two groups who both believe that they are doing what's right and a
 If I see a documentary about the meat processing industry, that's going to stir up my emotions. It may lead me down this path to become a vegan, then dismissive of any positive information about meat, and then judge anyone associated with meat as a "bad guy."
 If I see a news report about the dangers of a drug, I'll fear that drug's impact. That may lead me down the path to believe we need to "crack down hard," then ignore any medical benefits I may hear about it, and then judge anyone who uses it a "bad guy."
 Once you allow your emotions to form your point of view, it is a slippery slope.
-## **CONCLUSION**
+## **conclusion**
 When I saw the violence at the Trump rally in Chicago, I was afraid. I quickly blamed Trump and cast prejudice on all of his supporters. But at that moment, I paused. I remembered how **t****he media always make things seem worse than they really are, and my emotional reactions were flawed.**
 If nothing else, I hope this article is a reminder that people are more complicated than we see at first glance. Even a good person can go through these steps and become hateful, racist, or violent. Not because they've always been this way, but because they were afraid.
 At their core, I firmly believe most people are good. And to be fair, most people haven't gone through every step. But as you can see it, it is a slippery slope to radical feelings on either end. So if you have strong feelings, take a moment to pause and reflect—before going down this path.

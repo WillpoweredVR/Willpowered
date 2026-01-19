@@ -35,7 +35,7 @@ _And we start feeling superiority in our way of thinking._
 **It was this feeling of superiority that doomed Daniel Everett with the Piraha.**
 He saw himself as the intelligent scientist coming to study the Piraha language the same way he might study the behavior of ants. So he didn’t fully embrace their culture and couldn’t see its powerful connection to their language.
 Once he let go of this feeling of superiority, he learned the language with ease and [changed the way linguists across the world think.](http://www.amazon.com/gp/product/B004Y89PC8?btkr=1)
-## **THE DIMENSIONAL MIND**
+## **the Dimensional Mind**
 This shift allowed Everett to change his mental perspective to what is called the “[Dimensional Mind](http://greatestinstruments.net/the-dimensional-mind-engine-of-innovation/)”.
 **The dimensional mind is open.** There is no prejudice, no superiority, and no judgment on what is and isn’t possible. Like a child, it simply observes and learns – accepting the role of the student.
 Cultivating a dimensional mind helps you overcome one of the biggest flaws in learning anything new – the feeling that you already know what’s best.
@@ -49,22 +49,22 @@ Unfortunately, you cannot revert back to your child-like openness entirely, but 
 **The key is to never be satisfied with what you have learned.**
 This is not natural. Your brain wants to genuinely believe that it knows everything that it needs to know about the world around you. This way it doesn't need to explore every detail and it can conserve its energy. \[[3](http://link.springer.com/chapter/10.1007/978-1-4899-6776-3_43)\]
 To avoid this, you need to understand that no matter what you know today, there is always more to learn. With this [perspective](http://www.willpowered.co/learn/perspective), you can begin to implement the techniques below that will begin to open up your mind and help you learn:
-### **1\. PRACTICE CURIOSITY**
+### **1\. Practice Curiosity**
 You probably take so many things in your world for granted. You see a kitchen table as just a kitchen table, you see a computer as just a computer and a car as just a car. But where did they all come from? How do they all work?
 When you were child, you asked questions like that. You saw a car driving by like it was a rocket ship and wondered how it all works. You were curious about everything around you and that trained your brain to be more open.
 Then, as you grew older, you began to accept everything in the world around you simply as it is. Your curiosity about things ended and you began to train your mind to be closed.
 The brain works [like a muscle](http://www.willpowered.co/learn/willpower-is-a-muscle). If you exercise your curiosity about one thing, it will begin to become more curious about everything else. Just like lifting weights in the gym will also help you lift anything else. \[[4](http://www.washingtonpost.com/posteverything/wp/2014/10/03/how-curiosity-changes-our-brains/)\]
 **So take 10-15 minutes every day to simply be more curious about the world around you.** Look at people, objects and technology and simply wonder, “why?” You don’t even need to find the answer. You just need to open your mind to the question.
-### **2\. MEDITATE**
+### **2\. Meditate**
 There are few better ways to train your mind than through [meditation](#). And one of the main benefits of meditation is the rewiring of the brain to have less judgment and more empathy.
 This will [influence your subconscious mind](http://www.willpowered.co/learn/how-to-influence-the-subconscious-mind) to avoid placing judgment on everything you see, which will allow you to be more open and curious. It only requires 10 minutes of daily meditation to make a significant impact on your subconscious. \[[5](http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9744.2005.00671.x/abstract)\]
 To get started, check out [this article](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower) which will list all of the benefits of meditation and give you some helpful exercises to get started.
-### **3\. KEEP A JOURNAL**
+### **3\. Keep a Journal**
 Regular writing has been proven to have [many mental health benefits](http://lifehacker.com/5855019/how-to-harness-the-mental-and-emotional-benefits-of-regular-writing), one of which is opening your mind.
 Most of your "thinking time" is undisciplined. Time spent thinking is really just allowing your brain to wander; which can quickly lead to placing judgment on all of the things in the world around you.
 By keeping a journal, you help your mind develop focused creativity. \[[6](http://www.edutopia.org/blog/writing-executive-function-brain-research-judy-willis)\]
 Whether you’re writing about events in your life, a problem you’ve been dealing with, or a new idea, as you write you begin to see the problem from different angles. You start to open your mind as you put your ideas to paper and see things from a different perspective.
-## **CONCLUSION**
+## **conclusion**
 You have a natural bias toward your own culture, your own religious/political beliefs and your own ideas. The huge learning mistake that we all make is allowing these biases to close our minds off to what others can teach us.
 When you were a child, you didn't have these biases. You simply observed and learned - accepting your role as the student. This helped you learn and develop far faster than many adults can today.
 By practicing curiosity, meditation, and journal writing, you can begin to train your mind to go back to that child-like openness. This will help you immensely in becoming a better learner, leader, and citizen of our global and diversified world.

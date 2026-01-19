@@ -16,7 +16,7 @@ So I ordered my sandwich grabbed a spot outside by the ocean and was ready to fi
 As you probably guessed, I cannot stand tartar sauce. If I even see something creamy like mayonnaise, it triggers this disgust reflex. This feeling isn't rational. The disgust response was developed as a defense mechanism to stop our early ancestors from eating poisonous foods,
 But I knew for a fact that the tartar sauce on that sandwich is harmless. In fact, I can't even really explain _why_ I find tartar sauce so disgusting–especially when the vast majority of people love it!
 That's because the difference between my disgust and their love comes down to the influence of our subconscious minds.
-## **THE IMPACT OF THE SUBCONSCIOUS**
+## **the Impact of the Subconscious**
 The [subconscious mind is powerful](http://www.willpowered.co/learn/master-your-intuitions).
 You have undoubtedly felt the exact same emotional reaction as my feeling of disgust in your life across a wide range of emotions.
 -   It could be a fear of the dark...even when you know you're in a safe area.
@@ -30,7 +30,7 @@ Unfortunately, the subconscious mind doesn’t understand language, making it di
 To do this yourself, you want to get into a state of relaxation. When you’re fully relaxed, your conscious mind doesn’t need to respond to external stimuli and be on high-alert. This allows your subconscious to take over, and gives you an opportunity to influence it.
 Below you will find a practical 20min exercise that will guide you through this process. \[[2](http://www.amazon.com/The-Art-Mental-Training-Performance-ebook/dp/B00CARM81K)\]
 If you need more help, try this mindfulness program.
-## **EXERCISE: ACCESSING THE SUBCONSCIOUS MIND THROUGH RELAXATION**
+## **exercise: Accessing the Subconscious Mind Through Relaxation**
 **1\. Move to a quiet place where you won’t be disturbed.**
 Lie down on your back with your feet slightly apart, arms slightly extended from your body, palms facing down and make sure you’re as comfortable as possible. You don’t want anything to distract you from relaxing (i.e. sound, temperature, cell phone, etc).
 2\. Fix your eyes on a point in the ceiling and begin by taking 3 long deep breaths.
@@ -43,18 +43,18 @@ One where you are the ideal version of yourself. You wake up and you are immedia
 Imagine yourself as a top athlete going through your workout with intensity and focus....
 Imagine yourself getting to work early, accomplishing your goals and getting results...
 It’s your ideal day, those are just some examples, so do whatever you think the best version of yourself would do–but focus on making the right decisions.
-## **WHAT WILL THIS EXERCISE DO?**
+## **what Will This Exercise Do?**
 This exercise will reinforce to your subconscious mind (which accounts for roughly 85% of your total brainpower) that you are the ideal version of yourself.
 So when you get to the actual decisions in your day like accomplishing sales goals, or accomplishing your workout, your subconscious mind will begins identify with the best version of yourself.
 This won’t happen overnight, but [with enough practice](http://www.willpowered.co/learn/talent-is-overrated), the decisions will become automatic.
 Try to do this exercise for 20 minutes per day. There are 3 times that are optimal listed below, simply choose the one that's best for you:
-### **AFTER WAKING UP**
+### **after Waking Up**
 **Pro -** Mind already in a natural Theta Wave state from sleep, so it’s easier to reach total relaxation.
 **Con -** You could just end up falling back to sleep during the exercise.
-### **AFTER WORK**
+### **after Work**
 **Pro -** Achieving this relaxed state after work will help you relieve your stress and feel refreshed for the night.
 **Con -** It's harder to achieve the relaxed state because your mind is fully conscious. It's thinking about what you accomplished that day, and what you’ll be doing tonight.
-### **BEFORE BED**
+### **before Bed**
 **Pro -** Reaching the relaxed state right before bed will improve the quality of your sleep. It can also influence the subconscious mind before sleep which can help positively influence your dreams.
 **Con -** Your mind is taking full inventory of what’s happened that day so it’s tough to stay focused when trying to visualize your perfect day. It will be harder to stop it from wandering.
 [\*Sources](/s/Subconscious.pdf)

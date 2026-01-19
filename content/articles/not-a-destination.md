@@ -15,7 +15,7 @@ _And that was the problem!_
 Because she believed the battle was won, she allowed herself to relax. She shifted her focus to her work, she created new personal goals, and she allowed herself to indulge from time to time.
 **After all, she won the battle!** She didn’t _need_ to worry about indulging as much.
 Then, slowly but surely, she started putting on weight and until…Whoops. 200lbs.
-## **WHAT HAPPENS WHEN you're "DONE"**
+## **what Happens When You're "done"**
 This is not just an Oprah problem, or even a weight-loss problem. This phenomenon happens with any goal.
 When you’re working toward a goal, your brain will set up an internal reminder for any decision that might impact its success or failure.
 For example:
@@ -35,7 +35,7 @@ The $12,000 was simply the minimum amount I needed to produce it at the level of
 If we reach $13,000, I will be able to hit the recording studio and make the audio version available to everyone who is already getting the Ebook.
 So it is still full steam ahead to keep executing on my plan, and writing my story.
 And hopefully taking one more small step toward _strengthening the willpower of the world – one person at a time._
-## **RESULTS:**
+## **results:**
 -   **What we needed** today to reach our next goal: $192
 -   **What we raised** today from 7 backers: $235
 -   **Key learning:** My purpose is a journey, not a destination.

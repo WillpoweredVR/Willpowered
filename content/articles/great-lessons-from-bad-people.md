@@ -20,7 +20,7 @@ He was so focused, so committed, and so relentless in his pursuit of the best po
 But his work ethic didn't stop there. For the next 25+ years, Dr. Dre kept grinding.
 He kept pursuing the perfect performance, the perfect beat, and the perfect sound. Eventually creating the elegant design and beautiful sound of [Beats headphones](http://www.beatsbydre.com/explore/browse-by-category/active-collection/?icid=internal_HomePage_na_Active_US_na_ActiveCollectionShopNowTout) that would make him a billionaire in 2014.
 _But despite all of this success, Dr. Dre has done terrible things._
-## **THE HORRIBLE SIDE OF DR. DRE**
+## **the Horrible Side of Dr. Dre**
 _\*The following is graphic...you've been warned._
 Throughout his life, Dr. Dre has been extremely violent and sexist.
 At a Grammy's party in 1990, an angry, drunken Dr. Dre punched [Tarrie B](https://en.wikipedia.org/wiki/Tairrie_B) in the eye and then again in the mouth until she finally hit the ground. \[[3](http://www.laweekly.com/music/tairrie-b-hip-hops-original-bad-bitch-is-back-5874080)\]
@@ -32,7 +32,7 @@ Now, to be fair, Dr. Dre has a clean record of late and claims those days are be
 
 Take that statement as you will, but if he is not a horrible person now, he certainly was a horrible person then.
 _However, does being a horrible person mean we can learn nothing from him?_
-## **LEARNING FROM THE GOOD AND THE BAD**
+## **learning From the Good and the Bad**
 Over the last 5 years, I have been researching and writing a book called “[The Will of Heroes](http://www.willpowered.co/the-will-of-heroes)”. It tells the stories of 12 people who used their willpower to achieve extraordinary success.
 **I call these people “Heroes”, but despite all of their success, they also have faults.**
 _\- [Kobe Bryant](http://www.willpowered.co/learn/will-of-kobe-bryant) was unfaithful to his wife and charged with sexual assault._
@@ -53,7 +53,7 @@ Rather than confront the brutal facts and learn from them, we choose to ignore t
 By doing this, we miss out on the opportunity to truly learn from others.
 Kobe Bryant, for example, is one of my greatest heroes because I have learned so much from him about what it truly takes to achieve a dream. But I have learned just as much from his arrest for sexual assault.
 Whether or not he really did assault that woman (she dropped the charges when it was discovered she was mentally ill) he still cheated on his wife. And now his reputation is forever tarnished - all because of one night's bad decision. I will never forget that.
-## **CONCLUSION**
+## **conclusion**
 People are flawed. Even those who have seemingly heroic willpower. But just because someone has flaws in his or her life, that does not change what we can learn from them about what it takes to achieve a dream.
 I wish that Dr. Dre didn’t do anything horrible while he was working relentlessly to achieve his dream, but he did. And I don’t have to follow his violent behavior in order to respect the will and vision it took to become the first billionaire musician, ever.
 **Follow the good, learn from bad, and _never_ ignore the brutal facts.**

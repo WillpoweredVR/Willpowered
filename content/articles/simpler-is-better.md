@@ -19,13 +19,13 @@ No...
 Ford was relentlessly driven to succeed, but he was far from a genius.
 So if he didn't invent the car, the engine, or design the "best" model on the market, _why is he so highly regarded today?_
 Because Ford knew a profound truth — **simpler is better than better.**
-## **THE POWER OF SIMPLICITY**
+## **the Power of Simplicity**
 Ford took one of the most complicated and technologically advanced products of his era and made it simple enough for uneducated workers to manufacture.
 His factories provided jobs to thousands of working class people. His assembly line ran so efficiently that Ford pioneered the 8-hour workday. [2](https://en.wikipedia.org/wiki/Henry_Ford#Model_T?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Simple)
 His [Model T](https://en.wikipedia.org/wiki/Henry_Ford#Model_T?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Simple)was the embodiment of the incredible feats humanity can achieve when we combine the rigor of science, with the innovation of entrepreneurship.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1486651692101-Z2OE00QJ2QDDOJO7JPI8/image-asset.jpeg?format=original)
 Thanks to Ford, a whole class of people were able to experience a rich, beautiful world beyond the limits of their horizon.
-## **THE ENEMY OF SIMPLICITY**
+## **the Enemy of Simplicity**
 Thanks to the efforts of Henry Ford and the many great minds who followed, today's world is limitless.
 Despite all of the problems we face, **we are living in an unprecedented time of opportunity for individuals to create their future.**
 _So why doesn't it feel that way?_
@@ -46,16 +46,16 @@ If you can relate to this...
 > The worst decision is not picking the wrong car; it's wasting precious time and resources constantly trying to find a "better" car.
 
 That is why simpler is better than better.
-## **HOW TO FOCUS ON SIMPLICITY**
+## **how to Focus on Simplicity**
 Let me start by saying, I'm no master of simplicity yet.
 I still suffer from overconfidence and sometimes lose discipline to stay within my core strength (see my articles on addiction).
 However, by using the simple techniques below, I vastly improved — and continue to do so.
-### **1\. FIND YOUR HEDGEHOG**
+### **1\. Find Your Hedgehog**
 Over the last six years, I've had a clear purpose in mind — To discover the intersection of my talent, passion, and value. [This article](http://www.willpowered.co/learn/discover-passion-ability-and-value?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Simple) goes into detail on each significant step.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1486651240847-SXJWJ5W5MQEHF7IDZY7G/image-asset.png?format=original)
 The mere fact of getting closer and closer to this point with each passing day gave me the confidence to stay on the path — even when I hit setbacks and Made poor decisions.
 Do the [hedgehog exercise](http://www.willpowered.co/learn/confront-the-brutal-facts?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Simple) yourself. You don't need to know what the connection is yet. You don't need to be fantastic in every area yet. You do, however, need to be authentic in your answers.
-### **2\. CHOOSE OPPORTUNITIES WITHIN YOUR 3 CIRCLES**
+### **2\. Choose Opportunities Within Your 3 Circles**
 One of the biggest mistakes people make when choosing the right opportunity is skipping the hedgehog step and immediately trying to determine the best option.
 > In an uncertain future, what does "best" really mean?
 
@@ -63,7 +63,7 @@ If you have a general idea of your Hedgehog, best is the option that is as close
 If you jump immediately into comparing your opportunities, however, your mind will use societal conventions like money, prestige, or "coolness" of the opportunity to judge its value.
 While all of these may be valuable, **they will distract you from evaluating factors that are more important to you;** such as work hours, learning opportunities, and what you want out of life.
 With your hedgehog in mind, however, it will be obvious which positions will allow you to combine your passion, talent, and value — while tuning out the distractions.
-### **3\. DETERMINE YOUR PHILOSOPHY**
+### **3\. Determine Your Philosophy**
 > In an uncertain, unstable, and unpredictable world, you need a simple idea that will give you strength and stability to push your comfort zone.
 
 If nothing comes to mind right away, try to think back to a challenging time in your life when you found the inner strength to rise to the occasion.

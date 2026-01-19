@@ -13,7 +13,7 @@ We can never seem to find the time to accomplish everything on our to-do lists. 
 That’s why we all seek to become more productive. We want to be able to manage our time better to get more done and open up more free time.
 Because of this universal importance, there is now an entire industry that is dedicated to helping people become more productive. There are hundreds of apps and programs you can download that will help you change your behaviors, set priorities and goals, and practice mindfulness to tune out distractions. There are countless productivity gurus with books and articles about his or her philosophy about how you get more done in less time.
 All of these strategies and tools do have value – they would not be in business otherwise. But with all of the information out there, becoming more productive now seems like a complex formula, when really it is quite simple when you break it down.
-## **THE 3 COMPONENTS OF PRODUCTIVITY**
+## **the 3 Components of Productivity**
 Being more productive comes down to how you manage 3 factors: **your** **time, your focus and your energy.** \[[1](lifehacker.com/10-lessons-i-learned-from-a-year-of-productivity-experi-1584800618)\]
 **Managing your time** is about making sure that you are [working on the highest priority tasks](https://biz30.timedoctor.com/rescuetime-review/) within your unique schedule. It doesn’t matter if you’re focused and energetic if you’re not working on the right things at the right time.
 **Managing your focus** is about tuning out all distractions and giving your full attention to the task at hand. It doesn’t matter if you’re working on the right task and have a lot of energy, if that time and energy is being wasted checking your email and Facebook.
@@ -27,22 +27,22 @@ To get started with 10 minutes of meditation, **[download the free Headspace app
 To exert [mental energy](http://www.willpowered.co/learn/what-fuels-willpower), our brains burn through a chemical known as [glucose](http://en.wikipedia.org/wiki/Glucose). Any food that contains calories will give your brain glucose to work with. But not all glucose is created equally. Sugary foods will cause a quick spike of glucose, giving you mental energy for the short-term, but will cause a subsequent crash that depletes your energy just as fast.
 The best thing you can do is keep the glucose level in your bloodstream steady. This will give your brain a consistent reserve of fuel to exert mental energy for the long-term. **To accomplish this, researchers suggest a low-glycemic diet.** **\[[3](http://www.amazon.com/Food-Rules-Eaters-Michael-Pollan-ebook/dp/B002YJK5L4/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1415726126&sr=1-1&keywords=food+rules+by+michael+pollan)\]**
 This includes:
-### **1.** **LEAN PROTEINS**
+### **1.** **lean Proteins**
 Nothing fancy is required – just lean cuts of beef, poultry, pork and fish.
-### **2.** **NUTS**
+### **2.** **nuts**
 Specifically those nuts that are high in omega-3 fatty acids like walnuts, pecans and cashews. (Note: this does not include legumes like peanuts).
-### **3.** **FRESH FRUIT**
+### **3.** **fresh Fruit**
 Fresh fruit is preferred over dried fruit because dried fruits have a high concentration of sugar in them. This will result in the glucose spike for the short term and lead to a subsequent crash. Some good choices are bananas, blueberries, apples and cherries.
-### **4.** **VEGETABLES**
+### **4.** **vegetables**
 All vegetables will help build your long-term willpower, but specific veggies that pack a willpower punch are root-based. These include sweet potatoes, carrots, squash and onions which will all give you some serious mental energy!
 ## **3.** **Sleeping Better - INCREASED Energy**
 As a society, we are chronically sleep deprived. We all _know_ [we need to get more sleep](http://www.willpowered.co/learn/sleep-affects-willpower), but it's not that easy. Just like it seems there are not enough hours in the day to get things done, it also seems that there are not enough to get a full night's rest.
 **So here are scientifically proven tactics that will give you more energy without extra hours:**
-### **1\. A COMPLETELY DARK ROOM**
+### **1\. a Completely Dark Room**
 The best way to get more energy from sleep without increasing your hours in bed is to achieve total darkness. Under these circumstances we are able to achieve a deeper sleep and give our brains the ability to rest and recover better. \[[4](http://io9.com/why-we-need-to-sleep-in-total-darkness-1497075228)\]
-### **2\. NAP**
+### **2\. Nap**
 Other research suggests that it’s the amount of consecutive hours you spend awake that matters the most. So even taking a 20-minute power nap has huge benefits for your self-control! \[[5](http://www.webmd.com/balance/features/the-secret-and-surprising-power-of-naps)\]
-### **3\. BUILD A RESERVE**
+### **3\. Build a Reserve**
 Although this is not a fail-safe strategy, catching up on sleep has been shown to reverse some effects of sleep deprivation. Getting more sleep on the weekend will create a reserve of energy that your brain can use for willpower during the week. \[[6](http://www.psychologytoday.com/blog/sleep-newzzz/201311/can-you-ever-really-catch-sleep)\]
 ## **4.** **Exercising - INCREASED Energy**
 There are [incredible benefits of exercise on your productivity](http://www.willpowered.co/learn/effects-of-exercise-on-willpower). Research shows that those who exercise regularly have more energy, more ability to focus and have greater health (you can't be productive when you're home sick!). **\[[7](http://www.ncbi.nlm.nih.gov/pubmed/17032494)\]**
@@ -65,12 +65,12 @@ You can find 10 of the best apps that remove distractions [here.](http://99u.com
 ## **8\.** **Using Your “Want Power” – FOCUS & Energy**
 None of the tactics above will give you the same focus and energy that having a great purpose will. **It doesn't matter if we eat right, sleep well, exercise and tune out distractions if _we don't really care_ about what we're working on.**
 A genuine desire to do something gives us focus and energy that seemingly [comes out of nowhere](http://www.willpowered.co/learn/inspiration-will-enhance-your-willpower). This happens when we remember what we truly want, which triggers a response in our brain that strengthens our willpower. This is known as our "want power" and we can activate it in 2 ways:
-### **1\. SET REMINDERS**
+### **1\. Set Reminders**
 Setting reminders for yourself about what you are truly working for is one of the best ways to increase your want power. When doing the day to day tasks of a project, you can lose sight of the big picture very easily. So setting reminders will help you keep your goal in mind and increase your want power. \[[8](http://vimeo.com/44699354)\]
-### **2\. BE INSPIRED DAILY**
+### **2\. Be Inspired Daily**
 We all have different things that inspire us. For me, it's [Leonardo da Vinci's first painting.](http://www.willpowered.co/learn/inspiration-will-enhance-your-willpower) It gives me motivation to go over every detail of my work, even when that task is boring. Yours could be an inspirational speech, a video, a great leader or any number of other things.
 Whatever your inspiration is, ensure that you can turn to it on a daily basis. This will help you keep going - especially on those days when you feel like you just don't have the willpower to be productive. \[[12](http://www.amazon.com/gp/product/B0052REQCY?btkr=1)\]
-## **CONCLUSION**
+## **conclusion**
 Our lives are too short. We all want to squeeze as much value out of them as we possibly can. This has led us to seek innovative ways to produce more great work in fewer hours. Unfortunately, this has led us to overcomplicate the process of becoming more productive.
 Becoming more productive simply comes down to managing your time, your focus and your energy effectively. The 8 techniques listed above will help you increase your energy and focus, but by far the most important is the _reason why you are working in the first place._ There is no productivity method on earth that can triumph over a deep, genuine desire to create great work. No matter what that work may be.
 [\*Sources](/s/Productivity.pdf)

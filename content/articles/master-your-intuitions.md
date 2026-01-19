@@ -20,7 +20,7 @@ When he made this discovery, Semmelweis immediately began requiring that doctors
 After some time had passed, Semmelweis felt that he had enough evidence to bring to the head of Vienna General and make the hand washing procedures required hospital-wide.
 After listening to Semmelweis' theory and evidence, the head doctor not only refused to make the hand washing rules a hospital-wide practice, he forbid the doctors in Semmelweis' department from adhering to them!
 **He simply could not fathom that the doctors were the ones that were killing their patients.** So he ignored Semmelweis, and attributed the disease to the ventilation system. Which, of course, led to more deaths and no progress.
-## **THE POWER OF OUR INTUITION**
+## **the Power of Our Intuition**
 Most of you will look down on the head of Vienna General Hospital–and for good reason.
 _How dare he refuse the evidence and allow innocent women to die!_
 But the question is…was he just an arrogant or immoral person? Or is it possible that you and I are just as likely to ignore evidence that we don't want to accept either?
@@ -65,7 +65,7 @@ Because participants had to respond quickly, it was difficult to categorize the 
 The same experiment has been conducted to test various intuitive prejudices against race, age, and social group. You can take it for yourself by [clicking here.](http://projectimplicit.org/index.html)
 Of course, your willpower is not immune to this power of the elephant.
 When faced with the decision to work on your goals, if your elephant starts heading too far down the path to [procrastination](http://www.willpowered.co/learn/why-we-procrastinate), the rational part of your brain will turn into a lawyer [seeking justification](http://www.willpowered.co/learn/feeling-good-justifies-doing-bad) for putting that work off.
-## **HOW DO YOU AVOID THIS PATTERN?**
+## **how Do You Avoid This Pattern?**
 So how do you make the best decision and get your elephant going in the right direction?
 When I learned about this phenomenon, I immediately believed that if you teach people “how to think” like we do in our top colleges and universities, that will train them to become scientists, rather than lawyers.
 Once again, the opposite is true.
@@ -73,19 +73,19 @@ The more educated someone is, the more likely they are to act like the head of V
 Rather than being better at understanding the evidence, most well-educated people are simply better at rationalizing their judgments. The best debaters aren't those who are best at finding the truth, but those who are best at arguing.
 This shows us that we shouldn't focus on turning our lawyers into scientists, we should focus on taming our elephants.
 Here are three things you can do to gain more control over your elephant:
-### **1\. BE SELF-AWARE**
+### **1\. Be Self-aware**
 The first step towards taming your elephant is to simply be aware that it exists.
 Understand that you will be powerfully [motivated](http://www.willpowered.co/learn/motivation) to favor justification over understanding when forming your decisions. Those decisions could be as large as your beliefs, or as small as your trip to the gym. Regardless of the decision or implications, your elephant will take the lead.
 So take a moment of self-awareness to recognize when this happens, and simply ask _why?_ Why do you think your elephant is taking you in this direction? What intuitions is it basing that decision on? Is it really justified?
 Being mindful and curious in these moments will shift power from your elephant to your scientist.
-### **2\. LEARN HOW TO TALK TO YOUR ELEPHANT**
+### **2\. Learn How to Talk to Your Elephant**
 The more chances you get to have those moments of self-awareness, the more you will understand your elephant.
 The next step is to learn how to communicate with it.
 Understand where your intuitions are likely to take you, and come up with ways you can motivate your elephant to make the right decisions.
 Be careful to remain curious of your elephant in this step, not judgmental. It is very easy to blame yourself for why you feel a certain way, but that will only shift power back to your elephant.
 **This happens me all the time.** As an introvert, my elephant will lead me away from attending events, giving talks, etc. And even though I’m aware of this, it's really easy to blame myself for being shy, rather than to be curious about what I'm really trying to avoid.
 By remaining curious, it helps me see the situation for what it is, not what my elephant is building it up to be.
-### **3\. SHAPE THE PATH**
+### **3\. Shape the Path**
 Once you learn how to communicate with your elephant, then it is time to shape your path ahead time to get the elephant moving in the right direction. \[[6](http://amzn.to/1q0fu7X)\]
 For example, one of the biggest struggles I have with my elephant is writing every day.
 Oftentimes I sit down in my desk, begin answering emails, checking some marketing numbers, and when it's time to start writing, my elephant is doing everything it can to distract me. Then I can feel my scientist turn into a lawyer trying to justify putting my writing off.

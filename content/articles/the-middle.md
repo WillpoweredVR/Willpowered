@@ -30,7 +30,7 @@ Because I kept fighting through those days, I was able to learn the crucial less
 Whatever your goal, dream, or desire, your success in it is going to come from your attitude and willpower to get through the middle.
 Your willingness to endure the boring, frustrating days when your initial enthusiasm has worn off..._and the end is still so far away..._
 In those days: [stay persistent](http://www.willpowered.co/learn/get-through-the-middle), [embrace the boredom,](http://www.willpowered.co/learn/embrace-boredom) and remember that if you can get through the middle, **the sprint to the finish line will be much easier.**
-## **RESULTS:**
+## **results:**
 -   **What we needed** today to reach our next goal: $222
 -   **What we raised** today from 7 backers: $301
 -   **Key learning:** Goals are won and lost in the middle, not the beginning or end.

@@ -36,23 +36,23 @@ To test the effects even further, researchers measured the glucose levels of pri
 ## **What This Means for Us**
 Clearly, glucose plays a remarkably important role in our ability to control our behavior. To give yourself a consistent stream of healthy glucose to fuel your willpower, stick to low-glycemic foods.
 These include:
-### **1\.** **LEAN PROTEINS**
+### **1\.** **lean Proteins**
 Nothing fancy is required – just lean cuts of beef, poultry, pork, fish and free-range eggs.
-### **2\.** **NUTS**
+### **2\.** **nuts**
 Specifically those nuts that are high in omega-3 fatty acids like walnuts, pecans and cashews. (Note: this does not include legumes like peanuts).
-### **3\.** **FRESH FRUIT**
+### **3\.** **fresh Fruit**
 Fresh fruit is preferred over dried fruit because dried fruits have a high concentration of sugar in them. This will result in the glucose spike for the short term and lead to a subsequent crash. Some good choices are bananas, blueberries, apples and cherries.
-### **4\. VEGETABLES**
+### **4\. Vegetables**
 All vegetables will help build your long-term willpower, but specific veggies that pack a willpower punch are root-based. These include sweet potatoes, carrots, and onions which will all give you some serious willpower fuel!
 ## **The Importance of Breakfast**
 This article began by examining the importance of breakfast, so that is where we will close. Before you try to set a plan to completely overhaul your diet to some of the foods listed above, stop!
 If you do not currently have one of the 4 food types listed above on a regular basis, do not try to have them for all 3 meals – **just have them consistently for breakfast.**
 There are 3 reasons you should consistently eat a low-glycemic breakfast:
-### **1\. IT WILL GIVE YOU A CONSISTENT STREAM OF GLUCOSE**
+### **1\. it Will Give You a Consistent Stream of Glucose**
 If you’re going to eat one meal where you produce a consistent stream of glucose, it may as well be the first one. This will give you more time throughout the day in which your brain has consistent glucose to work with, as opposed to dinner in which you will only have a few hours before bed.
-### **2\. IT WILL GIVE YOU MORE WILLPOWER TO EAT HEALTHY LATER IN THE DAY**
+### **2\. it Will Give You More Willpower to Eat Healthy Later in the Day**
 With the increased level of glucose in your system, you will have more willpower to resist the donuts that were brought into the office and order the healthiest item on the lunch menu. By eating a healthy breakfast, you’re setting yourself up for a healthy snack and lunch as well.
-### **3\. YOU WILL EAT HEALTHY WHEN YOU HAVE THE MOST WILLPOWER**
+### **3\. You Will Eat Healthy When You Have the Most Willpower**
 Your willpower is strongest in the morning – provided that you had a good night’s sleep. This means that it will be easier for you to work up the willpower to cook a healthy meal than, say, after a long day at work. So eat healthy when it’s the most important and easiest time of the day. \[[3](http://www.ncbi.nlm.nih.gov/pubmed/19444258)\]
 ## **Conclusion**
 We have been told throughout our lives how important a healthy breakfast is. What this study showed is just how important _what you eat for breakfast is._ Although eating a donut or a muffin will be better than eating nothing, it will leave you with a depletion of willpower by the middle of the morning.

@@ -14,7 +14,7 @@ The first group of students was given a healthy breakfast of [low-glycemic](http
 The second group of students was given an unhealthy breakfast of [high-glycemic](http://www.health.harvard.edu/healthy-eating/glycemic_index_and_glycemic_load_for_100_foods) foods like bagels muffins and Pop-Tarts.
 And the third group was given no breakfast at all.
 Without knowing which students were in each group, the teachers were instructed to rate each of the students on their behavior and academic performance during the morning periods from 8:00-10:30am. \[[1](http://psr.sagepub.com/content/11/4/303.abstract)\]
-## **THE POWER OF WHAT YOU EAT**
+## **the Power of What You Eat**
 Across the board, **students with the low-glycemic breakfast greatly outperformed the others on the measures of behavior and performance.** They were focused, well behaved and genuinely interested in learning.
 Then the students who ate the high-glycemic breakfast were graded well for the first hour, but after 9am, they started to act out and lose [their focus](http://www.willpowered.co/learn/training-your-focus).
 Finally, the students who ate no breakfast at all performed the worst on both measures. They were undisciplined, unmotivated and inattentive throughout the entire morning period.
@@ -22,7 +22,7 @@ This all took place regardless of each students academic history, socioeconomic 
 _Clearly, what you eat has a significant impact on your willpower!_
 The reason why the students with the healthy breakfast performed so much better is because their food provided their brains with a consistent supply of [glucose](https://en.wikipedia.org/wiki/Glucose) - what the brain uses to exert willpower. \[[2](http://www.uky.edu/~njdewa2/gailliotetal07JPSP.pdf)\]
 The students with the unhealthy breakfast had a quick spike of glucose - provided by the sugary foods - but this spike eventually crashed, leaving them without willpower fuel. And the students without breakfast had no glucose and thus no willpower.
-## **THE 10 BEST FOODS FOR LONG-LASTING WILLPOWER**
+## **the 10 Best Foods for Long-lasting Willpower**
 So what foods, exactly, will give you the most willpower? As a general rule, any low-glycemic foods like lean proteins, vegetables, nuts and fruit will all give you a heathy dose of long-term willpower. \[[3](http://www.amazon.com/Food-Rules-Eaters-Michael-Pollan-ebook/dp/B002YJK5L4/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1415726126&sr=1-1&keywords=food+rules+by+michael+pollan)\]
 **But here are the 10 best foods for long-term willpower**. I included some from every major diet, so there should be something on this list for everybody:
 ## **1\. Poultry/Fish**
@@ -53,7 +53,7 @@ Stay away from yogurt that has been processed or has added sugar, however. Many 
 Pick a berry, any berry. Berries are some of the best options for long-term willpower because of their lower sugar content relative to other fruit options like apples and bananas.
 They also have the added benefit of being high in fiber and antioxidants, so they are by far the best choice as far as fruit.
 [Click here](http://www.everydayhealth.com/diet-nutrition-pictures/amazing-health-benefits-of-berries.aspx) to see the full list of health benefits of berries.
-## **8\. AVOCADOs**
+## **8\. Avocados**
 Avocados are also a great fruit option for long-term willpower due to their relatively low sugar and high amount of healthy fats. These healthy fats have also been proven to help you absorb nutrients from other plant foods more effectively.
 They also provide a very healthy alternative to butter or mayonnaise if you want to add a creamy texture to your food.
 [Click here](https://4inlanyards.com/blog/health-benefits-of-avocado/) to see the full list of health benefits of avocados.
@@ -65,7 +65,7 @@ Sweet potatoes are some of the most nutrient-dense foods around and are possibly
 Carrots are another great snack food for long-lasting willpower. Like sweet potatoes, they are rich in beta-carotene which the body turns into Vitamin A for energy.
 Although not quite as healthy as sweet potatoes, carrots are a much healthier carbohydrate option than breads or cereals.
 [Click here](http://authoritynutrition.com/foods/carrots/) to see the full list of health benefits of carrots.
-## **CONCLUSION**
+## **conclusion**
 Your willpower acts like a muscle. And like other muscles in the body, it gets energy from the foods that you eat. There are plenty of foods that will help give your brain willpower fuel, but these 10 are the best available.
 If none of these foods seem appealing to you, do not panic! As a general rule, the best foods for your long-term willpower are those that are non-processed.
 Processed foods usually have added sugar or high-fructose corn syrup, which will always lead to the spike and crash effect. So choose healthy, natural foods and skip the processed foods. If you do that, you will see extraordinary benefits to your long-term willpower!

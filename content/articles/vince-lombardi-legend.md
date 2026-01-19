@@ -20,13 +20,13 @@ After being given the position, Lombardi seized his moment. He worked tirelessly
 In Lombardi's first 2 seasons with Army, they only lost 1 game! They were among the best offenses in the country, and Lombardi was sure that these results at the college level would be enough to earn him a head coaching position.
 Nope.
 Lombardi was continually turned down for head coaching jobs he was qualified for. Then one interviewer simply told him, “you’d better look around and find something else. Because I’m convinced no one is going to hire an Italian head coach.” \[[1](http://www.amazon.com/When-Pride-Still-Mattered-Lombardi/dp/0684870185/ref=sr_1_1?s=books&ie=UTF8&qid=1449072184&sr=1-1&keywords=vince+lombardi+biography)\]
-## **OPPORTUNITY**
+## **opportunity**
 For 5 years, Lombardi would languish as he saw his less-qualified peers continue to get the jobs he felt he deserved.
 Then a glimmer of hope finally came. He was offered the assistant coaching job at the New York Giants in the NFL. Still not his ideal head coaching position, but at least he would be coaching at the highest level.
 In the NFL, Lombardi was able to put his skills on display for the entire nation. In his second year with the Giants, he led them to the championship game in what would be called “[The Greatest Game Ever Played](https://en.wikipedia.org/wiki/1958_NFL_Championship_Game)”.
 After that season, Lombardi felt he could no longer linger as an assistant coach. It was time to become a head coach - no matter how terrible the team was.
 Then, Lombardi got his bittersweet victory as he was offered the head coaching position in Green Bay.
-## **LOMBARDI’S DO OR DIE**
+## **lombardi’s Do or Die**
 _“Uh Dad, Green Bay isn’t even a city on this Map.”_
 _“Don’t worry, when I’m done with this team, it will be.”_
 **Lombardi inherited a terrible situation in Green Bay.**
@@ -45,11 +45,11 @@ However, all of the hard worked paid off. In their first season, Lombardi turned
 _It was do or die, and Lombardi did._
 After that, the Green Bay Packers became a perennial powerhouse. The very next year, they made it all the way to the NFL championship game, falling just 9 yards short of a touchdown that would have secured the victory.
 But that would prove irrelevant. As they would win 5 championships over the next 7 years – something no other team has done in NFL history. In the process, the city of Green Bay became nicknamed "Title Town", and Vince Lombardi became legendary.
-## **HOW VINCE LOMBARDI BECAME LEGENDARY**
+## **how Vince Lombardi Became Legendary**
 Vince Lombardi is arguably the greatest coach there has ever been in the game of football. His name is written into the trophy given to the Super Bowl champions every year, and the city of Green Bay is infinitely greater thanks to him.
 Given this, it is unbelievable to think about just how close he was to never even becoming a head coach at the collegiate level.
 So, let's unpack the Lombardi story to see how he was able to overcome the prejudices of his era, and become legendary.
-### **1\. NOT SETTLING FOR “GOOD”**
+### **1\. Not Settling for “good”**
 After the Green Bay Packers lost to the Philadelphia Eagles in Lombardi’s first ever championship game, he addressed his team after the game was over:
 _“Gentlemen, we got beat today. But I can tell you right now, we will never lose a championship game again.”_
 **And they never did.**
@@ -60,7 +60,7 @@ In life, we are given countless opportunities to settle for the good things we h
 **Do not be seduced by this path.**
 There is no shame in settling for a comfortable life if that is what you truly want. But be honest with yourself – if you dream of more, do not lose sight of it.
 Don’t settle for what’s practical, work for what’s possible.
-### **2\. BEING DEEPLY PRINCIPLED**
+### **2\. Being Deeply Principled**
 Vince Lombardi did not stick to the status quo.
 His first speech as a head coach was to a team that finished dead last in the entire league. **Yet he was talking about chasing perfection!**
 _What right did a first time coach talking to a team of losers have to chase perfection?_
@@ -76,7 +76,7 @@ _You will have to resist when you are tempted._
 _And you will have to sacrifice what you want now, for what you want most._
 But strong principles will give you the willpower you need to make these tough decisions. They will guide and motivate you to reach your destination, even when the path is treacherous. \[[3](http://www.amazon.com/Willpower-Instinct-Self-Control-Works-Matters-ebook/dp/B005ERIRZE/ref=sr_1_1?ie=UTF8&qid=1417781551&sr=8-1&keywords=the+willpower+instinct)\]
 **So determine your principles, and _never_ compromise them.**
-### **3\. HE MADE SACRIFICES**
+### **3\. He Made Sacrifices**
 _“The beginning of the week he’s very tense…I don’t see him Monday, Tuesday, Wednesday at all. It must be very hard to do what he needs to do, and to do it alone.” – Marie Lombardi_
 The untold story of Vince Lombardi is the terrible toll his work took on his personal life.
 Throughout the course of his career he spent as many waking hours as possible coaching. His mind was always on the team, the result from last week, and the upcoming opponent they were facing this week.
@@ -86,7 +86,7 @@ He wasn't able to be the great husband and father that he wanted to be. This cau
 **Whatever greatness you seek, understand that it requires sacrifices.** For Lombardi, that sacrifice was his family's happiness. He probably should never have become a husband and father given what his true priorities were.
 You will probably not have to make as big of a sacrifice to accomplish what you want in life, but be sure you know what's truly at stake. **You do not have an endless supply of willpower.** Trying to "do it all" is a sure recipe for disaster. \[[4](http://www.psy.lu.se/upload/psykologi/pdf/strength_model1.pdf)\]
 So set your priorities and be prepared make sacrifices.
-## **CONCLUSION**
+## **conclusion**
 Vince Lombardi was a football genius. But it was not his genius that made him a football legend - it was his willpower. Those who are unable to reach their dreams are not always the ones who fail.
 More often it is those who stop pushing and settle for "good". Those who begin to compromise their principles and make decisions based on what others are doing. And those who are unwilling to make the hard sacrifices necessary to achieve excellence.
 So ask yourself, are you willing to commit to excellence?

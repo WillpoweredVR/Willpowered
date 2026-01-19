@@ -27,7 +27,7 @@ With this scarcity of time, money, and even willpower, I have become extremely s
 And the most valuable lesson I learned through the process is to:
 > Think AND not OR
 
-## **THE ART OF HITTING MULTIPLE BIRDS AT ONCE**
+## **the Art of Hitting Multiple Birds at Once**
 In the last year, I accomplished a lot. I don't say that to brag; it's just a fact.
 Here are the highlights:
 1.  I finished [writing a book](https://www.kickstarter.com/projects/743524537/the-will-of-heroes?ref=Willpowered)
@@ -43,7 +43,7 @@ Here are the highlights:
 **None of this was easy.**
 It required a great purpose, many sacrifices, and harnessing the mental strength that I built over years of deliberate effort.
 However, the techniques I used were simple and immediately useful.
-### **1\. KNOW YOUR GOALS**
+### **1\. Know Your Goals**
 In the fall of last year — as I was [building Wilson](https://willpowered.reverberation.co/p/build-a-digital-employee/?product_id=240951&coupon_code=SUBSCRIBERS) — I was finding it harder and harder to find time to:
 -   Write 1,000 words/day
 -   Exercise for an hour/day
@@ -55,12 +55,12 @@ We all face situations like this. You probably have different specific goals tha
 -   Relationship goal
 -   Appreciate life goal
 Faced with all of these priorities, the first thing you want to do is
-### **2\. BE CONCRETE AND SPECIFIC**
+### **2\. Be Concrete and Specific**
 Most people have these goals in mind, but they aren't concrete about what exactly they want and — more importantly — why they want to achieve them.
 Notice that my goal wasn't to "write more." It was, "write 1,000 words/day." And the reason why I want to write is clear in my mind — it's my creative outlet.
 Whatever those nagging goals in the back of your mind are, **make them concrete and purposeful.**
 You don't necessarily have to write them down, but you do need to know what you want to achieve and [why you want to achieve it.](http://www.willpowered.co/learn/start-each-goal-with-why?utm_source=Newsletter&utm_medium=Email&utm_campaign=AND_not_OR)
-### **3\. IS IT WORTH IT?**
+### **3\. is it Worth It?**
 The next step is to simply ask yourself if your concrete goal and the purpose behind it is worth the effort it will take to achieve.
 With my goal to keep in touch with my Chicago friends, I realized that I would have to venture outside of my comfort zone and ask my friends to chat on the phone.
 I'm not sure what your experience is with phone calls, but **I had never really just called a friend to chat**. In my circles, it's just not what guys do.
@@ -71,7 +71,7 @@ If the answer is "yes" to that question — whether it's a small thing like bein
 
 If it is worth the effort, then you'll only cause yourself pain and suffering by complaining.
 So remember your purpose, remember that it's worth, and focus on finding the solutions — not adding more problems.
-### **4\. IT'S (DATE) AND YOU ACCOMPLISHED ALL THESE GOALS. _HOW DID YOU DO IT?_**
+### **4\. It's (date) and You Accomplished All These Goals. _how Did You Do It?_**
 > It's the end of the day and I just wrote 1,000 words, exercised for an hour, had a great conversation with a friend, and explored a new area of town...how did I do it?
 
 🤔...🤔...🤔
@@ -86,7 +86,7 @@ Plus, I also found that:
 -   I have explored more of the city than people who have lived here their whole lives
 -   I'm more polished in professional phone calls because I get "practice" time by calling friends.
 _And all of these are just the bonuses!_
-## **A MULTI-TASKING CAUTION**
+## **a Multi-tasking Caution**
 If you've been reading my work for a while, this post may seem confusing to you.
 > To be clear, I'm not suggesting that you multitask. I'm suggesting that you focus your effort on achieving multiple goals at once.
 
@@ -107,7 +107,7 @@ Which is why...
 > Multi-tasking is like trying to hit two birds with two stones in one throw.
 
 Good luck with that.
-## **CONCLUSION**
+## **conclusion**
 One of the biggest mistakes people make is **believing that something needs to be _This OR That._**
 In my experience, **90% of the time you can accomplish _This AND That_** — and maybe even "the other".
 The difference between the two comes down to discipline.

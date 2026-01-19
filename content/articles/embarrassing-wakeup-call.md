@@ -38,7 +38,7 @@ _So here's the plan..._
 Now, this plan isn't going to make me the online Mother Theresa. But I've finally woken up to how self-serving I've been.
 This is a realistic step in the right direction to making more connections, and hopefully making an impact - no matter how small.
 _I promise to do better for readers, dreamers, and the online community!_
-## **RESULTS:**
+## **results:**
 -   **What we needed today** to reach our goal: $433
 -   **What we raised today** from 4 backers**:** **$201**
 -   **Key learning:** Support others, but be genuine (people can tell!)

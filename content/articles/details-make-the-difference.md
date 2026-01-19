@@ -20,7 +20,7 @@ This small detail – reading the manual – turned out to be the defining chara
 _“I knew I would end up owning my own business someday, so I figured my challenge was to learn as much as anyone about all businesses. I believed that every job I took was me getting paid to learn about a new industry. I spent as much time as I could learning and reading everything about business I could get my hands on.”_
 It wasn’t talent, luck, or a genius idea that took Cuban to the top – it was the small detail of reading the frickin' manual.
 _“Most people think it’s all about the idea. It’s not. Everyone has ideas. The hard part is doing the homework to know if the idea could work in the industry, then doing the preparation to be able to execute on the idea.”_ \[1\]
-## **THE BIG VALUE OF SMALL DETAILS**
+## **the Big Value of Small Details**
 In our world of overloaded information and immediate gratification, the details get cast aside. We want big results; we want great information, and we want health, wealth, and happiness.
 _And we want them right now._
 But imagine the result you want - losing 10lbs, getting a degree, running a marathon, whatever - is represented by the number 1000.
@@ -32,7 +32,7 @@ _Every training run on your way to a marathon matters._
 But the more you focus on "the 1000", the less you pay attention to all of the "1"s that must happen to achieve that 1000.
 **People who accomplish great things, focus on those 1s.** That is why Mark Cuban read the frickin' manual. And that is why you must use your willpower to accomplish the small details that can lead to extraordinary success.
 To do that, though, you have to confront a powerful enemy – boredom.
-## **THE PURPOSE BEHIND CITING MY SOURCES**
+## **the Purpose Behind Citing My Sources**
 In early November, 2014, I was doing research on a story published by the Washington Post. The Post claimed that you will get a more restful night's sleep if you start turning your lights off when the sun goes down.
 As a researcher, I wanted to see what their source was on that so I could confirm that it was true. But they didn’t list it anywhere! Apparently they believed that the reader should just believe that what they said was true because they were the Washington Post.
 It was then that I realized that almost NOBODY, including major publications, cite their sources! I was outraged.
@@ -51,7 +51,7 @@ It gives you a rush of willpower to do even the most boring of tasks – because
 So the next time you are tempted to quit, procrastinate or ignore one of your "1s", think about the greater purpose behind why you are on the journey toward your goal in the first place.
 Remember just how important each of those small details is, and how achieving them will help separate you from the people who deem them as unnecessary and boring.
 Then get ready to achieve extraordinary results.
-## **CONCLUSION**
+## **conclusion**
 **It is true what they say – there are no shortcuts to success.** Great people achieve great things by focusing on the small details that add up to incredible results. They summon the willpower to read the frickin' manual.
 Doing the small things can seem insignificant and even boring. But to get to the total result of 1000, you need to achieve each 1. If you can think of the greater purpose behind why you are journeying toward your goal and remember the value of each detail, you will make it much easier to find the willpower to achieve extraordinary results.
 **Sources:**

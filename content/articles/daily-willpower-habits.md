@@ -12,7 +12,7 @@ _“We are what we repeatedly do. Excellence, therefore, is not an act, but a ha
 Success is a lot of small things done well, [day after day.](http://www.willpowered.co/learn/one-thousand-ones)
 What seems like an overnight success is usually a very long time in the making. Success is created from people who establish the right habits, then execute them over and over.
 So I wanted to share with you the top 10 habits that have been scientifically proven to give you incredible willpower!
-## **1\. MEDITATE**
+## **1\. Meditate**
 Meditation is the fastest and most effective way to increase your willpower. By [meditating](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower) you are training the brain to focus and resist the urge to wander. Research shows that after just 2-3 days of practicing meditation for 10 minutes, your brain will be able to focus better, you will have more energy, and you will be less stressed. \[[1](http://www.tandfonline.com/doi/abs/10.3200/JACH.56.5.569-578#.VFy5HvTF_88)\]
 There are a lot of myths surrounding meditation. Burning incense, chanting, wearing robes, etc. So let's start by explaining what meditation really is.
 **Meditation is simply the practice of bringing your thoughts to the present moment.** 47% of our lives are spent either reminiscing about the past or thinking about what we are going to do in the future. \[[2](http://news.harvard.edu/gazette/story/2010/11/wandering-mind-not-a-happy-mind/)\]
@@ -21,30 +21,30 @@ Meditation attempts to do just that. This is usually done by sitting upright in 
 For example, if you are completely focused on the task of cleaning dishes; without mentally going over your day, pondering another problem in your head, or thinking about what you will be doing next, you can achieve a state of meditation.
 If your mind is clear and focused completely on the present task, you will see the benefits of meditation.
 To get started meditating, check out [this article](http://www.willpowered.co/learn/benefits-of-meditation-on-willpower) which will give you the tools and exercises you need to begin adding the habit of daily meditation.
-## **2\. EAT A LOW GLYCEMIC DIET**
+## **2\. Eat a Low Glycemic Diet**
 When the body takes in food, it creates a [chemical known as glucose](http://learn.fi.edu/learn/brain/carbs.html) that travels through the blood stream. **This is what the brain uses as its source of fuel to think, create, and exert willpower.** So to ensure a healthy stock of willpower, we want to make sure our brain has enough glucose to use as energy. \[[3](http://www.uky.edu/~njdewa2/gailliotetal07JPSP.pdf)\]
 Any food that contains calories will give your brain glucose to work with. But not all glucose is created equally. Sugary foods will cause a quick spike of glucose, giving you willpower fuel for the short-term, but will cause a subsequent crash that depletes your willpower just as fast.
 The best thing you can do is keep the glucose level in your bloodstream steady. This will give your brain a consistent reserve of fuel to exert willpower for the long-term. **To accomplish this, researchers suggest a low-glycemic diet. \[**[**4**](http://www.amazon.com/Food-Rules-Eaters-Michael-Pollan-ebook/dp/B002YJK5L4/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1415726126&sr=1-1&keywords=food+rules+by+michael+pollan)**\]**
 Here are some low-glycemic foods that will give you long-term willpower fuel:
-### **1\. LEAN PROTEINS**
+### **1\. Lean Proteins**
 Nothing fancy is required – just lean cuts of beef, poultry, pork and fish.
-### **2\. NUTS**
+### **2\. Nuts**
 Specifically those nuts that are high in omega-3 fatty acids like walnuts, pecans and cashews. (Note: this does not include legumes like peanuts).
-### **3\. FRESH FRUIT**
+### **3\. Fresh Fruit**
 Fresh fruit is preferred over dried fruit because dried fruits have a high concentration of sugar in them. This will result in the glucose spike for the short term and lead to a subsequent crash. Some good choices are bananas, blueberries, apples and cherries.
-### **4\. VEGETABLES**
+### **4\. Vegetables**
 All vegetables will help build your long-term willpower, but specific veggies have a lot of willpower fuel in them are root-based. These include sweet potatoes, potatoes, and carrots which will all give you some serious willpower fuel!
 **Do not try to completely overhaul your diet if you are not used to eating these types of foods.** Instead focus on eating them for _just one meal per day._ The best of which would be [eating them for breakfast.](http://www.willpowered.co/learn/what-to-eat-for-breakfast)
-## **3\. GET ENOUGH SLEEP**
+## **3\. Get Enough Sleep**
 When you don't get enough sleep, your willpower takes the biggest hit. When you are tired, your brain cells are not able to absorb glucose as efficiently as when you are well rested. **This means that you begin lose the “power” in your willpower.** \[[5](http://www.ncbi.nlm.nih.gov/pubmed/19444258)\]
 Then your brain will recognize the fact that it is not getting enough glucose, and immediately start to crave sugary foods and caffeine to replenish its supply. However, because your brain cells are not absorbing glucose as efficiently as they should be, not only will you give in to eating junk, you will **_eat much more than you need_**_._
 Your brain will continue to crave junk food until it gets as much glucose as it can out of your bloodstream – regardless of how many calories that may be.
 Luckily, there are [scientifically proven tactics](https://sleepinvestor.com/power-nap/) that will help you get a better night’s sleep even without adding more hours:
-### **1\. A COMPLETELY DARK ROOM**
+### **1\. a Completely Dark Room**
 Most of us underestimate the affect that lights in our room have on our sleep. When our room is completely dark, it helps our brain shut down and sleep more efficiently. This helps us get more rest out of the hours we lay in bed; helping to restore our willpower. \[[6](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000145)\]
-### **2\. NAP**
+### **2\. Nap**
 Other research suggests that it is the amount of consecutive hours you spend awake that matters the most. So breaking up the day with a nap can have significant benefits. It is better to sleep for 7 hours with a 1-hour nap than it is to sleep for 8 consecutive hours without taking that break during the day. \[[7](http://www.webmd.com/balance/features/the-secret-and-surprising-power-of-naps)\]
-### **3\. CREATE A RESERVOIR**
+### **3\. Create a Reservoir**
 Getting more sleep on the weekend will create a reserve of energy your brain can use for willpower during the week. So if you cannot squeeze more hours of sleep in during the week, see if you can catch up on the weekend. \[[8](http://www.psychologytoday.com/blog/sleep-newzzz/201311/can-you-ever-really-catch-sleep)\]
 ## **4\. Exercise**
 We all know that exercise is good for our health, but can it also be [good for our willpower](http://willpowered.co/learn/effects-of-exercise-on-willpower)? In order to find out, researchers found 24 non-exercisers between 18 and 50 to partake in a 2-month study. They were given free gym memberships and asked to exercise just 1x/week for the first month and 3x/week for the second month.

@@ -17,7 +17,7 @@ As the army marched inland to face their enemies, Cortés ordered his men to “
 It was a decision that should have backfired. For if Cortés and his men were on the brink of defeat, they would have absolutely no chance to escape and save their lives.
 Remarkably, though, the command to burn the boats had the oppo­site effect on his men. Now, they were left with only 2 choices — succeed, or die. **And succeed they did.**
 Cortés became the first man in 600 years to conquer Mexico. Despite his lack of resources, he and his men conquered the empire – because they left themselves no other choice. \[[1](http://burningboats.com/about-burningboatscom/)\]
-## **WHY BURNING THE BOATS WORKS**
+## **why Burning the Boats Works**
 When I first started Willpowered, I had 6 months worth of savings that I used to get it off the ground. After 5 months, I had gained some traction, but not enough to make a living off of it.
 So I had 30 days to figure out how I was going to provide enough value through Willpowered in order to turn it into a living.
 Up until that point I had been working hard, but it wasn’t until that last 30 days that something else took over me. Before then, I always had something of a “boat” to escape with. I had enough money to pay for next month’s expenses, so I still “had time” to figure things out.
@@ -27,17 +27,17 @@ As soon I made that decision, I became [incredibly focused](http://www.willpower
 All of my focus, all of my creativity, indeed all of my willpower, was focused on turning my dream into a living. My brain could no longer make excuses, so it was devoting all my energy to solving the problem. \[[2](http://www.amazon.com/gp/product/B009JU6UPG/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B009JU6UPG&linkCode=as2&tag=willpowered-20&linkId=ZW72EU7L46KXDHOY)\]
 This is why burning your boats works. In a typical situation, your brain will exert its energy toward both working toward your goal, as well as thinking about all of the other things that you could be doing with your time.
 When you burn your boats, however, it knows that it _has to_ focus all of its energy on accomplishing you goal. So you are essentially operating with at least twice as many mental resources devoted to your success.
-## **BURNING BOATS IN DAILY LIFE**
+## **burning Boats in Daily Life**
 In order to gain this focus, energy and willpower it is not necessary that you have something as dramatic as a life and death situation or an inability to pay rent next month.
 Here are some ways that you can burn your boats and achieve your goals in everyday life:
-### **THE NOTHING ALTERNATIVE**
+### **the Nothing Alternative**
 Raymond Chandler, author of [_The Big Sleep_](http://www.amazon.com/Sleep-Vintage-Crime-Black-Lizard/dp/0394758285/ref=sr_1_1?s=books&ie=UTF8&qid=1421523780&sr=1-1&keywords=the+big+sleep), came to a realization one day that every time he procrastinated, it was because he found some other type of productive activity to do.
 Instead of writing, he would read the newspaper, read books by other authors, write letters, or some other positive thing. This made him feel better about his decision to procrastinate, but it meant that work was not getting done. \[[3](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231)\]
 But rather than impose disciplinary measures on himself to never procrastinate again; he decided to give himself the power of the “nothing alternative”.
 **During the time he set to work, he could either spend that time writing, or sit there doing nothing.**
 He stopped himself from procrastinating by burning the ships of all the other positive work he could do at that time. If he really could not think of anything to write, he could look out the window, stand on his head or get lost in his own thoughts, **but he could not actually do anything.**
 So the next time you know that you need to get something done, burn your ship of all other positive activities. Either work, or do nothing. This will give you more focus and energy to accomplish the thing that you should be working on.
-### **MAKE IT HARD TO QUIT**
+### **make it Hard to Quit**
 In the spring of 2014, I was training for a [13.5 mile Spartan Race in Monterrey, California](http://www.spartan.com/en/race/detail/820/overview). The event would be over 2 hours of running up and down a mountain while also doing about 30 obstacles along the way.
 In order to train for it, I had to do runs of up to 16 miles (over 25km) even on weekdays. **After a long day of work, a 16-mile run can seem completely overwhelming.**
 So I never focused on the full 16 miles. My goal was to simply make it 8 miles away from my home. Then I had no choice, I could either run or walk the 8 miles back, but I had to get home somehow! **Quitting entirely was not an option.**
@@ -45,7 +45,7 @@ Compare that to running on a treadmill. On a treadmill your means of quitting is
 This same method could be applied to going to the library to study rather than in your home. If you are already at the library, your means of quitting aren’t as easy as simply turning on your TV in your home.
 You could also apply it to dieting by getting rid of all of the unhealthy food in your home. Your means of “quitting” your diet are harder when you need to make a trip to the store, rather than just open up a cupboard.
 With your goal, see what you can do to make quitting more difficult. Get rid of things you know will tempt or distract you. Or put yourself in a position where you are forced to succeed - as I did by running 8 miles away from my home.
-### **CREATE BRIGHT LINES**
+### **create Bright Lines**
 One summer day, while still recovering from his alcohol problem, [Eric Clapton](https://en.wikipedia.org/wiki/Eric_Clapton) drove past a pub and began to crave drink.
 _"My selective memory told me that standing at the bar in a pub on a summer's evening with a long, tall glass of lager and lime was heaven. I chose not to remember the nights which I had sat with a bottle of vodka, a gram of coke, and a shotgun, contemplating suicide."_ \[[3](http://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231)\]
 On that day, Clapton relapsed. He promised himself that he would merely drink "in moderation", but ended up on the same path as before. Binge drinking, doing hard drugs and contemplating suicide.

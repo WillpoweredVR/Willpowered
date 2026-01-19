@@ -54,7 +54,7 @@ The overwhelming evidence today proves that in order to achieve top-level perfor
 To some, this finding may not make sense. After all, look at our society! There are plenty of people who have studied a particular field for over 10 years, or accumulated well over 10,000 hours of work in their domain.
 Yet, they have nowhere near the success of a Mozart or a Bill Gates. Doesn’t this prove that those people had a special gift since birth that allowed them to improve _more_ from their 10,000 hours than a normal person would?
 **Perhaps it is not talent _alone that_ makes one great, but that talent is what separates you as long as you are willing to put in the work.** These are all valid questions and their answers lie in defining “deliberate practice”.
-## **DELIBERATE PRACTICE**
+## **deliberate Practice**
 The biggest difference between deliberate and average practice is focus.
 Great performers focus on improving the hardest tasks first and get consistent feedback on how to fix their mistakes. They spend their practice time consistently improving – not just going through the motions.
 Here is an example from one of the fathers of performance psychology, [Aubrey Daniels](https://en.wikipedia.org/wiki/Aubrey_Daniels):
@@ -62,16 +62,16 @@ Here is an example from one of the fathers of performance psychology, [Aubrey Da
 The Player B retrieves his own shots, dribbles leisurely and takes several breaks to talk to friends. Player A has a colleague who retrieves the ball after each attempt.
 The colleague keeps a record of shots made. If the shot is missed the colleague records whether the miss was short, long, left or right and the shooter reviews the results after every 10 minutes of practice.
 **To characterize their hour of practice as equal would hardly be accurate.** Assuming this is typical of their practice routine and they are equally skilled at the start, which would you predict would be the better shooter after only 100 hours of practice?” \[[6](http://jamesclear.com/deliberate-practice)\]
-## **HOW TO ADD DELIBERATE PRACTICE TO YOUR LIFE**
+## **how to Add Deliberate Practice to Your Life**
 You can clearly see the difference between the two players. But deliberate practice does not just apply to sports or music. You can add it to any skill you want to acquire by using the formula below.
 The key elements of deliberate practice are to:
-### **1. DETERMINE WHAT YOU NEED TO WORK ON**
+### **1. Determine What You Need to Work On**
 Rather than working on what you are already good at, deliberate practice requires that you work on those things that you _are not good at._ So identify what you need to work on to reach your goals.
-### **2. GET FEEDBACK ON YOUR WORK**
+### **2. Get Feedback on Your Work**
 Feedback is one of the most important aspects of deliberate practice. You need to be constantly learning what you are doing well and where you can improve. You don't need to have an instructor, per se, the basketball player in the example simply used the hoop as his feedback.
-### **3. WORK ON THE ASPECT YOU NEED TO IMPROVE**
+### **3. Work on the Aspect You Need to Improve**
 Begin practicing the things that you have recognized you need to improve on. If the basketball player continuously missed short, he would work on adjusting his shot to have slightly more power. Based on your feedback, improve your skills.
-### **4. REPEAT**
+### **4. Repeat**
 Repetition is absolutely crucial for the development of your skills. Going through this deliberate practice process one time will not do anything. _R__emember, even Mozart had to repeat this process for 10 years in order to become great!_
 ## **Conclusion**
 The story of Wolfgang Amadeus Mozart is often cited as “proof” that there is such thing as innate talent. He proves that some of us are simply born with the ability to play the violin, to play professional sports or to become a world-class writer.

@@ -53,7 +53,7 @@ To get the most willpower out of your diet follow these guidelines:
 8.  **Yes fresh fruit**. Fruits do have more sugar than others, but many fruits like berries and avocados are still low-glycemic – even though they have sugar. Fresh fruit is preferred over dried because dried fruits have a higher concentration of sugar in them.
 You can also check out this list of the [10 Best Foods for Long-Term Willpower.](http://www.willpowered.co/learn/best-foods-for-willpower)
 **Do not worry if this diet seems intimidating.** You likely are not a professional basketball player and you do not need to overhaul your diet entirely. Just start slow. Have one more "willpowered meal" per day - [preferably for breakfast.](http://www.willpowered.co/learn/what-to-eat-for-breakfast)
-## **CONCLUSION**
+## **conclusion**
 Tim Grover’s has trained some of the greatest basketball players of all time. Part of the reason why they’re great is because they trained at such a high intensity that even the best athletes could not last 30 minutes without vomiting.
 To make it through a workout like that you don’t just need physical strength – you need mental strength. Whether he knew it or not, Grover’s diet plan helped his athletes survive his workouts because they had a consistent supply of glucose, which is what the brain uses to exert willpower.
 All foods provide the brain with glucose, but high-glycemic foods – like baked goods and candy – will create a spike in glucose that is followed by a crash. For long-term willpower, stick to low-glycemic foods like lean meat, nuts, fruits and vegetables.

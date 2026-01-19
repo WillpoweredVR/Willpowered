@@ -17,13 +17,13 @@ _Help you travel to more places and communicate effectively._
 _And many more!_
 **That is why you must summon the willpower to immerse yourself in the language and truly master it.**
 So I worked with [online ESL teacher Paul Austin](http://toeflspeakingteacher.com/) to create a framework to help you effectively use your willpower to drastically improve your English!
-## **FRAMEWORK FOR LEARNING ENGLISH**
+## **framework for Learning English**
 Learning English is like building a house. You need raw resources like bricks, cement, wood, etc. You need an organized plan of how you will build it. And you need to put in the time and effort that it takes to get it done.
 To learn English, you need 3 things as well:
 **1.** **Raw resources** – This is what you listen to and read.
 **2.** **Organized plan** – The strategies and techniques you use to study English.
 **3.** **Time and effort** – The consistent [practice](http://www.willpowered.co/learn/talent-is-overrated) that it takes to master the language.
-## **RAW RESOURCES**
+## **raw Resources**
 First identify the content that you want to become your raw resources.
 ### **Which Raw Resources?**
 The raw resources that you need are simple and freely available to everyone! Simply by listening to English podcasts, [TED talks](https://www.ted.com/talks), movies, and TV Shows; you can get an ear for how to speak the language.
@@ -37,7 +37,7 @@ Shift your focus with each listen:
 -   3rd new words or phrases
 -   4th pronunciation and accent
 Repeating this process will be immensely useful for all of the reasons [listed here](http://www.willpowered.co/learn/talent-is-overrated).
-## **ORGANIZED PLAN**
+## **organized Plan**
 Next comes choosing a plan that will help you reach your goals. There are several options you can choose.
 ### **Private lessons with native speakers**
 This is the best option to help you become fluent. As long as you can afford it, it will give you the hands-on learning you need to reach your goals.
@@ -49,7 +49,7 @@ You can find language exchange options [here.](http://www.mylanguageexchange.com
 Speaking out loud in English and recording it will help you identify your areas of weakness. However, this is obviously not the best option as you may not be able to detect your own mistakes.
 A great way to start this is to listen to a native speaker communicate an idea. In your own words try to communicate that same idea and record it. Then go back and compare your recording to the native speaker to see where you can improve.
 There are obviously many other options for your plan such as classes, schools, etc. but they are quite expensive and usually take longer to achieve improvement.
-## **TIME AND EFFORT**
+## **time and Effort**
 This is where many fall short in their efforts to learn English - and it is where your willpower is crucial to your success.
 To stick to your organized plan and be consistent with your raw resources, you must:
 ### **1.** **understand that learning English is a marathon, not a sprint.**
@@ -75,7 +75,7 @@ The final technique you can use to ensure you learn English is to being [monitor
 Simply writing down the podcasts you listened to, the movies you watched, the time you spent speaking out loud, etc. will subconsciously motivate you to improve. \[[5](http://www.ncbi.nlm.nih.gov/pubmed/18617080)\]
 If you spent 15 minutes yesterday listening to a podcast, you will want to beat that by spending 16 minutes today. If you have a chain of days you made progress, [you will not want to miss a day.](http://www.willpowered.co/learn/get-through-the-middle)
 **So write down your daily progress in a notebook or excel sheet and make sure you are consistent!**
-## **CONCLUSION**
+## **conclusion**
 Improving your English is tough, but it is worth it. You will make more money, you will be able to travel more places, and you will be able to enjoy more movies, music, and blogs (like this one :D).
 To ensure that you meet your English speaking goals: find the raw resources you want to listen to, create an organized plan, and use your willpower to put in the time and effort it will take to become a fluent English speaker.
 **It won’t be easy, but it will be worth it!**

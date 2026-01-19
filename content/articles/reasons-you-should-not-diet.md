@@ -47,12 +47,12 @@ This means that you are not only using up your willpower fuel, but you’re also
 ## **10. They simply don’t work**
 The highest percentage of people who diet are those with obesity. If dieting were an effective strategy, these people would not be in a constant struggle with their weight that they continue to fail.
 No matter whether it is the 90-day diet, banana diet, cleanse diet, or any one of a hundred other diets out there, they will have a higher failure rate. For all of the reasons listed above, if you go on a diet, you are likely not going to be able to reach the long-term, sustainable health that you are seeking.
-## **A BETTER WAY**
+## **a Better Way**
 There is a simple method that has been proven to be the number one way people lose weight and achieve long-term health - **keeping a food journal**. \[[9](http://www.ncbi.nlm.nih.gov/pubmed/18617080)\]
 It sounds too easy, but researchers found that those with obesity who simply wrote down what they ate on a daily basis slowly but surely started changing their eating habits. They noticed the times that they were most vulnerable to cravings, and made sure they had something healthy on hand. They realized that they were eating much larger portions than they thought, allowing them to mindfully cut down. And they started loading their fridge with healthier food so they wouldn't be tempted. **All without denying themselves a thing.**
 To get started, I recommend downloading the free [MyFitnessPal App](http://www.myfitnesspal.com/). It’s a simple food diary app that has a huge database of foods and nutrition information. Or if you prefer pen and paper, that will work just fine. **The important thing is that you don't deny yourself anything, and that you write down everything.**
 This process won't change you overnight, but it has been proven to be the best method of achieving long-term sustainable weight-loss. **You may not lose weight in the next 30 days, but you will set yourself up for a healthier and next 30 years.**
-## **CONCLUSION**
+## **conclusion**
 Dieting doesn’t work. At some point, every person will put him or herself on a diet and almost none of them will succeed for the long-term. Turning to dieting as a means to lose weight has been used by people for over half a century and things have only gotten worse.
 Yet we continue to try a new strategy, thinking that this will be the “silver bullet” that finally solves the problem, without seeing that the system itself is flawed. If you really want to lose weight and be healthy, do yourself a favor and **do not go on a diet**.
 Instead, simply keep a food journal. Don’t deny yourself food, just write down whatever you eat so you know what you’re putting into your body. Simply increasing your self-awareness in this way will help you make better food choices. Self-awareness is always the first step toward self-improvement.
