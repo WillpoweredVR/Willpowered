@@ -12,6 +12,7 @@ featuredImage: ""
 In 1975, the legendary college basketball coach, Bob Knight, led his [Indiana Hoosiers](https://en.wikipedia.org/wiki/1975%E2%80%9376_Indiana_Hoosiers_men%27s_basketball_team) to an undefeated season and a national championship victory – something that hasn't been accomplished in over 40 years since.
 Upon his retirement, he wrote a book about his psychological approach to the game of basketball. He called it, "_[The Power of Negative Thinking.](http://www.amazon.com/Power-Negative-Thinking-Unconventional-Achieving/dp/054402771X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=)"_
 > “Everybody wants to win. It doesn’t take positive thinking for you to want to succeed in life and have nice things. However, not everyone wants to prepare. Not everyone wants to do those things that it actually takes to win.”
+
 [Optimism](http://www.willpowered.co/learn/the-planning-fallacy), in Knight’s mind, led teams to underestimate their opponents. It led teams to believe that they didn’t need to practice as hard because they were so confident in their own abilities.
 **That is why he preached _the power of negative thinking_ to his team.**
 No matter who they were facing, he wanted his team to believe that they might lose their next game. _He actually wanted his team to be pessimistic!_

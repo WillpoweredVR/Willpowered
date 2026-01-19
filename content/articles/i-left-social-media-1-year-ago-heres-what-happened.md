@@ -10,6 +10,7 @@ featuredImage: "https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3
 
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1567720599171-42S73HYV6XW67DCK8OHR/i-left-social-media-heres-what-happened.jpeg?format=original)
 > “I am a millennial, computer scientist, book author, standing on a TED stage, and yet I’ve never had a social media account.” - [Cal Newport](https://youtu.be/3E7hkPZ-HTk)
+
 **I was shocked when I saw Cal Newport’s talk “[Quit Social Media](https://youtu.be/3E7hkPZ-HTk).“**
 Cal was an author that I deeply respected. His book, [Deep Work](https://amzn.to/2ZOYrb9), was very influential in helping me through the editing process of [The Will of Heroes](http://amzn.to/1U8xw2M).
 I wanted to achieve Cal’s level of success – and I thought social media was a necessary part of making that happen.
@@ -34,6 +35,7 @@ It feels much better, in fact, than the feelings you get from doing the hard wor
 So, sadly, many of us choose to procrastinate the actions that will get us where we really want to go in favor of even more talk on social media.
 ## IT WAS ADDICTIVE
 > “The tycoons of social media have to stop pretending that they’re friendly nerd gods building a better world and admit they’re just tobacco farmers in t-shirts, selling an addictive product to children. Because let’s face it, checking your likes is the new smoking." - [Bill Maher](http://www.willpowered.co/maps/talk-is-the-path-to-frustration)
+
 This was the most disheartening finding.
 The stated purpose of the major social media companies is something along the lines of “to connect the world.“ This sounds great on paper, but **the fuel they need to accomplish that purpose is your time.**
 To capture as much of your time as possible companies use a combination of social validation, positive reinforcement, and news-related outrage to get you coming back again and again.

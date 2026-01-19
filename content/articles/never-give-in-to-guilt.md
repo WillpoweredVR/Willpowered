@@ -32,6 +32,7 @@ The combination of the doughnut and the water **made each woman feel both guilty
 Before the second study, the self-compassionate group received a message to help relieve their guilt.
 The note read:
 > "Sometimes participants feel guilty about eating a whole doughnut, but you shouldn't be too hard on yourself about it. Remember that everyone indulges sometimes."
+
 The “feel guilty” group didn’t receive any message — leaving them to embrace their guilty thoughts and feelings.
 Then, for the second study, the researchers gave both groups three large bowls of candy:
 -   Reese’s
@@ -44,11 +45,13 @@ Here are their averages:
 Self-compassion group — ate 28 grams of candy
 “Feel guilty” group — ate **70 grams** of candy
 > Feeling guilty led to almost 3x more binging!
+
 Since then, researchers have repeated similar experiments with consistent results.
 _Feeling guilty always leads to letting loose._
 ## **WHY FEELING GUILTY DOESN’T WORK**
 Now, you may be thinking:
 > "Okay, maybe this works for others, but I know that I need to feel guilty! Otherwise, I won't learn my lesson!"
+
 That's certainly a fair concern, so let's take a look at what happened in the brains of the two groups of participants.
 When each group broke their diets by eating the doughnut, then made it worse by feeling bloated from the water, they activated an area I call ["The Primitive Brain.](http://www.willpowered.co/learn/short-term-and-long-term-motivation)"
 The Primitive Brain is all about the short-term. It is where cravings for food, sex, and even shopping sprees get their motivation.

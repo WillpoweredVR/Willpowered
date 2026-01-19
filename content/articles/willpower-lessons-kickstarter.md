@@ -9,6 +9,7 @@ featuredImage: ""
 ---
 
 > “I firmly believe that any man's finest hour, the greatest fulfillment of all that he holds dear, is that moment when he has worked his heart out in a good cause and lies exhausted on the field of battle - victorious.” – Vince Lombardi.
+
 **Every day for the last 15 days I have told myself that quote.**
 We are through the first half of the Kickstarter campaign to fund the publishing of [The Will of Heroes](https://www.kickstarter.com/projects/743524537/the-will-of-heroes/), and **so far it has been the hardest, yet most fulfilling 15 days of my life.**
 My life’s work is now a boat on its way to a destination, and I am the sailor doing all I can to keep it on course. We have faced rocky waters, terrible weather, and challenges I couldn't have possibly predicted - but we remain on pace to make it there on time.

@@ -62,6 +62,7 @@ So what is the perfect place between the comfort zone and the chaos zone? How mu
 According to Dan Coyle, author of [The Talent Code](http://www.amazon.com/gp/product/B0026OR1UK/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0026OR1UK&linkCode=as2&tag=willpowered-20&linkId=4F5OJOTIDZNOFRQ4), the "Sweet Spot" of the Learning Zone is when **you are successful 60%-80% of the time.** \[[2](http://www.amazon.com/gp/product/B0026OR1UK/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0026OR1UK&linkCode=as2&tag=willpowered-20&linkId=4F5OJOTIDZNOFRQ4)\]
 His direct quote:
 > You don’t want to be succeeding 40 percent of the time. That’s flailing around. You don’t want to be succeeding 95 percent of the time. That’s too easy. You want to constantly be toggling, adjusting the environment so that you’re succeeding 60 to 80 percent of the time. _\[[3](http://www.bakadesuyo.com/2014/02/most-successful-people/)\]_
+
 **Unfortunately, the learning zone isn't exactly "pleasant".** Only succeeding 60-80% of the time can be frustrating. But if you allow yourself to become fully engaged in the process of learning, then it is very intrinsically motivating.
 More than we enjoy the ease of the comfort zone, **we enjoy the process of getting better.** It fills us with joy to see the "before and after photo" of our progress over time. We gain confidence in ourselves and find the motivation we need to take on the next the challenge.
 ## **CONCLUSION**

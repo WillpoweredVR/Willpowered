@@ -19,6 +19,7 @@ I couldn't believe it. The President admitting that he didn't have the solution?
 However, to truly fight for the truth, you must admit that you don't have all the answers.
 Which is why my #1 Rule in life is:
 > **Listen. Understand. Act****.**
+
 ##   
 **THE RULEBOOK**
 Over the course of my entrepreneurial journey I've developed several "rules" to follow no matter what.

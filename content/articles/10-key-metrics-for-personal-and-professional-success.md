@@ -35,6 +35,7 @@ Here are the 10 metrics I use to track success in each of these areas:
 The most important value in my life is mental health.
 Everything good, bad, happy, sad, it is all a matter of how your mind interprets your world.
 > Your mind can make a hell of heaven — or a heaven of hell.
+
 That's why the most important metric that I track is whether or not I got at least one hour of meditation every day.
 In total, I'm up to over [1,000 hours of meditation](http://www.willpowered.co/maps/what-i-learned-from-meditation?ref=Metrics) at this point, but I would have never got there if I didn't make sure that every single day for the last several years I've got in at least one hour of meditation.
 I'm not perfect, of course, but thanks to keeping track of this metric, I’m close.
@@ -54,6 +55,7 @@ Before that time, I thought that the right thing to do as an entrepreneur is to 
 However, that philosophy led to frustration, poor decision-making, and missed deadlines.
 So in April 2017, I started **going to bed and waking up at the same time every single day no matter what.** It was then that I realized how much more clear-minded, focused, and disciplined I was when I had a good night's sleep.
 > If I hadn't changed my sleep habits, I doubt Willpowered would still be around today.
+
 In order to get the most accurate effective metric, I shoot to get an "80" sleep score on the [Under Armor Record app](https://itunes.apple.com/us/app/record-by-under-armour/id895425891?mt=8). This takes into account the last two weeks of your sleep, how consistent you were, how many hours you got, etc.
 A perfect score is 85, so shooting for 80 ensures that I'm getting quality sleep on a consistent basis – leaving me refreshed, alert, and ready to face any challenges that are ahead in the day.
 Since adopting the practice of trying to be as consistent as possible, I have found that I am never sleepy throughout the day. Tired yes, exhausted yes, but never sleepy. **And that is crucial when trying to perform at your best.**
@@ -68,6 +70,7 @@ I try to shoot for six journal entries per week – as usually there is one day 
 As my practice of journaling has matured, however, **I have grown to find even more benefits from it.**
 Using the [Drafts app](https://itunes.apple.com/us/app/drafts-capture-act/id1236254471?mt=8), I can dictate all of my journal entries (which is why you can see some spelling errors in the image above.)
 > The process of speaking all the things that happened throughout the day out loud helps me to make sense of what they mean.
+
 This is extremely therapeutic. It helps me more than writing everything down on a computer because then you can't hear how your problems sound out loud.
 Having said that, if it is not an option for you to dictate your journal, it is still a beneficial process to get all of the ideas that you had throughout the day on paper and out of your head.
 **When ideas are in your head, you repeat them over and over and over again.**
@@ -90,6 +93,7 @@ Especially as I have grown older and [stopped competing in the Spartan Race](htt
 > When coming up with a metric for tracking your progress, you want to choose something that you have complete control over.
 > 
 > The best metric that I have found that allows for this is completing your workout plan for the day – whatever that may be.
+
 My goal right now is to put on muscle. So I am currently lifting weights five days per week and resting two days. I plan out all of my workouts ahead of time, usually building on the progress I made the week before.
 Then I just need to follow the plan – even if that plan is simply to rest for the day.
 Success with your workouts is simple, but difficult. **You likely will not fail because you chose the wrong plan, you will likely fail because you didn’t follow it.**
@@ -103,6 +107,7 @@ To plan and track my workouts, I use an app called "Strong" for iOS. I highly re
 As mentioned in my introduction, I am currently following a time restricted eating habit.
 To see the full list of benefits of time restricted feeding, I highly recommend you check out [these resources.](https://www.google.com/search?q=benefits+of+time+restricted+eating)
 > But, to sum it up, the main benefits of time restricted eating result from taking it easy on your digestive system.
+
 With time restricted eating, your digestive system only needs to work for a few hours per day. So it can use the rest of the time to clear out old, dead cells and replace them with healthy new ones.
 [According to Dr. Rhonda Patrick](https://youtu.be/XW7g_KD52PA), in order to get all of the benefits of this diet, you only need to do it five days a week. Which gives you some flexibility to eat whenever you would like on the weekends or at important social gatherings.
 If you are to try this yourself, know that it is going to be extremely difficult at first. But eventually, your body will get used to it **– and you will begin to love it.**
@@ -113,6 +118,7 @@ If you are to try this yourself, know that it is going to be extremely difficult
 Moving on from physical health, **the next most important value to me are my relationships with others.**
 This could be family, this could be friends, this could be coworkers, it could be anybody in your life who is important to you.
 > One of the best ways to show another person how much you care about them is to make and follow through on your promises.
+
 So, whenever I make a promise to someone, I write down that promise, write down what I need to do to accomplish that promise, and what date I must follow through.
 Then I track how many promises I have outstanding and how many I have completed.
 By tracking how many promises I have outstanding, I never leave another person hanging simply because I forgot what I promised to do for them.
@@ -125,6 +131,7 @@ Whatever you currently do to track your tasks should work perfectly well for thi
 ### App Used: [Leadership Checklist](http://www.willpowered.co/leadership-checklist)
 I believe everybody who wants to become a leader **needs a leadership philosophy that they stick to no matter what.**
 > My leadership philosophy follows the acronym, “PREACH.“
+
 This is getting a little bit more detailed, but at the end of every day, I ask myself six questions to ensure that I was the kind of leader that I wanted to be that day.
 Preparation – Were you prepared for all meetings, calls, and crises?
 Reliability – Were you reliable to all team members, clients, and customers?
@@ -145,6 +152,7 @@ We don't get second chances – **so we better spend our time wisely.**
 The most important practice I do on a daily basis in order to maximize my time is [to "eat my frog" first thing every day.](http://www.willpowered.co/learn/eat-the-frog-first?rq=Frog)
 By this, I obviously don't mean that I actually eat a frog. I'm referring instead to this quote by Mark Twain.
 > “Eat a live frog first thing in the morning and nothing worse will happen to you the rest of the day.” – Mark Twain
+
 Twain was advocating that if you do the hardest thing on your to do list first thing in the morning, the rest of the day doesn't seem so bad.
 Not only does doing the hardest thing first thing in the morning put your mind at ease, because at least you accomplish the hardest thing on your list, but it also **sets the tone for the rest of the day.**
 It sends the message going to confront your challenges head-on today.
@@ -160,6 +168,7 @@ Many of us are more worried about "looking busy" than getting the job done.
 I am very lucky to be able to do my work remotely, so it's more important that I get results than look busy getting those results.
 [Deep work](https://amzn.to/2WF0PEt) is a concept articulated by [Cal Newport](http://www.calnewport.com/) – a professor at Georgetown University and one of the top minds on how to turn down the volume on our noisy world so we can work on the things that matter.
 > Deep work is when you completely shut down all potential distractions to accomplish work that is more difficult and more meaningful to you.
+
 I cannot write this article and watch a movie in the background. I cannot edit this article and answer texts at the same time. And every time my mind gets distracted, it takes a significant amount of time to get back to the same level of focus and productivity.
 Things like writing, developing products, and other complex **tasks that are not easily replicable are the type of work that really stands out in the world.**
 The more time you can spend doing deep work, the better you will be at complex tasks, and the better you will be able to compete in the marketplace of the future.
@@ -176,6 +185,7 @@ When we think about willpower, we typically think about playing defense. We thin
 Rather than using our willpower to work on a project a little bit each day, we procrastinate until the last minute and depend on it for a rush of productivity at the end.
 To get the most out of our limited willpower, this is the opposite of what we should be doing.
 > That is why for every metric listed above, I have a plan for achieving it.
+
 By tracking the plans that I have for each of these metrics, I am able to ensure that I am always playing offense.
 By playing offense, I can assess which plans work, which plans don’t, and how to change the strategy to improve each metric.
 Planning is the glue that holds all of these metrics together. It ensures that the time that I spend working on each of the above is spent wisely.
@@ -186,4 +196,5 @@ I didn't want to share my “scorecard“ with you because I think these are the
 I wanted to share it because tracking these metrics helps me move toward success in the things that matter most to me – my mental health, my physical health, my relationships, and my time.
 What you value most in life will likely be different than what I value most.
 > But whatever you value most in life, I am sure that those things will improve if you find a metric, find a behavior, and find a way to improve.
+
 I wish you all the best with your own personal and professional “scorecard.“

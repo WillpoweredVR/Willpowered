@@ -9,6 +9,7 @@ featuredImage: ""
 ---
 
 > > _Heroes remind us of what is possible_
+
 Heroes are not just for kids. We all have heroes in our lives. It may be a sports star, a business leader or even our own parents. We all have a different reason for calling someone a hero. It could be because they overcame adversity in their lives to make it to the top. It could be because they stand for something that you truly believe in. Or they are simply a person that we aspire to become one day.
 There are many reasons we choose our heroes, but here are **3 reasons that having a hero will increase your willpower.**
 ## **A HERO STANDS FOR POSSIBILITIES**

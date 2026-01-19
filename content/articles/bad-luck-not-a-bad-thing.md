@@ -53,6 +53,7 @@ Nor could Mark Cuban or Howard Schultz have seen how their bad luck would end up
 However, just because you are not guaranteed to get results, does not mean you can’t begin to take steps in the right direction. Here are 2 key ways that you can make the most out of your bad luck:
 ### **MAKE NO EXCUSES AND PLACE NO BLAME**
 > "Be relentless in pursuit of your goals, especially in the face of obstacles. Along the way, make no excuses and place no blame." - Ray Bourque
+
 **Most people use bad luck as an excuse.** The reason why they are not successful is because of their ill fortune in life. Ray Bourque could have easily taken this path. He could have blamed his poor upbringing and unfortunate birthdate for why he couldn't make the top flight team. But he didn't.
 He never saw himself as unlucky. He simply had a goal and a relentless desire to make that goal become a reality. Then he recognized that in order to do so, he was going to have to work harder than everyone else. **So he did.**
 You may have been dealt a harder hand in life than some people. But you are not doing yourself any favors by using that as an excuse. You will never be able to control what happens to you. Nor will you be able to control your ultimate results.

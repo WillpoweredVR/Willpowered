@@ -10,6 +10,7 @@ featuredImage: "https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3
 
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1569442895493-X4ZD51UXE8GN0D8989V7/an-introverts-guide-to-making-new-friends-and-deepening-relationships.jpg?format=original)
 > "The most common answer amongst people is that they don't even have one friend that they can turn to in a time of need." - Johann Hari, Lost Connections.
+
 I arrived in New York City like I’m sure many have before me.
 A little optimistic, a little scared, **and a lot overwhelmed.**
 But, although this was my biggest rodeo, it was not my first. This was the fourth new city that I have moved to in the last 15 years.

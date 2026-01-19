@@ -10,6 +10,7 @@ featuredImage: ""
 
 You're probably familiar with the saying,
 > "Hit two birds with one stone."
+
 But imagine for a second that this was your reality.
 Imagine you were trying to hit two birds with one stone **because you relied on those two birds for dinner.**
 If you didn't hit those birds, _you were going to bed hungry._
@@ -25,6 +26,7 @@ Over the last six years of my entrepreneurial journey, I have had a constant pre
 With this scarcity of time, money, and even willpower, I have become extremely skilled at not just hitting two birds with one stone, but hitting four, five, or even six.
 And the most valuable lesson I learned through the process is to:
 > Think AND not OR
+
 ## **THE ART OF HITTING MULTIPLE BIRDS AT ONCE**
 In the last year, I accomplished a lot. I don't say that to brag; it's just a fact.
 Here are the highlights:
@@ -66,10 +68,12 @@ So setting up regular phone calls was new territory for me — and my friends.
 But then I asked myself the question I always ask when venturing outside my comfort zone — _is it worth it?_
 If the answer is "yes" to that question — whether it's a small thing like being the one to awkwardly ask another dude to chat on the phone, or a big thing like writing and publishing a book then you need to..
 > Let go of the need to whine, complain, or find excuses; and **focus all of your energy on making it happen.**
+
 If it is worth the effort, then you'll only cause yourself pain and suffering by complaining.
 So remember your purpose, remember that it's worth, and focus on finding the solutions — not adding more problems.
 ### **4\. IT'S (DATE) AND YOU ACCOMPLISHED ALL THESE GOALS. _HOW DID YOU DO IT?_**
 > It's the end of the day and I just wrote 1,000 words, exercised for an hour, had a great conversation with a friend, and explored a new area of town...how did I do it?
+
 🤔...🤔...🤔
 _I biked to one of the national parks nearby, went for a hike, used the dictation tool on my phone to write the first draft of this post, called a friend to catch up, then biked home._
 **Yup, this actually happened.**
@@ -85,6 +89,7 @@ _And all of these are just the bonuses!_
 ## **A MULTI-TASKING CAUTION**
 If you've been reading my work for a while, this post may seem confusing to you.
 > To be clear, I'm not suggesting that you multitask. I'm suggesting that you focus your effort on achieving multiple goals at once.
+
 Here's the key difference:
 One of the best ways to hit multiple birds is to **start biking to work.** — _Think about all of the birds you hit!_
 -   You improve your fitness
@@ -95,10 +100,12 @@ One of the best ways to hit multiple birds is to **start biking to work.** — _
 I could keep going...
 You accomplish ALL these things at once — _but would you consider biking to work, "multitasking?"_
 > NO!
+
 It's a simple activity that will help you accomplish more with less.
 A multi-tasker, by contrast, would try to do work while on an exercise bike at the gym (which he probably drove his car to). I'm not sure about you, but I would struggle to do either of those activities well.
 Which is why...
 > Multi-tasking is like trying to hit two birds with two stones in one throw.
+
 Good luck with that.
 ## **CONCLUSION**
 One of the biggest mistakes people make is **believing that something needs to be _This OR That._**

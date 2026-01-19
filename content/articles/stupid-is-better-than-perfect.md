@@ -19,6 +19,7 @@ However, this lack of talent forced me to learn several crucial life skills:
 3.  And I had to learn how to learn.
 But I never would have developed these skills without one crucial factor:
 > I'm willing to look stupid.
+
 And it is better to look stupid than perfect.
 ## **WHY WE AVOID LOOKING STUPID**
 The desire to be liked by the crowd [is in our DNA.](http://www.willpowered.co/learn/evolution-of-willpower?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Stupid)
@@ -42,6 +43,7 @@ Eventually, you will spend the majority of your time and energy hiding your flaw
 ## **IMPROVING YOUR FAILURES**
 Whenever I tell someone that I create content for a living, it's usually followed up with some version of the question,
 > "...that's your full-time job?"
+
 **I don't blame people for asking this question.** Of the dozens of content creators I have met over the years, there are fewer than five I know who do it full-time.
 Simply put, this is a tough way to make a living.
 Beyond being a struggle to make rent each month, you are consistently putting yourself out there to be judged by the world.
@@ -54,6 +56,7 @@ As [Ta-Nehisi Coates](https://en.wikipedia.org/wiki/Ta-Nehisi_Coates#Awards) —
 > And come the next day and make it...not so bad. Then go to bed the next day and make it maybe...average.
 > 
 > Then after one more pass, if you're lucky, maybe you get to 'good.'"
+
 _And this is coming from a writer who was so good that he won **The Genius Grant!!**_
 If he's claiming that at best he produces something that is merely "good," what chance do you and I have to produce anything worthwhile?
 Slim to none — but there's still a chance.
@@ -62,6 +65,7 @@ It is in this state of mind which I have thrived.
 ## **MY STUPIDITY — AND WILL TO IMPROVE IT.**
 When I started Willpowered I had a simple goal:
 > Write 1,000 words every day.
+
 I knew that I could not control my talent for writing; I could not control who would come to my site and I could not control whether or not people would relate to my message.
 **But I _could_ write 1,000 horrible, terrible, and embarrassing words today.**
 Then the next day, I could write 1,000 words that were just a little bit less horrible, less terrible, and less embarrassing.

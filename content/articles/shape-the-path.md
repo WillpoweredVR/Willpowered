@@ -56,6 +56,7 @@ _The path to your goal will likely never be as clear as the path you take to wor
 However, there is a lot of room for improvement between that level of clarity and what you probably used when you began the journey to your latest goal.
 To illustrate this, I'm going to show you how I've built Wilson to make sense of the unknown and overwhelming journey of Entrepreneurship.
 > Not through perfection, but through progress.
+
 ### **GETTING THINGS DONE**
 There's probably no more widely useful and effective Checklist than the [Getting Things Done (GTD)](http://gettingthingsdone.com/?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path) method by [David Allen.](http://gettingthingsdone.com/meet-david?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)
 [![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1492169612565-0KQE5CPQ9I11EC1JOVBU/Gtd+Workflow.gif?format=original)](http://gettingthingsdone.com?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Shape_the_Path)

@@ -12,22 +12,26 @@ It was a simple a train ride from Manchester to London to most of the passengers
 **But for one passenger, it was the spark that would change the literary world forever.**
 Joanne Rowling – better known as J.K. Rowling – was overcome with excitement as she saw a vision of a young, scrawny boy who the world would soon fall in love with.
 > “I saw Harry! I could see him very clearly – this scrawny little boy. And it was the most physical rush of excitement...It was the same feeling that you get when you meet someone new and feel as if you have found the person you are going to spend the rest of your life with.” _\[[1](https://www.youtube.com/watch?v=Ght2BpCkJYQ)\]_
+
 As she continued the ride, the new world of Hogwarts, Azkaban, and the full cast of characters started to take shape. It would be many years, however, until that world was put on bookshelves.
 **And the journey to getting Harry Potter published was filled with pain, suffering, and depression.**
 After living in Manchester, Rowling married a man in Portugal who would become the father of her daughter, Jessica. However, the marriage turned sour quickly and Rowling returned to the United Kingdom to live in Edinburgh.
 There, as she continued to build the world of Harry Potter, her own world continued to fall apart. As the single parent of a newborn baby, she could not even get a job.
 > “Anyone who has ever seen what state-run child care is like will understand why I couldn’t put my daughter in their hands during the day.”
+
 Thus, Rowling lived on welfare while she wrote the book and cared for her infant child.
 This life left her so exhausted that she couldn't muster the willpower to do anything but write. After a long day of writing and caring for Jessica, her [willpower muscle](http://www.willpowered.co/learn/willpower-is-a-muscle) was too weak to care about housework, eating healthy, or anything else important.
 ## **THE WILL OF J.K. ROWLING**
 This left her in a constant battle with depression, as she wondered if Harry was worth it.
 > “I had to fight my realistic side. I was a first time author, so of course I was going to struggle to get published. And just because I thought the story was great, didn’t mean anyone else would. To muster the willpower to keep writing, I had to truly believe in Harry. I knew he was bigger than me. I knew I had to do right by this book.”
+
 “Doing right” didn’t just mean writing a story from start to finish. Rowling went above and beyond for Harry Potter. She wrote down the name, house, and magical powers of _every single student_ of Hogwarts.
 She wrote down each magical spell and its use. She made drawings of all the major characters and scenes in the book to make them more real. She was meticulous in each aspect of the story, and that is why it is so [perfect](http://www.willpowered.co/learn/perfection).
 Finally, after 5 long years, Rowling finished the book. This began a new struggle – getting it published.
 After being turned down by 12 of the best names in publishing, Rowling finally found one that was willing to give Harry a chance. For a meager $4,000, Bloomsbury publishing bought the rights to Harry Potter.
 **This was the happiest moment of her life.**
 > “My only lifetime ambition had just been fulfilled. I could not believe that I was actually going to be in print.”
+
 Once Harry Potter hit the shelves, it became an instant hit.
 It became so big, in fact, that U.S. publishers started a bidding war for the book. Eventually Scholastic publishing bought its rights for $105,000 – more than they have ever paid _any_ author, let alone a first time author.
 Over the next 15 years, Harry Potter continued to expand until it became the most successful book and movie series of all time.

@@ -9,6 +9,7 @@ featuredImage: ""
 ---
 
 > What are you passionate about?
+
 The answer to that question is the key to motivation through good times and bad.
 Since starting Willpowered, three things I'm deeply passionate about have reminded me why the exhaustion, doubt, and [failure](http://www.willpowered.co/learn/failure-to-freedom?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Consistency) I've experienced over the years _was worth it._
 1.  _Sharing useful scientific knowledge..._
@@ -17,6 +18,7 @@ Since starting Willpowered, three things I'm deeply passionate about have remind
 Waking up every day with these three factors motivating me has helped me see even the darkest days as an opportunity, not an obligation.
 But these factors would mean nothing if I didn't put them into action through...
 > [**Consistency.**](http://www.willpowered.co/the-consistency-challenge?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Consistency)
+
 ## **THE FALSE PROMISE OF INTENSITY**
 Before 2013, my relationship with New Year's resolutions was fairly typical.
 1.  Get excited by the promise of a New Year
@@ -33,6 +35,7 @@ I'd wake up exhausted, skip the gym, skip my diet, and be on the slippery slope 
 In order to make a "real change," we need to completely overhaul our lives with maximum effort. But in the end, we usually end up right back where we started...or worse.
 The willpower, determination, and belief that "this time" will be different that we all feel with the promise of a New Year are all valuable resources that will motivate you to reach your goals...
 > And focusing on intensity is a terrific way to squander them.
+
 In 2013, I was tired of squandering the promise of a New Year.
 So I followed [Jim Collins'](http://www.jimcollins.com/?utm_source=Willpowered&utm_medium=Referral&utm_campaign=SMaC_Formula) strategy from [_Great by Choice_](http://amzn.to/2ilvPVp)_,_ and implemented my [_SMaC Formula_](http://www.willpowered.co/learn/create-a-smac-formula?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Consistency) _(_a "Specific, Methodical, and Consistent" list of habits to complete every day).
 _That decision changed everything._

@@ -9,6 +9,7 @@ featuredImage: ""
 ---
 
 > > “Know Thyself.” - Scribes of Delphi
+
 Imagine you have just been hired as CEO of a Fortune 500 company. You’re excited about all of the changes and improvements you can make for the company, and you’re eager to get started. But, there’s a catch - _you have no information._
 Accounting, finance, sales, marketing, you have absolutely no numbers on any of them from the time before you took over, or during your tenure as CEO. So how would you make the best decisions for the company? If you have no quantifiable data, **how can you see if any of your new ideas are working?**
 All of your goals would simply be measured by whether you “felt” like you were making progress with the company. This is obviously a horrible way to run an organization, _so why do we apply that to our lives?_

@@ -30,6 +30,7 @@ Thanks to the efforts of Henry Ford and the many great minds who followed, today
 Despite all of the problems we face, **we are living in an unprecedented time of opportunity for individuals to create their future.**
 _So why doesn't it feel that way?_
 > Because we are overwhelmed by the greatest enemy of simplicity — ambiguity.
+
 Nobody can predict the future. Change is happening faster than ever and is only accelerating. Since there are an infinite number of directions the world can go from here, we are left paralyzed by the equally endless opportunities at our disposal.
 **To continue with the car analogy, imagine you're about to enter a car race.**
 You can choose from 10 unique and technologically advanced vehicles, which are all specialized for various roads and conditions (winding roads, muddy roads, flat roads, etc.).
@@ -39,9 +40,11 @@ For all you know it's going to be nothing but dirt road for the entire race so y
 Unless, of course, it's nothing but flat pavement — then you're going to feel pretty taking four-wheel-drive over the sports car...
 With all of these choices and so much unknown, _which car do you pick?_
 > This choice is on the mind for many people in my generation.
+
 There are so many great options, but we have no idea which one will even be viable down the road, **and we're terrified of picking the wrong one.**
 If you can relate to this...
 > The worst decision is not picking the wrong car; it's wasting precious time and resources constantly trying to find a "better" car.
+
 That is why simpler is better than better.
 ## **HOW TO FOCUS ON SIMPLICITY**
 Let me start by saying, I'm no master of simplicity yet.
@@ -55,12 +58,14 @@ Do the [hedgehog exercise](http://www.willpowered.co/learn/confront-the-brutal-f
 ### **2\. CHOOSE OPPORTUNITIES WITHIN YOUR 3 CIRCLES**
 One of the biggest mistakes people make when choosing the right opportunity is skipping the hedgehog step and immediately trying to determine the best option.
 > In an uncertain future, what does "best" really mean?
+
 If you have a general idea of your Hedgehog, best is the option that is as close to the intersection of your three circles as possible.
 If you jump immediately into comparing your opportunities, however, your mind will use societal conventions like money, prestige, or "coolness" of the opportunity to judge its value.
 While all of these may be valuable, **they will distract you from evaluating factors that are more important to you;** such as work hours, learning opportunities, and what you want out of life.
 With your hedgehog in mind, however, it will be obvious which positions will allow you to combine your passion, talent, and value — while tuning out the distractions.
 ### **3\. DETERMINE YOUR PHILOSOPHY**
 > In an uncertain, unstable, and unpredictable world, you need a simple idea that will give you strength and stability to push your comfort zone.
+
 If nothing comes to mind right away, try to think back to a challenging time in your life when you found the inner strength to rise to the occasion.
 _Why did your mindset shift?_  
 _What ideas helped you persevere?_  
@@ -72,5 +77,6 @@ Maintaining this simple philosophy has provided the flexibility to adapt to ever
 ## **Conclusion**
 Six years ago I read these words from one of my heroes, [Jim Collins](http://www.jimcollins.com/?utm_source=Willpowered&utm_medium=Referral&utm_campaign=Simple):
 > "In today's world, change is both constant and accelerating. This is neither good nor bad. It just is. Like gravity."
+
 In such a world it is impossible to know which opportunities will be the best down the road. So instead of focusing on "the car," you must focus instead on "the driver."
 Find the simple concepts that will work for you and be ready to adapt to a changing world. Because, despite all of the problems we face, **we are still living in an unprecedented time of opportunity for individuals to create their future.**

@@ -20,6 +20,7 @@ That thought kept me going. It kept me mentally strong. It helped me understand 
 Understanding that, I fought through those last 2 miles, giving my best effort and finishing 14th – my first time ever in the Top 15.
 ## **PAIN IS TEMPORARY**
 > “Pain is temporary. It may last for a minute, it may last for an hour, it may last for a year. But eventually, it will subside. Success, however, lasts forever.” – **Eric Thomas**
+
 The pain I endured that day was excruciating. I hated every single minute of those last 2 miles until I crossed the finish line. But once I crossed it, the pain was over and I placed 14th out of over 6000.
 **That place will last forever.**
 In our lives, we can get so caught up in the present moment that we lose sight of the fact that pain is only temporary. The success that we are fighting for, however, will last far longer.

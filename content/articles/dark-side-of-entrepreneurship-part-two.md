@@ -51,6 +51,7 @@ And yet, I still had a massive job to get done and my cash was dwindling. Plus, 
 To get through the day and try to get Educo Community off the ground, I got a brace for my left hand as well. **This was it**. A wake up call. I looked down at both of my hands covered in braces, unable to perform any normal functions without at least a little bit of pain.
 Still, I didn't seek professional help. In retrospect, I cannot believe the irony. Here I was, working with experts on a regular basis trying to figure out a way to communicate their work to the public. Yet, rather than seek the help of an expert in treating my hands, I was just relying on my own judgment.
 > **“I was so narrowly focused on keeping my dream alive that I could not muster the self-awareness to take a step back.”**
+
 At this point I had poured so much of my blood, sweat and tears into my dream of helping individuals use the tools of science to unlock the greatness within them that I felt like I could not give up now. I was always asking my mind and my body for a little bit more.
 **I kept believing that success was just a few months away.** Even with braces on both of my wrists, I was determined to figure out a way to make Educo Community a reality.
 # Building a voice technology toolbox

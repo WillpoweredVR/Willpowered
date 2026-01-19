@@ -59,10 +59,12 @@ When I could admit I wasn't as strong or fast as my teammates, I realized that I
 **That's what ultimately landed me the starting role.** Most people do their best to ignore the hard truths of their situation because they believe it will lead to even scarier facts hidden underneath.
 By thinking this way you will miss out on all of the positive things you'll find out about yourself or others in the process of owning up to your mistakes and learning from them.
 > If you have a brutal fact that you've been ignoring, ask yourself what positive findings may come from "pulling back the curtain."
+
 ## **BRUTAL FACT #2: Exaggerating Diminishes Your True Accomplishments.**
 When I held up the championship trophy after such a long, hard journey; I realized that by exaggerating, I disrespect the real hard choices that went into that achievement.
 Exaggerating sends the message that "I don't believe I've accomplished enough in my life to be worthy of your approval, but maybe adding this on will make up for it."
 > If you're ever tempted to exaggerate, try to think about what you're hoping to achieve from doing so — why do you believe this person will like you more if you exaggerate rather than tell the truth?
+
 **Don't judge yourself for the answer, just clarify it.**
 You'll be surprised how effective this exercise is, and how silly your answers will sound.
 ## **BRUTAL FACT #3: The Only Truly Bad Decision Is One Made Out of Denial.**
@@ -80,6 +82,7 @@ Life is not a math exam. There are very few absolute answers. We all struggle wi
 Some of your decisions may hurt people but that doesn't mean they're wrong, and you should feel guilt or regret.
 More important than whether a decision might hurt someone is choosing to respect that person with the honest truth of the situation — especially if that person is you.
 > In those moments, you must become aware of the situation and ask yourself — are you being honest with the respect they deserve?
+
 ## **BRUTAL FACT #4: Never lose hope.**
 In November of my junior year of high school, things looked bleak.
 Despite all my ambition, I was a terrible football player, on a mediocre team, and lied to myself and others in order to justify myself. I was completely miserable.
@@ -93,6 +96,7 @@ If you look at the major changes over the last 50 years, you'll see that the cha
 They're coming from individuals who now have the power to open a laptop and access the knowledge, skills, communities and even funding necessary to pursue their purpose in life.
 _I am deeply grateful for all the individuals that pushed our society forward to help me do just that_ — and equally saddened to learn that **more than twice as many 18-29 year olds are more frearful than hopeful for the future.**
 > When we ignore the brutal facts, we never find the facts that will give us hope.
+
 ## **BRUTAL FACT #5: The Truth Needs Our Help.**
 I wrote this post because I wanted to share my struggle to confront the brutal facts — and how they set me free.
 You would not be reading this article right now if I hadn't confronted the brutal facts, yet never lost faith.
@@ -107,6 +111,7 @@ As far as I'm concerned, quitting, going part-time, or any other derivative woul
 Today, I feel the same about the truth.
 If I only gave you the "facts" that made me look smart and successful, then I would be quitting on the value that allows us to trust each other and work together to overcome the real problems ahead.
 > It's uncomfortable being vulnerable, but it's miserable being dishonest.
+
 ## **CONCLUSION**
 _"You have to be the change you want to see in the world." — Gandhi_
 I firmly believe in Gandhi's words — because they're true.

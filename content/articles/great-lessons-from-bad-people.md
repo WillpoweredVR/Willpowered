@@ -29,6 +29,7 @@ Then he gave 5 black eyes, a cracked rib, and multiple bruises to the mother of 
 Plus he has been arrested for DUIs, battery, and assault. Not to mention everything he has probably done without getting caught!
 Now, to be fair, Dr. Dre has a clean record of late and claims those days are behind him:
 > "25 years ago I was drinking too much and in over my head. However, none of this is an excuse for what I did. I've been married 19 years and every day I'm working to be a better man for my family...I'm doing everything I can so I never resemble that man again." _\[[6](http://www.nytimes.com/2015/08/22/arts/music/dr-dre-apologizes-to-the-women-ive-hurt.html?_r=1)\]_
+
 Take that statement as you will, but if he is not a horrible person now, he certainly was a horrible person then.
 _However, does being a horrible person mean we can learn nothing from him?_
 ## **LEARNING FROM THE GOOD AND THE BAD**

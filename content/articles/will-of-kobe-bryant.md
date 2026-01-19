@@ -53,6 +53,7 @@ This gave Kobe more “[Want Power](http://www.willpowered.co/learn/want-power)�
 ## **2.** **MAKE SACRIFICES**
 > “There’s a choice that we have to make as people…We can all become masters of our craft, but you have to make a choice. What I mean by that is the inherent sacrifices that come along with that. Being a great friend, son, nephew, there are sacrifices that come along with making that choice.”
 > \- Kobe Bryant
+
 One of the biggest mistakes that people make with their willpower is not focusing it on what matters most to them. You use the same [stock of willpower](http://www.willpowered.co/learn/willpower-is-a-muscle) to go to the gym, to stay late at the office, and to resist dessert. \[[5](http://www.psy.lu.se/upload/psykologi/pdf/strength_model1.pdf)\]
 Kobe achieved greatness because he focused his willpower on one goal – becoming a great basketball player. And he understood that he had to make sacrifices to reach that goal.
 So he wasn’t a great husband, a great son, or a great friend. This certainly is sad, but in the end he was able to achieve what he really wanted in life.

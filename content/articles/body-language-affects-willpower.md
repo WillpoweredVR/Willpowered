@@ -9,6 +9,7 @@ featuredImage: "https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3
 ---
 
 > _Fake it ‘till you make it._
+
 You’ve heard that saying before. Whether from a blog, a mentor, or a friend offering advice. The saying means well. After all, when we’re going into a high pressure situation like a job interview, we may as well _act_ like we deserve the job before we actually have it.
 But does this actually work? Will faking it in an interview actually help you get the job? Or will it throw you off from your normal rhythm and just end up hurting you in the end?
 There is a scientific answer to this question and it’s found by **what takes place in your body when you begin to “fake it”.**

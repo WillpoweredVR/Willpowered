@@ -19,12 +19,14 @@ When the rent is due in 3 days, it's easy to see everyone who comes to your site
 Especially when you can justify such thinking by saying, "I'm doing important work for the practical use of science — _I deserve their money!"_
 But even in my most desperate moments, I avoided this mindset by adhering to Rule #6:
 > Principles before practicality.
+
 ## **PUTTING PRINCIPLES BEFORE PRACTICALITY**
 Marketing is a beautiful thing — when done right.
 Thanks to this ad by Apple in 1997, when Steve Jobs returned to the company, I will be an Apple customer for as long as the spirit of this message is alive.
 It shows me that Apple is building its products for the type of people I want to be like — and even inspires me to approach my daily work with their mindset.
 As an Apple customer for the last six years, I can feel the passion behind the products they make, and how they help me become more like my heroes in that ad.
 > This beautiful mix of marketing and products is what happens when a company puts principles before practicality.
+
 **When that ad was released, Apple was a terrible company.**It was so terrible that Michael Dell — founder of Dell Computer — said if he were the CEO of Apple, he'd shut the business down.
 The practical pressures on Apple were enormous.
 Yet, instead of releasing an advertisement touting the concrete benefits of buying a Mac over a PC, they had the audacity to promote themselves as, "helping the next Einstein change the world."
@@ -44,11 +46,13 @@ You have a college-educated individual using their limited time on this earth to
 3.  Then if you do make it to the unsubscribe page, adding options so you only unsubscribe from the particular category that you just received.
 They spend their time doing all of this instead of...I don't know...
 > Working to improve their content!!
+
 Nope, they'd prefer to make life miserable for the people who had the audacity to sign up for their email list and support their work.
 ![](https://images.squarespace-cdn.com/content/v1/5416af3ce4b0f910e3133ead/1487929603796-95EX9L11T3FYZFKWDW79/image-asset.png?format=original)
 _Anyone else see something wrong with this picture?_
 If you are a content creator, marketer, etc. who has done this in the past, I understand. It is a noisy world, and you want to do whatever you can to get an edge to get your voice heard. And this is a very tempting way to improve your metrics.
 > But this is a waste of your time, skills, and intelligence.
+
 And it will only end up hurting you and your subscribers in the end.
 ## **HOW TO AVOID THE PRACTICALITY TRAP**
 Marketing is just one example, of course.
@@ -56,9 +60,11 @@ In your life, I'm sure there is a practical solution you can think of that goes 
 The best way to avoid this trap is to remember what your real goal is.
 When I faced the temptation above, I reminded myself that **my total number of subscribers doesn't matter.**
 > What matters is how many people find my work valuable when they apply it to their daily lives.
+
 With this goal in mind, my total subscribers — or unsubscribers — does not give me any information on how well I'm progressing.
 A much better measure is the click-thru rate.
 > How many people click the link from my email because the idea resonated with them?
+
 That metric is the only one that matters when it comes to the email list — so that's the one I focused on.
 _And what happened?_
 Well, a "good" click-thru rate is somewhere around 2-3% in my industry. But I've been steadily increasing mine to 13.6%
@@ -66,6 +72,7 @@ Well, a "good" click-thru rate is somewhere around 2-3% in my industry. But I've
 **4X better than the benchmark for my industry.**
 _How did I do it?_
 > BECAUSE I DIDN'T WASTE MY TIME PUNISHING MY SUBSCRIBERS BY CREATING A CONFUSING UNSUBSCRIBE PROCESS!!
+
 Instead, I spent my time...  
 _Learning who my subscribers were..._  
 _Discovering my true value to them..._  
