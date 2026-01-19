@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles, getJourneyStep } from "@/lib/articles";
-import { Calendar, Clock, ArrowRight, Sparkles } from "lucide-react";
+import { Clock, ArrowRight, Sparkles } from "lucide-react";
 
 const journeyStepColors: Record<string, string> = {
   "Finding Your Purpose": "bg-amber-100 text-amber-800",
@@ -96,22 +96,10 @@ export default function ArticlesPage() {
                       </p>
                       
                       <div className="flex items-center justify-between text-sm text-muted-foreground">
-                        <div className="flex items-center gap-4">
-                          {article.date && (
-                            <span className="flex items-center gap-1">
-                              <Calendar className="w-4 h-4" />
-                              {new Date(article.date).toLocaleDateString("en-US", {
-                                month: "short",
-                                day: "numeric",
-                                year: "numeric",
-                              })}
-                            </span>
-                          )}
-                          <span className="flex items-center gap-1">
-                            <Clock className="w-4 h-4" />
-                            {article.readingTime} min read
-                          </span>
-                        </div>
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-4 h-4" />
+                          {article.readingTime} min read
+                        </span>
                         <ArrowRight className="w-4 h-4 text-ember opacity-0 group-hover:opacity-100 transition-opacity" />
                       </div>
                     </div>

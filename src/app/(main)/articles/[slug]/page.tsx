@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { getArticleBySlug, getAllArticles, getJourneyStep, getRelatedArticles } from "@/lib/articles";
-import { Calendar, Clock, ArrowLeft, ArrowRight, Sparkles, User } from "lucide-react";
+import { Clock, ArrowLeft, ArrowRight, Sparkles, User } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import { ArticleTracker } from "@/components/ArticleTracker";
 
@@ -112,16 +112,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <User className="w-4 h-4" />
               {article.author}
             </span>
-            {article.date && (
-              <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                {new Date(article.date).toLocaleDateString("en-US", {
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                })}
-              </span>
-            )}
             <span className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
               {article.readingTime} min read
