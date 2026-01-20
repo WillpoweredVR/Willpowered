@@ -2,54 +2,46 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Clock, Calendar } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-// Featured articles with correct slugs matching content/articles/
+// Featured articles - Top performers based on analytics
 const featuredArticles = [
   {
     id: 1,
-    title: "Empowerment Through Adversity: Christy Brown's Life Lessons",
-    excerpt: "Explore the remarkable life of Christy Brown, a man who transformed adversity into opportunity. Despite physical limitations due to severe cerebral palsy...",
-    category: "Overcoming Limits",
-    date: "May 10, 2023",
-    readTime: "8 min read",
-    slug: "empowerment-through-adversity-christy-browns-life-lessons-for-navigating-disability",
+    title: "How Strong Principles Create Strong Willpower",
+    excerpt: "Before there were any subscribers, before there were any customers, before there was even an article written, I knew I needed to establish a higher standard to always live up to.",
+    category: "Introduction to Willpower",
+    readTime: "6 min read",
+    slug: "principles-benefit-willpower",
     featured: true,
-    image: "/images/christy-brown.jpg",
   },
   {
     id: 2,
-    title: "The Dark Side of Entrepreneurship",
-    excerpt: "This blog was started eight years ago. Because of it, I can no longer use my hands to navigate my phone, drive a car, or type the words you are reading...",
-    category: "Handling Setbacks",
-    date: "Apr 8, 2022",
-    readTime: "12 min read",
-    slug: "the-darkside-of-entrepreneurship",
+    title: "6 Factors That Influence Our Behavior",
+    excerpt: "\"This time is going to be different.\" Those are the first words we tell ourselves when we set a goal to change our behavior. But what makes behavior change actually stick?",
+    category: "Perseverance",
+    readTime: "8 min read",
+    slug: "factors-of-behavior-influence",
     featured: false,
-    image: "/images/dark-side.jpg",
   },
   {
     id: 3,
-    title: "I Left Social Media 1 Year Ago. Here's What Happened.",
-    excerpt: "I was shocked when I saw Cal Newport's talk 'Quit Social Media.' Cal is an author that I deeply respected. His book, Deep Work, was very influential...",
-    category: "Establishing Habits",
-    date: "Sep 4, 2019",
+    title: "8 Movies That Will Give You a Rush of Willpower",
+    excerpt: "There are no two words in the English language more harmful than 'good job.' Discover the movies that inspire writers and creators around the world to keep pushing.",
+    category: "Becoming Gritty",
     readTime: "10 min read",
-    slug: "i-left-social-media-1-year-ago-heres-what-happened",
+    slug: "movies-rush-of-willpower",
     featured: false,
-    image: "/images/social-media.jpg",
   },
   {
     id: 4,
-    title: "What I Learned By Meditating",
-    excerpt: "After years of practice, I've discovered insights that have fundamentally changed how I approach challenges and build willpower...",
-    category: "Establishing Habits",
-    date: "Jun 12, 2017",
-    readTime: "9 min read",
-    slug: "what-i-learned-by-meditating",
+    title: "How Temple Grandin Overcame Challenges With Autism",
+    excerpt: "Diagnosed with autism at age 3, Temple was thought incapable of learning. Against all odds, she became one of the most influential scientists in her field.",
+    category: "Overcoming Limits",
+    readTime: "7 min read",
+    slug: "temple-grandin-overcame-autism",
     featured: false,
-    image: "/images/meditation.jpg",
   },
 ];
 
@@ -132,10 +124,6 @@ export function FeaturedArticles() {
                 </p>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1.5">
-                    <Calendar className="w-4 h-4" />
-                    {mainArticle.date}
-                  </span>
-                  <span className="flex items-center gap-1.5">
                     <Clock className="w-4 h-4" />
                     {mainArticle.readTime}
                   </span>
@@ -172,8 +160,6 @@ export function FeaturedArticles() {
                       {article.title}
                     </h3>
                     <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                      <span>{article.date}</span>
-                      <span>•</span>
                       <span>{article.readTime}</span>
                     </div>
                   </div>
