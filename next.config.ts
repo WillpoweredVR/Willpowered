@@ -25,6 +25,32 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      // Redirect old /learn URLs to /articles
+      {
+        source: '/learn',
+        destination: '/articles',
+        permanent: true, // 301 redirect for SEO
+      },
+      {
+        source: '/Learn',
+        destination: '/articles',
+        permanent: true,
+      },
+      // Redirect individual article URLs
+      {
+        source: '/learn/:slug',
+        destination: '/articles/:slug',
+        permanent: true,
+      },
+      {
+        source: '/Learn/:slug',
+        destination: '/articles/:slug',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
