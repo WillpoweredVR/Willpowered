@@ -386,7 +386,7 @@ export function WeeklyPrinciplesReview({
         .filter(Boolean);
 
       // Get metric performance data
-      const formatLocal = (dt: Date) => { const y = dt.getFullYear(); const m = String(dt.getMonth() + 1).padStart(2, '0'); const d = String(dt.getDate()).padStart(2, '0'); return `${y}-${m}-${d}`; }; const today = formatLocal(new Date());
+      const formatLocal = (dt: Date) => { const y = dt.getFullYear(); const m = String(dt.getMonth() + 1).padStart(2, '0'); const d = String(dt.getDate()).padStart(2, '0'); return `${y}-${m}-${d}`; };
       const metricsData = scorecard.categories.flatMap((category) =>
         category.metrics.map((metric) => {
           const history = scorecard.data?.history?.[metric.id] || {};
@@ -399,22 +399,33 @@ export function WeeklyPrinciplesReview({
               weekValues.push(history[dateStr]);
             }
           }
-          const weekAvg =
-            weekValues.length > 0
+          
+          // For "count" aggregation (days done), sum the values
+          // For "average" or "sum" aggregation, calculate the average
+          let weekValue: number;
+          if (metric.aggregation === 'count') {
+            // Sum for "days done" metrics (e.g., "6 days" out of target "5 days")
+            weekValue = weekValues.reduce((a, b) => a + b, 0);
+          } else {
+            // Average for other metrics (e.g., "2.3 hours" average)
+            weekValue = weekValues.length > 0
               ? weekValues.reduce((a, b) => a + b, 0) / weekValues.length
               : 0;
+          }
+          
           const isOnTrack =
             metric.direction === "higher"
-              ? weekAvg >= metric.target
-              : weekAvg <= metric.target;
+              ? weekValue >= metric.target
+              : weekValue <= metric.target;
 
           return {
             name: metric.name,
             category: category.name,
             target: metric.target,
-            current: weekAvg.toFixed(1),
+            current: weekValue.toFixed(1),
             direction: metric.direction,
             isOnTrack,
+            aggregation: metric.aggregation,
           };
         })
       );
