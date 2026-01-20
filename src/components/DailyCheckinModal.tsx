@@ -167,6 +167,9 @@ export function DailyCheckinModal({
   const [summaryData, setSummaryData] = useState<SummaryData | null>(null);
   const [isLoadingSummary, setIsLoadingSummary] = useState(false);
   
+  // Track values logged during this session (fixes race condition with parent state)
+  const [sessionValues, setSessionValues] = useState<Record<string, number>>({});
+  
   // Notes feature
   const [showNoteInput, setShowNoteInput] = useState(false);
   const [noteValue, setNoteValue] = useState("");
@@ -218,6 +221,7 @@ export function DailyCheckinModal({
       
       setInputValue("");
       setLoggedMetrics(new Set());
+      setSessionValues({}); // Reset session values
       setIsLoadingSummary(false);
       setShowNoteInput(false);
       setNoteValue("");
@@ -237,7 +241,9 @@ export function DailyCheckinModal({
     
     try {
       const metricsData = allMetrics.map(({ metric, category }) => {
-        const todayValue = getTodayValue(metric.id);
+        // Use session value first (just logged), then fall back to stored value
+        // This fixes the race condition where parent state hasn't updated yet
+        const todayValue = sessionValues[metric.id] ?? getTodayValue(metric.id);
         const weekData = getWeekAverage(metric);
         const isLowerBetter = metric.direction === 'lower';
         const isOnTrack = todayValue !== null && (isLowerBetter 
@@ -331,6 +337,10 @@ export function DailyCheckinModal({
     // Save note if there's one
     const note = noteValue.trim() || pendingNotes[currentItem.metric.id] || undefined;
     onLogValue(currentItem.metric.id, value, note);
+    
+    // Track value in session state (fixes race condition with parent state update)
+    setSessionValues(prev => ({ ...prev, [currentItem.metric.id]: value }));
+    
     setLoggedMetrics(prev => new Set(prev).add(currentItem.metric.id));
     setInputValue("");
     setNoteValue("");
@@ -382,7 +392,8 @@ export function DailyCheckinModal({
     let total = 0;
     
     for (const { metric } of allMetrics) {
-      const todayVal = getTodayValue(metric.id);
+      // Use session value first, then stored value (fixes race condition)
+      const todayVal = sessionValues[metric.id] ?? getTodayValue(metric.id);
       if (todayVal === null) continue;
       
       total++;
@@ -395,7 +406,7 @@ export function DailyCheckinModal({
     }
     
     return { onTrack, total, ...getCelebration(onTrack, total) };
-  }, [allMetrics, getTodayValue]);
+  }, [allMetrics, getTodayValue, sessionValues]);
 
   if (!isOpen) return null;
 
