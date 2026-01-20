@@ -3,8 +3,19 @@ import posthog from 'posthog-js'
 // Initialize PostHog only on client side
 export const initPostHog = () => {
   if (typeof window !== 'undefined' && !posthog.__loaded) {
-    posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
-      api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+    const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY
+    const posthogHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com'
+    
+    // Check if key is available
+    if (!posthogKey) {
+      console.error('PostHog: NEXT_PUBLIC_POSTHOG_KEY is not set!')
+      return posthog
+    }
+    
+    console.log('PostHog: Initializing with host', posthogHost)
+    
+    posthog.init(posthogKey, {
+      api_host: posthogHost,
       person_profiles: 'always', // Track all visitors including anonymous
       capture_pageview: false, // We'll handle this manually for SPA
       capture_pageleave: true,
@@ -12,7 +23,8 @@ export const initPostHog = () => {
       disable_session_recording: false,
       // Capture performance metrics
       capture_performance: true,
-      loaded: (posthog) => {
+      loaded: (ph) => {
+        console.log('PostHog: Loaded successfully, distinct_id:', ph.get_distinct_id())
         if (process.env.NODE_ENV === 'development') {
           // Uncomment to debug in development
           // posthog.debug()

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { initPostHog, trackPageView, posthog } from '@/lib/posthog'
 
@@ -10,11 +10,18 @@ const EXCLUDED_IPS = process.env.NEXT_PUBLIC_EXCLUDED_IPS?.split(',') || [];
 export function PostHogProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
+  const [isInitialized, setIsInitialized] = useState(false)
+  const initialPageViewTracked = useRef(false)
 
   // Initialize PostHog on mount
   useEffect(() => {
-    // Check if this IP should be excluded
     const checkAndInitPostHog = async () => {
+      // Skip if already initialized
+      if (posthog?.__loaded) {
+        setIsInitialized(true)
+        return
+      }
+
       if (EXCLUDED_IPS.length > 0) {
         try {
           const response = await fetch('https://api.ipify.org?format=json');
@@ -23,31 +30,48 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
           
           if (EXCLUDED_IPS.includes(userIP)) {
             console.log('PostHog: Internal IP detected, disabling tracking');
-            // Don't initialize PostHog for excluded IPs
             return;
           }
         } catch (error) {
-          // If IP check fails, continue with tracking
           console.warn('PostHog: Could not check IP, continuing with tracking');
         }
       }
       
       initPostHog();
+      setIsInitialized(true)
+      console.log('PostHog: Initialized successfully')
     };
     
     checkAndInitPostHog();
   }, [])
 
-  // Track page views on route change
+  // Track initial page view once PostHog is ready
   useEffect(() => {
-    if (pathname && posthog?.__loaded) {
+    if (isInitialized && pathname && !initialPageViewTracked.current) {
       let url = window.origin + pathname
       if (searchParams?.toString()) {
         url = url + '?' + searchParams.toString()
       }
       trackPageView(url)
+      initialPageViewTracked.current = true
+      console.log('PostHog: Initial page view tracked', url)
     }
-  }, [pathname, searchParams])
+  }, [isInitialized, pathname, searchParams])
+
+  // Track subsequent page views on route change
+  useEffect(() => {
+    // Skip if not initialized or if this is the initial page view
+    if (!isInitialized || !initialPageViewTracked.current) return
+    
+    if (pathname) {
+      let url = window.origin + pathname
+      if (searchParams?.toString()) {
+        url = url + '?' + searchParams.toString()
+      }
+      trackPageView(url)
+      console.log('PostHog: Page view tracked', url)
+    }
+  }, [pathname, searchParams, isInitialized])
 
   return <>{children}</>
 }
