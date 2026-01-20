@@ -11,7 +11,6 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const [isInitialized, setIsInitialized] = useState(false)
-  const initialPageViewTracked = useRef(false)
 
   // Initialize PostHog on mount
   useEffect(() => {
@@ -45,33 +44,24 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
     checkAndInitPostHog();
   }, [])
 
-  // Track initial page view once PostHog is ready
+  // Track page views - both initial and on route changes
+  const lastTrackedUrl = useRef<string | null>(null)
+  
   useEffect(() => {
-    if (isInitialized && pathname && !initialPageViewTracked.current) {
-      let url = window.origin + pathname
-      if (searchParams?.toString()) {
-        url = url + '?' + searchParams.toString()
-      }
-      trackPageView(url)
-      initialPageViewTracked.current = true
-      console.log('PostHog: Initial page view tracked', url)
-    }
-  }, [isInitialized, pathname, searchParams])
-
-  // Track subsequent page views on route change
-  useEffect(() => {
-    // Skip if not initialized or if this is the initial page view
-    if (!isInitialized || !initialPageViewTracked.current) return
+    if (!isInitialized || !pathname) return
     
-    if (pathname) {
-      let url = window.origin + pathname
-      if (searchParams?.toString()) {
-        url = url + '?' + searchParams.toString()
-      }
-      trackPageView(url)
-      console.log('PostHog: Page view tracked', url)
+    let url = window.origin + pathname
+    if (searchParams?.toString()) {
+      url = url + '?' + searchParams.toString()
     }
-  }, [pathname, searchParams, isInitialized])
+    
+    // Avoid duplicate tracking of the same URL
+    if (lastTrackedUrl.current === url) return
+    
+    trackPageView(url)
+    lastTrackedUrl.current = url
+    console.log('PostHog: Page view tracked', url)
+  }, [isInitialized, pathname, searchParams])
 
   return <>{children}</>
 }
